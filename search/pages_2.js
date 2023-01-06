@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['cellular_20grid_20space_20and_20topology_2c_20unoriented_20and_20oriented_20cells_2c_20incidence_0',['Cellular grid space and topology, unoriented and oriented cells, incidence',['../moduleCellularTopology.html',1,'']]],
-  ['convex_20hull_20and_20alpha_2dshape_20in_20the_20plane_1',['Convex hull and alpha-shape in the plane',['../moduleHull2D.html',1,'']]],
-  ['cubical_20complex_2',['Cubical Complex',['../moduleCubicalComplex.html',1,'']]],
-  ['curvature_20measures_20on_20meshes_20and_20digital_20surfaces_3',['Curvature measures on meshes and digital surfaces',['../moduleCurvatureMeasures.html',1,'']]]
+  ['alpha_2dthick_20segment_20recognition_20_20_20_3cbr_3e_17038',['Alpha-thick Segment Recognition   &lt;br&gt;',['../moduleAlphaThickSegmentReco.html',1,'']]],
+  ['analysis_20of_20one_2ddimensional_20discrete_20structures_17039',['Analysis of one-dimensional discrete structures',['../moduleGridCurveAnalysis.html',1,'']]],
+  ['applications_20of_20full_20digital_20convexity_17040',['Applications of full digital convexity',['../moduleDigitalConvexityApplications.html',1,'']]],
+  ['arithmetic_20concepts_20and_20models_17041',['Arithmetic Concepts and Models',['../packageArithmeticConcepts.html',1,'']]],
+  ['arithmetic_20package_17042',['Arithmetic package',['../packageArithmetic.html',1,'']]]
 ];

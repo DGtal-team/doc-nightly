@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['unit_20test_20in_20dgtal_20using_20catch_0',['Unit test in DGtal using Catch',['../moduleCatch.html',1,'']]],
-  ['using_20functions_2c_20functors_20and_20lambdas_20in_20dgtal_1',['Using functions, functors and lambdas in DGtal',['../moduleFunctors.html',1,'']]]
+  ['quickhull_20algorithm_20in_20arbitrary_20dimension_20for_20convex_20hull_20and_20delaunay_20cell_20complex_20computation_17153',['QuickHull algorithm in arbitrary dimension for convex hull and Delaunay cell complex computation',['../moduleQuickHull.html',1,'']]]
 ];

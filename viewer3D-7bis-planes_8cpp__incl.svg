@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 3435;
+var viewWidth = 3398;
 var viewHeight = 654;
 var sectionId = 'dynsection-0';
 </script>
@@ -54,7 +54,7 @@ var sectionId = 'dynsection-0';
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>viewer3D&#45;7bis&#45;planes.cpp</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-650 3430.5,-650 3430.5,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-650 3393.5,-650 3393.5,4 -4,4"/>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
@@ -718,7 +718,7 @@ var sectionId = 'dynsection-0';
 <!-- Node125 -->
 <g id="node37" class="node">
 <title>Node125</title>
-<g id="a_node37"><a xlink:href="GridCurve_8h_source.html" target="_top" xlink:title="Header file for module GridCurve.cpp.">
+<g id="a_node37"><a xlink:href="GridCurve_8h_source.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="red" points="1553,-503.5 1553,-533.5 1683,-533.5 1683,-503.5 1553,-503.5"/>
 <text text-anchor="start" x="1561" y="-521.5" font-family="FreeSans" font-size="10.00">DGtal/geometry/curves</text>
 <text text-anchor="middle" x="1618" y="-510.5" font-family="FreeSans" font-size="10.00">/GridCurve.h</text>
@@ -1227,46 +1227,46 @@ var sectionId = 'dynsection-0';
 <g id="node48" class="node">
 <title>Node167</title>
 <g id="a_node48"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="3074,-442 3074,-461 3190,-461 3190,-442 3074,-442"/>
-<text text-anchor="middle" x="3132" y="-449" font-family="FreeSans" font-size="10.00">QtGui/qapplication.h</text>
+<polygon fill="white" stroke="#bfbfbf" points="3074.5,-442 3074.5,-461 3153.5,-461 3153.5,-442 3074.5,-442"/>
+<text text-anchor="middle" x="3114" y="-449" font-family="FreeSans" font-size="10.00">QApplication</text>
 </a>
 </g>
 </g>
 <!-- Node164&#45;&gt;Node167 -->
 <g id="edge120" class="edge">
 <title>Node164&#45;&gt;Node167</title>
-<path fill="none" stroke="midnightblue" d="M2901.05,-508.94C2948.79,-497.27 3034.33,-476.37 3086.83,-463.54"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="3087.99,-466.86 3096.87,-461.08 3086.33,-460.06 3087.99,-466.86"/>
+<path fill="none" stroke="midnightblue" d="M2901.34,-508.98C2941.21,-499.26 3007.95,-482.67 3065,-467 3068.59,-466.01 3072.32,-464.96 3076.05,-463.89"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="3077.19,-467.2 3085.81,-461.05 3075.23,-460.48 3077.19,-467.2"/>
 </g>
 <!-- Node168 -->
 <g id="node49" class="node">
 <title>Node168</title>
 <g id="a_node49"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="3208.5,-442 3208.5,-461 3337.5,-461 3337.5,-442 3208.5,-442"/>
-<text text-anchor="middle" x="3273" y="-449" font-family="FreeSans" font-size="10.00">QGLViewer/qglviewer.h</text>
+<polygon fill="white" stroke="#bfbfbf" points="3171.5,-442 3171.5,-461 3300.5,-461 3300.5,-442 3171.5,-442"/>
+<text text-anchor="middle" x="3236" y="-449" font-family="FreeSans" font-size="10.00">QGLViewer/qglviewer.h</text>
 </a>
 </g>
 </g>
 <!-- Node164&#45;&gt;Node168 -->
 <g id="edge121" class="edge">
 <title>Node164&#45;&gt;Node168</title>
-<path fill="none" stroke="midnightblue" d="M2927.5,-508.98C2994.43,-499.52 3104.52,-483.41 3199,-467 3206.18,-465.75 3213.74,-464.36 3221.17,-462.95"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="3222.03,-466.35 3231.18,-461.02 3220.7,-459.48 3222.03,-466.35"/>
+<path fill="none" stroke="midnightblue" d="M2918.65,-509C2978.08,-499.3 3077.62,-482.74 3163,-467 3169.74,-465.76 3176.83,-464.41 3183.83,-463.05"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="3184.82,-466.42 3193.96,-461.06 3183.47,-459.55 3184.82,-466.42"/>
 </g>
 <!-- Node169 -->
 <g id="node50" class="node">
 <title>Node169</title>
 <g id="a_node50"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="3355.5,-442 3355.5,-461 3426.5,-461 3426.5,-442 3355.5,-442"/>
-<text text-anchor="middle" x="3391" y="-449" font-family="FreeSans" font-size="10.00">QGLWidget</text>
+<polygon fill="white" stroke="#bfbfbf" points="3318.5,-442 3318.5,-461 3389.5,-461 3389.5,-442 3318.5,-442"/>
+<text text-anchor="middle" x="3354" y="-449" font-family="FreeSans" font-size="10.00">QGLWidget</text>
 </a>
 </g>
 </g>
 <!-- Node164&#45;&gt;Node169 -->
 <g id="edge122" class="edge">
 <title>Node164&#45;&gt;Node169</title>
-<path fill="none" stroke="midnightblue" d="M2944.7,-514.4C3040.63,-509.44 3207.23,-497.01 3347,-467 3350.68,-466.21 3354.48,-465.23 3358.23,-464.14"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="3359.45,-467.43 3367.96,-461.12 3357.38,-460.75 3359.45,-467.43"/>
+<path fill="none" stroke="midnightblue" d="M2944.59,-513.44C3033.96,-507.7 3183.82,-494.66 3310,-467 3313.67,-466.19 3317.47,-465.2 3321.23,-464.11"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="3322.45,-467.4 3330.96,-461.08 3320.37,-460.71 3322.45,-467.4"/>
 </g>
 </g>
 </svg>

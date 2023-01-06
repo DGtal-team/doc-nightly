@@ -99,16 +99,16 @@ var sectionId = 'dynsection-0';
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="structDGtal_1_1concepts_1_1CSparseMatrix.html" target="_top" xlink:title="Aim: Represent any dynamic or static sized matrix having sparse representation.">
-<polygon fill="white" stroke="black" points="571.5,-49.5 571.5,-79.5 711.5,-79.5 711.5,-49.5 571.5,-49.5"/>
-<text text-anchor="start" x="579.5" y="-67.5" font-family="FreeSans" font-size="10.00">DGtal::concepts::CSparse</text>
-<text text-anchor="middle" x="641.5" y="-56.5" font-family="FreeSans" font-size="10.00">Matrix&lt; T &gt;</text>
+<polygon fill="white" stroke="black" points="564,-49.5 564,-79.5 719,-79.5 719,-49.5 564,-49.5"/>
+<text text-anchor="start" x="572" y="-67.5" font-family="FreeSans" font-size="10.00">DGtal::concepts::CSparse</text>
+<text text-anchor="middle" x="641.5" y="-56.5" font-family="FreeSans" font-size="10.00">Matrix&lt; T, TripletInterator &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M517.11,-78.21C535.29,-76.19 554.06,-74.1 571.31,-72.19"/>
+<path fill="none" stroke="midnightblue" d="M517.25,-78.19C532.85,-76.46 548.87,-74.68 563.99,-73"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="516.64,-74.74 507.08,-79.32 517.41,-81.7 516.64,-74.74"/>
 </g>
 <!-- Node7 -->

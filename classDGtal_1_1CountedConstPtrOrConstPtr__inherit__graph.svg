@@ -69,35 +69,35 @@ var sectionId = 'dynsection-0';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="classDGtal_1_1CountedConstPtrOrConstPtr.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="348,-665.31 348,-695.31 491,-695.31 491,-665.31 348,-665.31"/>
-<text text-anchor="start" x="356" y="-683.31" font-family="FreeSans" font-size="10.00">DGtal::CountedConstPtrOr</text>
-<text text-anchor="middle" x="419.5" y="-672.31" font-family="FreeSans" font-size="10.00">ConstPtr&lt; Surface &gt;</text>
+<polygon fill="white" stroke="black" points="321,-665.31 321,-695.31 518,-695.31 518,-665.31 321,-665.31"/>
+<text text-anchor="start" x="329" y="-683.31" font-family="FreeSans" font-size="10.00">DGtal::CountedConstPtrOr</text>
+<text text-anchor="middle" x="419.5" y="-672.31" font-family="FreeSans" font-size="10.00">ConstPtr&lt; DigitalSurfaceContainer &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M76.02,-374.46C85.93,-441.45 116.31,-621.53 161,-658.31 212.54,-700.72 291.12,-701.27 347.92,-694.29"/>
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M76.02,-374.46C85.93,-441.45 116.31,-621.53 161,-658.31 209.85,-698.51 283,-701.1 338.87,-695.31"/>
 <polygon fill="orange" stroke="orange" points="79.45,-373.77 74.55,-364.37 72.53,-374.77 79.45,-373.77"/>
-<text text-anchor="middle" x="232" y="-700.31" font-family="FreeSans" font-size="10.00"> &lt; Surface &gt;</text>
+<text text-anchor="middle" x="232" y="-700.31" font-family="FreeSans" font-size="10.00"> &lt; DigitalSurfaceContainer &gt;</text>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="classDGtal_1_1CountedConstPtrOrConstPtr.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="321,-616.31 321,-646.31 518,-646.31 518,-616.31 321,-616.31"/>
-<text text-anchor="start" x="329" y="-634.31" font-family="FreeSans" font-size="10.00">DGtal::CountedConstPtrOr</text>
-<text text-anchor="middle" x="419.5" y="-623.31" font-family="FreeSans" font-size="10.00">ConstPtr&lt; DigitalSurfaceContainer &gt;</text>
+<polygon fill="white" stroke="black" points="348,-616.31 348,-646.31 491,-646.31 491,-616.31 348,-616.31"/>
+<text text-anchor="start" x="356" y="-634.31" font-family="FreeSans" font-size="10.00">DGtal::CountedConstPtrOr</text>
+<text text-anchor="middle" x="419.5" y="-623.31" font-family="FreeSans" font-size="10.00">ConstPtr&lt; Surface &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M72.86,-374.68C75.1,-427.23 88.35,-547.84 161,-605.31 205.31,-640.36 268.22,-647.25 320.77,-645.19"/>
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M72.86,-374.68C75.1,-427.23 88.35,-547.84 161,-605.31 213.24,-646.64 291.33,-648.82 347.81,-643.33"/>
 <polygon fill="orange" stroke="orange" points="76.35,-374.43 72.53,-364.55 69.36,-374.66 76.35,-374.43"/>
-<text text-anchor="middle" x="232" y="-648.31" font-family="FreeSans" font-size="10.00"> &lt; DigitalSurfaceContainer &gt;</text>
+<text text-anchor="middle" x="232" y="-648.31" font-family="FreeSans" font-size="10.00"> &lt; Surface &gt;</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
@@ -277,26 +277,26 @@ var sectionId = 'dynsection-0';
 <g id="node14" class="node">
 <title>Node14</title>
 <g id="a_node14"><a xlink:href="classDGtal_1_1CountedConstPtrOrConstPtr.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="344,-53.31 344,-83.31 495,-83.31 495,-53.31 344,-53.31"/>
-<text text-anchor="start" x="352" y="-71.31" font-family="FreeSans" font-size="10.00">DGtal::CountedConstPtrOr</text>
-<text text-anchor="middle" x="419.5" y="-60.31" font-family="FreeSans" font-size="10.00">ConstPtr&lt; PointPredicate &gt;</text>
+<polygon fill="white" stroke="black" points="348,-53.31 348,-83.31 491,-83.31 491,-53.31 348,-53.31"/>
+<text text-anchor="start" x="356" y="-71.31" font-family="FreeSans" font-size="10.00">DGtal::CountedConstPtrOr</text>
+<text text-anchor="middle" x="419.5" y="-60.31" font-family="FreeSans" font-size="10.00">ConstPtr&lt; Shape &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node14 -->
 <g id="edge13" class="edge">
 <title>Node1&#45;&gt;Node14</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M72.84,-323.91C75.05,-271.32 88.24,-150.64 161,-93.31 212.07,-53.07 287.71,-50.34 343.81,-55.57"/>
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M72.84,-323.91C75.05,-271.32 88.24,-150.64 161,-93.31 213.3,-52.1 291.38,-50.23 347.84,-55.96"/>
 <polygon fill="orange" stroke="orange" points="69.34,-323.95 72.52,-334.05 76.33,-324.17 69.34,-323.95"/>
-<text text-anchor="middle" x="232" y="-96.31" font-family="FreeSans" font-size="10.00"> &lt; PointPredicate &gt;</text>
+<text text-anchor="middle" x="232" y="-96.31" font-family="FreeSans" font-size="10.00"> &lt; Shape &gt;</text>
 </g>
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
 <g id="a_node15"><a xlink:href="classDGtal_1_1CountedConstPtrOrConstPtr.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="348,-4.31 348,-34.31 491,-34.31 491,-4.31 348,-4.31"/>
-<text text-anchor="start" x="356" y="-22.31" font-family="FreeSans" font-size="10.00">DGtal::CountedConstPtrOr</text>
-<text text-anchor="middle" x="419.5" y="-11.31" font-family="FreeSans" font-size="10.00">ConstPtr&lt; Shape &gt;</text>
+<polygon fill="white" stroke="black" points="344,-4.31 344,-34.31 495,-34.31 495,-4.31 344,-4.31"/>
+<text text-anchor="start" x="352" y="-22.31" font-family="FreeSans" font-size="10.00">DGtal::CountedConstPtrOr</text>
+<text text-anchor="middle" x="419.5" y="-11.31" font-family="FreeSans" font-size="10.00">ConstPtr&lt; PointPredicate &gt;</text>
 </a>
 </g>
 </g>
@@ -305,7 +305,7 @@ var sectionId = 'dynsection-0';
 <title>Node1&#45;&gt;Node15</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M75.97,-323.96C85.76,-256.48 115.86,-75.09 161,-38.31 212.61,3.73 290.99,3.39 347.72,-4.31"/>
 <polygon fill="orange" stroke="orange" points="72.47,-323.74 74.53,-334.13 79.4,-324.72 72.47,-323.74"/>
-<text text-anchor="middle" x="232" y="-41.31" font-family="FreeSans" font-size="10.00"> &lt; Shape &gt;</text>
+<text text-anchor="middle" x="232" y="-41.31" font-family="FreeSans" font-size="10.00"> &lt; PointPredicate &gt;</text>
 </g>
 </g>
 </svg>

@@ -33,45 +33,45 @@
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M75.69,-216.68C87.31,-249.5 110.57,-300.95 149,-328.5 191.82,-359.19 251.7,-368.7 296.23,-371.11"/>
-<polygon fill="orange" stroke="orange" points="78.98,-215.49 72.45,-207.14 72.35,-217.73 78.98,-215.49"/>
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M75.87,-216.71C87.59,-249.28 110.89,-300.14 149,-327.5 191.84,-358.25 251.72,-368.06 296.24,-370.74"/>
+<polygon fill="orange" stroke="orange" points="79.17,-215.54 72.6,-207.23 72.55,-217.82 79.17,-215.54"/>
 <text text-anchor="middle" x="210.5" y="-371.5" font-family="FreeSans" font-size="10.00"> &lt; 3, InternalInteger &gt;</text>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="classDGtal_1_1PointVector.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="305,-306.5 305,-336.5 411,-336.5 411,-306.5 305,-306.5"/>
-<text text-anchor="start" x="313" y="-324.5" font-family="FreeSans" font-size="10.00">DGtal::PointVector</text>
-<text text-anchor="middle" x="358" y="-313.5" font-family="FreeSans" font-size="10.00">&lt; 2, Integer &gt;</text>
+<polygon fill="white" stroke="black" points="299.5,-295 299.5,-336 416.5,-336 416.5,-295 299.5,-295"/>
+<text text-anchor="start" x="307.5" y="-324" font-family="FreeSans" font-size="10.00">DGtal::PointVector</text>
+<text text-anchor="start" x="307.5" y="-313" font-family="FreeSans" font-size="10.00">&lt; Space::dimension,</text>
+<text text-anchor="middle" x="358" y="-302" font-family="FreeSans" font-size="10.00"> Real &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M85.92,-215.35C100.86,-235.27 123.25,-260.74 149,-275.5 197.29,-303.18 260.69,-314.21 304.74,-318.6"/>
-<polygon fill="orange" stroke="orange" points="88.71,-213.23 79.99,-207.2 83.05,-217.35 88.71,-213.23"/>
-<text text-anchor="middle" x="210.5" y="-316.5" font-family="FreeSans" font-size="10.00"> &lt; 2, Integer &gt;</text>
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M91.08,-214.82C106.29,-230.69 127.05,-249.63 149,-261.5 196.09,-286.97 255.74,-300.86 299.08,-308.14"/>
+<polygon fill="orange" stroke="orange" points="93.47,-212.24 84.08,-207.32 88.35,-217.02 93.47,-212.24"/>
+<text text-anchor="start" x="158.5" y="-315.5" font-family="FreeSans" font-size="10.00"> &lt; Space::dimension,</text>
+<text text-anchor="middle" x="210.5" y="-304.5" font-family="FreeSans" font-size="10.00"> Real &gt;</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="classDGtal_1_1PointVector.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="299.5,-246 299.5,-287 416.5,-287 416.5,-246 299.5,-246"/>
-<text text-anchor="start" x="307.5" y="-275" font-family="FreeSans" font-size="10.00">DGtal::PointVector</text>
-<text text-anchor="start" x="307.5" y="-264" font-family="FreeSans" font-size="10.00">&lt; Space::dimension,</text>
-<text text-anchor="middle" x="358" y="-253" font-family="FreeSans" font-size="10.00"> Real &gt;</text>
+<polygon fill="white" stroke="black" points="305,-245.5 305,-275.5 411,-275.5 411,-245.5 305,-245.5"/>
+<text text-anchor="start" x="313" y="-263.5" font-family="FreeSans" font-size="10.00">DGtal::PointVector</text>
+<text text-anchor="middle" x="358" y="-252.5" font-family="FreeSans" font-size="10.00">&lt; 2, Integer &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M125.67,-210.62C133.46,-213.45 141.38,-216.16 149,-218.5 199.12,-233.92 257.38,-246.96 299.47,-255.54"/>
-<polygon fill="orange" stroke="orange" points="126.86,-207.33 116.27,-207.12 124.42,-213.89 126.86,-207.33"/>
-<text text-anchor="start" x="158.5" y="-263.5" font-family="FreeSans" font-size="10.00"> &lt; Space::dimension,</text>
-<text text-anchor="middle" x="210.5" y="-252.5" font-family="FreeSans" font-size="10.00"> Real &gt;</text>
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M124.71,-210.49C132.79,-213.41 141.05,-216.17 149,-218.5 201.15,-233.76 262.26,-245.38 304.69,-252.48"/>
+<polygon fill="orange" stroke="orange" points="125.92,-207.21 115.32,-207.02 123.48,-213.77 125.92,-207.21"/>
+<text text-anchor="middle" x="210.5" y="-249.5" font-family="FreeSans" font-size="10.00"> &lt; 2, Integer &gt;</text>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
