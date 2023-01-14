@@ -127,5 +127,6 @@ var searchData=
   ['surfelneighborhood_3c_20kspace_20_3e_9577',['SurfelNeighborhood&lt; KSpace &gt;',['../classDGtal_1_1SurfelNeighborhood.html',1,'DGtal']]],
   ['surfelsetpredicate_9578',['SurfelSetPredicate',['../structDGtal_1_1functors_1_1SurfelSetPredicate.html',1,'DGtal::functors']]],
   ['surfelsetpredicate_3c_20surfelset_2c_20surfel_20_3e_9579',['SurfelSetPredicate&lt; SurfelSet, Surfel &gt;',['../structDGtal_1_1functors_1_1SurfelSetPredicate.html',1,'DGtal::functors']]],
-  ['swappableiteratorconcept_9580',['SwappableIteratorConcept',['../structboost__concepts_1_1SwappableIteratorConcept.html',1,'boost_concepts']]]
+  ['swappableiteratorconcept_9580',['SwappableIteratorConcept',['../structboost__concepts_1_1SwappableIteratorConcept.html',1,'boost_concepts']]],
+  ['symmetricconvexexpander_9581',['SymmetricConvexExpander',['../classDGtal_1_1SymmetricConvexExpander.html',1,'DGtal']]]
 ];
