@@ -1191,10 +1191,11 @@ template&lt;typename TSpace &gt; </div>
 <p class="definition">Definition at line <a class="el" href="HyperRectDomain_8h_source.html#l00565">565</a> of file <a class="el" href="HyperRectDomain_8h_source.html">HyperRectDomain.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;      {</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        <a class="code" href="testHalfEdgeDataStructure_8cpp.html#a1aba5499fd29449181365ce424303a10">Size</a> res = 1;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span> i=0; i &lt; Space::dimension; ++i)</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        <span class="keywordflow">for</span>(<a class="code" href="classDGtal_1_1HyperRectDomain.html#acf9602c9f7e0f17b97e5bf871624ae05">Dimension</a> i=0; i &lt; Space::dimension; ++i)</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;          res *= <span class="keyword">static_cast&lt;</span><a class="code" href="testHalfEdgeDataStructure_8cpp.html#a1aba5499fd29449181365ce424303a10">Size</a><span class="keyword">&gt;</span>(<a class="code" href="structDGtal_1_1NumberTraitsImpl.html#ae2a7253ca5d304c75267d2c104916abe">NumberTraits&lt;Coordinate&gt;::castToUInt64_t</a>(<a class="code" href="classDGtal_1_1HyperRectDomain.html#a09ca52183454d9638e00343688a710e7">myUpperBound</a>[i] - <a class="code" href="classDGtal_1_1HyperRectDomain.html#a11b05f84f0fc71002abb98076383d989">myLowerBound</a>[i] + 1));</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <span class="keywordflow">return</span> res;</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;      }</div>
+<div class="ttc" id="aclassDGtal_1_1HyperRectDomain_html_acf9602c9f7e0f17b97e5bf871624ae05"><div class="ttname"><a href="classDGtal_1_1HyperRectDomain.html#acf9602c9f7e0f17b97e5bf871624ae05">DGtal::HyperRectDomain::Dimension</a></div><div class="ttdeci">Space::Dimension Dimension</div><div class="ttdef"><b>Definition:</b> <a href="HyperRectDomain_8h_source.html#l00116">HyperRectDomain.h:116</a></div></div>
 <div class="ttc" id="astructDGtal_1_1NumberTraitsImpl_html_ae2a7253ca5d304c75267d2c104916abe"><div class="ttname"><a href="structDGtal_1_1NumberTraitsImpl.html#ae2a7253ca5d304c75267d2c104916abe">DGtal::NumberTraitsImpl&lt; std::decay&lt; T &gt;::type &gt;::castToUInt64_t</a></div><div class="ttdeci">static constexpr DGtal::uint64_t castToUInt64_t(const std::decay&lt; T &gt;::type &amp;aT) noexcept</div><div class="ttdoc">Cast method to DGtal::uint64_t (for I/O or board export uses only).</div><div class="ttdef"><b>Definition:</b> <a href="NumberTraits_8h_source.html#l00155">NumberTraits.h:155</a></div></div>
 <div class="ttc" id="atestHalfEdgeDataStructure_8cpp_html_a1aba5499fd29449181365ce424303a10"><div class="ttname"><a href="testHalfEdgeDataStructure_8cpp.html#a1aba5499fd29449181365ce424303a10">Size</a></div><div class="ttdeci">HalfEdgeDataStructure::Size Size</div><div class="ttdef"><b>Definition:</b> <a href="testHalfEdgeDataStructure_8cpp_source.html#l00050">testHalfEdgeDataStructure.cpp:50</a></div></div>
 </div><!-- fragment -->
@@ -1732,7 +1733,7 @@ template&lt;typename TSpace &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jan 14 2023 14:18:21 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Mon Jan 30 2023 20:06:11 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
