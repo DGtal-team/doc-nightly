@@ -100,7 +100,7 @@ struct DGtal::Viewer3D&lt; TSpace, TKSpace &gt;::CompFarthestSurfelFromCamera</h
 
 <p>Used to sort pixel from camera </p>
 
-<p class="definition">Definition at line <a class="el" href="Viewer3D_8h_source.html#l01087">1087</a> of file <a class="el" href="Viewer3D_8h_source.html">Viewer3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Viewer3D_8h_source.html#l01110">1110</a> of file <a class="el" href="Viewer3D_8h_source.html">Viewer3D.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a65de3bec9472aaab17a7651ab1adf9fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a65de3bec9472aaab17a7651ab1adf9fb">&#9670;&nbsp;</a></span>operator()()</h2>
@@ -138,19 +138,19 @@ template&lt;typename TSpace  = SpaceND&lt;3&gt;, typename TKSpace  = KhalimskySp
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Viewer3D_8h_source.html#l01090">1090</a> of file <a class="el" href="Viewer3D_8h_source.html">Viewer3D.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;      {</div>
-<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160; </div>
-<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;        qglviewer::Vec center1 ( ( q1.point1[0]+q1.point2[0]+q1.point3[0]+q1.point4[0] ) /4.0, ( q1.point1[1]+q1.point2[1]+q1.point3[1]+q1.point4[1] ) /4.0, ( q1.point1[2]+q1.point2[2]+q1.point3[2]+q1.point4[2] ) /4.0 );</div>
-<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;        qglviewer::Vec center2 ( ( q2.point1[0]+q2.point2[0]+q2.point3[0]+q2.point4[0] ) /4.0, ( q2.point1[1]+q2.point2[1]+q2.point3[1]+q2.point4[1] ) /4.0, ( q2.point1[2]+q2.point2[2]+q2.point3[2]+q2.point4[2] ) /4.0 );</div>
-<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160; </div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;        <span class="keywordtype">double</span> dist1= sqrt ( ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.x-center1.x ) * ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.x-center1.x ) + ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.y-center1.y ) * ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.y-center1.y ) + ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.z-center1.z ) * ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.z-center1.z ) );</div>
-<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;        <span class="keywordtype">double</span> dist2= sqrt ( ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.x-center2.x ) * ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.x-center2.x ) + ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.y-center2.y ) * ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.y-center2.y ) + ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.z-center2.z ) * ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.z-center2.z ) );</div>
-<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;        <span class="keywordflow">return</span> dist1&gt;dist2;</div>
-<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;      }</div>
-<div class="ttc" id="astructDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera_html_a0c58252a7534591b8a63dc8582f2da16"><div class="ttname"><a href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">DGtal::Viewer3D::CompFarthestSurfelFromCamera::posCam</a></div><div class="ttdeci">qglviewer::Vec posCam</div><div class="ttdef"><b>Definition:</b> <a href="Viewer3D_8h_source.html#l01089">Viewer3D.h:1089</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Viewer3D_8h_source.html#l01113">1113</a> of file <a class="el" href="Viewer3D_8h_source.html">Viewer3D.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;      {</div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160; </div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;        qglviewer::Vec center1 ( ( q1.point1[0]+q1.point2[0]+q1.point3[0]+q1.point4[0] ) /4.0, ( q1.point1[1]+q1.point2[1]+q1.point3[1]+q1.point4[1] ) /4.0, ( q1.point1[2]+q1.point2[2]+q1.point3[2]+q1.point4[2] ) /4.0 );</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;        qglviewer::Vec center2 ( ( q2.point1[0]+q2.point2[0]+q2.point3[0]+q2.point4[0] ) /4.0, ( q2.point1[1]+q2.point2[1]+q2.point3[1]+q2.point4[1] ) /4.0, ( q2.point1[2]+q2.point2[2]+q2.point3[2]+q2.point4[2] ) /4.0 );</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160; </div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;        <span class="keywordtype">double</span> dist1= sqrt ( ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.x-center1.x ) * ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.x-center1.x ) + ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.y-center1.y ) * ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.y-center1.y ) + ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.z-center1.z ) * ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.z-center1.z ) );</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;        <span class="keywordtype">double</span> dist2= sqrt ( ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.x-center2.x ) * ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.x-center2.x ) + ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.y-center2.y ) * ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.y-center2.y ) + ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.z-center2.z ) * ( <a class="code" href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">posCam</a>.z-center2.z ) );</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;        <span class="keywordflow">return</span> dist1&gt;dist2;</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;      }</div>
+<div class="ttc" id="astructDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera_html_a0c58252a7534591b8a63dc8582f2da16"><div class="ttname"><a href="structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html#a0c58252a7534591b8a63dc8582f2da16">DGtal::Viewer3D::CompFarthestSurfelFromCamera::posCam</a></div><div class="ttdeci">qglviewer::Vec posCam</div><div class="ttdef"><b>Definition:</b> <a href="Viewer3D_8h_source.html#l01112">Viewer3D.h:1112</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Viewer3D_8h_source.html#l01089">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;::CompFarthestSurfelFromCamera::posCam</a>.</p>
+<p class="reference">References <a class="el" href="Viewer3D_8h_source.html#l01112">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;::CompFarthestSurfelFromCamera::posCam</a>.</p>
 
 </div>
 </div>
@@ -169,9 +169,9 @@ template&lt;typename TSpace  = SpaceND&lt;3&gt;, typename TKSpace  = KhalimskySp
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Viewer3D_8h_source.html#l01089">1089</a> of file <a class="el" href="Viewer3D_8h_source.html">Viewer3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Viewer3D_8h_source.html#l01112">1112</a> of file <a class="el" href="Viewer3D_8h_source.html">Viewer3D.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Viewer3D_8h_source.html#l01090">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;::CompFarthestSurfelFromCamera::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Viewer3D_8h_source.html#l01113">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;::CompFarthestSurfelFromCamera::operator()()</a>.</p>
 
 </div>
 </div>
@@ -181,7 +181,7 @@ template&lt;typename TSpace  = SpaceND&lt;3&gt;, typename TKSpace  = KhalimskySp
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 10 2023 09:09:30 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Fri Feb 10 2023 21:20:38 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

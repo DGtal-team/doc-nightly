@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hexagonstate_16681',['HexagonState',['../classDGtal_1_1PlaneProbingNeighborhood.html#a7de337aa87bc093fb60c384bb1ad860f',1,'DGtal::PlaneProbingNeighborhood']]]
+  ['hexagonstate_16680',['HexagonState',['../classDGtal_1_1PlaneProbingNeighborhood.html#a7de337aa87bc093fb60c384bb1ad860f',1,'DGtal::PlaneProbingNeighborhood']]]
 ];
