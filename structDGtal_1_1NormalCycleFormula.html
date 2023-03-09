@@ -561,7 +561,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordflow">if</span> ( pts.size() &lt;  3 ) <span class="keywordflow">return</span> 0.0;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">if</span> ( pts.size() == 3 )</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structDGtal_1_1NormalCycleFormula.html#a362bc36437e8989f1d5236760d584352">area</a>( pts[ 0 ], pts[ 1 ], pts[ 2 ] );</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keyword">const</span> <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> b = <a class="code" href="structDGtal_1_1NormalCycleFormula.html#acc188c90df4eaa4e8ec4d9c209d5bd23">barycenter</a>( pts );</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keyword">const</span> <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> b = <a class="code" href="structDGtal_1_1NormalCycleFormula.html#acc188c90df4eaa4e8ec4d9c209d5bd23">barycenter</a>( pts );</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      Scalar          a = 0.0;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keywordflow">for</span> ( <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a> i = 0; i &lt; pts.size(); i++ )</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        a += <a class="code" href="structDGtal_1_1NormalCycleFormula.html#a362bc36437e8989f1d5236760d584352">area</a>( b, pts[ i ], pts[ (i+1)%pts.size() ] );</div>
@@ -570,7 +570,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 <div class="ttc" id="afullConvexitySphereGeodesics_8cpp_html_ab053a8ae7537e4f87fa9a46962f7617a"><div class="ttname"><a href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a></div><div class="ttdeci">SMesh::Index Index</div><div class="ttdef"><b>Definition:</b> <a href="fullConvexitySphereGeodesics_8cpp_source.html#l00117">fullConvexitySphereGeodesics.cpp:117</a></div></div>
 <div class="ttc" id="astructDGtal_1_1NormalCycleFormula_html_a362bc36437e8989f1d5236760d584352"><div class="ttname"><a href="structDGtal_1_1NormalCycleFormula.html#a362bc36437e8989f1d5236760d584352">DGtal::NormalCycleFormula::area</a></div><div class="ttdeci">static Scalar area(const RealPoints &amp;pts)</div><div class="ttdef"><b>Definition:</b> <a href="NormalCycleFormula_8h_source.html#l00085">NormalCycleFormula.h:85</a></div></div>
 <div class="ttc" id="astructDGtal_1_1NormalCycleFormula_html_acc188c90df4eaa4e8ec4d9c209d5bd23"><div class="ttname"><a href="structDGtal_1_1NormalCycleFormula.html#acc188c90df4eaa4e8ec4d9c209d5bd23">DGtal::NormalCycleFormula::barycenter</a></div><div class="ttdeci">static RealPoint barycenter(const RealPoints &amp;pts)</div><div class="ttdef"><b>Definition:</b> <a href="NormalCycleFormula_8h_source.html#l00219">NormalCycleFormula.h:219</a></div></div>
-<div class="ttc" id="atestAstroid2D_8cpp_html_ac914bb734ccb5a7c569747c1e699c1aa"><div class="ttname"><a href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a></div><div class="ttdeci">Z2i::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testAstroid2D_8cpp_source.html#l00046">testAstroid2D.cpp:46</a></div></div>
+<div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="NormalCycleFormula_8h_source.html#l00219">DGtal::NormalCycleFormula&lt; TRealPoint, TRealVector &gt;::barycenter()</a>.</p>
 
@@ -654,7 +654,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="NormalCycleFormula_8h_source.html#l00219">219</a> of file <a class="el" href="NormalCycleFormula_8h_source.html">NormalCycleFormula.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> b;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> b;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> p : pts ) b += p;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;      b /= pts.size();</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      <span class="keywordflow">return</span> b;</div>
@@ -944,7 +944,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:13 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:14 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -198,9 +198,9 @@ $(function() {
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  const typename ItkImage::SizeType&amp; inputSize =</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    itkImage-&gt;GetLargestPossibleRegion().GetSize();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  const unsigned int width = inputSize[0];</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  const unsigned int height = inputSize[1];</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  const unsigned int depth = inputSize[2];</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  const auto width = inputSize[0];</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  const auto height = inputSize[1];</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  const auto depth = inputSize[2];</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  if ( !height || !width || !depth )</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  {</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    trace.error() &lt;&lt; &quot;DicomReader: one dimension is null (w=&quot; &lt;&lt; width</div>
@@ -333,7 +333,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:43 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:44:44 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

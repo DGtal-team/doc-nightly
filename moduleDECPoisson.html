@@ -115,7 +115,6 @@ Neumann boundary condition</h2>
 <p>First, an empty calculus structure is created and, using simple for loops, it is filled with some 0-cells and 1-cells to from a linear structure. When filled manually with <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a8e3c021b594f326a72ed4485b1aa7ea3">DiscreteExteriorCalculus.insertSCell</a>, one can pass the primal and dual sizes of each cell which default to 1. Temperature nodes are associated primal 0-cells. Note that to enforce Neumann boundary conditions, the linear structure has to end with 0-cells. Moreover some 1-cells are inserted as negative cells to match their orientation with the orientation of the linear structure.</p>
 <div class="fragment"><div class="line">    <span class="keyword">typedef</span> DiscreteExteriorCalculus&lt;1, 2, EigenLinearAlgebraBackend&gt; Calculus;</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">typedef</span> std::list&lt;Calculus::SCell&gt; <a class="code" href="namespaceDGtal_1_1Z2i.html#a74d94b781a80eb312c52360057a00529">SCells</a>;</div>
 <div class="line">    <a class="code" href="namespaceDGtal_1_1Z2i.html#a74d94b781a80eb312c52360057a00529">SCells</a> cells;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// fill cells container</span></div>
@@ -164,7 +163,7 @@ Linear structure with Neumann boundary conditions. The input dirac 0-form is dis
 <div class="line">        Solver solver;</div>
 <div class="line">        solver.compute(laplace);</div>
 <div class="line">        Calculus::PrimalForm0 solved_solution = solver.solve(dirac);</div>
-<div class="ttc" id="astructDGtal_1_1EigenLinearAlgebraBackend_html_a91eb79b9fda17d8fb10b9f7035632180"><div class="ttname"><a href="structDGtal_1_1EigenLinearAlgebraBackend.html#a91eb79b9fda17d8fb10b9f7035632180">DGtal::EigenLinearAlgebraBackend::SolverSparseQR</a></div><div class="ttdeci">Eigen::SparseQR&lt; SparseMatrix, Eigen::COLAMDOrdering&lt; SparseMatrix::Index &gt; &gt; SolverSparseQR</div><div class="ttdef"><b>Definition:</b> <a href="EigenSupport_8h_source.html#l00111">EigenSupport.h:111</a></div></div>
+<div class="ttc" id="astructDGtal_1_1EigenLinearAlgebraBackend_html_a91eb79b9fda17d8fb10b9f7035632180"><div class="ttname"><a href="structDGtal_1_1EigenLinearAlgebraBackend.html#a91eb79b9fda17d8fb10b9f7035632180">DGtal::EigenLinearAlgebraBackend::SolverSparseQR</a></div><div class="ttdeci">Eigen::SparseQR&lt; SparseMatrix, Eigen::COLAMDOrdering&lt; SparseMatrix::Index &gt; &gt; SolverSparseQR</div><div class="ttdef"><b>Definition:</b> <a href="EigenSupport_8h_source.html#l00110">EigenSupport.h:110</a></div></div>
 </div><!-- fragment --><p> Since the dirac input is null everywhere except at a single point, this means that the second derivative of the solution is null everywhere except at the dirac position. An analytic form can be expressed as a continuous piece-wise quadratic function. Numerical values of the solution fit analytic values with at least a relative precision of 1e-5.</p>
 <div class="image">
 <img src="linear_structure_neumann_solution.png" alt=""/>
@@ -240,7 +239,7 @@ Input dual 0-form.</div></div>
 <div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; solver.isValid() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; solver.myLinearAlgebraSolver.info() &lt;&lt; endl;</div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fc7012708b0416880a5c8b12dfdf9dd"><div class="ttname"><a href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">DGtal::trace</a></div><div class="ttdeci">Trace trace</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00153">Common.h:153</a></div></div>
-<div class="ttc" id="astructDGtal_1_1EigenLinearAlgebraBackend_html_a15495ae7fc17a2e868e1ab1a87297294"><div class="ttname"><a href="structDGtal_1_1EigenLinearAlgebraBackend.html#a15495ae7fc17a2e868e1ab1a87297294">DGtal::EigenLinearAlgebraBackend::SolverSimplicialLLT</a></div><div class="ttdeci">Eigen::SimplicialLLT&lt; SparseMatrix &gt; SolverSimplicialLLT</div><div class="ttdoc">Solvers on sparse matrices.</div><div class="ttdef"><b>Definition:</b> <a href="EigenSupport_8h_source.html#l00106">EigenSupport.h:106</a></div></div>
+<div class="ttc" id="astructDGtal_1_1EigenLinearAlgebraBackend_html_a15495ae7fc17a2e868e1ab1a87297294"><div class="ttname"><a href="structDGtal_1_1EigenLinearAlgebraBackend.html#a15495ae7fc17a2e868e1ab1a87297294">DGtal::EigenLinearAlgebraBackend::SolverSimplicialLLT</a></div><div class="ttdeci">Eigen::SimplicialLLT&lt; SparseMatrix &gt; SolverSimplicialLLT</div><div class="ttdoc">Solvers on sparse matrices.</div><div class="ttdef"><b>Definition:</b> <a href="EigenSupport_8h_source.html#l00105">EigenSupport.h:105</a></div></div>
 </div><!-- fragment --><div class="image">
 <img src="solve_laplace_simplicial_llt.png" alt=""/>
 <div class="caption">
@@ -254,7 +253,7 @@ Poisson problem solution computed with simplicial LLT solver. Solver reports a n
 <div class="line">        Calculus::DualForm0 solution = solver.solve(dirac);</div>
 <div class="line"> </div>
 <div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; solver.isValid() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; solver.myLinearAlgebraSolver.info() &lt;&lt; endl;</div>
-<div class="ttc" id="astructDGtal_1_1EigenLinearAlgebraBackend_html_a164f5eddcb81f4d6fd688fefc91057c9"><div class="ttname"><a href="structDGtal_1_1EigenLinearAlgebraBackend.html#a164f5eddcb81f4d6fd688fefc91057c9">DGtal::EigenLinearAlgebraBackend::SolverSimplicialLDLT</a></div><div class="ttdeci">Eigen::SimplicialLDLT&lt; SparseMatrix &gt; SolverSimplicialLDLT</div><div class="ttdef"><b>Definition:</b> <a href="EigenSupport_8h_source.html#l00107">EigenSupport.h:107</a></div></div>
+<div class="ttc" id="astructDGtal_1_1EigenLinearAlgebraBackend_html_a164f5eddcb81f4d6fd688fefc91057c9"><div class="ttname"><a href="structDGtal_1_1EigenLinearAlgebraBackend.html#a164f5eddcb81f4d6fd688fefc91057c9">DGtal::EigenLinearAlgebraBackend::SolverSimplicialLDLT</a></div><div class="ttdeci">Eigen::SimplicialLDLT&lt; SparseMatrix &gt; SolverSimplicialLDLT</div><div class="ttdef"><b>Definition:</b> <a href="EigenSupport_8h_source.html#l00106">EigenSupport.h:106</a></div></div>
 </div><!-- fragment --><div class="image">
 <img src="solve_laplace_simplicial_ldlt.png" alt=""/>
 <div class="caption">
@@ -337,7 +336,7 @@ Input dual 0-form.</div></div>
 <div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;phi_range=&quot;</span> &lt;&lt; phi.myContainer.minCoeff() &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; phi.myContainer.maxCoeff() &lt;&lt; endl;</div>
 <div class="ttc" id="aclassDGtal_1_1DiscreteExteriorCalculusSolver_html"><div class="ttname"><a href="classDGtal_1_1DiscreteExteriorCalculusSolver.html">DGtal::DiscreteExteriorCalculusSolver</a></div><div class="ttdoc">Aim: This wraps a linear algebra solver around a discrete exterior calculus.</div><div class="ttdef"><b>Definition:</b> <a href="DiscreteExteriorCalculusSolver_8h_source.html#l00069">DiscreteExteriorCalculusSolver.h:70</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1DiscreteExteriorCalculusSolver_html_a90f2a9e43a13293e6368b63298363b60"><div class="ttname"><a href="classDGtal_1_1DiscreteExteriorCalculusSolver.html#a90f2a9e43a13293e6368b63298363b60">DGtal::DiscreteExteriorCalculusSolver::compute</a></div><div class="ttdeci">DiscreteExteriorCalculusSolver &amp; compute(const Operator &amp;linear_operator)</div></div>
-<div class="ttc" id="astructDGtal_1_1EigenLinearAlgebraBackend_html_af2850ff9af2fb4e133bb38dc8fa28872"><div class="ttname"><a href="structDGtal_1_1EigenLinearAlgebraBackend.html#af2850ff9af2fb4e133bb38dc8fa28872">DGtal::EigenLinearAlgebraBackend::SolverSparseLU</a></div><div class="ttdeci">Eigen::SparseLU&lt; SparseMatrix &gt; SolverSparseLU</div><div class="ttdef"><b>Definition:</b> <a href="EigenSupport_8h_source.html#l00110">EigenSupport.h:110</a></div></div>
+<div class="ttc" id="astructDGtal_1_1EigenLinearAlgebraBackend_html_af2850ff9af2fb4e133bb38dc8fa28872"><div class="ttname"><a href="structDGtal_1_1EigenLinearAlgebraBackend.html#af2850ff9af2fb4e133bb38dc8fa28872">DGtal::EigenLinearAlgebraBackend::SolverSparseLU</a></div><div class="ttdeci">Eigen::SparseLU&lt; SparseMatrix &gt; SolverSparseLU</div><div class="ttdef"><b>Definition:</b> <a href="EigenSupport_8h_source.html#l00109">EigenSupport.h:109</a></div></div>
 </div><!-- fragment --><div class="image">
 <img src="alcapone_phi.png" alt=""/>
 <div class="caption">
@@ -346,7 +345,7 @@ Solution dual 0-form.</div></div>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:09 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:11 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

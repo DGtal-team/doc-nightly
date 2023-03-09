@@ -180,7 +180,7 @@ $(function() {
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    if (cell_dim == 0) ASSERT_MSG( property.primal_size == 1, &quot;0-cell primal size must be equal to 1&quot; );</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    if (cell_dim == dimEmbedded) ASSERT_MSG( property.dual_size == 1, &quot;n-cell dual size must be equal to 1&quot; );</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    ASSERT_MSG( cell_dim &gt;= 0 &amp;&amp; cell_dim &lt;= dimEmbedded, &quot;wrong cell dimension&quot; );</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    ASSERT_MSG( cell_dim &lt;= dimEmbedded, &quot;wrong cell dimension&quot; );</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    ASSERT_MSG( cell_dim != 0 || !property.flipped , &quot;can&#39;t insert negative 0-cells&quot; );</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    ASSERT_MSG( cell_dim != dimAmbient || !property.flipped , &quot;can&#39;t insert negative n-cells&quot; );</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
@@ -874,7 +874,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:44 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:44:46 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

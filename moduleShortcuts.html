@@ -598,7 +598,7 @@ Discontinuities of the piecewise-smooth normal vector field on Al-150 dataset.</
 <div class="line">    SH3::RealPoints positions( surfels.size() );</div>
 <div class="line">    std::transform( surfels.cbegin(), surfels.cend(), positions.begin(),</div>
 <div class="line">                    [&amp;] (<span class="keyword">const</span> <a class="code" href="classDGtal_1_1Shortcuts.html#aeeb2a89c94e05fbd8b12905296e08125">SH3::SCell</a>&amp; c) { return embedder( c ); } ); </div>
-<div class="line">    <span class="keywordtype">bool</span> ok    = SH3::saveOBJ( surface, SH3::RealVectors(), SH3::Colors(),</div>
+<div class="line">    SH3::saveOBJ( surface, SH3::RealVectors(), SH3::Colors(),</div>
 <div class="line">                               <span class="stringliteral">&quot;goursat-primal.obj&quot;</span> );</div>
 <div class="line">    <span class="comment">// output principal curvatures and directions</span></div>
 <div class="line">    <span class="keyword">auto</span> cmap  = SH3::getColorMap( -0.5, 0.5, params );</div>
@@ -611,6 +611,7 @@ Discontinuities of the piecewise-smooth normal vector field on Al-150 dataset.</
 <div class="line">    <span class="keywordtype">bool</span> ok_k2 = SH3::saveOBJ( surface, SH3::RealVectors(), colors, <span class="stringliteral">&quot;goursat-primal-k2.obj&quot;</span> );</div>
 <div class="line">    <span class="keywordtype">bool</span> ok_d2 = SH3::saveVectorFieldOBJ( positions, d2, 0.05, colors,</div>
 <div class="line">                                          <span class="stringliteral">&quot;goursat-primal-d2.obj&quot;</span>, <a class="code" href="classDGtal_1_1Color.html#ac26d8585885e7a354893b7e93c6a9dda">SH3::Color::Black</a> );</div>
+<div class="line">    ASSERT(ok_k1 &amp;&amp; ok_d1 &amp;&amp; ok_k2 &amp;&amp; ok_d2);</div>
 </div><!-- fragment --><table class="doxtable">
 <tr>
 <td><div class="image">
@@ -815,7 +816,7 @@ Parameters</h2>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:10 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:11 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

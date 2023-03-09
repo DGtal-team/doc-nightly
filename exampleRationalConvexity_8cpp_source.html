@@ -156,7 +156,7 @@ $(function() {
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;          <span class="keyword">auto</span> segment = dconv.<a class="code" href="classDGtal_1_1DigitalConvexity.html#a03423890027c65b5d42ec327fd251c53">makeRationalSimplex</a>( { denominator, T2[i], T2[j] } );</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;          <span class="keywordflow">if</span> ( ! dconv.<a class="code" href="classDGtal_1_1DigitalConvexity.html#abb35a70653904c9ca2b308221ff70565">isFullySubconvex</a>( segment, c_cover ) ) <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      j = ( j + T2.size() - 1 ) % T2.size();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      j = (<span class="keywordtype">unsigned</span> int)( j + T2.size() - 1 ) % T2.size();</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="keywordflow">if</span> ( j != last_j )</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        { <span class="comment">// display fully subconvex segments</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;          aBoard.<a class="code" href="classLibBoard_1_1Board.html#ac188d9b5f030366abc53d6fd46b14c3b">setLineWidth</a>( 2.5 );</div>
@@ -177,7 +177,7 @@ $(function() {
 <div class="ttc" id="aclassDGtal_1_1DigitalConvexity_html_abb35a70653904c9ca2b308221ff70565"><div class="ttname"><a href="classDGtal_1_1DigitalConvexity.html#abb35a70653904c9ca2b308221ff70565">DGtal::DigitalConvexity::isFullySubconvex</a></div><div class="ttdeci">bool isFullySubconvex(const PointRange &amp;Y, const LatticeSet &amp;StarX) const</div></div>
 <div class="ttc" id="aclassDGtal_1_1DigitalConvexity_html_adb1407e4d3ce537d588b2f92da175105"><div class="ttname"><a href="classDGtal_1_1DigitalConvexity.html#adb1407e4d3ce537d588b2f92da175105">DGtal::DigitalConvexity::space</a></div><div class="ttdeci">const KSpace &amp; space() const</div></div>
 <div class="ttc" id="aclassDGtal_1_1DigitalConvexity_html_af588213a1371bc38f45973ef3fc331f4"><div class="ttname"><a href="classDGtal_1_1DigitalConvexity.html#af588213a1371bc38f45973ef3fc331f4">DGtal::DigitalConvexity::makeCellCover</a></div><div class="ttdeci">CellGeometry makeCellCover(PointIterator itB, PointIterator itE, Dimension i=0, Dimension k=KSpace::dimension) const</div></div>
-<div class="ttc" id="aclassDGtal_1_1FreemanChain_html"><div class="ttname"><a href="classDGtal_1_1FreemanChain.html">DGtal::FreemanChain&lt; int &gt;</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1FreemanChain_html"><div class="ttname"><a href="classDGtal_1_1FreemanChain.html">DGtal::FreemanChain</a></div><div class="ttdef"><b>Definition:</b> <a href="FreemanChain_8h_source.html#l00113">FreemanChain.h:114</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1GridCurve_html"><div class="ttname"><a href="classDGtal_1_1GridCurve.html">DGtal::GridCurve</a></div><div class="ttdoc">Aim: describes, in a cellular space of dimension n, a closed or open sequence of signed d-cells (or d...</div><div class="ttdef"><b>Definition:</b> <a href="GridCurve_8h_source.html#l00172">GridCurve.h:173</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1GridCurve_html_ab2ee4f51e7b385c5de354b84e08748f4"><div class="ttname"><a href="classDGtal_1_1GridCurve.html#ab2ee4f51e7b385c5de354b84e08748f4">DGtal::GridCurve::initFromPointsRange</a></div><div class="ttdeci">bool initFromPointsRange(const TIterator &amp;itb, const TIterator &amp;ite)</div></div>
 <div class="ttc" id="aclassDGtal_1_1KhalimskySpaceND_html"><div class="ttname"><a href="classDGtal_1_1KhalimskySpaceND.html">DGtal::KhalimskySpaceND</a></div><div class="ttdoc">Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex,...</div><div class="ttdef"><b>Definition:</b> <a href="KhalimskySpaceND_8h_source.html#l00392">KhalimskySpaceND.h:394</a></div></div>
@@ -201,7 +201,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:47 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:44:49 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

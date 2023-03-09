@@ -199,17 +199,17 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( StarSkelStarC.equals( StarC ) );</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      }</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    WHEN( <span class="stringliteral">&quot;Computing the extrema of a set of cells C, extremas are correct&quot;</span> ) {</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      std::vector&lt; Point &gt; X;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      X.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(10,-2) ); </div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      X.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(5,5) ); </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      X.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(4,5) ); </div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      X.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(3,5) ); </div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      X.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(2,1) ); </div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      X.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(2,3) ); </div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      X.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(1,1) );</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      X.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(-2,3) );</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      X.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(-3,2) );</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      LatticeSet C( X.cbegin(), X.cend(), 0 );</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      std::vector&lt; Point &gt; XX;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      XX.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(10,-2) ); </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      XX.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(5,5) ); </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      XX.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(4,5) ); </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      XX.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(3,5) ); </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      XX.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(2,1) ); </div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      XX.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(2,3) ); </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      XX.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(1,1) );</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      XX.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(-2,3) );</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      XX.push_back( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(-3,2) );</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      LatticeSet C( XX.cbegin(), XX.cend(), 0 );</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      <span class="keyword">auto</span> ExtrC = C.extremaOfCells();</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      <a class="code" href="testConvexHull2DReverse_8cpp.html#a9bfb339d7f43fbbcb68ca21b3536bea8">CAPTURE</a>( C.toPointRange() );</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;      <a class="code" href="testConvexHull2DReverse_8cpp.html#a9bfb339d7f43fbbcb68ca21b3536bea8">CAPTURE</a>( ExtrC );</div>
@@ -495,7 +495,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::set&lt; Point &gt; S;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    LatticeSet        L;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb = 10000;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; nb; i++ )</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; nb; i++ )</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p( rand() % 20, rand() % 20, rand() % 20 );</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        S.insert( p );</div>
@@ -506,7 +506,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">auto</span> vec_L = L.toPointRange();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::sort( vec_L.begin(), vec_L.end() );</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::vector&lt; Point &gt; vec_S( S.begin(), S.end() );</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; vec_L.size(); i++ )</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; vec_L.size(); i++ )</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span> ( vec_L[ i ] != vec_S[ i ] )</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;          std::cout &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; vec_L[ i ] &lt;&lt; <span class="stringliteral">&quot; != &quot;</span> &lt;&lt; vec_S[ i ]</div>
@@ -541,7 +541,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:08 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:10 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -158,7 +158,7 @@ Extraction of all maximal rational segments between midpoints that are subconvex
 <div class="line">          <span class="keyword">auto</span> segment = dconv.<a name="a6"></a><a class="code" href="classDGtal_1_1DigitalConvexity.html#a03423890027c65b5d42ec327fd251c53">makeRationalSimplex</a>( { denominator, T2[i], T2[j] } );</div>
 <div class="line">          <span class="keywordflow">if</span> ( ! dconv.<a name="a7"></a><a class="code" href="classDGtal_1_1DigitalConvexity.html#abb35a70653904c9ca2b308221ff70565">isFullySubconvex</a>( segment, c_cover ) ) <span class="keywordflow">break</span>;</div>
 <div class="line">        }</div>
-<div class="line">      j = ( j + T2.size() - 1 ) % T2.size();</div>
+<div class="line">      j = (<span class="keywordtype">unsigned</span> int)( j + T2.size() - 1 ) % T2.size();</div>
 <div class="line">      <span class="keywordflow">if</span> ( j != last_j )</div>
 <div class="line">        { <span class="comment">// display fully subconvex segments</span></div>
 <div class="line">          aBoard.setLineWidth( 2.5 );</div>
@@ -188,7 +188,7 @@ Extraction of all maximal rational segments between midpoints that are subconvex
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:34 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:44:36 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

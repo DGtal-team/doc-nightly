@@ -452,7 +452,7 @@ $(function() {
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      B.push_back( b );</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;      I.push_back( large );</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;      myValidEdgeConstraints = myValidEdgeConstraints &amp;&amp; valid_edge_constraint; // a cut might invalidate an edge constraint</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      return A.size() - 1;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      return (unsigned int)(A.size() - 1);</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    }</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  else</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    {</div>
@@ -460,7 +460,7 @@ $(function() {
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;      B[ k ] = std::min( B[ k ], b );</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      I[ k ] = large;</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      myValidEdgeConstraints = myValidEdgeConstraints &amp;&amp; valid_edge_constraint; // a cut might invalidate an edge constraint</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      return k;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      return (unsigned int)k;</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    }</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;}</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;//-----------------------------------------------------------------------------</div>
@@ -704,8 +704,8 @@ $(function() {
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;  Domain localD( lo, hi );</div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;  for ( auto&amp;&amp; p : localD )</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    {</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;      auto I = C.intersectionIntervalAlongAxis( p, b );</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;      nb    += I.second - I.first;</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;      auto II = C.intersectionIntervalAlongAxis( p, b );</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;      nb    += II.second - II.first;</div>
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    }</div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;  return nb;</div>
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;}</div>
@@ -724,8 +724,8 @@ $(function() {
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;  Domain localD( lo, hi );</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;  for ( auto&amp;&amp; p : localD )</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    {</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;      auto I = C.intersectionIntervalAlongAxis( p, a );</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;      nb    += I.second - I.first;</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;      auto II = C.intersectionIntervalAlongAxis( p, a );</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;      nb    += II.second - II.first;</div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;      if ( nb &gt;= max ) return max;</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    }</div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;  return nb;</div>
@@ -756,10 +756,10 @@ $(function() {
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;  Domain localD( lo, hi );</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;  for ( auto&amp;&amp; p : localD )</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    {</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;      auto I = C.intersectionIntervalAlongAxis( p, a );</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;      auto II = C.intersectionIntervalAlongAxis( p, a );</div>
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;      Point q( 2*p - alpha_shift );</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;      q[ a ] = 2*I.first - alpha_shift[ a ];</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;      for ( Integer x = I.first; x &lt; I.second; x++ )</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;      q[ a ] = 2*II.first - alpha_shift[ a ];</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;      for ( Integer x = II.first; x &lt; II.second; x++ )</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;        {</div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;          pts.push_back( q );</div>
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;          q[ a ] += 2;</div>
@@ -793,10 +793,10 @@ $(function() {
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;  Domain localD( lo, hi );</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;  for ( auto&amp;&amp; p : localD )</div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    {</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;      auto I = C.intersectionIntervalAlongAxis( p, a );</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;      auto II = C.intersectionIntervalAlongAxis( p, a );</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;      Point q( 2*p - alpha_shift );</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;      q[ a ] = 2*I.first - alpha_shift[ a ];</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;      for ( Integer x = I.first; x &lt; I.second; x++ )</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;      q[ a ] = 2*II.first - alpha_shift[ a ];</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;      for ( Integer x = II.first; x &lt; II.second; x++ )</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        {</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;          pts_set.insert( q );</div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;          q[ a ] += 2;</div>
@@ -830,9 +830,9 @@ $(function() {
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;  Domain localD( lo, hi );</div>
 <div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;  for ( auto&amp;&amp; p : localD )</div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    {</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;      auto I   = C  .interiorIntersectionIntervalAlongAxis( p, a );</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;      auto II   = C  .interiorIntersectionIntervalAlongAxis( p, a );</div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;      auto clI = clC.intersectionIntervalAlongAxis( p, a );</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;      auto nbI   = I.second - I.first;</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;      auto nbI   = II.second - II.first;</div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;      auto nbclI = clI.second - clI.first;</div>
 <div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;      if ( nbI == nbclI ) continue;</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;      if ( nbI &gt;  nbclI )</div>
@@ -849,14 +849,14 @@ $(function() {
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        }</div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;      else</div>
 <div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        {</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;          if ( clI.first &lt; I.first )</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;          if ( clI.first &lt; II.first )</div>
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;            {</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;              q[ a ] = clI.first;</div>
 <div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;              pts.push_back( q );</div>
 <div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;            }</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;          if ( clI.second &gt; I.second )</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;          if ( clI.second &gt; II.second )</div>
 <div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;            {</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;              q[ a ] = I.second;</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;              q[ a ] = II.second;</div>
 <div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;              pts.push_back( q );</div>
 <div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;            }</div>
 <div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        }</div>
@@ -977,7 +977,7 @@ $(function() {
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;unsigned int</div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;DGtal::BoundedLatticePolytope&lt;TSpace&gt;::nbHalfSpaces() const</div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;{</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;  return A.size();</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;  return static_cast&lt;unsigned int&gt;(A.size());</div>
 <div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;}</div>
 <div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160; </div>
 <div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;//-----------------------------------------------------------------------------</div>
@@ -1175,7 +1175,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:38 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:44:40 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -219,30 +219,29 @@ $(function() {
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  if ( ! normals.empty() )</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    { // Build face normal map</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      std::vector&lt; RealVector &gt; faces_normals;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      Index i = 0;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      for ( auto face_n_indices : faces_normals_idx )</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        { </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;          RealVector n;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;          for ( auto k : face_n_indices ) n += normals[ k ];</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;          n /= face_n_indices.size();</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;          faces_normals.push_back( n );</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      bool ok_face_normals = smesh.setFaceNormals( faces_normals.begin(),</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                                   faces_normals.end() );</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      if ( ! ok_face_normals )</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        trace.warning() &lt;&lt; &quot;[SurfaceMeshReader::readOBJ]&quot;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                        &lt;&lt; &quot; Error setting face normals.&quot; &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      ok = ok &amp;&amp; ok_face_normals;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  return ( ! input.bad() ) &amp;&amp; ok;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      for ( auto face_n_indices : faces_normals_idx )</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        { </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;          RealVector _n;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;          for ( auto k : face_n_indices ) _n += normals[ k ];</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;          _n /= face_n_indices.size();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;          faces_normals.push_back( _n );</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      bool ok_face_normals = smesh.setFaceNormals( faces_normals.begin(),</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                                                   faces_normals.end() );</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      if ( ! ok_face_normals )</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        trace.warning() &lt;&lt; &quot;[SurfaceMeshReader::readOBJ]&quot;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                        &lt;&lt; &quot; Error setting face normals.&quot; &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      ok = ok &amp;&amp; ok_face_normals;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  return ( ! input.bad() ) &amp;&amp; ok;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;}</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;///////////////////////////////////////////////////////////////////////////////</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;///////////////////////////////////////////////////////////////////////////////</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;///////////////////////////////////////////////////////////////////////////////</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:58 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:00 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

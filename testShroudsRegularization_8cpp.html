@@ -176,7 +176,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">auto</span> regularizedPos = shrouds_reg.positions();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">auto</span> polySurf       = SH3::makeDualPolygonalSurface( idxsurface );</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">auto</span> polySurfPos    = polySurf-&gt;positions();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; regularizedPos.size(); i++ )</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; regularizedPos.size(); i++ )</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      polySurfPos[ i ] = regularizedPos[ i ];</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    SH3::saveOBJ( polySurf, <span class="stringliteral">&quot;goursat-shrouds-reg-k2.obj&quot;</span> );</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
@@ -205,14 +205,14 @@ Functions</h2></td></tr>
 <div class="ttc" id="atestCubicalComplex_8cpp_html_a2b87ed989d2519d025bd5d4fbcbac062"><div class="ttname"><a href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a></div><div class="ttdeci">KSpace K</div><div class="ttdef"><b>Definition:</b> <a href="testCubicalComplex_8cpp_source.html#l00062">testCubicalComplex.cpp:62</a></div></div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_ad8a25b2bbbbdb64c30a5442284db5bfb"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a></div><div class="ttdeci">REQUIRE(domain.isInside(aPoint))</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00335">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::energy()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, <a class="el" href="testCubicalComplex_8cpp_source.html#l00062">K</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00196">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::positions()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00304">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::regularize()</a>, and <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE()</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00336">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::energy()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, <a class="el" href="testCubicalComplex_8cpp_source.html#l00062">K</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00196">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::positions()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00304">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::regularize()</a>, and <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:09 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:10 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

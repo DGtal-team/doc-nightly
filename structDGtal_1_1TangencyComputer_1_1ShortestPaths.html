@@ -408,7 +408,7 @@ template&lt;typename TKSpace &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="TangencyComputer_8h_source.html#l00261">261</a> of file <a class="el" href="TangencyComputer_8h_source.html">TangencyComputer.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;      {</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        ASSERT( 0 &lt;= i &amp;&amp; i &lt; <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a6b70ee69ea5cfffc918cde21687dbf66">size</a>() );</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        ASSERT( i &lt; <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a6b70ee69ea5cfffc918cde21687dbf66">size</a>() );</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a35c0ac7ef735f2d45a32b1625ef28642">myAncestor</a>[ i ];</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      }</div>
 <div class="ttc" id="astructDGtal_1_1TangencyComputer_1_1ShortestPaths_html_a35c0ac7ef735f2d45a32b1625ef28642"><div class="ttname"><a href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a35c0ac7ef735f2d45a32b1625ef28642">DGtal::TangencyComputer::ShortestPaths::myAncestor</a></div><div class="ttdeci">std::vector&lt; Index &gt; myAncestor</div><div class="ttdef"><b>Definition:</b> <a href="TangencyComputer_8h_source.html#l00341">TangencyComputer.h:341</a></div></div>
@@ -571,7 +571,7 @@ template&lt;typename TKSpace &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="TangencyComputer_8h_source.html#l00273">273</a> of file <a class="el" href="TangencyComputer_8h_source.html">TangencyComputer.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      {</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        ASSERT( 0 &lt;= i &amp;&amp; i &lt; <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a6b70ee69ea5cfffc918cde21687dbf66">size</a>() );</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        ASSERT( i &lt; <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a6b70ee69ea5cfffc918cde21687dbf66">size</a>() );</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#ab16d152bb26e485b49051669c4f2e910">myDistance</a>[ i ];</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      }</div>
 </div><!-- fragment -->
@@ -775,7 +775,7 @@ template&lt;typename TKSpace &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="TangencyComputer_8h_source.html#l00184">184</a> of file <a class="el" href="TangencyComputer_8h_source.html">TangencyComputer.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        ASSERT( 0 &lt;= i &amp;&amp; i &lt; <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a6b70ee69ea5cfffc918cde21687dbf66">size</a>() );</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        ASSERT( i &lt; <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a6b70ee69ea5cfffc918cde21687dbf66">size</a>() );</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a096891edfde6fb50cdc4075f7fcf0b89">myQ</a>.push( std::make_tuple( i, i, 0.0 ) );</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a35c0ac7ef735f2d45a32b1625ef28642">myAncestor</a>[ i ] = i;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#ab16d152bb26e485b49051669c4f2e910">myDistance</a>[ i ] = 0.0;</div>
@@ -837,7 +837,7 @@ template&lt;typename IndexFwdIterator &gt; </div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">for</span> ( ; it != itE; ++it )</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;          {</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> i = *it;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            ASSERT( 0 &lt;= i &amp;&amp; i &lt; <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a6b70ee69ea5cfffc918cde21687dbf66">size</a>() );</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            ASSERT( i &lt; <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a6b70ee69ea5cfffc918cde21687dbf66">size</a>() );</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a096891edfde6fb50cdc4075f7fcf0b89">myQ</a>.push( std::make_tuple( i, i, 0.0 ) );</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;          }</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> elem = <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a096891edfde6fb50cdc4075f7fcf0b89">myQ</a>.top();</div>
@@ -1088,7 +1088,7 @@ template&lt;typename TKSpace &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="TangencyComputer_8h_source.html#l00249">249</a> of file <a class="el" href="TangencyComputer_8h_source.html">TangencyComputer.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      {</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        ASSERT( 0 &lt;= i &amp;&amp; i &lt; <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a6b70ee69ea5cfffc918cde21687dbf66">size</a>() );</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        ASSERT( i &lt; <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#a6b70ee69ea5cfffc918cde21687dbf66">size</a>() );</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structDGtal_1_1TangencyComputer_1_1ShortestPaths.html#ae2d20f535c0249a5e7927f1ed8f844a0">myTgcyComputer</a>-&gt;<a class="code" href="classDGtal_1_1TangencyComputer.html#a91e22a1b33dc9d389a877438b718eeaa">point</a>( i );</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      }</div>
 <div class="ttc" id="aclassDGtal_1_1TangencyComputer_html_a91e22a1b33dc9d389a877438b718eeaa"><div class="ttname"><a href="classDGtal_1_1TangencyComputer.html#a91e22a1b33dc9d389a877438b718eeaa">DGtal::TangencyComputer::point</a></div><div class="ttdeci">const Point &amp; point(Index i) const</div><div class="ttdef"><b>Definition:</b> <a href="TangencyComputer_8h_source.html#l00437">TangencyComputer.h:437</a></div></div>
@@ -1421,7 +1421,7 @@ template&lt;typename TKSpace &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:16 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:18 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

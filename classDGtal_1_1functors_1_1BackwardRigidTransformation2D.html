@@ -400,7 +400,7 @@ template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint
 
 <p class="definition">Definition at line <a class="el" href="RigidTransformation2D_8h_source.html#l00176">176</a> of file <a class="el" href="RigidTransformation2D_8h_source.html">RigidTransformation2D.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    {</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> p;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> p;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        p[0] = ( <a class="code" href="classDGtal_1_1functors_1_1BackwardRigidTransformation2D.html#a05f5a0fe7411d01a14e82c13c47e30f1">t_cos</a> * (aInput[0] - <a class="code" href="classDGtal_1_1functors_1_1BackwardRigidTransformation2D.html#ae0b5a8ef63d16d1b5a0a3980e9e3dd8d">translation</a>[0] - <a class="code" href="classDGtal_1_1functors_1_1BackwardRigidTransformation2D.html#adee60f16edd24a7a282a8ebd0e97cf92">origin</a>[0] ) +</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;               <a class="code" href="classDGtal_1_1functors_1_1BackwardRigidTransformation2D.html#a2b2a9e9b070d962041b8b3a85ad25986">t_sin</a> * ( aInput[1] - <a class="code" href="classDGtal_1_1functors_1_1BackwardRigidTransformation2D.html#ae0b5a8ef63d16d1b5a0a3980e9e3dd8d">translation</a>[1] - <a class="code" href="classDGtal_1_1functors_1_1BackwardRigidTransformation2D.html#adee60f16edd24a7a282a8ebd0e97cf92">origin</a>[1] ) ) + <a class="code" href="classDGtal_1_1functors_1_1BackwardRigidTransformation2D.html#adee60f16edd24a7a282a8ebd0e97cf92">origin</a>[0];</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
@@ -409,7 +409,7 @@ template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1functors_1_1BackwardRigidTransformation2D.html#ae455776d78a7d3899bd5ce986c4ea09d">functor</a> ( p);</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
 <div class="ttc" id="aclassDGtal_1_1functors_1_1BackwardRigidTransformation2D_html_ae455776d78a7d3899bd5ce986c4ea09d"><div class="ttname"><a href="classDGtal_1_1functors_1_1BackwardRigidTransformation2D.html#ae455776d78a7d3899bd5ce986c4ea09d">DGtal::functors::BackwardRigidTransformation2D::functor</a></div><div class="ttdeci">TFunctor functor</div><div class="ttdef"><b>Definition:</b> <a href="RigidTransformation2D_8h_source.html#l00193">RigidTransformation2D.h:193</a></div></div>
-<div class="ttc" id="atestAstroid2D_8cpp_html_ac914bb734ccb5a7c569747c1e699c1aa"><div class="ttname"><a href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a></div><div class="ttdeci">Z2i::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testAstroid2D_8cpp_source.html#l00046">testAstroid2D.cpp:46</a></div></div>
+<div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="RigidTransformation2D_8h_source.html#l00193">DGtal::functors::BackwardRigidTransformation2D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::functor</a>, <a class="el" href="RigidTransformation2D_8h_source.html#l00189">DGtal::functors::BackwardRigidTransformation2D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::origin</a>, <a class="el" href="RigidTransformation2D_8h_source.html#l00191">DGtal::functors::BackwardRigidTransformation2D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::t_cos</a>, <a class="el" href="RigidTransformation2D_8h_source.html#l00190">DGtal::functors::BackwardRigidTransformation2D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::t_sin</a>, and <a class="el" href="RigidTransformation2D_8h_source.html#l00192">DGtal::functors::BackwardRigidTransformation2D&lt; TSpace, TInputValue, TOutputValue, TFunctor &gt;::translation</a>.</p>
 
@@ -562,7 +562,7 @@ template&lt;typename TSpace , typename TInputValue  = typename TSpace::RealPoint
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:23 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:24 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

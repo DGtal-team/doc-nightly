@@ -250,7 +250,7 @@ template&lt;typename Quotient &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="testLightSternBrocot_8cpp_source.html#l00053">53</a> of file <a class="el" href="testLightSternBrocot_8cpp_source.html">testLightSternBrocot.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s = c1.size() &lt; c2.size() ? c1.size() : c2.size();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">auto</span> s = c1.size() &lt; c2.size() ? c1.size() : c2.size();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">if</span> ( ( s != c1.size() ) &amp;&amp; ( c1.back() != <a class="code" href="structDGtal_1_1NumberTraits.html">NumberTraits&lt;Quotient&gt;::ONE</a> ) )</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">if</span> ( ( s != c2.size() ) &amp;&amp; ( c2.back() != <a class="code" href="structDGtal_1_1NumberTraits.html">NumberTraits&lt;Quotient&gt;::ONE</a> ) )</div>
@@ -936,8 +936,8 @@ template&lt;typename SB &gt; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  p /= g;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  q /= g;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="classDGtal_1_1IntegerComputer.html">IntegerComputer&lt;Quotient&gt;</a> ics;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  Quotient sp = <a class="code" href="structDGtal_1_1NumberTraits.html">NumberTraits&lt;Integer&gt;::castToInt64_t</a>( p );</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  Quotient sq = <a class="code" href="structDGtal_1_1NumberTraits.html">NumberTraits&lt;Integer&gt;::castToInt64_t</a>( q );</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  Quotient sp = (Quotient)<a class="code" href="structDGtal_1_1NumberTraits.html">NumberTraits&lt;Integer&gt;::castToInt64_t</a>( p );</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  Quotient sq = (Quotient)<a class="code" href="structDGtal_1_1NumberTraits.html">NumberTraits&lt;Integer&gt;::castToInt64_t</a>( q );</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  std::vector&lt;Quotient&gt; cf1;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  ics.<a class="code" href="classDGtal_1_1IntegerComputer.html#a03043ddce3329d352137eadccb5ca57d">getCFrac</a>( cf1, sp, sq );</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  Fraction f1 = SB::fraction( p, q );</div>
@@ -952,8 +952,8 @@ template&lt;typename SB &gt; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; nbok &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; nb &lt;&lt; <span class="stringliteral">&quot;) &quot;</span> </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;               &lt;&lt; <span class="stringliteral">&quot; cfrac&quot;</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;               &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> depth = cf1.size();</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k = 1; k &lt; depth; ++k )</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">size_t</span> depth = cf1.size();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> k = 1; k &lt; depth; ++k )</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      std::vector&lt;Quotient&gt; cf1_red;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      Fraction fr = f1.reduced( k );</div>
@@ -1120,7 +1120,7 @@ template&lt;typename Fraction &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:08 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:10 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

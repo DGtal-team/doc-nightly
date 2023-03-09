@@ -96,9 +96,9 @@ $(function() {
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
-<div class="line"><a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> <a name="a0"></a><a class="code" href="viewDualSurface_8cpp.html#a770ac8a422cca72622b32106f81c122c">wedge</a>( <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; v1, <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; v2 )</div>
+<div class="line"><a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> <a name="a0"></a><a class="code" href="viewDualSurface_8cpp.html#a770ac8a422cca72622b32106f81c122c">wedge</a>( <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; v1, <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; v2 )</div>
 <div class="line">{</div>
-<div class="line">  <span class="keywordflow">return</span> <a name="a1"></a><a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a>( v1[ 1 ] * v2[ 2 ] - v1[ 2 ] * v2[ 1 ],</div>
+<div class="line">  <span class="keywordflow">return</span> <a name="a1"></a><a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a>( v1[ 1 ] * v2[ 2 ] - v1[ 2 ] * v2[ 1 ],</div>
 <div class="line">                 v1[ 2 ] * v2[ 0 ] - v1[ 0 ] * v2[ 2 ],</div>
 <div class="line">                 v1[ 0 ] * v2[ 1 ] - v1[ 1 ] * v2[ 0 ] );</div>
 <div class="line">}</div>
@@ -106,10 +106,10 @@ $(function() {
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
 <div class="line"><span class="keyword">struct </span>LessThanOnFace</div>
 <div class="line">{</div>
-<div class="line">  <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> N; <span class="comment">// expected normal</span></div>
-<div class="line">  <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> P; <span class="comment">// origin or first point</span></div>
+<div class="line">  <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> N; <span class="comment">// expected normal</span></div>
+<div class="line">  <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> P; <span class="comment">// origin or first point</span></div>
 <div class="line">  <span class="keyword">const</span> std::vector&lt; Vector &gt; &amp; pts;</div>
-<div class="line">  <span class="keyword">inline</span> LessThanOnFace( <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; aN, <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; aP,</div>
+<div class="line">  <span class="keyword">inline</span> LessThanOnFace( <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; aN, <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; aP,</div>
 <div class="line">                         <span class="keyword">const</span> std::vector&lt; Vector &gt; &amp; aPts )</div>
 <div class="line">    : N( aN ), P( aP ), pts( aPts )</div>
 <div class="line">  {}</div>
@@ -134,15 +134,15 @@ $(function() {
 <div class="line">      <span class="keywordflow">if</span> ( i1 != i2 )</div>
 <div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i3 = i1 &gt; i2 ? i1+1 : i2+1; i3 &lt; points.size(); ++i3 )</div>
 <div class="line">          {</div>
-<div class="line">            <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> P12 = points[ i2 ] - points[ i1 ];</div>
-<div class="line">            <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> P13 = points[ i3 ] - points[ i1 ];</div>
-<div class="line">            <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> N = <a class="code" href="viewDualSurface_8cpp.html#a770ac8a422cca72622b32106f81c122c">wedge</a>( P12, P13 );</div>
+<div class="line">            <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> P12 = points[ i2 ] - points[ i1 ];</div>
+<div class="line">            <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> P13 = points[ i3 ] - points[ i1 ];</div>
+<div class="line">            <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> N = <a class="code" href="viewDualSurface_8cpp.html#a770ac8a422cca72622b32106f81c122c">wedge</a>( P12, P13 );</div>
 <div class="line">            <span class="keywordflow">if</span> ( N == Vector::zero ) <span class="keywordflow">continue</span>;</div>
 <div class="line"> </div>
 <div class="line">            <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbBadPos = 0;</div>
 <div class="line">            <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i4 = 0; i4 &lt; points.size(); ++i4 )</div>
 <div class="line">              {</div>
-<div class="line">                <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> P14 = points[ i4 ] - points[ i1 ];</div>
+<div class="line">                <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> P14 = points[ i4 ] - points[ i1 ];</div>
 <div class="line">                Scalar c = N.dot( P14 );</div>
 <div class="line">                <span class="keywordflow">if</span> ( c == 0 ) aFace.push_back( i4 );</div>
 <div class="line">                <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( ( left_handed &amp;&amp; ( c &gt; 0 ) )</div>
@@ -188,20 +188,20 @@ $(function() {
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> <a name="_a4"></a><a class="code" href="classDGtal_1_1Viewer3D.html">Viewer</a>,</div>
-<div class="line">          <span class="keyword">typename</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a>&gt;</div>
+<div class="line">          <span class="keyword">typename</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a>&gt;</div>
 <div class="line"><span class="keywordtype">void</span> <a name="a5"></a><a class="code" href="viewDualSurface_8cpp.html#a3e65b2c9115c83c63b5cc292e7e37c94">viewPolygons</a></div>
 <div class="line">( <a class="code" href="classDGtal_1_1Viewer3D.html">Viewer</a> &amp; viewer,</div>
 <div class="line">  <span class="keyword">const</span> <a name="_a6"></a><a class="code" href="classDGtal_1_1Color.html">DGtal::Color</a> &amp; color,</div>
 <div class="line">  <span class="keyword">const</span> std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp; indices,</div>
 <div class="line">  <span class="keyword">const</span> std::vector&lt;Vector&gt; &amp; points )</div>
 <div class="line">{</div>
-<div class="line">  <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="classDGtal_1_1Viewer3D.html#a8eab90fb6b37a77e1858f908f0b16a41">Viewer::RealPoint</a> <a name="a7"></a><a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>;</div>
+<div class="line">  <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="classDGtal_1_1Viewer3D.html#a8eab90fb6b37a77e1858f908f0b16a41">Viewer::RealPoint</a> <a name="a7"></a><a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>;</div>
 <div class="line">  std::vector&lt;RealPoint&gt; pts3d;</div>
 <div class="line">  <a class="code" href="classDGtal_1_1Color.html">DGtal::Color</a> fillColorSave = viewer.<a name="a8"></a><a class="code" href="classDGtal_1_1Display3D.html#a5d3155c6695bf924560f085d298d318f">getFillColor</a>();</div>
 <div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> f = 0; f &lt; indices.size(); ++f )</div>
 <div class="line">    {</div>
 <div class="line">      pts3d.clear();</div>
-<div class="line">      <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> P;</div>
+<div class="line">      <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> P;</div>
 <div class="line">      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> v = 0; v &lt; indices[ f ].size(); ++v )</div>
 <div class="line">        {</div>
 <div class="line">          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = indices[ f ][ v ];</div>
@@ -216,7 +216,7 @@ $(function() {
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
-<div class="line"><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a name="a11"></a><a class="code" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>( <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; z )</div>
+<div class="line"><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a name="a11"></a><a class="code" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>( <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; z )</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = 0;</div>
 <div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; Vector::dimension; ++i )</div>
@@ -225,30 +225,30 @@ $(function() {
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
-<div class="line"><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a name="a12"></a><a class="code" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; z )</div>
+<div class="line"><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a name="a12"></a><a class="code" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; z )</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; Vector::dimension; ++i )</div>
 <div class="line">    <span class="keywordflow">if</span> ( ( z[ i ] % 2 ) == 1 ) <span class="keywordflow">return</span> i;</div>
 <div class="line">  <span class="keywordflow">return</span> Vector::dimension;</div>
 <div class="line">}</div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
-<div class="line"><a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> <a name="a13"></a><a class="code" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; z, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k )</div>
+<div class="line"><a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> <a name="a13"></a><a class="code" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; z, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k )</div>
 <div class="line">{</div>
-<div class="line">  <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> z2( z );</div>
+<div class="line">  <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> z2( z );</div>
 <div class="line">  --z2[ k ];</div>
 <div class="line">  <span class="keywordflow">return</span> z2;</div>
 <div class="line">}</div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
-<div class="line"><a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> <a name="a14"></a><a class="code" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; z, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k )</div>
+<div class="line"><a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> <a name="a14"></a><a class="code" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; z, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k )</div>
 <div class="line">{</div>
-<div class="line">  <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> z2( z );</div>
+<div class="line">  <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> z2( z );</div>
 <div class="line">  ++z2[ k ];</div>
 <div class="line">  <span class="keywordflow">return</span> z2;</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
 <div class="line"><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a name="a15"></a><a class="code" href="viewDualSurface_8cpp.html#a8e1cb1e92baa215c8be717817a1df568">nbLighted</a>( std::map&lt; Vector, bool &gt; &amp; f,</div>
-<div class="line">                <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; z )</div>
+<div class="line">                <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; z )</div>
 <div class="line">{ <span class="comment">// z of dim &gt;=2</span></div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>( z );</div>
 <div class="line">  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ] ? 1 : 0;</div>
@@ -261,7 +261,7 @@ $(function() {
 <div class="line"><span class="comment">// Most similar to convex hull... but not exactly, e.g. cfg 31.</span></div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
 <div class="line"><span class="keywordtype">bool</span> <a name="a16"></a><a class="code" href="viewDualSurface_8cpp.html#a55477fca21a3de4a13ceb25954524d42">lightBetween</a>( std::map&lt; Vector, bool &gt; &amp; f,</div>
-<div class="line">                   <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; z )</div>
+<div class="line">                   <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; z )</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>( z );</div>
 <div class="line">  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ];</div>
@@ -272,7 +272,7 @@ $(function() {
 <div class="line">    }</div>
 <div class="line">  <span class="keywordflow">else</span></div>
 <div class="line">    {</div>
-<div class="line">      <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> v1, v2;</div>
+<div class="line">      <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> v1, v2;</div>
 <div class="line">      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; Vector::dimension; ++i )</div>
 <div class="line">        {</div>
 <div class="line">          v1[ i ] = ( ( z[ i ] % 2 ) == 1 ) ? z[ i ] - 1 : z[ i ];</div>
@@ -296,7 +296,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
 <div class="line"><span class="keywordtype">bool</span> <a name="a19"></a><a class="code" href="viewDualSurface_8cpp.html#aede35bb690b1e4f7f5bcc276f95d2d19">lightMax</a>( std::map&lt; Vector, bool &gt; &amp; f,</div>
-<div class="line">               <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; z )</div>
+<div class="line">               <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; z )</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>( z );</div>
 <div class="line">  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ];</div>
@@ -313,13 +313,13 @@ $(function() {
 <div class="line">}</div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
 <div class="line"><span class="keywordtype">bool</span> <a name="a20"></a><a class="code" href="viewDualSurface_8cpp.html#af27d5efd968a63005c150c38da8fb282">lightMinMax</a>( std::map&lt; Vector, bool &gt; &amp; f,</div>
-<div class="line">                  <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; z )</div>
+<div class="line">                  <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; z )</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>( z );</div>
 <div class="line">  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ];</div>
 <div class="line">  <span class="keywordflow">else</span></div>
 <div class="line">    {</div>
-<div class="line">      <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> tmp( z );</div>
+<div class="line">      <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> tmp( z );</div>
 <div class="line">      <span class="keywordtype">bool</span> val = <span class="keyword">true</span>;</div>
 <div class="line">      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; d; ++i )</div>
 <div class="line">        {</div>
@@ -332,13 +332,13 @@ $(function() {
 <div class="line">}</div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
 <div class="line"><span class="keywordtype">bool</span> <a name="a21"></a><a class="code" href="viewDualSurface_8cpp.html#a42b06df1cf154659f846732d28d71bde">lightMaxMin</a>( std::map&lt; Vector, bool &gt; &amp; f,</div>
-<div class="line">                  <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; z )</div>
+<div class="line">                  <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; z )</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>( z );</div>
 <div class="line">  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ];</div>
 <div class="line">  <span class="keywordflow">else</span></div>
 <div class="line">    {</div>
-<div class="line">      <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> tmp( z );</div>
+<div class="line">      <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> tmp( z );</div>
 <div class="line">      <span class="keywordtype">bool</span> val = <span class="keyword">false</span>;</div>
 <div class="line">      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; d; ++i )</div>
 <div class="line">        {</div>
@@ -352,14 +352,14 @@ $(function() {
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
 <div class="line"><span class="keywordtype">bool</span> <a name="a22"></a><a class="code" href="viewDualSurface_8cpp.html#aef6370116574f06c18257853a2777d2e">lightEpsilon</a>( std::map&lt; Vector, bool &gt; &amp; f,</div>
-<div class="line">                   <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; z,</div>
+<div class="line">                   <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; z,</div>
 <div class="line">                   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> epsilon )</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>( z );</div>
 <div class="line">  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ];</div>
 <div class="line">  <span class="keywordflow">else</span></div>
 <div class="line">    {</div>
-<div class="line">      <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> tmp( z );</div>
+<div class="line">      <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> tmp( z );</div>
 <div class="line">      <span class="keywordtype">bool</span> eps_d = ( ( epsilon &gt;&gt; (d-1)) &amp; 1 ) != 0;</div>
 <div class="line">      <span class="keywordtype">bool</span> val = eps_d ? true : <span class="keyword">false</span>;</div>
 <div class="line">      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; d; ++i )</div>
@@ -380,7 +380,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
 <div class="line"><span class="keywordtype">void</span> <a name="a23"></a><a class="code" href="viewDualSurface_8cpp.html#a712217d56535193a44402f7de57bf6e9">fillCfg</a>( std::map&lt; Vector, bool &gt; &amp; f,</div>
-<div class="line">              <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; z,</div>
+<div class="line">              <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; z,</div>
 <div class="line">              <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cfg )</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>( z );</div>
@@ -410,7 +410,7 @@ $(function() {
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Vector&gt;</div>
 <div class="line"><span class="keywordtype">void</span> <a name="a24"></a><a class="code" href="viewDualSurface_8cpp.html#aefb87f0ce777f18519d83f636eb47802">localDualVolume</a>( std::vector&lt;Vector&gt; &amp; points,</div>
 <div class="line">                      std::map&lt; Vector, bool &gt; &amp; f,</div>
-<div class="line">                      <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; z )</div>
+<div class="line">                      <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; z )</div>
 <div class="line">{</div>
 <div class="line">  points.clear();</div>
 <div class="line">  <a name="a25"></a><a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Z3i::Domain</a> <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>( z, z + Vector::diagonal(1) );</div>
@@ -425,10 +425,10 @@ $(function() {
 <div class="line"><span class="keyword">struct </span>ConfigPointPredicate</div>
 <div class="line">{</div>
 <div class="line">  std::map&lt; Vector, bool &gt; &amp; fct;</div>
-<div class="line">  <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> base;</div>
-<div class="line">  ConfigPointPredicate( std::map&lt; Vector, bool &gt; &amp; aFct, <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> aBase )</div>
+<div class="line">  <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> base;</div>
+<div class="line">  ConfigPointPredicate( std::map&lt; Vector, bool &gt; &amp; aFct, <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> aBase )</div>
 <div class="line">    : fct( aFct ), base( aBase )  {}</div>
-<div class="line">  <span class="keywordtype">bool</span> operator()( <span class="keyword">const</span> <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> &amp; p )<span class="keyword"> const</span></div>
+<div class="line">  <span class="keywordtype">bool</span> operator()( <span class="keyword">const</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> &amp; p )<span class="keyword"> const</span></div>
 <div class="line"><span class="keyword">  </span>{</div>
 <div class="line">    <span class="keywordflow">return</span> fct[ p * 2 + base];</div>
 <div class="line">  }</div>
@@ -455,14 +455,14 @@ $(function() {
 <div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y = 0; (y &lt; 16) &amp;&amp; (cfg &lt;= cfg2); ++y )</div>
 <div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x = 0; (x &lt; 16) &amp;&amp; (cfg &lt;= cfg2); ++x, ++cfg )</div>
 <div class="line">      {</div>
-<div class="line">        <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> offset( x*6, y*6, 0 );</div>
-<div class="line">        <a class="code" href="viewDualSurface_8cpp.html#a712217d56535193a44402f7de57bf6e9">fillCfg</a>( f, offset + <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a>( 1, 1, 1 ), cfg );</div>
-<div class="line">        <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a> <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>( offset + <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a>( 0, 0, 0), offset + <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a>( 2, 2, 2 ) );</div>
+<div class="line">        <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> offset( x*6, y*6, 0 );</div>
+<div class="line">        <a class="code" href="viewDualSurface_8cpp.html#a712217d56535193a44402f7de57bf6e9">fillCfg</a>( f, offset + <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a>( 1, 1, 1 ), cfg );</div>
+<div class="line">        <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a> <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>( offset + <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a>( 0, 0, 0), offset + <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a>( 2, 2, 2 ) );</div>
 <div class="line">        <a class="code" href="testArithmeticalDSSComputerOnSurfels_8cpp.html#aebe586e91159919ccf2f565d4407fff7">KSpace</a> <a name="a28"></a><a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>;</div>
-<div class="line">        <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.init( <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a>( 0, 0, 0), <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a>( 2, 2, 2 ), <span class="keyword">true</span> );</div>
+<div class="line">        <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.init( <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a>( 0, 0, 0), <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a>( 2, 2, 2 ), <span class="keyword">true</span> );</div>
 <div class="line">        ConfigPointPredicate&lt;Vector&gt; cpp( f, offset );</div>
 <div class="line">        CellSet aBoundary;</div>
-<div class="line">        Surfaces&lt;KSpace&gt;::uMakeBoundary( aBoundary, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, cpp, <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a>( 0, 0, 0), <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a>( 1, 1, 1 ) );</div>
+<div class="line">        Surfaces&lt;KSpace&gt;::uMakeBoundary( aBoundary, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, cpp, <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a>( 0, 0, 0), <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a>( 1, 1, 1 ) );</div>
 <div class="line">        <span class="keywordflow">for</span> ( CellSet::const_iterator it = aBoundary.begin(), itE = aBoundary.end();</div>
 <div class="line">              it != itE; ++it )</div>
 <div class="line">          {</div>
@@ -477,7 +477,7 @@ $(function() {
 <div class="line">          }</div>
 <div class="line">        viewer &lt;&lt; CustomColors3D( <a class="code" href="classDGtal_1_1Color.html">DGtal::Color</a>( 255, 0, 0, 255 ), fillColor );</div>
 <div class="line">        std::vector&lt; std::vector&lt; unsigned int &gt; &gt; indices;</div>
-<div class="line">        <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a> domain2( offset + <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a>( 0, 0, 0), offset + <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a>( 1, 1, 1 ) );</div>
+<div class="line">        <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a> domain2( offset + <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a>( 0, 0, 0), offset + <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a>( 1, 1, 1 ) );</div>
 <div class="line"> </div>
 <div class="line">        <span class="keywordflow">for</span> ( <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">Domain::ConstIterator</a> it = <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.begin(), itE = <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.end();</div>
 <div class="line">              it != itE; ++it )</div>
@@ -499,16 +499,16 @@ $(function() {
 <div class="ttc" id="aclassDGtal_1_1Viewer3D_html"><div class="ttname"><a href="classDGtal_1_1Viewer3D.html">DGtal::Viewer3D</a></div><div class="ttdef"><b>Definition:</b> <a href="Viewer3D_8h_source.html#l00131">Viewer3D.h:132</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Viewer3D_html_a1ea1c9cf781ce6940db02c352cf24e6f"><div class="ttname"><a href="classDGtal_1_1Viewer3D.html#a1ea1c9cf781ce6940db02c352cf24e6f">DGtal::Viewer3D::show</a></div><div class="ttdeci">virtual void show()</div><div class="ttdoc">Overload QWidget method in order to add a call to updateList() method (to ensure that the lists are w...</div></div>
 <div class="ttc" id="aclassDGtal_1_1Viewer3D_html_a8eab90fb6b37a77e1858f908f0b16a41"><div class="ttname"><a href="classDGtal_1_1Viewer3D.html#a8eab90fb6b37a77e1858f908f0b16a41">DGtal::Viewer3D::RealPoint</a></div><div class="ttdeci">Display::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="Viewer3D_8h_source.html#l00145">Viewer3D.h:145</a></div></div>
+<div class="ttc" id="aexamplePlaneProbingParallelepipedEstimator_8cpp_html_a23c0623485ed9af765bab12ac424843c"><div class="ttname"><a href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a></div><div class="ttdeci">DigitalPlane::Point Vector</div><div class="ttdef"><b>Definition:</b> <a href="examplePlaneProbingParallelepipedEstimator_8cpp_source.html#l00045">examplePlaneProbingParallelepipedEstimator.cpp:45</a></div></div>
 <div class="ttc" id="agreedy-plane-segmentation-ex2_8cpp_html_a6d06fad433cff067dfcbbbf16d6e2dbf"><div class="ttname"><a href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a></div><div class="ttdeci">MyDigitalSurface::ConstIterator ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="greedy-plane-segmentation-ex2_8cpp_source.html#l00093">greedy-plane-segmentation-ex2.cpp:93</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
 <div class="ttc" id="atestArithmeticDSS-benchmark_8cpp_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="testArithmeticDSS-benchmark_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> <a href="testArithmeticDSS-benchmark_8cpp_source.html#l00147">testArithmeticDSS-benchmark.cpp:147</a></div></div>
 <div class="ttc" id="atestArithmeticalDSSComputerOnSurfels_8cpp_html_aebe586e91159919ccf2f565d4407fff7"><div class="ttname"><a href="testArithmeticalDSSComputerOnSurfels_8cpp.html#aebe586e91159919ccf2f565d4407fff7">KSpace</a></div><div class="ttdeci">Z3i::KSpace KSpace</div><div class="ttdef"><b>Definition:</b> <a href="testArithmeticalDSSComputerOnSurfels_8cpp_source.html#l00048">testArithmeticalDSSComputerOnSurfels.cpp:48</a></div></div>
-<div class="ttc" id="atestAstroid2D_8cpp_html_ac914bb734ccb5a7c569747c1e699c1aa"><div class="ttname"><a href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a></div><div class="ttdeci">Z2i::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testAstroid2D_8cpp_source.html#l00046">testAstroid2D.cpp:46</a></div></div>
 <div class="ttc" id="atestClone2_8cpp_html_a15e9592ccc512dc691b46185e6814758"><div class="ttname"><a href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a></div><div class="ttdeci">MyPointD Point</div><div class="ttdef"><b>Definition:</b> <a href="testClone2_8cpp_source.html#l00383">testClone2.cpp:383</a></div></div>
-<div class="ttc" id="atestCombinDSS_8cpp_html_a609ee1808a3b4f883fb28df65e9a2ed6"><div class="ttname"><a href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a></div><div class="ttdeci">FreemanChain&lt; int &gt;::Vector Vector</div><div class="ttdef"><b>Definition:</b> <a href="testCombinDSS_8cpp_source.html#l00060">testCombinDSS.cpp:60</a></div></div>
 <div class="ttc" id="atestCubicalComplex_8cpp_html_a2b87ed989d2519d025bd5d4fbcbac062"><div class="ttname"><a href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a></div><div class="ttdeci">KSpace K</div><div class="ttdef"><b>Definition:</b> <a href="testCubicalComplex_8cpp_source.html#l00062">testCubicalComplex.cpp:62</a></div></div>
 <div class="ttc" id="atestProjection_8cpp_html_a1f1a69f8d8b037b72c2160ed12b3ef51"><div class="ttname"><a href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a></div><div class="ttdeci">Domain domain</div><div class="ttdef"><b>Definition:</b> <a href="testProjection_8cpp_source.html#l00088">testProjection.cpp:88</a></div></div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_acd532b318489cd93df57e0b3d136d050"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a></div><div class="ttdeci">HyperRectDomain&lt; Space &gt; Domain</div><div class="ttdef"><b>Definition:</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00044">testSimpleRandomAccessRangeFromPoint.cpp:44</a></div></div>
+<div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 <div class="ttc" id="aviewDualSurface_8cpp_html_a1a254aa17418553bc21790001a69262a"><div class="ttname"><a href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a></div><div class="ttdeci">unsigned int dim(const Vector &amp;z)</div><div class="ttdef"><b>Definition:</b> <a href="viewDualSurface_8cpp_source.html#l00174">viewDualSurface.cpp:174</a></div></div>
 <div class="ttc" id="aviewDualSurface_8cpp_html_a1d493bcf04cd0f0b7ea1244755c47aa6"><div class="ttname"><a href="viewDualSurface_8cpp.html#a1d493bcf04cd0f0b7ea1244755c47aa6">naiveConvexHull</a></div><div class="ttdeci">void naiveConvexHull(std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;indices, const std::vector&lt; Vector &gt; &amp;points, bool left_handed)</div><div class="ttdef"><b>Definition:</b> <a href="viewDualSurface_8cpp_source.html#l00080">viewDualSurface.cpp:81</a></div></div>
 <div class="ttc" id="aviewDualSurface_8cpp_html_a3e65b2c9115c83c63b5cc292e7e37c94"><div class="ttname"><a href="viewDualSurface_8cpp.html#a3e65b2c9115c83c63b5cc292e7e37c94">viewPolygons</a></div><div class="ttdeci">void viewPolygons(Viewer &amp;viewer, const DGtal::Color &amp;color, const std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;indices, const std::vector&lt; Vector &gt; &amp;points)</div><div class="ttdef"><b>Definition:</b> <a href="viewDualSurface_8cpp_source.html#l00147">viewDualSurface.cpp:148</a></div></div>
@@ -528,7 +528,7 @@ $(function() {
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:35 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:44:37 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

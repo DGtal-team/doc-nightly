@@ -419,7 +419,7 @@ template&lt;typename TFunctor , typename TArg , typename TRes &gt; </div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            (pointInSourceDomain3D2== <a class="code" href="classDGtal_1_1PointVector.html">PointVector&lt;3,int&gt;</a>(0, 1, 0));</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="comment">// FlipDomainAxis</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    std::vector&lt;HyperRectDomain&lt;SpaceND&lt;3, int&gt; &gt;<a class="code" href="testHalfEdgeDataStructure_8cpp.html#a1aba5499fd29449181365ce424303a10">::Size</a>&gt; vectFlip;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    std::vector&lt;HyperRectDomain&lt;SpaceND&lt;3, int&gt; &gt;<a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">::Dimension</a>&gt; vectFlip;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    vectFlip.push_back(1); </div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    vectFlip.push_back(2);     </div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <a class="code" href="classDGtal_1_1functors_1_1FlipDomainAxis.html">functors::FlipDomainAxis&lt;HyperRectDomain&lt;SpaceND&lt;3, int&gt;</a> &gt; &gt; flipFunctorAxis12(domainSource3D, vectFlip);</div>
@@ -457,6 +457,7 @@ template&lt;typename TFunctor , typename TArg , typename TRes &gt; </div>
 <div class="ttc" id="aclassDGtal_1_1functors_1_1FlipDomainAxis_html"><div class="ttname"><a href="classDGtal_1_1functors_1_1FlipDomainAxis.html">DGtal::functors::FlipDomainAxis</a></div><div class="ttdoc">Aim: Functor that flips the domain coordinate system from some selected axis. For instance,...</div><div class="ttdef"><b>Definition:</b> <a href="BasicPointFunctors_8h_source.html#l00758">BasicPointFunctors.h:759</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1functors_1_1Point2DEmbedderIn3D_html"><div class="ttname"><a href="classDGtal_1_1functors_1_1Point2DEmbedderIn3D.html">DGtal::functors::Point2DEmbedderIn3D</a></div><div class="ttdoc">Aim: Functor that embeds a 2D point into a 3D space from two axis vectors and an origin point given i...</div><div class="ttdef"><b>Definition:</b> <a href="BasicPointFunctors_8h_source.html#l00372">BasicPointFunctors.h:373</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1functors_1_1SliceRotator2D_html"><div class="ttname"><a href="classDGtal_1_1functors_1_1SliceRotator2D.html">DGtal::functors::SliceRotator2D</a></div><div class="ttdoc">Special Point Functor that adds one dimension to a 2D point and apply on it a rotation of angle alpha...</div><div class="ttdef"><b>Definition:</b> <a href="BasicPointFunctors_8h_source.html#l00200">BasicPointFunctors.h:201</a></div></div>
+<div class="ttc" id="anamespaceDGtal_html_a8fbe8c8d47ca5c36ced14284ac62613d"><div class="ttname"><a href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">DGtal::Dimension</a></div><div class="ttdeci">DGtal::uint32_t Dimension</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00136">Common.h:136</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html_ac1e9ac6a329319ae13c51c0c9e92486a"><div class="ttname"><a href="namespaceDGtal.html#ac1e9ac6a329319ae13c51c0c9e92486a">DGtal::int32_t</a></div><div class="ttdeci">boost::int32_t int32_t</div><div class="ttdoc">signed 32-bit integer.</div><div class="ttdef"><b>Definition:</b> <a href="BasicTypes_8h_source.html#l00072">BasicTypes.h:72</a></div></div>
 <div class="ttc" id="astructDGtal_1_1functors_1_1Projector_html"><div class="ttname"><a href="structDGtal_1_1functors_1_1Projector.html">DGtal::functors::Projector</a></div><div class="ttdoc">Aim: Functor that maps a point P of dimension i to a point Q of dimension j. The member myDims is an ...</div><div class="ttdef"><b>Definition:</b> <a href="BasicPointFunctors_8h_source.html#l00106">BasicPointFunctors.h:107</a></div></div>
 <div class="ttc" id="astructDGtal_1_1functors_1_1Projector_html_a1c18d72391ba31d8ebf9b9594e860e63"><div class="ttname"><a href="structDGtal_1_1functors_1_1Projector.html#a1c18d72391ba31d8ebf9b9594e860e63">DGtal::functors::Projector::init</a></div><div class="ttdeci">void init(const TIterator &amp;itb, const TIterator &amp;ite)</div></div>
@@ -472,7 +473,7 @@ template&lt;typename TFunctor , typename TArg , typename TRes &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:07 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:09 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

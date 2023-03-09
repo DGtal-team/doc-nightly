@@ -109,17 +109,17 @@ $(function() {
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="structDGtal_1_1concepts_1_1CDenseVector.html#ab162beba7a2c4688bd7b5f0fa1e21b1f">   95</a></span>&#160;    <a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#ab162beba7a2c4688bd7b5f0fa1e21b1f">BOOST_CONCEPT_USAGE</a>( <a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html">CDenseVector</a> )</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                <a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#a08969973caa627c874674cad2eb8599c">Scalar</a>&amp; aa = <a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#ac98a66982df3ceefc82af9fa0a6eac08">z</a>(<a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#a1fd1805d20c9786c71525bbcfa1e7b3b">i</a>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                aa = aa; <span class="comment">// to avoid compiler warning</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#a7d63678c2452cabad94b40dad649a61e">checkConstConstraints</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#a08969973caa627c874674cad2eb8599c">Scalar</a>&amp; aa = <a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#ac98a66982df3ceefc82af9fa0a6eac08">z</a>(<a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#a1fd1805d20c9786c71525bbcfa1e7b3b">i</a>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      (void)aa; <span class="comment">// to avoid compiler warning</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#a7d63678c2452cabad94b40dad649a61e">checkConstConstraints</a>();</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="structDGtal_1_1concepts_1_1CDenseVector.html#a7d63678c2452cabad94b40dad649a61e">  103</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#a7d63678c2452cabad94b40dad649a61e">checkConstConstraints</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                <a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#a08969973caa627c874674cad2eb8599c">Scalar</a> bb = <a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#ac98a66982df3ceefc82af9fa0a6eac08">z</a>(<a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#a1fd1805d20c9786c71525bbcfa1e7b3b">i</a>);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                bb = bb; <span class="comment">// to avoid compiler warning</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">  </span>{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#a08969973caa627c874674cad2eb8599c">Scalar</a> bb = <a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#ac98a66982df3ceefc82af9fa0a6eac08">z</a>(<a class="code" href="structDGtal_1_1concepts_1_1CDenseVector.html#a1fd1805d20c9786c71525bbcfa1e7b3b">i</a>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    (void)bb; <span class="comment">// to avoid compiler warning</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// ------------------------- Private Datas --------------------------------</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">private</span>:</div>
@@ -152,7 +152,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:39 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:44:41 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

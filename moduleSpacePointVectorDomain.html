@@ -200,7 +200,7 @@ Iterating over an  HyperRectDomain</h2>
 <div class="fragment"><div class="line"><span class="comment">//We draw an arrow between two consecutive points during the iteration.</span></div>
 <div class="line"><a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">MyDomain::ConstIterator</a> itPrec = <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.begin();</div>
 <div class="line"><a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">MyDomain::ConstIterator</a> it = itPrec;</div>
-<div class="line"><a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">MyDomain::Vector</a> shift;</div>
+<div class="line"><a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">MyDomain::Vector</a> shift;</div>
 <div class="line">++it;</div>
 <div class="line"> </div>
 <div class="line">board &lt;&lt; (*itPrec); <span class="comment">//We display the first point as a pixel.</span></div>
@@ -212,7 +212,7 @@ Iterating over an  HyperRectDomain</h2>
 <div class="line">    <a class="code" href="testSegmentation_8cpp.html#ad3481e408a11633aeaa7732e7faf6b56">draw</a>(board, shift, (*itPrec));</div>
 <div class="line">  }</div>
 <div class="line">board.saveSVG(<span class="stringliteral">&quot;kernel-domain-it-arrow.svg&quot;</span>);</div>
-<div class="ttc" id="atestCombinDSS_8cpp_html_a609ee1808a3b4f883fb28df65e9a2ed6"><div class="ttname"><a href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a></div><div class="ttdeci">FreemanChain&lt; int &gt;::Vector Vector</div><div class="ttdef"><b>Definition:</b> <a href="testCombinDSS_8cpp_source.html#l00060">testCombinDSS.cpp:60</a></div></div>
+<div class="ttc" id="aexamplePlaneProbingParallelepipedEstimator_8cpp_html_a23c0623485ed9af765bab12ac424843c"><div class="ttname"><a href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a></div><div class="ttdeci">DigitalPlane::Point Vector</div><div class="ttdef"><b>Definition:</b> <a href="examplePlaneProbingParallelepipedEstimator_8cpp_source.html#l00045">examplePlaneProbingParallelepipedEstimator.cpp:45</a></div></div>
 <div class="ttc" id="atestSegmentation_8cpp_html_ad3481e408a11633aeaa7732e7faf6b56"><div class="ttname"><a href="testSegmentation_8cpp.html#ad3481e408a11633aeaa7732e7faf6b56">draw</a></div><div class="ttdeci">void draw(const Iterator &amp;itb, const Iterator &amp;ite, Board &amp;aBoard)</div><div class="ttdef"><b>Definition:</b> <a href="testSegmentation_8cpp_source.html#l00075">testSegmentation.cpp:75</a></div></div>
 </div><!-- fragment --><div class="image">
 <img src="kernel-domain-it-arrow.png" alt=""/>
@@ -329,7 +329,7 @@ Empty domains</h2>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:10 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:12 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

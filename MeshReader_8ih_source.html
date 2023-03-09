@@ -465,7 +465,7 @@ $(function() {
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        std::operator&gt;&gt;( lineinput, name );</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        std::string base = name.substr(0,name.find_last_of(&quot;.&quot;));</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        auto iSep = filename.find_last_of(&#39;/&#39;);</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        if (iSep == -1)</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        if ((int)iSep == -1)</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        { // special for windows.</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;          iSep = filename.find_last_of(&#39;\\&#39;);</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        }</div>
@@ -604,7 +604,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:53 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:44:55 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

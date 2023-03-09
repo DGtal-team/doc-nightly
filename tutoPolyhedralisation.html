@@ -377,7 +377,7 @@ Making a polyhedral surface</h1>
 <div class="line">    <a class="code" href="testArithmeticalDSSComputerOnSurfels_8cpp.html#ae805f534b9b47a55ae624c6afa17c365">Surfel</a> v = it-&gt;first;</div>
 <div class="line">    RoundPlane* rplane = it-&gt;second;</div>
 <div class="line">    <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = ks.sKCoords( v );</div>
-<div class="line">    <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> rp( (<span class="keywordtype">double</span>)p[ 0 ]/2.0, (<span class="keywordtype">double</span>)p[ 1 ]/2.0, (<span class="keywordtype">double</span>)p[ 2 ]/2.0 );</div>
+<div class="line">    <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> rp( (<span class="keywordtype">double</span>)p[ 0 ]/2.0, (<span class="keywordtype">double</span>)p[ 1 ]/2.0, (<span class="keywordtype">double</span>)p[ 2 ]/2.0 );</div>
 <div class="line">    <span class="keywordtype">double</span> mu = rplane-&gt;third.second;</div>
 <div class="line">    RealVector normal = rplane-&gt;third.first;</div>
 <div class="line">    <span class="keywordtype">double</span> lambda = mu - rp.dot( normal );</div>
@@ -391,13 +391,13 @@ Making a polyhedral surface</h1>
 <div class="line">    SurfelRange neighbors;</div>
 <div class="line">    std::back_insert_iterator&lt;SurfelRange&gt; writeIt = std::back_inserter( neighbors );</div>
 <div class="line">    digSurf.writeNeighbors( writeIt, *it );</div>
-<div class="line">    <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> x = RealPoint::zero;</div>
+<div class="line">    <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> x = RealPoint::zero;</div>
 <div class="line">    <span class="keywordflow">for</span> ( SurfelRange::const_iterator its = neighbors.begin(), itsE = neighbors.end();</div>
 <div class="line">          its != itsE; ++its )</div>
 <div class="line">      x += coordinates[ *its ];</div>
 <div class="line">    new_coordinates[ s ] = x / neighbors.size();</div>
 <div class="line">  }</div>
-<div class="ttc" id="atestAstroid2D_8cpp_html_ac914bb734ccb5a7c569747c1e699c1aa"><div class="ttname"><a href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a></div><div class="ttdeci">Z2i::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testAstroid2D_8cpp_source.html#l00046">testAstroid2D.cpp:46</a></div></div>
+<div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 </div><!-- fragment --><p>It remains to build the polyhedral surface approximating the digital boundary. We use the class <a class="el" href="classDGtal_1_1Mesh.html">Mesh</a> (from package shapes), which let us construct a polyhedral surface by simply adding vertices and then adding faces as vectors of vertex indices. Class <a class="el" href="classDGtal_1_1Mesh.html">Mesh</a> is devoted to i/o. You can output it on a viewer to display it or use the stream operator to export it as some OBJ or OFF file.</p>
 <div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Number;</div>
 <div class="line"><span class="keyword">typedef</span> Mesh&lt;RealPoint&gt; MyMesh;</div>
@@ -446,7 +446,7 @@ Going further</h1>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:10 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:11 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

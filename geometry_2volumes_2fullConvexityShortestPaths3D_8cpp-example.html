@@ -119,8 +119,8 @@ Shortest path between two points</div></div>
 <div class="line"><span class="keyword">typedef</span> <a name="a3"></a><a class="code" href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">Z3i::SCell</a>          <a class="code" href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">SCell</a>;</div>
 <div class="line"><span class="keyword">typedef</span> Shortcuts&lt; KSpace &gt; <a name="a4"></a><a class="code" href="testArithmeticalDSSComputerOnSurfels_8cpp.html#ac6834e172d5d8c2b796bc846aa0d643b">SH3</a>;</div>
 <div class="line"><span class="keyword">typedef</span> <a name="a5"></a><a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Space::Point</a>        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>;</div>
-<div class="line"><span class="keyword">typedef</span> <a name="a6"></a><a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">Space::RealPoint</a>    <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>;</div>
-<div class="line"><span class="keyword">typedef</span> <a name="a7"></a><a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Space::Vector</a>       <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a>;</div>
+<div class="line"><span class="keyword">typedef</span> <a name="a6"></a><a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">Space::RealPoint</a>    <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>;</div>
+<div class="line"><span class="keyword">typedef</span> <a name="a7"></a><a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Space::Vector</a>       <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Called when an user clicks on a surfel.</span></div>
 <div class="line"><span class="keywordtype">int</span> <a name="a8"></a><a class="code" href="fullConvexityShortestPaths3D_8cpp.html#a652a071181e7216a6e3d606de345b281">reaction</a>( <span class="keywordtype">void</span>* viewer, <a class="code" href="namespaceDGtal.html#ac1e9ac6a329319ae13c51c0c9e92486a">DGtal::int32_t</a> name, <span class="keywordtype">void</span>* data )</div>
@@ -253,7 +253,7 @@ Shortest path between two points</div></div>
 <div class="line">        <span class="keyword">const</span> <span class="keywordtype">double</span> d_s = SP.distance( i );</div>
 <div class="line">        Color c_s        = cmap( fmod( d_s, period ) );</div>
 <div class="line">        viewerCore.setFillColor( c_s );</div>
-<div class="line">        viewerCore.addBall( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( points[ i ][ 0 ],</div>
+<div class="line">        viewerCore.addBall( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( points[ i ][ 0 ],</div>
 <div class="line">                                       points[ i ][ 1 ],</div>
 <div class="line">                                       points[ i ][ 2 ] ), 12.0 );</div>
 <div class="line">      }</div>
@@ -327,7 +327,7 @@ Shortest path between two points</div></div>
 <div class="line">          ? cmap( fmod( d_s, period ) )</div>
 <div class="line">          : Color::Black;</div>
 <div class="line">        viewerCore.setFillColor( c_s );</div>
-<div class="line">        viewerCore.addBall( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( points[ i ][ 0 ],</div>
+<div class="line">        viewerCore.addBall( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( points[ i ][ 0 ],</div>
 <div class="line">                                       points[ i ][ 1 ],</div>
 <div class="line">                                       points[ i ][ 2 ] ), 12 );</div>
 <div class="line">      }</div>
@@ -362,7 +362,7 @@ Shortest path between two points</div></div>
 <div class="line">    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; points.size(); ++i )</div>
 <div class="line">      {</div>
 <div class="line">        viewerCore.setFillColor( Color( 150, 150, 150, 255 ) );</div>
-<div class="line">        viewerCore.addBall( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( points[ i ][ 0 ],</div>
+<div class="line">        viewerCore.addBall( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( points[ i ][ 0 ],</div>
 <div class="line">                                       points[ i ][ 1 ],</div>
 <div class="line">                                       points[ i ][ 2 ] ), 12 );</div>
 <div class="line">      }</div>
@@ -387,6 +387,7 @@ Shortest path between two points</div></div>
 <div class="line"><span class="comment"></span> </div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
 <div class="ttc" id="adigitalPolyhedronBuilder3D_8cpp_html_a6c4dc4f5610ba8c9b7ee6e83ecea8d24"><div class="ttname"><a href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">SCell</a></div><div class="ttdeci">Z3i::SCell SCell</div><div class="ttdef"><b>Definition:</b> <a href="digitalPolyhedronBuilder3D_8cpp_source.html#l00079">digitalPolyhedronBuilder3D.cpp:79</a></div></div>
+<div class="ttc" id="aexamplePlaneProbingParallelepipedEstimator_8cpp_html_a23c0623485ed9af765bab12ac424843c"><div class="ttname"><a href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a></div><div class="ttdeci">DigitalPlane::Point Vector</div><div class="ttdef"><b>Definition:</b> <a href="examplePlaneProbingParallelepipedEstimator_8cpp_source.html#l00045">examplePlaneProbingParallelepipedEstimator.cpp:45</a></div></div>
 <div class="ttc" id="afullConvexityShortestPaths3D_8cpp_html_a652a071181e7216a6e3d606de345b281"><div class="ttname"><a href="fullConvexityShortestPaths3D_8cpp.html#a652a071181e7216a6e3d606de345b281">reaction</a></div><div class="ttdeci">int reaction(void *viewer, DGtal::int32_t name, void *data)</div><div class="ttdef"><b>Definition:</b> <a href="fullConvexityShortestPaths3D_8cpp_source.html#l00090">fullConvexityShortestPaths3D.cpp:90</a></div></div>
 <div class="ttc" id="afullConvexitySphereGeodesics_8cpp_html_ab053a8ae7537e4f87fa9a46962f7617a"><div class="ttname"><a href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a></div><div class="ttdeci">SMesh::Index Index</div><div class="ttdef"><b>Definition:</b> <a href="fullConvexitySphereGeodesics_8cpp_source.html#l00117">fullConvexitySphereGeodesics.cpp:117</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
@@ -396,16 +397,15 @@ Shortest path between two points</div></div>
 <div class="ttc" id="atestArithmeticDSS-benchmark_8cpp_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="testArithmeticDSS-benchmark_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> <a href="testArithmeticDSS-benchmark_8cpp_source.html#l00147">testArithmeticDSS-benchmark.cpp:147</a></div></div>
 <div class="ttc" id="atestArithmeticalDSSComputerOnSurfels_8cpp_html_ac6834e172d5d8c2b796bc846aa0d643b"><div class="ttname"><a href="testArithmeticalDSSComputerOnSurfels_8cpp.html#ac6834e172d5d8c2b796bc846aa0d643b">SH3</a></div><div class="ttdeci">Shortcuts&lt; KSpace &gt; SH3</div><div class="ttdef"><b>Definition:</b> <a href="testArithmeticalDSSComputerOnSurfels_8cpp_source.html#l00049">testArithmeticalDSSComputerOnSurfels.cpp:49</a></div></div>
 <div class="ttc" id="atestArithmeticalDSSComputerOnSurfels_8cpp_html_aebe586e91159919ccf2f565d4407fff7"><div class="ttname"><a href="testArithmeticalDSSComputerOnSurfels_8cpp.html#aebe586e91159919ccf2f565d4407fff7">KSpace</a></div><div class="ttdeci">Z3i::KSpace KSpace</div><div class="ttdef"><b>Definition:</b> <a href="testArithmeticalDSSComputerOnSurfels_8cpp_source.html#l00048">testArithmeticalDSSComputerOnSurfels.cpp:48</a></div></div>
-<div class="ttc" id="atestAstroid2D_8cpp_html_ac914bb734ccb5a7c569747c1e699c1aa"><div class="ttname"><a href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a></div><div class="ttdeci">Z2i::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testAstroid2D_8cpp_source.html#l00046">testAstroid2D.cpp:46</a></div></div>
 <div class="ttc" id="atestClone2_8cpp_html_a15e9592ccc512dc691b46185e6814758"><div class="ttname"><a href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a></div><div class="ttdeci">MyPointD Point</div><div class="ttdef"><b>Definition:</b> <a href="testClone2_8cpp_source.html#l00383">testClone2.cpp:383</a></div></div>
-<div class="ttc" id="atestCombinDSS_8cpp_html_a609ee1808a3b4f883fb28df65e9a2ed6"><div class="ttname"><a href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a></div><div class="ttdeci">FreemanChain&lt; int &gt;::Vector Vector</div><div class="ttdef"><b>Definition:</b> <a href="testCombinDSS_8cpp_source.html#l00060">testCombinDSS.cpp:60</a></div></div>
 <div class="ttc" id="atestCubicalComplex_8cpp_html_a2b87ed989d2519d025bd5d4fbcbac062"><div class="ttname"><a href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a></div><div class="ttdeci">KSpace K</div><div class="ttdef"><b>Definition:</b> <a href="testCubicalComplex_8cpp_source.html#l00062">testCubicalComplex.cpp:62</a></div></div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_a38dfaf1641eab4d3fb805df4b52ab10d"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a38dfaf1641eab4d3fb805df4b52ab10d">Space</a></div><div class="ttdeci">SpaceND&lt; 2 &gt; Space</div><div class="ttdef"><b>Definition:</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00042">testSimpleRandomAccessRangeFromPoint.cpp:42</a></div></div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_acd532b318489cd93df57e0b3d136d050"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a></div><div class="ttdeci">HyperRectDomain&lt; Space &gt; Domain</div><div class="ttdef"><b>Definition:</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00044">testSimpleRandomAccessRangeFromPoint.cpp:44</a></div></div>
+<div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:35 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:44:37 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

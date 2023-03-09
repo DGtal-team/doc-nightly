@@ -103,7 +103,7 @@ class DGtal::MPolynomialEvaluatorImpl&lt; n, TRing, TOwner, TAlloc, TX &gt;::Eva
 
 <p>Evaluates a polynomial of type MPolynomial&lt;n, TRing&gt; in myEvalPoint; the coefficients of the first indeterminate are evaluated using the given functor of type Fun. </p>
 
-<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l00222">222</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l00232">232</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa2b1fbf40d4de37e5b3a648ce484a2ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2b1fbf40d4de37e5b3a648ce484a2ee">&#9670;&nbsp;</a></span>EvalFun()</h2>
@@ -143,11 +143,11 @@ template&lt;typename XX , typename Fun &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l00229">229</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        : <a class="code" href="classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun.html#a24ac252ef042f7e4f7379f41278e3378">myOwner</a>(owner), <a class="code" href="classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun.html#acbd5117b08972cc2a862bdf47bac80f8">myEvalFun</a>(evalfun)</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      {}</div>
-<div class="ttc" id="aclassDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun_html_a24ac252ef042f7e4f7379f41278e3378"><div class="ttname"><a href="classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun.html#a24ac252ef042f7e4f7379f41278e3378">DGtal::MPolynomialEvaluatorImpl::EvalFun::myOwner</a></div><div class="ttdeci">const MPolynomialEvaluatorImpl&lt; n, Ring, Owner, Alloc, X &gt; &amp; myOwner</div><div class="ttdef"><b>Definition:</b> <a href="MPolynomial_8h_source.html#l00224">MPolynomial.h:224</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun_html_acbd5117b08972cc2a862bdf47bac80f8"><div class="ttname"><a href="classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun.html#acbd5117b08972cc2a862bdf47bac80f8">DGtal::MPolynomialEvaluatorImpl::EvalFun::myEvalFun</a></div><div class="ttdeci">const Fun &amp; myEvalFun</div><div class="ttdef"><b>Definition:</b> <a href="MPolynomial_8h_source.html#l00225">MPolynomial.h:225</a></div></div>
+<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l00239">239</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        : <a class="code" href="classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun.html#a24ac252ef042f7e4f7379f41278e3378">myOwner</a>(owner), <a class="code" href="classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun.html#acbd5117b08972cc2a862bdf47bac80f8">myEvalFun</a>(evalfun)</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      {}</div>
+<div class="ttc" id="aclassDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun_html_a24ac252ef042f7e4f7379f41278e3378"><div class="ttname"><a href="classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun.html#a24ac252ef042f7e4f7379f41278e3378">DGtal::MPolynomialEvaluatorImpl::EvalFun::myOwner</a></div><div class="ttdeci">const MPolynomialEvaluatorImpl&lt; n, Ring, Owner, Alloc, X &gt; &amp; myOwner</div><div class="ttdef"><b>Definition:</b> <a href="MPolynomial_8h_source.html#l00234">MPolynomial.h:234</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun_html_acbd5117b08972cc2a862bdf47bac80f8"><div class="ttname"><a href="classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun.html#acbd5117b08972cc2a862bdf47bac80f8">DGtal::MPolynomialEvaluatorImpl::EvalFun::myEvalFun</a></div><div class="ttdeci">const Fun &amp; myEvalFun</div><div class="ttdef"><b>Definition:</b> <a href="MPolynomial_8h_source.html#l00235">MPolynomial.h:235</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -181,21 +181,21 @@ template&lt;typename XX , typename Fun &gt; </div>
 </div><div class="memdoc">
 <p>Evaluate: the first indeterminate is replaced by myEvalPoint, and the coefficients of the first indeterminate (which are polynomials of type poly&lt;n-1, T&gt;) are evaluated using myEvalFun. </p>
 
-<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l00240">240</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      {</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        XX res = (XX) 0;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <a class="code" href="classDGtal_1_1MPolynomialEvaluatorImpl.html#a42337d400d40ee488bde471c7b1789e2">X</a> xx = (<a class="code" href="classDGtal_1_1MPolynomialEvaluatorImpl.html#a42337d400d40ee488bde471c7b1789e2">X</a>) 1;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; (int) p.myValue.size(); ++i )</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;          {</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            res += <a class="code" href="classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun.html#acbd5117b08972cc2a862bdf47bac80f8">myEvalFun</a>(p.myValue[i]) * (XX) xx;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            xx = xx * <a class="code" href="classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun.html#a24ac252ef042f7e4f7379f41278e3378">myOwner</a>.<a class="code" href="classDGtal_1_1MPolynomialEvaluatorImpl.html#a407da00e7f96f56b22b3dace2a424099">myEvalPoint</a>;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;          }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">return</span> res;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      }</div>
-<div class="ttc" id="aclassDGtal_1_1MPolynomialEvaluatorImpl_html_a407da00e7f96f56b22b3dace2a424099"><div class="ttname"><a href="classDGtal_1_1MPolynomialEvaluatorImpl.html#a407da00e7f96f56b22b3dace2a424099">DGtal::MPolynomialEvaluatorImpl::myEvalPoint</a></div><div class="ttdeci">const X &amp; myEvalPoint</div><div class="ttdef"><b>Definition:</b> <a href="MPolynomial_8h_source.html#l00209">MPolynomial.h:209</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1MPolynomialEvaluatorImpl_html_a42337d400d40ee488bde471c7b1789e2"><div class="ttname"><a href="classDGtal_1_1MPolynomialEvaluatorImpl.html#a42337d400d40ee488bde471c7b1789e2">DGtal::MPolynomialEvaluatorImpl::X</a></div><div class="ttdeci">TX X</div><div class="ttdef"><b>Definition:</b> <a href="MPolynomial_8h_source.html#l00188">MPolynomial.h:188</a></div></div>
+<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l00250">250</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        XX res = (XX) 0;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <a class="code" href="classDGtal_1_1MPolynomialEvaluatorImpl.html#a42337d400d40ee488bde471c7b1789e2">X</a> xx = (<a class="code" href="classDGtal_1_1MPolynomialEvaluatorImpl.html#a42337d400d40ee488bde471c7b1789e2">X</a>) 1;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; (int) p.myValue.size(); ++i )</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;          {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            res += <a class="code" href="classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun.html#acbd5117b08972cc2a862bdf47bac80f8">myEvalFun</a>(p.myValue[i]) * (XX) xx;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            xx = xx * <a class="code" href="classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun.html#a24ac252ef042f7e4f7379f41278e3378">myOwner</a>.<a class="code" href="classDGtal_1_1MPolynomialEvaluatorImpl.html#a407da00e7f96f56b22b3dace2a424099">myEvalPoint</a>;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;          }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      }</div>
+<div class="ttc" id="aclassDGtal_1_1MPolynomialEvaluatorImpl_html_a407da00e7f96f56b22b3dace2a424099"><div class="ttname"><a href="classDGtal_1_1MPolynomialEvaluatorImpl.html#a407da00e7f96f56b22b3dace2a424099">DGtal::MPolynomialEvaluatorImpl::myEvalPoint</a></div><div class="ttdeci">const X &amp; myEvalPoint</div><div class="ttdef"><b>Definition:</b> <a href="MPolynomial_8h_source.html#l00219">MPolynomial.h:219</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1MPolynomialEvaluatorImpl_html_a42337d400d40ee488bde471c7b1789e2"><div class="ttname"><a href="classDGtal_1_1MPolynomialEvaluatorImpl.html#a42337d400d40ee488bde471c7b1789e2">DGtal::MPolynomialEvaluatorImpl::X</a></div><div class="ttdeci">TX X</div><div class="ttdef"><b>Definition:</b> <a href="MPolynomial_8h_source.html#l00198">MPolynomial.h:198</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MPolynomial_8h_source.html#l00225">DGtal::MPolynomialEvaluatorImpl&lt; n, TRing, TOwner, TAlloc, TX &gt;::EvalFun&lt; XX, Fun &gt;::myEvalFun</a>, <a class="el" href="MPolynomial_8h_source.html#l00209">DGtal::MPolynomialEvaluatorImpl&lt; n, TRing, TOwner, TAlloc, TX &gt;::myEvalPoint</a>, and <a class="el" href="MPolynomial_8h_source.html#l00224">DGtal::MPolynomialEvaluatorImpl&lt; n, TRing, TOwner, TAlloc, TX &gt;::EvalFun&lt; XX, Fun &gt;::myOwner</a>.</p>
+<p class="reference">References <a class="el" href="MPolynomial_8h_source.html#l00235">DGtal::MPolynomialEvaluatorImpl&lt; n, TRing, TOwner, TAlloc, TX &gt;::EvalFun&lt; XX, Fun &gt;::myEvalFun</a>, <a class="el" href="MPolynomial_8h_source.html#l00219">DGtal::MPolynomialEvaluatorImpl&lt; n, TRing, TOwner, TAlloc, TX &gt;::myEvalPoint</a>, and <a class="el" href="MPolynomial_8h_source.html#l00234">DGtal::MPolynomialEvaluatorImpl&lt; n, TRing, TOwner, TAlloc, TX &gt;::EvalFun&lt; XX, Fun &gt;::myOwner</a>.</p>
 
 </div>
 </div>
@@ -224,9 +224,9 @@ template&lt;typename XX , typename Fun &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l00225">225</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l00235">235</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MPolynomial_8h_source.html#l00240">DGtal::MPolynomialEvaluatorImpl&lt; n, TRing, TOwner, TAlloc, TX &gt;::EvalFun&lt; XX, Fun &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MPolynomial_8h_source.html#l00250">DGtal::MPolynomialEvaluatorImpl&lt; n, TRing, TOwner, TAlloc, TX &gt;::EvalFun&lt; XX, Fun &gt;::operator()()</a>.</p>
 
 </div>
 </div>
@@ -254,9 +254,9 @@ template&lt;typename XX , typename Fun &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l00224">224</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l00234">234</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MPolynomial_8h_source.html#l00132">DGtal::MPolynomialEvaluatorImpl&lt; 1, TRing, TOwner, TAlloc, TX &gt;::EvalFun::operator()()</a>, and <a class="el" href="MPolynomial_8h_source.html#l00240">DGtal::MPolynomialEvaluatorImpl&lt; n, TRing, TOwner, TAlloc, TX &gt;::EvalFun&lt; XX, Fun &gt;::operator()()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="MPolynomial_8h_source.html#l00142">DGtal::MPolynomialEvaluatorImpl&lt; 1, TRing, TOwner, TAlloc, TX &gt;::EvalFun::operator()()</a>, and <a class="el" href="MPolynomial_8h_source.html#l00250">DGtal::MPolynomialEvaluatorImpl&lt; n, TRing, TOwner, TAlloc, TX &gt;::EvalFun&lt; XX, Fun &gt;::operator()()</a>.</p>
 
 </div>
 </div>
@@ -266,7 +266,7 @@ template&lt;typename XX , typename Fun &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:18 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:19 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

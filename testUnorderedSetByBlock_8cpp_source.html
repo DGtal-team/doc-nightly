@@ -109,13 +109,13 @@ $(function() {
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">typedef</span> std::unordered_set&lt; Point &gt;      StdUnorderedSet;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="structDGtal_1_1UnorderedSetByBlock.html">UnorderedSetByBlock&lt; Point &gt;</a>     BlockUnorderedSet;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_inserted = 100;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_sought   = 200;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_erased   = 100;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb_inserted = 100;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb_sought   = 200;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb_erased   = 100;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  StdUnorderedSet   stdSet;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  BlockUnorderedSet blkSet;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_inserted; i++ )</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_inserted; i++ )</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      stdSet.insert( p );</div>
@@ -144,7 +144,7 @@ $(function() {
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  WHEN( <span class="stringliteral">&quot;Looking for elements in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same elements are find with method `count`&quot;</span> ) {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::vector&lt; Point &gt; stdFound, stdNotFound;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    std::vector&lt; Point &gt; blkFound, blkNotFound;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_sought; i++ )</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_sought; i++ )</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span> ( stdSet.count( p ) != 0 ) stdFound.push_back( p );</div>
@@ -166,9 +166,9 @@ $(function() {
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  WHEN( <span class="stringliteral">&quot;Looking for elements in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same elements are find with method `find`&quot;</span> ) {</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::vector&lt; Point &gt; stdFound, stdNotFound;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    std::vector&lt; Point &gt; blkFound, blkNotFound;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">int</span> std_nb_value_ok = 0;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">int</span> blk_nb_value_ok = 0;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_sought; i++ )</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">size_t</span> std_nb_value_ok = 0;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">size_t</span> blk_nb_value_ok = 0;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_sought; i++ )</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      {</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> stdIt = stdSet.find( p );</div>
@@ -203,9 +203,9 @@ $(function() {
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  WHEN( <span class="stringliteral">&quot;Erasing elements in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same elements are left&quot;</span> ) {</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    std::vector&lt; Point &gt; stdErase;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    std::vector&lt; Point &gt; blkErase;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">int</span> std_nb_erase_ok = 0;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">int</span> blk_nb_erase_ok = 0;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_erased; i++ )</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">size_t</span> std_nb_erase_ok = 0;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">size_t</span> blk_nb_erase_ok = 0;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_erased; i++ )</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      {</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keyword">auto</span> stdFindIt   = stdSet.find ( p );</div>
@@ -238,16 +238,16 @@ $(function() {
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::equal( stdTrv.cbegin(), stdTrv.cend(), blkTrv.cbegin() ) );</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  }</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  WHEN( <span class="stringliteral">&quot;Erasing a range in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same number of elements is left&quot;</span> ) {</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">int</span> nb_std_before = stdSet.size();</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">int</span> nb_blk_before = blkSet.size();</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keyword">auto</span> nb_std_before = stdSet.size();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">auto</span> nb_blk_before = blkSet.size();</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">auto</span> stdItB = stdSet.begin(); std::advance( stdItB, 10 );</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keyword">auto</span> blkItB = blkSet.begin(); std::advance( blkItB, 10 );</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keyword">auto</span> stdItE = stdItB;         std::advance( stdItE, 20 );</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keyword">auto</span> blkItE = blkItB;         std::advance( blkItE, 20 );</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    stdSet.erase( stdItB, stdItE );</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    blkSet.erase( blkItB, blkItE );</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">int</span> nb_std = std::distance(stdSet.begin(), stdSet.end());</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">int</span> nb_blk = std::distance(blkSet.begin(), blkSet.end());</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">size_t</span> nb_std = std::distance(stdSet.begin(), stdSet.end());</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">size_t</span> nb_blk = std::distance(blkSet.begin(), blkSet.end());</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( stdSet.size() == nb_std );</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( stdSet.size() == nb_std_before - 20 );</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( blkSet.size() == nb_blk );</div>
@@ -297,13 +297,13 @@ $(function() {
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keyword">typedef</span> std::unordered_set&lt; Point &gt;      StdUnorderedSet;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="structDGtal_1_1UnorderedSetByBlock.html">UnorderedSetByBlock&lt; Point &gt;</a>     BlockUnorderedSet;</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_inserted = 1000;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_sought   = 2000;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_erased   = 1000;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb_inserted = 1000;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb_sought   = 2000;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb_erased   = 1000;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  StdUnorderedSet   stdSet;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  BlockUnorderedSet blkSet;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_inserted; i++ )</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_inserted; i++ )</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    {</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      stdSet.insert( p );</div>
@@ -332,7 +332,7 @@ $(function() {
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  WHEN( <span class="stringliteral">&quot;Looking for elements in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same elements are find with method `count`&quot;</span> ) {</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    std::vector&lt; Point &gt; stdFound, stdNotFound;</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    std::vector&lt; Point &gt; blkFound, blkNotFound;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_sought; i++ )</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_sought; i++ )</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      {</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keywordflow">if</span> ( stdSet.count( p ) != 0 ) stdFound.push_back( p );</div>
@@ -354,9 +354,9 @@ $(function() {
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  WHEN( <span class="stringliteral">&quot;Looking for elements in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same elements are find with method `find`&quot;</span> ) {</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    std::vector&lt; Point &gt; stdFound, stdNotFound;</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    std::vector&lt; Point &gt; blkFound, blkNotFound;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">int</span> std_nb_value_ok = 0;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">int</span> blk_nb_value_ok = 0;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_sought; i++ )</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">size_t</span> std_nb_value_ok = 0;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordtype">size_t</span> blk_nb_value_ok = 0;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_sought; i++ )</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      {</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> stdIt = stdSet.find( p );</div>
@@ -391,9 +391,9 @@ $(function() {
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  WHEN( <span class="stringliteral">&quot;Erasing elements in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same elements are left&quot;</span> ) {</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    std::vector&lt; Point &gt; stdErase;</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    std::vector&lt; Point &gt; blkErase;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordtype">int</span> std_nb_erase_ok = 0;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordtype">int</span> blk_nb_erase_ok = 0;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_erased; i++ )</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordtype">size_t</span> std_nb_erase_ok = 0;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keywordtype">size_t</span> blk_nb_erase_ok = 0;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_erased; i++ )</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;      {</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="keyword">auto</span> stdFindIt   = stdSet.find ( p );</div>
@@ -426,16 +426,16 @@ $(function() {
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::equal( stdTrv.cbegin(), stdTrv.cend(), blkTrv.cbegin() ) );</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  }</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  WHEN( <span class="stringliteral">&quot;Erasing a range in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same number of elements is left&quot;</span> ) {</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordtype">int</span> nb_std_before = stdSet.size();</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keywordtype">int</span> nb_blk_before = blkSet.size();</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keyword">auto</span> nb_std_before = stdSet.size();</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="keyword">auto</span> nb_blk_before = blkSet.size();</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keyword">auto</span> stdItB = stdSet.begin(); std::advance( stdItB, 10 );</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keyword">auto</span> blkItB = blkSet.begin(); std::advance( blkItB, 10 );</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keyword">auto</span> stdItE = stdItB;         std::advance( stdItE, 20 );</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keyword">auto</span> blkItE = blkItB;         std::advance( blkItE, 20 );</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    stdSet.erase( stdItB, stdItE );</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    blkSet.erase( blkItB, blkItE );</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordtype">int</span> nb_std = std::distance(stdSet.begin(), stdSet.end());</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordtype">int</span> nb_blk = std::distance(blkSet.begin(), blkSet.end());</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordtype">size_t</span> nb_std = std::distance(stdSet.begin(), stdSet.end());</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordtype">size_t</span> nb_blk = std::distance(blkSet.begin(), blkSet.end());</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( stdSet.size() == nb_std );</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( stdSet.size() == nb_std_before - 20 );</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( blkSet.size() == nb_blk );</div>
@@ -485,13 +485,13 @@ $(function() {
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="structDGtal_1_1Splitter.html">Splitter&lt; Point, DGtal::uint64_t &gt;</a>       Splitter64;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="structDGtal_1_1UnorderedSetByBlock.html">UnorderedSetByBlock&lt; Point, Splitter64 &gt;</a> BlockUnorderedSet;</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_inserted = 10000;</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_sought   = 200;</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_erased   = 100;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb_inserted = 10000;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb_sought   = 200;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb_erased   = 100;</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160; </div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  StdUnorderedSet   stdSet;</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  BlockUnorderedSet blkSet;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_inserted; i++ )</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_inserted; i++ )</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    {</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;      <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 200 );</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;      stdSet.insert( p );</div>
@@ -520,7 +520,7 @@ $(function() {
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  WHEN( <span class="stringliteral">&quot;Looking for elements in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same elements are find with method `count`&quot;</span> ) {</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    std::vector&lt; Point &gt; stdFound, stdNotFound;</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    std::vector&lt; Point &gt; blkFound, blkNotFound;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_sought; i++ )</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_sought; i++ )</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;      {</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        <span class="keywordflow">if</span> ( stdSet.count( p ) != 0 ) stdFound.push_back( p );</div>
@@ -542,9 +542,9 @@ $(function() {
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  WHEN( <span class="stringliteral">&quot;Looking for elements in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same elements are find with method `find`&quot;</span> ) {</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    std::vector&lt; Point &gt; stdFound, stdNotFound;</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    std::vector&lt; Point &gt; blkFound, blkNotFound;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keywordtype">int</span> std_nb_value_ok = 0;</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <span class="keywordtype">int</span> blk_nb_value_ok = 0;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_sought; i++ )</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keywordtype">size_t</span> std_nb_value_ok = 0;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <span class="keywordtype">size_t</span> blk_nb_value_ok = 0;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_sought; i++ )</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;      {</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> stdIt = stdSet.find( p );</div>
@@ -579,9 +579,9 @@ $(function() {
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;  WHEN( <span class="stringliteral">&quot;Erasing elements in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same elements are left&quot;</span> ) {</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    std::vector&lt; Point &gt; stdErase;</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    std::vector&lt; Point &gt; blkErase;</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <span class="keywordtype">int</span> std_nb_erase_ok = 0;</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <span class="keywordtype">int</span> blk_nb_erase_ok = 0;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_erased; i++ )</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <span class="keywordtype">size_t</span> std_nb_erase_ok = 0;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <span class="keywordtype">size_t</span> blk_nb_erase_ok = 0;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_erased; i++ )</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;      {</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;        <span class="keyword">auto</span> stdFindIt   = stdSet.find ( p );</div>
@@ -614,16 +614,16 @@ $(function() {
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::equal( stdTrv.cbegin(), stdTrv.cend(), blkTrv.cbegin() ) );</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;  }</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;  WHEN( <span class="stringliteral">&quot;Erasing a range in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same number of elements is left&quot;</span> ) {</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    <span class="keywordtype">int</span> nb_std_before = stdSet.size();</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    <span class="keywordtype">int</span> nb_blk_before = blkSet.size();</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    <span class="keyword">auto</span> nb_std_before = stdSet.size();</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    <span class="keyword">auto</span> nb_blk_before = blkSet.size();</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    <span class="keyword">auto</span> stdItB = stdSet.begin(); std::advance( stdItB, 10 );</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <span class="keyword">auto</span> blkItB = blkSet.begin(); std::advance( blkItB, 10 );</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    <span class="keyword">auto</span> stdItE = stdItB;         std::advance( stdItE, 20 );</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="keyword">auto</span> blkItE = blkItB;         std::advance( blkItE, 20 );</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;    stdSet.erase( stdItB, stdItE );</div>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    blkSet.erase( blkItB, blkItE );</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    <span class="keywordtype">int</span> nb_std = std::distance(stdSet.begin(), stdSet.end());</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    <span class="keywordtype">int</span> nb_blk = std::distance(blkSet.begin(), blkSet.end());</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    <span class="keywordtype">size_t</span> nb_std = std::distance(stdSet.begin(), stdSet.end());</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    <span class="keywordtype">size_t</span> nb_blk = std::distance(blkSet.begin(), blkSet.end());</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( stdSet.size() == nb_std );</div>
 <div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( stdSet.size() == nb_std_before - 20 );</div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( blkSet.size() == nb_blk );</div>
@@ -674,13 +674,13 @@ $(function() {
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="structDGtal_1_1Splitter.html">Splitter&lt; Point, DGtal::uint64_t &gt;</a>       Splitter64;</div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="structDGtal_1_1UnorderedSetByBlock.html">UnorderedSetByBlock&lt; Point, Splitter64 &gt;</a> BlockUnorderedSet;</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160; </div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_inserted = 40000;</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_sought   = 2000;</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_erased   = 1000;</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb_inserted = 40000;</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb_sought   = 2000;</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb_erased   = 1000;</div>
 <div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160; </div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;  StdUnorderedSet   stdSet;</div>
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;  BlockUnorderedSet blkSet;</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_inserted; i++ )</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_inserted; i++ )</div>
 <div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    {</div>
 <div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;      <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 100 );</div>
 <div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;      stdSet.insert( p );</div>
@@ -709,7 +709,7 @@ $(function() {
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;  WHEN( <span class="stringliteral">&quot;Looking for elements in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same elements are find with method `count`&quot;</span> ) {</div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    std::vector&lt; Point &gt; stdFound, stdNotFound;</div>
 <div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    std::vector&lt; Point &gt; blkFound, blkNotFound;</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_sought; i++ )</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_sought; i++ )</div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;      {</div>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        <span class="keywordflow">if</span> ( stdSet.count( p ) != 0 ) stdFound.push_back( p );</div>
@@ -731,9 +731,9 @@ $(function() {
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;  WHEN( <span class="stringliteral">&quot;Looking for elements in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same elements are find with method `find`&quot;</span> ) {</div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    std::vector&lt; Point &gt; stdFound, stdNotFound;</div>
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    std::vector&lt; Point &gt; blkFound, blkNotFound;</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    <span class="keywordtype">int</span> std_nb_value_ok = 0;</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    <span class="keywordtype">int</span> blk_nb_value_ok = 0;</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_sought; i++ )</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    <span class="keywordtype">size_t</span> std_nb_value_ok = 0;</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    <span class="keywordtype">size_t</span> blk_nb_value_ok = 0;</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_sought; i++ )</div>
 <div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;      {</div>
 <div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> stdIt = stdSet.find( p );</div>
@@ -768,9 +768,9 @@ $(function() {
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;  WHEN( <span class="stringliteral">&quot;Erasing elements in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same elements are left&quot;</span> ) {</div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    std::vector&lt; Point &gt; stdErase;</div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    std::vector&lt; Point &gt; blkErase;</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    <span class="keywordtype">int</span> std_nb_erase_ok = 0;</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="keywordtype">int</span> blk_nb_erase_ok = 0;</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_erased; i++ )</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    <span class="keywordtype">size_t</span> std_nb_erase_ok = 0;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="keywordtype">size_t</span> blk_nb_erase_ok = 0;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_erased; i++ )</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;      {</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        <span class="keyword">auto</span> stdFindIt   = stdSet.find ( p );</div>
@@ -803,16 +803,16 @@ $(function() {
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::equal( stdTrv.cbegin(), stdTrv.cend(), blkTrv.cbegin() ) );</div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;  }</div>
 <div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;  WHEN( <span class="stringliteral">&quot;Erasing a range in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same number of elements is left&quot;</span> ) {</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    <span class="keywordtype">int</span> nb_std_before = stdSet.size();</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <span class="keywordtype">int</span> nb_blk_before = blkSet.size();</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    <span class="keyword">auto</span> nb_std_before = stdSet.size();</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <span class="keyword">auto</span> nb_blk_before = blkSet.size();</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    <span class="keyword">auto</span> stdItB = stdSet.begin(); std::advance( stdItB, 10 );</div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;    <span class="keyword">auto</span> blkItB = blkSet.begin(); std::advance( blkItB, 10 );</div>
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;    <span class="keyword">auto</span> stdItE = stdItB;         std::advance( stdItE, 20 );</div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    <span class="keyword">auto</span> blkItE = blkItB;         std::advance( blkItE, 20 );</div>
 <div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;    stdSet.erase( stdItB, stdItE );</div>
 <div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;    blkSet.erase( blkItB, blkItE );</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    <span class="keywordtype">int</span> nb_std = std::distance(stdSet.begin(), stdSet.end());</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="keywordtype">int</span> nb_blk = std::distance(blkSet.begin(), blkSet.end());</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    <span class="keywordtype">size_t</span> nb_std = std::distance(stdSet.begin(), stdSet.end());</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="keywordtype">size_t</span> nb_blk = std::distance(blkSet.begin(), blkSet.end());</div>
 <div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( stdSet.size() == nb_std );</div>
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( stdSet.size() == nb_std_before - 20 );</div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( blkSet.size() == nb_blk );</div>
@@ -870,7 +870,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:04 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:06 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

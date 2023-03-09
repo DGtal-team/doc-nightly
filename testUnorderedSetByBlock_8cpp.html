@@ -167,13 +167,13 @@ template&lt;typename Point &gt; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">typedef</span> std::unordered_set&lt; Point &gt;      StdUnorderedSet;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="structDGtal_1_1UnorderedSetByBlock.html">UnorderedSetByBlock&lt; Point &gt;</a>     BlockUnorderedSet;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_inserted = 100;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_sought   = 200;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nb_erased   = 100;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb_inserted = 100;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb_sought   = 200;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nb_erased   = 100;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  StdUnorderedSet   stdSet;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  BlockUnorderedSet blkSet;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_inserted; i++ )</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_inserted; i++ )</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      stdSet.insert( p );</div>
@@ -202,7 +202,7 @@ template&lt;typename Point &gt; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  WHEN( <span class="stringliteral">&quot;Looking for elements in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same elements are find with method `count`&quot;</span> ) {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::vector&lt; Point &gt; stdFound, stdNotFound;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    std::vector&lt; Point &gt; blkFound, blkNotFound;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_sought; i++ )</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_sought; i++ )</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span> ( stdSet.count( p ) != 0 ) stdFound.push_back( p );</div>
@@ -224,9 +224,9 @@ template&lt;typename Point &gt; </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  WHEN( <span class="stringliteral">&quot;Looking for elements in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same elements are find with method `find`&quot;</span> ) {</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::vector&lt; Point &gt; stdFound, stdNotFound;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    std::vector&lt; Point &gt; blkFound, blkNotFound;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">int</span> std_nb_value_ok = 0;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">int</span> blk_nb_value_ok = 0;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_sought; i++ )</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">size_t</span> std_nb_value_ok = 0;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">size_t</span> blk_nb_value_ok = 0;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_sought; i++ )</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      {</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> stdIt = stdSet.find( p );</div>
@@ -261,9 +261,9 @@ template&lt;typename Point &gt; </div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  WHEN( <span class="stringliteral">&quot;Erasing elements in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same elements are left&quot;</span> ) {</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    std::vector&lt; Point &gt; stdErase;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    std::vector&lt; Point &gt; blkErase;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">int</span> std_nb_erase_ok = 0;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">int</span> blk_nb_erase_ok = 0;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; nb_erased; i++ )</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">size_t</span> std_nb_erase_ok = 0;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">size_t</span> blk_nb_erase_ok = 0;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; nb_erased; i++ )</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      {</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = randomPoint&lt;Point&gt;( 10 );</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keyword">auto</span> stdFindIt   = stdSet.find ( p );</div>
@@ -296,16 +296,16 @@ template&lt;typename Point &gt; </div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::equal( stdTrv.cbegin(), stdTrv.cend(), blkTrv.cbegin() ) );</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  }</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  WHEN( <span class="stringliteral">&quot;Erasing a range in identical std::unordered_set&lt;&gt; and UnorderedSetByBlock&lt;&gt;, the same number of elements is left&quot;</span> ) {</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">int</span> nb_std_before = stdSet.size();</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">int</span> nb_blk_before = blkSet.size();</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keyword">auto</span> nb_std_before = stdSet.size();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">auto</span> nb_blk_before = blkSet.size();</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">auto</span> stdItB = stdSet.begin(); std::advance( stdItB, 10 );</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keyword">auto</span> blkItB = blkSet.begin(); std::advance( blkItB, 10 );</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keyword">auto</span> stdItE = stdItB;         std::advance( stdItE, 20 );</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keyword">auto</span> blkItE = blkItB;         std::advance( blkItE, 20 );</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    stdSet.erase( stdItB, stdItE );</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    blkSet.erase( blkItB, blkItE );</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">int</span> nb_std = std::distance(stdSet.begin(), stdSet.end());</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">int</span> nb_blk = std::distance(blkSet.begin(), blkSet.end());</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">size_t</span> nb_std = std::distance(stdSet.begin(), stdSet.end());</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">size_t</span> nb_blk = std::distance(blkSet.begin(), blkSet.end());</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( stdSet.size() == nb_std );</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( stdSet.size() == nb_std_before - 20 );</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( blkSet.size() == nb_blk );</div>
@@ -358,7 +358,7 @@ template&lt;typename Point &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:09 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:10 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

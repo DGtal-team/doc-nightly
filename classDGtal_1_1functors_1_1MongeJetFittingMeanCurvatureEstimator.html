@@ -455,12 +455,12 @@ template&lt;typename TSurfel , typename TEmbedder &gt; </div>
 <div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      BOOST_VERIFY(aDistance==aDistance);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> p = <a class="code" href="classDGtal_1_1functors_1_1MongeJetFittingMeanCurvatureEstimator.html#a58b7d0aa7e0f5aa10c58b4b50a3da0fe">myEmbedder</a>-&gt;operator()(aSurf);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> p = <a class="code" href="classDGtal_1_1functors_1_1MongeJetFittingMeanCurvatureEstimator.html#a58b7d0aa7e0f5aa10c58b4b50a3da0fe">myEmbedder</a>-&gt;operator()(aSurf);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <a class="code" href="classDGtal_1_1functors_1_1MongeJetFittingMeanCurvatureEstimator.html#a8db2aca7db1630c421720c771fbbc2a0">CGALPoint</a> pp(p[0]*<a class="code" href="classDGtal_1_1functors_1_1MongeJetFittingMeanCurvatureEstimator.html#a764a138e3f9a35d5931969ea2917a9b6">myH</a>,p[1]*<a class="code" href="classDGtal_1_1functors_1_1MongeJetFittingMeanCurvatureEstimator.html#a764a138e3f9a35d5931969ea2917a9b6">myH</a>,p[2]*<a class="code" href="classDGtal_1_1functors_1_1MongeJetFittingMeanCurvatureEstimator.html#a764a138e3f9a35d5931969ea2917a9b6">myH</a>);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <a class="code" href="classDGtal_1_1functors_1_1MongeJetFittingMeanCurvatureEstimator.html#a7e4a03138c3c34b7bedb77900933991b">myPoints</a>.push_back(pp);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
 <div class="ttc" id="aclassDGtal_1_1functors_1_1MongeJetFittingMeanCurvatureEstimator_html_a8db2aca7db1630c421720c771fbbc2a0"><div class="ttname"><a href="classDGtal_1_1functors_1_1MongeJetFittingMeanCurvatureEstimator.html#a8db2aca7db1630c421720c771fbbc2a0">DGtal::functors::MongeJetFittingMeanCurvatureEstimator::CGALPoint</a></div><div class="ttdeci">CGALKernel::Point_3 CGALPoint</div><div class="ttdef"><b>Definition:</b> <a href="MongeJetFittingMeanCurvatureEstimator_8h_source.html#l00100">MongeJetFittingMeanCurvatureEstimator.h:100</a></div></div>
-<div class="ttc" id="atestAstroid2D_8cpp_html_ac914bb734ccb5a7c569747c1e699c1aa"><div class="ttname"><a href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a></div><div class="ttdeci">Z2i::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testAstroid2D_8cpp_source.html#l00046">testAstroid2D.cpp:46</a></div></div>
+<div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MongeJetFittingMeanCurvatureEstimator_8h_source.html#l00164">DGtal::functors::MongeJetFittingMeanCurvatureEstimator&lt; TSurfel, TEmbedder &gt;::myEmbedder</a>, <a class="el" href="MongeJetFittingMeanCurvatureEstimator_8h_source.html#l00170">DGtal::functors::MongeJetFittingMeanCurvatureEstimator&lt; TSurfel, TEmbedder &gt;::myH</a>, and <a class="el" href="MongeJetFittingMeanCurvatureEstimator_8h_source.html#l00167">DGtal::functors::MongeJetFittingMeanCurvatureEstimator&lt; TSurfel, TEmbedder &gt;::myPoints</a>.</p>
 
@@ -628,7 +628,7 @@ template&lt;typename TSurfel , typename TEmbedder &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:22 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:24 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

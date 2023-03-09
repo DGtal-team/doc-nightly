@@ -588,8 +588,8 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00104">104</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      : <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">myPtrIdxSurface</a>( <span class="keyword">nullptr</span> ), <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a714dbedf94934b5dd548e43eab5e7504">myPtrK</a>( <span class="keyword">nullptr</span> )</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {}</div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a5c26e7420c0b5f2c84bae78177cde92e"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">DGtal::ShroudsRegularization::myPtrIdxSurface</a></div><div class="ttdeci">CountedPtr&lt; IdxDigitalSurface &gt; myPtrIdxSurface</div><div class="ttdoc">the indexed digital surface (internal surface representation).</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00534">ShroudsRegularization.h:534</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a714dbedf94934b5dd548e43eab5e7504"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a714dbedf94934b5dd548e43eab5e7504">DGtal::ShroudsRegularization::myPtrK</a></div><div class="ttdeci">const KSpace * myPtrK</div><div class="ttdoc">A const pointer to the cellular space in which lives the digital surface.</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00536">ShroudsRegularization.h:536</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a5c26e7420c0b5f2c84bae78177cde92e"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">DGtal::ShroudsRegularization::myPtrIdxSurface</a></div><div class="ttdeci">CountedPtr&lt; IdxDigitalSurface &gt; myPtrIdxSurface</div><div class="ttdoc">the indexed digital surface (internal surface representation).</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00535">ShroudsRegularization.h:535</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a714dbedf94934b5dd548e43eab5e7504"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a714dbedf94934b5dd548e43eab5e7504">DGtal::ShroudsRegularization::myPtrK</a></div><div class="ttdeci">const KSpace * myPtrK</div><div class="ttdoc">A const pointer to the cellular space in which lives the digital surface.</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00537">ShroudsRegularization.h:537</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -634,13 +634,13 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a2da9e42790984a3e6c77899b6dbeaeac">precomputeTopology</a>();</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <a class="code" href="classDGtal_1_1ShroudsRegularization.html#abd9ed2d6a1d44d68f4face278583e1fc">init</a>();</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a2cf4b873203bc6ae4de022606c440ec0"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a2cf4b873203bc6ae4de022606c440ec0">DGtal::ShroudsRegularization::myAlpha</a></div><div class="ttdeci">Scalar myAlpha</div><div class="ttdoc">The alpha parameter for Snake first order regularization (~ area)</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00541">ShroudsRegularization.h:541</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a2da9e42790984a3e6c77899b6dbeaeac"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a2da9e42790984a3e6c77899b6dbeaeac">DGtal::ShroudsRegularization::precomputeTopology</a></div><div class="ttdeci">void precomputeTopology()</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00476">ShroudsRegularization.h:476</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a9ad64ee5cb89e21fcd3f3e03973c2587"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a9ad64ee5cb89e21fcd3f3e03973c2587">DGtal::ShroudsRegularization::myBeta</a></div><div class="ttdeci">Scalar myBeta</div><div class="ttdoc">The beta parameter for Snake second order regularization (~ curvature)</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00543">ShroudsRegularization.h:543</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_aba157cc02aef27a4fcab320a1a90acfe"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#aba157cc02aef27a4fcab320a1a90acfe">DGtal::ShroudsRegularization::myEpsilon</a></div><div class="ttdeci">Scalar myEpsilon</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00539">ShroudsRegularization.h:539</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a2cf4b873203bc6ae4de022606c440ec0"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a2cf4b873203bc6ae4de022606c440ec0">DGtal::ShroudsRegularization::myAlpha</a></div><div class="ttdeci">Scalar myAlpha</div><div class="ttdoc">The alpha parameter for Snake first order regularization (~ area)</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00542">ShroudsRegularization.h:542</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a2da9e42790984a3e6c77899b6dbeaeac"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a2da9e42790984a3e6c77899b6dbeaeac">DGtal::ShroudsRegularization::precomputeTopology</a></div><div class="ttdeci">void precomputeTopology()</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00477">ShroudsRegularization.h:477</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a9ad64ee5cb89e21fcd3f3e03973c2587"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a9ad64ee5cb89e21fcd3f3e03973c2587">DGtal::ShroudsRegularization::myBeta</a></div><div class="ttdeci">Scalar myBeta</div><div class="ttdoc">The beta parameter for Snake second order regularization (~ curvature)</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00544">ShroudsRegularization.h:544</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_aba157cc02aef27a4fcab320a1a90acfe"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#aba157cc02aef27a4fcab320a1a90acfe">DGtal::ShroudsRegularization::myEpsilon</a></div><div class="ttdeci">Scalar myEpsilon</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00540">ShroudsRegularization.h:540</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_abd9ed2d6a1d44d68f4face278583e1fc"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#abd9ed2d6a1d44d68f4face278583e1fc">DGtal::ShroudsRegularization::init</a></div><div class="ttdeci">void init()</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00128">ShroudsRegularization.h:128</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00476">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00477">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
 
 </div>
 </div>
@@ -713,10 +713,10 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      <span class="keyword">const</span> Scalar dip = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a473e45fce709adef0fb35da58a682279">myPrevD</a>[ v_i.second ][ v_i.first ];</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      <span class="keywordflow">return</span> 1.0 / (din + dip);</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a473e45fce709adef0fb35da58a682279"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a473e45fce709adef0fb35da58a682279">DGtal::ShroudsRegularization::myPrevD</a></div><div class="ttdeci">Scalars myPrevD[3]</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00567">ShroudsRegularization.h:567</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a963a388a6bd6c1626dfd83787327e3aa"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a963a388a6bd6c1626dfd83787327e3aa">DGtal::ShroudsRegularization::myNextD</a></div><div class="ttdeci">Scalars myNextD[3]</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00564">ShroudsRegularization.h:564</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a473e45fce709adef0fb35da58a682279"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a473e45fce709adef0fb35da58a682279">DGtal::ShroudsRegularization::myPrevD</a></div><div class="ttdeci">Scalars myPrevD[3]</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00568">ShroudsRegularization.h:568</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a963a388a6bd6c1626dfd83787327e3aa"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a963a388a6bd6c1626dfd83787327e3aa">DGtal::ShroudsRegularization::myNextD</a></div><div class="ttdeci">Scalars myNextD[3]</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00565">ShroudsRegularization.h:565</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00564">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myNextD</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00567">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPrevD</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00565">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myNextD</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00568">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPrevD</a>.</p>
 
 </div>
 </div>
@@ -763,7 +763,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                              2.0 / ( dip * ( din + dip ) ) );</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00564">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myNextD</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00567">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPrevD</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00565">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myNextD</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00568">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPrevD</a>.</p>
 
 </div>
 </div>
@@ -800,15 +800,15 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the current energy of the shrouds, according to the chosen regularization process. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00335">335</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    {</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      <span class="keywordflow">if</span> ( reg == <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895ba62914f115993125b3ad1928184b0d872">Regularization::SQUARED_CURVATURE</a> )</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a0f106a2b1ccb6134b82443b2ab9e9b02">energySquaredCurvature</a>();</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( reg == <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895ba6a30da74d0b15b45ec14072c93b6645d">Regularization::SNAKE</a> )</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ShroudsRegularization.html#ac9557925ac9063b9b65889c1a794694b">energySnake</a>();</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a16eafe09f93d88a94a91156ed3910659">energyArea</a>();</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00336">336</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      <span class="keywordflow">if</span> ( reg == <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895ba62914f115993125b3ad1928184b0d872">Regularization::SQUARED_CURVATURE</a> )</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a0f106a2b1ccb6134b82443b2ab9e9b02">energySquaredCurvature</a>();</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( reg == <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895ba6a30da74d0b15b45ec14072c93b6645d">Regularization::SNAKE</a> )</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ShroudsRegularization.html#ac9557925ac9063b9b65889c1a794694b">energySnake</a>();</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a16eafe09f93d88a94a91156ed3910659">energyArea</a>();</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a0d43ce039fb5444d8c401029e04b895ba62914f115993125b3ad1928184b0d872"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895ba62914f115993125b3ad1928184b0d872">DGtal::ShroudsRegularization::Regularization::SQUARED_CURVATURE</a></div><div class="ttdeci">@ SQUARED_CURVATURE</div></div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a0d43ce039fb5444d8c401029e04b895ba6a30da74d0b15b45ec14072c93b6645d"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895ba6a30da74d0b15b45ec14072c93b6645d">DGtal::ShroudsRegularization::Regularization::SNAKE</a></div><div class="ttdeci">@ SNAKE</div></div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a0f106a2b1ccb6134b82443b2ab9e9b02"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a0f106a2b1ccb6134b82443b2ab9e9b02">DGtal::ShroudsRegularization::energySquaredCurvature</a></div><div class="ttdeci">double energySquaredCurvature()</div></div>
@@ -839,7 +839,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the current energy associated to the area regularization process. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00335">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::energy()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00336">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::energy()</a>.</p>
 
 </div>
 </div>
@@ -861,7 +861,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the current energy associated to the snake regularization process. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00335">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::energy()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00336">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::energy()</a>.</p>
 
 </div>
 </div>
@@ -883,7 +883,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the current energy associated to the squared curvature regularization process. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00335">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::energy()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00336">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::energy()</a>.</p>
 
 </div>
 </div>
@@ -940,7 +940,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="keywordflow">return</span> std::make_tuple( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#aba157cc02aef27a4fcab320a1a90acfe">myEpsilon</a>, <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a2cf4b873203bc6ae4de022606c440ec0">myAlpha</a>, <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a9ad64ee5cb89e21fcd3f3e03973c2587">myBeta</a> );</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00541">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myAlpha</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00543">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myBeta</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00539">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myEpsilon</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00542">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myAlpha</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00544">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myBeta</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00540">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myEpsilon</a>.</p>
 
 </div>
 </div>
@@ -991,13 +991,13 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;          <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a2a60900aa031e4755a6f5ff4baa8e680">myOutV</a>[ v ]  = embedder( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a714dbedf94934b5dd548e43eab5e7504">myPtrK</a>-&gt;sIndirectIncident( s, k ) );</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        }</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a2a60900aa031e4755a6f5ff4baa8e680"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a2a60900aa031e4755a6f5ff4baa8e680">DGtal::ShroudsRegularization::myOutV</a></div><div class="ttdeci">RealPoints myOutV</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00555">ShroudsRegularization.h:555</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a69a6a601833136f40fddbb05d8c8abf7"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a69a6a601833136f40fddbb05d8c8abf7">DGtal::ShroudsRegularization::myInsV</a></div><div class="ttdeci">RealPoints myInsV</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00552">ShroudsRegularization.h:552</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_af5f0dcf42565e75df3d5519806431e64"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#af5f0dcf42565e75df3d5519806431e64">DGtal::ShroudsRegularization::myT</a></div><div class="ttdeci">Scalars myT</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00549">ShroudsRegularization.h:549</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a2a60900aa031e4755a6f5ff4baa8e680"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a2a60900aa031e4755a6f5ff4baa8e680">DGtal::ShroudsRegularization::myOutV</a></div><div class="ttdeci">RealPoints myOutV</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00556">ShroudsRegularization.h:556</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a69a6a601833136f40fddbb05d8c8abf7"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a69a6a601833136f40fddbb05d8c8abf7">DGtal::ShroudsRegularization::myInsV</a></div><div class="ttdeci">RealPoints myInsV</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00553">ShroudsRegularization.h:553</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_af5f0dcf42565e75df3d5519806431e64"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#af5f0dcf42565e75df3d5519806431e64">DGtal::ShroudsRegularization::myT</a></div><div class="ttdeci">Scalars myT</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00550">ShroudsRegularization.h:550</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fbe8c8d47ca5c36ced14284ac62613d"><div class="ttname"><a href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">DGtal::Dimension</a></div><div class="ttdeci">DGtal::uint32_t Dimension</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00136">Common.h:136</a></div></div>
 <div class="ttc" id="atestTriangulatedSurface_8cpp_html_ae931baebcf0de56dd5f3b9342207e4fd"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#ae931baebcf0de56dd5f3b9342207e4fd">Vertex</a></div><div class="ttdeci">TriMesh::Vertex Vertex</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00057">testTriangulatedSurface.cpp:57</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00552">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myInsV</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00564">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myNextD</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00555">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myOutV</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00567">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPrevD</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00534">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPtrIdxSurface</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00536">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPtrK</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00549">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myT</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00553">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myInsV</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00565">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myNextD</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00556">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myOutV</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00568">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPrevD</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00535">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPtrIdxSurface</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00537">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPtrK</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00550">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myT</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00113">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::ShroudsRegularization()</a>, and <a class="el" href="testShroudsRegularization_8cpp_source.html#l00046">TEST_CASE()</a>.</p>
 
@@ -1044,12 +1044,12 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        ? <a class="code" href="classDGtal_1_1ShroudsRegularization.html#abd6e887e747d230aac6303527ef89853">myOrthDir</a>[ v_i.first ] : v_i.second;</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      <span class="keywordflow">return</span> std::make_pair( vn, in );</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a37d7ce4c15633f2010ebaa3f3b77cabe"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a37d7ce4c15633f2010ebaa3f3b77cabe">DGtal::ShroudsRegularization::myNext</a></div><div class="ttdeci">std::vector&lt; Vertex &gt; myNext[3]</div><div class="ttdoc">for each vertex, its successor on the slice of given axis direction.</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00559">ShroudsRegularization.h:559</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_abd6e887e747d230aac6303527ef89853"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#abd6e887e747d230aac6303527ef89853">DGtal::ShroudsRegularization::myOrthDir</a></div><div class="ttdeci">std::vector&lt; Dimension &gt; myOrthDir</div><div class="ttdoc">the direction axis of each dual edge.</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00557">ShroudsRegularization.h:557</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a37d7ce4c15633f2010ebaa3f3b77cabe"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a37d7ce4c15633f2010ebaa3f3b77cabe">DGtal::ShroudsRegularization::myNext</a></div><div class="ttdeci">std::vector&lt; Vertex &gt; myNext[3]</div><div class="ttdoc">for each vertex, its successor on the slice of given axis direction.</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00560">ShroudsRegularization.h:560</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_abd6e887e747d230aac6303527ef89853"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#abd6e887e747d230aac6303527ef89853">DGtal::ShroudsRegularization::myOrthDir</a></div><div class="ttdeci">std::vector&lt; Dimension &gt; myOrthDir</div><div class="ttdoc">the direction axis of each dual edge.</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00558">ShroudsRegularization.h:558</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00559">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myNext</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00557">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myOrthDir</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00560">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myNext</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00558">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myOrthDir</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00476">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00477">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
 
 </div>
 </div>
@@ -1224,7 +1224,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ShroudsRegularization.html#abd6e887e747d230aac6303527ef89853">myOrthDir</a>[ v ];</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00557">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myOrthDir</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00558">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myOrthDir</a>.</p>
 
 </div>
 </div>
@@ -1270,10 +1270,10 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;          }</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a2087dac3109f5963660424f9712b3167"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a2087dac3109f5963660424f9712b3167">DGtal::ShroudsRegularization::position</a></div><div class="ttdeci">RealPoint position(const Vertex v, const double t) const</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00182">ShroudsRegularization.h:182</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a239df5bd05a50508bd980fd5fcac575a"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a239df5bd05a50508bd980fd5fcac575a">DGtal::ShroudsRegularization::myInvalid</a></div><div class="ttdeci">Vertex myInvalid</div><div class="ttdoc">the index of the invalid vertex.</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00545">ShroudsRegularization.h:545</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a40d8fa8a46878b64ef3b8791daee0e9e"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a40d8fa8a46878b64ef3b8791daee0e9e">DGtal::ShroudsRegularization::myPrev</a></div><div class="ttdeci">std::vector&lt; Vertex &gt; myPrev[3]</div><div class="ttdoc">for each vertex, its predessor on the slice of given axis direction.</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00561">ShroudsRegularization.h:561</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a239df5bd05a50508bd980fd5fcac575a"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a239df5bd05a50508bd980fd5fcac575a">DGtal::ShroudsRegularization::myInvalid</a></div><div class="ttdeci">Vertex myInvalid</div><div class="ttdoc">the index of the invalid vertex.</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00546">ShroudsRegularization.h:546</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a40d8fa8a46878b64ef3b8791daee0e9e"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a40d8fa8a46878b64ef3b8791daee0e9e">DGtal::ShroudsRegularization::myPrev</a></div><div class="ttdeci">std::vector&lt; Vertex &gt; myPrev[3]</div><div class="ttdoc">for each vertex, its predessor on the slice of given axis direction.</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00562">ShroudsRegularization.h:562</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00545">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myInvalid</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00559">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myNext</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00564">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myNextD</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00561">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPrev</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00567">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPrevD</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00549">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myT</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00182">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::position()</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00546">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myInvalid</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00560">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myNext</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00565">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myNextD</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00562">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPrev</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00568">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPrevD</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00550">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myT</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00182">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::position()</a>.</p>
 
 </div>
 </div>
@@ -1316,7 +1316,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      <span class="keywordflow">return</span> (1-t) * <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a69a6a601833136f40fddbb05d8c8abf7">myInsV</a>[ v ] + t * <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a2a60900aa031e4755a6f5ff4baa8e680">myOutV</a>[ v ];</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00552">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myInsV</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00555">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myOutV</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00549">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myT</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00553">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myInsV</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00556">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myOutV</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00550">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myT</a>.</p>
 
 </div>
 </div>
@@ -1369,7 +1369,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      <span class="keywordflow">return</span> (1-t) * <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a69a6a601833136f40fddbb05d8c8abf7">myInsV</a>[ v ] + t * <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a2a60900aa031e4755a6f5ff4baa8e680">myOutV</a>[ v ];</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00552">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myInsV</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00555">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myOutV</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00553">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myInsV</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00556">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myOutV</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00243">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::parameterize()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00196">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::positions()</a>.</p>
 
@@ -1410,7 +1410,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a6b35ea310b26ceb4930336af4971e7ec"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a6b35ea310b26ceb4930336af4971e7ec">DGtal::ShroudsRegularization::RealPoints</a></div><div class="ttdeci">std::vector&lt; RealPoint &gt; RealPoints</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00093">ShroudsRegularization.h:93</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00549">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myT</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00182">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::position()</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00550">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myT</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00182">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::position()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="testShroudsRegularization_8cpp_source.html#l00046">TEST_CASE()</a>.</p>
 
@@ -1442,64 +1442,64 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 </div><div class="memdoc">
 <p>This method precomputes the neighbors of each vertex along each crossing curves. Must be called at shroud initialization. </p>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00476">476</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    {</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;      <span class="keyword">typedef</span> <span class="keyword">typename</span> Container::Tracker      Tracker;</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;      <span class="keyword">typedef</span> DigitalSurface2DSlice&lt; Tracker &gt; Slice;</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;      <a class="code" href="classDGtal_1_1ShroudsRegularization.html#af5f0dcf42565e75df3d5519806431e64">myT</a>       = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a87c2cae5df70f5714d71b5214bbc9aef">Scalars</a>( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">myPtrIdxSurface</a>-&gt;nbVertices(), 0.5 );</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;      <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a239df5bd05a50508bd980fd5fcac575a">myInvalid</a> = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#af5f0dcf42565e75df3d5519806431e64">myT</a>.size();</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;      <a class="code" href="classDGtal_1_1ShroudsRegularization.html#abd6e887e747d230aac6303527ef89853">myOrthDir</a>.resize( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#af5f0dcf42565e75df3d5519806431e64">myT</a>.size() );</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;      <span class="keywordflow">for</span> ( <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> i = 0; i &lt; 3; ++i )</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;      {</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a37d7ce4c15633f2010ebaa3f3b77cabe">myNext</a>[ i ] = std::vector&lt;Vertex&gt;( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#af5f0dcf42565e75df3d5519806431e64">myT</a>.size(), <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a239df5bd05a50508bd980fd5fcac575a">myInvalid</a> );</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a40d8fa8a46878b64ef3b8791daee0e9e">myPrev</a>[ i ] = std::vector&lt;Vertex&gt;( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#af5f0dcf42565e75df3d5519806431e64">myT</a>.size(), <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a239df5bd05a50508bd980fd5fcac575a">myInvalid</a> );</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;      }</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;      <span class="comment">// for each vertex, extracts its two slices.</span></div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;      <span class="keywordflow">for</span> ( <a class="code" href="testTriangulatedSurface_8cpp.html#ae931baebcf0de56dd5f3b9342207e4fd">Vertex</a> v = 0; v &lt; <a class="code" href="classDGtal_1_1ShroudsRegularization.html#af5f0dcf42565e75df3d5519806431e64">myT</a>.size(); ++v )</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        {</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;          <span class="keyword">auto</span> surf      = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">myPtrIdxSurface</a>-&gt;surfel( v );</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;          <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> k    = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a714dbedf94934b5dd548e43eab5e7504">myPtrK</a>-&gt;sOrthDir( surf );</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;          <a class="code" href="classDGtal_1_1ShroudsRegularization.html#abd6e887e747d230aac6303527ef89853">myOrthDir</a>[ v ] = k;</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;          <span class="keywordflow">for</span> ( <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> i = 0; i &lt; 3; ++i )</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;            {</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;              <span class="keywordflow">if</span> ( k == i )   <span class="keywordflow">continue</span>; <span class="comment">// not a valid slice</span></div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;              <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a37d7ce4c15633f2010ebaa3f3b77cabe">myNext</a>[ i ][ v ] != <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a239df5bd05a50508bd980fd5fcac575a">myInvalid</a> ) <span class="keywordflow">continue</span>; <span class="comment">// already computed</span></div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;              Tracker* tracker = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">myPtrIdxSurface</a>-&gt;container().newTracker( surf );</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;              Slice    slice( tracker, i );</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;              <span class="keywordflow">if</span> ( ! slice.isClosed() ) {</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a1e786a1f3b1047e92b73c82f67e3c295">error</a>() &lt;&lt; <span class="stringliteral">&quot;[ShroudsRegularization::precomputeTopology]&quot;</span></div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;                              &lt;&lt; <span class="stringliteral">&quot; Shrouds works solely on closed surfaces.&quot;</span></div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;                              &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;              }</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;              <span class="keyword">auto</span> start = slice.cstart();</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;              <span class="keyword">auto</span>  <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a67654bcef154e07986830abe62ff22bd">next</a> = start;</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;              <span class="keyword">auto</span>  <a class="code" href="classDGtal_1_1ShroudsRegularization.html#aa0cd119cd9fbd4ecec5a86d4c98ca1c7">prev</a> = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a67654bcef154e07986830abe62ff22bd">next</a>++;</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;              <a class="code" href="testTriangulatedSurface_8cpp.html#ae931baebcf0de56dd5f3b9342207e4fd">Vertex</a>  vp = v;</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;              <span class="keywordflow">do</span></div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;                {</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                  <span class="keyword">auto</span> sp = *<a class="code" href="classDGtal_1_1ShroudsRegularization.html#aa0cd119cd9fbd4ecec5a86d4c98ca1c7">prev</a>;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;                  <span class="keyword">auto</span> sn = *<a class="code" href="classDGtal_1_1ShroudsRegularization.html#a67654bcef154e07986830abe62ff22bd">next</a>;</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;                  <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> in = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a714dbedf94934b5dd548e43eab5e7504">myPtrK</a>-&gt;sOrthDir( sn ) == k ? i : k;</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                  <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> ip = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a714dbedf94934b5dd548e43eab5e7504">myPtrK</a>-&gt;sOrthDir( sp ) == k ? i : k;</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;                  <a class="code" href="testTriangulatedSurface_8cpp.html#ae931baebcf0de56dd5f3b9342207e4fd">Vertex</a> vn = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">myPtrIdxSurface</a>-&gt;getVertex( sn );</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;                  <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a37d7ce4c15633f2010ebaa3f3b77cabe">myNext</a>[ ip ][ vp ] = vn;</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;                  <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a40d8fa8a46878b64ef3b8791daee0e9e">myPrev</a>[ in ][ vn ] = vp;</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;                  <a class="code" href="classDGtal_1_1ShroudsRegularization.html#aa0cd119cd9fbd4ecec5a86d4c98ca1c7">prev</a> = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a67654bcef154e07986830abe62ff22bd">next</a>++;</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;                  vp   = vn;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;                }</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;              <span class="keywordflow">while</span> ( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#aa0cd119cd9fbd4ecec5a86d4c98ca1c7">prev</a> != start );      </div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;              <span class="keyword">delete</span> tracker;</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;            }</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        }</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00477">477</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    {</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;      <span class="keyword">typedef</span> <span class="keyword">typename</span> Container::Tracker      Tracker;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;      <span class="keyword">typedef</span> DigitalSurface2DSlice&lt; Tracker &gt; Slice;</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;      <a class="code" href="classDGtal_1_1ShroudsRegularization.html#af5f0dcf42565e75df3d5519806431e64">myT</a>       = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a87c2cae5df70f5714d71b5214bbc9aef">Scalars</a>( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">myPtrIdxSurface</a>-&gt;nbVertices(), 0.5 );</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;      <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a239df5bd05a50508bd980fd5fcac575a">myInvalid</a> = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#af5f0dcf42565e75df3d5519806431e64">myT</a>.size();</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;      <a class="code" href="classDGtal_1_1ShroudsRegularization.html#abd6e887e747d230aac6303527ef89853">myOrthDir</a>.resize( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#af5f0dcf42565e75df3d5519806431e64">myT</a>.size() );</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;      <span class="keywordflow">for</span> ( <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> i = 0; i &lt; 3; ++i )</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;      {</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a37d7ce4c15633f2010ebaa3f3b77cabe">myNext</a>[ i ] = std::vector&lt;Vertex&gt;( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#af5f0dcf42565e75df3d5519806431e64">myT</a>.size(), <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a239df5bd05a50508bd980fd5fcac575a">myInvalid</a> );</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a40d8fa8a46878b64ef3b8791daee0e9e">myPrev</a>[ i ] = std::vector&lt;Vertex&gt;( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#af5f0dcf42565e75df3d5519806431e64">myT</a>.size(), <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a239df5bd05a50508bd980fd5fcac575a">myInvalid</a> );</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;      }</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;      <span class="comment">// for each vertex, extracts its two slices.</span></div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;      <span class="keywordflow">for</span> ( <a class="code" href="testTriangulatedSurface_8cpp.html#ae931baebcf0de56dd5f3b9342207e4fd">Vertex</a> v = 0; v &lt; <a class="code" href="classDGtal_1_1ShroudsRegularization.html#af5f0dcf42565e75df3d5519806431e64">myT</a>.size(); ++v )</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;        {</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;          <span class="keyword">auto</span> surf      = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">myPtrIdxSurface</a>-&gt;surfel( v );</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;          <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> k    = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a714dbedf94934b5dd548e43eab5e7504">myPtrK</a>-&gt;sOrthDir( surf );</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;          <a class="code" href="classDGtal_1_1ShroudsRegularization.html#abd6e887e747d230aac6303527ef89853">myOrthDir</a>[ v ] = k;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;          <span class="keywordflow">for</span> ( <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> i = 0; i &lt; 3; ++i )</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            {</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;              <span class="keywordflow">if</span> ( k == i )   <span class="keywordflow">continue</span>; <span class="comment">// not a valid slice</span></div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;              <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a37d7ce4c15633f2010ebaa3f3b77cabe">myNext</a>[ i ][ v ] != <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a239df5bd05a50508bd980fd5fcac575a">myInvalid</a> ) <span class="keywordflow">continue</span>; <span class="comment">// already computed</span></div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;              Tracker* tracker = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">myPtrIdxSurface</a>-&gt;container().newTracker( surf );</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;              Slice    slice( tracker, i );</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;              <span class="keywordflow">if</span> ( ! slice.isClosed() ) {</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;                <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a1e786a1f3b1047e92b73c82f67e3c295">error</a>() &lt;&lt; <span class="stringliteral">&quot;[ShroudsRegularization::precomputeTopology]&quot;</span></div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;                              &lt;&lt; <span class="stringliteral">&quot; Shrouds works solely on closed surfaces.&quot;</span></div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                              &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;              }</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;              <span class="keyword">auto</span> start = slice.cstart();</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;              <span class="keyword">auto</span>  <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a67654bcef154e07986830abe62ff22bd">next</a> = start;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;              <span class="keyword">auto</span>  <a class="code" href="classDGtal_1_1ShroudsRegularization.html#aa0cd119cd9fbd4ecec5a86d4c98ca1c7">prev</a> = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a67654bcef154e07986830abe62ff22bd">next</a>++;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;              <a class="code" href="testTriangulatedSurface_8cpp.html#ae931baebcf0de56dd5f3b9342207e4fd">Vertex</a>  vp = v;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;              <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                {</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;                  <span class="keyword">auto</span> sp = *<a class="code" href="classDGtal_1_1ShroudsRegularization.html#aa0cd119cd9fbd4ecec5a86d4c98ca1c7">prev</a>;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;                  <span class="keyword">auto</span> sn = *<a class="code" href="classDGtal_1_1ShroudsRegularization.html#a67654bcef154e07986830abe62ff22bd">next</a>;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;                  <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> in = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a714dbedf94934b5dd548e43eab5e7504">myPtrK</a>-&gt;sOrthDir( sn ) == k ? i : k;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;                  <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> ip = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a714dbedf94934b5dd548e43eab5e7504">myPtrK</a>-&gt;sOrthDir( sp ) == k ? i : k;</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;                  <a class="code" href="testTriangulatedSurface_8cpp.html#ae931baebcf0de56dd5f3b9342207e4fd">Vertex</a> vn = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">myPtrIdxSurface</a>-&gt;getVertex( sn );</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;                  <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a37d7ce4c15633f2010ebaa3f3b77cabe">myNext</a>[ ip ][ vp ] = vn;</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;                  <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a40d8fa8a46878b64ef3b8791daee0e9e">myPrev</a>[ in ][ vn ] = vp;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;                  <a class="code" href="classDGtal_1_1ShroudsRegularization.html#aa0cd119cd9fbd4ecec5a86d4c98ca1c7">prev</a> = <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a67654bcef154e07986830abe62ff22bd">next</a>++;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;                  vp   = vn;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                }</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;              <span class="keywordflow">while</span> ( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#aa0cd119cd9fbd4ecec5a86d4c98ca1c7">prev</a> != start );      </div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;              <span class="keyword">delete</span> tracker;</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;            }</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        }</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    }</div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a67654bcef154e07986830abe62ff22bd"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a67654bcef154e07986830abe62ff22bd">DGtal::ShroudsRegularization::next</a></div><div class="ttdeci">std::pair&lt; Vertex, Dimension &gt; next(const std::pair&lt; Vertex, Dimension &gt; &amp;v_i) const</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00216">ShroudsRegularization.h:216</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a87c2cae5df70f5714d71b5214bbc9aef"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a87c2cae5df70f5714d71b5214bbc9aef">DGtal::ShroudsRegularization::Scalars</a></div><div class="ttdeci">std::vector&lt; Scalar &gt; Scalars</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00091">ShroudsRegularization.h:91</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_aa0cd119cd9fbd4ecec5a86d4c98ca1c7"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#aa0cd119cd9fbd4ecec5a86d4c98ca1c7">DGtal::ShroudsRegularization::prev</a></div><div class="ttdeci">std::pair&lt; Vertex, Dimension &gt; prev(const std::pair&lt; Vertex, Dimension &gt; &amp;v_i) const</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00227">ShroudsRegularization.h:227</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_a1e786a1f3b1047e92b73c82f67e3c295"><div class="ttname"><a href="classDGtal_1_1Trace.html#a1e786a1f3b1047e92b73c82f67e3c295">DGtal::Trace::error</a></div><div class="ttdeci">std::ostream &amp; error()</div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fc7012708b0416880a5c8b12dfdf9dd"><div class="ttname"><a href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">DGtal::trace</a></div><div class="ttdeci">Trace trace</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00153">Common.h:153</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classDGtal_1_1Trace.html#a1e786a1f3b1047e92b73c82f67e3c295">DGtal::Trace::error()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00545">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myInvalid</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00559">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myNext</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00557">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myOrthDir</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00561">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPrev</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00534">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPtrIdxSurface</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00536">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPtrK</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00549">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myT</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00216">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::next()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00227">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::prev()</a>, and <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>.</p>
+<p class="reference">References <a class="el" href="classDGtal_1_1Trace.html#a1e786a1f3b1047e92b73c82f67e3c295">DGtal::Trace::error()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00546">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myInvalid</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00560">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myNext</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00558">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myOrthDir</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00562">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPrev</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00535">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPtrIdxSurface</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00537">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPtrK</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00550">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myT</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00216">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::next()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00227">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::prev()</a>, and <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00113">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::ShroudsRegularization()</a>.</p>
 
@@ -1547,9 +1547,9 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <span class="keywordflow">return</span> std::make_pair( vp, ip );</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00557">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myOrthDir</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00561">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPrev</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00558">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myOrthDir</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00562">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myPrev</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00476">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00477">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
 
 </div>
 </div>
@@ -1622,30 +1622,31 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      <span class="keywordtype">double</span>  l2      = 0.0;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <span class="keywordtype">int</span>     nb      = 0;</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <span class="keywordtype">double</span>   r      = 0.5;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        std::tie( loo, l2 ) =</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;          reg == <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895ba62914f115993125b3ad1928184b0d872">Regularization::SQUARED_CURVATURE</a></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;          ? <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a3cb4e7762fd7ee8a1db15cb50e919d43">oneStepSquaredCurvatureMinimization</a>( r )</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;          : reg == <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895b">Regularization</a>::SNAKE</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;          ? <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a702777fa15088c45a8743db0ee45dfad">oneStepSnakeMinimization</a>( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a2cf4b873203bc6ae4de022606c440ec0">myAlpha</a>, <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a9ad64ee5cb89e21fcd3f3e03973c2587">myBeta</a>, r )</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;          : <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a55bd60d7b7aa8a6bf55561edf1ed6ae0">oneStepAreaMinimization</a>( r );</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordflow">if</span> ( nb % 50 == 0 )</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;          <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;[Shrouds iteration &quot;</span> &lt;&lt; nb</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                       &lt;&lt; <span class="stringliteral">&quot; E=&quot;</span> &lt;&lt; <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5273bb5d8a34ffb71fe284713018623c">energy</a>( reg )</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                       &lt;&lt; <span class="stringliteral">&quot;] dx &lt;= &quot;</span> &lt;&lt; loo &lt;&lt; <span class="stringliteral">&quot; l2=&quot;</span> &lt;&lt; l2 &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        r  *= 0.9;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        nb += 1;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      } <span class="keywordflow">while</span> ( loo &gt; max_loo &amp;&amp; nb &lt; maxNb );</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <span class="keywordflow">return</span> std::make_pair( loo, l2 );</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    }</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      (void)randomization; <span class="comment">//parameter not used, avoiding warning</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        std::tie( loo, l2 ) =</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;          reg == <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895ba62914f115993125b3ad1928184b0d872">Regularization::SQUARED_CURVATURE</a></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;          ? <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a3cb4e7762fd7ee8a1db15cb50e919d43">oneStepSquaredCurvatureMinimization</a>( r )</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;          : reg == <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895b">Regularization</a>::SNAKE</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;          ? <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a702777fa15088c45a8743db0ee45dfad">oneStepSnakeMinimization</a>( <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a2cf4b873203bc6ae4de022606c440ec0">myAlpha</a>, <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a9ad64ee5cb89e21fcd3f3e03973c2587">myBeta</a>, r )</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;          : <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a55bd60d7b7aa8a6bf55561edf1ed6ae0">oneStepAreaMinimization</a>( r );</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">if</span> ( nb % 50 == 0 )</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;          <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;[Shrouds iteration &quot;</span> &lt;&lt; nb</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                       &lt;&lt; <span class="stringliteral">&quot; E=&quot;</span> &lt;&lt; <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5273bb5d8a34ffb71fe284713018623c">energy</a>( reg )</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                       &lt;&lt; <span class="stringliteral">&quot;] dx &lt;= &quot;</span> &lt;&lt; loo &lt;&lt; <span class="stringliteral">&quot; l2=&quot;</span> &lt;&lt; l2 &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        r  *= 0.9;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        nb += 1;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      } <span class="keywordflow">while</span> ( loo &gt; max_loo &amp;&amp; nb &lt; maxNb );</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      <span class="keywordflow">return</span> std::make_pair( loo, l2 );</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    }</div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a0d43ce039fb5444d8c401029e04b895b"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895b">DGtal::ShroudsRegularization::Regularization</a></div><div class="ttdeci">Regularization</div><div class="ttdoc">The enum class specifying the possible shrouds regularization.</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00096">ShroudsRegularization.h:96</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a3cb4e7762fd7ee8a1db15cb50e919d43"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a3cb4e7762fd7ee8a1db15cb50e919d43">DGtal::ShroudsRegularization::oneStepSquaredCurvatureMinimization</a></div><div class="ttdeci">std::pair&lt; double, double &gt; oneStepSquaredCurvatureMinimization(const double randomization=0.0)</div></div>
-<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a5273bb5d8a34ffb71fe284713018623c"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a5273bb5d8a34ffb71fe284713018623c">DGtal::ShroudsRegularization::energy</a></div><div class="ttdeci">double energy(const Regularization reg=Regularization::SQUARED_CURVATURE)</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00335">ShroudsRegularization.h:335</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a5273bb5d8a34ffb71fe284713018623c"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a5273bb5d8a34ffb71fe284713018623c">DGtal::ShroudsRegularization::energy</a></div><div class="ttdeci">double energy(const Regularization reg=Regularization::SQUARED_CURVATURE)</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00336">ShroudsRegularization.h:336</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a55bd60d7b7aa8a6bf55561edf1ed6ae0"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a55bd60d7b7aa8a6bf55561edf1ed6ae0">DGtal::ShroudsRegularization::oneStepAreaMinimization</a></div><div class="ttdeci">std::pair&lt; double, double &gt; oneStepAreaMinimization(const double randomization=0.0)</div></div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a702777fa15088c45a8743db0ee45dfad"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a702777fa15088c45a8743db0ee45dfad">DGtal::ShroudsRegularization::oneStepSnakeMinimization</a></div><div class="ttdeci">std::pair&lt; double, double &gt; oneStepSnakeMinimization(const double alpha=1.0, const double beta=1.0, const double randomization=0.0)</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00335">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::energy()</a>, <a class="el" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00541">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myAlpha</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00543">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myBeta</a>, <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a55bd60d7b7aa8a6bf55561edf1ed6ae0">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::oneStepAreaMinimization()</a>, <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a702777fa15088c45a8743db0ee45dfad">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::oneStepSnakeMinimization()</a>, <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a3cb4e7762fd7ee8a1db15cb50e919d43">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::oneStepSquaredCurvatureMinimization()</a>, <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895ba6a30da74d0b15b45ec14072c93b6645d">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::SNAKE</a>, <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895ba62914f115993125b3ad1928184b0d872">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::SQUARED_CURVATURE</a>, and <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00336">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::energy()</a>, <a class="el" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00542">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myAlpha</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00544">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myBeta</a>, <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a55bd60d7b7aa8a6bf55561edf1ed6ae0">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::oneStepAreaMinimization()</a>, <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a702777fa15088c45a8743db0ee45dfad">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::oneStepSnakeMinimization()</a>, <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a3cb4e7762fd7ee8a1db15cb50e919d43">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::oneStepSquaredCurvatureMinimization()</a>, <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895ba6a30da74d0b15b45ec14072c93b6645d">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::SNAKE</a>, <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895ba62914f115993125b3ad1928184b0d872">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::SQUARED_CURVATURE</a>, and <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="testShroudsRegularization_8cpp_source.html#l00046">TEST_CASE()</a>.</p>
 
@@ -1709,7 +1710,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a9ad64ee5cb89e21fcd3f3e03973c2587">myBeta</a>    = beta;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00541">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myAlpha</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00543">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myBeta</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00539">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myEpsilon</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00542">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myAlpha</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00544">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myBeta</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00540">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::myEpsilon</a>.</p>
 
 </div>
 </div>
@@ -1738,7 +1739,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 
 <p>The alpha parameter for Snake first order regularization (~ area) </p>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00541">541</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00542">542</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00167">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::getParams()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00304">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::regularize()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00154">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::setParams()</a>.</p>
 
@@ -1768,7 +1769,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 
 <p>The beta parameter for Snake second order regularization (~ curvature) </p>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00543">543</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00544">544</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00167">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::getParams()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00304">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::regularize()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00154">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::setParams()</a>.</p>
 
@@ -1797,7 +1798,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 </div><div class="memdoc">
 <p>The limiting bounds for the displacement of vertices along their unit dual edge: \( \lbrack \epsilon, 1-\epsilon \rbrack \) </p>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00539">539</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00540">540</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00167">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::getParams()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00154">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::setParams()</a>.</p>
 
@@ -1826,7 +1827,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 </div><div class="memdoc">
 <p>the vector of dual points lying inside (inside extremity of each dual edge). </p>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00552">552</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00553">553</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00182">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::position()</a>.</p>
 
@@ -1856,9 +1857,9 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 
 <p>the index of the invalid vertex. </p>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00545">545</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00546">546</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00243">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::parameterize()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00476">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00243">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::parameterize()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00477">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
 
 </div>
 </div>
@@ -1886,9 +1887,9 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 
 <p>for each vertex, its successor on the slice of given axis direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00559">559</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00560">560</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00216">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::next()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00243">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::parameterize()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00476">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00216">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::next()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00243">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::parameterize()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00477">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
 
 </div>
 </div>
@@ -1915,7 +1916,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 </div><div class="memdoc">
 <p>for each vertex, the estimated distance to its successor on the slice of given axis direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00564">564</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00565">565</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00261">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::c1()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00271">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::c2_all()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00243">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::parameterize()</a>.</p>
 
@@ -1945,9 +1946,9 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 
 <p>the direction axis of each dual edge. </p>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00557">557</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00558">558</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00216">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::next()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00208">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::orthDir()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00476">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00227">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::prev()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00216">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::next()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00208">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::orthDir()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00477">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00227">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::prev()</a>.</p>
 
 </div>
 </div>
@@ -1974,7 +1975,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 </div><div class="memdoc">
 <p>the vector of dual points lying outside (outside extremity of each dual edge). </p>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00555">555</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00556">556</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00182">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::position()</a>.</p>
 
@@ -2004,9 +2005,9 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 
 <p>for each vertex, its predessor on the slice of given axis direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00561">561</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00562">562</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00243">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::parameterize()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00476">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00227">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::prev()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00243">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::parameterize()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00477">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00227">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::prev()</a>.</p>
 
 </div>
 </div>
@@ -2033,7 +2034,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 </div><div class="memdoc">
 <p>for each vertex, the estimated distance to its predessor on the slice of given axis direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00567">567</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00568">568</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00261">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::c1()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00271">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::c2_all()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00243">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::parameterize()</a>.</p>
 
@@ -2063,9 +2064,9 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 
 <p>the indexed digital surface (internal surface representation). </p>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00534">534</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00535">535</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00476">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00477">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
 
 </div>
 </div>
@@ -2093,9 +2094,9 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 
 <p>A const pointer to the cellular space in which lives the digital surface. </p>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00536">536</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00537">537</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00476">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00477">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
 
 </div>
 </div>
@@ -2122,9 +2123,9 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 </div><div class="memdoc">
 <p>the vector of vertex displacements along their dual edge (each value lies in \( \lbrack \epsilon, 1-\epsilon \rbrack \)), which is optimized by the shrouds algorithm. </p>
 
-<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00549">549</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00550">550</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00243">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::parameterize()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00189">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::position()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00196">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::positions()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00476">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00243">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::parameterize()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00189">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::position()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00196">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::positions()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00477">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
 
 </div>
 </div>
@@ -2134,7 +2135,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:14 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:15 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

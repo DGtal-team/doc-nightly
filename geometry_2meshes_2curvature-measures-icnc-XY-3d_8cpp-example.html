@@ -187,7 +187,7 @@ Computed k2 curvatures: min=0.48689 max=0.487788
 <div class="line">      <span class="keyword">const</span> <span class="keywordtype">double</span> big_radius   = 3.0;</div>
 <div class="line">      <span class="keyword">const</span> <span class="keywordtype">double</span> small_radius = 1.00001; <span class="comment">// avoid codacy warnings</span></div>
 <div class="line">      smesh = SMH::makeTorus( big_radius, small_radius,</div>
-<div class="line">                              <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> { 0.0, 0.0, 0.0 }, m, n, 0,</div>
+<div class="line">                              <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> { 0.0, 0.0, 0.0 }, m, n, 0,</div>
 <div class="line">                              SMH::NormalsType::VERTEX_NORMALS );</div>
 <div class="line">      exp_K1_min = ( 1.0 / ( small_radius - big_radius ) );</div>
 <div class="line">      exp_K1_max = ( 1.0 / ( big_radius + small_radius ) );</div>
@@ -197,7 +197,7 @@ Computed k2 curvatures: min=0.48689 max=0.487788
 <div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( input == <span class="stringliteral">&quot;sphere&quot;</span> )</div>
 <div class="line">    {</div>
 <div class="line">      <span class="keyword">const</span> <span class="keywordtype">double</span> radius = 2.0;</div>
-<div class="line">      smesh = SMH::makeSphere( radius, <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> { 0.0, 0.0, 0.0 }, m, n,</div>
+<div class="line">      smesh = SMH::makeSphere( radius, <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> { 0.0, 0.0, 0.0 }, m, n,</div>
 <div class="line">                               SMH::NormalsType::VERTEX_NORMALS );</div>
 <div class="line">      exp_K1_min = 1.0 / radius;</div>
 <div class="line">      exp_K1_max = 1.0 / radius;</div>
@@ -207,7 +207,7 @@ Computed k2 curvatures: min=0.48689 max=0.487788
 <div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( input == <span class="stringliteral">&quot;lantern&quot;</span> )</div>
 <div class="line">    {</div>
 <div class="line">      <span class="keyword">const</span> <span class="keywordtype">double</span> radius = 2.0;</div>
-<div class="line">      smesh = SMH::makeLantern( radius, 1.0, <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> { 0.0, 0.0, 0.0 }, m, n,</div>
+<div class="line">      smesh = SMH::makeLantern( radius, 1.0, <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> { 0.0, 0.0, 0.0 }, m, n,</div>
 <div class="line">                                SMH::NormalsType::VERTEX_NORMALS );</div>
 <div class="line">      exp_K1_min = 0.0;</div>
 <div class="line">      exp_K1_max = 0.0;</div>
@@ -298,11 +298,11 @@ Computed k2 curvatures: min=0.48689 max=0.487788
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
 <div class="ttc" id="anamespaceDGtal_html_a2f512f10158f1714e32151336072f150"><div class="ttname"><a href="namespaceDGtal.html#a2f512f10158f1714e32151336072f150">DGtal::makeQuantifiedColorMap</a></div><div class="ttdeci">QuantifiedColorMap&lt; TColorMap &gt; makeQuantifiedColorMap(TColorMap colormap, int nb=50)</div><div class="ttdef"><b>Definition:</b> <a href="QuantifiedColorMap_8h_source.html#l00113">QuantifiedColorMap.h:113</a></div></div>
 <div class="ttc" id="atestArithmeticDSS-benchmark_8cpp_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="testArithmeticDSS-benchmark_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> <a href="testArithmeticDSS-benchmark_8cpp_source.html#l00147">testArithmeticDSS-benchmark.cpp:147</a></div></div>
-<div class="ttc" id="atestAstroid2D_8cpp_html_ac914bb734ccb5a7c569747c1e699c1aa"><div class="ttname"><a href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a></div><div class="ttdeci">Z2i::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testAstroid2D_8cpp_source.html#l00046">testAstroid2D.cpp:46</a></div></div>
+<div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:34 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:44:36 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

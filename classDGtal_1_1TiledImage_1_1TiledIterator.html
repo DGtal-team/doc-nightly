@@ -85,15 +85,19 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="TiledImage_8h_source.html">DGtal/images/TiledImage.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classDGtal_1_1TiledImage_1_1TiledIterator__inherit__graph.svg" width="510" height="82"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a3050972c073b7099a4e41d9b0adccbce"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a3050972c073b7099a4e41d9b0adccbce">iterator_category</a> = std::bidirectional_iterator_tag</td></tr>
+<tr class="separator:a3050972c073b7099a4e41d9b0adccbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bec6c5153796f5c92f3d2863b34620a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a9bec6c5153796f5c92f3d2863b34620a">value_type</a> = <a class="el" href="classDGtal_1_1TiledImage.html#a6a04d3cd606325df56d1b0438f9c9a65">Value</a></td></tr>
+<tr class="separator:a9bec6c5153796f5c92f3d2863b34620a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f824958fdcd68d9645d448843057e1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a92f824958fdcd68d9645d448843057e1">difference_type</a> = ptrdiff_t</td></tr>
+<tr class="separator:a92f824958fdcd68d9645d448843057e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a7fc6f0d6108d6d6374c2d95744b066"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a0a7fc6f0d6108d6d6374c2d95744b066">pointer</a> = <a class="el" href="classDGtal_1_1TiledImage.html#a6a04d3cd606325df56d1b0438f9c9a65">Value</a> *</td></tr>
+<tr class="separator:a0a7fc6f0d6108d6d6374c2d95744b066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab99d03a2da939941e14e74c0a6a0febf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab99d03a2da939941e14e74c0a6a0febf">reference</a> = <a class="el" href="classDGtal_1_1TiledImage.html#a6a04d3cd606325df56d1b0438f9c9a65">Value</a> &amp;</td></tr>
+<tr class="separator:ab99d03a2da939941e14e74c0a6a0febf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae47896a466496d2d3a745df09a2511b0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1ImageContainerBySTLVector.html#a7cd7b0da52697b0d0f1f5f65781d8a52">ImageContainer::Range::Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae47896a466496d2d3a745df09a2511b0">TiledRangeIterator</a></td></tr>
 <tr class="separator:ae47896a466496d2d3a745df09a2511b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d6d1fdc3d028b764b73be6e022c1e10"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDGtal_1_1HyperRectDomain.html#abd306a662192edd7e6e4af6fde9e8f56">Domain::Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a1d6d1fdc3d028b764b73be6e022c1e10">BlockCoordsIterator</a></td></tr>
@@ -166,7 +170,79 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00247">247</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00246">246</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+
+</div>
+</div>
+<a id="a92f824958fdcd68d9645d448843057e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92f824958fdcd68d9645d448843057e1">&#9670;&nbsp;</a></span>difference_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TImageContainer , typename TImageFactory , typename TImageCacheReadPolicy , typename TImageCacheWritePolicy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classDGtal_1_1TiledImage.html">DGtal::TiledImage</a>&lt; <a class="el" href="testVoronoiMapComplete_8cpp.html#a193012b215d8602f8ab30acd59e2b1cd">TImageContainer</a>, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::<a class="el" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a92f824958fdcd68d9645d448843057e1">TiledIterator::difference_type</a> =  ptrdiff_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00241">241</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+
+</div>
+</div>
+<a id="a3050972c073b7099a4e41d9b0adccbce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3050972c073b7099a4e41d9b0adccbce">&#9670;&nbsp;</a></span>iterator_category</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TImageContainer , typename TImageFactory , typename TImageCacheReadPolicy , typename TImageCacheWritePolicy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classDGtal_1_1TiledImage.html">DGtal::TiledImage</a>&lt; <a class="el" href="testVoronoiMapComplete_8cpp.html#a193012b215d8602f8ab30acd59e2b1cd">TImageContainer</a>, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::<a class="el" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a3050972c073b7099a4e41d9b0adccbce">TiledIterator::iterator_category</a> =  std::bidirectional_iterator_tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00239">239</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+
+</div>
+</div>
+<a id="a0a7fc6f0d6108d6d6374c2d95744b066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a7fc6f0d6108d6d6374c2d95744b066">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TImageContainer , typename TImageFactory , typename TImageCacheReadPolicy , typename TImageCacheWritePolicy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classDGtal_1_1TiledImage.html">DGtal::TiledImage</a>&lt; <a class="el" href="testVoronoiMapComplete_8cpp.html#a193012b215d8602f8ab30acd59e2b1cd">TImageContainer</a>, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::<a class="el" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a0a7fc6f0d6108d6d6374c2d95744b066">TiledIterator::pointer</a> =  <a class="el" href="classDGtal_1_1TiledImage.html#a6a04d3cd606325df56d1b0438f9c9a65">Value</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00242">242</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+
+</div>
+</div>
+<a id="ab99d03a2da939941e14e74c0a6a0febf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab99d03a2da939941e14e74c0a6a0febf">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TImageContainer , typename TImageFactory , typename TImageCacheReadPolicy , typename TImageCacheWritePolicy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classDGtal_1_1TiledImage.html">DGtal::TiledImage</a>&lt; <a class="el" href="testVoronoiMapComplete_8cpp.html#a193012b215d8602f8ab30acd59e2b1cd">TImageContainer</a>, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::<a class="el" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab99d03a2da939941e14e74c0a6a0febf">TiledIterator::reference</a> =  <a class="el" href="classDGtal_1_1TiledImage.html#a6a04d3cd606325df56d1b0438f9c9a65">Value</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00243">243</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
 
 </div>
 </div>
@@ -184,7 +260,25 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00246">246</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00245">245</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+
+</div>
+</div>
+<a id="a9bec6c5153796f5c92f3d2863b34620a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bec6c5153796f5c92f3d2863b34620a">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TImageContainer , typename TImageFactory , typename TImageCacheReadPolicy , typename TImageCacheWritePolicy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classDGtal_1_1TiledImage.html">DGtal::TiledImage</a>&lt; <a class="el" href="testVoronoiMapComplete_8cpp.html#a193012b215d8602f8ab30acd59e2b1cd">TImageContainer</a>, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::<a class="el" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a9bec6c5153796f5c92f3d2863b34620a">TiledIterator::value_type</a> =  <a class="el" href="classDGtal_1_1TiledImage.html#a6a04d3cd606325df56d1b0438f9c9a65">Value</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00240">240</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
 
 </div>
 </div>
@@ -233,24 +327,24 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00257">257</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                                                                                  :  <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a> ( aTiledImage ),</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                                                                                     <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> ( aBlockCoordsIterator )</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      {</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> != <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a3f6fda2aedf7e82a90fce1cb35d923bc">domainBlockCoords</a>().end() )</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;          {</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a0ac723b8425bd675b3d284a760824d53">findTileFromBlockCoords</a>( (*<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>) );</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a>-&gt;range().begin();</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;          }</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      }</div>
-<div class="ttc" id="aclassDGtal_1_1TiledImage_1_1TiledIterator_html_aa589eaf34f928482834929139f01a80f"><div class="ttname"><a href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">DGtal::TiledImage::TiledIterator::myTile</a></div><div class="ttdeci">ImageContainer * myTile</div><div class="ttdoc">Alias on the current tile.</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00440">TiledImage.h:440</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1TiledImage_1_1TiledIterator_html_ab8496aef4ba34c2d7796be5ec1eb5f49"><div class="ttname"><a href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">DGtal::TiledImage::TiledIterator::myBlockCoordsIterator</a></div><div class="ttdeci">BlockCoordsIterator myBlockCoordsIterator</div><div class="ttdoc">Current block coords iterator.</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00446">TiledImage.h:446</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1TiledImage_1_1TiledIterator_html_ac763a99e4e1255daa0be988c5f6804cc"><div class="ttname"><a href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">DGtal::TiledImage::TiledIterator::myTiledImage</a></div><div class="ttdeci">const TiledImage * myTiledImage</div><div class="ttdoc">TiledImage pointer.</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00437">TiledImage.h:437</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1TiledImage_1_1TiledIterator_html_ae8c7789f00ee56574aa0408cd7416c51"><div class="ttname"><a href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">DGtal::TiledImage::TiledIterator::myTiledRangeIterator</a></div><div class="ttdeci">TiledRangeIterator myTiledRangeIterator</div><div class="ttdoc">Current tiled range iterator.</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00443">TiledImage.h:443</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1TiledImage_html_a0ac723b8425bd675b3d284a760824d53"><div class="ttname"><a href="classDGtal_1_1TiledImage.html#a0ac723b8425bd675b3d284a760824d53">DGtal::TiledImage::findTileFromBlockCoords</a></div><div class="ttdeci">ImageContainer * findTileFromBlockCoords(const Point &amp;aCoord) const</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00684">TiledImage.h:684</a></div></div>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00256">256</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                                                                                  :  <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a> ( aTiledImage ),</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                                                                                     <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> ( aBlockCoordsIterator )</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> != <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a3f6fda2aedf7e82a90fce1cb35d923bc">domainBlockCoords</a>().end() )</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;          {</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a0ac723b8425bd675b3d284a760824d53">findTileFromBlockCoords</a>( (*<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>) );</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a>-&gt;range().begin();</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;          }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      }</div>
+<div class="ttc" id="aclassDGtal_1_1TiledImage_1_1TiledIterator_html_aa589eaf34f928482834929139f01a80f"><div class="ttname"><a href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">DGtal::TiledImage::TiledIterator::myTile</a></div><div class="ttdeci">ImageContainer * myTile</div><div class="ttdoc">Alias on the current tile.</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00439">TiledImage.h:439</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1TiledImage_1_1TiledIterator_html_ab8496aef4ba34c2d7796be5ec1eb5f49"><div class="ttname"><a href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">DGtal::TiledImage::TiledIterator::myBlockCoordsIterator</a></div><div class="ttdeci">BlockCoordsIterator myBlockCoordsIterator</div><div class="ttdoc">Current block coords iterator.</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00445">TiledImage.h:445</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1TiledImage_1_1TiledIterator_html_ac763a99e4e1255daa0be988c5f6804cc"><div class="ttname"><a href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">DGtal::TiledImage::TiledIterator::myTiledImage</a></div><div class="ttdeci">const TiledImage * myTiledImage</div><div class="ttdoc">TiledImage pointer.</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00436">TiledImage.h:436</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1TiledImage_1_1TiledIterator_html_ae8c7789f00ee56574aa0408cd7416c51"><div class="ttname"><a href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">DGtal::TiledImage::TiledIterator::myTiledRangeIterator</a></div><div class="ttdeci">TiledRangeIterator myTiledRangeIterator</div><div class="ttdoc">Current tiled range iterator.</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00442">TiledImage.h:442</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1TiledImage_html_a0ac723b8425bd675b3d284a760824d53"><div class="ttname"><a href="classDGtal_1_1TiledImage.html#a0ac723b8425bd675b3d284a760824d53">DGtal::TiledImage::findTileFromBlockCoords</a></div><div class="ttdeci">ImageContainer * findTileFromBlockCoords(const Point &amp;aCoord) const</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00683">TiledImage.h:683</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1TiledImage_html_a3f6fda2aedf7e82a90fce1cb35d923bc"><div class="ttname"><a href="classDGtal_1_1TiledImage.html#a3f6fda2aedf7e82a90fce1cb35d923bc">DGtal::TiledImage::domainBlockCoords</a></div><div class="ttdeci">const Domain domainBlockCoords() const</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00210">TiledImage.h:210</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00210">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::domainBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00684">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::findTileFromBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00446">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myBlockCoordsIterator</a>, <a class="el" href="TiledImage_8h_source.html#l00440">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTile</a>, <a class="el" href="TiledImage_8h_source.html#l00437">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledImage</a>, and <a class="el" href="TiledImage_8h_source.html#l00443">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledRangeIterator</a>.</p>
+<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00210">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::domainBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00683">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::findTileFromBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00445">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myBlockCoordsIterator</a>, <a class="el" href="TiledImage_8h_source.html#l00439">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTile</a>, <a class="el" href="TiledImage_8h_source.html#l00436">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledImage</a>, and <a class="el" href="TiledImage_8h_source.html#l00442">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledRangeIterator</a>.</p>
 
 </div>
 </div>
@@ -305,19 +399,19 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00276">276</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                                                                                  :  <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a> ( aTiledImage ),</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                                                                     <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> ( aBlockCoordsIterator )</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      {</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> != <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a3f6fda2aedf7e82a90fce1cb35d923bc">domainBlockCoords</a>().end() )</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;          {</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a0ac723b8425bd675b3d284a760824d53">findTileFromBlockCoords</a>( (*<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>) );</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a>-&gt;range().begin(<a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9ae40316aa447d5a39eb6f76dba59444">aPoint</a>);</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;          }</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      }</div>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00275">275</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                                                                                  :  <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a> ( aTiledImage ),</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                                                                                     <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> ( aBlockCoordsIterator )</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> != <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a3f6fda2aedf7e82a90fce1cb35d923bc">domainBlockCoords</a>().end() )</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;          {</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a0ac723b8425bd675b3d284a760824d53">findTileFromBlockCoords</a>( (*<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>) );</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a>-&gt;range().begin(<a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9ae40316aa447d5a39eb6f76dba59444">aPoint</a>);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;          }</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      }</div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_a9ae40316aa447d5a39eb6f76dba59444"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9ae40316aa447d5a39eb6f76dba59444">aPoint</a></div><div class="ttdeci">const Point aPoint(3, 4)</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9ae40316aa447d5a39eb6f76dba59444">aPoint()</a>, <a class="el" href="TiledImage_8h_source.html#l00210">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::domainBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00684">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::findTileFromBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00446">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myBlockCoordsIterator</a>, <a class="el" href="TiledImage_8h_source.html#l00440">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTile</a>, <a class="el" href="TiledImage_8h_source.html#l00437">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledImage</a>, and <a class="el" href="TiledImage_8h_source.html#l00443">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledRangeIterator</a>.</p>
+<p class="reference">References <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9ae40316aa447d5a39eb6f76dba59444">aPoint()</a>, <a class="el" href="TiledImage_8h_source.html#l00210">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::domainBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00683">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::findTileFromBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00445">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myBlockCoordsIterator</a>, <a class="el" href="TiledImage_8h_source.html#l00439">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTile</a>, <a class="el" href="TiledImage_8h_source.html#l00436">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledImage</a>, and <a class="el" href="TiledImage_8h_source.html#l00442">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledRangeIterator</a>.</p>
 
 </div>
 </div>
@@ -348,27 +442,27 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 </div><div class="memdoc">
 <p>Implements the next() method to scan the domain points dimension by dimension (lexicographic order). </p>
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00330">330</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      {</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a>++;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a> != <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a>-&gt;range().end() )</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;          <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;          {</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>++;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> == <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a3f6fda2aedf7e82a90fce1cb35d923bc">domainBlockCoords</a>().end() )</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;              <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a0ac723b8425bd675b3d284a760824d53">findTileFromBlockCoords</a>( (*<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>) );</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a>-&gt;range().begin();</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;          }</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      }</div>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00329">329</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a>++;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a> != <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a>-&gt;range().end() )</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;          <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;          {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>++;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> == <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a3f6fda2aedf7e82a90fce1cb35d923bc">domainBlockCoords</a>().end() )</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;              <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a0ac723b8425bd675b3d284a760824d53">findTileFromBlockCoords</a>( (*<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>) );</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a>-&gt;range().begin();</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;          }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00210">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::domainBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00684">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::findTileFromBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00446">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myBlockCoordsIterator</a>, <a class="el" href="TiledImage_8h_source.html#l00440">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTile</a>, <a class="el" href="TiledImage_8h_source.html#l00437">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledImage</a>, and <a class="el" href="TiledImage_8h_source.html#l00443">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledRangeIterator</a>.</p>
+<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00210">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::domainBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00683">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::findTileFromBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00445">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myBlockCoordsIterator</a>, <a class="el" href="TiledImage_8h_source.html#l00439">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTile</a>, <a class="el" href="TiledImage_8h_source.html#l00436">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledImage</a>, and <a class="el" href="TiledImage_8h_source.html#l00442">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledRangeIterator</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TiledImage_8h_source.html#l00353">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator++()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TiledImage_8h_source.html#l00352">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator++()</a>.</p>
 
 </div>
 </div>
@@ -400,15 +494,15 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 <p>Operator !=</p>
 <dl class="section return"><dt>Returns</dt><dd>true if this and it are different. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00317">317</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      {</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> == <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a3f6fda2aedf7e82a90fce1cb35d923bc">domainBlockCoords</a>().end() )</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordflow">return</span> ( ( this-&gt;<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> != it.myBlockCoordsIterator ) || ( this-&gt;myTiledRangeIterator != it.myTiledRangeIterator ) );</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      }</div>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00316">316</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      {</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> == <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a3f6fda2aedf7e82a90fce1cb35d923bc">domainBlockCoords</a>().end() )</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">return</span> ( ( this-&gt;<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> != it.myBlockCoordsIterator ) || ( this-&gt;myTiledRangeIterator != it.myTiledRangeIterator ) );</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00210">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::domainBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00446">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myBlockCoordsIterator</a>, <a class="el" href="TiledImage_8h_source.html#l00437">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledImage</a>, and <a class="el" href="TiledImage_8h_source.html#l00443">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledRangeIterator</a>.</p>
+<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00210">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::domainBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00445">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myBlockCoordsIterator</a>, <a class="el" href="TiledImage_8h_source.html#l00436">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledImage</a>, and <a class="el" href="TiledImage_8h_source.html#l00442">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledRangeIterator</a>.</p>
 
 </div>
 </div>
@@ -439,12 +533,12 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 <p>operator *</p>
 <dl class="section return"><dt>Returns</dt><dd>the value associated to the current TiledRangeIterator position. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00295">295</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      {</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordflow">return</span> (*<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a>);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      }</div>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00294">294</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      {</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">return</span> (*<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a>);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00443">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledRangeIterator</a>.</p>
+<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00442">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledRangeIterator</a>.</p>
 
 </div>
 </div>
@@ -474,14 +568,14 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 </div><div class="memdoc">
 <p>Operator ++ (++it) </p>
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00353">353</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;      {</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a1ac5c588445252092acc267c878c648b">nextLexicographicOrder</a>();</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      }</div>
-<div class="ttc" id="aclassDGtal_1_1TiledImage_1_1TiledIterator_html_a1ac5c588445252092acc267c878c648b"><div class="ttname"><a href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a1ac5c588445252092acc267c878c648b">DGtal::TiledImage::TiledIterator::nextLexicographicOrder</a></div><div class="ttdeci">void nextLexicographicOrder()</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00330">TiledImage.h:330</a></div></div>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00352">352</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      {</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a1ac5c588445252092acc267c878c648b">nextLexicographicOrder</a>();</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      }</div>
+<div class="ttc" id="aclassDGtal_1_1TiledImage_1_1TiledIterator_html_a1ac5c588445252092acc267c878c648b"><div class="ttname"><a href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a1ac5c588445252092acc267c878c648b">DGtal::TiledImage::TiledIterator::nextLexicographicOrder</a></div><div class="ttdeci">void nextLexicographicOrder()</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00329">TiledImage.h:329</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00330">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::nextLexicographicOrder()</a>.</p>
+<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00329">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::nextLexicographicOrder()</a>.</p>
 
 </div>
 </div>
@@ -512,15 +606,15 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 </div><div class="memdoc">
 <p>Operator ++ (it++) </p>
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00364">364</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      {</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ad9122854f69fb8cd7e57967267f5a593">TiledIterator</a> tmp = *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a1ac5c588445252092acc267c878c648b">nextLexicographicOrder</a>();</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">return</span> tmp;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;      }</div>
-<div class="ttc" id="aclassDGtal_1_1TiledImage_1_1TiledIterator_html_ad9122854f69fb8cd7e57967267f5a593"><div class="ttname"><a href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ad9122854f69fb8cd7e57967267f5a593">DGtal::TiledImage::TiledIterator::TiledIterator</a></div><div class="ttdeci">TiledIterator(BlockCoordsIterator aBlockCoordsIterator, const TiledImage&lt; ImageContainer, ImageFactory, ImageCacheReadPolicy, ImageCacheWritePolicy &gt; *aTiledImage)</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00257">TiledImage.h:257</a></div></div>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00363">363</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      {</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ad9122854f69fb8cd7e57967267f5a593">TiledIterator</a> tmp = *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a1ac5c588445252092acc267c878c648b">nextLexicographicOrder</a>();</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      }</div>
+<div class="ttc" id="aclassDGtal_1_1TiledImage_1_1TiledIterator_html_ad9122854f69fb8cd7e57967267f5a593"><div class="ttname"><a href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ad9122854f69fb8cd7e57967267f5a593">DGtal::TiledImage::TiledIterator::TiledIterator</a></div><div class="ttdeci">TiledIterator(BlockCoordsIterator aBlockCoordsIterator, const TiledImage&lt; ImageContainer, ImageFactory, ImageCacheReadPolicy, ImageCacheWritePolicy &gt; *aTiledImage)</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00256">TiledImage.h:256</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00330">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::nextLexicographicOrder()</a>.</p>
+<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00329">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::nextLexicographicOrder()</a>.</p>
 
 </div>
 </div>
@@ -550,14 +644,14 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 </div><div class="memdoc">
 <p>Operator &ndash; (&ndash;it) </p>
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00418">418</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      {</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a748344862b92bab382ddef04b5509f0f">prevLexicographicOrder</a>();</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;      }</div>
-<div class="ttc" id="aclassDGtal_1_1TiledImage_1_1TiledIterator_html_a748344862b92bab382ddef04b5509f0f"><div class="ttname"><a href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a748344862b92bab382ddef04b5509f0f">DGtal::TiledImage::TiledIterator::prevLexicographicOrder</a></div><div class="ttdeci">void prevLexicographicOrder()</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00376">TiledImage.h:376</a></div></div>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00417">417</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;      {</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a748344862b92bab382ddef04b5509f0f">prevLexicographicOrder</a>();</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;      }</div>
+<div class="ttc" id="aclassDGtal_1_1TiledImage_1_1TiledIterator_html_a748344862b92bab382ddef04b5509f0f"><div class="ttname"><a href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a748344862b92bab382ddef04b5509f0f">DGtal::TiledImage::TiledIterator::prevLexicographicOrder</a></div><div class="ttdeci">void prevLexicographicOrder()</div><div class="ttdef"><b>Definition:</b> <a href="TiledImage_8h_source.html#l00375">TiledImage.h:375</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00376">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::prevLexicographicOrder()</a>.</p>
+<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00375">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::prevLexicographicOrder()</a>.</p>
 
 </div>
 </div>
@@ -588,14 +682,14 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 </div><div class="memdoc">
 <p>Operator &ndash; (it&ndash;) </p>
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00428">428</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;      {</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ad9122854f69fb8cd7e57967267f5a593">TiledIterator</a> tmp = *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a748344862b92bab382ddef04b5509f0f">prevLexicographicOrder</a>();</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        <span class="keywordflow">return</span> tmp;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;      }</div>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00427">427</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;      {</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ad9122854f69fb8cd7e57967267f5a593">TiledIterator</a> tmp = *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#a748344862b92bab382ddef04b5509f0f">prevLexicographicOrder</a>();</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;      }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00376">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::prevLexicographicOrder()</a>.</p>
+<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00375">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::prevLexicographicOrder()</a>.</p>
 
 </div>
 </div>
@@ -627,12 +721,12 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 <p>Operator ==</p>
 <dl class="section return"><dt>Returns</dt><dd>true if this and it are equals. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00306">306</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      {</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">return</span> ( ( this-&gt;<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> == it.myBlockCoordsIterator ) &amp;&amp; ( this-&gt;myTiledRangeIterator == it.myTiledRangeIterator ) );</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      }</div>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00305">305</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordflow">return</span> ( ( this-&gt;<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> == it.myBlockCoordsIterator ) &amp;&amp; ( this-&gt;myTiledRangeIterator == it.myTiledRangeIterator ) );</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00446">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myBlockCoordsIterator</a>, and <a class="el" href="TiledImage_8h_source.html#l00443">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledRangeIterator</a>.</p>
+<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00445">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myBlockCoordsIterator</a>, and <a class="el" href="TiledImage_8h_source.html#l00442">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledRangeIterator</a>.</p>
 
 </div>
 </div>
@@ -662,46 +756,46 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 </div><div class="memdoc">
 <p>Implements the prev() method to scan the domain points dimension by dimension (lexicographic order). </p>
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00376">376</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;      {</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="comment">// -- IF we are at the end... (reverse, --)</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> == <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a3f6fda2aedf7e82a90fce1cb35d923bc">domainBlockCoords</a>().end() )</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;          {</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>--;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a0ac723b8425bd675b3d284a760824d53">findTileFromBlockCoords</a>( (*<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>) );</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a>-&gt;range().end();</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a>--;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;          }</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="comment">// -- IF we are at the end... (reverse, --)</span></div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="comment">// ---</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a> != <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a>-&gt;range().begin() )</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;          {</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a>--;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;          }</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;          {</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;            <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> == <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a3f6fda2aedf7e82a90fce1cb35d923bc">domainBlockCoords</a>().begin() )</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;              <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160; </div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>--;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160; </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a0ac723b8425bd675b3d284a760824d53">findTileFromBlockCoords</a>( (*<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>) );</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a>-&gt;range().end();</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a>--;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;          }</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      }</div>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00375">375</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      {</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="comment">// -- IF we are at the end... (reverse, --)</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> == <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a3f6fda2aedf7e82a90fce1cb35d923bc">domainBlockCoords</a>().end() )</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;          {</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>--;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a0ac723b8425bd675b3d284a760824d53">findTileFromBlockCoords</a>( (*<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>) );</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a>-&gt;range().end();</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a>--;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;          }</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="comment">// -- IF we are at the end... (reverse, --)</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="comment">// ---</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a> != <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a>-&gt;range().begin() )</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;          {</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a>--;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;          }</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;          {</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            <span class="keywordflow">if</span> ( <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a> == <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a3f6fda2aedf7e82a90fce1cb35d923bc">domainBlockCoords</a>().begin() )</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;              <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>--;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ac763a99e4e1255daa0be988c5f6804cc">myTiledImage</a>-&gt;<a class="code" href="classDGtal_1_1TiledImage.html#a0ac723b8425bd675b3d284a760824d53">findTileFromBlockCoords</a>( (*<a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49">myBlockCoordsIterator</a>) );</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a> = <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f">myTile</a>-&gt;range().end();</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;            <a class="code" href="classDGtal_1_1TiledImage_1_1TiledIterator.html#ae8c7789f00ee56574aa0408cd7416c51">myTiledRangeIterator</a>--;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;          }</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00210">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::domainBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00684">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::findTileFromBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00446">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myBlockCoordsIterator</a>, <a class="el" href="TiledImage_8h_source.html#l00440">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTile</a>, <a class="el" href="TiledImage_8h_source.html#l00437">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledImage</a>, and <a class="el" href="TiledImage_8h_source.html#l00443">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledRangeIterator</a>.</p>
+<p class="reference">References <a class="el" href="TiledImage_8h_source.html#l00210">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::domainBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00683">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::findTileFromBlockCoords()</a>, <a class="el" href="TiledImage_8h_source.html#l00445">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myBlockCoordsIterator</a>, <a class="el" href="TiledImage_8h_source.html#l00439">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTile</a>, <a class="el" href="TiledImage_8h_source.html#l00436">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledImage</a>, and <a class="el" href="TiledImage_8h_source.html#l00442">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::myTiledRangeIterator</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TiledImage_8h_source.html#l00418">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator--()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TiledImage_8h_source.html#l00417">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator--()</a>.</p>
 
 </div>
 </div>
@@ -728,7 +822,7 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00803">803</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00802">802</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
 
 </div>
 </div>
@@ -757,9 +851,9 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 
 <p>Current block coords iterator. </p>
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00446">446</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00445">445</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TiledImage_8h_source.html#l00330">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::nextLexicographicOrder()</a>, <a class="el" href="TiledImage_8h_source.html#l00317">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator!=()</a>, <a class="el" href="TiledImage_8h_source.html#l00306">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator==()</a>, <a class="el" href="TiledImage_8h_source.html#l00376">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::prevLexicographicOrder()</a>, and <a class="el" href="TiledImage_8h_source.html#l00257">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::TiledIterator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TiledImage_8h_source.html#l00329">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::nextLexicographicOrder()</a>, <a class="el" href="TiledImage_8h_source.html#l00316">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator!=()</a>, <a class="el" href="TiledImage_8h_source.html#l00305">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator==()</a>, <a class="el" href="TiledImage_8h_source.html#l00375">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::prevLexicographicOrder()</a>, and <a class="el" href="TiledImage_8h_source.html#l00256">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::TiledIterator()</a>.</p>
 
 </div>
 </div>
@@ -787,9 +881,9 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 
 <p><a class="el" href="classDGtal_1_1Alias.html" title="Aim: This class encapsulates its parameter class so that to indicate to the user that the object/poin...">Alias</a> on the current tile. </p>
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00440">440</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00439">439</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TiledImage_8h_source.html#l00330">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::nextLexicographicOrder()</a>, <a class="el" href="TiledImage_8h_source.html#l00376">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::prevLexicographicOrder()</a>, and <a class="el" href="TiledImage_8h_source.html#l00257">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::TiledIterator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TiledImage_8h_source.html#l00329">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::nextLexicographicOrder()</a>, <a class="el" href="TiledImage_8h_source.html#l00375">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::prevLexicographicOrder()</a>, and <a class="el" href="TiledImage_8h_source.html#l00256">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::TiledIterator()</a>.</p>
 
 </div>
 </div>
@@ -817,9 +911,9 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 
 <p><a class="el" href="classDGtal_1_1TiledImage.html" title="Aim: implements a tiled image from a &quot;bigger/original&quot; one from an ImageFactory.">TiledImage</a> pointer. </p>
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00437">437</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00436">436</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TiledImage_8h_source.html#l00330">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::nextLexicographicOrder()</a>, <a class="el" href="TiledImage_8h_source.html#l00317">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator!=()</a>, <a class="el" href="TiledImage_8h_source.html#l00376">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::prevLexicographicOrder()</a>, and <a class="el" href="TiledImage_8h_source.html#l00257">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::TiledIterator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TiledImage_8h_source.html#l00329">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::nextLexicographicOrder()</a>, <a class="el" href="TiledImage_8h_source.html#l00316">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator!=()</a>, <a class="el" href="TiledImage_8h_source.html#l00375">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::prevLexicographicOrder()</a>, and <a class="el" href="TiledImage_8h_source.html#l00256">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::TiledIterator()</a>.</p>
 
 </div>
 </div>
@@ -847,9 +941,9 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 
 <p>Current tiled range iterator. </p>
 
-<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00443">443</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="TiledImage_8h_source.html#l00442">442</a> of file <a class="el" href="TiledImage_8h_source.html">TiledImage.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="TiledImage_8h_source.html#l00330">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::nextLexicographicOrder()</a>, <a class="el" href="TiledImage_8h_source.html#l00317">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator!=()</a>, <a class="el" href="TiledImage_8h_source.html#l00295">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator*()</a>, <a class="el" href="TiledImage_8h_source.html#l00306">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator==()</a>, <a class="el" href="TiledImage_8h_source.html#l00376">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::prevLexicographicOrder()</a>, and <a class="el" href="TiledImage_8h_source.html#l00257">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::TiledIterator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="TiledImage_8h_source.html#l00329">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::nextLexicographicOrder()</a>, <a class="el" href="TiledImage_8h_source.html#l00316">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator!=()</a>, <a class="el" href="TiledImage_8h_source.html#l00294">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator*()</a>, <a class="el" href="TiledImage_8h_source.html#l00305">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::operator==()</a>, <a class="el" href="TiledImage_8h_source.html#l00375">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::prevLexicographicOrder()</a>, and <a class="el" href="TiledImage_8h_source.html#l00256">DGtal::TiledImage&lt; TImageContainer, TImageFactory, TImageCacheReadPolicy, TImageCacheWritePolicy &gt;::TiledIterator::TiledIterator()</a>.</p>
 
 </div>
 </div>
@@ -859,7 +953,7 @@ template&lt;typename TImageContainer , typename TImageFactory , typename TImageC
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:17 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:18 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

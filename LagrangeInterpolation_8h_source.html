@@ -188,7 +188,7 @@ $(function() {
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
 <div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="classDGtal_1_1LagrangeInterpolation.html#a649200f28c5dbdd580b35ecc32a63745">  199</a></span>&#160;    <a class="code" href="classDGtal_1_1MPolynomial.html">Polynomial</a> <a class="code" href="classDGtal_1_1LagrangeInterpolation.html#a649200f28c5dbdd580b35ecc32a63745">basis</a>( <a class="code" href="classDGtal_1_1LagrangeInterpolation.html#a811d355c1b6380f3cf1cdbf0c86ca65d">Size</a> i )<span class="keyword"> const</span></div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      ASSERT( 0 &lt;= i &amp;&amp; i &lt; <a class="code" href="classDGtal_1_1LagrangeInterpolation.html#a65737e8af9d9049e1c26fcce0e178cb8">size</a>() );</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      ASSERT( i &lt; <a class="code" href="classDGtal_1_1LagrangeInterpolation.html#a65737e8af9d9049e1c26fcce0e178cb8">size</a>() );</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1LagrangeInterpolation.html#a5a3952610395d08d045f4ebb09b25708">myLagrangeBasis</a>[ i ];</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    }</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      </div>
@@ -262,7 +262,7 @@ $(function() {
 <div class="ttc" id="aclassDGtal_1_1LagrangeInterpolation_html_af281ff25bc8909961bccf53ab95e42a1"><div class="ttname"><a href="classDGtal_1_1LagrangeInterpolation.html#af281ff25bc8909961bccf53ab95e42a1">DGtal::LagrangeInterpolation::myX</a></div><div class="ttdeci">std::vector&lt; Ring &gt; myX</div><div class="ttdoc">The vector of X-values (abscissa)</div><div class="ttdef"><b>Definition:</b> <a href="LagrangeInterpolation_8h_source.html#l00233">LagrangeInterpolation.h:233</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1LagrangeInterpolation_html_af3273112bc6958f8351aba3fee190470"><div class="ttname"><a href="classDGtal_1_1LagrangeInterpolation.html#af3273112bc6958f8351aba3fee190470">DGtal::LagrangeInterpolation::init</a></div><div class="ttdeci">void init(const std::vector&lt; Ring &gt; &amp;xvalues)</div><div class="ttdef"><b>Definition:</b> <a href="LagrangeInterpolation_8h_source.html#l00148">LagrangeInterpolation.h:148</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1LagrangeInterpolation_html_afb4ad4ba60e962543397f8e165c3b6a7"><div class="ttname"><a href="classDGtal_1_1LagrangeInterpolation.html#afb4ad4ba60e962543397f8e165c3b6a7">DGtal::LagrangeInterpolation::LagrangeInterpolation</a></div><div class="ttdeci">LagrangeInterpolation(const LagrangeInterpolation &amp;other)=default</div></div>
-<div class="ttc" id="aclassDGtal_1_1MPolynomial_html"><div class="ttname"><a href="classDGtal_1_1MPolynomial.html">DGtal::MPolynomial</a></div><div class="ttdoc">Aim: Represents a multivariate polynomial, i.e. an element of , where K is some ring or field.</div><div class="ttdef"><b>Definition:</b> <a href="MPolynomial_8h_source.html#l00954">MPolynomial.h:955</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1MPolynomial_html"><div class="ttname"><a href="classDGtal_1_1MPolynomial.html">DGtal::MPolynomial</a></div><div class="ttdoc">Aim: Represents a multivariate polynomial, i.e. an element of , where K is some ring or field.</div><div class="ttdef"><b>Definition:</b> <a href="MPolynomial_8h_source.html#l00964">MPolynomial.h:965</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
 <div class="ttc" id="anamespaceDGtal_html_a66aca9ad97cfa71ddd5b1333a392d50d"><div class="ttname"><a href="http://dgtal.org/doc/tools/nightly/namespaceDGtal.html#a66aca9ad97cfa71ddd5b1333a392d50d">DGtal::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, const ATu0v1&lt; TKSpace, TLinearAlgebra &gt; &amp;object)</div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fbe8c8d47ca5c36ced14284ac62613d"><div class="ttname"><a href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">DGtal::Dimension</a></div><div class="ttdeci">DGtal::uint32_t Dimension</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00136">Common.h:136</a></div></div>
@@ -271,7 +271,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:52 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:44:54 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

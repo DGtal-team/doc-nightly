@@ -213,7 +213,7 @@ class DGtal::DistanceBreadthFirstVisitor&lt; TGraph, TVertexFunctor, TMarkSet &g
 <div class="line">     <a class="code" href="classDGtal_1_1DistanceBreadthFirstVisitor.html#aa69545f7baa597b26e716570d543da18">Graph</a> g( ... );</div>
 <div class="line">     <a class="code" href="testTriangulatedSurface_8cpp.html#ae931baebcf0de56dd5f3b9342207e4fd">Graph::Vertex</a> p( ... );</div>
 <div class="line">     <span class="keyword">typedef</span> CanonicSCellEmbedder&lt;KSpace&gt; VertexEmbedder;</div>
-<div class="line">     <span class="keyword">typedef</span> <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">VertexEmbedder::Value</a> <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>;</div>
+<div class="line">     <span class="keyword">typedef</span> <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">VertexEmbedder::Value</a> <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>;</div>
 <div class="line">     <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1PointVector.html#a6409a51203e0edc907d523fb19ed7e41">RealPoint::Coordinate</a> <a class="code" href="classDGtal_1_1DistanceBreadthFirstVisitor.html#a8a3ebe61460ad10e8e84700452ae9227">Scalar</a>;</div>
 <div class="line">     <span class="keyword">typedef</span> ExactPredicateLpSeparableMetric&lt;Space,2&gt; Distance; <span class="comment">// Euclidean distance</span></div>
 <div class="line">     <span class="keyword">using</span> EDToPoint = std::function&lt;double(<span class="keyword">const</span> <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Space::Point</a> &amp;)&gt;; <span class="comment">// Fix one point</span></div>
@@ -236,11 +236,11 @@ class DGtal::DistanceBreadthFirstVisitor&lt; TGraph, TVertexFunctor, TMarkSet &g
 <div class="ttc" id="aclassDGtal_1_1DistanceBreadthFirstVisitor_html_a2d3d4a6eaa3734a0b573ec915a716ebb"><div class="ttname"><a href="classDGtal_1_1DistanceBreadthFirstVisitor.html#a2d3d4a6eaa3734a0b573ec915a716ebb">DGtal::DistanceBreadthFirstVisitor::VertexFunctor</a></div><div class="ttdeci">TVertexFunctor VertexFunctor</div><div class="ttdef"><b>Definition:</b> <a href="DistanceBreadthFirstVisitor_8h_source.html#l00211">DistanceBreadthFirstVisitor.h:211</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1DistanceBreadthFirstVisitor_html_a8a3ebe61460ad10e8e84700452ae9227"><div class="ttname"><a href="classDGtal_1_1DistanceBreadthFirstVisitor.html#a8a3ebe61460ad10e8e84700452ae9227">DGtal::DistanceBreadthFirstVisitor::Scalar</a></div><div class="ttdeci">VertexFunctor::Value Scalar</div><div class="ttdef"><b>Definition:</b> <a href="DistanceBreadthFirstVisitor_8h_source.html#l00215">DistanceBreadthFirstVisitor.h:215</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1DistanceBreadthFirstVisitor_html_aa69545f7baa597b26e716570d543da18"><div class="ttname"><a href="classDGtal_1_1DistanceBreadthFirstVisitor.html#aa69545f7baa597b26e716570d543da18">DGtal::DistanceBreadthFirstVisitor::Graph</a></div><div class="ttdeci">TGraph Graph</div><div class="ttdef"><b>Definition:</b> <a href="DistanceBreadthFirstVisitor_8h_source.html#l00210">DistanceBreadthFirstVisitor.h:210</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1PointVector_html_a6409a51203e0edc907d523fb19ed7e41"><div class="ttname"><a href="classDGtal_1_1PointVector.html#a6409a51203e0edc907d523fb19ed7e41">DGtal::PointVector::Coordinate</a></div><div class="ttdeci">Component Coordinate</div><div class="ttdoc">Type for Point elements.</div><div class="ttdef"><b>Definition:</b> <a href="PointVector_8h_source.html#l00617">PointVector.h:617</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1PointVector_html_a6409a51203e0edc907d523fb19ed7e41"><div class="ttname"><a href="classDGtal_1_1PointVector.html#a6409a51203e0edc907d523fb19ed7e41">DGtal::PointVector&lt; 3, double &gt;::Coordinate</a></div><div class="ttdeci">Component Coordinate</div><div class="ttdoc">Type for Point elements.</div><div class="ttdef"><b>Definition:</b> <a href="PointVector_8h_source.html#l00617">PointVector.h:617</a></div></div>
 <div class="ttc" id="agreedy-plane-segmentation-ex2_8cpp_html_ac49b0cfbe4d1466bd0b6ab2a3b2f703b"><div class="ttname"><a href="greedy-plane-segmentation-ex2_8cpp.html#ac49b0cfbe4d1466bd0b6ab2a3b2f703b">Visitor</a></div><div class="ttdeci">BreadthFirstVisitor&lt; MyDigitalSurface &gt; Visitor</div><div class="ttdef"><b>Definition:</b> <a href="greedy-plane-segmentation-ex2_8cpp_source.html#l00097">greedy-plane-segmentation-ex2.cpp:97</a></div></div>
-<div class="ttc" id="atestAstroid2D_8cpp_html_ac914bb734ccb5a7c569747c1e699c1aa"><div class="ttname"><a href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a></div><div class="ttdeci">Z2i::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testAstroid2D_8cpp_source.html#l00046">testAstroid2D.cpp:46</a></div></div>
 <div class="ttc" id="atestClone2_8cpp_html_a15e9592ccc512dc691b46185e6814758"><div class="ttname"><a href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a></div><div class="ttdeci">MyPointD Point</div><div class="ttdef"><b>Definition:</b> <a href="testClone2_8cpp_source.html#l00383">testClone2.cpp:383</a></div></div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_a566a00621638570a4186414035153a2e"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a></div><div class="ttdeci">double Value</div><div class="ttdef"><b>Definition:</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00041">testSimpleRandomAccessRangeFromPoint.cpp:38</a></div></div>
+<div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 <div class="ttc" id="atestTriangulatedSurface_8cpp_html_ae931baebcf0de56dd5f3b9342207e4fd"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#ae931baebcf0de56dd5f3b9342207e4fd">Vertex</a></div><div class="ttdeci">TriMesh::Vertex Vertex</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00057">testTriangulatedSurface.cpp:57</a></div></div>
 </div><!-- fragment --><p>You may also visit vertices layer by layer, meaning that you wish to consider all the vertices at the same distance at the same time. You should use then <a class="el" href="classDGtal_1_1DistanceBreadthFirstVisitor.html#a49366adfbd14a35aabb239e517dc5ca9">DistanceBreadthFirstVisitor::getCurrentLayer</a>, <a class="el" href="classDGtal_1_1DistanceBreadthFirstVisitor.html#a7b384919ee0a6bf7ad3c0c37e6bad788">DistanceBreadthFirstVisitor::expandLayer</a>, and <a class="el" href="classDGtal_1_1DistanceBreadthFirstVisitor.html#abdd8f2733a7c00da5bc577854d45bb2b">DistanceBreadthFirstVisitor::ignoreLayer</a>.</p>
 <div class="fragment"><div class="line">std::list&lt;Node&gt; layer;</div>
@@ -379,7 +379,7 @@ template&lt;typename TGraph , typename TVertexFunctor , typename TMarkSet  = typ
 
 <p>Internal data structure for computing the distance ordering expansion. </p>
 
-<p class="definition">Definition at line <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html#l00259">259</a> of file <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html">DistanceBreadthFirstVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html#l00258">258</a> of file <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html">DistanceBreadthFirstVisitor.h</a>.</p>
 
 </div>
 </div>
@@ -489,7 +489,7 @@ template&lt;typename TGraph , typename TVertexFunctor , typename TMarkSet  = typ
 
 <p>Internal data structure for storing vertices. </p>
 
-<p class="definition">Definition at line <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html#l00261">261</a> of file <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html">DistanceBreadthFirstVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html#l00260">260</a> of file <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html">DistanceBreadthFirstVisitor.h</a>.</p>
 
 </div>
 </div>
@@ -1144,7 +1144,7 @@ template&lt;typename TGraph , typename TVertexFunctor , typename TMarkSet  = typ
 </div><div class="memdoc">
 <p>The distance object, a functor Vertex -&gt; Scalar. </p>
 
-<p class="definition">Definition at line <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html#l00484">484</a> of file <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html">DistanceBreadthFirstVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html#l00483">483</a> of file <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html">DistanceBreadthFirstVisitor.h</a>.</p>
 
 </div>
 </div>
@@ -1171,7 +1171,7 @@ template&lt;typename TGraph , typename TVertexFunctor , typename TMarkSet  = typ
 </div><div class="memdoc">
 <p>The graph where the traversal takes place. </p>
 
-<p class="definition">Definition at line <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html#l00479">479</a> of file <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html">DistanceBreadthFirstVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html#l00478">478</a> of file <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html">DistanceBreadthFirstVisitor.h</a>.</p>
 
 </div>
 </div>
@@ -1198,7 +1198,7 @@ template&lt;typename TGraph , typename TVertexFunctor , typename TMarkSet  = typ
 </div><div class="memdoc">
 <p>Set representing the marked vertices: the ones that have been visited and the ones that are going to be visited soon (at closest distance). </p>
 
-<p class="definition">Definition at line <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html#l00491">491</a> of file <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html">DistanceBreadthFirstVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html#l00490">490</a> of file <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html">DistanceBreadthFirstVisitor.h</a>.</p>
 
 </div>
 </div>
@@ -1225,7 +1225,7 @@ template&lt;typename TGraph , typename TVertexFunctor , typename TMarkSet  = typ
 </div><div class="memdoc">
 <p>Queue storing the vertices that are the next visited ones in the distance ordering traversal of the graph. </p>
 
-<p class="definition">Definition at line <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html#l00497">497</a> of file <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html">DistanceBreadthFirstVisitor.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html#l00496">496</a> of file <a class="el" href="DistanceBreadthFirstVisitor_8h_source.html">DistanceBreadthFirstVisitor.h</a>.</p>
 
 </div>
 </div>
@@ -1235,7 +1235,7 @@ template&lt;typename TGraph , typename TVertexFunctor , typename TMarkSet  = typ
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:16 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:18 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

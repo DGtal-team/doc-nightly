@@ -191,7 +191,7 @@ Building a triangulated surface</h2>
 <div class="fragment"><div class="line"><span class="comment">// The following includes and type definitions will be used everywhere afterwards.</span></div>
 <div class="line"><span class="preprocessor">#include &quot;DGtal/shapes/TriangulatedSurface.h&quot;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">typedef</span> PointVector&lt;3,double&gt;             <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>;</div>
+<div class="line"><span class="keyword">typedef</span> PointVector&lt;3,double&gt;             <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>;</div>
 <div class="line"><span class="keyword">typedef</span> TriangulatedSurface&lt; RealPoint &gt;  <a class="code" href="testTriangulatedSurface_8cpp.html#aaf4ecd10947ad3153979882617dda21f">TriMesh</a>;</div>
 <div class="line"><span class="keyword">typedef</span> <a class="code" href="testTriangulatedSurface_8cpp.html#a36c0bda5e047365ae72e11a1d75d082b">TriMesh::VertexRange</a>              <a class="code" href="testTriangulatedSurface_8cpp.html#a36c0bda5e047365ae72e11a1d75d082b">VertexRange</a>;</div>
 <div class="line"><span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1TriangulatedSurface.html#af4276e10c169bd7ebf80eea3c4a2d0be">TriMesh::ArcRange</a>                 <a class="code" href="testTriangulatedSurface_8cpp.html#ad03c498d78a6dd75a1c7991201fe8606">ArcRange</a>;</div>
@@ -201,10 +201,10 @@ Building a triangulated surface</h2>
 <div class="line"><span class="keyword">typedef</span> <a class="code" href="structDGtal_1_1TriangulatedSurface_1_1IndexedPropertyMap.html">TriMesh::PositionsMap</a>             <a class="code" href="testTriangulatedSurface_8cpp.html#a5506b620cc0c62a63c9a987601779ff4">PositionsMap</a>;</div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="testTriangulatedSurface_8cpp.html#aaf4ecd10947ad3153979882617dda21f">TriMesh</a> mesh;</div>
-<div class="line">mesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 0, 0, 0 ) ); <span class="comment">// vertex 0</span></div>
-<div class="line">mesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 1, 0, 0 ) ); <span class="comment">// vertex 1</span></div>
-<div class="line">mesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 0, 1, 0 ) ); <span class="comment">// vertex 2</span></div>
-<div class="line">mesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 1, 1, 1 ) ); <span class="comment">// vertex 3</span></div>
+<div class="line">mesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 0, 0, 0 ) ); <span class="comment">// vertex 0</span></div>
+<div class="line">mesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 1, 0, 0 ) ); <span class="comment">// vertex 1</span></div>
+<div class="line">mesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 0, 1, 0 ) ); <span class="comment">// vertex 2</span></div>
+<div class="line">mesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 1, 1, 1 ) ); <span class="comment">// vertex 3</span></div>
 <div class="line">mesh.addTriangle( 0, 1, 2 );            <span class="comment">// triangle 0</span></div>
 <div class="line">mesh.addTriangle( 3, 1, 0 );            <span class="comment">// triangle 1</span></div>
 <div class="line">mesh.addTriangle( 3, 2, 1 );            <span class="comment">// triangle 2</span></div>
@@ -215,11 +215,11 @@ Building a triangulated surface</h2>
 <div class="ttc" id="aclassDGtal_1_1TriangulatedSurface_html_af4276e10c169bd7ebf80eea3c4a2d0be"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#af4276e10c169bd7ebf80eea3c4a2d0be">DGtal::TriangulatedSurface::ArcRange</a></div><div class="ttdeci">std::vector&lt; Arc &gt; ArcRange</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00113">TriangulatedSurface.h:113</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1TriangulatedSurface_html_af61ebc616e280c5e26666d816cc2449b"><div class="ttname"><a href="classDGtal_1_1TriangulatedSurface.html#af61ebc616e280c5e26666d816cc2449b">DGtal::TriangulatedSurface::Vertex</a></div><div class="ttdeci">VertexIndex Vertex</div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00100">TriangulatedSurface.h:100</a></div></div>
 <div class="ttc" id="astructDGtal_1_1TriangulatedSurface_1_1IndexedPropertyMap_html"><div class="ttname"><a href="structDGtal_1_1TriangulatedSurface_1_1IndexedPropertyMap.html">DGtal::TriangulatedSurface::IndexedPropertyMap</a></div><div class="ttdef"><b>Definition:</b> <a href="TriangulatedSurface_8h_source.html#l00128">TriangulatedSurface.h:128</a></div></div>
-<div class="ttc" id="atestAstroid2D_8cpp_html_ac914bb734ccb5a7c569747c1e699c1aa"><div class="ttname"><a href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a></div><div class="ttdeci">Z2i::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testAstroid2D_8cpp_source.html#l00046">testAstroid2D.cpp:46</a></div></div>
 <div class="ttc" id="atestTriangulatedSurface_8cpp_html_a36c0bda5e047365ae72e11a1d75d082b"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#a36c0bda5e047365ae72e11a1d75d082b">VertexRange</a></div><div class="ttdeci">TriMesh::VertexRange VertexRange</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00053">testTriangulatedSurface.cpp:53</a></div></div>
 <div class="ttc" id="atestTriangulatedSurface_8cpp_html_a5506b620cc0c62a63c9a987601779ff4"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#a5506b620cc0c62a63c9a987601779ff4">PositionsMap</a></div><div class="ttdeci">TriMesh::PositionsMap PositionsMap</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00058">testTriangulatedSurface.cpp:58</a></div></div>
 <div class="ttc" id="atestTriangulatedSurface_8cpp_html_aa7e89e659ae870a9963bb6109a53da62"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#aa7e89e659ae870a9963bb6109a53da62">Face</a></div><div class="ttdeci">TriMesh::Face Face</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00056">testTriangulatedSurface.cpp:56</a></div></div>
 <div class="ttc" id="atestTriangulatedSurface_8cpp_html_aaf4ecd10947ad3153979882617dda21f"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#aaf4ecd10947ad3153979882617dda21f">TriMesh</a></div><div class="ttdeci">TriangulatedSurface&lt; RealPoint &gt; TriMesh</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00052">testTriangulatedSurface.cpp:52</a></div></div>
+<div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 <div class="ttc" id="atestTriangulatedSurface_8cpp_html_ad03c498d78a6dd75a1c7991201fe8606"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#ad03c498d78a6dd75a1c7991201fe8606">ArcRange</a></div><div class="ttdeci">TriMesh::ArcRange ArcRange</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00054">testTriangulatedSurface.cpp:54</a></div></div>
 <div class="ttc" id="atestTriangulatedSurface_8cpp_html_ae931baebcf0de56dd5f3b9342207e4fd"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#ae931baebcf0de56dd5f3b9342207e4fd">Vertex</a></div><div class="ttdeci">TriMesh::Vertex Vertex</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00057">testTriangulatedSurface.cpp:57</a></div></div>
 </div><!-- fragment --><p>Note that the topology that ties triangles together is built when calling <a class="el" href="classDGtal_1_1TriangulatedSurface.html#af4334ce3ecb5f6cdeb4f609732ed4e77">TriangulatedSurface::build</a>. If the topology is valid, it returns true. This method may return false for instance in the following cases:</p><ul>
@@ -305,10 +305,10 @@ Triangulated surface I/O and visualization</h2>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Creates two triangles glued together.</span></div>
 <div class="line">  <a class="code" href="testTriangulatedSurface_8cpp.html#aaf4ecd10947ad3153979882617dda21f">TriMesh</a> tmesh;</div>
-<div class="line">  tmesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 0, 0, 0 ) );</div>
-<div class="line">  tmesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 1, 0, 0 ) );</div>
-<div class="line">  tmesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 0, 1, 0 ) );</div>
-<div class="line">  tmesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 1, 1, 1 ) );</div>
+<div class="line">  tmesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 0, 0, 0 ) );</div>
+<div class="line">  tmesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 1, 0, 0 ) );</div>
+<div class="line">  tmesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 0, 1, 0 ) );</div>
+<div class="line">  tmesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 1, 1, 1 ) );</div>
 <div class="line">  tmesh.addTriangle( 0, 1, 2 );</div>
 <div class="line">  tmesh.addTriangle( 2, 1, 3 );</div>
 <div class="line">  tmesh.build();</div>
@@ -348,7 +348,7 @@ Building a polygonal surface</h2>
 <div class="fragment"><div class="line"><span class="comment">// The following includes and type definitions will be used everywhere afterwards.</span></div>
 <div class="line"><span class="preprocessor">#include &quot;DGtal/shapes/PolygonalSurface.h&quot;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">typedef</span> PointVector&lt;3,double&gt;              <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>;</div>
+<div class="line"><span class="keyword">typedef</span> PointVector&lt;3,double&gt;              <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>;</div>
 <div class="line"><span class="keyword">typedef</span> PolygonalSurface&lt; RealPoint &gt;      PolyMesh;</div>
 <div class="line"><span class="keyword">typedef</span> <a class="code" href="testTriangulatedSurface_8cpp.html#a36c0bda5e047365ae72e11a1d75d082b">PolyMesh::VertexRange</a>              <a class="code" href="testTriangulatedSurface_8cpp.html#a36c0bda5e047365ae72e11a1d75d082b">VertexRange</a>;</div>
 <div class="line"><span class="keyword">typedef</span> <a class="code" href="testTriangulatedSurface_8cpp.html#ad03c498d78a6dd75a1c7991201fe8606">PolyMesh::ArcRange</a>                 <a class="code" href="testTriangulatedSurface_8cpp.html#ad03c498d78a6dd75a1c7991201fe8606">ArcRange</a>;</div>
@@ -358,11 +358,11 @@ Building a polygonal surface</h2>
 <div class="line"><span class="keyword">typedef</span> <a class="code" href="testTriangulatedSurface_8cpp.html#a5506b620cc0c62a63c9a987601779ff4">PolyMesh::PositionsMap</a>             <a class="code" href="testTriangulatedSurface_8cpp.html#a5506b620cc0c62a63c9a987601779ff4">PositionsMap</a>;</div>
 <div class="line"> </div>
 <div class="line">PolyMesh mesh;</div>
-<div class="line">mesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 0, 0, 0 ) ); <span class="comment">// vertex 0</span></div>
-<div class="line">mesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 1, 0, 0 ) ); <span class="comment">// vertex 1</span></div>
-<div class="line">mesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 0, 1, 0 ) ); <span class="comment">// vertex 2</span></div>
-<div class="line">mesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 1, 1, 0 ) ); <span class="comment">// vertex 3</span></div>
-<div class="line">mesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 0.5, 0.5, 1 ) ); <span class="comment">// vertex 4</span></div>
+<div class="line">mesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 0, 0, 0 ) ); <span class="comment">// vertex 0</span></div>
+<div class="line">mesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 1, 0, 0 ) ); <span class="comment">// vertex 1</span></div>
+<div class="line">mesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 0, 1, 0 ) ); <span class="comment">// vertex 2</span></div>
+<div class="line">mesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 1, 1, 0 ) ); <span class="comment">// vertex 3</span></div>
+<div class="line">mesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 0.5, 0.5, 1 ) ); <span class="comment">// vertex 4</span></div>
 <div class="line">mesh.addTriangle( 0, 1, 4 );            <span class="comment">// triangle 0</span></div>
 <div class="line">mesh.addTriangle( 1, 3, 4 );            <span class="comment">// triangle 1</span></div>
 <div class="line">mesh.addTriangle( 3, 2, 4 );            <span class="comment">// triangle 2</span></div>
@@ -446,10 +446,10 @@ Polygonal surface I/O and visualization</h2>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Creates two triangles glued together.</span></div>
 <div class="line">  PolyMesh tmesh;</div>
-<div class="line">  tmesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 0, 0, 0 ) );</div>
-<div class="line">  tmesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 1, 0, 0 ) );</div>
-<div class="line">  tmesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 0, 1, 0 ) );</div>
-<div class="line">  tmesh.addVertex( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a>( 1, 1, 1 ) );</div>
+<div class="line">  tmesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 0, 0, 0 ) );</div>
+<div class="line">  tmesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 1, 0, 0 ) );</div>
+<div class="line">  tmesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 0, 1, 0 ) );</div>
+<div class="line">  tmesh.addVertex( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( 1, 1, 1 ) );</div>
 <div class="line">  tmesh.addTriangle( 0, 1, 2 );</div>
 <div class="line">  tmesh.addTriangle( 2, 1, 3 );</div>
 <div class="line">  tmesh.build();</div>
@@ -470,7 +470,7 @@ Polygonal surface I/O and visualization</h2>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:10 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:12 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -156,13 +156,13 @@ $(function() {
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  if( ( val1 == 0. &amp;&amp; val2 == 0. ) ||</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      ( val1 == 0. &amp;&amp; val3 == 0. ) ||</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      ( val2 == 0. &amp;&amp; val3 == 0. ) )</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    return ONVERTEX;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    return TRIANGLE_ONVERTEX;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  else if(val1 &lt; 0. || val2 &lt; 0. || val3 &lt; 0.)</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    return OUTSIDE;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    return TRIANGLE_OUTSIDE;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  else if(val1 == 0. || val2 == 0. || val3 == 0.)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    return ONEDGE;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    return TRIANGLE_ONEDGE;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  else</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    return INSIDE;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    return TRIANGLE_INSIDE;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;// ---------------------------------------------------------</div>
@@ -236,7 +236,7 @@ $(function() {
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;          PointR2 pp = myIntersectionTarget.project(i, v);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;          // check if current voxel projection is inside ABC projection</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          if(pointIsInside2DTriangle(AA, BB, CC, pp) != OUTSIDE)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          if(pointIsInside2DTriangle(AA, BB, CC, pp) != TRIANGLE_OUTSIDE)</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          {</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            if (outputSet.domain().isInside( v ) )</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;              outputSet.insert(v);</div>
@@ -306,11 +306,11 @@ $(function() {
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;#ifdef WITH_OPENMP</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;#pragma omp parallel for schedule(dynamic)</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;#endif</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  for(unsigned int i = 0; i &lt; aMesh.nbFaces(); i++)</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  for(int i = 0; i &lt; (int)aMesh.nbFaces(); i++)</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  {</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    DigitalSet currentSet{rawEmpty};</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    MeshFace currentFace = aMesh.getFace(i);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    for(unsigned int j=0; j + 2 &lt; currentFace.size(); ++j)</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    for(size_t j=0; j + 2 &lt; currentFace.size(); ++j)</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    {</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      voxelize(currentSet, aMesh.getVertex(currentFace[0]),</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;               aMesh.getVertex(currentFace[j+1]),</div>
@@ -329,7 +329,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:53 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:44:55 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

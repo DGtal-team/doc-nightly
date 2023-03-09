@@ -643,7 +643,7 @@ template&lt;typename TDomain , typename TValue &gt; </div>
 <p class="definition">Definition at line <a class="el" href="testRealFFT_8cpp_source.html#l00129">129</a> of file <a class="el" href="testRealFFT_8cpp_source.html">testRealFFT.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keyword">typedef</span> RealFFT&lt; TDomain, TValue &gt; FFT; <span class="comment">// &quot;typedef&quot; instead of &quot;using&quot; because of g++ 4.7.4 bug.</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keyword">using</span> <a class="code" href="classDGtal_1_1PointVector.html">RealPoint</a> = <span class="keyword">typename</span> <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">FFT::RealPoint</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keyword">using</span> <a class="code" href="classDGtal_1_1PointVector.html">RealPoint</a> = <span class="keyword">typename</span> <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">FFT::RealPoint</a>;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keyword">const</span> TValue pi = boost::math::constants::pi&lt;TValue&gt;();</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keyword">const</span> TValue freq = 5;</div>
@@ -746,10 +746,10 @@ template&lt;typename TDomain , typename TValue &gt; </div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ( std::fmod( std::fmod( std::arg( freq_val ) - phase + 2*pi*scaled_factor*shift[TDomain::dimension-1], 2*pi ) + 3*pi, 2*pi ) - pi ) == Approx( 0 ).scale(pi) );</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}</div>
-<div class="ttc" id="aclassDGtal_1_1PointVector_html"><div class="ttname"><a href="classDGtal_1_1PointVector.html">DGtal::PointVector</a></div><div class="ttdoc">Aim: Implements basic operations that will be used in Point and Vector classes.</div><div class="ttdef"><b>Definition:</b> <a href="PointVector_8h_source.html#l00592">PointVector.h:593</a></div></div>
-<div class="ttc" id="atestAstroid2D_8cpp_html_ac914bb734ccb5a7c569747c1e699c1aa"><div class="ttname"><a href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a></div><div class="ttdeci">Z2i::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testAstroid2D_8cpp_source.html#l00046">testAstroid2D.cpp:46</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1PointVector_html"><div class="ttname"><a href="classDGtal_1_1PointVector.html">DGtal::PointVector&lt; 3, double &gt;</a></div></div>
 <div class="ttc" id="atestRealFFT_8cpp_html_a4106a34e7d57e8a11093bdfdbc82516c"><div class="ttname"><a href="testRealFFT_8cpp.html#a4106a34e7d57e8a11093bdfdbc82516c">findMaxNorm</a></div><div class="ttdeci">TIterator findMaxNorm(TIterator it, TIterator const &amp;it_end)</div><div class="ttdef"><b>Definition:</b> <a href="testRealFFT_8cpp_source.html#l00105">testRealFFT.cpp:105</a></div></div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_ad8a25b2bbbbdb64c30a5442284db5bfb"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a></div><div class="ttdeci">REQUIRE(domain.isInside(aPoint))</div></div>
+<div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1ImageContainerBySTLVector.html#a01e9383b24908cf4b6bb52e5f8cdf136">DGtal::ImageContainerBySTLVector&lt; TDomain, TValue &gt;::domain()</a>, <a class="el" href="classDGtal_1_1ImageContainerBySTLVector.html#a18c38dc85d8509116b8b004efbf8a83e">DGtal::ImageContainerBySTLVector&lt; TDomain, TValue &gt;::extent()</a>, <a class="el" href="testRealFFT_8cpp_source.html#l00105">findMaxNorm()</a>, and <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE()</a>.</p>
 
@@ -829,7 +829,7 @@ template&lt;typename TDomain , typename TValue &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:09 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:10 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

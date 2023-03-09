@@ -191,9 +191,9 @@ $(function() {
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
 <div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="classDGtal_1_1VectorsInHeat.html#ad3f443d86b649447ed0763e32bc4f94a">  195</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDGtal_1_1VectorsInHeat.html#ad3f443d86b649447ed0763e32bc4f94a">clearSource</a>()</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <a class="code" href="classDGtal_1_1VectorsInHeat.html#ab8622b46a79a2aaa6b40219338c36ced">myVectorSource</a>.clear();</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      <a class="code" href="classDGtal_1_1VectorsInHeat.html#a3d675270318a21dc08bd5543a8b75e76">myScalarSource</a>.clear();</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      <a class="code" href="classDGtal_1_1VectorsInHeat.html#ac0f1140ba7cbb3b881701636bd34a2cd">myDiracSource</a>.clear();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <a class="code" href="classDGtal_1_1VectorsInHeat.html#ab8622b46a79a2aaa6b40219338c36ced">myVectorSource</a>            = Vector::Zero(2*<a class="code" href="classDGtal_1_1VectorsInHeat.html#aed4190d56494cb2deefb754affc9d062">myCalculus</a>-&gt;nbVertices());</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      <a class="code" href="classDGtal_1_1VectorsInHeat.html#a3d675270318a21dc08bd5543a8b75e76">myScalarSource</a>            = Vector::Zero(<a class="code" href="classDGtal_1_1VectorsInHeat.html#aed4190d56494cb2deefb754affc9d062">myCalculus</a>-&gt;nbVertices());</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      <a class="code" href="classDGtal_1_1VectorsInHeat.html#ac0f1140ba7cbb3b881701636bd34a2cd">myDiracSource</a>             = Vector::Zero(<a class="code" href="classDGtal_1_1VectorsInHeat.html#aed4190d56494cb2deefb754affc9d062">myCalculus</a>-&gt;nbVertices());</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  </div>
 <div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="classDGtal_1_1VectorsInHeat.html#a94809137314c240c9714d569840addbf">  205</a></span>&#160;    <a class="code" href="classDGtal_1_1VectorsInHeat.html#a19a4086572b7a237146bf89023bfba53">Vector</a> <a class="code" href="classDGtal_1_1VectorsInHeat.html#a94809137314c240c9714d569840addbf">vectorSource</a>()<span class="keyword"> const</span></div>
@@ -240,7 +240,7 @@ $(function() {
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        std::vector&lt;Vector&gt; result(surfmesh-&gt;nbVertices());</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> v = 0;v&lt;surfmesh-&gt;nbVertices();v++){</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">typename</span> <a class="code" href="structDGtal_1_1SurfaceMesh.html#a701a64e59723a101bbacff26ee77d549">PolygonalCalculus::MySurfaceMesh::Index</a> v = 0;v&lt;surfmesh-&gt;nbVertices();v++){</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <a class="code" href="classDGtal_1_1VectorsInHeat.html#a19a4086572b7a237146bf89023bfba53">Vector</a> Y(2);</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            Y(0) = vectorHeatDiffusion(2*v);</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            Y(1) = vectorHeatDiffusion(2*v+1);</div>
@@ -339,11 +339,12 @@ $(function() {
 <div class="ttc" id="aclassDGtal_1_1VectorsInHeat_html_afa9e38bd046304efd6f90f32ed9afef6"><div class="ttname"><a href="classDGtal_1_1VectorsInHeat.html#afa9e38bd046304efd6f90f32ed9afef6">DGtal::VectorsInHeat::~VectorsInHeat</a></div><div class="ttdeci">~VectorsInHeat()=default</div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
 <div class="ttc" id="asphereCotangentLaplaceOperator_8cpp_html_a13f3ebfe7abdafd66aa627b58f3f0c1c"><div class="ttname"><a href="sphereCotangentLaplaceOperator_8cpp.html#a13f3ebfe7abdafd66aa627b58f3f0c1c">laplacian</a></div><div class="ttdeci">void laplacian(Shape &amp;shape, const Options &amp;options, std::function&lt; double(const RealPoint3D &amp;)&gt; input_function, std::function&lt; double(const RealPoint3D &amp;)&gt; target_function, int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> <a href="sphereCotangentLaplaceOperator_8cpp_source.html#l00087">sphereCotangentLaplaceOperator.cpp:87</a></div></div>
-<div class="ttc" id="astructDGtal_1_1EigenLinearAlgebraBackend_html"><div class="ttname"><a href="structDGtal_1_1EigenLinearAlgebraBackend.html">DGtal::EigenLinearAlgebraBackend</a></div><div class="ttdoc">Aim: Provide linear algebra backend using Eigen dense and sparse matrix as well as dense vector....</div><div class="ttdef"><b>Definition:</b> <a href="EigenSupport_8h_source.html#l00096">EigenSupport.h:97</a></div></div>
+<div class="ttc" id="astructDGtal_1_1EigenLinearAlgebraBackend_html"><div class="ttname"><a href="structDGtal_1_1EigenLinearAlgebraBackend.html">DGtal::EigenLinearAlgebraBackend</a></div><div class="ttdoc">Aim: Provide linear algebra backend using Eigen dense and sparse matrix as well as dense vector....</div><div class="ttdef"><b>Definition:</b> <a href="EigenSupport_8h_source.html#l00095">EigenSupport.h:96</a></div></div>
+<div class="ttc" id="astructDGtal_1_1SurfaceMesh_html_a701a64e59723a101bbacff26ee77d549"><div class="ttname"><a href="structDGtal_1_1SurfaceMesh.html#a701a64e59723a101bbacff26ee77d549">DGtal::SurfaceMesh::Index</a></div><div class="ttdeci">std::size_t Index</div><div class="ttdoc">The type used for numbering vertices and faces.</div><div class="ttdef"><b>Definition:</b> <a href="SurfaceMesh_8h_source.html#l00105">SurfaceMesh.h:105</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:05 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:06 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

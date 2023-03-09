@@ -126,7 +126,7 @@ $(function() {
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb = 0;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbok = 0;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbchanges = 0;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> complexity = plane.<a class="code" href="classDGtal_1_1COBANaivePlaneComputer.html#a178c24300778a465b18f938a487a35f6">complexity</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">auto</span> complexity = plane.<a class="code" href="classDGtal_1_1COBANaivePlaneComputer.html#a178c24300778a465b18f938a487a35f6">complexity</a>();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">while</span> ( nb != nbpoints )</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      p[ 0 ] = getRandomInteger&lt;PointInteger&gt;( -diameter+1, diameter ); </div>
@@ -136,9 +136,9 @@ $(function() {
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      y = (<a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a>) p[ 1 ];</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      z = (<a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a>) p[ 2 ];</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keywordflow">switch</span> ( axis ) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keywordflow">case</span> 0: p[ 0 ] = <a class="code" href="structDGtal_1_1NumberTraits.html">NumberTraits&lt;Integer&gt;::castToInt64_t</a>( ic.<a class="code" href="classDGtal_1_1IntegerComputer.html#a5b0f11c961ed24f3a2f280a80dc977d9">ceilDiv</a>( d - b * y - c * z, a ) ); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">case</span> 1: p[ 1 ] = <a class="code" href="structDGtal_1_1NumberTraits.html">NumberTraits&lt;Integer&gt;::castToInt64_t</a>( ic.<a class="code" href="classDGtal_1_1IntegerComputer.html#a5b0f11c961ed24f3a2f280a80dc977d9">ceilDiv</a>( d - a * x - c * z, b ) ); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keywordflow">case</span> 2: p[ 2 ] = <a class="code" href="structDGtal_1_1NumberTraits.html">NumberTraits&lt;Integer&gt;::castToInt64_t</a>( ic.<a class="code" href="classDGtal_1_1IntegerComputer.html#a5b0f11c961ed24f3a2f280a80dc977d9">ceilDiv</a>( d - a * x - b * y, c ) ); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">case</span> 0: p[ 0 ] = <span class="keyword">static_cast&lt;</span>typename Point::Component<span class="keyword">&gt;</span>(<a class="code" href="structDGtal_1_1NumberTraits.html">NumberTraits&lt;Integer&gt;::castToInt64_t</a>( ic.<a class="code" href="classDGtal_1_1IntegerComputer.html#a5b0f11c961ed24f3a2f280a80dc977d9">ceilDiv</a>( d - b * y - c * z, a ) )); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">case</span> 1: p[ 1 ] = <span class="keyword">static_cast&lt;</span>typename Point::Component<span class="keyword">&gt;</span>(<a class="code" href="structDGtal_1_1NumberTraits.html">NumberTraits&lt;Integer&gt;::castToInt64_t</a>( ic.<a class="code" href="classDGtal_1_1IntegerComputer.html#a5b0f11c961ed24f3a2f280a80dc977d9">ceilDiv</a>( d - a * x - c * z, b ) )); <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">case</span> 2: p[ 2 ] = <span class="keyword">static_cast&lt;</span>typename Point::Component<span class="keyword">&gt;</span>(<a class="code" href="structDGtal_1_1NumberTraits.html">NumberTraits&lt;Integer&gt;::castToInt64_t</a>( ic.<a class="code" href="classDGtal_1_1IntegerComputer.html#a5b0f11c961ed24f3a2f280a80dc977d9">ceilDiv</a>( d - a * x - b * y, c ))); <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      } </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordtype">bool</span> ok = plane.<a class="code" href="classDGtal_1_1COBANaivePlaneComputer.html#af2772a864766a21ee7ab9538c6c8d66e">extend</a>( p ); <span class="comment">// should be ok</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      ++nb; nbok += ok ? 1 : 0;</div>
@@ -248,7 +248,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:00 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:02 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

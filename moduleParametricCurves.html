@@ -240,9 +240,9 @@ Geometric Transformations of 3D Parametric Curves</h1>
 <div class="line"> MyHelix helix( 30, 20, 1 );</div>
 </div><!-- fragment --><p> and we then state an instance of the decorator: </p><div class="fragment"><div class="line"> <span class="keywordtype">double</span> angle = M_PI/3.;</div>
 <div class="line"> RealVector axis ( 1., 0., 1. );</div>
-<div class="line"> ForwardTrans trans ( <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> ( 0, 0, 0 ), axis, angle, RealVector ( 0, 0, 0 ) );</div>
+<div class="line"> ForwardTrans trans ( <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> ( 0, 0, 0 ), axis, angle, RealVector ( 0, 0, 0 ) );</div>
 <div class="line"> MyRotatedCurve rotCurve ( helix, trans );</div>
-<div class="ttc" id="atestAstroid2D_8cpp_html_ac914bb734ccb5a7c569747c1e699c1aa"><div class="ttname"><a href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a></div><div class="ttdeci">Z2i::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testAstroid2D_8cpp_source.html#l00046">testAstroid2D.cpp:46</a></div></div>
+<div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 </div><!-- fragment --><p> Finally, we can compute a digitization together with the meta information by calling: </p><div class="fragment"><div class="line"> Digitizer <a class="code" href="testProjection_8cpp.html#a233e1e5dcaff640b9517ab36f84115ab">digitize</a>;</div>
 <div class="line"> <a class="code" href="testProjection_8cpp.html#a233e1e5dcaff640b9517ab36f84115ab">digitize</a>.attach ( &amp;rotCurve );</div>
 <div class="line"> <a class="code" href="testProjection_8cpp.html#a233e1e5dcaff640b9517ab36f84115ab">digitize</a>.init ( 0, MyHelix::getPeriod() * 10., 0.0001 );</div>
@@ -268,7 +268,7 @@ Connectivity Problems</h2>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:10 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:11 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

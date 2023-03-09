@@ -125,11 +125,11 @@ Delaunay cell decomposition of randomly chosen points in a 3D lattice ball with 
 <div class="line">  <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a> idxv = 0;</div>
 <div class="line">  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> c = 0; c &lt; dcomplex.nbCells(); ++c )</div>
 <div class="line">    {</div>
-<div class="line">      <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> b = dcomplex.cellBarycenter( c );</div>
+<div class="line">      <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> b = dcomplex.cellBarycenter( c );</div>
 <div class="line">      <span class="keyword">auto</span> c_vtcs = dcomplex.cellVertices( c );</div>
 <div class="line">      std::map&lt; Index, Index &gt; v2v;</div>
 <div class="line">      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> v : c_vtcs ) {</div>
-<div class="line">        <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> x = dcomplex.toReal( dcomplex.position( v ) );</div>
+<div class="line">        <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> x = dcomplex.toReal( dcomplex.position( v ) );</div>
 <div class="line">        v2v[ v ] = idxv++;</div>
 <div class="line">        positions.push_back( b + ( x - b ) * ( 1.0 - eps ) );</div>
 <div class="line">      }</div>
@@ -162,12 +162,12 @@ Delaunay cell decomposition of randomly chosen points in a 3D lattice ball with 
 <div class="ttc" id="astructDGtal_1_1SurfaceMeshWriter_html_a2d786cc76abdacdbabaa75f9518cbf72"><div class="ttname"><a href="structDGtal_1_1SurfaceMeshWriter.html#a2d786cc76abdacdbabaa75f9518cbf72">DGtal::SurfaceMeshWriter::writeOBJ</a></div><div class="ttdeci">static bool writeOBJ(std::ostream &amp;output, const SurfaceMesh &amp;smesh)</div></div>
 <div class="ttc" id="astructDGtal_1_1SurfaceMesh_html"><div class="ttname"><a href="structDGtal_1_1SurfaceMesh.html">DGtal::SurfaceMesh</a></div><div class="ttdoc">Aim: Represents an embedded mesh as faces and a list of vertices. Vertices may be shared among faces ...</div><div class="ttdef"><b>Definition:</b> <a href="SurfaceMesh_8h_source.html#l00091">SurfaceMesh.h:92</a></div></div>
 <div class="ttc" id="atestArithmeticDSS-benchmark_8cpp_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="testArithmeticDSS-benchmark_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> <a href="testArithmeticDSS-benchmark_8cpp_source.html#l00147">testArithmeticDSS-benchmark.cpp:147</a></div></div>
-<div class="ttc" id="atestAstroid2D_8cpp_html_ac914bb734ccb5a7c569747c1e699c1aa"><div class="ttname"><a href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a></div><div class="ttdeci">Z2i::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testAstroid2D_8cpp_source.html#l00046">testAstroid2D.cpp:46</a></div></div>
 <div class="ttc" id="atestClone2_8cpp_html_a15e9592ccc512dc691b46185e6814758"><div class="ttname"><a href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a></div><div class="ttdeci">MyPointD Point</div><div class="ttdef"><b>Definition:</b> <a href="testClone2_8cpp_source.html#l00383">testClone2.cpp:383</a></div></div>
+<div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:35 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:44:36 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

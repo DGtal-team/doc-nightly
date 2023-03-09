@@ -635,8 +635,8 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;Computing the lower&quot;</span>);</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  Metric::Abscissa vorocell;</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Metric::Vector</a> normalP = mask5711.getNormalFromCone(cone);</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Metric::Vector</a> normalQ = mask5711.getNormalFromCone(cone2);</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Metric::Vector</a> normalP = mask5711.getNormalFromCone(cone);</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Metric::Vector</a> normalQ = mask5711.getNormalFromCone(cone2);</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  vorocell = <span class="keyword">static_cast&lt;</span>Metric::Abscissa<span class="keyword">&gt;</span>(floor((<span class="keywordtype">double</span>) (P[1]*normalP[1] - Q[1]*normalQ[1] - (Lmin[0] - P[0])*normalP[0] + (Lmin[0] - Q[0])*normalQ[0])  /(normalP[1] - normalQ[1])  ));</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;  <a class="code" href="classDGtal_1_1PointVector.html">Point</a> voro(Lmin[0], vorocell);</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;  </div>
@@ -710,7 +710,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160; </div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;  <span class="keywordflow">return</span> nbok == nb;</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;}</div>
-<div class="ttc" id="atestCombinDSS_8cpp_html_a609ee1808a3b4f883fb28df65e9a2ed6"><div class="ttname"><a href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a></div><div class="ttdeci">FreemanChain&lt; int &gt;::Vector Vector</div><div class="ttdef"><b>Definition:</b> <a href="testCombinDSS_8cpp_source.html#l00060">testCombinDSS.cpp:60</a></div></div>
+<div class="ttc" id="aexamplePlaneProbingParallelepipedEstimator_8cpp_html_a23c0623485ed9af765bab12ac424843c"><div class="ttname"><a href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a></div><div class="ttdeci">DigitalPlane::Point Vector</div><div class="ttdef"><b>Definition:</b> <a href="examplePlaneProbingParallelepipedEstimator_8cpp_source.html#l00045">examplePlaneProbingParallelepipedEstimator.cpp:45</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">DGtal::Trace::beginBlock()</a>, <a class="el" href="classDGtal_1_1Trace.html#a7b51b5b34d3c1d5e799e0500a2d12acc">DGtal::Trace::emphase()</a>, <a class="el" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock()</a>, <a class="el" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info()</a>, and <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>.</p>
 
@@ -1315,7 +1315,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:07 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:09 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

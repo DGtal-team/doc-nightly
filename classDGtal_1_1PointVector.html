@@ -1096,6 +1096,9 @@ template&lt;typename OtherComponent , typename OtherStorage , typename UnaryFunc
 <div class="memproto">
 <div class="memtemplate">
 template&lt;DGtal::Dimension dim, typename TEuclideanRing , typename TContainer &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classDGtal_1_1PointVector.html">DGtal::PointVector</a>&lt; <a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>, TEuclideanRing, TContainer &gt;::~<a class="el" href="classDGtal_1_1PointVector.html">PointVector</a> </td>
@@ -1104,10 +1107,18 @@ template&lt;DGtal::Dimension dim, typename TEuclideanRing , typename TContainer 
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Destructor. </p>
 
+<p class="definition">Definition at line <a class="el" href="PointVector_8h_source.html#l00722">722</a> of file <a class="el" href="PointVector_8h_source.html">PointVector.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3bea68bc45d0c8435dc498fa320c310e"></a>
@@ -1596,7 +1607,7 @@ template&lt;typename OtherComponent , typename OtherStorage &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>the dot product in the best Euclidean ring accordingly to the C++ conversion rules in arithmetic operations context.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceDGtal.html#a144dca4ff96493af561a3006d44a8a78" title="Dot product between two points/vectors.">DGtal::dotProduct</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="SphericalTriangle_8h_source.html#l00217">DGtal::SphericalTriangle&lt; TSpace &gt;::algebraicArea()</a>, <a class="el" href="QuickHullKernels_8h_source.html#l00230">DGtal::ConvexHullCommonKernel&lt; dim, TCoordinateInteger, TInternalInteger &gt;::compute()</a>, <a class="el" href="ConvexCellComplex_8h_source.html#l00442">DGtal::ConvexCellComplex&lt; TPoint &gt;::computeFaceGeometry()</a>, <a class="el" href="ConvexCellComplex_8h_source.html#l00480">DGtal::ConvexCellComplex&lt; TPoint &gt;::computeHalfSpace()</a>, <a class="el" href="QuickHullKernels_8h_source.html#l00298">DGtal::ConvexHullCommonKernel&lt; dim, TCoordinateInteger, TInternalInteger &gt;::dot()</a>, <a class="el" href="SphericalTriangle_8h_source.html#l00190">DGtal::SphericalTriangle&lt; TSpace &gt;::interiorAngles()</a>, <a class="el" href="sphereCotangentLaplaceOperator_8cpp_source.html#l00087">laplacian()</a>, <a class="el" href="polyhedralizer_8cpp_source.html#l00125">LSF()</a>, <a class="el" href="polyhedralizer_8cpp_source.html#l00159">main()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00081">naiveConvexHull()</a>, and <a class="el" href="testPointVector_8cpp_source.html#l00152">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SphericalTriangle_8h_source.html#l00217">DGtal::SphericalTriangle&lt; TSpace &gt;::algebraicArea()</a>, <a class="el" href="QuickHullKernels_8h_source.html#l00230">DGtal::ConvexHullCommonKernel&lt; dim, TCoordinateInteger, TInternalInteger &gt;::compute()</a>, <a class="el" href="ConvexCellComplex_8h_source.html#l00442">DGtal::ConvexCellComplex&lt; TPoint &gt;::computeFaceGeometry()</a>, <a class="el" href="ConvexCellComplex_8h_source.html#l00480">DGtal::ConvexCellComplex&lt; TPoint &gt;::computeHalfSpace()</a>, <a class="el" href="QuickHullKernels_8h_source.html#l00297">DGtal::ConvexHullCommonKernel&lt; dim, TCoordinateInteger, TInternalInteger &gt;::dot()</a>, <a class="el" href="SphericalTriangle_8h_source.html#l00190">DGtal::SphericalTriangle&lt; TSpace &gt;::interiorAngles()</a>, <a class="el" href="sphereCotangentLaplaceOperator_8cpp_source.html#l00087">laplacian()</a>, <a class="el" href="polyhedralizer_8cpp_source.html#l00125">LSF()</a>, <a class="el" href="polyhedralizer_8cpp_source.html#l00159">main()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00081">naiveConvexHull()</a>, and <a class="el" href="testPointVector_8cpp_source.html#l00152">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -2518,7 +2529,7 @@ template&lt;typename OtherComponent , typename OtherContainer , typename std::en
 <dl class="section return"><dt>Returns</dt><dd>a reference on 'this'.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Available only if the conversion from <em>OtherComponent</em> to <em>Component</em> follows the classical arithmetic rules in arithmetic context (see the doc of <a class="el" href="classDGtal_1_1PointVector.html">PointVector</a>). Otherwise, consider using the version that accepts a functor. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="testPointVector_8cpp_source.html#l00152">TEST_CASE()</a>, and <a class="el" href="testHyperRectDomain_8cpp_source.html#l00251">testIterator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="testPointVector_8cpp_source.html#l00152">TEST_CASE()</a>, and <a class="el" href="testHyperRectDomain_8cpp_source.html#l00250">testIterator()</a>.</p>
 
 </div>
 </div>
@@ -4250,7 +4261,7 @@ template&lt;Dimension dim, typename Component , typename TC &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="PointVector_8h_source.html#l01595">1595</a> of file <a class="el" href="PointVector_8h_source.html">PointVector.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ConvexCellComplex_8h_source.html#l00442">DGtal::ConvexCellComplex&lt; TPoint &gt;::computeFaceGeometry()</a>, <a class="el" href="ShortcutsGeometry_8h_source.html#l00666">DGtal::ShortcutsGeometry&lt; TKSpace &gt;::getTrivialNormalVectors()</a>, <a class="el" href="SphericalTriangle_8h_source.html#l00190">DGtal::SphericalTriangle&lt; TSpace &gt;::interiorAngles()</a>, <a class="el" href="Shortcuts_8h_source.html#l02917">DGtal::Shortcuts&lt; TKSpace &gt;::outputDualDigitalSurfaceAsObj()</a>, <a class="el" href="SphericalTriangle_8h_source.html#l00115">DGtal::SphericalTriangle&lt; TSpace &gt;::setA()</a>, <a class="el" href="SphericalTriangle_8h_source.html#l00131">DGtal::SphericalTriangle&lt; TSpace &gt;::setB()</a>, and <a class="el" href="SphericalTriangle_8h_source.html#l00146">DGtal::SphericalTriangle&lt; TSpace &gt;::setC()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ConvexCellComplex_8h_source.html#l00442">DGtal::ConvexCellComplex&lt; TPoint &gt;::computeFaceGeometry()</a>, <a class="el" href="ShortcutsGeometry_8h_source.html#l00664">DGtal::ShortcutsGeometry&lt; TKSpace &gt;::getTrivialNormalVectors()</a>, <a class="el" href="SphericalTriangle_8h_source.html#l00190">DGtal::SphericalTriangle&lt; TSpace &gt;::interiorAngles()</a>, <a class="el" href="Shortcuts_8h_source.html#l02917">DGtal::Shortcuts&lt; TKSpace &gt;::outputDualDigitalSurfaceAsObj()</a>, <a class="el" href="SphericalTriangle_8h_source.html#l00115">DGtal::SphericalTriangle&lt; TSpace &gt;::setA()</a>, <a class="el" href="SphericalTriangle_8h_source.html#l00131">DGtal::SphericalTriangle&lt; TSpace &gt;::setB()</a>, and <a class="el" href="SphericalTriangle_8h_source.html#l00146">DGtal::SphericalTriangle&lt; TSpace &gt;::setC()</a>.</p>
 
 </div>
 </div>
@@ -4260,7 +4271,7 @@ template&lt;Dimension dim, typename Component , typename TC &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:18 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:19 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -178,7 +178,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> =  <a class="el" href="classDGtal_1_1SpaceND.html#a34beb5f81d0848e8ae393f39a1422ebc">Space::Point</a></td>
+          <td class="memname">using <a class="el" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> =  <a class="el" href="classDGtal_1_1SpaceND.html#a34beb5f81d0848e8ae393f39a1422ebc">Space::Point</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -217,7 +217,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">using</span> <a class="code" href="classDGtal_1_1PlaneProbingParallelepipedEstimator.html">Estimator</a>    = <a class="code" href="classDGtal_1_1PlaneProbingTetrahedronEstimator.html">PlaneProbingTetrahedronEstimator&lt;DigitalPlane, ProbingMode::R1&gt;</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="comment">// We start by constructing the predicate, here a standard digital plane of normal (2, 6, 15)</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> n(2, 6, 15);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> n(2, 6, 15);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classDGtal_1_1DigitalPlanePredicate.html">DigitalPlane</a> plane(n, 0, n.norm1());</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="comment">// Instantiation: estimator(startingPoint, initialFrame, predicate) where</span></div>
@@ -258,9 +258,9 @@ Functions</h2></td></tr>
 <div class="ttc" id="aclassDGtal_1_1DigitalPlanePredicate_html"><div class="ttname"><a href="classDGtal_1_1DigitalPlanePredicate.html">DGtal::DigitalPlanePredicate</a></div><div class="ttdoc">Aim: Representing digital planes, which are digitizations of Euclidean planes, as point predicates.</div><div class="ttdef"><b>Definition:</b> <a href="DigitalPlanePredicate_8h_source.html#l00072">DigitalPlanePredicate.h:73</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1PlaneProbingParallelepipedEstimator_html"><div class="ttname"><a href="classDGtal_1_1PlaneProbingParallelepipedEstimator.html">DGtal::PlaneProbingParallelepipedEstimator</a></div><div class="ttdoc">Aim:</div><div class="ttdef"><b>Definition:</b> <a href="PlaneProbingParallelepipedEstimator_8h_source.html#l00062">PlaneProbingParallelepipedEstimator.h:63</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1PlaneProbingTetrahedronEstimator_html"><div class="ttname"><a href="classDGtal_1_1PlaneProbingTetrahedronEstimator.html">DGtal::PlaneProbingTetrahedronEstimator</a></div><div class="ttdoc">Aim: A class that locally estimates a normal on a digital set using only a predicate &quot;does a point x ...</div><div class="ttdef"><b>Definition:</b> <a href="PlaneProbingTetrahedronEstimator_8h_source.html#l00106">PlaneProbingTetrahedronEstimator.h:107</a></div></div>
+<div class="ttc" id="aexamplePlaneProbingParallelepipedEstimator_8cpp_html_a23c0623485ed9af765bab12ac424843c"><div class="ttname"><a href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a></div><div class="ttdeci">DigitalPlane::Point Vector</div><div class="ttdef"><b>Definition:</b> <a href="examplePlaneProbingParallelepipedEstimator_8cpp_source.html#l00045">examplePlaneProbingParallelepipedEstimator.cpp:45</a></div></div>
 <div class="ttc" id="aexamplePlaneProbingTetrahedronEstimator_8cpp_html_aa735f3a0c2faee42eae6a625d2ae8760"><div class="ttname"><a href="examplePlaneProbingTetrahedronEstimator_8cpp.html#aa735f3a0c2faee42eae6a625d2ae8760">Point</a></div><div class="ttdeci">Space::Vector Point</div><div class="ttdef"><b>Definition:</b> <a href="examplePlaneProbingTetrahedronEstimator_8cpp_source.html#l00044">examplePlaneProbingTetrahedronEstimator.cpp:44</a></div></div>
 <div class="ttc" id="atestClone2_8cpp_html_a15e9592ccc512dc691b46185e6814758"><div class="ttname"><a href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a></div><div class="ttdeci">MyPointD Point</div><div class="ttdef"><b>Definition:</b> <a href="testClone2_8cpp_source.html#l00383">testClone2.cpp:383</a></div></div>
-<div class="ttc" id="atestCombinDSS_8cpp_html_a609ee1808a3b4f883fb28df65e9a2ed6"><div class="ttname"><a href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a></div><div class="ttdeci">FreemanChain&lt; int &gt;::Vector Vector</div><div class="ttdef"><b>Definition:</b> <a href="testCombinDSS_8cpp_source.html#l00060">testCombinDSS.cpp:60</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1PlaneProbingParallelepipedEstimator.html#ad1d3ed58cbdc622f3ed6773ac74957de">DGtal::PlaneProbingParallelepipedEstimator&lt; TPredicate, mode &gt;::advance()</a>, <a class="el" href="classDGtal_1_1PlaneProbingParallelepipedEstimator.html#ab0e2fdc43fd1538b55cc094e7873f906">DGtal::PlaneProbingParallelepipedEstimator&lt; TPredicate, mode &gt;::getNormal()</a>, <a class="el" href="classDGtal_1_1PlaneProbingParallelepipedEstimator.html#aa5e2f8b29b1a082821c2dd773c32d4f3">DGtal::PlaneProbingParallelepipedEstimator&lt; TPredicate, mode &gt;::hexagonState()</a>, and <a class="el" href="classDGtal_1_1PlaneProbingParallelepipedEstimator.html#a5e7a4562c5f68200b5eadf78fa584b45">DGtal::PlaneProbingParallelepipedEstimator&lt; TPredicate, mode &gt;::m()</a>.</p>
 
@@ -269,7 +269,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:07 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:08 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

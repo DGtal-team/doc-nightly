@@ -104,12 +104,12 @@ Introduction and first build</h1>
 <li><em>insighttoolkit</em> (ITK),</li>
 <li><em></em> <a href="http://www.hdfgroup.org/HDF5/">HDF5</a></li>
 <li><em></em> <a href="http://cgal.org">CGAL</a> (build with Eigen enabled)</li>
-<li><em></em> <a href="http://eigen.tuxfamily.org/index.php?title=Main_Page">Eigen</a></li>
 </ul>
 <p>If you want to generate the documentation, you would need:</p><ul>
 <li><em>doxygen</em> &gt;= 1.8.0,</li>
 <li><em>graphviz</em>.</li>
 </ul>
+<dl class="section note"><dt>Note</dt><dd>Since 1.4, some dependencies could be installed using <a href="https://conan.io">conan.io</a>. Just install the conan binary (1.57) and cmake will install all libraries (which may take some time for the first build).</dd></dl>
 <h2><a class="anchor" id="linux"></a>
 Build on Linux-based distributions</h2>
 <p>To build <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> from the source archive, we use the CMake tool to generate a Makefile or a project file for various IDE (KDevelop, Xcode, Codeblock...). In most linux distributions, all mandatory and optional dependencies are available as packages (debian, ubuntu, ...). Please refer to your package manager to find the appropriate package name and versions.</p>
@@ -149,13 +149,13 @@ Main DGtal cmake options</h1>
 Build on Windows / Visual Studio</h2>
 <p><a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> core library compiles on Windows using Visual Studio 2015 or newer (note that building <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> on cygwin or MinGW environments is trivial using linux based build). Since <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> requires C++11 features since release 0.9.1, compiling the library with older Visual Studio compilers is not supported.</p>
 <p>To generate the Visual Studio project, use the cmake (or cmake-gui) tools with recent Visual Studio target. During the project generation, you would have to specify the path to <em>boost</em> headers (or paths needed for any optional dependency such as GMP, CGAL, Cairo...).</p>
-<dl class="section note"><dt>Note</dt><dd>Do not forget to set <em>BUILD_SHARED_LIBS</em> cmake to false (static <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> lib target).</dd></dl>
-<dl class="section user"><dt>Advanced: </dt><dd>When working on <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> within github, we have set up a Windows container (using <a href="http://www.appeveyor.com">appeveyor</a>) for continuous integration. In the "appeveyor.yml" script, you would find information about how we compile the <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> library on this windows environnement. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Do not forget to set <em>BUILD_SHARED_LIBS</em> cmake to false (static <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> lib target, default).</dd></dl>
+<dl class="section user"><dt>Advanced: </dt><dd>When working on <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> within github, we have set up a Windows container for continuous integration. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:09 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:11 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

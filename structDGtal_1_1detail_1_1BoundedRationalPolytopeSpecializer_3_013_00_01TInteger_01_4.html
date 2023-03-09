@@ -280,11 +280,11 @@ template&lt;typename TInteger &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="BoundedRationalPolytope_8h_source.html#l00765">765</a> of file <a class="el" href="BoundedRationalPolytope_8h_source.html">BoundedRationalPolytope.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;      {</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;        <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a> ab = pts[ i ] - pts[ j ];</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;        <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> ab = pts[ i ] - pts[ j ];</div>
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> s = 0; s &lt; 2; s++ )</div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;          <span class="keywordflow">for</span> ( <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> k = 0; k &lt; <a class="code" href="structDGtal_1_1detail_1_1BoundedRationalPolytopeSpecializer_3_013_00_01TInteger_01_4.html#a277a4a789dd4932d321aca927d1100e9">dimension</a>; ++k )</div>
 <div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;            {</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;              <a class="code" href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a>  n = ab.crossProduct( Point::base( k, (s == 0) ? 1 : -1 ) );</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;              <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a>  n = ab.crossProduct( Point::base( k, (s == 0) ? 1 : -1 ) );</div>
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;              <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a> b = n.dot( pts[ i ] );</div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;              std::size_t nb_in = 0;</div>
 <div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;              <span class="keywordflow">for</span> ( <span class="keyword">auto</span> p : pts ) {</div>
@@ -296,10 +296,10 @@ template&lt;typename TInteger &gt; </div>
 <div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;              }</div>
 <div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;            }</div>
 <div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;      }</div>
+<div class="ttc" id="aexamplePlaneProbingParallelepipedEstimator_8cpp_html_a23c0623485ed9af765bab12ac424843c"><div class="ttname"><a href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a></div><div class="ttdeci">DigitalPlane::Point Vector</div><div class="ttdef"><b>Definition:</b> <a href="examplePlaneProbingParallelepipedEstimator_8cpp_source.html#l00045">examplePlaneProbingParallelepipedEstimator.cpp:45</a></div></div>
 <div class="ttc" id="aexamplePlaneProbingParallelepipedEstimator_8cpp_html_ad31c3eca44cf6770809bc47f2b456212"><div class="ttname"><a href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a></div><div class="ttdeci">Point::Coordinate Integer</div><div class="ttdef"><b>Definition:</b> <a href="examplePlaneProbingParallelepipedEstimator_8cpp_source.html#l00044">examplePlaneProbingParallelepipedEstimator.cpp:44</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fbe8c8d47ca5c36ced14284ac62613d"><div class="ttname"><a href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">DGtal::Dimension</a></div><div class="ttdeci">DGtal::uint32_t Dimension</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00136">Common.h:136</a></div></div>
 <div class="ttc" id="astructDGtal_1_1detail_1_1BoundedRationalPolytopeSpecializer_3_013_00_01TInteger_01_4_html_a277a4a789dd4932d321aca927d1100e9"><div class="ttname"><a href="structDGtal_1_1detail_1_1BoundedRationalPolytopeSpecializer_3_013_00_01TInteger_01_4.html#a277a4a789dd4932d321aca927d1100e9">DGtal::detail::BoundedRationalPolytopeSpecializer&lt; 3, TInteger &gt;::dimension</a></div><div class="ttdeci">static const Dimension dimension</div><div class="ttdef"><b>Definition:</b> <a href="BoundedRationalPolytope_8h_source.html#l00753">BoundedRationalPolytope.h:753</a></div></div>
-<div class="ttc" id="atestCombinDSS_8cpp_html_a609ee1808a3b4f883fb28df65e9a2ed6"><div class="ttname"><a href="testCombinDSS_8cpp.html#a609ee1808a3b4f883fb28df65e9a2ed6">Vector</a></div><div class="ttdeci">FreemanChain&lt; int &gt;::Vector Vector</div><div class="ttdef"><b>Definition:</b> <a href="testCombinDSS_8cpp_source.html#l00060">testCombinDSS.cpp:60</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1PointVector.html#a20694701864ca3edbcbe8cf0fe706814">DGtal::PointVector&lt; dim, Integer &gt;::base()</a>, <a class="el" href="classDGtal_1_1PointVector.html#a92b18d6fc6c8aded184c7d16f402df84">DGtal::PointVector&lt; dim, TEuclideanRing, TContainer &gt;::crossProduct()</a>, <a class="el" href="classDGtal_1_1BoundedRationalPolytope.html#a9fea1d8ec9e4b5ef42a60c1516da9332">DGtal::BoundedRationalPolytope&lt; TSpace &gt;::cut()</a>, and <a class="el" href="BoundedRationalPolytope_8h_source.html#l00706">DGtal::detail::BoundedRationalPolytopeSpecializer&lt; N, TInteger &gt;::dimension</a>.</p>
 
@@ -391,7 +391,7 @@ template&lt;typename TInteger &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:22 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:23 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

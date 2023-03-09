@@ -475,12 +475,12 @@ template&lt;typename TSurfel , typename TEmbedder &gt; </div>
 <div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    {</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      BOOST_VERIFY(aDistance == aDistance);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> p = <a class="code" href="classDGtal_1_1functors_1_1MongeJetFittingNormalVectorEstimator.html#a752d79962075268a4eff4ab5aaa32d05">myEmbedder</a>-&gt;operator()(aSurf);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> p = <a class="code" href="classDGtal_1_1functors_1_1MongeJetFittingNormalVectorEstimator.html#a752d79962075268a4eff4ab5aaa32d05">myEmbedder</a>-&gt;operator()(aSurf);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <a class="code" href="classDGtal_1_1functors_1_1MongeJetFittingNormalVectorEstimator.html#ae40b4218e3d2b627fafcc1e54c8970f9">CGALPoint</a> pp(p[0]*<a class="code" href="classDGtal_1_1functors_1_1MongeJetFittingNormalVectorEstimator.html#a584ab48b86595a89bb01b137d87f8eec">myH</a>,p[1]*<a class="code" href="classDGtal_1_1functors_1_1MongeJetFittingNormalVectorEstimator.html#a584ab48b86595a89bb01b137d87f8eec">myH</a>,p[2]*<a class="code" href="classDGtal_1_1functors_1_1MongeJetFittingNormalVectorEstimator.html#a584ab48b86595a89bb01b137d87f8eec">myH</a>);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <a class="code" href="classDGtal_1_1functors_1_1MongeJetFittingNormalVectorEstimator.html#adc0a192eff49678b5809c2d5926747db">myPoints</a>.push_back(pp);</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
 <div class="ttc" id="aclassDGtal_1_1functors_1_1MongeJetFittingNormalVectorEstimator_html_ae40b4218e3d2b627fafcc1e54c8970f9"><div class="ttname"><a href="classDGtal_1_1functors_1_1MongeJetFittingNormalVectorEstimator.html#ae40b4218e3d2b627fafcc1e54c8970f9">DGtal::functors::MongeJetFittingNormalVectorEstimator::CGALPoint</a></div><div class="ttdeci">CGALKernel::Point_3 CGALPoint</div><div class="ttdef"><b>Definition:</b> <a href="MongeJetFittingNormalVectorEstimator_8h_source.html#l00091">MongeJetFittingNormalVectorEstimator.h:91</a></div></div>
-<div class="ttc" id="atestAstroid2D_8cpp_html_ac914bb734ccb5a7c569747c1e699c1aa"><div class="ttname"><a href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a></div><div class="ttdeci">Z2i::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testAstroid2D_8cpp_source.html#l00046">testAstroid2D.cpp:46</a></div></div>
+<div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="MongeJetFittingNormalVectorEstimator_8h_source.html#l00156">DGtal::functors::MongeJetFittingNormalVectorEstimator&lt; TSurfel, TEmbedder &gt;::myEmbedder</a>, <a class="el" href="MongeJetFittingNormalVectorEstimator_8h_source.html#l00162">DGtal::functors::MongeJetFittingNormalVectorEstimator&lt; TSurfel, TEmbedder &gt;::myH</a>, and <a class="el" href="MongeJetFittingNormalVectorEstimator_8h_source.html#l00159">DGtal::functors::MongeJetFittingNormalVectorEstimator&lt; TSurfel, TEmbedder &gt;::myPoints</a>.</p>
 
@@ -646,7 +646,7 @@ template&lt;typename TSurfel , typename TEmbedder &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:22 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:24 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

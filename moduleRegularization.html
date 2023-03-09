@@ -145,7 +145,7 @@ Regularized digital surface (II normal vectors).</div></div>
 Local control</h1>
 <p>As discussed above, the user can control the weights \(\alpha\), \(\beta\) and \(\gamma\) per digital surface vertex. For instance using the following weights:</p>
 <div class="fragment"><div class="line">    DigitalSurfaceRegularization&lt;SH3::DigitalSurface&gt; regul3(surface);</div>
-<div class="line">    <span class="keywordflow">for</span>(<span class="keyword">auto</span> i = 0 ; i &lt; original.size(); ++i)</div>
+<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0 ; i &lt; original.size(); ++i)</div>
 <div class="line">      <span class="keywordflow">if</span> (original[i][0]&lt;0.0)</div>
 <div class="line">      {</div>
 <div class="line">        alphas[i] = 4.0;</div>
@@ -164,7 +164,7 @@ Regularization with local data attachment weight.</div></div>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:10 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:11 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

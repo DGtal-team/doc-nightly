@@ -159,7 +159,7 @@ Optimized surface according to squared curvature (1000 iterations).</div></div>
 <div class="fragment"><div class="line">    <span class="keyword">auto</span> regularizedPos = shrouds_reg.positions();</div>
 <div class="line">    <span class="keyword">auto</span> polySurf       = SH3::makeDualPolygonalSurface( idxsurface );</div>
 <div class="line">    <span class="keyword">auto</span> polySurfPos    = polySurf-&gt;positions();</div>
-<div class="line">    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; regularizedPos.size(); i++ )</div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; regularizedPos.size(); i++ )</div>
 <div class="line">      polySurfPos[ i ] = regularizedPos[ i ];</div>
 <div class="line">    SH3::saveOBJ( polySurf, <span class="stringliteral">&quot;goursat-shrouds-reg-k2.obj&quot;</span> );</div>
 </div><!-- fragment --> <dl class="section note"><dt>Note</dt><dd>The regularized position are retrieved using the <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a6689733570755d7ad94a8aa8ba4872d5">ShroudsRegularization::positions</a>. The current energy can be retrieved with <a class="el" href="classDGtal_1_1ShroudsRegularization.html#a5273bb5d8a34ffb71fe284713018623c">ShroudsRegularization::energy</a>.</dd></dl>
@@ -199,7 +199,7 @@ Optimized surface according to area.</div></div>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:10 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:11 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

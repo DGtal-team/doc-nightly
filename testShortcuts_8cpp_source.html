@@ -114,7 +114,7 @@ $(function() {
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    THEN( <span class="stringliteral">&quot;The vertices of the polygonal surface are in the same order as the pointel range&quot;</span> ) {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb_ok = 0, nb_ko = 0;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; polySurf-&gt;nbVertices(); i++ )</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; polySurf-&gt;nbVertices(); i++ )</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;          <span class="keyword">auto</span>    p = pointels[ i ];</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;          <span class="keyword">auto</span>  idx = c2i[ p ];</div>
@@ -125,12 +125,13 @@ $(function() {
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;          <span class="keywordflow">else</span> nb_ok += 1;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( nb_ko == 0 );</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">//                                                                           //</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      (void)nb_ok;<span class="comment">//not used</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( nb_ko == 0 );</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">//                                                                           //</span></div>
 <div class="ttc" id="aclassDGtal_1_1KhalimskySpaceND_html"><div class="ttname"><a href="classDGtal_1_1KhalimskySpaceND.html">DGtal::KhalimskySpaceND</a></div><div class="ttdoc">Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex,...</div><div class="ttdef"><b>Definition:</b> <a href="KhalimskySpaceND_8h_source.html#l00392">KhalimskySpaceND.h:394</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Shortcuts_html"><div class="ttname"><a href="classDGtal_1_1Shortcuts.html">DGtal::Shortcuts</a></div><div class="ttdoc">Aim: This class is used to simplify shape and surface creation. With it, you can create new shapes an...</div><div class="ttdef"><b>Definition:</b> <a href="Shortcuts_8h_source.html#l00104">Shortcuts.h:105</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Shortcuts_html_a494dc8f34f9ce89efd13f5e34a183e9e"><div class="ttname"><a href="classDGtal_1_1Shortcuts.html#a494dc8f34f9ce89efd13f5e34a183e9e">DGtal::Shortcuts::Cell2Index</a></div><div class="ttdeci">std::map&lt; Cell, IdxVertex &gt; Cell2Index</div><div class="ttdef"><b>Definition:</b> <a href="Shortcuts_8h_source.html#l00189">Shortcuts.h:189</a></div></div>
@@ -146,7 +147,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:04 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:05 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

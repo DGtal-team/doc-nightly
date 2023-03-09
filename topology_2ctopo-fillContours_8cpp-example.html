@@ -114,20 +114,20 @@ $(function() {
 <div class="line"><span class="comment"></span>  </div>
 <div class="line">  <span class="keyword">typedef</span>  <a name="a5"></a><a class="code" href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">KhalimskySpaceND&lt;2, int&gt;::SCell</a> <a class="code" href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">SCell</a>;</div>
 <div class="line">  <a class="code" href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">std::set&lt;DGtal::KhalimskySpaceND&lt; 2, int &gt;::SCell</a>&gt; boundarySCell;</div>
-<div class="line">  <a name="a6"></a><a class="code" href="classDGtal_1_1FreemanChain.html#a9e2abe6893728a71e6570d32f7fd148c">FreemanChain&lt;int&gt;::getInterPixelLinels</a>(<a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, fc1, boundarySCell, <span class="keyword">false</span>); </div>
+<div class="line">  FreemanChain&lt;int&gt;::getInterPixelLinels(<a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, fc1, boundarySCell, <span class="keyword">false</span>); </div>
 <div class="line">  </div>
-<div class="line">  aBoard &lt;&lt; CustomStyle((*boundarySCell.begin()).className(),  <span class="keyword">new</span> CustomColors(<a name="a7"></a><a class="code" href="classDGtal_1_1Color.html#aa5e8679bd0da49f95d13cd95a17b619b">DGtal::Color::Red</a>, <a class="code" href="classDGtal_1_1Color.html#aa5e8679bd0da49f95d13cd95a17b619b">DGtal::Color::Red</a>) );</div>
-<div class="line">  <span class="keywordflow">for</span>( std::set&lt;<a name="_a8"></a><a class="code" href="structDGtal_1_1SignedKhalimskyCell.html">DGtal::KhalimskySpaceND&lt; 2, int &gt;::SCell</a>&gt;::const_iterator it= boundarySCell.begin();  </div>
+<div class="line">  aBoard &lt;&lt; CustomStyle((*boundarySCell.begin()).className(),  <span class="keyword">new</span> CustomColors(<a name="a6"></a><a class="code" href="classDGtal_1_1Color.html#aa5e8679bd0da49f95d13cd95a17b619b">DGtal::Color::Red</a>, <a class="code" href="classDGtal_1_1Color.html#aa5e8679bd0da49f95d13cd95a17b619b">DGtal::Color::Red</a>) );</div>
+<div class="line">  <span class="keywordflow">for</span>( std::set&lt;<a name="_a7"></a><a class="code" href="structDGtal_1_1SignedKhalimskyCell.html">DGtal::KhalimskySpaceND&lt; 2, int &gt;::SCell</a>&gt;::const_iterator it= boundarySCell.begin();  </div>
 <div class="line">       it!= boundarySCell.end(); it++){</div>
 <div class="line">    aBoard &lt;&lt; *it;</div>
 <div class="line">  }</div>
 <div class="line">  </div>
 <div class="line">  <span class="comment">// We can also add other freeman chains with indirect orientation to construct a hole in interior of the shape:</span></div>
 <div class="line"><span class="comment"></span>  <a class="code" href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">std::set&lt;DGtal::KhalimskySpaceND&lt; 2, int &gt;::SCell</a>&gt; boundarySCellhole;</div>
-<div class="line">  <a class="code" href="classDGtal_1_1FreemanChain.html#a9e2abe6893728a71e6570d32f7fd148c">FreemanChain&lt;int&gt;::getInterPixelLinels</a>(<a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, fc2, boundarySCellhole, <span class="keyword">false</span>); </div>
+<div class="line">  FreemanChain&lt;int&gt;::getInterPixelLinels(<a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, fc2, boundarySCellhole, <span class="keyword">false</span>); </div>
 <div class="line">  </div>
 <div class="line">  </div>
-<div class="line">  aBoard &lt;&lt; CustomStyle((*boundarySCell.begin()).className(),  <span class="keyword">new</span> CustomColors(<a name="a9"></a><a class="code" href="classDGtal_1_1Color.html#abf76f3f60747766c469ceb8e9bbfe68b">DGtal::Color::Blue</a>, <a class="code" href="classDGtal_1_1Color.html#abf76f3f60747766c469ceb8e9bbfe68b">DGtal::Color::Blue</a>) );</div>
+<div class="line">  aBoard &lt;&lt; CustomStyle((*boundarySCell.begin()).className(),  <span class="keyword">new</span> CustomColors(<a name="a8"></a><a class="code" href="classDGtal_1_1Color.html#abf76f3f60747766c469ceb8e9bbfe68b">DGtal::Color::Blue</a>, <a class="code" href="classDGtal_1_1Color.html#abf76f3f60747766c469ceb8e9bbfe68b">DGtal::Color::Blue</a>) );</div>
 <div class="line">  aBoard2 &lt;&lt; CustomStyle((*boundarySCell.begin()).className(),  <span class="keyword">new</span> CustomColors(<a class="code" href="classDGtal_1_1Color.html#abf76f3f60747766c469ceb8e9bbfe68b">DGtal::Color::Blue</a>, <a class="code" href="classDGtal_1_1Color.html#abf76f3f60747766c469ceb8e9bbfe68b">DGtal::Color::Blue</a>) );</div>
 <div class="line">  </div>
 <div class="line"> </div>
@@ -142,13 +142,13 @@ $(function() {
 <div class="line">  <span class="comment">// Now we can compute the unsigned cell associated to interior pixels: </span></div>
 <div class="line"> </div>
 <div class="line">  <span class="keyword">typedef</span> ImageContainerBySTLMap&lt; Z2i::Domain, bool&gt; BoolImage2D;</div>
-<div class="line">  <a name="a10"></a><a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">BoolImage2D::Domain</a> imageDomain( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Z2i::Point</a>(0,10), <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Z2i::Point</a>(20,30) );</div>
+<div class="line">  <a name="a9"></a><a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">BoolImage2D::Domain</a> imageDomain( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Z2i::Point</a>(0,10), <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Z2i::Point</a>(20,30) );</div>
 <div class="line">  BoolImage2D interiorCellImage( imageDomain );</div>
 <div class="line">  Surfaces&lt;DGtal::KhalimskySpaceND&lt; 2, int &gt; &gt;::uFillInterior(<a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, functors::SurfelSetPredicate&lt;std::set&lt;SCell&gt;,<a class="code" href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">SCell</a>&gt;(boundarySCell), </div>
 <div class="line">                                                              interiorCellImage, 1, <span class="keyword">false</span>);  </div>
 <div class="line"> </div>
-<div class="line">  aBoard &lt;&lt; CustomStyle(<a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.lowerCell().className(),  <span class="keyword">new</span> CustomColors(<a name="a11"></a><a class="code" href="classDGtal_1_1Color.html#a52392322b49b4857eee179121308dfbe">DGtal::Color::None</a>, Color(200, 200, 200)) );</div>
-<div class="line">  <span class="keywordflow">for</span>(<a name="a12"></a><a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">BoolImage2D::Domain::ConstIterator</a> it = interiorCellImage.domain().begin(); </div>
+<div class="line">  aBoard &lt;&lt; CustomStyle(<a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.lowerCell().className(),  <span class="keyword">new</span> CustomColors(<a name="a10"></a><a class="code" href="classDGtal_1_1Color.html#a52392322b49b4857eee179121308dfbe">DGtal::Color::None</a>, Color(200, 200, 200)) );</div>
+<div class="line">  <span class="keywordflow">for</span>(<a name="a11"></a><a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">BoolImage2D::Domain::ConstIterator</a> it = interiorCellImage.domain().begin(); </div>
 <div class="line">      it!=interiorCellImage.domain().end(); it++){</div>
 <div class="line">    <span class="keywordflow">if</span>(interiorCellImage(*it)){</div>
 <div class="line">      aBoard &lt;&lt; <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uSpel(*it);</div>
@@ -188,14 +188,13 @@ $(function() {
 <div class="line"> </div>
 <div class="line">  aBoard2.saveEPS(<span class="stringliteral">&quot;example_ctopo-fillContours2.eps&quot;</span>);</div>
 <div class="line">  aBoard2.saveFIG(<span class="stringliteral">&quot;example_ctopo-fillContours2.fig&quot;</span>);</div>
-<div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a13"></a><a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
+<div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a12"></a><a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="line"><span class="comment">//                                                                           //</span></div>
 <div class="ttc" id="aclassDGtal_1_1Color_html_a52392322b49b4857eee179121308dfbe"><div class="ttname"><a href="classDGtal_1_1Color.html#a52392322b49b4857eee179121308dfbe">DGtal::Color::None</a></div><div class="ttdeci">static const Color None</div><div class="ttdef"><b>Definition:</b> <a href="Color_8h_source.html#l00412">Color.h:412</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Color_html_aa5e8679bd0da49f95d13cd95a17b619b"><div class="ttname"><a href="classDGtal_1_1Color.html#aa5e8679bd0da49f95d13cd95a17b619b">DGtal::Color::Red</a></div><div class="ttdeci">static const Color Red</div><div class="ttdef"><b>Definition:</b> <a href="Color_8h_source.html#l00416">Color.h:416</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Color_html_abf76f3f60747766c469ceb8e9bbfe68b"><div class="ttname"><a href="classDGtal_1_1Color.html#abf76f3f60747766c469ceb8e9bbfe68b">DGtal::Color::Blue</a></div><div class="ttdeci">static const Color Blue</div><div class="ttdef"><b>Definition:</b> <a href="Color_8h_source.html#l00419">Color.h:419</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1FreemanChain_html_a9e2abe6893728a71e6570d32f7fd148c"><div class="ttname"><a href="classDGtal_1_1FreemanChain.html#a9e2abe6893728a71e6570d32f7fd148c">DGtal::FreemanChain&lt; int &gt;::getInterPixelLinels</a></div><div class="ttdeci">static void getInterPixelLinels(const KhalimskySpaceND&lt; 2, int &gt; &amp;aKSpace, const FreemanChain &amp;fc, typename KhalimskySpaceND&lt; 2, int &gt;::SCellSet &amp;aSCellContour, bool aFlagForAppend=false)</div></div>
 <div class="ttc" id="aclassDGtal_1_1KhalimskySpaceND_html"><div class="ttname"><a href="classDGtal_1_1KhalimskySpaceND.html">DGtal::KhalimskySpaceND</a></div><div class="ttdoc">Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex,...</div><div class="ttdef"><b>Definition:</b> <a href="KhalimskySpaceND_8h_source.html#l00392">KhalimskySpaceND.h:394</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_a352b7160bf722e2f0bcbee5d0bad6ef3"><div class="ttname"><a href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">DGtal::Trace::beginBlock</a></div><div class="ttdeci">void beginBlock(const std::string &amp;keyword=&quot;&quot;)</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
@@ -211,7 +210,7 @@ $(function() {
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:35 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:44:37 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

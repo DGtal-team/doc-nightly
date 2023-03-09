@@ -130,9 +130,9 @@ Normal Cycle curvature measures</h2>
 <div class="ttc" id="anamespaceDGtal_1_1Z3i_html"><div class="ttname"><a href="namespaceDGtal_1_1Z3i.html">DGtal::Z3i</a></div><div class="ttdoc">Z3i this namespace gathers the standard of types for 3D imagery.</div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
 </div><!-- fragment --><p> We will compute curvature measures onto a <a class="el" href="structDGtal_1_1SurfaceMesh.html" title="Aim: Represents an embedded mesh as faces and a list of vertices. Vertices may be shared among faces ...">SurfaceMesh</a> object. Here, we build a torus of big radius 3 and small radius 1, with a discretization of 20x20.</p>
-<div class="fragment"><div class="line">SM smesh = SMH::makeTorus( 3.0, 1.0, <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> { 0.0, 0.0, 0.0 }, 20, 20, 0,</div>
+<div class="fragment"><div class="line">SM smesh = SMH::makeTorus( 3.0, 1.0, <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> { 0.0, 0.0, 0.0 }, 20, 20, 0,</div>
 <div class="line">                           SMH::NormalsType::NO_NORMALS );</div>
-<div class="ttc" id="atestAstroid2D_8cpp_html_ac914bb734ccb5a7c569747c1e699c1aa"><div class="ttname"><a href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a></div><div class="ttdeci">Z2i::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testAstroid2D_8cpp_source.html#l00046">testAstroid2D.cpp:46</a></div></div>
+<div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 </div><!-- fragment --><p>It is not necessary here to equip the mesh with normals, since the Normal Cycle infers the normals from the positions of the mesh. We can now compute three measures onto the mesh, <code>mu0</code> the area measure, <code>mu1</code> twice the mean curvature measure, and <code>mu2</code> the Gaussian curvature measure. You have static methods <a class="el" href="structDGtal_1_1NormalCycleComputer.html#a0746faf13489a2ab2d751773aed50f83">NormalCycleComputer::meanCurvature</a> and <a class="el" href="structDGtal_1_1NormalCycleComputer.html#a771b165d090533ea7a80e2122aa04898">NormalCycleComputer::GaussianCurvature</a> that estimate respectively mean and Gaussian curvature from measures.</p>
 <div class="fragment"><div class="line">  <span class="comment">// builds a NormalCycleComputer object onto the mesh</span></div>
 <div class="line">  NC nc( smesh );</div>
@@ -215,7 +215,7 @@ Interpolated Corrected Normal Current curvature measures</h2>
 <div class="line">  <span class="keyword">typedef</span> CorrectedNormalCurrentComputer&lt; RealPoint, RealVector &gt; CNC;</div>
 <div class="line">  <span class="keyword">typedef</span> SurfaceMeshHelper&lt; RealPoint, RealVector &gt;              SMH;</div>
 </div><!-- fragment --><p> We will compute curvature measures onto a <a class="el" href="structDGtal_1_1SurfaceMesh.html" title="Aim: Represents an embedded mesh as faces and a list of vertices. Vertices may be shared among faces ...">SurfaceMesh</a> object. Here, we build a torus of big radius 3 and small radius 1, with a discretization of 20x20.</p>
-<div class="fragment"><div class="line">SM smesh = SMH::makeTorus( 3.0, 1.0, <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> { 0.0, 0.0, 0.0 }, 20, 20, 0,</div>
+<div class="fragment"><div class="line">SM smesh = SMH::makeTorus( 3.0, 1.0, <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> { 0.0, 0.0, 0.0 }, 20, 20, 0,</div>
 <div class="line">                           SMH::NormalsType::VERTEX_NORMALS );</div>
 </div><!-- fragment --><dl class="section warning"><dt>Warning</dt><dd>It is necessary here to equip the mesh with normals, since the Corrected NormalCurrent needs a corrected vector field to compute curvatures.</dd></dl>
 <p>Here we just provide the corrected normal vector field \( \mathbf{u} \) as a normal vector per vertex, the field is then linearly interpolated. We can now compute three measures onto the mesh, <code>mu0</code> the area measure, <code>mu1</code> twice the mean curvature measure, and <code>mu2</code> the Gaussian curvature measure. You have static methods <a class="el" href="structDGtal_1_1CorrectedNormalCurrentComputer.html#ac4bd5d55e986d07f7e305c7c15814a45">CorrectedNormalCurrentComputer::meanCurvature</a> and <a class="el" href="structDGtal_1_1CorrectedNormalCurrentComputer.html#acc2e62565ff0c72b274c9bfe2e89d722">CorrectedNormalCurrentComputer::GaussianCurvature</a> that estimate respectively mean and Gaussian curvature from measures.</p>
@@ -374,8 +374,8 @@ ICNC Curvature computation on OBJ surface</h2>
 <div class="line">      <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a1e786a1f3b1047e92b73c82f67e3c295">error</a>() &lt;&lt;  <span class="stringliteral">&quot;Unable to read file &lt;&quot;</span> &lt;&lt; input.c_str() &lt;&lt; <span class="stringliteral">&quot;&gt;&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">      <span class="keywordflow">return</span> 1;</div>
 <div class="line">    }</div>
-<div class="line">  <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> lo = smesh.position( 0 );</div>
-<div class="line">  <a class="code" href="testAstroid2D_8cpp.html#ac914bb734ccb5a7c569747c1e699c1aa">RealPoint</a> up = smesh.position( 0 );</div>
+<div class="line">  <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> lo = smesh.position( 0 );</div>
+<div class="line">  <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> up = smesh.position( 0 );</div>
 <div class="line">  <span class="keywordflow">for</span> ( <span class="keyword">const</span> <span class="keyword">auto</span>&amp; p : smesh.positions() )</div>
 <div class="line">    lo = lo.inf( p ), up = up.sup( p );</div>
 <div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> diameter = (up - lo).norm();</div>
@@ -677,7 +677,7 @@ Accuracy comparison between II and interpolated CNC Gaussian curvature estimates
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:10 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:11 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

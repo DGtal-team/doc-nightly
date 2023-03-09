@@ -111,7 +111,7 @@ class DGtal::MPolynomialDerivativeComputer&lt; 0, n, Ring, Alloc &gt;</h3>
 </dl>
 <p>This class is a backport from <a href="http://spielwiese.fontein.de/">Spielwiese</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l01842">1842</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l01852">1852</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a11669fed9b36e1ccf5b2fa60477e9f8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11669fed9b36e1ccf5b2fa60477e9f8f">&#9670;&nbsp;</a></span>MPolyN</h2>
@@ -129,7 +129,7 @@ template&lt;int n, typename Ring , class Alloc &gt; </div>
 
 <p>Type for polynomial with <em>n</em> variable in the ring <em>Ring</em>. </p>
 
-<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l01846">1846</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l01856">1856</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
 
 </div>
 </div>
@@ -178,15 +178,15 @@ template&lt;int n, typename Ring , class Alloc &gt; </div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l01856">1856</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;    {</div>
-<div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;      dest.myValue.resize(src.degree() &gt;= 0 ? src.degree() : 0);</div>
-<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;      <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 1; i &lt;= src.degree(); ++i )</div>
-<div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;        dest[i - 1] = src[i] * (Ring)i;</div>
-<div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;      dest.normalize();</div>
-<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="MPolynomial_8h_source.html#l01866">1866</a> of file <a class="el" href="MPolynomial_8h_source.html">MPolynomial.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160;    {</div>
+<div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;      dest.myValue.resize(src.degree() &gt;= 0 ? src.degree() : 0);</div>
+<div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;      <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 1; i &lt;= src.degree(); ++i )</div>
+<div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;        dest[i - 1] = src[i] * (Ring)i;</div>
+<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;      dest.normalize();</div>
+<div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="MPolynomial_8h_source.html#l00998">DGtal::MPolynomial&lt; n, TRing, TAlloc &gt;::myValue</a>, <a class="el" href="MPolynomial_8h_source.html#l01015">DGtal::MPolynomial&lt; n, TRing, TAlloc &gt;::normalize()</a>, and <a class="el" href="MPolynomial_8h_source.html#l00747">DGtal::IVector&lt; T, TAlloc, usePointers &gt;::resize()</a>.</p>
+<p class="reference">References <a class="el" href="MPolynomial_8h_source.html#l01008">DGtal::MPolynomial&lt; n, TRing, TAlloc &gt;::myValue</a>, <a class="el" href="MPolynomial_8h_source.html#l01025">DGtal::MPolynomial&lt; n, TRing, TAlloc &gt;::normalize()</a>, and <a class="el" href="MPolynomial_8h_source.html#l00757">DGtal::IVector&lt; T, TAlloc, usePointers &gt;::resize()</a>.</p>
 
 </div>
 </div>
@@ -196,7 +196,7 @@ template&lt;int n, typename Ring , class Alloc &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:56:18 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:45:19 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

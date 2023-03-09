@@ -390,7 +390,7 @@ $(function() {
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;      }</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;      <span class="comment">// Orient them consistently</span></div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;      <span class="keywordflow">for</span> ( <a class="code" href="structDGtal_1_1ConvexCellComplex.html#a1de927dc0c2cb59518c192f8c8114258">Index</a> c = 0; c &lt; <a class="code" href="structDGtal_1_1ConvexCellComplex.html#a55646551e3fcac69389432e0caadbdcb">nbCells</a>(); c++ ) {</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; c_vtcs = <a class="code" href="structDGtal_1_1ConvexCellComplex.html#a721edb0a18f1a1121ebcd128362cf356">cellVertices</a>( c );</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="comment">//const auto&amp; c_vtcs = cellVertices( c ); //not used</span></div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <span class="keywordflow">for</span> ( <span class="keyword">auto</span> f : <a class="code" href="structDGtal_1_1ConvexCellComplex.html#ab7e9ec5809cfb961c2f27b18b9b13280">cellFaces</a>( c ) ) {</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;          <span class="keywordflow">if</span> ( ! f.second ) <span class="keywordflow">continue</span>; <span class="comment">// process only &#39;true&#39; faces</span></div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;          <span class="keyword">const</span>   <span class="keyword">auto</span> ov = <a class="code" href="structDGtal_1_1ConvexCellComplex.html#a8963e30cbcc4d2adc17124c73b582a83">faceComplementVertices</a>( f );</div>
@@ -542,7 +542,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 4 2023 15:55:41 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Mar 9 2023 13:44:43 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

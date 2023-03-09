@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['regularization_16700',['Regularization',['../classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895b',1,'DGtal::ShroudsRegularization']]],
-  ['renderingmode_16701',['RenderingMode',['../classDGtal_1_1Viewer3D.html#a41f43f5d8ed445215b84664faa6b6243',1,'DGtal::Viewer3D']]]
+  ['regularization_16717',['Regularization',['../classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895b',1,'DGtal::ShroudsRegularization']]],
+  ['renderingmode_16718',['RenderingMode',['../classDGtal_1_1Viewer3D.html#a41f43f5d8ed445215b84664faa6b6243',1,'DGtal::Viewer3D']]]
 ];
