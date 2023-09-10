@@ -257,7 +257,7 @@ edges</h1>
 <li>the edge is not bordered by the same two triangles, in opposite orientation.</li>
 </ol>
 </li>
-<li><a class="el" href="structDGtal_1_1SurfaceMesh.html#ab9f4e831f1077f18678609ff159bdae9">SurfaceMesh::flip</a> performs the flip on a flippable edge. The flipped edge keeps the same index as the original edge. You may choose whether or not you update locally the face normals.</li>
+<li><a class="el" href="structDGtal_1_1SurfaceMesh.html#ab9f4e831f1077f18678609ff159bdae9">SurfaceMesh::flip</a> performs the flip on a flippable edge <code>e=(i,j)</code>. The flipped edge keeps the same index as the original edge. You may choose whether or not you update locally the face normals.</li>
 </ul>
 <pre class="fragment">           l                   l
           / \                 /|\
@@ -271,7 +271,7 @@ edges</h1>
         \     /             \  |  /
          \   /               \ | /
           \ /                 \|/
-           k                   k</pre><dl class="section note"><dt>Note</dt><dd>Vertex normals are not updated after a flip. Furthermore, neighbor faces of faces are not recomputed. You may recompute face neighborhoods at the end of a sequence of flips by calling <a class="el" href="structDGtal_1_1SurfaceMesh.html#ae7ecdad2206789f6f0173e337b6eec82" title="Computes neighboring information.">SurfaceMesh::computeNeighbors</a>.</dd></dl>
+           k                   k</pre><dl class="section note"><dt>Note</dt><dd>Almost all information is recomputed locally. Only vertex normals are not updated after a flip, as well as neighbor faces of faces are not recomputed. You may recompute face neighborhoods at the end of a sequence of flips by calling <a class="el" href="structDGtal_1_1SurfaceMesh.html#ae7ecdad2206789f6f0173e337b6eec82" title="Computes neighboring information.">SurfaceMesh::computeNeighbors</a>. You may for instance recompute vertex normals from face normals by a call to <a class="el" href="structDGtal_1_1SurfaceMesh.html#a66173c8fdc013e2b41b60669b268baf4">SurfaceMesh::computeVertexNormalsFromFaceNormals</a>.</dd></dl>
 <ul>
 <li><a class="el" href="structDGtal_1_1SurfaceMesh.html#a7a402887bbcacc77400ac854dfce6716">SurfaceMesh::otherDiagonal</a> returns, given a flippable edge, the two other vertices of the quadrilateral. So in the flip example above, it returns (k,l) if k &lt; l or (l,k) otherwise.</li>
 </ul>
@@ -329,7 +329,7 @@ Schwarz lantern after flip: a nicer cylinder</div></div>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 10 2023 13:30:07 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun Sep 10 2023 13:55:55 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
