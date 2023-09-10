@@ -82,7 +82,7 @@ $(function() {
 <li class="level1"><a href="#SurfMesh_sec5">Geometric positions and normals, and other information associated to cells</a></li>
 <li class="level1"><a href="#SurfMesh_sec6">Further geometric services</a></li>
 <li class="level1"><a href="#SurfMesh_sec7">Conversion and output to OBJ file format</a></li>
-<li class="level1"><a href="#Flipping">edges</a></li>
+<li class="level1"><a href="#SurfMesh_sec8">Flipping edges</a></li>
 </ul>
 </div>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Jacques-Olivier Lachaud</dd></dl>
@@ -246,8 +246,8 @@ Conversion and output to OBJ file format</h1>
 <img src="spot-bft-isolines.png" alt=""/>
 <div class="caption">
 SurfaceMesh faces colored according to distance to bluest vertex and three isodistance lines</div></div>
-<h1><a class="anchor" id="Flipping"></a>
-edges</h1>
+<h1><a class="anchor" id="SurfMesh_sec8"></a>
+Flipping edges</h1>
 <p>Since 1.4, you may modify a <a class="el" href="structDGtal_1_1SurfaceMesh.html" title="Aim: Represents an embedded mesh as faces and a list of vertices. Vertices may be shared among faces ...">SurfaceMesh</a> through flips. Only edges that are incident to a triangle on the right and a triangle on the left are (topologically) flippable. These two triangles form then a quadrilateral, and the edge is one diagonal of this quadrilateral. Flipping the edge means that the quadrilateral is now split only the other diagonal. Flipping twice the same edge restores the original mesh.</p>
 <p>The following methods are useful for flipping an edge:</p><ul>
 <li><a class="el" href="structDGtal_1_1SurfaceMesh.html#af7efd79cbe2aa133b448e361ecf9d338">SurfaceMesh::isFlippable</a> indicates if a given edge is flippable. An edge is (topologically) flippable iff:<ol type="1">
@@ -329,7 +329,7 @@ Schwarz lantern after flip: a nicer cylinder</div></div>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 10 2023 13:55:55 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun Sep 10 2023 14:44:50 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
