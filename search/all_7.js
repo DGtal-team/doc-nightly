@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['e_2045',['e',['../structDGtal_1_1detail_1_1power__node.html#a9433e4e31d445eb2cb93d5b1e5431393',1,'DGtal::detail::power_node']]],
-  ['e_2046',['E',['../classDGtal_1_1PolygonalCalculus.html#a63a4c27d54124153058d77992bd3762a',1,'DGtal::PolygonalCalculus']]],
+  ['e_2045',['E',['../classDGtal_1_1PolygonalCalculus.html#a63a4c27d54124153058d77992bd3762a',1,'DGtal::PolygonalCalculus']]],
+  ['e_2046',['e',['../structDGtal_1_1detail_1_1power__node.html#a9433e4e31d445eb2cb93d5b1e5431393',1,'DGtal::detail::power_node']]],
   ['e_5f_2047',['E_',['../classDGtal_1_1PolygonalCalculus.html#a214872a1219ea5fe2c815f1aa9fa248fa1db575acf0d63a4888a743b809312ff6',1,'DGtal::PolygonalCalculus']]],
   ['e_5fintersection_2048',['e_intersection',['../classDGtal_1_1DigitalShapesCSG.html#a1f8a8de904e9c5c29ee55980cd68d7eeadcab77f6b8aeeb2dabc2e3fe2891b6e1',1,'DGtal::DigitalShapesCSG::e_intersection()'],['../classDGtal_1_1EuclideanShapesCSG.html#ac83393f60d7c8e1df1702e28cae457a4a4c4b343beae2663b6a1c937623aed596',1,'DGtal::EuclideanShapesCSG::e_intersection()']]],
   ['e_5fminus_2049',['e_minus',['../classDGtal_1_1DigitalShapesCSG.html#a1f8a8de904e9c5c29ee55980cd68d7eea502f28b5e10352d83073d42eedf1ab5b',1,'DGtal::DigitalShapesCSG::e_minus()'],['../classDGtal_1_1EuclideanShapesCSG.html#ac83393f60d7c8e1df1702e28cae457a4afac5c8bdc4f02eae3cd25f32035688d2',1,'DGtal::EuclideanShapesCSG::e_minus()']]],
@@ -31,7 +31,7 @@ var searchData=
   ['edges_2073',['edges',['../namespaceboost.html#a02a2d933da658a600caa2c5031315d3a',1,'boost::edges(const DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &amp;digSurf)'],['../namespaceboost.html#a0b353e13a5cc488f03c98eab3651d632',1,'boost::edges(const DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt; &amp;obj)']]],
   ['edges_2074',['Edges',['../structDGtal_1_1SurfaceMeshMeasure.html#ac7c098a6ab404304c78ac64af73b9cd4',1,'DGtal::SurfaceMeshMeasure']]],
   ['edges_5fsize_5ftype_2075',['edges_size_type',['../structboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4.html#adceb931306614aebb1aed9fd5515f863',1,'boost::graph_traits&lt; DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt; &gt;::edges_size_type()'],['../structboost_1_1graph__traits_3_01DGtal_1_1DigitalSurface_3_01TDigitalSurfaceContainer_01_4_01_4.html#a8265b17bf94a3b472339e92e70b58832',1,'boost::graph_traits&lt; DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt; &gt;::edges_size_type()']]],
-  ['edgevertices_2076',['edgeVertices',['../structDGtal_1_1SurfaceMesh.html#ab3c76aa430a5db57039bbc473dea1b81',1,'DGtal::SurfaceMesh']]],
+  ['edgevertices_2076',['edgeVertices',['../structDGtal_1_1SurfaceMesh.html#ab4e77c24b4365fffdd17df0a1ac65b93',1,'DGtal::SurfaceMesh']]],
   ['ehrhartpolynomial_2077',['EhrhartPolynomial',['../classDGtal_1_1EhrhartPolynomial.html',1,'DGtal::EhrhartPolynomial&lt; TSpace, TInteger &gt;'],['../classDGtal_1_1EhrhartPolynomial.html#ad2ff05e765045fa827a315b4578cd33b',1,'DGtal::EhrhartPolynomial::EhrhartPolynomial()'],['../classDGtal_1_1EhrhartPolynomial.html#a57d551d51e4cac94267d5d947ffb955c',1,'DGtal::EhrhartPolynomial::EhrhartPolynomial(const LatticePolytope &amp;polytope)'],['../classDGtal_1_1EhrhartPolynomial.html#aa6843afcaa55a127679ab668972fc1e8',1,'DGtal::EhrhartPolynomial::EhrhartPolynomial(const EhrhartPolynomial &amp;other)=default'],['../classDGtal_1_1EhrhartPolynomial.html#a598f8a540a3d015c87aa344c2bee182f',1,'DGtal::EhrhartPolynomial::EhrhartPolynomial(EhrhartPolynomial &amp;&amp;other)=default']]],
   ['eigendecomposition_2078',['EigenDecomposition',['../classDGtal_1_1EigenDecomposition.html',1,'DGtal']]],
   ['eigenlinearalgebrabackend_2079',['EigenLinearAlgebraBackend',['../structDGtal_1_1EigenLinearAlgebraBackend.html',1,'DGtal']]],
