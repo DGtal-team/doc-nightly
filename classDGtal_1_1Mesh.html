@@ -186,8 +186,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a87ffb3f14773872cb2c99efbe80e35ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a741a237832ade1806f797d7692558ffd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Mesh.html#a741a237832ade1806f797d7692558ffd">clearFaces</a> ()</td></tr>
 <tr class="separator:a741a237832ade1806f797d7692558ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a599df117623cb2610043ba3c80e8080b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Mesh.html#a599df117623cb2610043ba3c80e8080b">changeScale</a> (const typename TPoint::Component aScale)</td></tr>
-<tr class="separator:a599df117623cb2610043ba3c80e8080b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e38b35f60f5f9de43fea4bbf2b28ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Mesh.html#a25e38b35f60f5f9de43fea4bbf2b28ba">clearVertices</a> ()</td></tr>
+<tr class="separator:a25e38b35f60f5f9de43fea4bbf2b28ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9170a150e2cb6c1ea2267ddfbc60301"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Mesh.html#af9170a150e2cb6c1ea2267ddfbc60301">removeIsolatedVertices</a> ()</td></tr>
+<tr class="separator:af9170a150e2cb6c1ea2267ddfbc60301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea676439cb6d5fa9a591e8eced76536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Mesh.html#a2ea676439cb6d5fa9a591e8eced76536">rescale</a> (const typename TPoint::Component aScale)</td></tr>
+<tr class="separator:a2ea676439cb6d5fa9a591e8eced76536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9d892c67632b4a6036160e498da440b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Mesh.html#ab9d892c67632b4a6036160e498da440b">subDivideTriangularFaces</a> (const double minArea)</td></tr>
 <tr class="separator:ab9d892c67632b4a6036160e498da440b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a394b88b6975c2e174db9a0058f0cbf72"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Mesh.html#a394b88b6975c2e174db9a0058f0cbf72">quadToTriangularFaces</a> ()</td></tr>
@@ -764,34 +768,6 @@ template&lt;typename TPoint &gt; </div>
 
 </div>
 </div>
-<a id="a599df117623cb2610043ba3c80e8080b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a599df117623cb2610043ba3c80e8080b">&#9670;&nbsp;</a></span>changeScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TPoint &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classDGtal_1_1Mesh.html">DGtal::Mesh</a>&lt; TPoint &gt;::changeScale </td>
-          <td>(</td>
-          <td class="paramtype">const typename TPoint::Component&#160;</td>
-          <td class="paramname"><em>aScale</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Change the scale of the mesh (i.e all vertex coordinates are multiplied by a given factor aScale). </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">aScale</td><td>the scale factor. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">Referenced by <a class="el" href="testMesh_8cpp_source.html#l00051">testMesh()</a>.</p>
-
-</div>
-</div>
 <a id="a820eb795ed967dff6e1126eb29b51b88"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a820eb795ed967dff6e1126eb29b51b88">&#9670;&nbsp;</a></span>className()</h2>
 
@@ -829,6 +805,26 @@ template&lt;typename TPoint &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Clear all faces of the mesh. </p>
+
+</div>
+</div>
+<a id="a25e38b35f60f5f9de43fea4bbf2b28ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e38b35f60f5f9de43fea4bbf2b28ba">&#9670;&nbsp;</a></span>clearVertices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TPoint &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDGtal_1_1Mesh.html">DGtal::Mesh</a>&lt; TPoint &gt;::clearVertices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Clear all vertices of the mesh. </p>
 
 </div>
 </div>
@@ -980,7 +976,7 @@ template&lt;typename TPoint &gt; </div>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="testMesh_8cpp_source.html#l00311">testVisualTubularMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="testMesh_8cpp_source.html#l00335">testVisualTubularMesh()</a>.</p>
 
 </div>
 </div>
@@ -1081,9 +1077,9 @@ template&lt;typename TPoint &gt; </div>
 <div class="fragment"><div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                 {</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1Mesh.html#ad77ea6f9d493bb06f7785c3521a11b26">myFaceList</a>.begin();</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    }</div>
-<div class="ttc" id="aclassDGtal_1_1Mesh_html_ad77ea6f9d493bb06f7785c3521a11b26"><div class="ttname"><a href="classDGtal_1_1Mesh.html#ad77ea6f9d493bb06f7785c3521a11b26">DGtal::Mesh::myFaceList</a></div><div class="ttdeci">FaceStorage myFaceList</div><div class="ttdef"><b>Definition:</b> <a href="Mesh_8h_source.html#l00501">Mesh.h:501</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1Mesh_html_ad77ea6f9d493bb06f7785c3521a11b26"><div class="ttname"><a href="classDGtal_1_1Mesh.html#ad77ea6f9d493bb06f7785c3521a11b26">DGtal::Mesh::myFaceList</a></div><div class="ttdeci">FaceStorage myFaceList</div><div class="ttdef"><b>Definition:</b> <a href="Mesh_8h_source.html#l00513">Mesh.h:513</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00501">DGtal::Mesh&lt; TPoint &gt;::myFaceList</a>.</p>
+<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00513">DGtal::Mesh&lt; TPoint &gt;::myFaceList</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1114,7 @@ template&lt;typename TPoint &gt; </div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1Mesh.html#ad77ea6f9d493bb06f7785c3521a11b26">myFaceList</a>.begin();</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00501">DGtal::Mesh&lt; TPoint &gt;::myFaceList</a>.</p>
+<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00513">DGtal::Mesh&lt; TPoint &gt;::myFaceList</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="testMesh_8cpp_source.html#l00051">testMesh()</a>.</p>
 
@@ -1155,7 +1151,7 @@ template&lt;typename TPoint &gt; </div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1Mesh.html#ad77ea6f9d493bb06f7785c3521a11b26">myFaceList</a>.end();</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00501">DGtal::Mesh&lt; TPoint &gt;::myFaceList</a>.</p>
+<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00513">DGtal::Mesh&lt; TPoint &gt;::myFaceList</a>.</p>
 
 </div>
 </div>
@@ -1190,7 +1186,7 @@ template&lt;typename TPoint &gt; </div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1Mesh.html#ad77ea6f9d493bb06f7785c3521a11b26">myFaceList</a>.end();</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00501">DGtal::Mesh&lt; TPoint &gt;::myFaceList</a>.</p>
+<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00513">DGtal::Mesh&lt; TPoint &gt;::myFaceList</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="testMesh_8cpp_source.html#l00051">testMesh()</a>.</p>
 
@@ -1468,7 +1464,7 @@ template&lt;typename TPoint &gt; </div>
 </div><div class="memdoc">
 <p>Return the number of faces contained on the mesh object. </p><dl class="section return"><dt>Returns</dt><dd>the number of faces. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="testPolygonalSurface_8cpp_source.html#l00079">SCENARIO()</a>, <a class="el" href="testMeshVoxelization_8cpp_source.html#l00043">TEST_CASE()</a>, <a class="el" href="testMesh_8cpp_source.html#l00051">testMesh()</a>, <a class="el" href="testMesh_8cpp_source.html#l00221">testMeshGeneration()</a>, <a class="el" href="testMeshReader_8cpp_source.html#l00090">testMeshReader()</a>, and <a class="el" href="testMesh_8cpp_source.html#l00311">testVisualTubularMesh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="testPolygonalSurface_8cpp_source.html#l00079">SCENARIO()</a>, <a class="el" href="testMeshVoxelization_8cpp_source.html#l00043">TEST_CASE()</a>, <a class="el" href="testMesh_8cpp_source.html#l00051">testMesh()</a>, <a class="el" href="testMesh_8cpp_source.html#l00245">testMeshGeneration()</a>, <a class="el" href="testMeshReader_8cpp_source.html#l00090">testMeshReader()</a>, and <a class="el" href="testMesh_8cpp_source.html#l00335">testVisualTubularMesh()</a>.</p>
 
 </div>
 </div>
@@ -1490,7 +1486,7 @@ template&lt;typename TPoint &gt; </div>
 </div><div class="memdoc">
 <p>Return the number of faces contained on the mesh object. </p><dl class="section return"><dt>Returns</dt><dd>the number of faces. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="testPolygonalSurface_8cpp_source.html#l00079">SCENARIO()</a>, <a class="el" href="testMesh_8cpp_source.html#l00051">testMesh()</a>, <a class="el" href="testMesh_8cpp_source.html#l00221">testMeshGeneration()</a>, and <a class="el" href="testMeshReader_8cpp_source.html#l00090">testMeshReader()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="testPolygonalSurface_8cpp_source.html#l00079">SCENARIO()</a>, <a class="el" href="testMesh_8cpp_source.html#l00051">testMesh()</a>, <a class="el" href="testMesh_8cpp_source.html#l00245">testMeshGeneration()</a>, and <a class="el" href="testMeshReader_8cpp_source.html#l00090">testMeshReader()</a>.</p>
 
 </div>
 </div>
@@ -1564,6 +1560,56 @@ template&lt;typename TPoint &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">facesIndex</td><td>the index of the face to be removed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="testMesh_8cpp_source.html#l00051">testMesh()</a>.</p>
+
+</div>
+</div>
+<a id="af9170a150e2cb6c1ea2267ddfbc60301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9170a150e2cb6c1ea2267ddfbc60301">&#9670;&nbsp;</a></span>removeIsolatedVertices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TPoint &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDGtal_1_1Mesh.html">DGtal::Mesh</a>&lt; TPoint &gt;::removeIsolatedVertices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removed isolated vertices of input mesh that are not associated to a face. </p>
+
+<p class="reference">Referenced by <a class="el" href="testMesh_8cpp_source.html#l00051">testMesh()</a>.</p>
+
+</div>
+</div>
+<a id="a2ea676439cb6d5fa9a591e8eced76536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea676439cb6d5fa9a591e8eced76536">&#9670;&nbsp;</a></span>rescale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TPoint &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDGtal_1_1Mesh.html">DGtal::Mesh</a>&lt; TPoint &gt;::rescale </td>
+          <td>(</td>
+          <td class="paramtype">const typename TPoint::Component&#160;</td>
+          <td class="paramname"><em>aScale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Change the scale of the mesh (i.e all vertex coordinates are multiplied by a given factor aScale). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">aScale</td><td>the scale factor. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1697,9 +1743,9 @@ template&lt;typename TPoint &gt; </div>
 <div class="fragment"><div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                   {</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1Mesh.html#ac9d1e900d157dc93d411443b809fd157">myVertexList</a>.begin();</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    }</div>
-<div class="ttc" id="aclassDGtal_1_1Mesh_html_ac9d1e900d157dc93d411443b809fd157"><div class="ttname"><a href="classDGtal_1_1Mesh.html#ac9d1e900d157dc93d411443b809fd157">DGtal::Mesh::myVertexList</a></div><div class="ttdeci">VertexStorage myVertexList</div><div class="ttdef"><b>Definition:</b> <a href="Mesh_8h_source.html#l00502">Mesh.h:502</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1Mesh_html_ac9d1e900d157dc93d411443b809fd157"><div class="ttname"><a href="classDGtal_1_1Mesh.html#ac9d1e900d157dc93d411443b809fd157">DGtal::Mesh::myVertexList</a></div><div class="ttdeci">VertexStorage myVertexList</div><div class="ttdef"><b>Definition:</b> <a href="Mesh_8h_source.html#l00514">Mesh.h:514</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00502">DGtal::Mesh&lt; TPoint &gt;::myVertexList</a>.</p>
+<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00514">DGtal::Mesh&lt; TPoint &gt;::myVertexList</a>.</p>
 
 </div>
 </div>
@@ -1734,7 +1780,7 @@ template&lt;typename TPoint &gt; </div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1Mesh.html#ac9d1e900d157dc93d411443b809fd157">myVertexList</a>.begin();</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00502">DGtal::Mesh&lt; TPoint &gt;::myVertexList</a>.</p>
+<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00514">DGtal::Mesh&lt; TPoint &gt;::myVertexList</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="testMesh_8cpp_source.html#l00051">testMesh()</a>.</p>
 
@@ -1771,7 +1817,7 @@ template&lt;typename TPoint &gt; </div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1Mesh.html#ac9d1e900d157dc93d411443b809fd157">myVertexList</a>.end();</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00502">DGtal::Mesh&lt; TPoint &gt;::myVertexList</a>.</p>
+<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00514">DGtal::Mesh&lt; TPoint &gt;::myVertexList</a>.</p>
 
 </div>
 </div>
@@ -1806,7 +1852,7 @@ template&lt;typename TPoint &gt; </div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1Mesh.html#ac9d1e900d157dc93d411443b809fd157">myVertexList</a>.end();</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00502">DGtal::Mesh&lt; TPoint &gt;::myVertexList</a>.</p>
+<p class="reference">References <a class="el" href="Mesh_8h_source.html#l00514">DGtal::Mesh&lt; TPoint &gt;::myVertexList</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="testMesh_8cpp_source.html#l00051">testMesh()</a>.</p>
 
@@ -1835,7 +1881,7 @@ template&lt;typename TPoint &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00505">505</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00517">517</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
 
 </div>
 </div>
@@ -1861,7 +1907,7 @@ template&lt;typename TPoint &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00503">503</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00515">515</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
 
 </div>
 </div>
@@ -1887,7 +1933,7 @@ template&lt;typename TPoint &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00501">501</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00513">513</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Mesh_8h_source.html#l00402">DGtal::Mesh&lt; TPoint &gt;::faceBegin()</a>, and <a class="el" href="Mesh_8h_source.html#l00414">DGtal::Mesh&lt; TPoint &gt;::faceEnd()</a>.</p>
 
@@ -1915,7 +1961,7 @@ template&lt;typename TPoint &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00504">504</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00516">516</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
 
 </div>
 </div>
@@ -1941,7 +1987,7 @@ template&lt;typename TPoint &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00502">502</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Mesh_8h_source.html#l00514">514</a> of file <a class="el" href="Mesh_8h_source.html">Mesh.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Mesh_8h_source.html#l00359">DGtal::Mesh&lt; TPoint &gt;::vertexBegin()</a>, and <a class="el" href="Mesh_8h_source.html#l00369">DGtal::Mesh&lt; TPoint &gt;::vertexEnd()</a>.</p>
 
@@ -1953,7 +1999,7 @@ template&lt;typename TPoint &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 10 2023 22:51:43 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Nov 16 2023 20:08:15 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
