@@ -295,112 +295,110 @@ $(function() {
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;      // otherwise, iterate.</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;      if( m &gt; l )</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        {</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;          int iter = 0;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;          do</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;              ++iter;  // (Could check iteration count here.)</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;              // Compute implicit shift</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;              Quantity g = d[ l ];</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;              Quantity p = ( d[ l + 1 ] - g ) / ( Quantity( 2.0 ) * e[ l ] );</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;              Quantity r = Quantity( std::sqrt ( p * p + Quantity( 1.0 ) * Quantity( 1.0 )));</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;              if( p &lt; 0 ) r = -r;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;              d[ l ] = e[ l ] / ( p + r );</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;              d[ l + 1 ] = e[ l ] * ( p + r );</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;              Quantity dl1 = d[ l + 1 ];</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;              Quantity h = g - d[ l ];</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;              for( Dimension i = l + 2; i &lt; dimension; ++i )</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                d[ i ] -= h;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;              f = f + h;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;              // Implicit QL transformation.</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;              p = d[ m ];</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;              Quantity c = Quantity( 1.0 );</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;              Quantity c2 = c;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;              Quantity c3 = c;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;              Quantity el1 = e[ l + 1 ];</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;              Quantity s = Quantity( 0.0 );</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;              Quantity s2 = Quantity( 0.0 );</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;              for ( Dimension i = m - 1; i &gt;= l &amp;&amp; i &lt;= m - 1; --i )</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                  c3 = c2;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                  c2 = c;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                  s2 = s;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                  g = c * e[ i ];</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                  h = c * p;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                  r = Quantity( std::sqrt ( p * p + e[ i ] * e[ i ] ));</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                  e[ i + 1 ] = s * r;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                  s = e[ i ] / r;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                  c = p / r;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                  p = c * d[ i ] - s * g;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                  d[ i + 1 ] = h + s * ( c * g + s * d[ i ] );</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                  // Accumulate transformation.</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                  for( Dimension k = 0; k &lt; dimension; ++k )</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                    {</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                      h = V ( k, i + 1 );</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                      V.setComponent ( k, i + 1, ( s * V ( k, i ) + c * h ));</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                      V.setComponent ( k, i, ( c * V ( k, i ) - s * h ));</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                    }</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                }</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;              </div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;              p = - s * s2 * c3 * el1 * e[ l ] / dl1;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;              e[ l ] = s * p;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;              d[ l ] = c * p;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;              // Check for convergence.</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            }</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;          while ( std::fabs ( e[ l ] ) &gt; eps * tst1 );</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        }</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      d[ l ] = d[ l ] + f;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      e[ l ] = Quantity( 0.0 );</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    }</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  // Sort eigenvalues and corresponding vectors.</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  for ( Dimension i = 0; i &lt; dimensionMinusOne; ++i )</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    {</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      Dimension k = i;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      Quantity p = d[ i ];</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      for ( Dimension j = i + 1; j &lt; dimension; ++j )</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        {</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;          if ( d[ j ] &lt; p )</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            {</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;              k = j;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;              p = d[ j ];</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            }</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        }</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      if ( k != i )</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;          d[ k ] = d[ i ];</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;          d[ i ] = p;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;          for ( Dimension j = 0; j &lt; dimension; ++j )</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            {</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;              p = V ( j, i );</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;              V.setComponent ( j, i, V ( j, k ));</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;              V.setComponent ( j, k, p );</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            }</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        }</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    }</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;//-----------------------------------------------------------------------------</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;template  &lt;DGtal::Dimension TN, typename TComponent, typename TMatrix&gt;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;void</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;DGtal::EigenDecomposition&lt;TN,TComponent,TMatrix&gt;::</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;getEigenDecomposition( const Matrix&amp; matrix, Matrix&amp; eigenVectors, Vector&amp; eigenValues )</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;{</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  Vector e;              // Default constructor sets to zero vector;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  eigenVectors = matrix; // copy matrix</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  eigenValues = e;       // Sets to zero vector</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  tridiagonalize( eigenVectors, eigenValues, e );</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  decomposeQL( eigenVectors, eigenValues, e );</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;}</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;//                                                                           //</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;///////////////////////////////////////////////////////////////////////////////</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;          do</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;              // Compute implicit shift</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;              Quantity g = d[ l ];</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;              Quantity p = ( d[ l + 1 ] - g ) / ( Quantity( 2.0 ) * e[ l ] );</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;              Quantity r = Quantity( std::sqrt ( p * p + Quantity( 1.0 ) * Quantity( 1.0 )));</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;              if( p &lt; 0 ) r = -r;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;              d[ l ] = e[ l ] / ( p + r );</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;              d[ l + 1 ] = e[ l ] * ( p + r );</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;              Quantity dl1 = d[ l + 1 ];</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;              Quantity h = g - d[ l ];</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;              for( Dimension i = l + 2; i &lt; dimension; ++i )</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                d[ i ] -= h;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;              f = f + h;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;              // Implicit QL transformation.</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;              p = d[ m ];</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;              Quantity c = Quantity( 1.0 );</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;              Quantity c2 = c;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;              Quantity c3 = c;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;              Quantity el1 = e[ l + 1 ];</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;              Quantity s = Quantity( 0.0 );</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;              Quantity s2 = Quantity( 0.0 );</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;              for ( Dimension i = m - 1; i &gt;= l &amp;&amp; i &lt;= m - 1; --i )</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                  c3 = c2;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                  c2 = c;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                  s2 = s;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                  g = c * e[ i ];</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                  h = c * p;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                  r = Quantity( std::sqrt ( p * p + e[ i ] * e[ i ] ));</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                  e[ i + 1 ] = s * r;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                  s = e[ i ] / r;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                  c = p / r;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                  p = c * d[ i ] - s * g;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                  d[ i + 1 ] = h + s * ( c * g + s * d[ i ] );</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                  // Accumulate transformation.</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                  for( Dimension k = 0; k &lt; dimension; ++k )</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                    {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                      h = V ( k, i + 1 );</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                      V.setComponent ( k, i + 1, ( s * V ( k, i ) + c * h ));</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                      V.setComponent ( k, i, ( c * V ( k, i ) - s * h ));</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                    }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;              </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;              p = - s * s2 * c3 * el1 * e[ l ] / dl1;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;              e[ l ] = s * p;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;              d[ l ] = c * p;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;              // Check for convergence.</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            }</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;          while ( std::fabs ( e[ l ] ) &gt; eps * tst1 );</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;      d[ l ] = d[ l ] + f;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      e[ l ] = Quantity( 0.0 );</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  // Sort eigenvalues and corresponding vectors.</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  for ( Dimension i = 0; i &lt; dimensionMinusOne; ++i )</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      Dimension k = i;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      Quantity p = d[ i ];</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      for ( Dimension j = i + 1; j &lt; dimension; ++j )</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        {</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;          if ( d[ j ] &lt; p )</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            {</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;              k = j;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;              p = d[ j ];</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            }</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      if ( k != i )</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;          d[ k ] = d[ i ];</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;          d[ i ] = p;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;          for ( Dimension j = 0; j &lt; dimension; ++j )</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;              p = V ( j, i );</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;              V.setComponent ( j, i, V ( j, k ));</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;              V.setComponent ( j, k, p );</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        }</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    }</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;}</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;//-----------------------------------------------------------------------------</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;template  &lt;DGtal::Dimension TN, typename TComponent, typename TMatrix&gt;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;void</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;DGtal::EigenDecomposition&lt;TN,TComponent,TMatrix&gt;::</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;getEigenDecomposition( const Matrix&amp; matrix, Matrix&amp; eigenVectors, Vector&amp; eigenValues )</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;{</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  Vector e;              // Default constructor sets to zero vector;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  eigenVectors = matrix; // copy matrix</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  eigenValues = e;       // Sets to zero vector</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  tridiagonalize( eigenVectors, eigenValues, e );</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  decomposeQL( eigenVectors, eigenValues, e );</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;}</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;//                                                                           //</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;///////////////////////////////////////////////////////////////////////////////</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 15 2023 15:58:52 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun Jan 28 2024 10:30:01 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
