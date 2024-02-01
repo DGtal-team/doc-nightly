@@ -193,7 +193,7 @@ How to avoid overflows ?</h2>
 <p>For coordinates of \( 30 \) bits, lying within the range \( ]-2^{30}; 2^{30}[ \), we recommand to use <a class="el" href="classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html" title="Aim: Class that implements an orientation functor, ie. it provides a way to compute the orientation o...">InHalfPlaneBySimple3x3Matrix</a> with <a class="el" href="namespaceDGtal.html#a1c09e3f63904ff371f1b99f45069fc63" title="signed 94-bit integer.">DGtal::int64_t</a> as result type. </p><div class="fragment"><div class="line">  <span class="comment">//for coordinates of 30 (not zero) bits</span></div>
 <div class="line">  <span class="keyword">typedef</span> PointVector&lt;2, DGtal::int32_t&gt; <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>; </div>
 <div class="line">  <span class="keyword">typedef</span> InHalfPlaneBySimple3x3Matrix&lt;Point, DGtal::int64_t&gt; <a class="code" href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a>; </div>
-<div class="ttc" id="atestConvexHull2DReverse_8cpp_html_a4b95d895f3d8af697b8c550bc833cc9f"><div class="ttname"><a href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a></div><div class="ttdeci">InHalfPlaneBySimple3x3Matrix&lt; Point, double &gt; Functor</div><div class="ttdef"><b>Definition:</b> <a href="testConvexHull2DReverse_8cpp_source.html#l00053">testConvexHull2DReverse.cpp:51</a></div></div>
+<div class="ttc" id="atestConvexHull2DReverse_8cpp_html_a4b95d895f3d8af697b8c550bc833cc9f"><div class="ttname"><a href="testConvexHull2DReverse_8cpp.html#a4b95d895f3d8af697b8c550bc833cc9f">Functor</a></div><div class="ttdeci">InHalfPlaneBySimple3x3Matrix&lt; Point, double &gt; Functor</div><div class="ttdef"><b>Definition:</b> <a href="testConvexHull2DReverse_8cpp_source.html#l00051">testConvexHull2DReverse.cpp:49</a></div></div>
 </div><!-- fragment --><p> For coordinates of \( 52 \) bits, lying within the range \( ]-2^{52}; 2^{52}[ \), we recommand to use <a class="el" href="classDGtal_1_1InHalfPlaneBy2x2DetComputer.html" title="Aim: Class that implements an orientation functor, ie. it provides a way to compute the orientation o...">InHalfPlaneBy2x2DetComputer</a> with a lazy implementation of [Avnaim et.al., 1997 : <a class="el" href="citelist.html#CITEREF_AvnaimEtAlAlgorithmica1997">[8]</a>] using the \( 53 \) bits of the mantissa of the double-precision floating-point data type. </p><div class="fragment"><div class="line">  <span class="comment">//for coordinates of 52 (not zero) bits</span></div>
 <div class="line">  <span class="keyword">typedef</span> PointVector&lt;2, DGtal::int64_t&gt; <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>;  </div>
 <div class="line">  <span class="keyword">typedef</span> AvnaimEtAl2x2DetSignComputer&lt;double&gt; DetComputer; </div>
@@ -300,7 +300,7 @@ Benchmark</h2>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 28 2024 10:30:21 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Thu Feb 1 2024 11:38:07 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
