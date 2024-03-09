@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('moduleShortcuts.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,7 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title"><a class="el" href="classDGtal_1_1Shortcuts.html" title="Aim: This class is used to simplify shape and surface creation. With it, you can create new shapes an...">Shortcuts</a> (for the impatient developper) </div>  </div>
@@ -76,34 +96,11 @@ $(function() {
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#dgtal_shortcuts_sec1">Introduction</a></li>
-<li class="level1"><a href="#dgtal_shortcuts_sec2">Short 3D examples</a><ul><li class="level2"><a href="#dgtal_shortcuts_ssec2_1">Load vol file -&gt; ...</a><ul><li class="level3"><a href="#dgtal_shortcuts_ssec2_1_1">-&gt; noisify -&gt; save as vol file.</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_1_2">-&gt; build main connected digital surface</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_1_3">-&gt; extract 2 isosurfaces -&gt; build mesh -&gt; displays them</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_1_4">-&gt; extract 2 triangulated isosurfaces -&gt; save as OBJ</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_1_5">-&gt; build main digital surface -&gt; breadth first traversal -&gt; save OBJ with colored distance.</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_1_6">-&gt; build digital surface -&gt; estimate curvatures -&gt; save OBJ.</a></li>
+<li class="level1"><a href="#dgtal_shortcuts_sec2">Short 3D examples</a><ul><li class="level2"><a href="#dgtal_shortcuts_ssec2_1">Load vol file -&gt; ...</a></li>
+<li class="level2"><a href="#dgtal_shortcuts_ssec2_2">Build polynomial shape -&gt; digitize -&gt; ...</a></li>
 </ul>
 </li>
-<li class="level2"><a href="#dgtal_shortcuts_ssec2_2">Build polynomial shape -&gt; digitize -&gt; ...</a><ul><li class="level3"><a href="#dgtal_shortcuts_ssec2_2_1">-&gt; noisify -&gt; save as vol file.</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_2_2">-&gt; build surface -&gt; save primal surface as obj</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_2_3">-&gt; build indexed surface on a subpart</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_2_4">-&gt; noisify -&gt; count components -&gt; save OBJ with different colors.</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_2_5">-&gt; extract ground-truth geometry</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_2_6">-&gt; get pointels -&gt; save projected quadrangulated surface.</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_2_7">-&gt; extract mean curvature -&gt; save as OBJ with colors</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_2_8">-&gt; extract ground-truth and estimated mean curvature -&gt; display errors in OBJ with colors</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_2_9">-&gt; build surface -&gt; save primal surface with vcm normals as obj</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_2_10">-&gt; digitize implicitly -&gt; estimate II normals and curvature.</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_2_11">-&gt; digitize -&gt; save primal surface and VCM normal field as obj</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_2_12">-&gt; digitize -&gt; II normals -&gt; AT piecewise-smooth approximation</a></li>
-<li class="level3"><a href="#dgtal_shortcuts_ssec2_2_13">-&gt; digitize -&gt; True principal curvatures</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="level1"><a href="#dgtal_shortcuts_sec2b">Few 2D examples</a><ul><li class="level2"><a href="#dgtal_shortcuts_ssec2b_1">Load pgm file -&gt; ...</a><ul><li class="level3"><a href="#dgtal_shortcuts_ssec2b_1_1">-&gt; threshold -&gt; save pgm</a></li>
-</ul>
-</li>
+<li class="level1"><a href="#dgtal_shortcuts_sec2b">Few 2D examples</a><ul><li class="level2"><a href="#dgtal_shortcuts_ssec2b_1">Load pgm file -&gt; ...</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#dgtal_shortcuts_sec3">Philosophy and naming conventions</a><ul><li class="level2"><a href="#dgtal_shortcuts_ssec3_1">Prefixes</a></li>
@@ -814,9 +811,13 @@ Parameters</h2>
 </div><!-- fragment --><p>You also have the bitwise-or (<code>operator|</code>) to merge <a class="el" href="structDGtal_1_1Parameters.html">Parameters</a>. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:47 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:33:54 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

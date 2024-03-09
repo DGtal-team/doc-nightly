@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -55,6 +59,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_func_c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -79,7 +99,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1FreemanChain_1_1CodesRange.html#ab4f3c059ac7dd435f2c59184f30c7f98">DGtal::FreemanChain&lt; TInteger &gt;::CodesRange</a>
 , <a class="el" href="classDGtal_1_1SimpleConstRange.html#ae4917550a24f743ed1f02c79a0b02358">DGtal::SimpleConstRange&lt; TConstIterator &gt;</a>
 , <a class="el" href="classDGtal_1_1SimpleRandomAccessConstRangeFromPoint.html#a2bdcb1339755f08b94b1b2c940de4d33">DGtal::SimpleRandomAccessConstRangeFromPoint&lt; TConstIterator, DistanceFunctor &gt;</a>
-, <a class="el" href="classDGtal_1_1SimpleRandomAccessRangeFromPoint.html#a672560bc711e9c3e064c0b87baf27a1d">DGtal::SimpleRandomAccessRangeFromPoint&lt; TConstIterator, TIterator, DistanceFunctor &gt;</a>
+, <a class="el" href="classDGtal_1_1SimpleRandomAccessRangeFromPoint.html#a8fd272c87e795a02b915ec2f1782c380">DGtal::SimpleRandomAccessRangeFromPoint&lt; TConstIterator, TIterator, DistanceFunctor &gt;</a>
 </li>
 <li>C()
 : <a class="el" href="classDGtal_1_1SphericalTriangle.html#a9a9d2f3e03176ced62fab9922069cce6">DGtal::SphericalTriangle&lt; TSpace &gt;</a>
@@ -146,10 +166,10 @@ $(function() {
 : <a class="el" href="structDGtal_1_1CanonicCellEmbedder.html#a02ee9de8f5d83792c4404e19dce2c482">DGtal::CanonicCellEmbedder&lt; TKSpace &gt;</a>
 </li>
 <li>CanonicDigitalSurfaceEmbedder()
-: <a class="el" href="structDGtal_1_1CanonicDigitalSurfaceEmbedder.html#a35c9b46facc497b42b6468ab524fda5b">DGtal::CanonicDigitalSurfaceEmbedder&lt; TDigitalSurface &gt;</a>
+: <a class="el" href="structDGtal_1_1CanonicDigitalSurfaceEmbedder.html#a89d75a09a55a2ee7b5d7fe57da706c12">DGtal::CanonicDigitalSurfaceEmbedder&lt; TDigitalSurface &gt;</a>
 </li>
 <li>CanonicSCellEmbedder()
-: <a class="el" href="structDGtal_1_1CanonicSCellEmbedder.html#aa40110517ea9c74bd0e294a6719fca24">DGtal::CanonicSCellEmbedder&lt; TKSpace &gt;</a>
+: <a class="el" href="structDGtal_1_1CanonicSCellEmbedder.html#af88372ff1d51e748d1c7cc25ef8ecae1">DGtal::CanonicSCellEmbedder&lt; TKSpace &gt;</a>
 </li>
 <li>capacity()
 : <a class="el" href="classDGtal_1_1IndexedListWithBlocks.html#ada24e0eb0b437802188e3b06f07abe66">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;</a>
@@ -157,7 +177,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1LabelledMap.html#ae2c2817085557c23fbad8cdefbe4be24">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;</a>
 </li>
 <li>cast()
-: <a class="el" href="structDGtal_1_1AngleComputer.html#a32181b9b152fb5a00bf1498c503796fa">DGtal::AngleComputer</a>
+: <a class="el" href="structDGtal_1_1AngleComputer.html#a7514cecef084062ea906018a4bc6d998">DGtal::AngleComputer</a>
 , <a class="el" href="structDGtal_1_1detail_1_1toCoordinateImpl.html#aef0eec6e8d827c82e478b6caf52d55bd">DGtal::detail::toCoordinateImpl&lt; TInput, TOutput &gt;</a>
 , <a class="el" href="structDGtal_1_1detail_1_1toCoordinateImpl_3_01DGtal_1_1BigInteger_00_01DGtal_1_1BigInteger_01_4.html#a0ea0b37eda7b68706b5c7ace47081016">DGtal::detail::toCoordinateImpl&lt; DGtal::BigInteger, DGtal::BigInteger &gt;</a>
 , <a class="el" href="structDGtal_1_1detail_1_1toCoordinateImpl_3_01DGtal_1_1BigInteger_00_01TOutput_01_4.html#a6553bd70ba9256a9d8bf768b221e4174">DGtal::detail::toCoordinateImpl&lt; DGtal::BigInteger, TOutput &gt;</a>
@@ -166,7 +186,7 @@ $(function() {
 , <a class="el" href="structDGtal_1_1detail_1_1ValueConverter_3_01std_1_1string_00_01float_01_4.html#af09a848d52e3244c8820ef69c8febb4e">DGtal::detail::ValueConverter&lt; std::string, float &gt;</a>
 , <a class="el" href="structDGtal_1_1detail_1_1ValueConverter_3_01std_1_1string_00_01int_01_4.html#ab0b99fe24c224e3dfd351bb1b8d29ccd">DGtal::detail::ValueConverter&lt; std::string, int &gt;</a>
 , <a class="el" href="structDGtal_1_1detail_1_1ValueConverter_3_01X_00_01std_1_1string_01_4.html#a7df25fc6d3e7a948559a925baff171e7">DGtal::detail::ValueConverter&lt; X, std::string &gt;</a>
-, <a class="el" href="structDGtal_1_1IntegerConverter.html#aa33b4e3306c142c46d5b3011681272e6">DGtal::IntegerConverter&lt; dim, TInteger &gt;</a>
+, <a class="el" href="structDGtal_1_1IntegerConverter.html#abb5e9e8ae330a3d6a9d28472dc312f2c">DGtal::IntegerConverter&lt; dim, TInteger &gt;</a>
 , <a class="el" href="structDGtal_1_1IntegerConverter_3_01dim_00_01DGtal_1_1BigInteger_01_4.html#a234aee0684802c99459d8d31a99072cc">DGtal::IntegerConverter&lt; dim, DGtal::BigInteger &gt;</a>
 , <a class="el" href="structDGtal_1_1IntegerConverter_3_01dim_00_01DGtal_1_1int32__t_01_4.html#a15efd94624a5fba9dae8186babef6837">DGtal::IntegerConverter&lt; dim, DGtal::int32_t &gt;</a>
 , <a class="el" href="structDGtal_1_1IntegerConverter_3_01dim_00_01DGtal_1_1int64__t_01_4.html#aa427597385a0004ccc5b149cfcaf8094">DGtal::IntegerConverter&lt; dim, DGtal::int64_t &gt;</a>
@@ -201,7 +221,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1concepts_1_1CDigitalSetArchetype.html#a28ffc3f66d3ffeb13a1bcbbbf75812ad">DGtal::concepts::CDigitalSetArchetype&lt; TDomain &gt;</a>
 </li>
 <li>CDomainArchetype()
-: <a class="el" href="classDGtal_1_1concepts_1_1CDomainArchetype.html#a6e656f1333225d171b4f40814d69c02e">DGtal::concepts::CDomainArchetype&lt; TSpace &gt;</a>
+: <a class="el" href="classDGtal_1_1concepts_1_1CDomainArchetype.html#a59638200e7317940bbb4c38d2ea0bc4d">DGtal::concepts::CDomainArchetype&lt; TSpace &gt;</a>
 </li>
 <li>ceil()
 : <a class="el" href="structDGtal_1_1CanonicEmbedder.html#a6f0e2e63f95c80afc7c4e7f53b472148">DGtal::CanonicEmbedder&lt; TSpace &gt;</a>
@@ -390,7 +410,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1ChordGenericNaivePlaneComputer.html#ae5eb61c03817f2aac81cfe6ee2c5413f">DGtal::ChordGenericNaivePlaneComputer&lt; TSpace, TInputPoint, TInternalScalar &gt;</a>
 </li>
 <li>ChordGenericStandardPlaneComputer()
-: <a class="el" href="classDGtal_1_1ChordGenericStandardPlaneComputer.html#ad6de88ce5ab16d0b8ba3f891d603c4a0">DGtal::ChordGenericStandardPlaneComputer&lt; TSpace, TInputPoint, TInternalScalar &gt;</a>
+: <a class="el" href="classDGtal_1_1ChordGenericStandardPlaneComputer.html#afe7de3159fadb0348c68f9e96f030356">DGtal::ChordGenericStandardPlaneComputer&lt; TSpace, TInputPoint, TInternalScalar &gt;</a>
 </li>
 <li>ChordNaivePlaneComputer()
 : <a class="el" href="classDGtal_1_1ChordNaivePlaneComputer.html#af8aacbaa4c212e14aca2298667cad862">DGtal::ChordNaivePlaneComputer&lt; TSpace, TInputPoint, TInternalScalar &gt;</a>
@@ -1130,10 +1150,10 @@ $(function() {
 <li>ConstIterator()
 : <a class="el" href="classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html#a665c879fb038886fe369051a8145ff42">DGtal::ArithmeticalDSL&lt; TCoordinate, TInteger, adjacency &gt;::ConstIterator</a>
 , <a class="el" href="structDGtal_1_1CubicalComplex_1_1ConstIterator.html#ae9056dd52434834f3f9a86b4cc003c0e">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::ConstIterator</a>
-, <a class="el" href="classDGtal_1_1FreemanChain_1_1ConstIterator.html#ae620dd83eed088474c5350135ad4c070">DGtal::FreemanChain&lt; TInteger &gt;::ConstIterator</a>
+, <a class="el" href="classDGtal_1_1FreemanChain_1_1ConstIterator.html#a0fe19bd89b0357d5cd4b9ad1e3e50343">DGtal::FreemanChain&lt; TInteger &gt;::ConstIterator</a>
 , <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1ConstIterator.html#a12a0454fc1f01ed9327b6967b51c8ece">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::ConstIterator</a>
 , <a class="el" href="classDGtal_1_1LabelledMap_1_1ConstIterator.html#aef1e88cf3cc58bfb95538d02d4117ace">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;::ConstIterator</a>
-, <a class="el" href="structDGtal_1_1StandardDSLQ0_1_1ConstIterator.html#a727b47b6b11d8143837ba9d9b7f98978">DGtal::StandardDSLQ0&lt; TFraction &gt;::ConstIterator</a>
+, <a class="el" href="structDGtal_1_1StandardDSLQ0_1_1ConstIterator.html#a70c76e4056193a19430c207453caf98a">DGtal::StandardDSLQ0&lt; TFraction &gt;::ConstIterator</a>
 </li>
 <li>ConstIteratorAdapter()
 : <a class="el" href="classDGtal_1_1ConstIteratorAdapter.html#a177e480a01bb62b7bd60fdea01585687">DGtal::ConstIteratorAdapter&lt; TIterator, TLightFunctor, TReturnType &gt;</a>
@@ -1164,7 +1184,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1VoronoiMapComplete.html#a569e70ba70f323c10c2a7cc1ebb3e6c3">DGtal::VoronoiMapComplete&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;</a>
 </li>
 <li>ConstRangeAdapter()
-: <a class="el" href="classDGtal_1_1ConstRangeAdapter.html#a0ee2f9ce9e7bc98612ebd44eeac3b1ce">DGtal::ConstRangeAdapter&lt; TIterator, TFunctor, TReturnType &gt;</a>
+: <a class="el" href="classDGtal_1_1ConstRangeAdapter.html#a1f95c5dbc4abe4a4391d2a4c2c31a2c1">DGtal::ConstRangeAdapter&lt; TIterator, TFunctor, TReturnType &gt;</a>
 </li>
 <li>ConstRangeFromPointAdapter()
 : <a class="el" href="classDGtal_1_1ConstRangeFromPointAdapter.html#adfb8164c779c319ae71d0e3cfdb1e205">DGtal::ConstRangeFromPointAdapter&lt; TRange, TFunctor, TReturnType &gt;</a>
@@ -1523,9 +1543,12 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:59 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Sat Mar 9 2024 09:34:06 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

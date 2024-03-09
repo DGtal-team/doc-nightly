@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('LocalEstimatorsFromSurfel.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,7 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">Local digital surface estimators from surfel functors </div>  </div>
@@ -109,12 +129,12 @@ Implementation details</h1>
 </ul>
 <p>The core of the estimators are thus specified in the surfel functor (model of <a class="el" href="structDGtal_1_1concepts_1_1CLocalEstimatorFromSurfelFunctor.html" title="Aim: this concept describes functors on digtal surface surfel which can be used to define local estim...">concepts::CLocalEstimatorFromSurfelFunctor</a>). In <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a>, we have defined several functors:</p>
 <ul>
-<li><a class="el" href="classDGtal_1_1functors_1_1ElementaryConvolutionNormalVectorEstimator.html" title="Aim: Estimates normal vector by convolution of elementary normal vector to adjacent surfel.">functors::ElementaryConvolutionNormalVectorEstimator</a>: Normal vector estimation based on weighted average of surfel elementary normal vectors (<a class="el" href="citelist.html#CITEREF_lenoir1996">[79]</a>, <a class="el" href="citelist.html#CITEREF_papier1998">[92]</a>)</li>
-<li><a class="el" href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html" title="Aim: Implements a functor to detect feature points from normal tensor voting strategy.">functors::TensorVotingFeatureExtraction</a> implements a functor to detect feature points on a digital surface using tensor voting strategy (see <a class="el" href="citelist.html#CITEREF_tensor-voting-ParkLL12">[93]</a>). More precisely, the functor accumulates tensor votes \(I - vv^T/\|vv^T\|\) for each surfel added during the scan ( \(v\) being the vector from the center of the neighborhood to the added surfel). Then, the <em>eval()</em> method returns the ratio \(\frac{\lambda_1+\lambda_2}{\lambda_3}\) of the eigenvalues ( \(\lambda_1\leq\lambda_2\leq\lambda_3\)) of the accumulated tensor votes.</li>
-<li><a class="el" href="classDGtal_1_1functors_1_1SphereFittingEstimator.html" title="Aim: Use Patate library to perform a local sphere fitting.">functors::SphereFittingEstimator</a>: this functor requires the WITH_PATATE flag and the Patate Library dependency. The functor performs a sphere fitting on the neighborhood following <a class="el" href="citelist.html#CITEREF_mellado2012growing">[87]</a> . The output of the estimator is a structure containing the fitted sphere parameters (e.g. its center and radius). Please refer to <a class="el" href="citelist.html#CITEREF_mellado2012growing">[87]</a> for details on the <em>tau</em>, <em>kappa</em> and <em>eta</em> parameters.</li>
-<li><a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingGaussianCurvatureEstimator.html" title="Aim: Estimates Gaussian curvature using CGAL Jet Fitting and Monge Form.">functors::MongeJetFittingGaussianCurvatureEstimator</a>, <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingMeanCurvatureEstimator.html" title="Aim: Estimates Mean curvature using CGAL Jet Fitting and Monge Form.">functors::MongeJetFittingMeanCurvatureEstimator</a>, <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingNormalVectorEstimator.html" title="Aim: Estimates normal vector using CGAL Jet Fitting and Monge Form.">functors::MongeJetFittingNormalVectorEstimator</a>, <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html" title="Aim: Estimates Gaussian curvature using CGAL Jet Fitting and Monge Form.">functors::MongeJetFittingPrincipalCurvaturesEstimator</a>: return differential quantity by a polynomial surface fitting <a class="el" href="citelist.html#CITEREF_CGal">[19]</a>, <a class="el" href="citelist.html#CITEREF_Cazals2005">[18]</a> . These estimators require CGAL and Eigen3 dependency (WITH_CGAL, WITH_EIGEN).</li>
+<li><a class="el" href="classDGtal_1_1functors_1_1ElementaryConvolutionNormalVectorEstimator.html" title="Aim: Estimates normal vector by convolution of elementary normal vector to adjacent surfel.">functors::ElementaryConvolutionNormalVectorEstimator</a>: Normal vector estimation based on weighted average of surfel elementary normal vectors (<a class="el" href="citelist.html#CITEREF_lenoir1996">[80]</a>, <a class="el" href="citelist.html#CITEREF_papier1998">[93]</a>)</li>
+<li><a class="el" href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html" title="Aim: Implements a functor to detect feature points from normal tensor voting strategy.">functors::TensorVotingFeatureExtraction</a> implements a functor to detect feature points on a digital surface using tensor voting strategy (see <a class="el" href="citelist.html#CITEREF_tensor-voting-ParkLL12">[94]</a>). More precisely, the functor accumulates tensor votes \(I - vv^T/\|vv^T\|\) for each surfel added during the scan ( \(v\) being the vector from the center of the neighborhood to the added surfel). Then, the <em>eval()</em> method returns the ratio \(\frac{\lambda_1+\lambda_2}{\lambda_3}\) of the eigenvalues ( \(\lambda_1\leq\lambda_2\leq\lambda_3\)) of the accumulated tensor votes.</li>
+<li><a class="el" href="classDGtal_1_1functors_1_1SphereFittingEstimator.html" title="Aim: Use Patate library to perform a local sphere fitting.">functors::SphereFittingEstimator</a>: this functor requires the WITH_PATATE flag and the Patate Library dependency. The functor performs a sphere fitting on the neighborhood following <a class="el" href="citelist.html#CITEREF_mellado2012growing">[88]</a> . The output of the estimator is a structure containing the fitted sphere parameters (e.g. its center and radius). Please refer to <a class="el" href="citelist.html#CITEREF_mellado2012growing">[88]</a> for details on the <em>tau</em>, <em>kappa</em> and <em>eta</em> parameters.</li>
+<li><a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingGaussianCurvatureEstimator.html" title="Aim: Estimates Gaussian curvature using CGAL Jet Fitting and Monge Form.">functors::MongeJetFittingGaussianCurvatureEstimator</a>, <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingMeanCurvatureEstimator.html" title="Aim: Estimates Mean curvature using CGAL Jet Fitting and Monge Form.">functors::MongeJetFittingMeanCurvatureEstimator</a>, <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingNormalVectorEstimator.html" title="Aim: Estimates normal vector using CGAL Jet Fitting and Monge Form.">functors::MongeJetFittingNormalVectorEstimator</a>, <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html" title="Aim: Estimates Gaussian curvature using CGAL Jet Fitting and Monge Form.">functors::MongeJetFittingPrincipalCurvaturesEstimator</a>: return differential quantity by a polynomial surface fitting <a class="el" href="citelist.html#CITEREF_CGal">[20]</a>, <a class="el" href="citelist.html#CITEREF_Cazals2005">[19]</a> . These estimators require CGAL and Eigen3 dependency (WITH_CGAL, WITH_EIGEN).</li>
 <li><a class="el" href="classDGtal_1_1functors_1_1LinearLeastSquareFittingNormalVectorEstimator.html" title="Aim: Estimates normal vector using CGAL linear least squares plane fitting.">functors::LinearLeastSquareFittingNormalVectorEstimator</a>: normal vector estimation from least square fitting of the embedded sufel points. This functor also needs CGAL dependency.</li>
-<li><a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html" title="Aim: This functor estimates normal vector for a collection of surfels using spherical accumulator bas...">functors::SphericalHoughNormalVectorEstimator</a>: Robsut normal vector estimation using a spherical hough voting (<a class="el" href="citelist.html#CITEREF_BoulchM12">[15]</a>).</li>
+<li><a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html" title="Aim: This functor estimates normal vector for a collection of surfels using spherical accumulator bas...">functors::SphericalHoughNormalVectorEstimator</a>: Robsut normal vector estimation using a spherical hough voting (<a class="el" href="citelist.html#CITEREF_BoulchM12">[16]</a>).</li>
 </ul>
 <dl class="section user"><dt>Advanced: </dt><dd>Implementing your own surfel patch based estimator is quite simple. Please have a look to <a class="el" href="structDGtal_1_1concepts_1_1CLocalEstimatorFromSurfelFunctor.html" title="Aim: this concept describes functors on digtal surface surfel which can be used to define local estim...">concepts::CLocalEstimatorFromSurfelFunctor</a> or the source code of any of its models.</dd></dl>
 <h1><a class="anchor" id="sectLocalEstimatorsFromSurfel2"></a>
@@ -225,9 +245,13 @@ Usage Example</h1>
 </div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a class="el" href="exampleEstimatorFromSurfelFunctors_8cpp_source.html">exampleEstimatorFromSurfelFunctors.cpp</a> </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:48 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:33:54 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

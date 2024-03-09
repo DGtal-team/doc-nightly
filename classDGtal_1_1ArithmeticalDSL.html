@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDGtal_1_1ArithmeticalDSL.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,11 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1ArithmeticalDSL.html">ArithmeticalDSL</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
@@ -96,7 +112,7 @@ Inheritance diagram for DGtal::ArithmeticalDSL&lt; TCoordinate, TInteger, adjace
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classDGtal_1_1ArithmeticalDSL__inherit__graph.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -241,7 +257,7 @@ Friends</h2></td></tr>
 class DGtal::ArithmeticalDSL&lt; TCoordinate, TInteger, adjacency &gt;</h3>
 
 <p>Aim: This class represents a naive (resp. standard) digital straight line (DSL), ie. the set of digital points \( (x,y) \in \mathbb{Z}^2 \) such that \( \mu \leq ax - by &lt; \mu + \omega \) with \( a,b,\mu,\omega \in \mathbb{Z} \), \( \gcd(a,b) = 1 \) and \( \omega = \max(|a|,|b|) \) (resp. \( \omega = |a| + |b| \)). Note that any DSL such that \( \omega = \max(|a|,|b|) \) (resp. \( \omega = |a| + |b| \)) is simply 8-connected (resp. 4-connected). </p>
-<p>[Reveilles, 1991 : <a class="el" href="citelist.html#CITEREF_Reveilles_1991_thesis">[97]</a>].</p>
+<p>[Reveilles, 1991 : <a class="el" href="citelist.html#CITEREF_Reveilles_1991_thesis">[98]</a>].</p>
 <p>A naive DSL can be declared and constructed as follows: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;DGtal/arithmetic/geometry/curves/ArithmeticalDSL.h&quot;</span></div>
 <div class="line">...</div>
 <div class="line">ArithmeticalDSL&lt;<a class="code" href="namespaceDGtal.html#ac1e9ac6a329319ae13c51c0c9e92486a">DGtal::int32_t</a>, <a class="code" href="namespaceDGtal.html#a1c09e3f63904ff371f1b99f45069fc63">DGtal::int64_t</a>, 8&gt; line( 17711, 28657, 1607895256 );</div>
@@ -1786,9 +1802,13 @@ template&lt;typename TCoordinate , typename TInteger  = TCoordinate, unsigned sh
 <li><a class="el" href="ArithmeticalDSL_8h_source.html">ArithmeticalDSL.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:49 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1ArithmeticalDSL.html">ArithmeticalDSL</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:33:56 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

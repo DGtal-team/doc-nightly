@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDGtal_1_1NaiveDSS8.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,11 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1NaiveDSS8.html">NaiveDSS8</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -91,7 +107,7 @@ Inheritance diagram for DGtal::NaiveDSS8&lt; TCoordinate, TInteger &gt;:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classDGtal_1_1NaiveDSS8__inherit__graph.svg" width="344" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -330,9 +346,9 @@ class DGtal::NaiveDSS8&lt; TCoordinate, TInteger &gt;</h3>
 <div class="ttc" id="atestProjection_8cpp_html_a1f1a69f8d8b037b72c2160ed12b3ef51"><div class="ttname"><a href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a></div><div class="ttdeci">Domain domain</div><div class="ttdef"><b>Definition:</b> <a href="testProjection_8cpp_source.html#l00088">testProjection.cpp:88</a></div></div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_acd532b318489cd93df57e0b3d136d050"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a></div><div class="ttdeci">HyperRectDomain&lt; Space &gt; Domain</div><div class="ttdef"><b>Definition:</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00044">testSimpleRandomAccessRangeFromPoint.cpp:44</a></div></div>
 </div><!-- fragment --><p> Extending a DSS to a point simply connected to its front is done as follows: </p><div class="fragment"><div class="line">  <span class="keywordtype">bool</span> resExtention = S.extendFront( M ); </div>
-</div><!-- fragment --><p>This method implements the algorithm proposed in [Debled and Reveilles, 1995 : <a class="el" href="citelist.html#CITEREF_Debled_1995_ijprai">[44]</a>].</p>
+</div><!-- fragment --><p>This method implements the algorithm proposed in [Debled and Reveilles, 1995 : <a class="el" href="citelist.html#CITEREF_Debled_1995_ijprai">[45]</a>].</p>
 <p>The following code just undoes the previous extension: </p><div class="fragment"><div class="line">  <span class="keywordtype">bool</span> resRetraction = S.retractFront(); </div>
-</div><!-- fragment --><p>This method implements the algorithm proposed in [Lachaud et. al., 2007 : <a class="el" href="citelist.html#CITEREF_LachaudIVC2007">[70]</a>].</p>
+</div><!-- fragment --><p>This method implements the algorithm proposed in [Lachaud et. al., 2007 : <a class="el" href="citelist.html#CITEREF_LachaudIVC2007">[71]</a>].</p>
 <p>See <a class="el" href="moduleArithDSSReco.html">Digital straight lines and segments <br  />
 </a> for further details.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -746,9 +762,13 @@ template&lt;typename TCoordinate , typename TInteger  = TCoordinate&gt; </div>
 <li><a class="el" href="ArithmeticalDSS_8h_source.html">ArithmeticalDSS.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:50 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1NaiveDSS8.html">NaiveDSS8</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:33:56 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

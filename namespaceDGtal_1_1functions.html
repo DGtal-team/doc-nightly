@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('namespaceDGtal_1_1functions.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,11 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="namespaceDGtal_1_1functions.html">functions</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
@@ -185,7 +201,7 @@ Functions</h2></td></tr>
 <tr class="separator:a07b66e9e7682c0f900bcbeabcac96b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc99490ec12ae9e68c03c08d473e8692"><td class="memTemplParams" colspan="2">template&lt;typename DSL , typename OutputIterator &gt; </td></tr>
 <tr class="memitem:adc99490ec12ae9e68c03c08d473e8692"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="standardDigitalPolyhedronBuilder3D_8cpp.html#a7fe9cdc8d811dcb92ee7ee7e887a798d">DSL::Vector</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1functions.html#adc99490ec12ae9e68c03c08d473e8692">smartCH</a> (const DSL &amp;aDSL, const typename <a class="el" href="standardDigitalPolyhedronBuilder3D_8cpp.html#a2262bf2f02ed312a3c7899bedabf38a7">DSL::Point</a> &amp;aFirstPoint, const typename DSL::Position &amp;aLength, OutputIterator uIto, OutputIterator lIto)</td></tr>
-<tr class="memdesc:adc99490ec12ae9e68c03c08d473e8692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procedure that computes the lower and upper left hull of a DSS of first point <em>aFirstPoint</em>, length <em>aLength</em>, contained in a DSL <em>aDSL</em> [Roussillon 2014 : <a class="el" href="citelist.html#CITEREF_RoussillonDGCI2014">[103]</a>].  <a href="namespaceDGtal_1_1functions.html#adc99490ec12ae9e68c03c08d473e8692">More...</a><br /></td></tr>
+<tr class="memdesc:adc99490ec12ae9e68c03c08d473e8692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procedure that computes the lower and upper left hull of a DSS of first point <em>aFirstPoint</em>, length <em>aLength</em>, contained in a DSL <em>aDSL</em> [Roussillon 2014 : <a class="el" href="citelist.html#CITEREF_RoussillonDGCI2014">[104]</a>].  <a href="namespaceDGtal_1_1functions.html#adc99490ec12ae9e68c03c08d473e8692">More...</a><br /></td></tr>
 <tr class="separator:adc99490ec12ae9e68c03c08d473e8692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a184e90763c4747a4b7c71a58e1bf4bfe"><td class="memTemplParams" colspan="2">template&lt;typename PointVector , typename Position , typename OutputIterator , typename TruncationFunctor1 , typename TruncationFunctor2 , typename PositionFunctor &gt; </td></tr>
 <tr class="memitem:a184e90763c4747a4b7c71a58e1bf4bfe"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1functions.html#a184e90763c4747a4b7c71a58e1bf4bfe">smartCHPreviousVertex</a> (<a class="el" href="classDGtal_1_1PointVector.html">PointVector</a> &amp;X, const <a class="el" href="classDGtal_1_1PointVector.html">PointVector</a> &amp;Y, <a class="el" href="classDGtal_1_1PointVector.html">PointVector</a> &amp;V, const Position &amp;aFirstPosition, const Position &amp;aLastPosition, OutputIterator ito, const PositionFunctor &amp;pos, const TruncationFunctor1 &amp;f1, const TruncationFunctor2 &amp;f2)</td></tr>
@@ -198,7 +214,7 @@ Functions</h2></td></tr>
 <tr class="separator:aa754ac3d17216563354db61d905a545c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42d6f1219d53ecefb73b55c386e0d54a"><td class="memTemplParams" colspan="2">template&lt;typename DSS , typename OutputIterator &gt; </td></tr>
 <tr class="memitem:a42d6f1219d53ecefb73b55c386e0d54a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="standardDigitalPolyhedronBuilder3D_8cpp.html#a7fe9cdc8d811dcb92ee7ee7e887a798d">DSS::Vector</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1functions.html#a42d6f1219d53ecefb73b55c386e0d54a">reversedSmartCH</a> (const DSS &amp;aDSS, const typename DSS::Position &amp;aPositionBound, OutputIterator uIto, OutputIterator lIto)</td></tr>
-<tr class="memdesc:a42d6f1219d53ecefb73b55c386e0d54a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procedure that computes the lower and upper left hull of the left subsegment of a greater DSS <em>aDSS</em>. Note that the so-called left subsegment is bounded on the one hand by the first point of <em>aDSS</em> and on the other hand by the point located at position <em>aPositionBound</em> [Roussillon 2014 : <a class="el" href="citelist.html#CITEREF_RoussillonDGCI2014">[103]</a>].  <a href="namespaceDGtal_1_1functions.html#a42d6f1219d53ecefb73b55c386e0d54a">More...</a><br /></td></tr>
+<tr class="memdesc:a42d6f1219d53ecefb73b55c386e0d54a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procedure that computes the lower and upper left hull of the left subsegment of a greater DSS <em>aDSS</em>. Note that the so-called left subsegment is bounded on the one hand by the first point of <em>aDSS</em> and on the other hand by the point located at position <em>aPositionBound</em> [Roussillon 2014 : <a class="el" href="citelist.html#CITEREF_RoussillonDGCI2014">[104]</a>].  <a href="namespaceDGtal_1_1functions.html#a42d6f1219d53ecefb73b55c386e0d54a">More...</a><br /></td></tr>
 <tr class="separator:a42d6f1219d53ecefb73b55c386e0d54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18b68d329aa1461a0847a18e99247885"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a18b68d329aa1461a0847a18e99247885"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1functions.html#a18b68d329aa1461a0847a18e99247885">power</a> (const T &amp;aVal, const unsigned int exponent)</td></tr>
@@ -2755,7 +2771,7 @@ template&lt;typename DSS , typename OutputIterator &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Procedure that computes the lower and upper left hull of the left subsegment of a greater DSS <em>aDSS</em>. Note that the so-called left subsegment is bounded on the one hand by the first point of <em>aDSS</em> and on the other hand by the point located at position <em>aPositionBound</em> [Roussillon 2014 : <a class="el" href="citelist.html#CITEREF_RoussillonDGCI2014">[103]</a>]. </p>
+<p>Procedure that computes the lower and upper left hull of the left subsegment of a greater DSS <em>aDSS</em>. Note that the so-called left subsegment is bounded on the one hand by the first point of <em>aDSS</em> and on the other hand by the point located at position <em>aPositionBound</em> [Roussillon 2014 : <a class="el" href="citelist.html#CITEREF_RoussillonDGCI2014">[104]</a>]. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">aDSS</td><td>bounding DSS </td></tr>
@@ -3414,7 +3430,7 @@ template&lt;typename DSL , typename OutputIterator &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Procedure that computes the lower and upper left hull of a DSS of first point <em>aFirstPoint</em>, length <em>aLength</em>, contained in a DSL <em>aDSL</em> [Roussillon 2014 : <a class="el" href="citelist.html#CITEREF_RoussillonDGCI2014">[103]</a>]. </p>
+<p>Procedure that computes the lower and upper left hull of a DSS of first point <em>aFirstPoint</em>, length <em>aLength</em>, contained in a DSL <em>aDSL</em> [Roussillon 2014 : <a class="el" href="citelist.html#CITEREF_RoussillonDGCI2014">[104]</a>]. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">aDSL</td><td>bounding DSL </td></tr>
@@ -4116,9 +4132,13 @@ template&lt;typename TComplex &gt; </div>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:57 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="namespaceDGtal_1_1functions.html">functions</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:34:04 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

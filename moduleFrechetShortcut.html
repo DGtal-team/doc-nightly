@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('moduleFrechetShortcut.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,7 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">Fréchet <a class="el" href="classDGtal_1_1Shortcuts.html" title="Aim: This class is used to simplify shape and surface creation. With it, you can create new shapes an...">Shortcuts</a> </div>  </div>
@@ -95,7 +115,7 @@ $(function() {
 <div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: </dt><dd>Isabelle Sivignon</dd></dl>
 <h1><a class="anchor" id="FS_sectOverview"></a>
 Overview</h1>
-<p>The algorithm implemented in the class <a class="el" href="classDGtal_1_1FrechetShortcut.html" title="Aim: On-line computation Computation of the longest shortcut according to the Fréchet distance for a ...">FrechetShortcut</a> is the one presented in the article <a class="el" href="citelist.html#CITEREF_sivignon2011">[110]</a>. <br  />
+<p>The algorithm implemented in the class <a class="el" href="classDGtal_1_1FrechetShortcut.html" title="Aim: On-line computation Computation of the longest shortcut according to the Fréchet distance for a ...">FrechetShortcut</a> is the one presented in the article <a class="el" href="citelist.html#CITEREF_sivignon2011">[111]</a>. <br  />
  We present here the basic ideas of the algorithm and at the end, give pointers to the relative structures used in the implementation. <br  />
 </p>
 <p>Given a polygonal curve, the curve simplification problem consists in computing another polygonal curve that (i) approximates the original curve, (ii) satisfies a given error criterion, (iii) with as few vertices as possible. This problem arises in a wide range of applications, such as geographic information systems (GIS), computer graphics or computer vision, where the management of the level of details is of crucial importance to save memory space or to speed-up analysis algorithms.</p>
@@ -155,7 +175,7 @@ When a new point is considered, the width and backpath lengths may totally chang
 </p>
 <h2><a class="anchor" id="subsectWidth"></a>
 Updating the width efficiently</h2>
-<p>Instead of updating \(\omega(i,j)\), it is enough to consider the maximal distance between any point of \(P(i,j)\) and the vector \(\overrightarrow{p_ip_j}\). This is done using the algorithm of Chan and Chin <a class="el" href="citelist.html#CITEREF_Chan687965">[20]</a> illustrated below:</p>
+<p>Instead of updating \(\omega(i,j)\), it is enough to consider the maximal distance between any point of \(P(i,j)\) and the vector \(\overrightarrow{p_ip_j}\). This is done using the algorithm of Chan and Chin <a class="el" href="citelist.html#CITEREF_Chan687965">[21]</a> illustrated below:</p>
 <p>Given an origin point \(p_i&quot;\) and a set of points \(P(i,j)\) we construct the set \(S_{ij}\) of straight lines \(l\) going through \(p_i\) such that \(\max_{p \in P(i,j)}d(p,l) \leq r\). As a result, deciding whether \(d_{max}(i,j)\) is lower than \(r\) or not is equivalent to checking whether the straight line \((p_i,p_j)\) belongs to \(S_{ij}\) or not. <br  />
 </p>
 <p>All in all, the update of the cone and the decision are both done in constant time.</p>
@@ -174,7 +194,7 @@ Updating the backpath length efficiently</h2>
 <div class="image">
 <img src="definition_occulter.png" alt=""/>
 </div>
- <p>We can prove easily (see <a class="el" href="citelist.html#CITEREF_sivignon2011">[110]</a>) that the origin of the longest backpath is an occulter.</p>
+ <p>We can prove easily (see <a class="el" href="citelist.html#CITEREF_sivignon2011">[111]</a>) that the origin of the longest backpath is an occulter.</p>
 <div class="image">
 <img src="occulters.png" alt=""/>
 <div class="caption">
@@ -223,7 +243,7 @@ A guaranteed algorithm</h2>
 <div class="image">
 <img src="lemma3.png" alt=""/>
 </div>
- <p>For more details about this proof, please refer to <a class="el" href="citelist.html#CITEREF_sivignon2011">[110]</a>.</p>
+ <p>For more details about this proof, please refer to <a class="el" href="citelist.html#CITEREF_sivignon2011">[111]</a>.</p>
 <h2><a class="anchor" id="subsectComplexity"></a>
 Complexity</h2>
 <p>The theoretical complexity of this algorithm is \(\mathcal{O}(n\log(n_i))\), for a digital curve of \(n\) points. \(n_i\) is the number of intervals used to store the directions for which there exist a backpath of length greater than the error. \(n_i\) is upper bounded by \(n\). Nevertheless, experiments on noisy shapes show that the general behaviour of the algorithm in linear in time.</p>
@@ -279,9 +299,13 @@ Implementation in DGtal</h1>
 <p>An output using the Board mecanism is provided (see example above to output an eps file). </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:48 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:33:54 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

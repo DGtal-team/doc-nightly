@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -55,6 +59,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_func_f.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -445,7 +465,7 @@ $(function() {
 : <a class="el" href="structLibBoard_1_1Path.html#aef82954e0bf8cccbbfa20022caa1dcfa">LibBoard::Path</a>
 </li>
 <li>FMM()
-: <a class="el" href="classDGtal_1_1FMM.html#a34b6a6bbbf62f01799bad576b8b55cc3">DGtal::FMM&lt; TImage, TSet, TPointPredicate, TPointFunctor &gt;</a>
+: <a class="el" href="classDGtal_1_1FMM.html#a64961501cad2a5538cc947ceeb92fb73">DGtal::FMM&lt; TImage, TSet, TPointPredicate, TPointFunctor &gt;</a>
 </li>
 <li>follower1()
 : <a class="el" href="classDGtal_1_1SurfelNeighborhood.html#a3124c819160b57da4976cfff5f1e0965">DGtal::SurfelNeighborhood&lt; TKSpace &gt;</a>
@@ -487,7 +507,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1LightSternBrocot.html#a0186aaa5d03b3115cc8a27a3bf7a2b4c">DGtal::LightSternBrocot&lt; TInteger, TQuotient, TMap &gt;</a>
 </li>
 <li>Fraction()
-: <a class="el" href="classDGtal_1_1LightSternBrocot_1_1Fraction.html#af2255ab9f8683e158c5f2d7cae4ce1c7">DGtal::LightSternBrocot&lt; TInteger, TQuotient, TMap &gt;::Fraction</a>
+: <a class="el" href="classDGtal_1_1LightSternBrocot_1_1Fraction.html#a73d1b455f3905cebbb4e94632a28c60d">DGtal::LightSternBrocot&lt; TInteger, TQuotient, TMap &gt;::Fraction</a>
 </li>
 <li>fraction()
 : <a class="el" href="classDGtal_1_1SternBrocot.html#a7bf0e3befa9aa439281b9c60dd640ce7">DGtal::SternBrocot&lt; TInteger, TQuotient &gt;</a>
@@ -503,7 +523,7 @@ $(function() {
 , <a class="el" href="structLibBoard_1_1ShapeList.html#a1b03baf7babb01825e9a087fd5e2e06f">LibBoard::ShapeList</a>
 </li>
 <li>FreemanChain()
-: <a class="el" href="classDGtal_1_1FreemanChain.html#acc0313a569abb08113b9e19820f7274e">DGtal::FreemanChain&lt; TInteger &gt;</a>
+: <a class="el" href="classDGtal_1_1FreemanChain.html#a0ef3ba8228de369880d0e82761d6bc48">DGtal::FreemanChain&lt; TInteger &gt;</a>
 </li>
 <li>freemanCode4C()
 : <a class="el" href="classDGtal_1_1FreemanChain.html#af4d769a1d48c27459161eb6450faf40b">DGtal::FreemanChain&lt; TInteger &gt;</a>
@@ -534,9 +554,12 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:59 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Sat Mar 9 2024 09:34:06 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

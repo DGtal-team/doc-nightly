@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structDGtal_1_1concepts_1_1CImageCacheWritePolicy.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,11 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="namespaceDGtal_1_1concepts.html">concepts</a></li><li class="navelem"><a class="el" href="structDGtal_1_1concepts_1_1CImageCacheWritePolicy.html">CImageCacheWritePolicy</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -117,16 +133,16 @@ struct DGtal::concepts::CImageCacheWritePolicy&lt; T &gt;</h3>
 
 <p>Aim: Defines the concept describing a cache write policy. </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CImageCacheWritePolicy.html" title="Aim: Defines the concept describing a cache write policy.">CImageCacheWritePolicy</a>'</b> </p>
-<h1><a class="anchor" id="autotoc_md442"></a>
+<h1><a class="anchor" id="autotoc_md447"></a>
 Refinement of</h1>
-<h1><a class="anchor" id="autotoc_md443"></a>
+<h1><a class="anchor" id="autotoc_md448"></a>
 Associated types</h1>
 <ul>
 <li><em>ImageContainer</em> : type of the image in the cache, model of concept <a class="el" href="structDGtal_1_1concepts_1_1CImage.html" title="Aim: Defines the concept describing a read/write image, having an output iterator.">CImage</a></li>
 <li><em>Point</em> : type of the image point</li>
 <li><em>Value</em> : type of the image value</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md444"></a>
+<h1><a class="anchor" id="autotoc_md449"></a>
 Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CImageCacheWritePolicy.html" title="Aim: Defines the concept describing a cache write policy.">CImageCacheWritePolicy</a></li>
@@ -135,9 +151,9 @@ Notation</h1>
 <li><em>p</em> : object of type Point</li>
 <li><em>v</em> : object of type Value</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md445"></a>
+<h1><a class="anchor" id="autotoc_md450"></a>
 Definitions</h1>
-<h1><a class="anchor" id="autotoc_md446"></a>
+<h1><a class="anchor" id="autotoc_md451"></a>
 Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -147,12 +163,12 @@ Valid expressions and semantics</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Flush page   </td><td class="markdownTableBodyNone">x.flushPage(i)   </td><td class="markdownTableBodyNone">i of type ImageContainer   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">flush the image i on disk according to the cache policy   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md447"></a>
+<h1><a class="anchor" id="autotoc_md452"></a>
 Invariants</h1>
-<h1><a class="anchor" id="autotoc_md448"></a>
+<h1><a class="anchor" id="autotoc_md453"></a>
 Models</h1>
 <p><a class="el" href="classDGtal_1_1ImageCacheWritePolicyWT.html" title="Aim: implements a &#39;WT (Write-through)&#39; write policy cache.">ImageCacheWritePolicyWT</a>, <a class="el" href="classDGtal_1_1ImageCacheWritePolicyWB.html" title="Aim: implements a &#39;WB (Write-back or Write-behind)&#39; write policy cache.">ImageCacheWritePolicyWB</a></p>
-<h1><a class="anchor" id="autotoc_md449"></a>
+<h1><a class="anchor" id="autotoc_md454"></a>
 Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -376,9 +392,13 @@ template&lt;typename T &gt; </div>
 <li><a class="el" href="CImageCacheWritePolicy_8h_source.html">CImageCacheWritePolicy.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:56 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="namespaceDGtal_1_1concepts.html">concepts</a></li><li class="navelem"><a class="el" href="structDGtal_1_1concepts_1_1CImageCacheWritePolicy.html">CImageCacheWritePolicy</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:34:02 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

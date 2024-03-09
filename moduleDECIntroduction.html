@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('moduleDECIntroduction.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,7 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">Discrete exterior calculus </div>  </div>
@@ -77,14 +97,7 @@ $(function() {
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#sectDECIntroduction">Introduction</a><ul><li class="level2"><a href="#sectDECStruture">DEC geometrical structure</a></li>
 <li class="level2"><a href="#sectDECIntroductionObjects">Scalar field, k-form and vector field</a></li>
-<li class="level2"><a href="#sectDECOperators">Discrete linear operators</a><ul><li class="level3"><a href="#sectDECOperatorHodge">Hodge duality operator</a></li>
-<li class="level3"><a href="#sectDECOperatorDerivative">Exterior derivative</a></li>
-<li class="level3"><a href="#sectDECOperatorAntiderivative">Antiderivative</a></li>
-<li class="level3"><a href="#sectDECoperatorMusical">Sharp and flat</a></li>
-<li class="level3"><a href="#sectDECOperatorClassical">Classical vector analysis</a></li>
-<li class="level3"><a href="#sectDECOperatorLaplace">Laplace operators</a></li>
-</ul>
-</li>
+<li class="level2"><a href="#sectDECOperators">Discrete linear operators</a></li>
 <li class="level2"><a href="#sectDECLinearProblem">DEC linear problem</a></li>
 <li class="level2"><a href="#sectDECIntroductionFurther">Further reading</a></li>
 </ul>
@@ -161,7 +174,7 @@ Antiderivative</h3>
 </p>
 <h3><a class="anchor" id="sectDECoperatorMusical"></a>
 Sharp and flat</h3>
-<p>Sharp \(\sharp\) and flat \(\flat\), called <em>musical isomorphisms</em> in <a class="el" href="citelist.html#CITEREF_goes2013digital">[42]</a>, transform 1-form into vector field and the other way around. In the continuous world, these two operators cancel each other exactly.</p>
+<p>Sharp \(\sharp\) and flat \(\flat\), called <em>musical isomorphisms</em> in <a class="el" href="citelist.html#CITEREF_goes2013digital">[43]</a>, transform 1-form into vector field and the other way around. In the continuous world, these two operators cancel each other exactly.</p>
 <p class="formulaDsp">
 \[ (x ^\sharp) ^\flat = x \]
 </p>
@@ -214,8 +227,8 @@ DEC linear problem</h2>
 <h2><a class="anchor" id="sectDECIntroductionFurther"></a>
 Further reading</h2>
 <ul>
-<li>Keenan Crane SIGGRAPH lecture 2013 "Geometry processing using DEC" <a href="https://github.com/dgpdec/course">github repository</a> <a class="el" href="citelist.html#CITEREF_goes2013digital">[42]</a></li>
-<li>Mathieu Desbrun article on discrete exterior calculus <a class="el" href="citelist.html#CITEREF_desbrun2005discrete">[47]</a></li>
+<li>Keenan Crane SIGGRAPH lecture 2013 "Geometry processing using DEC" <a href="https://github.com/dgpdec/course">github repository</a> <a class="el" href="citelist.html#CITEREF_goes2013digital">[43]</a></li>
+<li>Mathieu Desbrun article on discrete exterior calculus <a class="el" href="citelist.html#CITEREF_desbrun2005discrete">[48]</a></li>
 <li>Digital foam presentation with an introduction to DEC in the second section <a href="http://sd-33294.dedibox.fr/~pierre/presentation_dec.pdf">pdf</a></li>
 </ul>
 <h1><a class="anchor" id="sectDECHandsOn"></a>
@@ -312,9 +325,13 @@ DEC linear solver</h2>
 <p>Resolution of <a class="el" href="moduleDECPoisson.html#sectDECPoissonProblem">Poisson equation</a> and <a class="el" href="moduleDECHelmoltz.html#sectDECHelmoltzProblem">Helmoltz decomposition</a> are provided as example. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:47 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageDEC.html">DEC package</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:33:53 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('moduleVCM.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,7 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">Digital Voronoi Covariance <a class="el" href="classDGtal_1_1Measure.html" title="Aim: Implements a simple measure computation (in the Lesbegue sens) of a set. In dimension 2,...">Measure</a> and geometry estimation </div>  </div>
@@ -85,7 +105,7 @@ $(function() {
 </div>
 <div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: </dt><dd>Jacques-Olivier Lachaud</dd></dl>
 <p>Part of the <a class="el" href="packageGeometry.html">Geometry package</a>.</p>
-<p>This part of the manual describes classes and functions related to the Voronoi Covariance <a class="el" href="classDGtal_1_1Measure.html" title="Aim: Implements a simple measure computation (in the Lesbegue sens) of a set. In dimension 2,...">Measure</a> (VCM) of a set of points in arbitrary dimension. The VCM is a covariance tensor related to a distance function to the input data points. It was introduced by Mérigot, Ovsjanikov and Guibas <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[88]</a>. The digital version of the VCM was studied by Cuel, Lachaud, and Thibert <a class="el" href="citelist.html#CITEREF_Cuel_2014-dgci">[40]</a>. Stability and multigrid convergence results have been established. This documentation presents the implementation of the digital VCM. The VCM is useful for the following tasks:</p>
+<p>This part of the manual describes classes and functions related to the Voronoi Covariance <a class="el" href="classDGtal_1_1Measure.html" title="Aim: Implements a simple measure computation (in the Lesbegue sens) of a set. In dimension 2,...">Measure</a> (VCM) of a set of points in arbitrary dimension. The VCM is a covariance tensor related to a distance function to the input data points. It was introduced by Mérigot, Ovsjanikov and Guibas <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[89]</a>. The digital version of the VCM was studied by Cuel, Lachaud, and Thibert <a class="el" href="citelist.html#CITEREF_Cuel_2014-dgci">[41]</a>. Stability and multigrid convergence results have been established. This documentation presents the implementation of the digital VCM. The VCM is useful for the following tasks:</p>
 <ul>
 <li><b>normal</b> <b>cone</b> <b>estimation:</b> Given a set of digital points approximating a surface, the VCM estimates robustly the normal vector to this underlying surface.</li>
 <li><b>geometry</b> <b>estimation:</b> Given a digital surface approximating some surface, the VCM can estimate robustly the oriented normal vector and the principal directions of the underlying surface.</li>
@@ -94,15 +114,15 @@ $(function() {
 <p>Related examples are <a class="el" href="dvcm-2d_8cpp_source.html">geometry/volumes/dvcm-2d.cpp</a>, <a class="el" href="dvcm-3d_8cpp_source.html">geometry/surfaces/dvcm-3d.cpp</a>, <a class="el" href="dvcm-2d-curvature_8cpp_source.html">geometry/surfaces/dvcm-2d-curvature.cpp</a>.</p>
 <h1><a class="anchor" id="moduleVCM_sec1"></a>
 Voronoi Covariance Measure</h1>
-<p>The <em>Voronoi</em> <em>covariance</em> <em>measure</em> (VCM) has been introduced in <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[88]</a> for normals and curvature estimations. Let <em>K</em> be a compact subset of \(\mathbb{R}^3\) and \(d_K\) the <em>distance</em> <em>function</em> to <em>K</em>, i.e. the map \( d_K(x) := \min_{p\in K} \|p-x\| \). A point <em>p</em> where the previous minimum is reached is called a <em>projection</em> of <em>x</em> on <em>K</em>. Almost every point admits a single projection on <em>K</em>, thus definining a map \( p_K: \mathbb{R}^3 \to K \) almost everywhere. The <em>R-<em>offset</em> of</em> <em>K</em> is the <em>R-sublevel</em> set of \( d_K\), i.e. the set \(K^R:=d_K^{-1}(]-\infty, R[)\). The VCM maps any integrable function \(\chi:\mathbb{R}^3 \to \mathbb{R}^+\) to the matrix </p><p class="formulaDsp">
+<p>The <em>Voronoi</em> <em>covariance</em> <em>measure</em> (VCM) has been introduced in <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[89]</a> for normals and curvature estimations. Let <em>K</em> be a compact subset of \(\mathbb{R}^3\) and \(d_K\) the <em>distance</em> <em>function</em> to <em>K</em>, i.e. the map \( d_K(x) := \min_{p\in K} \|p-x\| \). A point <em>p</em> where the previous minimum is reached is called a <em>projection</em> of <em>x</em> on <em>K</em>. Almost every point admits a single projection on <em>K</em>, thus definining a map \( p_K: \mathbb{R}^3 \to K \) almost everywhere. The <em>R-<em>offset</em> of</em> <em>K</em> is the <em>R-sublevel</em> set of \( d_K\), i.e. the set \(K^R:=d_K^{-1}(]-\infty, R[)\). The VCM maps any integrable function \(\chi:\mathbb{R}^3 \to \mathbb{R}^+\) to the matrix </p><p class="formulaDsp">
 \[ \mathcal{V}_{K,R}(\chi) := \int_{K^R}(x-p_K(x))(x-p_K(x))^{\mathbf{t}} \chi(p_K(x)) d x. \]
 </p>
 <div class="image">
 <img src="vcm.png" alt=""/>
 <div class="caption">
 Voronoi Covariance Measure of a point set in the plane.</div></div>
- <dl class="section note"><dt>Note</dt><dd>The stability result of <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[88]</a> implies that information extracted from the covariance matrix such as normals or principal directions are <b>stable</b> with respect to <b>Hausdorff</b> <b>perturbation</b>.</dd></dl>
-<dl class="section user"><dt>Advanced: </dt><dd>Remark that this definition matches the definition introduced in <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[88]</a> : when \(\chi\) is the characteristic function of a ball, one recovers a notion similar to the convolved VCM.</dd></dl>
+ <dl class="section note"><dt>Note</dt><dd>The stability result of <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[89]</a> implies that information extracted from the covariance matrix such as normals or principal directions are <b>stable</b> with respect to <b>Hausdorff</b> <b>perturbation</b>.</dd></dl>
+<dl class="section user"><dt>Advanced: </dt><dd>Remark that this definition matches the definition introduced in <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[89]</a> : when \(\chi\) is the characteristic function of a ball, one recovers a notion similar to the convolved VCM.</dd></dl>
 <h1><a class="anchor" id="moduleVCM_sec2"></a>
 Computing the Voronoi Covariance Measure of a point set</h1>
 <p>Let <em>K</em> be some point set. In this case, the computation of the VCM can be split into isolated calculations in each Voronoi cell of <em>K</em>. In the digital setting, the Voronoi cells can be efficiently computed by repeated scans of the domain (see <a class="el" href="moduleVolumetric.html">nD Volumetric Analysis using Separable Processes</a>). That's exactly how is computed the VCM. The computational complexity of the VCM is thus the computational complexity of the Voronoi map in nD. The templated class <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html" title="Aim: This class precomputes the Voronoi Covariance Measure of a set of points. It can compute the cov...">VoronoiCovarianceMeasure</a> is the one taking of the computation. It requires two type parameters:</p>
@@ -229,9 +249,13 @@ The class VCMDigitalSurfaceLocalEstimator</h2>
 Absolute curvature estimation with Voronoi Covariance Measure.</div></div>
   </div></div><!-- contents -->
 </div><!-- PageDoc -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:48 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:33:54 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('modulePlaneProbing.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,7 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">Plane-probing based normal estimators </div>  </div>
@@ -96,7 +116,7 @@ $(function() {
 <p>The following programs are related to this documentation: <a class="el" href="examplePlaneProbingTetrahedronEstimator_8cpp.html">geometry/surfaces/examplePlaneProbingTetrahedronEstimator.cpp</a>, <a class="el" href="examplePlaneProbingParallelepipedEstimator_8cpp.html">geometry/surfaces/examplePlaneProbingParallelepipedEstimator.cpp</a>, <a class="el" href="examplePlaneProbingSurfaceLocalEstimator_8cpp.html">geometry/surfaces/examplePlaneProbingSurfaceLocalEstimator.cpp</a>, <a class="el" href="testDigitalPlanePredicate_8cpp.html">testDigitalPlanePredicate.cpp</a>, <a class="el" href="testPlaneProbingTetrahedronEstimator_8cpp.html">testPlaneProbingTetrahedronEstimator.cpp</a>, <a class="el" href="testPlaneProbingParallelepipedEstimator_8cpp.html">testPlaneProbingParallelepipedEstimator.cpp</a>.</p>
 <h1><a class="anchor" id="sectPlaneProbing1"></a>
 Introduction to plane-probing algorithms</h1>
-<p>A plane-probing algorithm (see <a class="el" href="citelist.html#CITEREF_LPRJMIV2017">[69]</a>, <a class="el" href="citelist.html#CITEREF_RLDGCI2019">[101]</a> and <a class="el" href="citelist.html#CITEREF_LMRJMIV2020">[73]</a>) computes the normal vector of a set of digital points from a starting point and a predicate <b>InPlane:</b> "Is a point x in the set of digital points?". This predicate is used to probe the set as locally as possible and decide on-the-fly the next points to consider, in order to deform a particular set of points, which is tangent by construction. The growth direction is given by both arithmetic and geometric properties. The main characteristics of these algorithms is that <em>no</em> <em>parameter</em> is required for the analysis of the local geometry of digital surfaces. Furthermore, they present theoretical guarantees, most notably they extract the exact normal vector of any digital plane.</p>
+<p>A plane-probing algorithm (see <a class="el" href="citelist.html#CITEREF_LPRJMIV2017">[70]</a>, <a class="el" href="citelist.html#CITEREF_RLDGCI2019">[102]</a> and <a class="el" href="citelist.html#CITEREF_LMRJMIV2020">[74]</a>) computes the normal vector of a set of digital points from a starting point and a predicate <b>InPlane:</b> "Is a point x in the set of digital points?". This predicate is used to probe the set as locally as possible and decide on-the-fly the next points to consider, in order to deform a particular set of points, which is tangent by construction. The growth direction is given by both arithmetic and geometric properties. The main characteristics of these algorithms is that <em>no</em> <em>parameter</em> is required for the analysis of the local geometry of digital surfaces. Furthermore, they present theoretical guarantees, most notably they extract the exact normal vector of any digital plane.</p>
 <h2><a class="anchor" id="subsectPlaneProbing11"></a>
 Tetrahedron-based probing methods</h2>
 <p>The first kind of plane-probing algorithms is based on the deformation of a tetrahedron. The objective of the algorithm is to iteratively update one vertex of this tetrahedron until one of its faces is parallel to the digital set. The update procedure will consist in selecting a point inside a <em>candidate</em> <em>set</em>. Multiple candidate sets have been proposed but we will start by describing the simplest one, the so-called <em>H-neighborhood</em>. We start by illustrating its behavior when the digital set is a digital plane segment. The next image shows the initial state of the estimator. We will denote by \( (v_k)_{0 \leq k \leq 2 } \) the three vertices of the base triangle (the blue disks on the left), \( q \) a <em>fixed</em> point outside the set at the top of the tetrahedron (the blue circle). Points that are <em>inside</em> the digital set will be denoted by disks while points that are <em>outside</em> by circles.</p>
@@ -118,18 +138,18 @@ From left to right: before the update, H-neighborhood in red, filtering through 
 <p>The algorithm stops whether one of the following criteria is verified:</p><ol type="1">
 <li>the candidate set does not contain a point inside the digital set,</li>
 <li>the current configuration of the H-neighborhood is <em>non-convex</em>,</li>
-<li>the current configuration of the H-neighborhood is <em>non-planar</em>. For the last two, see <a class="el" href="citelist.html#CITEREF_LPRJMIV2017">[69]</a> or the enum <a class="el" href="classDGtal_1_1PlaneProbingNeighborhood.html#a7de337aa87bc093fb60c384bb1ad860f">PlaneProbingNeighborhood::HexagonState</a> for more details.</li>
+<li>the current configuration of the H-neighborhood is <em>non-planar</em>. For the last two, see <a class="el" href="citelist.html#CITEREF_LPRJMIV2017">[70]</a> or the enum <a class="el" href="classDGtal_1_1PlaneProbingNeighborhood.html#a7de337aa87bc093fb60c384bb1ad860f">PlaneProbingNeighborhood::HexagonState</a> for more details.</li>
 </ol>
-<p>Other candidate sets were proposed namely the <em>R-neighborhood</em> <a class="el" href="citelist.html#CITEREF_LPRJMIV2017">[69]</a> and an optimization that we call <em>R1-neighborhood</em> <a class="el" href="citelist.html#CITEREF_LMRJMIV2020">[73]</a>. The main difference is that instead of considering 6 points of an hexagon, they consider 6 rays. This allows to reduce the number of steps and to obtain a reduced basis at the end. We recommend to use the <em>R1-neighborhood</em>.</p>
+<p>Other candidate sets were proposed namely the <em>R-neighborhood</em> <a class="el" href="citelist.html#CITEREF_LPRJMIV2017">[70]</a> and an optimization that we call <em>R1-neighborhood</em> <a class="el" href="citelist.html#CITEREF_LMRJMIV2020">[74]</a>. The main difference is that instead of considering 6 points of an hexagon, they consider 6 rays. This allows to reduce the number of steps and to obtain a reduced basis at the end. We recommend to use the <em>R1-neighborhood</em>.</p>
 <p>The main drawback of this category of algorithms is the fact that they return the correct normal vector on a digital plane only when starting from specific points (precisely reentrant corners of low height). In all other cases, the estimated normal is only an approximation. In the next section, we will present another kind of estimator that can be initialized on <em>any</em> <em>surfel</em> of a digital surface and which returns the correct normal on every surfel of a digital plane.</p>
 <h2><a class="anchor" id="subsectPlaneProbing12"></a>
 Parallelpiped-based probing methods</h2>
-<p>The second kind of plane-probing algorithms is based on the deformation of a pair of tetrahedra i.e. a parallelepiped introduced in <a class="el" href="citelist.html#CITEREF_LMRJMIV2020">[73]</a>. The parallelepiped is ensured to always be <em>separating</em> (one point is always inside the digital set and one point always outside). This approach allows to start the algorithm on any surfel (at least 4 points inside the digital set) and is more general than the previous one.</p>
+<p>The second kind of plane-probing algorithms is based on the deformation of a pair of tetrahedra i.e. a parallelepiped introduced in <a class="el" href="citelist.html#CITEREF_LMRJMIV2020">[74]</a>. The parallelepiped is ensured to always be <em>separating</em> (one point is always inside the digital set and one point always outside). This approach allows to start the algorithm on any surfel (at least 4 points inside the digital set) and is more general than the previous one.</p>
 <div class="image">
 <img src="plane-probing-illustration-cube.png" alt=""/>
 <div class="caption">
 The two tetrahedra are displayed in red and blue. The points p and q are the <em>bases</em> of the two tetrahedra.</div></div>
- <p>This approach is internally based on a new predicate <b>NotAbove</b> that is able to tell whether a digital point \( x \) has a height that is smaller or greater than the one of \( q \). It is easy to see that it can be implemented using ray-casting and the <b>InPlane</b> predicate. It naturally increases the number of calls to <b>InPlane</b> but has several advantages. See <a class="el" href="citelist.html#CITEREF_LMRJMIV2020">[73]</a> or <a href="https://perso.liris.cnrs.fr/tristan.roussillon/pres/2019GDMM.pdf">this presentation</a> (in French) for more details.</p>
+ <p>This approach is internally based on a new predicate <b>NotAbove</b> that is able to tell whether a digital point \( x \) has a height that is smaller or greater than the one of \( q \). It is easy to see that it can be implemented using ray-casting and the <b>InPlane</b> predicate. It naturally increases the number of calls to <b>InPlane</b> but has several advantages. See <a class="el" href="citelist.html#CITEREF_LMRJMIV2020">[74]</a> or <a href="https://perso.liris.cnrs.fr/tristan.roussillon/pres/2019GDMM.pdf">this presentation</a> (in French) for more details.</p>
 <p>We will denote by PH, PR and PR1 the three variations of the parallelepiped estimator for the three different candidate sets.</p>
 <h2><a class="anchor" id="subsectPlaneProbing13"></a>
 Summary of the different variants</h2>
@@ -277,9 +297,13 @@ Implementing your own candidate set</h2>
 </ol>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:48 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:33:54 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

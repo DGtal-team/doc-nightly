@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -55,6 +59,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_a.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -599,7 +619,7 @@ $(function() {
 </li>
 <li>append()
 : <a class="el" href="structDGtal_1_1ImageFromSet.html#acebb8a6b3c4d0411dd7659e9c7ccb981">DGtal::ImageFromSet&lt; TImage &gt;</a>
-, <a class="el" href="structDGtal_1_1SetFromImage.html#a260f7eef5972b22f1e1f4b55a5aa419a">DGtal::SetFromImage&lt; TSet &gt;</a>
+, <a class="el" href="structDGtal_1_1SetFromImage.html#a81d51b66273dbaf4f0897c4c72e9fced">DGtal::SetFromImage&lt; TSet &gt;</a>
 </li>
 <li>apply()
 : <a class="el" href="structDGtal_1_1detail_1_1FFTWComplexCast.html#a3392cf6eba729d9034fc0a273366ca7e">DGtal::detail::FFTWComplexCast&lt; TFFTW &gt;</a>
@@ -618,7 +638,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1DigitalSurface.html#a2efc999809e351fac7640a348919dad4">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
 </li>
 <li>Arc()
-: <a class="el" href="structDGtal_1_1DigitalSurface_1_1Arc.html#aa1086a7463bd64f4a7b788b3ad9a2eac">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Arc</a>
+: <a class="el" href="structDGtal_1_1DigitalSurface_1_1Arc.html#ade3f5b2fcdff6deefd779a16242a3d2d">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Arc</a>
 , <a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html#ac934168ece424e22ea11abd10f4d4d75">DGtal::HalfEdgeDataStructure</a>
 </li>
 <li>arc()
@@ -626,27 +646,27 @@ $(function() {
 </li>
 <li>Arc
 : <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#afc77a3bac1f7f77d2cdaf805420234d0">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
+, <a class="el" href="classDGtal_1_1PolygonalSurface.html#aaf0f323727b16abc554253733f07c5ec">DGtal::PolygonalSurface&lt; TPoint &gt;</a>
 </li>
 <li>arc()
 : <a class="el" href="classDGtal_1_1PolygonalSurface.html#a5db040c9bdaede4c98cce1edc6bc7956">DGtal::PolygonalSurface&lt; TPoint &gt;</a>
 </li>
 <li>Arc
-: <a class="el" href="classDGtal_1_1PolygonalSurface.html#aaf0f323727b16abc554253733f07c5ec">DGtal::PolygonalSurface&lt; TPoint &gt;</a>
-, <a class="el" href="classDGtal_1_1Shortcuts.html#ad2d2e887c78b56e51669c55c371e0bd5">DGtal::Shortcuts&lt; TKSpace &gt;</a>
+: <a class="el" href="classDGtal_1_1Shortcuts.html#ad2d2e887c78b56e51669c55c371e0bd5">DGtal::Shortcuts&lt; TKSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1ShortcutsGeometry.html#a7791a764bc395565719add60fca44929">DGtal::ShortcutsGeometry&lt; TKSpace &gt;</a>
-, <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
 </li>
 <li>arc()
 : <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a2e058cf9a8277bd42daa1fa0929766c4">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
 </li>
-<li>Arc()
-: <a class="el" href="structLibBoard_1_1Arc.html#ae6e4ed44cf06d15f70142d843f04a0ee">LibBoard::Arc</a>
-</li>
-<li>Arc2FaceIndex
-: <a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html#a391d96b70e0c908d1fdfccfa73bb8f96">DGtal::HalfEdgeDataStructure</a>
+<li>Arc
+: <a class="el" href="classDGtal_1_1TriangulatedSurface.html#a131324d45f00ec530d3ebc6a8b366df7">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
+, <a class="el" href="structLibBoard_1_1Arc.html#ae6e4ed44cf06d15f70142d843f04a0ee">LibBoard::Arc</a>
 </li>
 <li>arc2FaceIndex()
 : <a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html#a4aa9ab6bd236c9999fa0cd2f21b3fc6d">DGtal::HalfEdgeDataStructure</a>
+</li>
+<li>Arc2FaceIndex
+: <a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html#a391d96b70e0c908d1fdfccfa73bb8f96">DGtal::HalfEdgeDataStructure</a>
 </li>
 <li>Arc2Index
 : <a class="el" href="classDGtal_1_1HalfEdgeDataStructure.html#aff892b21c7c5d5da16f19f95bd784be9">DGtal::HalfEdgeDataStructure</a>
@@ -950,9 +970,12 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:59 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Sat Mar 9 2024 09:34:06 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

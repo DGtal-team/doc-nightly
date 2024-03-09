@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDGtal_1_1MelkmanConvexHull.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,11 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1MelkmanConvexHull.html">MelkmanConvexHull</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -83,7 +99,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Aim: This class implements the on-line algorithm of Melkman for the computation of the convex hull of a simple polygonal line (without self-intersection) [Melkman, 1987: <a class="el" href="citelist.html#CITEREF_Melkman1987">[85]</a>].  
+<p>Aim: This class implements the on-line algorithm of Melkman for the computation of the convex hull of a simple polygonal line (without self-intersection) [Melkman, 1987: <a class="el" href="citelist.html#CITEREF_Melkman1987">[86]</a>].  
  <a href="classDGtal_1_1MelkmanConvexHull.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="MelkmanConvexHull_8h_source.html">DGtal/geometry/tools/MelkmanConvexHull.h</a>&gt;</code></p>
@@ -92,7 +108,7 @@ Inheritance diagram for DGtal::MelkmanConvexHull&lt; TPoint, TOrientationFunctor
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classDGtal_1_1MelkmanConvexHull__inherit__graph.svg" width="354" height="186"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -159,7 +175,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename TPoint, typename TOrientationFunctor&gt;<br />
 class DGtal::MelkmanConvexHull&lt; TPoint, TOrientationFunctor &gt;</h3>
 
-<p>Aim: This class implements the on-line algorithm of Melkman for the computation of the convex hull of a simple polygonal line (without self-intersection) [Melkman, 1987: <a class="el" href="citelist.html#CITEREF_Melkman1987">[85]</a>]. </p>
+<p>Aim: This class implements the on-line algorithm of Melkman for the computation of the convex hull of a simple polygonal line (without self-intersection) [Melkman, 1987: <a class="el" href="citelist.html#CITEREF_Melkman1987">[86]</a>]. </p>
 <p>This algorithm is based on a deque, which stores the vertices of the convex hull (for convenience, the first and last vertex contained in the deque are the same point). Since we assume that the input points form a simple polygonal line, a new point cannot be located in the cone formed by the first and last edges of the current convex hull. As a consequence, it is enough to update the convex hull by a Graham scan from the front and/or from the back of the deque; it is never required to remove/insert points in the middle of the container. See <a class="el" href="moduleHull2D.html">Convex hull and alpha-shape in the plane</a> for more details.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceDGtal_1_1functions_1_1Hull2D.html#aca9e05cfa0179a24f8db24e3b5abaeae" title="Procedure that calls Hull2D::updateHullWithStack on a copy of the stack object used to retrieved the ...">functions::Hull2D::updateHullWithAdaptedStack</a></dd></dl>
 <p>Note that if the input points do not form a simple polygonal line, the behavior is not defined.</p>
@@ -774,9 +790,13 @@ template&lt;typename TPoint , typename TOrientationFunctor &gt; </div>
 <li><a class="el" href="MelkmanConvexHull_8h_source.html">MelkmanConvexHull.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:51 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1MelkmanConvexHull.html">MelkmanConvexHull</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:33:58 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

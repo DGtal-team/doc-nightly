@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('GradientColorMap_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,11 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f2cd1aeea1cfa982bb13a5f95fa4218c.html">DGtal</a></li><li class="navelem"><a class="el" href="dir_5520f6078718884549800e0f3c69770f.html">io</a></li><li class="navelem"><a class="el" href="dir_c9522c97f30603e3dd64dac8aff8bd02.html">colormaps</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">GradientColorMap.h</div>  </div>
@@ -255,9 +271,13 @@ $(function() {
 <div class="ttc" id="anamespaceDGtal_html_aa68309838cffd86a3c671c44ef129cb2acd0da059abca1decd6b75ecc6d131be7"><div class="ttname"><a href="namespaceDGtal.html#aa68309838cffd86a3c671c44ef129cb2acd0da059abca1decd6b75ecc6d131be7">DGtal::CMAP_WINTER</a></div><div class="ttdeci">@ CMAP_WINTER</div><div class="ttdef"><b>Definition:</b> <a href="GradientColorMap_8h_source.html#l00065">GradientColorMap.h:65</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html_aa68309838cffd86a3c671c44ef129cb2ad222787b0de6a7d74f0e403da496266c"><div class="ttname"><a href="namespaceDGtal.html#aa68309838cffd86a3c671c44ef129cb2ad222787b0de6a7d74f0e403da496266c">DGtal::CMAP_SPRING</a></div><div class="ttdeci">@ CMAP_SPRING</div><div class="ttdef"><b>Definition:</b> <a href="GradientColorMap_8h_source.html#l00062">GradientColorMap.h:62</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:31 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f2cd1aeea1cfa982bb13a5f95fa4218c.html">DGtal</a></li><li class="navelem"><a class="el" href="dir_5520f6078718884549800e0f3c69770f.html">io</a></li><li class="navelem"><a class="el" href="dir_c9522c97f30603e3dd64dac8aff8bd02.html">colormaps</a></li><li class="navelem"><b>GradientColorMap.h</b></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:33:37 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

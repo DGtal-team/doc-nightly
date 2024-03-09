@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('modulePolygonalCalculus.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,7 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">Discrete differential calculus on polygonal surfaces </div>  </div>
@@ -76,15 +96,9 @@ $(function() {
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
 <ul><li class="level1"><a href="#sectPolygonalCalculusIntro">Introduction</a></li>
-<li class="level1"><a href="#sectPolygonalCalculus2">Per face operators</a><ul><li class="level2"><a href="#susub1">Basic operators</a><ul><li class="level3"><a href="#subderiv">Derivative operators</a></li>
-<li class="level3"><a href="#subdflat">Flat/Sharp and Projection Operators</a></li>
-</ul>
-</li>
+<li class="level1"><a href="#sectPolygonalCalculus2">Per face operators</a><ul><li class="level2"><a href="#susub1">Basic operators</a></li>
 <li class="level2"><a href="#sublap">Inner Product and Laplace-Beltrami Operators</a></li>
-<li class="level2"><a href="#sectcovOPL">Operators on directional fields and Connection Laplacian</a><ul><li class="level3"><a href="#sectcovOP">Covariant Gradient and Projection</a></li>
-<li class="level3"><a href="#sectVL">Vector Laplacian</a></li>
-</ul>
-</li>
+<li class="level2"><a href="#sectcovOPL">Operators on directional fields and Connection Laplacian</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#sectPolygonalCalculusGlo">Global calculus</a></li>
@@ -101,15 +115,15 @@ $(function() {
 <p>Part of package <a class="el" href="packageDEC.html">DEC package</a>.</p>
 <p>In this documentation page, we detail the operators and tools for differential calculus computations on generic polygonal surfaces (<a class="el" href="classDGtal_1_1PolygonalCalculus.html" title="Implements differential operators on polygonal surfaces from .">PolygonalCalculus</a> class). Such polygonal surfaces could be generic meshes (with non-planar, non-convex faces), or an embeddeing of a digital surface.</p>
 <p>The overall idea, compared to the <a class="el" href="moduleDECIntroduction.html">Discrete exterior calculus</a> approach, is to define per face operators which can be later combined to define global ones.</p>
-<p>This module documents the operators defined in <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[43]</a>. An additional documentation page showcasing classical use cases of these operators for geometry processing on digital surfaces will be added.</p>
-<dl class="section note"><dt>Note</dt><dd>The sign convention for the divergence and the Laplacian operator is opposite to the one of <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[43]</a>. This is to match the usual mathematical convention that the Laplacian (and the Laplacian-Beltrami) has negative eigenvalues (and is the sum of second derivatives in the cartesian grid). It also follows the formal adjointness of exterior derivative and opposite of divergence as relation \( \langle \mathrm{d} u, v \rangle = - \langle u, \mathrm{div} v \rangle \). See also <a href="https://en.wikipedia.org/wiki/Laplace–Beltrami_operator">https://en.wikipedia.org/wiki/Laplace–Beltrami_operator</a></dd>
+<p>This module documents the operators defined in <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[44]</a>. An additional documentation page showcasing classical use cases of these operators for geometry processing on digital surfaces will be added.</p>
+<dl class="section note"><dt>Note</dt><dd>The sign convention for the divergence and the Laplacian operator is opposite to the one of <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[44]</a>. This is to match the usual mathematical convention that the Laplacian (and the Laplacian-Beltrami) has negative eigenvalues (and is the sum of second derivatives in the cartesian grid). It also follows the formal adjointness of exterior derivative and opposite of divergence as relation \( \langle \mathrm{d} u, v \rangle = - \langle u, \mathrm{div} v \rangle \). See also <a href="https://en.wikipedia.org/wiki/Laplace–Beltrami_operator">https://en.wikipedia.org/wiki/Laplace–Beltrami_operator</a></dd>
 <dd>
 All illustrations below have been obtained using the DGtal+<a href="https://polyscope.run">polyscope</a> examples <a class="el" href="dgtalCalculus_8cpp_source.html">dgtalCalculus.cpp</a>, <a class="el" href="dgtalCalculus-single_8cpp_source.html">dgtalCalculus-single.cpp</a> and <a class="el" href="dgtalCalculus-poisson_8cpp_source.html">dgtalCalculus-poisson.cpp</a>. To build these examples, enable the <code>BUILD_POLYSCOPE_EXAMPLES</code> variable (e.g. <code>cmake .. -DBUILD_POLYSCOPE_EXAMPLES=ON</code>).</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>The implementation heavily relies on implicit operators with many Eigen based small matrice constructions, which has a huge overhead in Debug mode. Please consider to build the examples in Release (<em>e.g.</em> <code>CMAKE_BUILD_TYPE</code> variable) for high performance on large geometrical objects.</dd></dl>
 <h1><a class="anchor" id="sectPolygonalCalculusIntro"></a>
 Introduction</h1>
-<p>The main idea of <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[43]</a> is to define discrete operators per face, which can be combined to obtain a global operator acting on meshes. For vertex valued scalar or vector fields, this class implements elementary differential operators (gradient, derivatives, sharp/flat, Laplace-Beltrami...) which can be combined to define more complex ones, or to be used when solving variational geometry processing problems on meshes or digital surfaces.</p>
-<p>The operators detailed <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[43]</a> extend Mimetic Finite Difference and Virtual Element Method operators to arbitrary 3d polygons and discrete surfaces.</p>
+<p>The main idea of <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[44]</a> is to define discrete operators per face, which can be combined to obtain a global operator acting on meshes. For vertex valued scalar or vector fields, this class implements elementary differential operators (gradient, derivatives, sharp/flat, Laplace-Beltrami...) which can be combined to define more complex ones, or to be used when solving variational geometry processing problems on meshes or digital surfaces.</p>
+<p>The operators detailed <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[44]</a> extend Mimetic Finite Difference and Virtual Element Method operators to arbitrary 3d polygons and discrete surfaces.</p>
 <h1><a class="anchor" id="sectPolygonalCalculus2"></a>
 Per face operators</h1>
 <p>Let us consider a single (non-planar, non-convex) face example. Using</p>
@@ -235,8 +249,8 @@ Flat/Sharp and Projection Operators</h3>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>calculus.P(f)</code>   </td><td class="markdownTableBodyNone">\( n_f \times n_f\)   </td><td class="markdownTableBodyNone">Projection operator acting on a discrete 1-form that removes the associated non-tangential part of the vector reconstructed using the sharp operator   </td></tr>
 </table>
-<p>Discrete flat and sharp operators match with the DEC operators (see <a class="el" href="moduleDECIntroduction.html">Discrete exterior calculus</a>). For short, the flat operator embeds an ambient vector as a discrete 1-form (roughly values on the face edges) while the sharp operator pull-back a 1-form to reconstruct a vector in \(\mathbb{R}^3\). These operators are rank 2 and \( sharp_f flat_f s = s\) for any vector \(s\) in the face tangent plane, but \( flat_f sharp_f v = v\) for any vector v does not hold (due to rank deficiencies of the matrices). This is quantified by the projection operator \(P\) (see <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[43]</a> for structural lemmas, e.g. \( normal_f\cdot (sharp_f flat_f s)=0\quad \forall s\in$\mathbb{R}^3\)...).</p>
-<p>For interested readers, <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[43]</a> has a discussion about the relationship between these operators and the classical DEC or FEM ones.</p>
+<p>Discrete flat and sharp operators match with the DEC operators (see <a class="el" href="moduleDECIntroduction.html">Discrete exterior calculus</a>). For short, the flat operator embeds an ambient vector as a discrete 1-form (roughly values on the face edges) while the sharp operator pull-back a 1-form to reconstruct a vector in \(\mathbb{R}^3\). These operators are rank 2 and \( sharp_f flat_f s = s\) for any vector \(s\) in the face tangent plane, but \( flat_f sharp_f v = v\) for any vector v does not hold (due to rank deficiencies of the matrices). This is quantified by the projection operator \(P\) (see <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[44]</a> for structural lemmas, e.g. \( normal_f\cdot (sharp_f flat_f s)=0\quad \forall s\in$\mathbb{R}^3\)...).</p>
+<p>For interested readers, <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[44]</a> has a discussion about the relationship between these operators and the classical DEC or FEM ones.</p>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">a vector in \(\mathbb{R}^3\)   </th><th class="markdownTableHeadNone">a vector in \(\mathbb{R}^3\)   </th><th class="markdownTableHeadNone">Flat (1-form)   </th><th class="markdownTableHeadNone">Sharp of the flat (green vector)   </th><th class="markdownTableHeadNone">Sharp and normal vector (orange vector)    </th></tr>
@@ -265,13 +279,13 @@ Inner Product and Laplace-Beltrami Operators</h2>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Operator   </th><th class="markdownTableHeadNone">Output   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>calculus.M(f,lambda)</code>   </td><td class="markdownTableBodyNone">\( n_f\times n_f\)   </td><td class="markdownTableBodyNone">Inner product operator on discrete 1-forms operator (lambda is a regularization parameter, see <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[43]</a>)    </td></tr>
+<td class="markdownTableBodyNone"><code>calculus.M(f,lambda)</code>   </td><td class="markdownTableBodyNone">\( n_f\times n_f\)   </td><td class="markdownTableBodyNone">Inner product operator on discrete 1-forms operator (lambda is a regularization parameter, see <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[44]</a>)    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>calculus.laplaceBeltrami(f,lambda)</code>   </td><td class="markdownTableBodyNone">\( n_f \times n_f\)   </td><td class="markdownTableBodyNone">Laplace-Beltrami operator \( D^tMD \) (lambda is a regularization parameter, see <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[43]</a>), the matrix is PSD   </td></tr>
+<td class="markdownTableBodyNone"><code>calculus.laplaceBeltrami(f,lambda)</code>   </td><td class="markdownTableBodyNone">\( n_f \times n_f\)   </td><td class="markdownTableBodyNone">Laplace-Beltrami operator \( D^tMD \) (lambda is a regularization parameter, see <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[44]</a>), the matrix is PSD   </td></tr>
 </table>
 <h2><a class="anchor" id="sectcovOPL"></a>
 Operators on directional fields and Connection Laplacian</h2>
-<p>In this section, we describe operators acting on directional fields (Levi-Civita connection, covariant gradient of a vector field &ndash;first-order derivative on VF&ndash;, and connection laplacian). Pleas refer to <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[43]</a>, section 5, for details.</p>
+<p>In this section, we describe operators acting on directional fields (Levi-Civita connection, covariant gradient of a vector field &ndash;first-order derivative on VF&ndash;, and connection laplacian). Pleas refer to <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[44]</a>, section 5, for details.</p>
 <p>As an example, these operators can be used to interpolate vector fields as illustrated in <a class="el" href="moduleVectorsInHeat.html">Vector Heat Method using discrete polygonal calculus</a>.</p>
 <div class="image">
 <img src="transport_to_face.png" alt=""/>
@@ -279,7 +293,7 @@ Operators on directional fields and Connection Laplacian</h2>
 Transport of a vertex based vector field to face tangent plane</div></div>
 <h3><a class="anchor" id="sectcovOP"></a>
 Covariant Gradient and Projection</h3>
-<p>Since these operators are themselves matrices they cannot be constructed in the same way as the others ( Operator builder Matrix * function restricted to face Vector ), you need the specify the local vector field as well, in the same format as in <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[43]</a>, i.e. </p><p class="formulaDsp">
+<p>Since these operators are themselves matrices they cannot be constructed in the same way as the others ( Operator builder Matrix * function restricted to face Vector ), you need the specify the local vector field as well, in the same format as in <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[44]</a>, i.e. </p><p class="formulaDsp">
 \begin{eqnarray*} u_{f} = [u_{v_1}^t \ldots u_{v_{nf}}^t]^t \end{eqnarray*}
 </p>
 <p> where \(u_{v_i}\) are the intrinsic vectors at each adjacent vertex expressed in their own tangent basis.</p>
@@ -297,7 +311,7 @@ Vector Laplacian</h3>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Operator   </th><th class="markdownTableHeadNone">Output   </th><th class="markdownTableHeadNone">Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><code>calculus.connectionLaplacian(f,lambda)</code>   </td><td class="markdownTableBodyNone">\( 2n_f\times 2n_f\)   </td><td class="markdownTableBodyNone">Vector Laplacian defined as the associated Matrix with the Dirichlet energy for vector valued 0-forms (lambda is a regularization parameter, see <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[43]</a>) at face f, PSD matrix   </td></tr>
+<td class="markdownTableBodyNone"><code>calculus.connectionLaplacian(f,lambda)</code>   </td><td class="markdownTableBodyNone">\( 2n_f\times 2n_f\)   </td><td class="markdownTableBodyNone">Vector Laplacian defined as the associated Matrix with the Dirichlet energy for vector valued 0-forms (lambda is a regularization parameter, see <a class="el" href="citelist.html#CITEREF_degoes2020discrete">[44]</a>) at face f, PSD matrix   </td></tr>
 </table>
 <h1><a class="anchor" id="sectPolygonalCalculusGlo"></a>
 Global calculus</h1>
@@ -430,9 +444,13 @@ Cache mechanisms and high-performance computing</h2>
 </div><!-- fragment --><p>Then, cached operators can be accessed and combined: </p><div class="fragment"><div class="line"><span class="keyword">auto</span> Mf =   cachefaceArea[f] * cacheU[f].transpose()*cacheU[f] + lambda * cacheP[f].transpose() * cacheP[f];</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:47 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageDEC.html">DEC package</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:33:53 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -55,6 +59,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_i.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -104,10 +124,12 @@ $(function() {
 </li>
 <li>IC
 : <a class="el" href="classDGtal_1_1Pattern.html#adefbd624111a0010883ec497c908cf98">DGtal::Pattern&lt; TFraction &gt;</a>
-, <a class="el" href="classDGtal_1_1StandardDSLQ0.html#a68f2f677d86090e8a4db69d45418d7b7">DGtal::StandardDSLQ0&lt; TFraction &gt;</a>
 </li>
 <li>ic
 : <a class="el" href="classDGtal_1_1StandardDSLQ0.html#a6e92b4f7f1066d2ba210302e989631e2">DGtal::StandardDSLQ0&lt; TFraction &gt;</a>
+</li>
+<li>IC
+: <a class="el" href="classDGtal_1_1StandardDSLQ0.html#a68f2f677d86090e8a4db69d45418d7b7">DGtal::StandardDSLQ0&lt; TFraction &gt;</a>
 </li>
 <li>identity()
 : <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a58af09018c1ac24cc7bfb62faeafde30">DGtal::DiscreteExteriorCalculus&lt; dimEmbedded, dimAmbient, TLinearAlgebraBackend, TInteger &gt;</a>
@@ -1323,19 +1345,21 @@ $(function() {
 : <a class="el" href="classDGtal_1_1BoundedLatticePolytope.html#a8c2eddafed81451d810ecfcf9eb413ec">DGtal::BoundedLatticePolytope&lt; TSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1BoundedRationalPolytope.html#a6965bf8a3eae71c37d763fe6f91f5eac">DGtal::BoundedRationalPolytope&lt; TSpace &gt;</a>
 </li>
-<li>IsBounded
-: <a class="el" href="structDGtal_1_1details_1_1NumberTraitsImplFundamental.html#aff1020ac830985719acd518fa6b4ff58">DGtal::details::NumberTraitsImplFundamental&lt; T &gt;</a>
-</li>
 <li>isBounded()
 : <a class="el" href="structDGtal_1_1details_1_1NumberTraitsImplFundamental.html#a6ee1e48edca0ce22f2aff465d850dd68">DGtal::details::NumberTraitsImplFundamental&lt; T &gt;</a>
 </li>
 <li>IsBounded
-: <a class="el" href="classDGtal_1_1DigitalSetDomain.html#ac2d04cd1c440c7c35be8b634996167d8">DGtal::DigitalSetDomain&lt; TDigitalSet &gt;</a>
-, <a class="el" href="structDGtal_1_1NumberTraitsImpl.html#a181716a772074fd19f5937ecec86eb4a">DGtal::NumberTraitsImpl&lt; T, Enable &gt;</a>
+: <a class="el" href="structDGtal_1_1details_1_1NumberTraitsImplFundamental.html#aff1020ac830985719acd518fa6b4ff58">DGtal::details::NumberTraitsImplFundamental&lt; T &gt;</a>
+, <a class="el" href="classDGtal_1_1DigitalSetDomain.html#ac2d04cd1c440c7c35be8b634996167d8">DGtal::DigitalSetDomain&lt; TDigitalSet &gt;</a>
 </li>
 <li>isBounded()
 : <a class="el" href="structDGtal_1_1NumberTraitsImpl.html#a3825a73262b5b5c22ab4cb505da4eb8e">DGtal::NumberTraitsImpl&lt; T, Enable &gt;</a>
-, <a class="el" href="structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html#adffa4769c8bc67090bd84f803999ec8c">DGtal::NumberTraitsImpl&lt; DGtal::BigInteger, Enable &gt;</a>
+</li>
+<li>IsBounded
+: <a class="el" href="structDGtal_1_1NumberTraitsImpl.html#a181716a772074fd19f5937ecec86eb4a">DGtal::NumberTraitsImpl&lt; T, Enable &gt;</a>
+</li>
+<li>isBounded()
+: <a class="el" href="structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html#adffa4769c8bc67090bd84f803999ec8c">DGtal::NumberTraitsImpl&lt; DGtal::BigInteger, Enable &gt;</a>
 </li>
 <li>IsBounded
 : <a class="el" href="structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html#a3d07aa79e12f659b756def7659cc94cb">DGtal::NumberTraitsImpl&lt; DGtal::BigInteger, Enable &gt;</a>
@@ -2085,7 +2109,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1CubicalComplex.html#aa8286af64048b60d70329edc5bc8d0c5">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;</a>
 </li>
 <li>Iterator()
-: <a class="el" href="structDGtal_1_1CubicalComplex_1_1Iterator.html#a8bd6d6b4cb858df8a9cd18028ae5adae">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::Iterator</a>
+: <a class="el" href="structDGtal_1_1CubicalComplex_1_1Iterator.html#a10f25f8eeee2669aaef85d34cb244cc0">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;::Iterator</a>
 , <a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#ab0d0cdd0ba4c6829d818da81590cd320">DGtal::DigitalSetByAssociativeContainer&lt; TDomain, TContainer &gt;</a>
 , <a class="el" href="classDGtal_1_1DigitalSetBySTLSet.html#a8d3a005fd6df0c48757311f14daf3c90">DGtal::DigitalSetBySTLSet&lt; TDomain, TCompare &gt;</a>
 , <a class="el" href="classDGtal_1_1DigitalSetBySTLVector.html#a48eeff3105cd4d2755137746ce9b6a41">DGtal::DigitalSetBySTLVector&lt; TDomain &gt;</a>
@@ -2102,7 +2126,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1IndexedListWithBlocks.html#a6875ebdea49b0b1d3a4f9fe7c97b5469">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;</a>
 </li>
 <li>Iterator()
-: <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1Iterator.html#ac2e18c49b3f6935931a53f05ddf2702d">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::Iterator</a>
+: <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1Iterator.html#a30216f39b99d6d06549c9799d063cd9f">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::Iterator</a>
 , <a class="el" href="classDGtal_1_1IteratorCompletion.html#a3c02bd75db56e57ad7ba6adfd43ddf4a">DGtal::IteratorCompletion&lt; TDerived &gt;</a>
 , <a class="el" href="classDGtal_1_1IteratorCompletionTraits_3_01ArrayImageAdapter_3_01TArrayIterator_00_01TDomain_01_4_01_4.html#afa4fee320d0fbbd92f04e364f7a9934b">DGtal::IteratorCompletionTraits&lt; ArrayImageAdapter&lt; TArrayIterator, TDomain &gt; &gt;</a>
 , <a class="el" href="structDGtal_1_1KhalimskyPreSpaceND_1_1AnyCellCollection.html#ae4d7e7ab122d439ea468fe24c3f684f8">DGtal::KhalimskyPreSpaceND&lt; dim, TInteger &gt;::AnyCellCollection&lt; CellType &gt;</a>
@@ -2128,7 +2152,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1TiledImageBidirectionalRangeFromPoint.html#a2a938163935a917cb07e890cf8f9485f">DGtal::TiledImageBidirectionalRangeFromPoint&lt; TTiledImage &gt;</a>
 </li>
 <li>iterator()
-: <a class="el" href="structDGtal_1_1UnorderedSetByBlock_1_1iterator.html#ae89d257f644690b2bd3b65f38c4d1dbf">DGtal::UnorderedSetByBlock&lt; Key, TSplitter, Hash, KeyEqual, UnorderedMapAllocator &gt;::iterator</a>
+: <a class="el" href="structDGtal_1_1UnorderedSetByBlock_1_1iterator.html#ab4c7bfa5923d1efc138bd7dd57d75924">DGtal::UnorderedSetByBlock&lt; Key, TSplitter, Hash, KeyEqual, UnorderedMapAllocator &gt;::iterator</a>
 </li>
 <li>iterator_category
 : <a class="el" href="classDGtal_1_1ArithDSSIterator.html#a3dd1e2630431f867761bb7f494dfba1d">DGtal::ArithDSSIterator&lt; TInteger, connectivity &gt;</a>
@@ -2160,7 +2184,7 @@ $(function() {
 , <a class="el" href="classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1out__edge__iterator.html#a0975271623c74c5b89bdf8d7fbce69c4">boost::graph_traits&lt; DGtal::Object&lt; TDigitalTopology, TDigitalSet &gt; &gt;::out_edge_iterator</a>
 </li>
 <li>IteratorAdapter()
-: <a class="el" href="classDGtal_1_1IteratorAdapter.html#ac8e0309b2d0dcd86217cdd936e9bb22e">DGtal::IteratorAdapter&lt; TIterator, TFunctor, TReturnType &gt;</a>
+: <a class="el" href="classDGtal_1_1IteratorAdapter.html#ac667b40dbd7947a058f3b7a82010d86d">DGtal::IteratorAdapter&lt; TIterator, TFunctor, TReturnType &gt;</a>
 , <a class="el" href="classDGtal_1_1Naive3DDSSComputer.html#a752591bb67ff57fe04623ac8c0d4efe2">DGtal::Naive3DDSSComputer&lt; TIterator, TInteger, connectivity &gt;</a>
 , <a class="el" href="classDGtal_1_1StandardDSS6Computer.html#a08608c04acf27c84cf88df75b414e4b9">DGtal::StandardDSS6Computer&lt; TIterator, TInteger, connectivity &gt;</a>
 </li>
@@ -2171,7 +2195,7 @@ $(function() {
 : <a class="el" href="classDGtal_1_1ImageContainerByITKImage.html#a409573fadd9f05b0efe96fed767eb015">DGtal::ImageContainerByITKImage&lt; TDomain, TValue &gt;</a>
 </li>
 <li>ITKIOTrait()
-: <a class="el" href="structDGtal_1_1ITKIOTrait.html#ad16cb1c6e3c406992a4906e1dc1a323f">DGtal::ITKIOTrait&lt; Value &gt;</a>
+: <a class="el" href="structDGtal_1_1ITKIOTrait.html#a3b204675363fed184cdb27cf5390dcbe">DGtal::ITKIOTrait&lt; Value &gt;</a>
 </li>
 <li>ITKSpacingType
 : <a class="el" href="structDGtal_1_1ITKWriter.html#a201a99f3166aebbcde8b4cb5ae8feb27">DGtal::ITKWriter&lt; TImage, TFunctor &gt;</a>
@@ -2185,9 +2209,12 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:59 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Sat Mar 9 2024 09:34:06 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,11 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="namespaceDGtal_1_1concepts.html">concepts</a></li><li class="navelem"><a class="el" href="structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph.html">CUndirectedSimpleLocalGraph</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
@@ -93,7 +109,7 @@ Inheritance diagram for DGtal::concepts::CUndirectedSimpleLocalGraph&lt; T &gt;:
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph__inherit__graph.svg" width="100%" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -143,9 +159,9 @@ struct DGtal::concepts::CUndirectedSimpleLocalGraph&lt; T &gt;</h3>
 
 <p>Aim: Represents the concept of local graph: each vertex has neighboring vertices, but we do not necessarily know all the vertices. </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph.html" title="Aim: Represents the concept of local graph: each vertex has neighboring vertices, but we do not neces...">CUndirectedSimpleLocalGraph</a>'</b> </p>
-<h1><a class="anchor" id="autotoc_md399"></a>
+<h1><a class="anchor" id="autotoc_md404"></a>
 Refinement of</h1>
-<h1><a class="anchor" id="autotoc_md400"></a>
+<h1><a class="anchor" id="autotoc_md405"></a>
 Associated types</h1>
 <ul>
 <li>Size: an integral type to count the number of vertices.</li>
@@ -153,7 +169,7 @@ Associated types</h1>
 <li>VertexSet: the type for storing a set of vertices.</li>
 <li><a class="el" href="structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph_1_1VertexMap.html">VertexMap</a>: a rebinding structure to associate Value to vertices of model <a class="el" href="structDGtal_1_1concepts_1_1CVertexMap.html" title="Aim: models of CVertexMap concept implement mapping between graph vertices and values.">CVertexMap</a>.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md401"></a>
+<h1><a class="anchor" id="autotoc_md406"></a>
 Notation</h1>
 <ul>
 <li><code>X</code> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph.html" title="Aim: Represents the concept of local graph: each vertex has neighboring vertices, but we do not neces...">CUndirectedSimpleLocalGraph</a></li>
@@ -162,9 +178,9 @@ Notation</h1>
 <li><code>out</code> : an output iterator of type OutputIterator (model of <a class="el" href="structboost_1_1OutputIterator.html" title="Go to http://www.sgi.com/tech/stl/OutputIterator.html.">boost::OutputIterator</a>).</li>
 <li><code>p</code> : a predicate on vertex of type VertexPredicate (model of <a class="el" href="structDGtal_1_1concepts_1_1CVertexPredicate.html" title="Aim: Defines a predicate on a vertex.">CVertexPredicate</a>).</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md402"></a>
+<h1><a class="anchor" id="autotoc_md407"></a>
 Definitions</h1>
-<h1><a class="anchor" id="autotoc_md403"></a>
+<h1><a class="anchor" id="autotoc_md408"></a>
 Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -178,15 +194,15 @@ Valid expressions and semantics</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Neighborhood   </td><td class="markdownTableBodyNone">x.writeNeighbors&lt;OutputIterator,VertexPredicate&gt;( out, v, p )   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Writes with the output iterator <code>out</code> the neighboring vertices of <code>v</code> that satisfy the predicate <code>p</code>.   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md404"></a>
+<h1><a class="anchor" id="autotoc_md409"></a>
 Invariants</h1>
-<h1><a class="anchor" id="autotoc_md405"></a>
+<h1><a class="anchor" id="autotoc_md410"></a>
 Models</h1>
 <ul>
 <li><a class="el" href="classDGtal_1_1DigitalSurface.html" title="Aim: Represents a set of n-1-cells in a nD space, together with adjacency relation between these cell...">DigitalSurface</a>, <a class="el" href="classDGtal_1_1LightImplicitDigitalSurface.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as the boundary of an impl...">LightImplicitDigitalSurface</a>, <a class="el" href="classDGtal_1_1LightExplicitDigitalSurface.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as connected surfels....">LightExplicitDigitalSurface</a></li>
 <li><a class="el" href="classDGtal_1_1Object.html" title="Aim: An object (or digital object) represents a set in some digital space associated with a digital t...">Object</a>, <a class="el" href="classDGtal_1_1MetricAdjacency.html" title="Aim: Describes digital adjacencies in digital spaces that are defined with the 1-norm and the infinit...">MetricAdjacency</a>, <a class="el" href="classDGtal_1_1DomainAdjacency.html" title="Aim: Given a domain and an adjacency, limits the given adjacency to the specified domain for all adja...">DomainAdjacency</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md406"></a>
+<h1><a class="anchor" id="autotoc_md411"></a>
 Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -559,9 +575,13 @@ template&lt;typename T &gt; </div>
 <li><a class="el" href="CUndirectedSimpleLocalGraph_8h_source.html">CUndirectedSimpleLocalGraph.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:55 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="namespaceDGtal_1_1concepts.html">concepts</a></li><li class="navelem"><a class="el" href="structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph.html">CUndirectedSimpleLocalGraph</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:34:02 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

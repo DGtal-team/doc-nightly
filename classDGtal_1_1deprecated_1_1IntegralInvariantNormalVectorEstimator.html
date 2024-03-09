@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,11 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="namespaceDGtal_1_1deprecated.html">deprecated</a></li><li class="navelem"><a class="el" href="classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html">IntegralInvariantNormalVectorEstimator</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
@@ -239,7 +255,7 @@ class DGtal::deprecated::IntegralInvariantNormalVectorEstimator&lt; TKSpace, TPo
 
 <p>Aim: This class implement an Integral Invariant normal vector estimator. </p>
 <p>Description of template class '<a class="el" href="classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html" title="Aim: This class implement an Integral Invariant normal vector estimator.">IntegralInvariantNormalVectorEstimator</a>' </p>
-<p><a class="el" href="citelist.html#CITEREF_Coeurjo-CVIU-2014">[27]</a></p>
+<p><a class="el" href="citelist.html#CITEREF_Coeurjo-CVIU-2014">[28]</a></p>
 <p>The algorithm we propose uses volume of a kernel (2D: <a class="el" href="classDGtal_1_1Ball2D.html" title="Aim: Model of the concept StarShaped represents any circle in the plane.">Ball2D</a>, 3D: <a class="el" href="classDGtal_1_1Ball3D.html" title="Aim: Model of the concept StarShaped3D represents any Sphere in the space.">Ball3D</a>) to approximate the normal vector. To compute the volume, we convolve a kernel around the surface and then count the number of cells belonging the shape. Theorical multigrid convergence is proved, with a convergence speed of O(h^1/3) with hypothesis about the shape geometry and the convolution kernel radius. Experimental results showed a multigrid convergence.</p>
 <p>Optimization is available when we give a range of 0-adjacent surfels to the estimator.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -1578,9 +1594,13 @@ template&lt;typename TKSpace , typename TPointPredicate &gt; </div>
 <li><a class="el" href="IntegralInvariantNormalVectorEstimator_8h_source.html">IntegralInvariantNormalVectorEstimator.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:56 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="namespaceDGtal_1_1deprecated.html">deprecated</a></li><li class="navelem"><a class="el" href="classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html">IntegralInvariantNormalVectorEstimator</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:34:03 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

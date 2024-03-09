@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('moduleIntegralInvariant.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,7 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">Integral invariant curvature estimator 2D/3D </div>  </div>
@@ -78,10 +98,7 @@ $(function() {
 <ul><li class="level1"><a href="#II_sectOverview">Overview</a><ul><li class="level2"><a href="#subsectIntegralInvariant">Integral Invariant for curvature computation</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#II_sectAlgo">Algorithm</a><ul><li class="level2"><a href="#II_subsectDef">Overall algorithm</a><ul><li class="level3"><a href="#subsubsectFunctors">Integral Invariant functors</a></li>
-<li class="level3"><a href="#subsubsectEstimators">Integral Invariant estimators</a></li>
-</ul>
-</li>
+<li class="level1"><a href="#II_sectAlgo">Algorithm</a><ul><li class="level2"><a href="#II_subsectDef">Overall algorithm</a></li>
 </ul>
 </li>
 <li class="level1"><a href="#II_sectImplementation">Example code</a></li>
@@ -91,8 +108,8 @@ $(function() {
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Jérémy Levallois</dd></dl>
 <h1><a class="anchor" id="II_sectOverview"></a>
 Overview</h1>
-<p>The algorithm implemented in the class <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html" title="Aim: This class implement an Integral Invariant estimator which computes for each surfel the volume o...">IntegralInvariantVolumeEstimator</a> and <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html" title="Aim: This class implement an Integral Invariant estimator which computes for each surfel the covarian...">IntegralInvariantCovarianceEstimator</a> are detailed in the article <a class="el" href="citelist.html#CITEREF_Coeurjo-CVIU-2014">[27]</a> .</p>
-<p>In geometry processing, interesting mathematical tools have been developed to design differential estimators on smooth surfaces based on Integral Invariant <a class="el" href="citelist.html#CITEREF_Pottmann2007">[94]</a> <a class="el" href="citelist.html#CITEREF_Pottmann2009">[95]</a> . The principle is simple: we move a convolution kernel along the shape surface and we compute integrals on the intersection between the shape and the convolution kernel, as follow in dimension 3:</p>
+<p>The algorithm implemented in the class <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html" title="Aim: This class implement an Integral Invariant estimator which computes for each surfel the volume o...">IntegralInvariantVolumeEstimator</a> and <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html" title="Aim: This class implement an Integral Invariant estimator which computes for each surfel the covarian...">IntegralInvariantCovarianceEstimator</a> are detailed in the article <a class="el" href="citelist.html#CITEREF_Coeurjo-CVIU-2014">[28]</a> .</p>
+<p>In geometry processing, interesting mathematical tools have been developed to design differential estimators on smooth surfaces based on Integral Invariant <a class="el" href="citelist.html#CITEREF_Pottmann2007">[95]</a> <a class="el" href="citelist.html#CITEREF_Pottmann2009">[96]</a> . The principle is simple: we move a convolution kernel along the shape surface and we compute integrals on the intersection between the shape and the convolution kernel, as follow in dimension 3:</p>
 <p class="formulaDsp">
 \[ V_r(x) = \int_{B_r(x)} \chi(p)dp\ \]
 </p>
@@ -111,7 +128,7 @@ Integral invariant computation in dimension 3.</div></div>
 Notations.</div></div>
  <h2><a class="anchor" id="subsectIntegralInvariant"></a>
 Integral Invariant for curvature computation</h2>
-<p>In <a class="el" href="citelist.html#CITEREF_Coeurjo2013">[26]</a> , we have demonstrated that some digital integral quantities provide curvature information when the kernel size tends to zero for a sufficiently smooth shape. Indeed, at \( x \) of the surface \( X \) and with a fixed radius \( r \), we obtain convergent local curvature estimators \( \tilde{\kappa}_r(X,x) \) and \( \tilde{H}_r(X,x) \) of quantities \( \kappa(X,x) \) and \( H(X,x) \) respectively:</p>
+<p>In <a class="el" href="citelist.html#CITEREF_Coeurjo2013">[27]</a> , we have demonstrated that some digital integral quantities provide curvature information when the kernel size tends to zero for a sufficiently smooth shape. Indeed, at \( x \) of the surface \( X \) and with a fixed radius \( r \), we obtain convergent local curvature estimators \( \tilde{\kappa}_r(X,x) \) and \( \tilde{H}_r(X,x) \) of quantities \( \kappa(X,x) \) and \( H(X,x) \) respectively:</p>
 <p class="formulaDsp">
 \[ \tilde{\kappa}_r(X,x) = \frac{3\pi}{2r} - \frac{3A_r(x)}{r^3},\quad \tilde{\kappa}_r(X,x) = \kappa(X,x)+ O(r) \]
 </p>
@@ -127,7 +144,7 @@ Integral Invariant for curvature computation</h2>
 \[ \forall 0 &lt; h &lt; r,\quad \hat{H}_r(Z&#39;,x,h) = \frac{8}{3r} - \frac{4\widehat{Vol}(B_{r/h}(\frac{1}{h} \cdot x ) \cap Z&#39;, h)}{\pi r^4}. \]
 </p>
 <p> where \( \hat{H}_r \) is an integral digital mean curvature estimator of a digital shape \( Z&#39; \subset ℤ^3 \) at point \( x \in \rm I\! R^3 \) and step \( h \) .</p>
-<p>We have demonstrated in <a class="el" href="citelist.html#CITEREF_Coeurjo2013">[26]</a> that to prove the multigrid convergence with a convergence speed of \( O(h^{\frac{1}{3}}) \), the Euclidean radius of the kernel must follow the rule \( r = k_mh^{\alpha_m} \) ( \( \alpha_m = \frac{1}{3} \) provides better worst-case errors, so we will use this value).</p>
+<p>We have demonstrated in <a class="el" href="citelist.html#CITEREF_Coeurjo2013">[27]</a> that to prove the multigrid convergence with a convergence speed of \( O(h^{\frac{1}{3}}) \), the Euclidean radius of the kernel must follow the rule \( r = k_mh^{\alpha_m} \) ( \( \alpha_m = \frac{1}{3} \) provides better worst-case errors, so we will use this value).</p>
 <p>Experimental results can be found at <a href="https://liris.cnrs.fr/jeremy.levallois/Papers/DGCI2013/">https://liris.cnrs.fr/jeremy.levallois/Papers/DGCI2013/</a> and <a href="https://liris.cnrs.fr/jeremy.levallois/Papers/AFIG2013/">https://liris.cnrs.fr/jeremy.levallois/Papers/AFIG2013/</a></p>
 <h1><a class="anchor" id="II_sectAlgo"></a>
 Algorithm</h1>
@@ -212,9 +229,13 @@ Mean curvature mapped on a Stanford bunny (credit is given to the Stanford Compu
 First principal curvature direction mapped on a Stanford bunny (credit is given to the Stanford Computer Graphics Laboratory https://graphics.stanford.edu/data/3Dscanrep/)</div></div>
   </div></div><!-- contents -->
 </div><!-- PageDoc -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:48 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:33:54 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

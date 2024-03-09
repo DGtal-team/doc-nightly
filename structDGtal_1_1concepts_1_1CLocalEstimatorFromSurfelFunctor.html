@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structDGtal_1_1concepts_1_1CLocalEstimatorFromSurfelFunctor.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,11 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="namespaceDGtal_1_1concepts.html">concepts</a></li><li class="navelem"><a class="el" href="structDGtal_1_1concepts_1_1CLocalEstimatorFromSurfelFunctor.html">CLocalEstimatorFromSurfelFunctor</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -129,25 +145,25 @@ struct DGtal::concepts::CLocalEstimatorFromSurfelFunctor&lt; T &gt;</h3>
 
 <p>Aim: this concept describes functors on digtal surface surfel which can be used to define local estimator using the adapter <a class="el" href="classDGtal_1_1LocalEstimatorFromSurfelFunctorAdapter.html" title="Aim: this class adapts any local functor on digital surface element to define a local estimator....">LocalEstimatorFromSurfelFunctorAdapter</a>. </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CLocalEstimatorFromSurfelFunctor.html" title="Aim: this concept describes functors on digtal surface surfel which can be used to define local estim...">CLocalEstimatorFromSurfelFunctor</a>'</b> </p>
-<h1><a class="anchor" id="autotoc_md311"></a>
+<h1><a class="anchor" id="autotoc_md316"></a>
 Refinement of</h1>
-<h1><a class="anchor" id="autotoc_md312"></a>
+<h1><a class="anchor" id="autotoc_md317"></a>
 Associated types</h1>
 <ul>
 <li><em>Surfel:</em> a type of Surfel</li>
 <li><em>Embedder:</em> a model of <a class="el" href="structDGtal_1_1concepts_1_1CSCellEmbedder.html" title="Aim: A cell embedder is a mapping from signed cells to Euclidean points. It adds inner types to funct...">CSCellEmbedder</a></li>
 <li><em>Quantity:</em> a return type for the estimator (model of <a class="el" href="structDGtal_1_1concepts_1_1CQuantity.html" title="Aim: defines the concept of quantity in DGtal.">CQuantity</a>)</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md313"></a>
+<h1><a class="anchor" id="autotoc_md318"></a>
 Notation</h1>
 <ul>
 <li><em>X</em> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CLocalEstimatorFromSurfelFunctor.html" title="Aim: this concept describes functors on digtal surface surfel which can be used to define local estim...">CLocalEstimatorFromSurfelFunctor</a></li>
 <li><em>x</em>, <em>y</em> : object of type X</li>
 <li><em>aSurfel</em> : object of type <em>Surfel</em> </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md314"></a>
+<h1><a class="anchor" id="autotoc_md319"></a>
 Definitions</h1>
-<h1><a class="anchor" id="autotoc_md315"></a>
+<h1><a class="anchor" id="autotoc_md320"></a>
 Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -161,12 +177,12 @@ Valid expressions and semantics</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">reset   </td><td class="markdownTableBodyNone">x.reset()   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">void   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">reset the estimator   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md316"></a>
+<h1><a class="anchor" id="autotoc_md321"></a>
 Invariants</h1>
-<h1><a class="anchor" id="autotoc_md317"></a>
+<h1><a class="anchor" id="autotoc_md322"></a>
 Models</h1>
 <p><a class="el" href="structDGtal_1_1functors_1_1DummyEstimatorFromSurfels.html">functors::DummyEstimatorFromSurfels</a>, <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingGaussianCurvatureEstimator.html" title="Aim: Estimates Gaussian curvature using CGAL Jet Fitting and Monge Form.">functors::MongeJetFittingGaussianCurvatureEstimator</a> (if WITH_CGAL), <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingMeanCurvatureEstimator.html" title="Aim: Estimates Mean curvature using CGAL Jet Fitting and Monge Form.">functors::MongeJetFittingMeanCurvatureEstimator</a> (if WITH_CGAL), <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html" title="Aim: Estimates Gaussian curvature using CGAL Jet Fitting and Monge Form.">functors::MongeJetFittingPrincipalCurvaturesEstimator</a> (if WITH_CGAL), <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingNormalVectorEstimator.html" title="Aim: Estimates normal vector using CGAL Jet Fitting and Monge Form.">functors::MongeJetFittingNormalVectorEstimator</a> (if WITH_CGAL), <a class="el" href="classDGtal_1_1functors_1_1LinearLeastSquareFittingNormalVectorEstimator.html" title="Aim: Estimates normal vector using CGAL linear least squares plane fitting.">functors::LinearLeastSquareFittingNormalVectorEstimator</a> (if WITH_CGAL), <a class="el" href="classDGtal_1_1functors_1_1ElementaryConvolutionNormalVectorEstimator.html" title="Aim: Estimates normal vector by convolution of elementary normal vector to adjacent surfel.">functors::ElementaryConvolutionNormalVectorEstimator</a>, <a class="el" href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html" title="Aim: Implements a functor to detect feature points from normal tensor voting strategy.">functors::TensorVotingFeatureExtraction</a>, <a class="el" href="classDGtal_1_1functors_1_1SphereFittingEstimator.html" title="Aim: Use Patate library to perform a local sphere fitting.">functors::SphereFittingEstimator</a> (if WITH_PATATE)</p>
-<h1><a class="anchor" id="autotoc_md318"></a>
+<h1><a class="anchor" id="autotoc_md323"></a>
 Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -509,9 +525,13 @@ template&lt;typename T &gt; </div>
 <li><a class="el" href="CLocalEstimatorFromSurfelFunctor_8h_source.html">CLocalEstimatorFromSurfelFunctor.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:55 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="namespaceDGtal_1_1concepts.html">concepts</a></li><li class="navelem"><a class="el" href="structDGtal_1_1concepts_1_1CLocalEstimatorFromSurfelFunctor.html">CLocalEstimatorFromSurfelFunctor</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:34:02 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

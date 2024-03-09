@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structDGtal_1_1concepts_1_1CDigitalSurfaceContainer.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,11 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="namespaceDGtal_1_1concepts.html">concepts</a></li><li class="navelem"><a class="el" href="structDGtal_1_1concepts_1_1CDigitalSurfaceContainer.html">CDigitalSurfaceContainer</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -92,7 +108,7 @@ Inheritance diagram for DGtal::concepts::CDigitalSurfaceContainer&lt; T &gt;:</d
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="structDGtal_1_1concepts_1_1CDigitalSurfaceContainer__inherit__graph.svg" width="234" height="127"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -162,9 +178,9 @@ struct DGtal::concepts::CDigitalSurfaceContainer&lt; T &gt;</h3>
 <p>Since there are so many digital surfaces, it is necessary to provide a mechanism to handle them generically. The class <a class="el" href="classDGtal_1_1DigitalSurface.html" title="Aim: Represents a set of n-1-cells in a nD space, together with adjacency relation between these cell...">DigitalSurface</a> will be the common proxy to hide models of <a class="el" href="structDGtal_1_1concepts_1_1CDigitalSurfaceContainer.html" title="Aim: The digital surface container concept describes a minimal set of inner types and methods so as t...">CDigitalSurfaceContainer</a>.</p>
 <p>Hence <a class="el" href="structDGtal_1_1concepts_1_1CDigitalSurfaceContainer.html" title="Aim: The digital surface container concept describes a minimal set of inner types and methods so as t...">CDigitalSurfaceContainer</a> describes how to access the data representing the digital surface in common way.</p>
 <p>See <a class="el" href="moduleDigitalSurfaces.html#dgtal_digsurf_sec3_2">Models of digital surface containers</a></p>
-<h1><a class="anchor" id="autotoc_md786"></a>
+<h1><a class="anchor" id="autotoc_md791"></a>
 Refinement of boost::CopyConstructible</h1>
-<h1><a class="anchor" id="autotoc_md787"></a>
+<h1><a class="anchor" id="autotoc_md792"></a>
 Associated types</h1>
 <ul>
 <li>KSpace: the type of cellular grid space in which lies the digital surface.</li>
@@ -173,16 +189,16 @@ Associated types</h1>
 <li>DigitalSurfaceTracker: the type for tracking surfels over the digital surface</li>
 <li>Size: the integral type for counting elements.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md788"></a>
+<h1><a class="anchor" id="autotoc_md793"></a>
 Notation</h1>
 <ul>
 <li><code>X</code> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CDigitalSurfaceContainer.html" title="Aim: The digital surface container concept describes a minimal set of inner types and methods so as t...">CDigitalSurfaceContainer</a></li>
 <li><code>x</code> : object of type X</li>
 <li><code>s</code> : object of type Surfel</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md789"></a>
+<h1><a class="anchor" id="autotoc_md794"></a>
 Definitions</h1>
-<h1><a class="anchor" id="autotoc_md790"></a>
+<h1><a class="anchor" id="autotoc_md795"></a>
 Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -204,14 +220,14 @@ Valid expressions and semantics</h1>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">empty container test   </td><td class="markdownTableBodyNone"><em>x.empty()</em>   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><em>bool</em>   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">returns <code>true</code> iff the digital surface contains no surfel.   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md791"></a>
+<h1><a class="anchor" id="autotoc_md796"></a>
 Invariants</h1>
-<h1><a class="anchor" id="autotoc_md792"></a>
+<h1><a class="anchor" id="autotoc_md797"></a>
 Models</h1>
 <ul>
 <li><a class="el" href="classDGtal_1_1DigitalSetBoundary.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as the boundary of a given...">DigitalSetBoundary</a>, <a class="el" href="classDGtal_1_1SetOfSurfels.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as connected surfels....">SetOfSurfels</a>, <a class="el" href="classDGtal_1_1ImplicitDigitalSurface.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as the boundary of an impl...">ImplicitDigitalSurface</a>, <a class="el" href="classDGtal_1_1LightImplicitDigitalSurface.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as the boundary of an impl...">LightImplicitDigitalSurface</a>, <a class="el" href="classDGtal_1_1ExplicitDigitalSurface.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as connected surfels....">ExplicitDigitalSurface</a>, <a class="el" href="classDGtal_1_1LightExplicitDigitalSurface.html" title="Aim: A model of CDigitalSurfaceContainer which defines the digital surface as connected surfels....">LightExplicitDigitalSurface</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md793"></a>
+<h1><a class="anchor" id="autotoc_md798"></a>
 Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -719,9 +735,13 @@ template&lt;typename T &gt; </div>
 <li><a class="el" href="CDigitalSurfaceContainer_8h_source.html">CDigitalSurfaceContainer.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:56 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="namespaceDGtal_1_1concepts.html">concepts</a></li><li class="navelem"><a class="el" href="structDGtal_1_1concepts_1_1CDigitalSurfaceContainer.html">CDigitalSurfaceContainer</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:34:03 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

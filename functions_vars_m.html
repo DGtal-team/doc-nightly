@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -55,6 +59,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_vars_m.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -2368,6 +2388,7 @@ $(function() {
 <li>myNormals
 : <a class="el" href="classDGtal_1_1DigitalSurfaceRegularization.html#a538897e3ebb371de06e1a4a1af8e9589">DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;</a>
 , <a class="el" href="classDGtal_1_1experimental_1_1ChamferNorm2D.html#a8e56c209dac366c147d748650446ac47">DGtal::experimental::ChamferNorm2D&lt; TSpace &gt;</a>
+, <a class="el" href="structDGtal_1_1WindingNumbersShape.html#ae638fff01fc0ec328fe68364072f19b2">DGtal::WindingNumbersShape&lt; TSpace &gt;</a>
 </li>
 <li>myNormU2
 : <a class="el" href="classDGtal_1_1SimpleLinearRegression.html#a6ac9e3cfdf0dd4155eae36faaeacc493">DGtal::SimpleLinearRegression</a>
@@ -2396,6 +2417,18 @@ $(function() {
 </li>
 <li>myNumberAdjEdgesToPointel
 : <a class="el" href="classDGtal_1_1DigitalSurfaceRegularization.html#a6a738dcf750b8eea3dcfd95f6c7c84ba">DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;</a>
+</li>
+<li>myO_CH
+: <a class="el" href="structDGtal_1_1WindingNumbersShape.html#ab0446ba2a5cd539424eaa48431f342cc">DGtal::WindingNumbersShape&lt; TSpace &gt;</a>
+</li>
+<li>myO_CN
+: <a class="el" href="structDGtal_1_1WindingNumbersShape.html#a25db799389b2433f0e044cc3257021c1">DGtal::WindingNumbersShape&lt; TSpace &gt;</a>
+</li>
+<li>myO_PI
+: <a class="el" href="structDGtal_1_1WindingNumbersShape.html#adc060724468e882aaf7b323c4c417c8f">DGtal::WindingNumbersShape&lt; TSpace &gt;</a>
+</li>
+<li>myO_W
+: <a class="el" href="structDGtal_1_1WindingNumbersShape.html#a2642a8b87893813ddb6fb8451793995e">DGtal::WindingNumbersShape&lt; TSpace &gt;</a>
 </li>
 <li>myObject
 : <a class="el" href="classDGtal_1_1Expander.html#a10a62be75e9f233a28d7957ccba49b21">DGtal::Expander&lt; TObject &gt;</a>
@@ -2602,6 +2635,9 @@ $(function() {
 : <a class="el" href="structDGtal_1_1concepts_1_1CMetricSpace.html#accbc88357f3e6d5b642aa9ac8d215236">DGtal::concepts::CMetricSpace&lt; T &gt;</a>
 , <a class="el" href="structDGtal_1_1concepts_1_1CPowerMetric.html#a64c3c8072929e2ddd50bbe8b6899868e">DGtal::concepts::CPowerMetric&lt; T &gt;</a>
 </li>
+<li>myPointAreas
+: <a class="el" href="structDGtal_1_1WindingNumbersShape.html#a042b39c25efb7cb3e626dc8bfa6b05fd">DGtal::WindingNumbersShape&lt; TSpace &gt;</a>
+</li>
 <li>myPointContainer
 : <a class="el" href="classDGtal_1_1AlphaThickSegmentComputer.html#a9bcc569f2667f535f21bc155aaecd397">DGtal::AlphaThickSegmentComputer&lt; TInputPoint, TConstIterator &gt;</a>
 </li>
@@ -2640,6 +2676,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#ae094d968cd0b36460d9ec01090c0a382">DGtal::functors::MongeJetFittingPrincipalCurvaturesEstimator&lt; TSurfel, TEmbedder &gt;</a>
 , <a class="el" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#a268618969aed1fe1a296211292e25610">DGtal::functors::SphericalHoughNormalVectorEstimator&lt; TSurfel, TEmbedder &gt;</a>
 , <a class="el" href="classDGtal_1_1SymmetricConvexExpander.html#af321ee1f800deed7b763025de1bb8cda">DGtal::SymmetricConvexExpander&lt; TKSpace, TPointPredicate &gt;</a>
+, <a class="el" href="structDGtal_1_1WindingNumbersShape.html#a7d67f77c8eba41f21f68ed796d941427">DGtal::WindingNumbersShape&lt; TSpace &gt;</a>
 </li>
 <li>myPointSet
 : <a class="el" href="classDGtal_1_1ChordNaivePlaneComputer.html#a892e41261be1c44560dd1f2dfa73d5e5">DGtal::ChordNaivePlaneComputer&lt; TSpace, TInputPoint, TInternalScalar &gt;</a>
@@ -3967,9 +4004,12 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:59 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Sat Mar 9 2024 09:34:06 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

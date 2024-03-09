@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -55,6 +59,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('globals_t.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -93,17 +113,17 @@ $(function() {
 : <a class="el" href="testSurfaceHelper_8cpp.html#a764f3c785ebd771c137166441e5cc9c4">testSurfaceHelper.cpp</a>
 </li>
 <li>TEST_CASE()
-: <a class="el" href="testHyperRectDomain_8cpp.html#a38fa911e45ec14de8bc5c990e9d55ec5">testHyperRectDomain.cpp</a>
-, <a class="el" href="testRealFFT_8cpp.html#ac5e99fb39503450caedc683f30e38978">testRealFFT.cpp</a>
-, <a class="el" href="testHyperRectDomain_8cpp.html#a919a7b34e3995f8ea2655ec51c3b7ef8">testHyperRectDomain.cpp</a>
+: <a class="el" href="testHyperRectDomain_8cpp.html#a919a7b34e3995f8ea2655ec51c3b7ef8">testHyperRectDomain.cpp</a>
+, <a class="el" href="testRealFFT_8cpp.html#a7980595c6d34bed97c553e2357988656">testRealFFT.cpp</a>
+, <a class="el" href="testHyperRectDomain_8cpp.html#a5f66dd80008696776430770ba9140a00">testHyperRectDomain.cpp</a>
 , <a class="el" href="testPointHashFunctions_8cpp.html#a9db924dea9da7e98f49e12113dee1740">testPointHashFunctions.cpp</a>
 , <a class="el" href="testPointVector_8cpp.html#a52009df5a72e7a7ce40854ef43dfe3c9">testPointVector.cpp</a>
 , <a class="el" href="testMeaningfulScaleAnalysis_8cpp.html#ac36439b33be920ec53d2926cb07a894b">testMeaningfulScaleAnalysis.cpp</a>
 , <a class="el" href="testMultiStatistics_8cpp.html#a7754ce01b21d72f870bca3aadf0981c8">testMultiStatistics.cpp</a>
 , <a class="el" href="testProfile_8cpp.html#aa13a456a153c0b8577cac528df181e09">testProfile.cpp</a>
 , <a class="el" href="testRealFFT_8cpp.html#af9fb89f756c294253ea5df338527c963">testRealFFT.cpp</a>
-, <a class="el" href="testRawReader_8cpp.html#abdbc7be3631224d244b7d0720f91d0f0">testRawReader.cpp</a>
-, <a class="el" href="testHyperRectDomain_8cpp.html#aa81617ce83a8b63d0eb1eb11335610f8">testHyperRectDomain.cpp</a>
+, <a class="el" href="testRawReader_8cpp.html#a8a9a16458f85258124ddca3268f618f7">testRawReader.cpp</a>
+, <a class="el" href="testHyperRectDomain_8cpp.html#a38fa911e45ec14de8bc5c990e9d55ec5">testHyperRectDomain.cpp</a>
 , <a class="el" href="testSTBWriter_8cpp.html#aa749b451627144a6130533c7073b7aae">testSTBWriter.cpp</a>
 , <a class="el" href="testCompressedVolWriter_8cpp.html#a1082a58a6120c59749c9524e64b2eb8d">testCompressedVolWriter.cpp</a>
 , <a class="el" href="testSTBReader_8cpp.html#a7b48530f64a39156aa96db0a505c622f">testSTBReader.cpp</a>
@@ -113,38 +133,40 @@ $(function() {
 , <a class="el" href="testParDirCollapse_8cpp.html#abf14e62ad11412dba72f93c00757a8e7">testParDirCollapse.cpp</a>
 , <a class="el" href="testNeighborhoodConfigurations_8cpp.html#a8581ead2cc71e959cfc4bfe8a9627833">testNeighborhoodConfigurations.cpp</a>
 , <a class="el" href="testKhalimskySpaceND_8cpp.html#ad23357152456a1542d830fb6dc026292">testKhalimskySpaceND.cpp</a>
-, <a class="el" href="testRealFFT_8cpp.html#a7980595c6d34bed97c553e2357988656">testRealFFT.cpp</a>
+, <a class="el" href="testRealFFT_8cpp.html#a698cf1e8ef200553d798e233699cb35a">testRealFFT.cpp</a>
 , <a class="el" href="testKhalimskySpaceND_8cpp.html#abb254f04aaef837d92b7626af9d855d1">testKhalimskySpaceND.cpp</a>
+, <a class="el" href="testWindingNumbersShape_8cpp.html#a18590cff1120af82e07ed3d810fa6ec0">testWindingNumbersShape.cpp</a>
 , <a class="el" href="testProjection_8cpp.html#adb2c8c1eb2e470f67878bd16a910a13e">testProjection.cpp</a>
 , <a class="el" href="testMeshVoxelization_8cpp.html#a31b760f3c384475fc22cddd1031a2ed9">testMeshVoxelization.cpp</a>
+, <a class="el" href="testlibigl_8cpp.html#a3ef35aa3f3218d124a4c010ac2542d9a">testlibigl.cpp</a>
 , <a class="el" href="testLemniscate2D_8cpp.html#a1b3d58c546caff80247178c83f938ada">testLemniscate2D.cpp</a>
 , <a class="el" href="testHalfPlane_8cpp.html#af50741eb94aeb3773832b3feae85a1ee">testHalfPlane.cpp</a>
 , <a class="el" href="testAstroid2D_8cpp.html#a567b8b2f06b6478db3764fe398b742a0">testAstroid2D.cpp</a>
 , <a class="el" href="testRealFFT_8cpp.html#a93f45f1fabc6ac8739fddf4faab7e196">testRealFFT.cpp</a>
 , <a class="el" href="testContainerTraits_8cpp.html#a6c4b37b34d398c740bdcd75b9245604b">testContainerTraits.cpp</a>
-, <a class="el" href="testParametricCurveDigitization_8cpp.html#ab44095e9ade30a897f6e589e82bd035e">testParametricCurveDigitization.cpp</a>
+, <a class="el" href="testParametricCurveDigitization_8cpp.html#afd636125e7b2d32845dc5d538e10bfe9">testParametricCurveDigitization.cpp</a>
 , <a class="el" href="testVectorsInHeat_8cpp.html#a51ee112efc96ae7ca5caae68b766f966">testVectorsInHeat.cpp</a>
 , <a class="el" href="testPolygonalCalculus_8cpp.html#a0d727a31be517d5629c194c4b32ff1e6">testPolygonalCalculus.cpp</a>
 , <a class="el" href="testHeatLaplace_8cpp.html#a71bce4184cfb4883900bf64a24cabb5f">testHeatLaplace.cpp</a>
 , <a class="el" href="testGeodesicsInHeat_8cpp.html#adc259f95f0e0d4ecb3d4167252c59f65">testGeodesicsInHeat.cpp</a>
 , <a class="el" href="testContainerTraits_8cpp.html#a40c3c55f0c83eb161dad14d383ecf8b6">testContainerTraits.cpp</a>
-, <a class="el" href="testRawReader_8cpp.html#a477b5571e63113e53201d9153a1cd6f0">testRawReader.cpp</a>
-, <a class="el" href="testContainerTraits_8cpp.html#a97e95d230070c180cd2b5069600b6ee4">testContainerTraits.cpp</a>
-, <a class="el" href="testParametricCurveDigitization_8cpp.html#a23891f1d6fca7ab4cf94da812f412d12">testParametricCurveDigitization.cpp</a>
 , <a class="el" href="testRawReader_8cpp.html#a037acae8772b01980862d8b94efa74e4">testRawReader.cpp</a>
+, <a class="el" href="testContainerTraits_8cpp.html#a97e95d230070c180cd2b5069600b6ee4">testContainerTraits.cpp</a>
+, <a class="el" href="testParametricCurveDigitization_8cpp.html#a739d673d63ccf4800c84842179f13747">testParametricCurveDigitization.cpp</a>
+, <a class="el" href="testRawReader_8cpp.html#abdbc7be3631224d244b7d0720f91d0f0">testRawReader.cpp</a>
 , <a class="el" href="testITKReader_8cpp.html#ae929f67fb53bc17a3b3d27f363f5f1b5">testITKReader.cpp</a>
 , <a class="el" href="testITKDicomReader_8cpp.html#ae929f67fb53bc17a3b3d27f363f5f1b5">testITKDicomReader.cpp</a>
 , <a class="el" href="testVoronoiMapComplete_8cpp.html#a5d9f67b4b5e38ce403fde37d100e8d4e">testVoronoiMapComplete.cpp</a>
-, <a class="el" href="testLpMetric_8cpp.html#ab3aaa535e4fe4b61c6b264139af04f61">testLpMetric.cpp</a>
-, <a class="el" href="testShroudsRegularization_8cpp.html#a18c59acdb73e82c65ee7c850a6b6c63a">testShroudsRegularization.cpp</a>
-, <a class="el" href="testParametricCurveDigitization_8cpp.html#afd636125e7b2d32845dc5d538e10bfe9">testParametricCurveDigitization.cpp</a>
+, <a class="el" href="testSphericalHoughNormalVectorEstimator_8cpp.html#ade98893fc48d9e28658f88c5760febf9">testSphericalHoughNormalVectorEstimator.cpp</a>
+, <a class="el" href="testParametricCurveDigitization_8cpp.html#a23891f1d6fca7ab4cf94da812f412d12">testParametricCurveDigitization.cpp</a>
 , <a class="el" href="testArithmeticalDSSComputerOnSurfels_8cpp.html#aacc3eb9a2a30dc0b10f20a67950035fc">testArithmeticalDSSComputerOnSurfels.cpp</a>
-, <a class="el" href="testDigitalSurfaceRegularization_8cpp.html#a8db2bb0e28d0e5c7ab5236027dc37215">testDigitalSurfaceRegularization.cpp</a>
+, <a class="el" href="testDigitalPlanePredicate_8cpp.html#ad0f7595c463fc65dd6709422cb8c2a44">testDigitalPlanePredicate.cpp</a>
 , <a class="el" href="testIntegralInvariantShortcuts_8cpp.html#a55198a6c7371d0ba62e4bb43a005806f">testIntegralInvariantShortcuts.cpp</a>
 , <a class="el" href="testPlaneProbingParallelepipedEstimator_8cpp.html#a14bd45394a7012e7e00c94450136c7a1">testPlaneProbingParallelepipedEstimator.cpp</a>
-, <a class="el" href="testDigitalPlanePredicate_8cpp.html#ad0f7595c463fc65dd6709422cb8c2a44">testDigitalPlanePredicate.cpp</a>
 , <a class="el" href="testPlaneProbingTetrahedronEstimator_8cpp.html#a204bb6842dd05c81b2784392555da33e">testPlaneProbingTetrahedronEstimator.cpp</a>
-, <a class="el" href="testSphericalHoughNormalVectorEstimator_8cpp.html#ade98893fc48d9e28658f88c5760febf9">testSphericalHoughNormalVectorEstimator.cpp</a>
+, <a class="el" href="testDigitalSurfaceRegularization_8cpp.html#a8db2bb0e28d0e5c7ab5236027dc37215">testDigitalSurfaceRegularization.cpp</a>
+, <a class="el" href="testShroudsRegularization_8cpp.html#a18c59acdb73e82c65ee7c850a6b6c63a">testShroudsRegularization.cpp</a>
+, <a class="el" href="testLpMetric_8cpp.html#ab3aaa535e4fe4b61c6b264139af04f61">testLpMetric.cpp</a>
 </li>
 <li>TEST_CASE_METHOD()
 : <a class="el" href="testVoxelComplex_8cpp.html#a95c6c2eb58fb0f7880f58b243ee4e1a4">testVoxelComplex.cpp</a>
@@ -755,7 +777,7 @@ $(function() {
 : <a class="el" href="testIteratorCirculatorTraits_8cpp.html#aa6b0af826b313ca4e845d8ad13929f5d">testIteratorCirculatorTraits.cpp</a>
 </li>
 <li>testIteratorHelper()
-: <a class="el" href="testHyperRectDomain_8cpp.html#a9dc1b1b3428cfbcfddbe15e560e61e37">testHyperRectDomain.cpp</a>
+: <a class="el" href="testHyperRectDomain_8cpp.html#a2a66e4096ee48561f5c41f115aeefb63">testHyperRectDomain.cpp</a>
 </li>
 <li>testIteratorHelperImpl()
 : <a class="el" href="testHyperRectDomain_8cpp.html#afc280a6035189d31bf55c15b75276b97">testHyperRectDomain.cpp</a>
@@ -847,8 +869,8 @@ $(function() {
 : <a class="el" href="testAdjacency_8cpp.html#ae15704b0f05d99c7948d6384ed6cff7e">testAdjacency.cpp</a>
 </li>
 <li>testMetrics()
-: <a class="el" href="testMetrics_8cpp.html#a80d8a6bf673efc5005e27384cb400303">testMetrics.cpp</a>
-, <a class="el" href="testSeparableMetricAdapter_8cpp.html#a80d8a6bf673efc5005e27384cb400303">testSeparableMetricAdapter.cpp</a>
+: <a class="el" href="testSeparableMetricAdapter_8cpp.html#a80d8a6bf673efc5005e27384cb400303">testSeparableMetricAdapter.cpp</a>
+, <a class="el" href="testMetrics_8cpp.html#a80d8a6bf673efc5005e27384cb400303">testMetrics.cpp</a>
 </li>
 <li>testMiddle()
 : <a class="el" href="testIteratorFunctions_8cpp.html#aee1a3e5d3cd7a7af03ee8cdc269fa364">testIteratorFunctions.cpp</a>
@@ -920,10 +942,10 @@ $(function() {
 : <a class="el" href="testArithmeticalDSS_8cpp.html#ae81c985221eecf2a58209ece17778ade">testArithmeticalDSS.cpp</a>
 </li>
 <li>testPattern()
-: <a class="el" href="testLighterSternBrocot_8cpp.html#a3c408842035d2e87426bd3e20bf35c4b">testLighterSternBrocot.cpp</a>
-, <a class="el" href="testLightSternBrocot_8cpp.html#a3c408842035d2e87426bd3e20bf35c4b">testLightSternBrocot.cpp</a>
-, <a class="el" href="testPattern_8cpp.html#a09e863a0956eeb48afc5bb6cf8b10c63">testPattern.cpp</a>
+: <a class="el" href="testPattern_8cpp.html#a09e863a0956eeb48afc5bb6cf8b10c63">testPattern.cpp</a>
 , <a class="el" href="testSternBrocot_8cpp.html#a3c408842035d2e87426bd3e20bf35c4b">testSternBrocot.cpp</a>
+, <a class="el" href="testLightSternBrocot_8cpp.html#a3c408842035d2e87426bd3e20bf35c4b">testLightSternBrocot.cpp</a>
+, <a class="el" href="testLighterSternBrocot_8cpp.html#a3c408842035d2e87426bd3e20bf35c4b">testLighterSternBrocot.cpp</a>
 </li>
 <li>testPatterns()
 : <a class="el" href="testPattern_8cpp.html#a021611738a0d966831621b5365a510ad">testPattern.cpp</a>
@@ -1301,9 +1323,12 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:01:00 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Sat Mar 9 2024 09:34:07 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

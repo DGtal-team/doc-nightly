@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('structDGtal_1_1concepts_1_1CDigitalSet.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,11 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="namespaceDGtal_1_1concepts.html">concepts</a></li><li class="navelem"><a class="el" href="structDGtal_1_1concepts_1_1CDigitalSet.html">CDigitalSet</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
@@ -92,7 +108,7 @@ Inheritance diagram for DGtal::concepts::CDigitalSet&lt; T &gt;:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="structDGtal_1_1concepts_1_1CDigitalSet__inherit__graph.svg" width="100%" height="394"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -161,7 +177,7 @@ struct DGtal::concepts::CDigitalSet&lt; T &gt;</h3>
 
 <p>Aim: Represents a set of points within the given domain. This set of points is modifiable by the user. It is thus very close to the STL concept of simple associative container (like set std::set&lt;Point&gt;), except that there is a notion of maximal set of points (the whole domain). </p>
 <p>Description of <b>concept</b> '<b><a class="el" href="structDGtal_1_1concepts_1_1CDigitalSet.html" title="Aim: Represents a set of points within the given domain. This set of points is modifiable by the user...">CDigitalSet</a>'</b> </p>
-<h1><a class="anchor" id="autotoc_md604"></a>
+<h1><a class="anchor" id="autotoc_md609"></a>
 Refinement of</h1>
 <ul>
 <li><a class="el" href="structboost_1_1CopyConstructible.html" title="Go to http://www.sgi.com/tech/stl/CopyConstructible.html.">boost::CopyConstructible</a></li>
@@ -169,7 +185,7 @@ Refinement of</h1>
 </ul>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000057">Todo:</a></b></dt><dd>add <a class="el" href="structboost_1_1Container.html" title="Go to http://www.sgi.com/tech/stl/Container.html.">boost::Container</a> ? Not for now, since coding style do not match with STL (e.g. Iterator instead of iterator).</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>It is also a refinement of <a class="el" href="structboost_1_1Assignable.html" title="Go to http://www.sgi.com/tech/stl/Assignable.html.">boost::Assignable</a> from <a class="el" href="structDGtal_1_1concepts_1_1CPointPredicate.html" title="Aim: Defines a predicate on a point.">concepts::CPointPredicate</a>.</dd></dl>
-<h1><a class="anchor" id="autotoc_md605"></a>
+<h1><a class="anchor" id="autotoc_md610"></a>
 Associated types</h1>
 <ul>
 <li><code>Domain:</code> the domain in which points are defined, a model of concept <a class="el" href="structDGtal_1_1concepts_1_1CDomain.html" title="Aim: This concept represents a digital domain, i.e. a non mutable subset of points of the given digit...">CDomain</a>.</li>
@@ -177,7 +193,7 @@ Associated types</h1>
 <li><code>Iterator:</code> the iterator type for visiting elements of the set, as well as modify the set. The iterator should be readable (model of <a class="el" href="structboost__concepts_1_1ReadableIteratorConcept.html" title="Go to http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/ReadableIterator.html.">boost_concepts::ReadableIteratorConcept</a>) and should allow single pass traversal (model of <a class="el" href="structboost__concepts_1_1SinglePassIteratorConcept.html" title="Go to http://www.boost.org/doc/libs/1_52_0/libs/iterator/doc/SinglePassIterator.html.">boost_concepts::SinglePassIteratorConcept</a>). Its value has type <code>Point</code> (defined in <a class="el" href="structDGtal_1_1concepts_1_1CPointPredicate.html" title="Aim: Defines a predicate on a point.">concepts::CPointPredicate</a>).</li>
 <li><code>ConstIterator:</code> the type for visiting elements of the set. Note that types for Iterator and ConstIterator should be the same, similarly to STL simple associative containers.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md606"></a>
+<h1><a class="anchor" id="autotoc_md611"></a>
 Notation</h1>
 <ul>
 <li><code>X</code> : A type that is a model of <a class="el" href="structDGtal_1_1concepts_1_1CDigitalSet.html" title="Aim: Represents a set of points within the given domain. This set of points is modifiable by the user...">CDigitalSet</a></li>
@@ -185,9 +201,9 @@ Notation</h1>
 <li><em>p</em>, <em>p1</em>, <em>p2</em> : objects of type <code>Point</code> </li>
 <li><em>it</em> : object of type <code>Iterator</code> </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md607"></a>
+<h1><a class="anchor" id="autotoc_md612"></a>
 Definitions</h1>
-<h1><a class="anchor" id="autotoc_md608"></a>
+<h1><a class="anchor" id="autotoc_md613"></a>
 Valid expressions and semantics</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -231,14 +247,14 @@ Valid expressions and semantics</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Search point   </td><td class="markdownTableBodyNone"><em>x.find( p )</em>   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"><code>ConstIterator</code>   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone">Returns a const iterator pointing on point <em>p</em> if it was found in the set <em>x</em>, or <em>x.end()</em> otherwise.   </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
 </table>
-<h1><a class="anchor" id="autotoc_md609"></a>
+<h1><a class="anchor" id="autotoc_md614"></a>
 Invariants</h1>
-<h1><a class="anchor" id="autotoc_md610"></a>
+<h1><a class="anchor" id="autotoc_md615"></a>
 Models</h1>
 <ul>
 <li><a class="el" href="classDGtal_1_1DigitalSetBySTLVector.html" title="Aim: Realizes the concept CDigitalSet by using the STL container std::vector.">DigitalSetBySTLVector</a>, <a class="el" href="classDGtal_1_1DigitalSetBySTLSet.html" title="Aim: A container class for storing sets of digital points within some given domain.">DigitalSetBySTLSet</a>, <a class="el" href="classDGtal_1_1DigitalSetFromMap.html" title="Aim: An adapter for viewing an associative image container like ImageContainerBySTLMap as a simple di...">DigitalSetFromMap</a>, DigitalSetFromAssociativeContainer</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md611"></a>
+<h1><a class="anchor" id="autotoc_md616"></a>
 Notes</h1>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -803,9 +819,13 @@ template&lt;typename T &gt; </div>
 <li><a class="el" href="CDigitalSet_8h_source.html">CDigitalSet.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:56 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="namespaceDGtal_1_1concepts.html">concepts</a></li><li class="navelem"><a class="el" href="structDGtal_1_1concepts_1_1CDigitalSet.html">CDigitalSet</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:34:03 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

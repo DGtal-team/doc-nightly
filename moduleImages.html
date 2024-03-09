@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -54,6 +58,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('moduleImages.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,7 +89,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">Images </div>  </div>
@@ -222,7 +242,7 @@ ImageContainerBySTLMap</h2>
 ImageContainerByHashTree</h2>
 <p><a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html" title="Model of CImageContainer implementing the association key&lt;-&gt;Value using a hash tree....">experimental::ImageContainerByHashTree</a> is an experimental image container implementing a pointerless nD-tree structure. In dimension 2 and 3, this structure is similar to quadtree and octree repsectively in which hierarchical links between a node and its children is given by prefix of a binary representation of the node coordinates using <a class="el" href="classDGtal_1_1Morton.html" title="Aim: Implements the binary Morton code construction in nD.">Morton</a> keys. Finally, data values are stored in the structure in a hash table whose hash function is a suffix on the <a class="el" href="classDGtal_1_1Morton.html" title="Aim: Implements the binary Morton code construction in nD.">Morton</a> key code.</p>
 <p>Such container is well adapted for high resolution sparse images.</p>
-<p>For more details, please refer to <a class="el" href="citelist.html#CITEREF_Lewiner2009a">[81]</a></p>
+<p>For more details, please refer to <a class="el" href="citelist.html#CITEREF_Lewiner2009a">[82]</a></p>
 <h1><a class="anchor" id="dgtalImagesAdapters"></a>
 Image Adapter classes</h1>
 <p><a class="el" href="classDGtal_1_1ImageAdapter.html" title="Aim: implements an image adapter with a given domain (i.e. a subdomain) and 3 functors : g for domain...">ImageAdapter</a>, <a class="el" href="classDGtal_1_1ConstImageAdapter.html" title="Aim: implements a const image adapter with a given domain (i.e. a subdomain) and 2 functors : g for d...">ConstImageAdapter</a> are perfect swiss-knifes to transform and adapt images (change their domain definition, change their value types, ...). These classses are parametrized by several types and functor in order to adapt the behavior of image getters/setters (<em>operator()</em> and <em>setValue</em> methods). These adapted behaviors are computed on-the-fly when calling these methods.</p>
@@ -473,9 +493,13 @@ Constant image from a function, functor or lambda</h2>
  <dl class="section see"><dt>See also</dt><dd>FunctorHolder, <a class="el" href="moduleFunctors.html">Using functions, functors and lambdas in DGtal</a> </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:48 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageImage.html">Image package</a></li>
+    <li class="footer">Generated on Sat Mar 9 2024 09:33:54 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -20,7 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="modern-doxygen-blue.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -55,6 +59,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_type_r.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -250,6 +270,7 @@ $(function() {
 , <a class="el" href="classDGtal_1_1TrueGlobalEstimatorOnPoints.html#a4cb2e943798d77e6933502b54e39a8bb">DGtal::TrueGlobalEstimatorOnPoints&lt; TConstIteratorOnPoints, TParametricShape, TParametricShapeFunctor &gt;</a>
 , <a class="el" href="classDGtal_1_1TrueLocalEstimatorOnPoints.html#a31b59096dedef81abbe6479cb89dc964">DGtal::TrueLocalEstimatorOnPoints&lt; TConstIteratorOnPoints, TParametricShape, TParametricShapeFunctor &gt;</a>
 , <a class="el" href="classDGtal_1_1Viewer3D.html#a8eab90fb6b37a77e1858f908f0b16a41">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;</a>
+, <a class="el" href="structDGtal_1_1WindingNumbersShape.html#a43f3d2eac0da58e7c15ff19db1433048">DGtal::WindingNumbersShape&lt; TSpace &gt;</a>
 </li>
 <li>RealPoint2
 : <a class="el" href="classDGtal_1_1MaximalSegmentSliceEstimation.html#a34525f82bba55e19af54833d36bd86eb">DGtal::MaximalSegmentSliceEstimation&lt; TSurface &gt;</a>
@@ -353,6 +374,7 @@ $(function() {
 , <a class="el" href="structDGtal_1_1SurfaceMeshWriter.html#a267b3ab5d5bbb246e6b9910bb5e599a8">DGtal::SurfaceMeshWriter&lt; TRealPoint, TRealVector &gt;</a>
 , <a class="el" href="classDGtal_1_1TangentFromDSS2DFunctor.html#ac90a5ecf3673999718de42f6e7337463">DGtal::TangentFromDSS2DFunctor&lt; DSS, LambdaFunction &gt;</a>
 , <a class="el" href="classDGtal_1_1TangentFromDSS3DFunctor.html#ac2c230cb9486119fdc7bc5a7ca2ee3ae">DGtal::TangentFromDSS3DFunctor&lt; DSS, LambdaFunction &gt;</a>
+, <a class="el" href="structDGtal_1_1WindingNumbersShape.html#ab5ea0885fe78e612f50385ecb17a7144">DGtal::WindingNumbersShape&lt; TSpace &gt;</a>
 </li>
 <li>RealVector2D
 : <a class="el" href="classDGtal_1_1LambdaMST3DBy2DEstimator.html#a44a046320a8ea5249500131bc733f2b5">DGtal::LambdaMST3DBy2DEstimator&lt; Iterator3D, Functor, LambdaFunctor, CONNECTIVITY &gt;</a>
@@ -392,15 +414,19 @@ $(function() {
 , <a class="el" href="structDGtal_1_1GraphVisitorRange_1_1NodeAccessor.html#a8e279664a4db8d9fb502fd1b7e1c19cd">DGtal::GraphVisitorRange&lt; TGraphVisitor &gt;::NodeAccessor</a>
 , <a class="el" href="structDGtal_1_1GraphVisitorRange_1_1VertexAccessor.html#ac22a70773090362322a086c5f5060da3">DGtal::GraphVisitorRange&lt; TGraphVisitor &gt;::VertexAccessor</a>
 , <a class="el" href="classDGtal_1_1ImageContainerBySTLVector_1_1SpanIterator.html#a96e96dc0864d5a38ede10549909c12bf">DGtal::ImageContainerBySTLVector&lt; TDomain, TValue &gt;::SpanIterator</a>
-, <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1ConstIterator.html#ab3236be19ec3e0a0f800f802c99d16be">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::ConstIterator</a>
 </li>
 <li>Reference
 : <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1ConstIterator.html#a28ec2393cf2f7268f9f86bf266b8cdb5">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::ConstIterator</a>
-, <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1Iterator.html#a344fede9e0536ea6b06498f9a45a2fcf">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::Iterator</a>
 </li>
 <li>reference
-: <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1Iterator.html#aef3c9b1dbc1b2950ac6d3e30f64f25ae">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::Iterator</a>
-, <a class="el" href="classDGtal_1_1IndexedListWithBlocks.html#a546e84a332a93cb8015ed9fcd55df279">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;</a>
+: <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1ConstIterator.html#ab3236be19ec3e0a0f800f802c99d16be">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::ConstIterator</a>
+, <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1Iterator.html#aef3c9b1dbc1b2950ac6d3e30f64f25ae">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::Iterator</a>
+</li>
+<li>Reference
+: <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1Iterator.html#a344fede9e0536ea6b06498f9a45a2fcf">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::Iterator</a>
+</li>
+<li>reference
+: <a class="el" href="classDGtal_1_1IndexedListWithBlocks.html#a546e84a332a93cb8015ed9fcd55df279">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;</a>
 </li>
 <li>Reference
 : <a class="el" href="classDGtal_1_1IndexedListWithBlocks.html#a2a6a54e7f3cb825bc471cd7ce8d715fa">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;</a>
@@ -412,27 +438,19 @@ $(function() {
 : <a class="el" href="structDGtal_1_1IteratorCirculatorTraits.html#a87712d4bc8f2edac1373c75bf3df6aec">DGtal::IteratorCirculatorTraits&lt; IC &gt;</a>
 , <a class="el" href="structDGtal_1_1IteratorCirculatorTraits_3_01T_01_5_01_4.html#a36e96d29ef4a71457cc336ecd5347681">DGtal::IteratorCirculatorTraits&lt; T * &gt;</a>
 , <a class="el" href="structDGtal_1_1IteratorCirculatorTraits_3_01T_01const_01_5_01_4.html#a9ca5052a1e6874223587d28264eb2311">DGtal::IteratorCirculatorTraits&lt; T const * &gt;</a>
+, <a class="el" href="classDGtal_1_1LabelledMap_1_1BlockConstIterator.html#ae3730d4b7db6bc217f4774667d54a886">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;::BlockConstIterator</a>
 </li>
 <li>reference
 : <a class="el" href="classDGtal_1_1LabelledMap_1_1BlockConstIterator.html#a1ca9e932567a52d497801d7771632377">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;::BlockConstIterator</a>
-</li>
-<li>Reference
-: <a class="el" href="classDGtal_1_1LabelledMap_1_1BlockConstIterator.html#ae3730d4b7db6bc217f4774667d54a886">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;::BlockConstIterator</a>
-</li>
-<li>reference
-: <a class="el" href="classDGtal_1_1LabelledMap_1_1BlockIterator.html#ac57c57bf57968738d29b8ebacd6eb493">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;::BlockIterator</a>
+, <a class="el" href="classDGtal_1_1LabelledMap_1_1BlockIterator.html#ac57c57bf57968738d29b8ebacd6eb493">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;::BlockIterator</a>
 </li>
 <li>Reference
 : <a class="el" href="classDGtal_1_1LabelledMap_1_1BlockIterator.html#a7fba8320468b740e3f9a723d1fbc2153">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;::BlockIterator</a>
+, <a class="el" href="classDGtal_1_1LabelledMap_1_1ConstIterator.html#a9835f5c1e943db20ee2706417c4a3d35">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;::ConstIterator</a>
 </li>
 <li>reference
 : <a class="el" href="classDGtal_1_1LabelledMap_1_1ConstIterator.html#a34302d15d14a744c0b7346ea79988e69">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;::ConstIterator</a>
-</li>
-<li>Reference
-: <a class="el" href="classDGtal_1_1LabelledMap_1_1ConstIterator.html#a9835f5c1e943db20ee2706417c4a3d35">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;::ConstIterator</a>
-</li>
-<li>reference
-: <a class="el" href="classDGtal_1_1LabelledMap.html#a63919117207d72c0c18662abe0954df5">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;</a>
+, <a class="el" href="classDGtal_1_1LabelledMap.html#a63919117207d72c0c18662abe0954df5">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;</a>
 </li>
 <li>Reference
 : <a class="el" href="classDGtal_1_1LabelledMap.html#ac502477e72c8571c1998f6dca6243676">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;</a>
@@ -551,9 +569,12 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 17:00:59 for DGtal by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Sat Mar 9 2024 09:34:06 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>
