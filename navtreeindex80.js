@@ -1,7 +1,5 @@
 var NAVTREEINDEX80 =
 {
-"structDGtal_1_1functors_1_1BinaryPointPredicate.html#a29566eb1201441401da366eb82173c31":[6,0,2,5,106,5],
-"structDGtal_1_1functors_1_1BinaryPointPredicate.html#a5c103ec945a1481d3022fc785a525357":[6,0,2,5,106,4],
 "structDGtal_1_1functors_1_1BinaryPointPredicate.html#a5f7e17e442287674e36be9474590c581":[6,0,2,5,106,8],
 "structDGtal_1_1functors_1_1BinaryPointPredicate.html#a7010a1eb01db1895f1d13d48676abc45":[6,0,2,5,106,12],
 "structDGtal_1_1functors_1_1BinaryPointPredicate.html#a98486115ddb855998cb11e336a37e09d":[6,0,2,5,106,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX80 =
 "structDGtal_1_1functors_1_1LambdaSinFromPiFunction.html":[6,0,2,5,47],
 "structDGtal_1_1functors_1_1LambdaSinFromPiFunction.html#a2cd731d54a83a1de5216cae893b3ccd9":[6,0,2,5,47,0],
 "structDGtal_1_1functors_1_1LargeTruncationFunctor.html":[6,0,2,5,44],
-"structDGtal_1_1functors_1_1LargeTruncationFunctor.html#a29a25202e6132673962f2f0dcc4a234c":[6,0,2,5,44,0]
+"structDGtal_1_1functors_1_1LargeTruncationFunctor.html#a29a25202e6132673962f2f0dcc4a234c":[6,0,2,5,44,0],
+"structDGtal_1_1functors_1_1Max.html":[6,0,2,5,11],
+"structDGtal_1_1functors_1_1Max.html#a41e12c472175fe2414e199b3bf383e74":[6,0,2,5,11,0]
 };

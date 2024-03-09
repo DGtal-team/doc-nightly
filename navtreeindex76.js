@@ -1,7 +1,5 @@
 var NAVTREEINDEX76 =
 {
-"structDGtal_1_1concepts_1_1CDrawableWithViewer3D.html#a77d4a33d1999c428b331566767bd583d":[4,0,68,2],
-"structDGtal_1_1concepts_1_1CDrawableWithViewer3D.html#a88539340fec82dbca8d0550e2638d93a":[4,0,68,0],
 "structDGtal_1_1concepts_1_1CDynamicBidirectionalSegmentComputer.html":[4,0,22],
 "structDGtal_1_1concepts_1_1CDynamicBidirectionalSegmentComputer.html#a612a078cf9ebf267d87ad25327e6c0fa":[4,0,22,0],
 "structDGtal_1_1concepts_1_1CDynamicBidirectionalSegmentComputer.html#aac639f596adb8d9576ae43aa98e7881e":[4,0,22,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX76 =
 "structDGtal_1_1concepts_1_1COrientationFunctor2.html#aa282e05a6310d7b5bfd5e637483f7223":[4,0,46,0],
 "structDGtal_1_1concepts_1_1COrientationFunctor2.html#ab4b5d6223e4df5a7fa5885421735883c":[4,0,46,3],
 "structDGtal_1_1concepts_1_1COrientationFunctor2.html#afd66df6d4060a651e3f74760afc265f0":[4,0,46,2],
-"structDGtal_1_1concepts_1_1CPointEmbedder.html":[4,0,74]
+"structDGtal_1_1concepts_1_1CPointEmbedder.html":[4,0,74],
+"structDGtal_1_1concepts_1_1CPointEmbedder.html#a0d8b8c72b0344d2a2788024e41d82eab":[4,0,74,6],
+"structDGtal_1_1concepts_1_1CPointEmbedder.html#a4b183401c1f3561698ef168f8920a704":[4,0,74,1]
 };

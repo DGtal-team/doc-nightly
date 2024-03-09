@@ -1,7 +1,5 @@
 var NAVTREEINDEX72 =
 {
-"structDGtal_1_1SurfaceMesh.html#a94e2b676c2c1cd9ec39f4354d222868e":[6,0,2,590,62],
-"structDGtal_1_1SurfaceMesh.html#a95f5eaf3fcfe06f2644bd2fdf98f527a":[6,0,2,590,58],
 "structDGtal_1_1SurfaceMesh.html#a99b2d742041e19b10336656e4eb3d403":[6,0,2,590,110],
 "structDGtal_1_1SurfaceMesh.html#a99e26c01409fb926ef2b6215e3296b14":[6,0,2,590,15],
 "structDGtal_1_1SurfaceMesh.html#a9b07c042333e0e6a71cb7a861a45c77b":[6,0,2,590,48],
@@ -249,5 +247,7 @@ var NAVTREEINDEX72 =
 "structDGtal_1_1ToDGtalCategory_3_01boost_1_1forward__traversal__tag_01_4.html":[6,0,2,117],
 "structDGtal_1_1ToDGtalCategory_3_01boost_1_1forward__traversal__tag_01_4.html#af2b35c5e5e65e51359ee9934b54f6bf1":[6,0,2,117,0],
 "structDGtal_1_1ToDGtalCategory_3_01boost_1_1iterators_1_1detail_1_1iterator__category__with__tra1420f29943a047e87f8a1879f4727e46.html":[6,0,2,120],
-"structDGtal_1_1ToDGtalCategory_3_01boost_1_1iterators_1_1detail_1_1iterator__category__with__tra1420f29943a047e87f8a1879f4727e46.html#ad3124c1e1ee19eeaedb680b881947848":[6,0,2,120,0]
+"structDGtal_1_1ToDGtalCategory_3_01boost_1_1iterators_1_1detail_1_1iterator__category__with__tra1420f29943a047e87f8a1879f4727e46.html#ad3124c1e1ee19eeaedb680b881947848":[6,0,2,120,0],
+"structDGtal_1_1ToDGtalCategory_3_01boost_1_1iterators_1_1detail_1_1iterator__category__with__tra5f13519ab9c7b4373448083983b5e2c4.html":[6,0,2,121],
+"structDGtal_1_1ToDGtalCategory_3_01boost_1_1iterators_1_1detail_1_1iterator__category__with__tra5f13519ab9c7b4373448083983b5e2c4.html#a3d2fdf03091adeed50b6f81c9b94ae31":[6,0,2,121,0]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"classDGtal_1_1ImplicitDigitalSurface_1_1Tracker.html#a0ddcff2892018f97b5d089dca40fe573":[6,0,2,615,0,2],
-"classDGtal_1_1ImplicitDigitalSurface_1_1Tracker.html#a180abe629c84ee84ed8fa846c04c829c":[6,0,2,615,0,11],
 "classDGtal_1_1ImplicitDigitalSurface_1_1Tracker.html#a2254c5aaf88325ec2c95ab585212b594":[6,0,2,615,0,12],
 "classDGtal_1_1ImplicitDigitalSurface_1_1Tracker.html#a431adfb9b16165d97a2dab26f66589c2":[6,0,2,615,0,13],
 "classDGtal_1_1ImplicitDigitalSurface_1_1Tracker.html#a5087b7c54ed6abb9f160df2df114a081":[6,0,2,615,0,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX21 =
 "classDGtal_1_1InHalfPlaneBy2x2DetComputer.html#ae9b1e52eb7ae932393f7ccb95decb2ae":[6,0,2,283,9],
 "classDGtal_1_1InHalfPlaneBy2x2DetComputer.html#affbb198793c6518feef7fbe34538e024":[6,0,2,283,2],
 "classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html":[6,0,2,284],
-"classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#a4872310d41cf9214807d8313c8e6095d":[6,0,2,284,7]
+"classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#a4872310d41cf9214807d8313c8e6095d":[6,0,2,284,7],
+"classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#a4e7fa8cf795506c1fdca8f789badf2f4":[6,0,2,284,11],
+"classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#a59a94b7aff7ea92263ff48070e572700":[6,0,2,284,10]
 };

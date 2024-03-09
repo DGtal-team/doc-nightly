@@ -1,7 +1,5 @@
 var NAVTREEINDEX42 =
 {
-"classDGtal_1_1StabbingLineComputer.html#a14fe88c71ebb453b57a5e108ead92426":[6,0,2,237,18],
-"classDGtal_1_1StabbingLineComputer.html#a16f454f6eff7896f60bbf040f2a62340":[6,0,2,237,10],
 "classDGtal_1_1StabbingLineComputer.html#a1db63234ae9328401aac238597708497":[6,0,2,237,12],
 "classDGtal_1_1StabbingLineComputer.html#a22d98a7f8171770c332f51adf84c46bb":[6,0,2,237,43],
 "classDGtal_1_1StabbingLineComputer.html#a28b08b2bdbd0c766131dead3586b335c":[6,0,2,237,16],
@@ -249,5 +247,7 @@ var NAVTREEINDEX42 =
 "classDGtal_1_1SternBrocot.html#a0b6cc2bfb842e41846ec46af92f72ed5":[6,0,2,14,18],
 "classDGtal_1_1SternBrocot.html#a12faf68f60e71d2bfc28fead3cca7382":[6,0,2,14,3],
 "classDGtal_1_1SternBrocot.html#a207178c9e01f5615e0710a63f60c93f6":[6,0,2,14,16],
-"classDGtal_1_1SternBrocot.html#a37bbaf658b20fd093376451d4a3522b5":[6,0,2,14,15]
+"classDGtal_1_1SternBrocot.html#a37bbaf658b20fd093376451d4a3522b5":[6,0,2,14,15],
+"classDGtal_1_1SternBrocot.html#a3a0defa05acb1b2bc351bd25d03f3ff1":[6,0,2,14,9],
+"classDGtal_1_1SternBrocot.html#a3cd60240f5e34f974a893ccd7a272890":[6,0,2,14,19]
 };

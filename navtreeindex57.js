@@ -1,7 +1,5 @@
 var NAVTREEINDEX57 =
 {
-"moduleIntegralInvariant.html#subsubsectFunctors":[0,8,7,1,0,0],
-"moduleIntroduction.html":[0,4,0],
 "moduleIntroduction.html#dgtalintroBasicConcepts":[0,4,0,0],
 "moduleIntroduction.html#dgtalintroBasicConceptsExplicitSet":[0,4,0,0,1],
 "moduleIntroduction.html#dgtalintroBasicConceptsImage":[0,4,0,0,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX57 =
 "moduleVoxelComplex.html":[0,10,5],
 "moduleVoxelComplex.html#dgtal_vcomplex_sec1":[0,10,5,0],
 "moduleVoxelComplex.html#dgtal_vcomplex_sec2":[0,10,5,1],
-"moduleVoxelComplex.html#dgtal_vcomplex_sec3":[0,10,5,2]
+"moduleVoxelComplex.html#dgtal_vcomplex_sec3":[0,10,5,2],
+"moduleVoxelComplex.html#dgtal_vcomplex_sec4":[0,10,5,3],
+"moduleVoxelComplex.html#dgtal_vcomplex_sec5":[0,10,5,4]
 };

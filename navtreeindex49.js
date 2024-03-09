@@ -1,7 +1,5 @@
 var NAVTREEINDEX49 =
 {
-"classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html#a4a12510f36b853c5aa7b4509f11a6f57":[6,0,2,1,3,50],
-"classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html#a5289a1f81150d9d578a7512f0eef6edc":[6,0,2,1,3,41],
 "classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html#a63dae9e7f9bce48877187582574ca644":[6,0,2,1,3,49],
 "classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html#a6474bdba9825299c446e82b5962b38be":[6,0,2,1,3,10],
 "classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html#a6c0d58f91de1dc893a0a2cc630d40870":[6,0,2,1,3,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX49 =
 "classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a567bb2033693f533543d1ac94ad87871":[6,0,2,4,1,4],
 "classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a5a65f5bd70e8d9aa8ef9ba99da3bebdd":[6,0,2,4,1,69],
 "classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a633ca2ddac6b3c9aa5e4b99077d1a3fd":[6,0,2,4,1,71],
-"classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a63fdabe03b2b6d7b7a978809828dc33a":[6,0,2,4,1,18]
+"classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a63fdabe03b2b6d7b7a978809828dc33a":[6,0,2,4,1,18],
+"classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a64c60e2de8263f3aa3b6372f176b465e":[6,0,2,4,1,49],
+"classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a659c109760d83ac2ae995702f49d0062":[6,0,2,4,1,61]
 };

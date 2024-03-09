@@ -1,7 +1,5 @@
 var NAVTREEINDEX70 =
 {
-"structDGtal_1_1PPMReader.html#a433ae742bcf38eb138d392b9b720c8be":[6,0,2,434,5],
-"structDGtal_1_1PPMReader.html#a52a94f714117f67e6880b2a9fadb2901":[6,0,2,434,7],
 "structDGtal_1_1PPMReader.html#a61134bf270538c350286fa18a3bb9e7e":[6,0,2,434,6],
 "structDGtal_1_1PPMReader.html#a6dc7f2ad03193d102730a662edc1eef9":[6,0,2,434,0],
 "structDGtal_1_1PPMReader.html#adf8577cf3be223c7d69bb641dd3f915c":[6,0,2,434,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX70 =
 "structDGtal_1_1SegmentComputerTraits.html#aec543e23f154c340dd52511204ed977f":[6,0,2,235,0],
 "structDGtal_1_1SequenceCategory.html":[6,0,2,43],
 "structDGtal_1_1SetAssociativeCategory.html":[6,0,2,51],
-"structDGtal_1_1SetFromImage.html":[6,0,2,378]
+"structDGtal_1_1SetFromImage.html":[6,0,2,378],
+"structDGtal_1_1SetFromImage.html#a20e6aef455df915e027c381c62bbc563":[6,0,2,378,5],
+"structDGtal_1_1SetFromImage.html#a260f7eef5972b22f1e1f4b55a5aa419a":[6,0,2,378,3]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX41 =
 {
-"classDGtal_1_1SimpleMatrix.html#aef46b1a9e636414aafb681bbf0f5f02e":[6,0,2,531,12],
-"classDGtal_1_1SimpleMatrix.html#af5e025fb588807857becae19115e4840":[6,0,2,531,37],
 "classDGtal_1_1SimpleMatrix.html#af8e92c749dd6f8c4ebb8016504e2d318":[6,0,2,531,3],
 "classDGtal_1_1SimpleMatrix.html#aff1072f1b5a8e2d923e9e6b4dc59fa4b":[6,0,2,531,44],
 "classDGtal_1_1SimpleRandomAccessConstRangeFromPoint.html":[6,0,2,138],
@@ -249,5 +247,7 @@ var NAVTREEINDEX41 =
 "classDGtal_1_1StabbingLineComputer.html#a063233849e0accfa215d30105b154d6c":[6,0,2,237,34],
 "classDGtal_1_1StabbingLineComputer.html#a13eb4ad36f625f8dc01ccfb20c4caaa9":[6,0,2,237,9],
 "classDGtal_1_1StabbingLineComputer.html#a1453b4b75f2a307bb85aa8bc9a8ac61d":[6,0,2,237,33],
-"classDGtal_1_1StabbingLineComputer.html#a14d31ecd4a0122acaa65e16110aa9665":[6,0,2,237,1]
+"classDGtal_1_1StabbingLineComputer.html#a14d31ecd4a0122acaa65e16110aa9665":[6,0,2,237,1],
+"classDGtal_1_1StabbingLineComputer.html#a14fe88c71ebb453b57a5e108ead92426":[6,0,2,237,18],
+"classDGtal_1_1StabbingLineComputer.html#a16f454f6eff7896f60bbf040f2a62340":[6,0,2,237,10]
 };
