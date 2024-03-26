@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#acbaf9358c13bc9be30ccd05cc34d7b8b":[6,0,2,254,44],
+"classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#acd333b07000fc883935a706f83540e26":[6,0,2,254,26],
 "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#ace598a01ad2b5a3317ed7c3a9eda3c95":[6,0,2,254,53],
 "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#acfc8a171f2c8cca6ef275518f15bfdfc":[6,0,2,254,23],
 "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#ad5812e04858002a39b9f08f4366ac358":[6,0,2,254,45],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "classDGtal_1_1DiscreteExteriorCalculus.html#a099954c02b160012620366798c70838a":[6,0,2,150,2],
 "classDGtal_1_1DiscreteExteriorCalculus.html#a0c731ad6bd22cfad67868a1a11098be0":[6,0,2,150,59],
 "classDGtal_1_1DiscreteExteriorCalculus.html#a109ccf25f703d4c6a2606966d40856e4":[6,0,2,150,3],
-"classDGtal_1_1DiscreteExteriorCalculus.html#a13ac8d49539a86851a94e7a0bd2ad82f":[6,0,2,150,64],
-"classDGtal_1_1DiscreteExteriorCalculus.html#a15087d17ef6e9dea296adf107064f2c6":[6,0,2,150,68],
-"classDGtal_1_1DiscreteExteriorCalculus.html#a155cc1a3981d0827d74a1b0642f6f706":[6,0,2,150,61]
+"classDGtal_1_1DiscreteExteriorCalculus.html#a13ac8d49539a86851a94e7a0bd2ad82f":[6,0,2,150,64]
 };

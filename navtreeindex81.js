@@ -1,5 +1,7 @@
 var NAVTREEINDEX81 =
 {
+"structDGtal_1_1functors_1_1Max.html":[6,0,2,5,11],
+"structDGtal_1_1functors_1_1Max.html#a41e12c472175fe2414e199b3bf383e74":[6,0,2,5,11,0],
 "structDGtal_1_1functors_1_1MeanChannels.html":[6,0,2,5,89],
 "structDGtal_1_1functors_1_1MeanChannels.html#ac09b23abdededc3b6311328cb8fe09ac":[6,0,2,5,89,0],
 "structDGtal_1_1functors_1_1Min.html":[6,0,2,5,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX81 =
 "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01true_00_01false_01_4.html":[6,0,2,5,32],
 "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01true_00_01false_01_4.html#a57ede0fd8f2a30e195af8845d959d1eb":[6,0,2,5,32,5],
 "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01true_00_01false_01_4.html#a5b564ce12fc7eac9d6ab6ab951125d84":[6,0,2,5,32,4],
-"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01true_00_01false_01_4.html#a61fe7d9805a6155fe5404ef56ca3689a":[6,0,2,5,32,2],
-"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01true_00_01false_01_4.html#a887e5b893a1d9802c468367026ef78aa":[6,0,2,5,32,0],
-"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01true_00_01false_01_4.html#ab4f0fc8cc04a7a92f1d68c2545bcc091":[6,0,2,5,32,1]
+"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01true_00_01false_01_4.html#a61fe7d9805a6155fe5404ef56ca3689a":[6,0,2,5,32,2]
 };

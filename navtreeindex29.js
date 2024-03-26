@@ -1,5 +1,7 @@
 var NAVTREEINDEX29 =
 {
+"classDGtal_1_1LightImplicitDigitalSurface_1_1Tracker.html#a85a4b0cb3f1285a6c97d8e85d46c9cb7":[6,0,2,626,0,11],
+"classDGtal_1_1LightImplicitDigitalSurface_1_1Tracker.html#a8902af5d32fabb633cde662d97121d2a":[6,0,2,626,0,4],
 "classDGtal_1_1LightImplicitDigitalSurface_1_1Tracker.html#a8a6db4431a248394d1b3db17af16884b":[6,0,2,626,0,5],
 "classDGtal_1_1LightImplicitDigitalSurface_1_1Tracker.html#a8ac627bd2104176b178604d8a26ae577":[6,0,2,626,0,6],
 "classDGtal_1_1LightImplicitDigitalSurface_1_1Tracker.html#a9b4f23df75e740cdc200f82e48564532":[6,0,2,626,0,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX29 =
 "classDGtal_1_1MLPLengthEstimator.html#a791d85163d7afb17144a0b4b97c52043":[6,0,2,194,1],
 "classDGtal_1_1MLPLengthEstimator.html#a878aef052dca950151df413ba989fecb":[6,0,2,194,9],
 "classDGtal_1_1MLPLengthEstimator.html#a9ed02636b8f15dc7078d3492962a44f0":[6,0,2,194,6],
-"classDGtal_1_1MLPLengthEstimator.html#aadecc58131c9903832ed305ca09e752a":[6,0,2,194,5],
-"classDGtal_1_1MLPLengthEstimator.html#ab64b5891c5cb3b3c8bbbcba55cf45129":[6,0,2,194,7],
-"classDGtal_1_1MLPLengthEstimator.html#ae4b252043e3bf08d34cc74da49f16732":[6,0,2,194,3]
+"classDGtal_1_1MLPLengthEstimator.html#aadecc58131c9903832ed305ca09e752a":[6,0,2,194,5]
 };

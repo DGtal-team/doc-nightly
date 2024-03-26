@@ -1,5 +1,7 @@
 var NAVTREEINDEX85 =
 {
+"tutoAreaSurface.html#tutosecBorder":[0,2,12,2],
+"tutoAreaSurface.html#tutosecEstimation":[0,2,12,3],
 "tutoAreaSurface.html#tutosectIntroAreaSurface":[0,2,12,0],
 "tutoFMMErosion.html":[0,2,9],
 "tutoFMMErosion.html#secttutoFMMErosion1":[0,2,9,0],
@@ -84,7 +86,5 @@ var NAVTREEINDEX85 =
 "unionDGtal_1_1LabelledMap_1_1BlockPointer.html#afb0e3dabc22347e467f3dcef41370f29":[6,0,2,128,4,1],
 "unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html":[6,0,2,128,6],
 "unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html#a3150bcd6afc894eae9353c91e3f71754":[6,0,2,128,6,0],
-"unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html#adec6679ce95f9adb91a2ad1d7878c6ed":[6,0,2,128,6,1],
-"":[5,0,2,6,0],
-"":[5,0,4]
+"unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html#adec6679ce95f9adb91a2ad1d7878c6ed":[6,0,2,128,6,1]
 };

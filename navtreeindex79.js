@@ -1,5 +1,7 @@
 var NAVTREEINDEX79 =
 {
+"structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01true_00_01false_01_4.html#ab41366001e483fe0ce96ac10e1658405":[6,0,2,2,21,5],
+"structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01true_00_01false_01_4.html#af7fd077a05e358debb93730cfbb98227":[6,0,2,2,21,4],
 "structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01true_00_01true_01_4.html":[6,0,2,2,22],
 "structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01true_00_01true_01_4.html#a05e45e6479526485c144b1d86d9df58a":[6,0,2,2,22,7],
 "structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01true_00_01true_01_4.html#a0c052e389c89fd1c0d39521d910484d5":[6,0,2,2,22,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX79 =
 "structDGtal_1_1functors_1_1BinaryPointPredicate.html#a04c1dd630e1ba62a08481655831532d7":[6,0,2,5,106,3],
 "structDGtal_1_1functors_1_1BinaryPointPredicate.html#a1b20f35ee098b97bfd0578c3fae57513":[6,0,2,5,106,2],
 "structDGtal_1_1functors_1_1BinaryPointPredicate.html#a1f00b3b9b47ab70fbea2dafd1615ee47":[6,0,2,5,106,10],
-"structDGtal_1_1functors_1_1BinaryPointPredicate.html#a27544f9d5652a464d473e14c7ad2da56":[6,0,2,5,106,0],
-"structDGtal_1_1functors_1_1BinaryPointPredicate.html#a29566eb1201441401da366eb82173c31":[6,0,2,5,106,5],
-"structDGtal_1_1functors_1_1BinaryPointPredicate.html#a5c103ec945a1481d3022fc785a525357":[6,0,2,5,106,4]
+"structDGtal_1_1functors_1_1BinaryPointPredicate.html#a27544f9d5652a464d473e14c7ad2da56":[6,0,2,5,106,0]
 };

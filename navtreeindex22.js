@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#a4e7fa8cf795506c1fdca8f789badf2f4":[6,0,2,284,11],
+"classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#a59a94b7aff7ea92263ff48070e572700":[6,0,2,284,10],
 "classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#a5f7f34eb0057bb3d6c1e4cc0ef439ce4":[6,0,2,284,2],
 "classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#a886de5d4ebc7fc054e461a7078d1574c":[6,0,2,284,8],
 "classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#a9501bf0564c4cf93765a4f6aeffb976a":[6,0,2,284,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "classDGtal_1_1InputIteratorWithRankOnSequence.html#a4b6e010be1f3aa1e8e357bd434297230":[6,0,2,103,23],
 "classDGtal_1_1InputIteratorWithRankOnSequence.html#a5103d0d451630638b7ccbff1f1036a64":[6,0,2,103,22],
 "classDGtal_1_1InputIteratorWithRankOnSequence.html#a5d1b7cb9c6c5523e18092b7dab08c3ec":[6,0,2,103,31],
-"classDGtal_1_1InputIteratorWithRankOnSequence.html#a6c40b637d3f2b1c0846309d9d7bf42bd":[6,0,2,103,9],
-"classDGtal_1_1InputIteratorWithRankOnSequence.html#a6fa3eaa30db201a509f84674eb15c834":[6,0,2,103,26],
-"classDGtal_1_1InputIteratorWithRankOnSequence.html#a72bc046d88641fc4fbbf0abb60ccebbb":[6,0,2,103,13]
+"classDGtal_1_1InputIteratorWithRankOnSequence.html#a6c40b637d3f2b1c0846309d9d7bf42bd":[6,0,2,103,9]
 };

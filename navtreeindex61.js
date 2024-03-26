@@ -1,5 +1,7 @@
 var NAVTREEINDEX61 =
 {
+"namespaceDGtal_1_1functions.html#ad171e7dc7973f3fc0ee8363712059124":[5,0,2,6,30],
+"namespaceDGtal_1_1functions.html#ad1a335e8f7956c3188e031a8d83a5ea7":[5,0,2,6,57],
 "namespaceDGtal_1_1functions.html#ad86a0dd4add6c1b9f567908893b4a69d":[5,0,2,6,65],
 "namespaceDGtal_1_1functions.html#adbef166c5a788624eff4f09e596c09f5":[5,0,2,6,27],
 "namespaceDGtal_1_1functions.html#adc5faa4fb283d3dd8b530f1aa46e1303":[5,0,2,6,34],
@@ -247,7 +249,5 @@ var NAVTREEINDEX61 =
 "shapes_2viewMarchingCubes_8cpp-example.html":[8,3],
 "shapes_2viewPolygonalMarchingCubes_8cpp-example.html":[8,4],
 "structDGtal_1_1AddTextureImage2DWithFunctor.html":[6,0,2,444],
-"structDGtal_1_1AddTextureImage2DWithFunctor.html#a1148351a8670b8b49ed833c108591540":[6,0,2,444,3],
-"structDGtal_1_1AddTextureImage2DWithFunctor.html#a174b4d72a9aec2aa7115484187f815a8":[6,0,2,444,4],
-"structDGtal_1_1AddTextureImage2DWithFunctor.html#a5799703fe06693dc604075f3a81f9ac3":[6,0,2,444,5]
+"structDGtal_1_1AddTextureImage2DWithFunctor.html#a1148351a8670b8b49ed833c108591540":[6,0,2,444,3]
 };

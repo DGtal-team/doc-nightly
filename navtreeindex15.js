@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#ac8551105bab39341f31e1708b7eb81c6":[6,0,2,315,14],
+"classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#ad9e2aa5831f86474c99810655bb35f6d":[6,0,2,315,7],
 "classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#aea3eb139ccdd1c09b493ac9ee211cddc":[6,0,2,315,8],
 "classDGtal_1_1ExactPredicateLpPowerSeparableMetric_3_01TSpace_00_012_00_01TPromoted_01_4.html":[6,0,2,316],
 "classDGtal_1_1ExactPredicateLpPowerSeparableMetric_3_01TSpace_00_012_00_01TPromoted_01_4.html#a1bba9649e94bf53e8e45de51c17e180a":[6,0,2,316,17],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "classDGtal_1_1FPLengthEstimator.html#a8fee002afd82c6e09e5150997eb30214":[6,0,2,181,3],
 "classDGtal_1_1FPLengthEstimator.html#a93e83e68f747aff6f6b186cbf92554a5":[6,0,2,181,7],
 "classDGtal_1_1FPLengthEstimator.html#a96f60785dafc5f4e01123c3806721869":[6,0,2,181,0],
-"classDGtal_1_1FPLengthEstimator.html#a9c093eb0503cc10432fbead4a5378240":[6,0,2,181,2],
-"classDGtal_1_1FPLengthEstimator.html#aa4574fa3a9a04f2df634cfd690eb4ae2":[6,0,2,181,4],
-"classDGtal_1_1FPLengthEstimator.html#ab162d85f242be1df9b2a8197724830bb":[6,0,2,181,6]
+"classDGtal_1_1FPLengthEstimator.html#a9c093eb0503cc10432fbead4a5378240":[6,0,2,181,2]
 };

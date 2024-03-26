@@ -1,5 +1,7 @@
 var NAVTREEINDEX28 =
 {
+"classDGtal_1_1LatticePolytope2D.html#a63a7a5ba1b6aed5a64b3b681daa813ce":[6,0,2,8,36],
+"classDGtal_1_1LatticePolytope2D.html#a63ba9f19e52f2fc28711d25b52f42253":[6,0,2,8,32],
 "classDGtal_1_1LatticePolytope2D.html#a6689971e4b3fac474b2310ee4ec873d2":[6,0,2,8,87],
 "classDGtal_1_1LatticePolytope2D.html#a66cff489dd9d819447e279bbbcc7c303":[6,0,2,8,73],
 "classDGtal_1_1LatticePolytope2D.html#a69fd047fab54f0a3666110b08cafbc14":[6,0,2,8,72],
@@ -247,7 +249,5 @@ var NAVTREEINDEX28 =
 "classDGtal_1_1LightImplicitDigitalSurface_1_1Tracker.html#a54b3df364ddcd005c29a999f7f125722":[6,0,2,626,0,2],
 "classDGtal_1_1LightImplicitDigitalSurface_1_1Tracker.html#a5b66e8798060231b1b302ab2b6490d73":[6,0,2,626,0,10],
 "classDGtal_1_1LightImplicitDigitalSurface_1_1Tracker.html#a6a6374d5b99e9d61a8e43076f79b2ee7":[6,0,2,626,0,9],
-"classDGtal_1_1LightImplicitDigitalSurface_1_1Tracker.html#a6aa2daede89c6d7c35ff56a479630a2d":[6,0,2,626,0,3],
-"classDGtal_1_1LightImplicitDigitalSurface_1_1Tracker.html#a85a4b0cb3f1285a6c97d8e85d46c9cb7":[6,0,2,626,0,11],
-"classDGtal_1_1LightImplicitDigitalSurface_1_1Tracker.html#a8902af5d32fabb633cde662d97121d2a":[6,0,2,626,0,4]
+"classDGtal_1_1LightImplicitDigitalSurface_1_1Tracker.html#a6aa2daede89c6d7c35ff56a479630a2d":[6,0,2,626,0,3]
 };

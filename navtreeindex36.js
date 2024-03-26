@@ -1,5 +1,7 @@
 var NAVTREEINDEX36 =
 {
+"classDGtal_1_1PolygonalCalculus.html#a072bdee97e2f635e32bb3ab1bc25ee40":[6,0,2,158,73],
+"classDGtal_1_1PolygonalCalculus.html#a09804b0414099287d146822390fa09d2":[6,0,2,158,17],
 "classDGtal_1_1PolygonalCalculus.html#a0f77281f9f721aef5b399c1c915c8c55":[6,0,2,158,3],
 "classDGtal_1_1PolygonalCalculus.html#a112a40b4ac378bbe22975993f5abe77a":[6,0,2,158,85],
 "classDGtal_1_1PolygonalCalculus.html#a11b30882272488d32d397f632ca72ef1":[6,0,2,158,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX36 =
 "classDGtal_1_1PreCellDirectionIterator.html#a27f70b0415b02e9d4e4ec8d913653b76":[6,0,2,620,0],
 "classDGtal_1_1PreCellDirectionIterator.html#a2c0ae6516934a68b7f8a307e05e0ad70":[6,0,2,620,2],
 "classDGtal_1_1PreCellDirectionIterator.html#a341ea0aba623a1879d93b28f0c082f39":[6,0,2,620,6],
-"classDGtal_1_1PreCellDirectionIterator.html#a4c9947583978b2428ae6f62f97f3c832":[6,0,2,620,1],
-"classDGtal_1_1PreCellDirectionIterator.html#a5e3889bf939eea76d2af12327b12bcca":[6,0,2,620,12],
-"classDGtal_1_1PreCellDirectionIterator.html#a6207ca364818d943293e6dc8315e6ec4":[6,0,2,620,5]
+"classDGtal_1_1PreCellDirectionIterator.html#a4c9947583978b2428ae6f62f97f3c832":[6,0,2,620,1]
 };

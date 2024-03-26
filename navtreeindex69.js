@@ -1,5 +1,7 @@
 var NAVTREEINDEX69 =
 {
+"structDGtal_1_1LongvolReader.html#ad26651305da1bcc52067dd25f66e3d07":[6,0,2,428,4],
+"structDGtal_1_1LongvolReader_1_1HeaderField.html":[6,0,2,428,0],
 "structDGtal_1_1LongvolReader_1_1HeaderField.html#a1b5ef7766f703e42ca5085c2482d74aa":[6,0,2,428,0,3],
 "structDGtal_1_1LongvolReader_1_1HeaderField.html#a4193a976174465200190b6c6d8b50043":[6,0,2,428,0,5],
 "structDGtal_1_1LongvolReader_1_1HeaderField.html#a46d314a4c9faedbdb135edf9e9e57ae8":[6,0,2,428,0,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX69 =
 "structDGtal_1_1PGMWriter.html#addd0f963fde9b4d7dad2d8ab3e69e5c5":[6,0,2,464,4],
 "structDGtal_1_1PGMWriter.html#aea1f9f2729f8da56df859a813bf5250b":[6,0,2,464,5],
 "structDGtal_1_1PGMWriter.html#af90610c588fe28067db9fb5255b2c1c0":[6,0,2,464,6],
-"structDGtal_1_1PPMReader.html":[6,0,2,434],
-"structDGtal_1_1PPMReader.html#a433ae742bcf38eb138d392b9b720c8be":[6,0,2,434,5],
-"structDGtal_1_1PPMReader.html#a52a94f714117f67e6880b2a9fadb2901":[6,0,2,434,7]
+"structDGtal_1_1PPMReader.html":[6,0,2,434]
 };

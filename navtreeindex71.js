@@ -1,5 +1,7 @@
 var NAVTREEINDEX71 =
 {
+"structDGtal_1_1SetFromImage.html#a20e6aef455df915e027c381c62bbc563":[6,0,2,378,5],
+"structDGtal_1_1SetFromImage.html#a260f7eef5972b22f1e1f4b55a5aa419a":[6,0,2,378,3],
 "structDGtal_1_1SetFromImage.html#a81d51b66273dbaf4f0897c4c72e9fced":[6,0,2,378,1],
 "structDGtal_1_1SetFromImage.html#a885b957d423d277ec94979f1388943d4":[6,0,2,378,4],
 "structDGtal_1_1SetFromImage.html#a8b6a982d36162e364257f572617b4ff7":[6,0,2,378,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX71 =
 "structDGtal_1_1SurfaceMesh.html#a904cd306aab505863c425df461373bec":[6,0,2,590,126],
 "structDGtal_1_1SurfaceMesh.html#a92ae3f4852fbbd81c0e98eb01fbdad49":[6,0,2,590,34],
 "structDGtal_1_1SurfaceMesh.html#a948e411e0314296b0fad607bd2f06c9e":[6,0,2,590,75],
-"structDGtal_1_1SurfaceMesh.html#a94ca1e662aa8011cf3363006871a9526":[6,0,2,590,115],
-"structDGtal_1_1SurfaceMesh.html#a94e2b676c2c1cd9ec39f4354d222868e":[6,0,2,590,62],
-"structDGtal_1_1SurfaceMesh.html#a95f5eaf3fcfe06f2644bd2fdf98f527a":[6,0,2,590,58]
+"structDGtal_1_1SurfaceMesh.html#a94ca1e662aa8011cf3363006871a9526":[6,0,2,590,115]
 };

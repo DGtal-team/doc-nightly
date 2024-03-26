@@ -152,7 +152,7 @@ Advanced usages: batched queries and modified area measures</h1>
 <p>First, for multiple queries and to take advantage of the multithreading of the winding number backend: </p><div class="fragment"><div class="line">Eigen::MatrixXd &amp;queries = { .... };  <span class="comment">//Qx3 matrix to encode the query points location</span></div>
 <div class="line">std::vector&lt;Orientation&gt; orientations = winding.orientationBatch(queries);</div>
 </div><!-- fragment --><p> The output vector contains the orientation of the query points in the same order.</p>
-<p>At this point, we completely rely on libIGL and CGAL to estimate the \( a_i \) area measures. If the user wants to provide these quantities, the \(\{a_i\}\) can be prescribed at the constructor, or using the <code>setAreaMeasure()</code> method.</p>
+<p>At this point, we completely rely on libIGL and CGAL to estimate the \( a_i \) area measures. If the user wants to provide these quantities, the \(\{a_i\}\) can be prescribed at the constructor, or using the <code>setAreaMeasure()</code> method (with a <code>skipPointAreas</code> to <code>true</code> at the constructor).</p>
 <dl class="section note"><dt>Note</dt><dd>The orientation methods have a default thresholding parameter set to 0.3. Please check the class documentation for details. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -161,7 +161,7 @@ Advanced usages: batched queries and modified area measures</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageShapes.html">Shapes package</a></li>
-    <li class="footer">Generated on Sat Mar 9 2024 09:34:52 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 26 2024 13:54:09 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

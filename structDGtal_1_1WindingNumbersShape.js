@@ -5,7 +5,7 @@ var structDGtal_1_1WindingNumbersShape =
     [ "RealVector", "structDGtal_1_1WindingNumbersShape.html#ab5ea0885fe78e612f50385ecb17a7144", null ],
     [ "Space", "structDGtal_1_1WindingNumbersShape.html#ac62a364bb23a9e54554ddbd3ba2f9c50", null ],
     [ "WindingNumbersShape", "structDGtal_1_1WindingNumbersShape.html#ad8874fccaf5e3efd89c7d0af37e9402b", null ],
-    [ "WindingNumbersShape", "structDGtal_1_1WindingNumbersShape.html#a3558047f8002da794de4cb26427bb78b", null ],
+    [ "WindingNumbersShape", "structDGtal_1_1WindingNumbersShape.html#adad6ee7dcb56399cda72a4ee702fb310", null ],
     [ "WindingNumbersShape", "structDGtal_1_1WindingNumbersShape.html#abec5ee9571e98717d29cb79a90a0c95b", null ],
     [ "orientation", "structDGtal_1_1WindingNumbersShape.html#a415b8381ea0cfdf550c6e9bfadf731fd", null ],
     [ "orientationBatch", "structDGtal_1_1WindingNumbersShape.html#a571cb82f93ccb9f7aea33df9316a7d57", null ],

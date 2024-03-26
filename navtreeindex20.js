@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"classDGtal_1_1ImageContainerBySTLMap.html#a1b4791be96018a4807bdef4bdd4febea":[6,0,2,364,9],
+"classDGtal_1_1ImageContainerBySTLMap.html#a30ac1e1653c8ea43bfc615ac96b3bb56":[6,0,2,364,8],
 "classDGtal_1_1ImageContainerBySTLMap.html#a36596e68cdbf4b94a13df465270d5eff":[6,0,2,364,12],
 "classDGtal_1_1ImageContainerBySTLMap.html#a36a5568484edfb87d0d8ec6a75d000ba":[6,0,2,364,26],
 "classDGtal_1_1ImageContainerBySTLMap.html#a3ee882f444da02407ae1275da4fecd5b":[6,0,2,364,22],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "classDGtal_1_1ImplicitDigitalSurface.html#af7fece6029e6d4222b7417d760fb2a5c":[6,0,2,615,9],
 "classDGtal_1_1ImplicitDigitalSurface.html#af91779ddbbd6b94ccde126a81dd19b15":[6,0,2,615,2],
 "classDGtal_1_1ImplicitDigitalSurface.html#afd5e63e17f6bea3897a780d09cfbda0d":[6,0,2,615,14],
-"classDGtal_1_1ImplicitDigitalSurface_1_1Tracker.html":[6,0,2,615,0],
-"classDGtal_1_1ImplicitDigitalSurface_1_1Tracker.html#a0ddcff2892018f97b5d089dca40fe573":[6,0,2,615,0,2],
-"classDGtal_1_1ImplicitDigitalSurface_1_1Tracker.html#a180abe629c84ee84ed8fa846c04c829c":[6,0,2,615,0,11]
+"classDGtal_1_1ImplicitDigitalSurface_1_1Tracker.html":[6,0,2,615,0]
 };

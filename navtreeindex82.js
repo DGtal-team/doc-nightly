@@ -1,5 +1,7 @@
 var NAVTREEINDEX82 =
 {
+"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01true_00_01false_01_4.html#a887e5b893a1d9802c468367026ef78aa":[6,0,2,5,32,0],
+"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01true_00_01false_01_4.html#ab4f0fc8cc04a7a92f1d68c2545bcc091":[6,0,2,5,32,1],
 "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01true_00_01false_01_4.html#afcc83a8a196e08a638cd751d06174112":[6,0,2,5,32,3],
 "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01true_00_01true_01_4.html":[6,0,2,5,33],
 "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01true_00_01true_01_4.html#a11eb1db9f34b3a911acd39cbe4e7047f":[6,0,2,5,33,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX82 =
 "structLibBoard_1_1Group.html#a66f48d491c89f95bb53c391819913b51":[6,0,3,5,10],
 "structLibBoard_1_1Group.html#a674ce5aa5f44f273a09757201d7966ad":[6,0,3,5,6],
 "structLibBoard_1_1Group.html#a6eaff85c16dc8bc2612a6aea82441d13":[6,0,3,5,4],
-"structLibBoard_1_1Group.html#a7a07ed530ea9390a949c7551af461323":[6,0,3,5,2],
-"structLibBoard_1_1Group.html#a7d74b0175781cdd21c4a16315ce37536":[6,0,3,5,5],
-"structLibBoard_1_1Group.html#a7ef92b8fe69b31dbf42ff721f9d0573f":[6,0,3,5,3]
+"structLibBoard_1_1Group.html#a7a07ed530ea9390a949c7551af461323":[6,0,3,5,2]
 };

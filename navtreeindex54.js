@@ -1,5 +1,7 @@
 var NAVTREEINDEX54 =
 {
+"functions_type_o.html":[6,3,3,13],
+"functions_type_p.html":[6,3,3,14],
 "functions_type_q.html":[6,3,3,15],
 "functions_type_r.html":[6,3,3,16],
 "functions_type_s.html":[6,3,3,17],
@@ -247,7 +249,5 @@ var NAVTREEINDEX54 =
 "moduleArithDSSReco.html#moduleArithDSSReco-DSL-Members":[0,8,1,0,2],
 "moduleArithDSSReco.html#moduleArithDSSReco-DSL-Orientation":[0,8,1,0,1],
 "moduleArithDSSReco.html#moduleArithDSSReco-DSL-Overflows":[0,8,1,0,4],
-"moduleArithDSSReco.html#moduleArithDSSReco-DSS":[0,8,1,1],
-"moduleArithDSSReco.html#moduleArithDSSReco-DSS-Ctors":[0,8,1,1,2],
-"moduleArithDSSReco.html#moduleArithDSSReco-DSS-Ex":[0,8,1,1,0]
+"moduleArithDSSReco.html#moduleArithDSSReco-DSS":[0,8,1,1]
 };

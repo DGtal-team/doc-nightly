@@ -1,5 +1,7 @@
 var NAVTREEINDEX74 =
 {
+"structDGtal_1_1Viewer3DFactory.html#ab3c4e5e17ac485e9c229dd220398361a":[6,0,2,451,3],
+"structDGtal_1_1Viewer3DFactory.html#ab8767f1a7c148d77752cd85f8091c37c":[6,0,2,451,20],
 "structDGtal_1_1Viewer3DFactory.html#abca41d9955d3a226b2e24859ba038706":[6,0,2,451,26],
 "structDGtal_1_1Viewer3DFactory.html#ac3a476198c5607b226d6a61dda820090":[6,0,2,451,40],
 "structDGtal_1_1Viewer3DFactory.html#ac3bc9d5e1e8f508dbe4a6afd6d79c979":[6,0,2,451,52],
@@ -141,7 +143,6 @@ var NAVTREEINDEX74 =
 "structDGtal_1_1WindingNumbersShape.html#a042b39c25efb7cb3e626dc8bfa6b05fd":[6,0,2,593,15],
 "structDGtal_1_1WindingNumbersShape.html#a25db799389b2433f0e044cc3257021c1":[6,0,2,593,12],
 "structDGtal_1_1WindingNumbersShape.html#a2642a8b87893813ddb6fb8451793995e":[6,0,2,593,14],
-"structDGtal_1_1WindingNumbersShape.html#a3558047f8002da794de4cb26427bb78b":[6,0,2,593,5],
 "structDGtal_1_1WindingNumbersShape.html#a3cbac5574ca599fdc4355b06d9902af7":[6,0,2,593,0],
 "structDGtal_1_1WindingNumbersShape.html#a415b8381ea0cfdf550c6e9bfadf731fd":[6,0,2,593,7],
 "structDGtal_1_1WindingNumbersShape.html#a43f3d2eac0da58e7c15ff19db1433048":[6,0,2,593,1],
@@ -153,6 +154,7 @@ var NAVTREEINDEX74 =
 "structDGtal_1_1WindingNumbersShape.html#abec5ee9571e98717d29cb79a90a0c95b":[6,0,2,593,6],
 "structDGtal_1_1WindingNumbersShape.html#ac62a364bb23a9e54554ddbd3ba2f9c50":[6,0,2,593,3],
 "structDGtal_1_1WindingNumbersShape.html#ad8874fccaf5e3efd89c7d0af37e9402b":[6,0,2,593,4],
+"structDGtal_1_1WindingNumbersShape.html#adad6ee7dcb56399cda72a4ee702fb310":[6,0,2,593,5],
 "structDGtal_1_1WindingNumbersShape.html#adc060724468e882aaf7b323c4c417c8f":[6,0,2,593,13],
 "structDGtal_1_1WindingNumbersShape.html#ae638fff01fc0ec328fe68364072f19b2":[6,0,2,593,10],
 "structDGtal_1_1concepts_1_1C3DParametricCurve.html":[4,0,33],
@@ -247,7 +249,5 @@ var NAVTREEINDEX74 =
 "structDGtal_1_1concepts_1_1CCellEmbedder.html#a5c501c4f847a9df7521294ce6ffd9ff5":[4,0,102,8],
 "structDGtal_1_1concepts_1_1CCellEmbedder.html#a8521eeb4d9764e4cad76e12cb426ad0c":[4,0,102,12],
 "structDGtal_1_1concepts_1_1CCellEmbedder.html#a9ba64a7184de3e117217700bd255f478":[4,0,102,6],
-"structDGtal_1_1concepts_1_1CCellEmbedder.html#aa7d0e093761522c29a92267b7449f18b":[4,0,102,11],
-"structDGtal_1_1concepts_1_1CCellEmbedder.html#ab5b70aae68376d155cfe2ca152c56166":[4,0,102,1],
-"structDGtal_1_1concepts_1_1CCellEmbedder.html#abcbd518f3b700a86e12860f1ad2e7e89":[4,0,102,3]
+"structDGtal_1_1concepts_1_1CCellEmbedder.html#aa7d0e093761522c29a92267b7449f18b":[4,0,102,11]
 };

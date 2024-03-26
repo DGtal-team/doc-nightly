@@ -1,5 +1,7 @@
 var NAVTREEINDEX39 =
 {
+"classDGtal_1_1Shortcuts.html#a4d0fa67630c4461096d6a178ac6ffad2":[6,0,2,348,21],
+"classDGtal_1_1Shortcuts.html#a4f310d6174d6724cc74935bbae5a4dfb":[6,0,2,348,165],
 "classDGtal_1_1Shortcuts.html#a4f8b1f94bbce1f2bd1b7023d49293bde":[6,0,2,348,82],
 "classDGtal_1_1Shortcuts.html#a5077097756067e963a2fc9eb7a3ba360":[6,0,2,348,176],
 "classDGtal_1_1Shortcuts.html#a50a56ee3808f7654eaeab718326c2ab4":[6,0,2,348,52],
@@ -247,7 +249,5 @@ var NAVTREEINDEX39 =
 "classDGtal_1_1ShortcutsGeometry.html#afc9c5cfff9a32d072e2486ab491b269f":[6,0,2,349,114],
 "classDGtal_1_1ShortcutsGeometry.html#afe529ee6bfab7a00f58cc548ea1f82eb":[6,0,2,349,54],
 "classDGtal_1_1ShortcutsGeometry.html#aff727350522f5ac25562fd432b725de1":[6,0,2,349,22],
-"classDGtal_1_1ShortcutsGeometry.html#affbc330f433bf1821994c4de7bc56f8e":[6,0,2,349,3],
-"classDGtal_1_1ShroudsRegularization.html":[6,0,2,278],
-"classDGtal_1_1ShroudsRegularization.html#a09543f86e56ce26c5bffafb50a9d708d":[6,0,2,278,17]
+"classDGtal_1_1ShortcutsGeometry.html#affbc330f433bf1821994c4de7bc56f8e":[6,0,2,349,3]
 };

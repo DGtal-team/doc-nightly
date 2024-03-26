@@ -1,5 +1,7 @@
 var NAVTREEINDEX77 =
 {
+"structDGtal_1_1concepts_1_1CPointEmbedder.html#a0d8b8c72b0344d2a2788024e41d82eab":[4,0,74,6],
+"structDGtal_1_1concepts_1_1CPointEmbedder.html#a4b183401c1f3561698ef168f8920a704":[4,0,74,1],
 "structDGtal_1_1concepts_1_1CPointEmbedder.html#a6cd6790475c169126fd29505e1c59213":[4,0,74,11],
 "structDGtal_1_1concepts_1_1CPointEmbedder.html#a6d75fed84d70ef16314f2260f1e15a7f":[4,0,74,5],
 "structDGtal_1_1concepts_1_1CPointEmbedder.html#a6e9433a85c92abca8658a8814bdea04a":[4,0,74,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX77 =
 "structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIteratorFromPoint.html#afae9d6fd680fccc01f8ccb707295707f":[4,0,16,4],
 "structDGtal_1_1concepts_1_1CSpace.html":[4,0,78],
 "structDGtal_1_1concepts_1_1CSpace.html#a14597556529da04a3bf6e6e8fe2a4e81":[4,0,78,11],
-"structDGtal_1_1concepts_1_1CSpace.html#a3bdfb68f4052e5ccc676bb736861d708":[4,0,78,14],
-"structDGtal_1_1concepts_1_1CSpace.html#a504e4dde8e7a98dd47939c387c259715":[4,0,78,6],
-"structDGtal_1_1concepts_1_1CSpace.html#a6c783bd601d3b60ad16b30f50011113a":[4,0,78,9]
+"structDGtal_1_1concepts_1_1CSpace.html#a3bdfb68f4052e5ccc676bb736861d708":[4,0,78,14]
 };

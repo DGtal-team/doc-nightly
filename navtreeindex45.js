@@ -1,5 +1,7 @@
 var NAVTREEINDEX45 =
 {
+"classDGtal_1_1Trace.html#ac45bfd87229f0252d6ff2092857e03f1":[6,0,2,144,19],
+"classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980":[6,0,2,144,7],
 "classDGtal_1_1Trace.html#ad8efd553b31277903be115e7aa256f74":[6,0,2,144,10],
 "classDGtal_1_1Trace.html#ae3ef773d8a851319b34d2fbcb4e80bb7":[6,0,2,144,13],
 "classDGtal_1_1Trace.html#af4c928bba1746470e05596ae516c9ef0":[6,0,2,144,21],
@@ -247,7 +249,5 @@ var NAVTREEINDEX45 =
 "classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a329b84cb20b4eca6e985e3472fb64997":[6,0,2,274,19],
 "classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a44fb69aa8159bd7089c569af72dc1112":[6,0,2,274,15],
 "classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a64cc28d4f74bd8d822e49fc8fc7afb04":[6,0,2,274,32],
-"classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a64ef348d85dea6854242d95caa9ec72c":[6,0,2,274,22],
-"classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a650bd6b549f2b5a46f12b412face4459":[6,0,2,274,25],
-"classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a6d5b03520f56065712cd3524db9ccaf7":[6,0,2,274,28]
+"classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a64ef348d85dea6854242d95caa9ec72c":[6,0,2,274,22]
 };

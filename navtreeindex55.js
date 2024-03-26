@@ -1,5 +1,7 @@
 var NAVTREEINDEX55 =
 {
+"moduleArithDSSReco.html#moduleArithDSSReco-DSS-Ctors":[0,8,1,1,2],
+"moduleArithDSSReco.html#moduleArithDSSReco-DSS-Ex":[0,8,1,1,0],
 "moduleArithDSSReco.html#moduleArithDSSReco-DSS-Features":[0,8,1,1,1],
 "moduleArithDSSReco.html#moduleArithDSSReco-DSSRec":[0,8,1,2],
 "moduleArithDSSReco.html#moduleArithDSSReco-DSSRec-Computers":[0,8,1,2,2],
@@ -195,14 +197,14 @@ var NAVTREEINDEX55 =
 "moduleDigitalSurfaces.html":[0,10,2],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec1":[0,9,5,0],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec1":[0,10,2,0],
-"moduleDigitalSurfaces.html#dgtal_digsurf_sec1_1":[0,10,2,0,0],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec1_1":[0,9,5,0,0],
+"moduleDigitalSurfaces.html#dgtal_digsurf_sec1_1":[0,10,2,0,0],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec1_2":[0,9,5,0,1],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec1_2":[0,10,2,0,1],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec1_3":[0,10,2,0,2],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec1_3":[0,9,5,0,2],
-"moduleDigitalSurfaces.html#dgtal_digsurf_sec2":[0,9,5,1],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec2":[0,10,2,1],
+"moduleDigitalSurfaces.html#dgtal_digsurf_sec2":[0,9,5,1],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec2_1":[0,9,5,1,0],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec2_1":[0,10,2,1,0],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec2_2":[0,9,5,1,1],
@@ -211,8 +213,8 @@ var NAVTREEINDEX55 =
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec2_3":[0,10,2,1,2],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec3":[0,9,5,2],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec3":[0,10,2,2],
-"moduleDigitalSurfaces.html#dgtal_digsurf_sec3_1":[0,10,2,2,0],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec3_1":[0,9,5,2,0],
+"moduleDigitalSurfaces.html#dgtal_digsurf_sec3_1":[0,10,2,2,0],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec3_2":[0,9,5,2,1],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec3_2":[0,10,2,2,1],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec3_3":[0,9,5,2,2],
@@ -225,8 +227,8 @@ var NAVTREEINDEX55 =
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec4":[0,9,5,3],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec4_1":[0,9,5,3,0],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec4_1":[0,10,2,3,0],
-"moduleDigitalSurfaces.html#dgtal_digsurf_sec4_2":[0,9,5,3,1],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec4_2":[0,10,2,3,1],
+"moduleDigitalSurfaces.html#dgtal_digsurf_sec4_2":[0,9,5,3,1],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec4_3":[0,9,5,3,2],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec4_3":[0,10,2,3,2],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec5":[0,10,2,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX55 =
 "moduleDigitalTopology.html#dgtal_topology_sec3_1":[0,10,0,2,0],
 "moduleDigitalTopology.html#dgtal_topology_sec3_2":[0,10,0,2,1],
 "moduleDigitalTopology.html#dgtal_topology_sec3_3":[0,10,0,2,2],
-"moduleDigitalTopology.html#dgtal_topology_sec3_4":[0,10,0,2,3],
-"moduleDigitalTopology.html#dgtal_topology_sec3_5":[0,10,0,2,4],
-"moduleDigitalTopology.html#dgtal_topology_sec3_digital_object":[0,10,0,2]
+"moduleDigitalTopology.html#dgtal_topology_sec3_4":[0,10,0,2,3]
 };

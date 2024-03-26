@@ -1,5 +1,7 @@
 var NAVTREEINDEX47 =
 {
+"classDGtal_1_1Viewer3D.html#afa0584abe9ba479853bbebaff17ac0e2":[6,0,2,450,110],
+"classDGtal_1_1Viewer3D.html#afc073521cdeaf870800f92b369fe5585":[6,0,2,450,94],
 "classDGtal_1_1Viewer3D.html#afc1b6e90213b4fda17280be60054d218":[6,0,2,450,53],
 "classDGtal_1_1Viewer3D.html#afd9b6caff9431e7325c8b70de3a2a421":[6,0,2,450,119],
 "classDGtal_1_1Viewer3D.html#affbdcf335cdd92a7559dec3dc2090e67":[6,0,2,450,113],
@@ -247,7 +249,5 @@ var NAVTREEINDEX47 =
 "classDGtal_1_1VoxelComplex.html#ad83ef24968bcb8e12c69e8db78d7bacd":[6,0,2,634,2],
 "classDGtal_1_1VoxelComplex.html#adc39be4d447a185c82b08fc73664a230":[6,0,2,634,55],
 "classDGtal_1_1VoxelComplex.html#adc577464281af18ea27c0e4494dcf543":[6,0,2,634,8],
-"classDGtal_1_1VoxelComplex.html#addcf1a81bf51b20d3ff0226ad488b11e":[6,0,2,634,52],
-"classDGtal_1_1VoxelComplex.html#adf1a64158c8458e93475ede54f79fe0c":[6,0,2,634,36],
-"classDGtal_1_1VoxelComplex.html#ae2aa8bbcf1842f01f49c7e6dd6a2aa1e":[6,0,2,634,32]
+"classDGtal_1_1VoxelComplex.html#addcf1a81bf51b20d3ff0226ad488b11e":[6,0,2,634,52]
 };
