@@ -1,7 +1,5 @@
 var NAVTREEINDEX56 =
 {
-"moduleDigitalTopology.html#dgtal_topology_sec3_5":[0,10,0,2,4],
-"moduleDigitalTopology.html#dgtal_topology_sec3_digital_object":[0,10,0,2],
 "moduleDigitalTopology.html#dgtal_topology_sec4":[0,10,0,3],
 "moduleDisplay3D.html":[0,15,1],
 "moduleDisplay3D.html#DGtalGLV_Boas3DTo2D":[0,15,1,2],
@@ -144,8 +142,8 @@ var NAVTREEINDEX56 =
 "moduleGridCurveAnalysis.html#geometrySegments":[0,8,0,1],
 "moduleGridCurveAnalysis.html#geometrySegmentsExtraction":[0,8,0,2],
 "moduleGridCurveAnalysis.html#geometryUniqueDecomposition":[0,8,0,2,0],
-"moduleHalfEdgeMesh.html":[0,10,6],
 "moduleHalfEdgeMesh.html":[0,9,3],
+"moduleHalfEdgeMesh.html":[0,10,6],
 "moduleHalfEdgeMesh.html#HEM_sec1":[0,10,6,0],
 "moduleHalfEdgeMesh.html#HEM_sec1":[0,9,3,0],
 "moduleHalfEdgeMesh.html#HEM_sec1_1":[0,10,6,0,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX56 =
 "moduleIntegralInvariant.html#II_subsectDef":[0,8,7,1,0],
 "moduleIntegralInvariant.html#sectResults":[0,8,7,3],
 "moduleIntegralInvariant.html#subsectIntegralInvariant":[0,8,7,0,0],
-"moduleIntegralInvariant.html#subsubsectEstimators":[0,8,7,1,0,1]
+"moduleIntegralInvariant.html#subsubsectEstimators":[0,8,7,1,0,1],
+"moduleIntegralInvariant.html#subsubsectFunctors":[0,8,7,1,0,0],
+"moduleIntroduction.html":[0,4,0]
 };

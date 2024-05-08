@@ -1,7 +1,5 @@
 var NAVTREEINDEX44 =
 {
-"classDGtal_1_1TangentFromDCAEstimator.html#a66792325fd5bc5ddd8f55d98c7484705":[6,0,2,205,0],
-"classDGtal_1_1TangentFromDCAEstimator.html#afb756ff1f8542e53d65b277512823f29":[6,0,2,205,1],
 "classDGtal_1_1TangentFromDSS2DFunctor.html":[6,0,2,182],
 "classDGtal_1_1TangentFromDSS2DFunctor.html#a8717f879af92a9dad8284ef2681afb0f":[6,0,2,182,3],
 "classDGtal_1_1TangentFromDSS2DFunctor.html#a96898f429885f7359910cdb1074fecab":[6,0,2,182,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX44 =
 "classDGtal_1_1Trace.html#a7b51b5b34d3c1d5e799e0500a2d12acc":[6,0,2,144,4],
 "classDGtal_1_1Trace.html#a9bcc05942648c191c79171432aa5deeb":[6,0,2,144,8],
 "classDGtal_1_1Trace.html#a9d007b6608800ae8be46b5887f77d0ce":[6,0,2,144,1],
-"classDGtal_1_1Trace.html#abdc0e234dce46dea3f36c994681a24a8":[6,0,2,144,20]
+"classDGtal_1_1Trace.html#abdc0e234dce46dea3f36c994681a24a8":[6,0,2,144,20],
+"classDGtal_1_1Trace.html#ac45bfd87229f0252d6ff2092857e03f1":[6,0,2,144,19],
+"classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980":[6,0,2,144,7]
 };

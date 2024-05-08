@@ -1,6 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"classDGtal_1_1DigitalSetBoundary.html#a218e143ad9029c7022fda5bf561cbbd4":[6,0,2,600,34],
 "classDGtal_1_1DigitalSetBoundary.html#a385fa7102983841e5d86232916791bda":[6,0,2,600,11],
 "classDGtal_1_1DigitalSetBoundary.html#a38906cd4e56ab8fd5db2c9d2d4696971":[6,0,2,600,13],
 "classDGtal_1_1DigitalSetBoundary.html#a3aa554d1fc5abf85a1d2ea315a5e64d1":[6,0,2,600,16],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "classDGtal_1_1DigitalSetFromMap.html#a8ed34593908fb08a70ba0933f5841311":[6,0,2,514,8],
 "classDGtal_1_1DigitalSetFromMap.html#a8f863081ca8d91b62eca6e0654ba7263":[6,0,2,514,41],
 "classDGtal_1_1DigitalSetFromMap.html#a92c064ac6972342141f6069047e8f5ca":[6,0,2,514,16],
-"classDGtal_1_1DigitalSetFromMap.html#a9e46d133b55414e517a4e2bee36b3b94":[6,0,2,514,30]
+"classDGtal_1_1DigitalSetFromMap.html#a9e46d133b55414e517a4e2bee36b3b94":[6,0,2,514,30],
+"classDGtal_1_1DigitalSetFromMap.html#ab5db6fc71453d38d12ea42be7b8490fd":[6,0,2,514,14]
 };

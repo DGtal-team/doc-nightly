@@ -1,7 +1,5 @@
 var NAVTREEINDEX37 =
 {
-"classDGtal_1_1PreCellDirectionIterator.html#a5e3889bf939eea76d2af12327b12bcca":[6,0,2,620,12],
-"classDGtal_1_1PreCellDirectionIterator.html#a6207ca364818d943293e6dc8315e6ec4":[6,0,2,620,5],
 "classDGtal_1_1PreCellDirectionIterator.html#a80b8fcd9e851403e6f6b6fcab1c574ce":[6,0,2,620,4],
 "classDGtal_1_1PreCellDirectionIterator.html#a825292a50867694a46c9284b31327981":[6,0,2,620,14],
 "classDGtal_1_1PreCellDirectionIterator.html#a8a00661fe73c0d7444f976fde447cf82":[6,0,2,620,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX37 =
 "classDGtal_1_1STBReader.html#a0dc265d0352091817a917204ea0b5118":[6,0,2,436,2],
 "classDGtal_1_1STBReader.html#a5c99bd0a01ba1e50a33c32483e170c43":[6,0,2,436,1],
 "classDGtal_1_1STBReader.html#a7408a06d0767aeec7c08e0b5a6e5ae14":[6,0,2,436,0],
-"classDGtal_1_1STBReader.html#a985ddccfdabc1b9f069eb96ee3eaaea7":[6,0,2,436,3]
+"classDGtal_1_1STBReader.html#a985ddccfdabc1b9f069eb96ee3eaaea7":[6,0,2,436,3],
+"classDGtal_1_1STBReader.html#a9ed52b212db372c5c2f8a8f97233ac49":[6,0,2,436,6],
+"classDGtal_1_1STBReader.html#aceca325cb51f05be54e31689c9b7782e":[6,0,2,436,5]
 };

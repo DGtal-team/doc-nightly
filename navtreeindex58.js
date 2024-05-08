@@ -1,7 +1,5 @@
 var NAVTREEINDEX58 =
 {
-"moduleVoxelComplex.html#dgtal_vcomplex_sec4":[0,10,5,3],
-"moduleVoxelComplex.html#dgtal_vcomplex_sec5":[0,10,5,4],
 "moduleVoxelComplex.html#dgtal_vcomplex_sec6":[0,10,5,5],
 "moduleWinding.html":[0,9,6],
 "moduleWinding.html#sectmoduleWinding1":[0,9,6,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX58 =
 "namespaceDGtal.html#a6ee548c7f570f6bdb18ce2cc592cb009":[5,0,2,751],
 "namespaceDGtal.html#a6f1b22211474c60437654c3a0decb8ef":[5,0,2,712],
 "namespaceDGtal.html#a6fd80f738104ff7f8bf7d39044efe45b":[5,0,2,649],
-"namespaceDGtal.html#a70bcaa727229c1493e25beed64213f1f":[5,0,2,1026]
+"namespaceDGtal.html#a70bcaa727229c1493e25beed64213f1f":[5,0,2,1026],
+"namespaceDGtal.html#a7186d0986fa94a9082a554decc7778ef":[5,0,2,845],
+"namespaceDGtal.html#a71ebae2f928719f51222d9830f580ab6":[5,0,2,976]
 };

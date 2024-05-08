@@ -1,7 +1,5 @@
 var NAVTREEINDEX54 =
 {
-"functions_type_o.html":[6,3,3,13],
-"functions_type_p.html":[6,3,3,14],
 "functions_type_q.html":[6,3,3,15],
 "functions_type_r.html":[6,3,3,16],
 "functions_type_s.html":[6,3,3,17],
@@ -14,8 +12,8 @@ var NAVTREEINDEX54 =
 "functions_type_z.html":[6,3,3,24],
 "functions_u.html":[6,3,0,21],
 "functions_v.html":[6,3,0,22],
-"functions_vars.html":[6,3,2,0],
 "functions_vars.html":[6,3,2],
+"functions_vars.html":[6,3,2,0],
 "functions_vars_a.html":[6,3,2,1],
 "functions_vars_b.html":[6,3,2,2],
 "functions_vars_c.html":[6,3,2,3],
@@ -114,8 +112,8 @@ var NAVTREEINDEX54 =
 "geometry_2volumes_2fullConvexitySphereGeodesics_8cpp-example.html":[8,89],
 "geometry_2volumes_2fullConvexityThinning3D_8cpp-example.html":[8,90],
 "geometry_2volumes_2standardDigitalPolyhedronBuilder3D_8cpp-example.html":[8,91],
-"globals.html":[7,0,0],
 "globals.html":[7,0],
+"globals.html":[7,0,0],
 "globals_a.html":[7,0,1],
 "globals_b.html":[7,0,2],
 "globals_c.html":[7,0,3],
@@ -123,8 +121,8 @@ var NAVTREEINDEX54 =
 "globals_defs.html":[7,4],
 "globals_e.html":[7,0,5],
 "globals_f.html":[7,0,6],
-"globals_func.html":[7,1],
 "globals_func.html":[7,1,0],
+"globals_func.html":[7,1],
 "globals_func_b.html":[7,1,1],
 "globals_func_c.html":[7,1,2],
 "globals_func_d.html":[7,1,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX54 =
 "moduleArithDSSReco.html#moduleArithDSSReco-DSL-Members":[0,8,1,0,2],
 "moduleArithDSSReco.html#moduleArithDSSReco-DSL-Orientation":[0,8,1,0,1],
 "moduleArithDSSReco.html#moduleArithDSSReco-DSL-Overflows":[0,8,1,0,4],
-"moduleArithDSSReco.html#moduleArithDSSReco-DSS":[0,8,1,1]
+"moduleArithDSSReco.html#moduleArithDSSReco-DSS":[0,8,1,1],
+"moduleArithDSSReco.html#moduleArithDSSReco-DSS-Ctors":[0,8,1,1,2],
+"moduleArithDSSReco.html#moduleArithDSSReco-DSS-Ex":[0,8,1,1,0]
 };

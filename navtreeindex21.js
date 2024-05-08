@@ -1,6 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"classDGtal_1_1ImplicitDigitalSurface_1_1Tracker.html#a180abe629c84ee84ed8fa846c04c829c":[6,0,2,615,0,11],
 "classDGtal_1_1ImplicitDigitalSurface_1_1Tracker.html#a2254c5aaf88325ec2c95ab585212b594":[6,0,2,615,0,12],
 "classDGtal_1_1ImplicitDigitalSurface_1_1Tracker.html#a431adfb9b16165d97a2dab26f66589c2":[6,0,2,615,0,13],
 "classDGtal_1_1ImplicitDigitalSurface_1_1Tracker.html#a5087b7c54ed6abb9f160df2df114a081":[6,0,2,615,0,0],
@@ -194,13 +193,12 @@ var NAVTREEINDEX21 =
 "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a05e84d497cbc5ca482666054efa03afe":[6,0,2,282,37],
 "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a0a2abe5af24e96e5081a506e0e47f48d":[6,0,2,282,22],
 "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a0c5366a62d9fcb655778feaa93776ef0":[6,0,2,282,32],
+"classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a0d554d84defcf82dd51fb0ee414cdba8":[6,0,2,282,18],
 "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a2fe18bc9bd60d13b9720a71c2a5d3a51":[6,0,2,282,3],
 "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a304eab94c4e3ea96e12730edbcf8e3c3":[6,0,2,282,26],
 "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a38d9256a47bb6be5afa8c7f824924eac":[6,0,2,282,25],
 "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a3b1d4e2f44beb611fd2eae9ec66ce051":[6,0,2,282,1],
 "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a406880fbaa8d8d7fc59390b9a27a51b1":[6,0,2,282,16],
-"":[5,0,4],
-"classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a0d554d84defcf82dd51fb0ee414cdba8":[6,0,2,282,18],
 "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a477735f6dd9c4b66a6839c4ebe0f77e7":[6,0,2,282,36],
 "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a5323e641f540fedc73f470b575f6cf24":[6,0,2,282,11],
 "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a5362c15d25bc8f57f6466c5666202473":[6,0,2,282,38],
@@ -249,5 +247,7 @@ var NAVTREEINDEX21 =
 "classDGtal_1_1InHalfPlaneBy2x2DetComputer.html#ae9b1e52eb7ae932393f7ccb95decb2ae":[6,0,2,283,9],
 "classDGtal_1_1InHalfPlaneBy2x2DetComputer.html#affbb198793c6518feef7fbe34538e024":[6,0,2,283,2],
 "classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html":[6,0,2,284],
-"classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#a4872310d41cf9214807d8313c8e6095d":[6,0,2,284,7]
+"classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#a4872310d41cf9214807d8313c8e6095d":[6,0,2,284,7],
+"classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#a4e7fa8cf795506c1fdca8f789badf2f4":[6,0,2,284,11],
+"classDGtal_1_1InHalfPlaneBySimple3x3Matrix.html#a59a94b7aff7ea92263ff48070e572700":[6,0,2,284,10]
 };

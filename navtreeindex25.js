@@ -1,7 +1,5 @@
 var NAVTREEINDEX25 =
 {
-"classDGtal_1_1KhalimskySpaceND.html#a2e072f571929af2dee48e7759e5bd639":[6,0,2,621,31],
-"classDGtal_1_1KhalimskySpaceND.html#a2e14ba64e5ed364417a24ed21a587abb":[6,0,2,621,46],
 "classDGtal_1_1KhalimskySpaceND.html#a309fc4eea8cc7f15dc7910f96be2d033":[6,0,2,621,159],
 "classDGtal_1_1KhalimskySpaceND.html#a30ed0a752d1e58dfd12f4f905dba38aa":[6,0,2,621,174],
 "classDGtal_1_1KhalimskySpaceND.html#a31c056cb3dd8a1aec31dd2c7594c232b":[6,0,2,621,62],
@@ -249,5 +247,7 @@ var NAVTREEINDEX25 =
 "classDGtal_1_1Knot__6__2.html#ad481d31a2f59d3e2ece36da617cee777":[6,0,2,227,9],
 "classDGtal_1_1Knot__6__2.html#addce44ed85a40c0c425b044ab60c7c01":[6,0,2,227,0],
 "classDGtal_1_1Knot__6__2.html#af4e330f383744b1e66130b332b82854e":[6,0,2,227,11],
-"classDGtal_1_1Knot__6__2.html#af9512d040674a9527a2aa1d76a82f1f6":[6,0,2,227,5]
+"classDGtal_1_1Knot__6__2.html#af9512d040674a9527a2aa1d76a82f1f6":[6,0,2,227,5],
+"classDGtal_1_1Knot__7__4.html":[6,0,2,228],
+"classDGtal_1_1Knot__7__4.html#a1b0e3002db24d6121b3f5affcd9b7174":[6,0,2,228,0]
 };

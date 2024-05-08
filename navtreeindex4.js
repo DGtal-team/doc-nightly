@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"classDGtal_1_1BoundedLatticePolytopeCounter.html#a58fe5ac4781f962c46009e40e9d8eea3":[6,0,2,301,33],
 "classDGtal_1_1BoundedLatticePolytopeCounter.html#a62ab5bdc0fc50aeacea3151951cfc820":[6,0,2,301,17],
 "classDGtal_1_1BoundedLatticePolytopeCounter.html#a65437e23631d1728575a9fb11b51024a":[6,0,2,301,21],
 "classDGtal_1_1BoundedLatticePolytopeCounter.html#a6544b8934aa97905f1ec642787681cb5":[6,0,2,301,13],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "classDGtal_1_1COBANaivePlaneComputer.html#a0e882dbdf8892825659719c0b45b28f3":[6,0,2,251,19],
 "classDGtal_1_1COBANaivePlaneComputer.html#a103f5bc6a4febd804d134fd0dc02c5fc":[6,0,2,251,33],
 "classDGtal_1_1COBANaivePlaneComputer.html#a16a56d8e306cb25fd4310f24a90c5fb7":[6,0,2,251,54],
-"classDGtal_1_1COBANaivePlaneComputer.html#a17098fa05c7e9cf548d69283410c10e2":[6,0,2,251,46]
+"classDGtal_1_1COBANaivePlaneComputer.html#a17098fa05c7e9cf548d69283410c10e2":[6,0,2,251,46],
+"classDGtal_1_1COBANaivePlaneComputer.html#a178c24300778a465b18f938a487a35f6":[6,0,2,251,31]
 };

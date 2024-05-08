@@ -1,6 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"classDGtal_1_1COBANaivePlaneComputer.html#a178c24300778a465b18f938a487a35f6":[6,0,2,251,31],
 "classDGtal_1_1COBANaivePlaneComputer.html#a23db48e8af8534a21c6105746baa5dc1":[6,0,2,251,29],
 "classDGtal_1_1COBANaivePlaneComputer.html#a2965102df98f6496885ad60af8a9a558":[6,0,2,251,42],
 "classDGtal_1_1COBANaivePlaneComputer.html#a2cf3ee23de9404e8d274dfaf053086b5":[6,0,2,251,28],
@@ -249,5 +248,6 @@ var NAVTREEINDEX5 =
 "classDGtal_1_1ChordNaivePlaneComputer.html#a1c956d9df9e0d784e78d70f953217853":[6,0,2,248,58],
 "classDGtal_1_1ChordNaivePlaneComputer.html#a1f352b4a146a9c7d8a0d2a47ce2a2315":[6,0,2,248,17],
 "classDGtal_1_1ChordNaivePlaneComputer.html#a213807bbfbacf912a53ee051740144ba":[6,0,2,248,18],
-"classDGtal_1_1ChordNaivePlaneComputer.html#a22bfb9017682dc899354e60899f41fc1":[6,0,2,248,67]
+"classDGtal_1_1ChordNaivePlaneComputer.html#a22bfb9017682dc899354e60899f41fc1":[6,0,2,248,67],
+"classDGtal_1_1ChordNaivePlaneComputer.html#a2351c358ec9e2d66e996b7135b872f21":[6,0,2,248,31]
 };

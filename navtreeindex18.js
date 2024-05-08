@@ -1,6 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"classDGtal_1_1GridCurve.html#aee0f0cdeae7501e1ef47d3025664204d":[6,0,2,216,8],
 "classDGtal_1_1GridCurve.html#af0cddf36978ff52913c2dc57be9a2f38":[6,0,2,216,40],
 "classDGtal_1_1GridCurve.html#af3c6b0bbab4a3e7ea6dba39047fc76f7":[6,0,2,216,46],
 "classDGtal_1_1GridCurve.html#af8c8d2dab500a134fc1f92551596eebc":[6,0,2,216,38],
@@ -249,5 +248,6 @@ var NAVTREEINDEX18 =
 "classDGtal_1_1IVector_3_01T_00_01TAlloc_00_01true_01_4.html":[6,0,2,546],
 "classDGtal_1_1IVector_3_01T_00_01TAlloc_00_01true_01_4.html#a0491afd9c6759a412e5795cd69aabec9":[6,0,2,546,14],
 "classDGtal_1_1IVector_3_01T_00_01TAlloc_00_01true_01_4.html#a079a5551c34d93e52414582d6e1187f4":[6,0,2,546,3],
-"classDGtal_1_1IVector_3_01T_00_01TAlloc_00_01true_01_4.html#a0c6be422b8e53476cd8b5d124452b20c":[6,0,2,546,13]
+"classDGtal_1_1IVector_3_01T_00_01TAlloc_00_01true_01_4.html#a0c6be422b8e53476cd8b5d124452b20c":[6,0,2,546,13],
+"classDGtal_1_1IVector_3_01T_00_01TAlloc_00_01true_01_4.html#a0cb86ab5e8cb992f76c1e4e1a6d79e04":[6,0,2,546,15]
 };
