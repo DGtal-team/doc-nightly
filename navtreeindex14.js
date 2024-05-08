@@ -1,6 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"classDGtal_1_1DistanceBreadthFirstVisitor.html#a2fc758e1eae72d9862b2c5696022d55f":[6,0,2,342,29],
 "classDGtal_1_1DistanceBreadthFirstVisitor.html#a3c960416fdc7d2ccf36f551ff46af4b6":[6,0,2,342,23],
 "classDGtal_1_1DistanceBreadthFirstVisitor.html#a3ce6ecb3c91211110829e13841bcfa92":[6,0,2,342,14],
 "classDGtal_1_1DistanceBreadthFirstVisitor.html#a49366adfbd14a35aabb239e517dc5ca9":[6,0,2,342,22],
@@ -249,5 +248,6 @@ var NAVTREEINDEX14 =
 "classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#a85018ac646a5ae95426309aee50522eb":[6,0,2,315,19],
 "classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#aa3ab9990bfa31f7ecefb4f220517e9f5":[6,0,2,315,11],
 "classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#aac12f9d7bba1723989610464bf098338":[6,0,2,315,4],
-"classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#aaf815181282cea3b36591eb1d862099d":[6,0,2,315,18]
+"classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#aaf815181282cea3b36591eb1d862099d":[6,0,2,315,18],
+"classDGtal_1_1ExactPredicateLpPowerSeparableMetric.html#ac8551105bab39341f31e1708b7eb81c6":[6,0,2,315,14]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"classDGtal_1_1ChordNaivePlaneComputer.html#a22bfb9017682dc899354e60899f41fc1":[6,0,2,248,67],
 "classDGtal_1_1ChordNaivePlaneComputer.html#a2351c358ec9e2d66e996b7135b872f21":[6,0,2,248,31],
 "classDGtal_1_1ChordNaivePlaneComputer.html#a240a2b2c6752b6d8afad73d4ff61a0f1":[6,0,2,248,48],
 "classDGtal_1_1ChordNaivePlaneComputer.html#a24f7a713a443213477c92582b589ce13":[6,0,2,248,20],
@@ -249,5 +248,6 @@ var NAVTREEINDEX6 =
 "classDGtal_1_1Color.html#a9300b43c3169aede3d3aadfdab856335":[6,0,2,397,47],
 "classDGtal_1_1Color.html#a963fa51d34e61823cf1c9b1992258a2d":[6,0,2,397,26],
 "classDGtal_1_1Color.html#a9697d996c7aef820cf57d7533412cd47":[6,0,2,397,4],
-"classDGtal_1_1Color.html#a9d2c7139ac1ff1ca91975dd1231d8cad":[6,0,2,397,65]
+"classDGtal_1_1Color.html#a9d2c7139ac1ff1ca91975dd1231d8cad":[6,0,2,397,65],
+"classDGtal_1_1Color.html#aa487b3d008dc44964b10971ce8a26432":[6,0,2,397,38]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classDGtal_1_1AngleLinearMinimizer.html#abdcd89c1fdc9fdb42264c146cafb9833":[6,0,2,521,24],
 "classDGtal_1_1AngleLinearMinimizer.html#ad15f79e6cf06b243230f743bee038f1c":[6,0,2,521,15],
 "classDGtal_1_1AngleLinearMinimizer.html#ad5367a9035b5c474f403ffa60a103ec6":[6,0,2,521,17],
 "classDGtal_1_1AngleLinearMinimizer.html#adb102a74d0b1565024a6729c2dc994b3":[6,0,2,521,30],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "classDGtal_1_1ArithmeticalDSSComputer.html#ab19587fa8a568d88514d3342dda50d76":[6,0,2,171,5],
 "classDGtal_1_1ArithmeticalDSSComputer.html#ab1ef856b00dbbb900e450abdb99ed490":[6,0,2,171,24],
 "classDGtal_1_1ArithmeticalDSSComputer.html#ab300209819ed35ddfa269fb2955bee14":[6,0,2,171,23],
-"classDGtal_1_1ArithmeticalDSSComputer.html#ab73f30352cadba398ae8e526974ec474":[6,0,2,171,25]
+"classDGtal_1_1ArithmeticalDSSComputer.html#ab73f30352cadba398ae8e526974ec474":[6,0,2,171,25],
+"classDGtal_1_1ArithmeticalDSSComputer.html#ab907de66d7e540d0e64da5fd4cb333b7":[6,0,2,171,42]
 };
