@@ -43,6 +43,7 @@ var namespaceDGtal_1_1functors =
     [ "Rescaling", "structDGtal_1_1functors_1_1Rescaling.html", "structDGtal_1_1functors_1_1Rescaling" ],
     [ "GaussianKernel", "structDGtal_1_1functors_1_1GaussianKernel.html", "structDGtal_1_1functors_1_1GaussianKernel" ],
     [ "FunctorHolder", "classDGtal_1_1functors_1_1FunctorHolder.html", "classDGtal_1_1functors_1_1FunctorHolder" ],
+    [ "EmbedderFromNormalVectors", "structDGtal_1_1functors_1_1EmbedderFromNormalVectors.html", "structDGtal_1_1functors_1_1EmbedderFromNormalVectors" ],
     [ "PositionFunctorFrom2DPoint", "structDGtal_1_1functors_1_1PositionFunctorFrom2DPoint.html", "structDGtal_1_1functors_1_1PositionFunctorFrom2DPoint" ],
     [ "LargeTruncationFunctor", "structDGtal_1_1functors_1_1LargeTruncationFunctor.html", "structDGtal_1_1functors_1_1LargeTruncationFunctor" ],
     [ "StrictTruncationFunctor", "structDGtal_1_1functors_1_1StrictTruncationFunctor.html", "structDGtal_1_1functors_1_1StrictTruncationFunctor" ],

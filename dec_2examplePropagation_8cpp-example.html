@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -123,7 +123,7 @@ You should obtain such wave propagation (by converting svg files).</div></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Calculus&gt;</div>
 <div class="line"><span class="keywordtype">void</span></div>
-<div class="line">set_initial_phase_dir_yy(Calculus&amp; calculus, Eigen::VectorXcd&amp; initial_wave)</div>
+<div class="line">set_initial_phase_dir_yy(Calculus&amp; <a name="a3"></a><a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>, Eigen::VectorXcd&amp; initial_wave)</div>
 <div class="line">{</div>
 <div class="line">    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="testCubicalComplex_8cpp.html#a9b10591d95c90247f1c7b3bd52853782">Calculus::Cell</a> <a class="code" href="testCubicalComplex_8cpp.html#a9b10591d95c90247f1c7b3bd52853782">Cell</a>;</div>
 <div class="line">    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Calculus::Index</a> <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a>;</div>
@@ -133,15 +133,15 @@ You should obtain such wave propagation (by converting svg files).</div></div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> yy=13; yy&lt;17; yy++)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keyword">const</span> <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> point(xx,yy);</div>
-<div class="line">        <span class="keyword">const</span> <a class="code" href="testCubicalComplex_8cpp.html#a9b10591d95c90247f1c7b3bd52853782">Cell</a> cell = calculus.myKSpace.uSpel(point);</div>
-<div class="line">        <span class="keyword">const</span> <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a> index = calculus.getCellIndex(cell);</div>
+<div class="line">        <span class="keyword">const</span> <a class="code" href="testCubicalComplex_8cpp.html#a9b10591d95c90247f1c7b3bd52853782">Cell</a> cell = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.myKSpace.uSpel(point);</div>
+<div class="line">        <span class="keyword">const</span> <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a> index = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.getCellIndex(cell);</div>
 <div class="line">        initial_wave(index) = std::exp(std::complex&lt;double&gt;(0,2*M_PI*(yy-14.5)/8));</div>
 <div class="line">    }</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Calculus&gt;</div>
 <div class="line"><span class="keywordtype">void</span></div>
-<div class="line">set_initial_phase_null(Calculus&amp; calculus, Eigen::VectorXcd&amp; initial_wave)</div>
+<div class="line">set_initial_phase_null(Calculus&amp; <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>, Eigen::VectorXcd&amp; initial_wave)</div>
 <div class="line">{</div>
 <div class="line">    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="testCubicalComplex_8cpp.html#a9b10591d95c90247f1c7b3bd52853782">Calculus::Cell</a> <a class="code" href="testCubicalComplex_8cpp.html#a9b10591d95c90247f1c7b3bd52853782">Cell</a>;</div>
 <div class="line">    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Calculus::Index</a> <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a>;</div>
@@ -151,8 +151,8 @@ You should obtain such wave propagation (by converting svg files).</div></div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> yy=13; yy&lt;17; yy++)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keyword">const</span> <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> point(xx,yy);</div>
-<div class="line">        <span class="keyword">const</span> <a class="code" href="testCubicalComplex_8cpp.html#a9b10591d95c90247f1c7b3bd52853782">Cell</a> cell = calculus.myKSpace.uSpel(point);</div>
-<div class="line">        <span class="keyword">const</span> <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a> index = calculus.getCellIndex(cell);</div>
+<div class="line">        <span class="keyword">const</span> <a class="code" href="testCubicalComplex_8cpp.html#a9b10591d95c90247f1c7b3bd52853782">Cell</a> cell = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.myKSpace.uSpel(point);</div>
+<div class="line">        <span class="keyword">const</span> <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a> index = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.getCellIndex(cell);</div>
 <div class="line">        initial_wave(index) = 1;</div>
 <div class="line">    }</div>
 <div class="line">}</div>
@@ -162,7 +162,7 @@ You should obtain such wave propagation (by converting svg files).</div></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> propa_2d()</div>
 <div class="line">{</div>
-<div class="line">    <a name="a3"></a><a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a4"></a><a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;2d propagation&quot;</span>);</div>
+<div class="line">    <a name="a4"></a><a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a5"></a><a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;2d propagation&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">typedef</span> DiscreteExteriorCalculus&lt;2, 2, EigenLinearAlgebraBackend&gt; Calculus;</div>
 <div class="line">                <span class="keyword">typedef</span> DiscreteExteriorCalculusFactory&lt;EigenLinearAlgebraBackend&gt; CalculusFactory;</div>
@@ -171,12 +171,12 @@ You should obtain such wave propagation (by converting svg files).</div></div>
 <div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;solving time dependent equation&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">        <span class="keyword">const</span> Calculus::Scalar cc = 8; <span class="comment">// px/s</span></div>
-<div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a5"></a><a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;cc = &quot;</span> &lt;&lt; cc &lt;&lt; endl;</div>
+<div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a6"></a><a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;cc = &quot;</span> &lt;&lt; cc &lt;&lt; endl;</div>
 <div class="line"> </div>
-<div class="line">        <span class="keyword">const</span> <a name="a6"></a><a class="code" href="namespaceDGtal_1_1Z2i.html#aca523bebdae58eb19385aaefffff8bc5">Z2i::Domain</a> <a name="a7"></a><a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>(<a name="a8"></a><a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a>(0,0), <a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a>(29,29));</div>
-<div class="line">        <span class="keyword">const</span> Calculus calculus = CalculusFactory::createFromDigitalSet(generateDiskSet(<a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>), <span class="keyword">false</span>);</div>
+<div class="line">        <span class="keyword">const</span> <a name="a7"></a><a class="code" href="namespaceDGtal_1_1Z2i.html#aca523bebdae58eb19385aaefffff8bc5">Z2i::Domain</a> <a name="a8"></a><a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>(<a name="a9"></a><a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a>(0,0), <a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a>(29,29));</div>
+<div class="line">        <span class="keyword">const</span> Calculus <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a> = CalculusFactory::createFromDigitalSet(generateDiskSet(<a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>), <span class="keyword">false</span>);</div>
 <div class="line"> </div>
-<div class="line">        <span class="keyword">const</span> Calculus::DualIdentity0 laplace = calculus.laplace&lt;<a name="a9"></a><a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DUAL</a>&gt;() + 1e-8 * calculus.identity&lt;0, <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DUAL</a>&gt;();</div>
+<div class="line">        <span class="keyword">const</span> Calculus::DualIdentity0 laplace = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.laplace&lt;<a name="a10"></a><a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DUAL</a>&gt;() + 1e-8 * <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.identity&lt;0, <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DUAL</a>&gt;();</div>
 <div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;laplace = &quot;</span> &lt;&lt; laplace &lt;&lt; endl;</div>
 <div class="line"> </div>
 <div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;finding eigen pairs&quot;</span>);</div>
@@ -186,19 +186,19 @@ You should obtain such wave propagation (by converting svg files).</div></div>
 <div class="line">        <span class="keyword">const</span> Eigen::VectorXd eigen_values = eigen_solver.eigenvalues();</div>
 <div class="line">        <span class="keyword">const</span> Eigen::MatrixXd eigen_vectors = eigen_solver.eigenvectors();</div>
 <div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;eigen_values_range = &quot;</span> &lt;&lt; eigen_values.minCoeff() &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; eigen_values.maxCoeff() &lt;&lt; endl;</div>
-<div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a10"></a><a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
+<div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a11"></a><a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"> </div>
 <div class="line">        <span class="keyword">const</span> Eigen::VectorXd angular_frequencies = cc * eigen_values.array().sqrt();</div>
 <div class="line"> </div>
-<div class="line">        Eigen::VectorXcd initial_wave = Eigen::VectorXcd::Zero(calculus.kFormLength(0, <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DUAL</a>));</div>
+<div class="line">        Eigen::VectorXcd initial_wave = Eigen::VectorXcd::Zero(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.kFormLength(0, <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DUAL</a>));</div>
 <div class="line">        <span class="comment">//set_initial_phase_null(calculus, initial_wave);</span></div>
-<div class="line">        set_initial_phase_dir_yy(calculus, initial_wave);</div>
+<div class="line">        set_initial_phase_dir_yy(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>, initial_wave);</div>
 <div class="line"> </div>
 <div class="line">        {</div>
 <div class="line">            Board2D board;</div>
 <div class="line">            board &lt;&lt; <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>;</div>
 <div class="line">            board &lt;&lt; CustomStyle(<span class="stringliteral">&quot;KForm&quot;</span>, <span class="keyword">new</span> KFormStyle2D(-1, 1));</div>
-<div class="line">            board &lt;&lt; Calculus::DualForm0(calculus, initial_wave.real());</div>
+<div class="line">            board &lt;&lt; Calculus::DualForm0(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>, initial_wave.real());</div>
 <div class="line">            board.saveSVG(<span class="stringliteral">&quot;propagation_time_wave_initial_coarse.svg&quot;</span>);</div>
 <div class="line">        }</div>
 <div class="line"> </div>
@@ -222,12 +222,12 @@ You should obtain such wave propagation (by converting svg files).</div></div>
 <div class="line">            Board2D board;</div>
 <div class="line">            board &lt;&lt; <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>;</div>
 <div class="line">            board &lt;&lt; CustomStyle(<span class="stringliteral">&quot;KForm&quot;</span>, <span class="keyword">new</span> KFormStyle2D(-1, 1));</div>
-<div class="line">            board &lt;&lt; Calculus::DualForm0(calculus, wave.real());</div>
+<div class="line">            board &lt;&lt; Calculus::DualForm0(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>, wave.real());</div>
 <div class="line">            board.saveSVG(<span class="stringliteral">&quot;propagation_time_wave_initial_smoothed.svg&quot;</span>);</div>
 <div class="line">        }</div>
 <div class="line"> </div>
 <div class="line">        <span class="keyword">const</span> <span class="keywordtype">int</span> kk_max = 60;</div>
-<div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a11"></a><a class="code" href="classDGtal_1_1Trace.html#ad8efd553b31277903be115e7aa256f74">progressBar</a>(0,kk_max);</div>
+<div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a12"></a><a class="code" href="classDGtal_1_1Trace.html#ad8efd553b31277903be115e7aa256f74">progressBar</a>(0,kk_max);</div>
 <div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> kk=0; kk&lt;kk_max; kk++)</div>
 <div class="line">        {</div>
 <div class="line">            <span class="keyword">const</span> Calculus::Scalar time = kk/20.;</div>
@@ -240,7 +240,7 @@ You should obtain such wave propagation (by converting svg files).</div></div>
 <div class="line">            Board2D board;</div>
 <div class="line">            board &lt;&lt; <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>;</div>
 <div class="line">            board &lt;&lt; CustomStyle(<span class="stringliteral">&quot;KForm&quot;</span>, <span class="keyword">new</span> KFormStyle2D(-1, 1));</div>
-<div class="line">            board &lt;&lt; Calculus::DualForm0(calculus, current_wave.real());</div>
+<div class="line">            board &lt;&lt; Calculus::DualForm0(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>, current_wave.real());</div>
 <div class="line">            board.saveSVG(ss.str().c_str());</div>
 <div class="line"> </div>
 <div class="line">            <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad8efd553b31277903be115e7aa256f74">progressBar</a>(kk+1,kk_max);</div>
@@ -254,9 +254,9 @@ You should obtain such wave propagation (by converting svg files).</div></div>
 <div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;forced oscillations&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">        <span class="keyword">const</span> <a class="code" href="namespaceDGtal_1_1Z2i.html#aca523bebdae58eb19385aaefffff8bc5">Z2i::Domain</a> <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>(<a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a>(0,0), <a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a>(50,50));</div>
-<div class="line">        <span class="keyword">const</span> Calculus calculus = CalculusFactory::createFromDigitalSet(generateDiskSet(<a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>), <span class="keyword">false</span>);</div>
+<div class="line">        <span class="keyword">const</span> Calculus <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a> = CalculusFactory::createFromDigitalSet(generateDiskSet(<a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>), <span class="keyword">false</span>);</div>
 <div class="line"> </div>
-<div class="line">        <span class="keyword">const</span> Calculus::DualIdentity0 laplace = calculus.laplace&lt;<a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DUAL</a>&gt;();</div>
+<div class="line">        <span class="keyword">const</span> Calculus::DualIdentity0 laplace = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.laplace&lt;<a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DUAL</a>&gt;();</div>
 <div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;laplace = &quot;</span> &lt;&lt; laplace &lt;&lt; endl;</div>
 <div class="line"> </div>
 <div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;finding eigen pairs&quot;</span>);</div>
@@ -268,11 +268,11 @@ You should obtain such wave propagation (by converting svg files).</div></div>
 <div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;eigen_values_range = &quot;</span> &lt;&lt; laplace_eigen_values.minCoeff() &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; laplace_eigen_values.maxCoeff() &lt;&lt; endl;</div>
 <div class="line">        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"> </div>
-<div class="line">        Calculus::DualForm0 concentration(calculus);</div>
+<div class="line">        Calculus::DualForm0 concentration(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>);</div>
 <div class="line">        {</div>
 <div class="line">            <span class="keyword">const</span> <a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a> point(25,25);</div>
-<div class="line">            <span class="keyword">const</span> <a class="code" href="testCubicalComplex_8cpp.html#a9b10591d95c90247f1c7b3bd52853782">Calculus::Cell</a> cell = calculus.myKSpace.uSpel(point);</div>
-<div class="line">            <span class="keyword">const</span> <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Calculus::Index</a> index = calculus.getCellIndex(cell);</div>
+<div class="line">            <span class="keyword">const</span> <a class="code" href="testCubicalComplex_8cpp.html#a9b10591d95c90247f1c7b3bd52853782">Calculus::Cell</a> cell = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.myKSpace.uSpel(point);</div>
+<div class="line">            <span class="keyword">const</span> <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Calculus::Index</a> index = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.getCellIndex(cell);</div>
 <div class="line">            concentration.myContainer(index) = 1;</div>
 <div class="line">        }</div>
 <div class="line"> </div>
@@ -291,12 +291,12 @@ You should obtain such wave propagation (by converting svg files).</div></div>
 <div class="line">            <span class="keyword">const</span> Eigen::VectorXd dalembert_eigen_values = (laplace_eigen_values.array() - (2*M_PI/lambda)*(2*M_PI/lambda)).array().inverse();</div>
 <div class="line">            <span class="keyword">const</span> Eigen::MatrixXd concentration_to_wave = laplace_eigen_vectors * dalembert_eigen_values.asDiagonal() * laplace_eigen_vectors.transpose();</div>
 <div class="line"> </div>
-<div class="line">            Calculus::DualForm0 wave(calculus, concentration_to_wave * concentration.myContainer);</div>
-<div class="line">            wave.myContainer /= wave.myContainer(calculus.getCellIndex(calculus.myKSpace.uSpel(<a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a>(25,25))));</div>
+<div class="line">            Calculus::DualForm0 wave(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>, concentration_to_wave * concentration.myContainer);</div>
+<div class="line">            wave.myContainer /= wave.myContainer(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.getCellIndex(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.myKSpace.uSpel(<a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a>(25,25))));</div>
 <div class="line"> </div>
 <div class="line">            {</div>
 <div class="line">                <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;saving samples&quot;</span> &lt;&lt; endl;</div>
-<div class="line">                <span class="keyword">const</span> Calculus::Properties properties = calculus.getProperties();</div>
+<div class="line">                <span class="keyword">const</span> Calculus::Properties properties = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.getProperties();</div>
 <div class="line">                {</div>
 <div class="line">                    std::stringstream ss;</div>
 <div class="line">                    ss &lt;&lt; <span class="stringliteral">&quot;propagation_forced_samples_hv_&quot;</span> &lt;&lt; ll &lt;&lt; <span class="stringliteral">&quot;.dat&quot;</span>;</div>
@@ -344,7 +344,7 @@ You should obtain such wave propagation (by converting svg files).</div></div>
 <div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> <a name="a12"></a><a class="code" href="testArithmeticDSS-benchmark_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>()</div>
+<div class="line"><span class="keywordtype">int</span> <a name="a13"></a><a class="code" href="testArithmeticDSS-benchmark_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>()</div>
 <div class="line">{</div>
 <div class="line">    propa_2d();</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
@@ -353,6 +353,7 @@ You should obtain such wave propagation (by converting svg files).</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad8efd553b31277903be115e7aa256f74"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad8efd553b31277903be115e7aa256f74">DGtal::Trace::progressBar</a></div><div class="ttdeci">void progressBar(const double currentValue, const double maximalValue)</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a4e9d205fb8308b3d07478e48bf63308c"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a></div><div class="ttdeci">PolyCalculus * calculus</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00070">dgtalCalculus-geodesic.cpp:70</a></div></div>
 <div class="ttc" id="afullConvexitySphereGeodesics_8cpp_html_ab053a8ae7537e4f87fa9a46962f7617a"><div class="ttname"><a href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a></div><div class="ttdeci">SMesh::Index Index</div><div class="ttdef"><b>Definition:</b> <a href="fullConvexitySphereGeodesics_8cpp_source.html#l00117">fullConvexitySphereGeodesics.cpp:117</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z2i_html_ac0a04516c81db6f4a583eddda0f64875"><div class="ttname"><a href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">DGtal::Z2i::Point</a></div><div class="ttdeci">Space::Point Point</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00095">StdDefs.h:95</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z2i_html_aca523bebdae58eb19385aaefffff8bc5"><div class="ttname"><a href="namespaceDGtal_1_1Z2i.html#aca523bebdae58eb19385aaefffff8bc5">DGtal::Z2i::Domain</a></div><div class="ttdeci">HyperRectDomain&lt; Space &gt; Domain</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00099">StdDefs.h:99</a></div></div>
@@ -368,7 +369,7 @@ You should obtain such wave propagation (by converting svg files).</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 8 2024 20:20:35 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:02:52 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

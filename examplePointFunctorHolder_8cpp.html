@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -170,15 +170,15 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">using</span> DTL2 = <a class="code" href="classDGtal_1_1DistanceTransformation.html">DistanceTransformation</a>&lt;<a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a38dfaf1641eab4d3fb805df4b52ab10d">Z2i::Space</a>, decltype(mickey), <a class="code" href="classDGtal_1_1ExactPredicateLpSeparableMetric.html">Z2i::L2Metric</a>&gt;;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  DTL2 dt( <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>, mickey, Z2i::l2Metric );</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  DTL2 <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>( <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>, mickey, Z2i::l2Metric );</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">DTL2::Value</a> maxDT = *boost::first_max_element( dt.constRange().begin(), dt.constRange().end() );</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">DTL2::Value</a> maxDT = *boost::first_max_element( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>.constRange().begin(), <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>.constRange().end() );</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">using</span> HueTwice = <a class="code" href="classDGtal_1_1HueShadeColorMap.html">HueShadeColorMap&lt;DTL2::Value, 1&gt;</a>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="classDGtal_1_1Board2D.html">Board2D</a> aBoard;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  aBoard &lt;&lt; <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  Display2DFactory::drawImage&lt;HueTwice&gt;(aBoard, dt, 0, maxDT);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  Display2DFactory::drawImage&lt;HueTwice&gt;(aBoard, <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>, 0, maxDT);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  aBoard.<a class="code" href="classLibBoard_1_1Board.html#ac39d5033a3a95e50f8ab7772e24c56bb">saveEPS</a>(<span class="stringliteral">&quot;examplePointFunctorHolder.eps&quot;</span>);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">return</span> 0;</div>
@@ -192,11 +192,12 @@ Functions</h2></td></tr>
 <div class="ttc" id="aclassDGtal_1_1PointVector_html"><div class="ttname"><a href="classDGtal_1_1PointVector.html">DGtal::PointVector&lt; dim, Integer &gt;</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1PointVector_html_a621809d6682ec859fd761f60b23ba2b7"><div class="ttname"><a href="classDGtal_1_1PointVector.html#a621809d6682ec859fd761f60b23ba2b7">DGtal::PointVector::norm</a></div><div class="ttdeci">double norm(const NormType type=L_2) const</div></div>
 <div class="ttc" id="aclassLibBoard_1_1Board_html_ac39d5033a3a95e50f8ab7772e24c56bb"><div class="ttname"><a href="classLibBoard_1_1Board.html#ac39d5033a3a95e50f8ab7772e24c56bb">LibBoard::Board::saveEPS</a></div><div class="ttdeci">void saveEPS(const char *filename, PageSize size=Board::BoundingBox, double margin=10.0) const</div><div class="ttdef"><b>Definition:</b> <a href="Board_8cpp_source.html#l00804">Board.cpp:804</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a778e38aa889751afffa2dea6b803e67a"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a></div><div class="ttdeci">float dt</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00063">dgtalCalculus-geodesic.cpp:63</a></div></div>
 <div class="ttc" id="atestProjection_8cpp_html_a1f1a69f8d8b037b72c2160ed12b3ef51"><div class="ttname"><a href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a></div><div class="ttdeci">Domain domain</div><div class="ttdef"><b>Definition:</b> <a href="testProjection_8cpp_source.html#l00088">testProjection.cpp:88</a></div></div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_a38dfaf1641eab4d3fb805df4b52ab10d"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a38dfaf1641eab4d3fb805df4b52ab10d">Space</a></div><div class="ttdeci">SpaceND&lt; 2 &gt; Space</div><div class="ttdef"><b>Definition:</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00042">testSimpleRandomAccessRangeFromPoint.cpp:42</a></div></div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_a566a00621638570a4186414035153a2e"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a></div><div class="ttdeci">double Value</div><div class="ttdef"><b>Definition:</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00041">testSimpleRandomAccessRangeFromPoint.cpp:38</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="testProjection_8cpp_source.html#l00088">domain</a>, <a class="el" href="StdDefs_8h_source.html#l00123">DGtal::Z2i::l2Metric</a>, <a class="el" href="classDGtal_1_1PointVector.html#a621809d6682ec859fd761f60b23ba2b7">DGtal::PointVector&lt; dim, TEuclideanRing, TContainer &gt;::norm()</a>, and <a class="el" href="Board_8cpp_source.html#l00804">LibBoard::Board::saveEPS()</a>.</p>
+<p class="reference">References <a class="el" href="testProjection_8cpp_source.html#l00088">domain</a>, <a class="el" href="dgtalCalculus-geodesic_8cpp_source.html#l00063">dt</a>, <a class="el" href="StdDefs_8h_source.html#l00123">DGtal::Z2i::l2Metric</a>, <a class="el" href="classDGtal_1_1PointVector.html#a621809d6682ec859fd761f60b23ba2b7">DGtal::PointVector&lt; dim, TEuclideanRing, TContainer &gt;::norm()</a>, and <a class="el" href="Board_8cpp_source.html#l00804">LibBoard::Board::saveEPS()</a>.</p>
 
 </div>
 </div>
@@ -206,7 +207,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_87940ddbb3c0d974f3558b3bbbf8327c.html">kernel</a></li><li class="navelem"><a class="el" href="examplePointFunctorHolder_8cpp.html">examplePointFunctorHolder.cpp</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:01 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:19 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

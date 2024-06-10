@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -182,7 +182,7 @@ Shortest path between two points</div></div>
 <div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;  [Done]&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">  </div>
 <div class="line">  <span class="comment">// Compute surface</span></div>
-<div class="line">  <span class="keyword">auto</span> surface = SH3::makeDigitalSurface( bimage, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">  <span class="keyword">auto</span> <a name="a12"></a><a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> = SH3::makeDigitalSurface( bimage, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Compute interior boundary points</span></div>
 <div class="line">  <span class="comment">// They are less immediate interior points than surfels.</span></div>
@@ -190,7 +190,7 @@ Shortest path between two points</div></div>
 <div class="line">  std::map&lt; SCell, int &gt; surfel2idx;</div>
 <div class="line">  std::map&lt; Point, int &gt; point2idx;</div>
 <div class="line">  <span class="keywordtype">int</span> idx = 0;</div>
-<div class="line">  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> s : (*surface) )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> s : (*<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>) )</div>
 <div class="line">    {</div>
 <div class="line">      <span class="comment">// get inside point on the border of the shape.</span></div>
 <div class="line">      <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> k = <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.sOrthDir( s );</div>
@@ -212,7 +212,7 @@ Shortest path between two points</div></div>
 <div class="line">  <span class="comment">// Select a starting point.</span></div>
 <div class="line">  <span class="keyword">typedef</span> Viewer3D&lt;&gt; MViewer3D;</div>
 <div class="line">  <a class="code" href="namespaceDGtal.html#ac1e9ac6a329319ae13c51c0c9e92486a">DGtal::int32_t</a> selected_surfels[ 2 ] = { 0, 0 };</div>
-<div class="line">  <span class="keyword">auto</span> surfels = SH3::getSurfelRange ( surface );</div>
+<div class="line">  <span class="keyword">auto</span> surfels = SH3::getSurfelRange ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> );</div>
 <div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0;  i &lt; 2; i++ )</div>
 <div class="line">    {</div>
 <div class="line">      MViewer3D viewerCore( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a> );</div>
@@ -245,7 +245,7 @@ Shortest path between two points</div></div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// (I) Extracts shortest paths to a target</span></div>
 <div class="line"> </div>
-<div class="line">  <span class="keyword">typedef</span> <a name="a12"></a><a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">TangencyComputer&lt; KSpace &gt;::Index</a> <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a>;</div>
+<div class="line">  <span class="keyword">typedef</span> <a name="a13"></a><a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">TangencyComputer&lt; KSpace &gt;::Index</a> <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a>;</div>
 <div class="line">  TangencyComputer&lt; KSpace &gt; TC( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a> );</div>
 <div class="line">  TC.init( points.cbegin(), points.cend() );</div>
 <div class="line">  <span class="keyword">auto</span> SP = TC.makeShortestPaths( opt );</div>
@@ -406,6 +406,7 @@ Shortest path between two points</div></div>
 <div class="line"><span class="comment">//                                                                           //</span></div>
 <div class="line"><span class="comment"></span> </div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
 <div class="ttc" id="adigitalPolyhedronBuilder3D_8cpp_html_a6c4dc4f5610ba8c9b7ee6e83ecea8d24"><div class="ttname"><a href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">SCell</a></div><div class="ttdeci">Z3i::SCell SCell</div><div class="ttdef"><b>Definition:</b> <a href="digitalPolyhedronBuilder3D_8cpp_source.html#l00079">digitalPolyhedronBuilder3D.cpp:79</a></div></div>
 <div class="ttc" id="aexamplePlaneProbingParallelepipedEstimator_8cpp_html_a23c0623485ed9af765bab12ac424843c"><div class="ttname"><a href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a></div><div class="ttdeci">DigitalPlane::Point Vector</div><div class="ttdef"><b>Definition:</b> <a href="examplePlaneProbingParallelepipedEstimator_8cpp_source.html#l00045">examplePlaneProbingParallelepipedEstimator.cpp:45</a></div></div>
 <div class="ttc" id="afullConvexityShortestPaths3D_8cpp_html_a652a071181e7216a6e3d606de345b281"><div class="ttname"><a href="fullConvexityShortestPaths3D_8cpp.html#a652a071181e7216a6e3d606de345b281">reaction</a></div><div class="ttdeci">int reaction(void *viewer, DGtal::int32_t name, void *data)</div><div class="ttdef"><b>Definition:</b> <a href="fullConvexityShortestPaths3D_8cpp_source.html#l00090">fullConvexityShortestPaths3D.cpp:90</a></div></div>
@@ -427,7 +428,7 @@ Shortest path between two points</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 8 2024 20:20:35 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:02:53 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

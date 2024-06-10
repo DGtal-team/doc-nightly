@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -228,24 +228,24 @@ $(document).ready(function(){initNavTree('dec_2exampleHeatLaplace_8cpp-example.h
 <div class="line">  <span class="keyword">typedef</span> DiscreteExteriorCalculus&lt;2, 3, EigenLinearAlgebraBackend&gt; Calculus;</div>
 <div class="line">  <span class="keyword">typedef</span> DiscreteExteriorCalculusFactory&lt;EigenLinearAlgebraBackend&gt; CalculusFactory;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keyword">const</span> Calculus calculus = CalculusFactory::createFromNSCells&lt;2&gt;(digSurf.begin(), digSurf.end(), normalEstimator, options.h);</div>
-<div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; calculus &lt;&lt; std::endl;</div>
+<div class="line">  <span class="keyword">const</span> Calculus <a name="a21"></a><a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a> = CalculusFactory::createFromNSCells&lt;2&gt;(digSurf.begin(), digSurf.end(), normalEstimator, options.h);</div>
+<div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a> &lt;&lt; std::endl;</div>
 <div class="line"> </div>
 <div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;Computing the input function&quot;</span>);</div>
-<div class="line">  Calculus::DualForm0 input_func(calculus);</div>
+<div class="line">  Calculus::DualForm0 input_func(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">for</span>(<span class="keyword">auto</span> itb = digSurf.begin(), ite = digSurf.end(); itb != ite; itb++)</div>
 <div class="line">  {</div>
-<div class="line">    <span class="keyword">const</span> <a name="a21"></a><a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Calculus::Index</a> i_calc = calculus.getCellIndex( kspace.unsigns( *itb ) );</div>
+<div class="line">    <span class="keyword">const</span> <a name="a22"></a><a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Calculus::Index</a> i_calc = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.getCellIndex( kspace.unsigns( *itb ) );</div>
 <div class="line">    input_func.myContainer( i_calc ) = input_function( options.h * canonicSCellEmbedder( *itb ) );</div>
 <div class="line">  }</div>
 <div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"> </div>
 <div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;Computing the Laplace operator&quot;</span>);</div>
 <div class="line">  <span class="keyword">const</span> <span class="keywordtype">double</span> t = options.convolution_radius * pow(options.h, 2. / 3.);</div>
-<div class="line">  <span class="keyword">const</span> <span class="keywordtype">double</span> <a name="a22"></a><a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a> = log( - log1p( t ) ) + 2.;</div>
-<div class="line">  <span class="keyword">const</span> Calculus::DualIdentity0 laplace = calculus.heatLaplace&lt;<a name="a23"></a><a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DUAL</a>&gt;(options.h, t, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>);</div>
+<div class="line">  <span class="keyword">const</span> <span class="keywordtype">double</span> <a name="a23"></a><a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a> = log( - log1p( t ) ) + 2.;</div>
+<div class="line">  <span class="keyword">const</span> Calculus::DualIdentity0 laplace = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.heatLaplace&lt;<a name="a24"></a><a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DUAL</a>&gt;(options.h, t, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>);</div>
 <div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;Matrix has &quot;</span> &lt;&lt; ((double)laplace.myContainer.nonZeros() / (double)laplace.myContainer.size() * 100.) &lt;&lt; <span class="stringliteral">&quot;% of non-zeros elements.&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"> </div>
@@ -257,7 +257,7 @@ $(document).ready(function(){initNavTree('dec_2exampleHeatLaplace_8cpp-example.h
 <div class="line">  <span class="keywordtype">int</span> i = 0;</div>
 <div class="line">  <span class="keywordflow">for</span>(<span class="keyword">auto</span> itb = digSurf.begin(), ite = digSurf.end(); itb != ite; itb++)</div>
 <div class="line">  {</div>
-<div class="line">    <span class="keyword">const</span> <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Calculus::Index</a> i_calc = calculus.getCellIndex( kspace.unsigns( *itb ) );</div>
+<div class="line">    <span class="keyword">const</span> <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Calculus::Index</a> i_calc = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.getCellIndex( kspace.unsigns( *itb ) );</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">const</span> <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> p = options.h * canonicSCellEmbedder( *itb );</div>
 <div class="line">    <span class="keyword">const</span> <a class="code" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a> p_normalized = p / p.norm();</div>
@@ -283,7 +283,7 @@ $(document).ready(function(){initNavTree('dec_2exampleHeatLaplace_8cpp-example.h
 <div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> <a name="a24"></a><a class="code" href="testArithmeticDSS-benchmark_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>()</div>
+<div class="line"><span class="keywordtype">int</span> <a name="a25"></a><a class="code" href="testArithmeticDSS-benchmark_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>()</div>
 <div class="line">{</div>
 <div class="line">  Options options;</div>
 <div class="line"> </div>
@@ -305,6 +305,7 @@ $(document).ready(function(){initNavTree('dec_2exampleHeatLaplace_8cpp-example.h
 <div class="ttc" id="aclassDGtal_1_1Trace_html_a352b7160bf722e2f0bcbee5d0bad6ef3"><div class="ttname"><a href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">DGtal::Trace::beginBlock</a></div><div class="ttdeci">void beginBlock(const std::string &amp;keyword=&quot;&quot;)</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a4e9d205fb8308b3d07478e48bf63308c"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a></div><div class="ttdeci">PolyCalculus * calculus</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00070">dgtalCalculus-geodesic.cpp:70</a></div></div>
 <div class="ttc" id="adigitalPolyhedronBuilder3D_8cpp_html_aff972bf71120e9994b42c7b83b2a5532"><div class="ttname"><a href="digitalPolyhedronBuilder3D_8cpp.html#aff972bf71120e9994b42c7b83b2a5532">RealVector</a></div><div class="ttdeci">Space::RealVector RealVector</div><div class="ttdef"><b>Definition:</b> <a href="digitalPolyhedronBuilder3D_8cpp_source.html#l00082">digitalPolyhedronBuilder3D.cpp:82</a></div></div>
 <div class="ttc" id="afullConvexitySphereGeodesics_8cpp_html_ab053a8ae7537e4f87fa9a46962f7617a"><div class="ttname"><a href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a></div><div class="ttdeci">SMesh::Index Index</div><div class="ttdef"><b>Definition:</b> <a href="fullConvexitySphereGeodesics_8cpp_source.html#l00117">fullConvexitySphereGeodesics.cpp:117</a></div></div>
 <div class="ttc" id="agreedy-plane-segmentation-ex2_8cpp_html_a03d731f44ed1110acdbefdc2357f84cf"><div class="ttname"><a href="greedy-plane-segmentation-ex2_8cpp.html#a03d731f44ed1110acdbefdc2357f84cf">MyDigitalSurface</a></div><div class="ttdeci">DigitalSurface&lt; MyDigitalSurfaceContainer &gt; MyDigitalSurface</div><div class="ttdef"><b>Definition:</b> <a href="greedy-plane-segmentation-ex2_8cpp_source.html#l00092">greedy-plane-segmentation-ex2.cpp:92</a></div></div>
@@ -334,7 +335,7 @@ $(document).ready(function(){initNavTree('dec_2exampleHeatLaplace_8cpp-example.h
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 8 2024 20:20:35 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:02:52 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

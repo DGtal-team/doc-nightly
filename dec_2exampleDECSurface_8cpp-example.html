@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -196,29 +196,29 @@ Solution dual 0-form.</div></div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">typedef</span> <a name="_a28"></a><a class="code" href="classDGtal_1_1DiscreteExteriorCalculusFactory.html">DGtal::DiscreteExteriorCalculusFactory&lt;DGtal::EigenLinearAlgebraBackend&gt;</a> CalculusFactory;</div>
 <div class="line">    <span class="keyword">typedef</span> <a name="_a29"></a><a class="code" href="classDGtal_1_1DiscreteExteriorCalculus.html">DGtal::DiscreteExteriorCalculus&lt;2, 3, DGtal::EigenLinearAlgebraBackend&gt;</a> Calculus;</div>
-<div class="line">    <span class="keyword">const</span> Calculus calculus = CalculusFactory::createFromNSCells&lt;2&gt;(digital_surface.begin(), digital_surface.end(), <span class="keyword">false</span>);</div>
-<div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;calculus=&quot;</span> &lt;&lt; calculus &lt;&lt; endl;</div>
+<div class="line">    <span class="keyword">const</span> Calculus <a name="a30"></a><a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a> = CalculusFactory::createFromNSCells&lt;2&gt;(digital_surface.begin(), digital_surface.end(), <span class="keyword">false</span>);</div>
+<div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;calculus=&quot;</span> &lt;&lt; <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a> &lt;&lt; endl;</div>
 <div class="line"> </div>
 <div class="line">    {</div>
 <div class="line">        <a class="code" href="classDGtal_1_1Viewer3D.html">Viewer</a>* viewer = <span class="keyword">new</span> <a class="code" href="classDGtal_1_1Viewer3D.html">Viewer</a>(kspace);</div>
 <div class="line">        viewer-&gt;<a class="code" href="classDGtal_1_1Viewer3D.html#a1ea1c9cf781ce6940db02c352cf24e6f">show</a>();</div>
 <div class="line">        viewer-&gt;setWindowTitle(<span class="stringliteral">&quot;alcapone calculus&quot;</span>);</div>
-<div class="line">        <a name="a30"></a><a class="code" href="structDGtal_1_1Display3DFactory.html#a79e8970940a0f5e80e850e39691807c5">DisplayFactory::draw</a>(*viewer, calculus);</div>
+<div class="line">        <a name="a31"></a><a class="code" href="structDGtal_1_1Display3DFactory.html#a79e8970940a0f5e80e850e39691807c5">DisplayFactory::draw</a>(*viewer, <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>);</div>
 <div class="line">        (*viewer) &lt;&lt; <a class="code" href="classDGtal_1_1Display3D.html#a96b45e0a0c762c14c0e5e27045d1ca04a96910329360ab83c484f03e0fff1cb45">Viewer::updateDisplay</a>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">using</span> <a name="a31"></a><a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745da7b7d86a1d82efbe8b9bc0ad3c7c80bd7">DGtal::PRIMAL</a>;</div>
-<div class="line">    <span class="keyword">using</span> <a name="a32"></a><a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DGtal::DUAL</a>;</div>
+<div class="line">    <span class="keyword">using</span> <a name="a32"></a><a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745da7b7d86a1d82efbe8b9bc0ad3c7c80bd7">DGtal::PRIMAL</a>;</div>
+<div class="line">    <span class="keyword">using</span> <a name="a33"></a><a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DGtal::DUAL</a>;</div>
 <div class="line"> </div>
 <div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"> </div>
 <div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;poisson equation&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line">    Calculus::DualForm0 rho(calculus);</div>
+<div class="line">    Calculus::DualForm0 rho(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>);</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> index=0; index&lt;rho.length(); index++)</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keyword">const</span> <a name="a33"></a><a class="code" href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">Calculus::SCell</a> cell = rho.getSCell(index);</div>
-<div class="line">        <span class="keyword">const</span> <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Calculus::Point</a> point = kspace.<a name="a34"></a><a class="code" href="classDGtal_1_1KhalimskySpaceND.html#a52197498d5f2961b2ced5b7cb821ec40">sKCoords</a>(cell);</div>
+<div class="line">        <span class="keyword">const</span> <a name="a34"></a><a class="code" href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">Calculus::SCell</a> cell = rho.getSCell(index);</div>
+<div class="line">        <span class="keyword">const</span> <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Calculus::Point</a> point = kspace.<a name="a35"></a><a class="code" href="classDGtal_1_1KhalimskySpaceND.html#a52197498d5f2961b2ced5b7cb821ec40">sKCoords</a>(cell);</div>
 <div class="line">        <span class="keywordflow">if</span> (point[2]&gt;1) <span class="keywordflow">continue</span>;</div>
 <div class="line">        rho.myContainer(index) = point[1]&gt;100 ? 1 : -1;</div>
 <div class="line">    }</div>
@@ -232,20 +232,20 @@ Solution dual 0-form.</div></div>
 <div class="line">        (*viewer) &lt;&lt; <a class="code" href="classDGtal_1_1Display3D.html#a96b45e0a0c762c14c0e5e27045d1ca04a96910329360ab83c484f03e0fff1cb45">Viewer::updateDisplay</a>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">const</span> Calculus::DualIdentity0 laplace = calculus.laplace&lt;<a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DUAL</a>&gt;();</div>
+<div class="line">    <span class="keyword">const</span> Calculus::DualIdentity0 laplace = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.laplace&lt;<a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DUAL</a>&gt;();</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">typedef</span> <a class="code" href="structDGtal_1_1EigenLinearAlgebraBackend.html#af2850ff9af2fb4e133bb38dc8fa28872">DGtal::EigenLinearAlgebraBackend::SolverSparseLU</a> LinearAlgebraSolver;</div>
-<div class="line">    <span class="keyword">typedef</span> <a name="_a35"></a><a class="code" href="classDGtal_1_1DiscreteExteriorCalculusSolver.html">DGtal::DiscreteExteriorCalculusSolver&lt;Calculus, LinearAlgebraSolver, 0, DUAL, 0, DUAL&gt;</a> PoissonSolver;</div>
+<div class="line">    <span class="keyword">typedef</span> <a name="_a36"></a><a class="code" href="classDGtal_1_1DiscreteExteriorCalculusSolver.html">DGtal::DiscreteExteriorCalculusSolver&lt;Calculus, LinearAlgebraSolver, 0, DUAL, 0, DUAL&gt;</a> PoissonSolver;</div>
 <div class="line">    PoissonSolver solver;</div>
-<div class="line">    solver.<a name="a36"></a><a class="code" href="classDGtal_1_1DiscreteExteriorCalculusSolver.html#a90f2a9e43a13293e6368b63298363b60">compute</a>(laplace);</div>
-<div class="line">    <span class="keyword">const</span> Calculus::DualForm0 phi = solver.solve(rho);</div>
-<div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;phi_range=&quot;</span> &lt;&lt; phi.myContainer.minCoeff() &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; phi.myContainer.maxCoeff() &lt;&lt; endl;</div>
+<div class="line">    solver.<a name="a37"></a><a class="code" href="classDGtal_1_1DiscreteExteriorCalculusSolver.html#a90f2a9e43a13293e6368b63298363b60">compute</a>(laplace);</div>
+<div class="line">    <span class="keyword">const</span> Calculus::DualForm0 <a name="a38"></a><a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a> = solver.solve(rho);</div>
+<div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;phi_range=&quot;</span> &lt;&lt; <a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a>.myContainer.minCoeff() &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; <a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a>.myContainer.maxCoeff() &lt;&lt; endl;</div>
 <div class="line"> </div>
 <div class="line">    {</div>
 <div class="line">        <a class="code" href="classDGtal_1_1Viewer3D.html">Viewer</a>* viewer = <span class="keyword">new</span> <a class="code" href="classDGtal_1_1Viewer3D.html">Viewer</a>(kspace);</div>
 <div class="line">        viewer-&gt;<a class="code" href="classDGtal_1_1Viewer3D.html#a1ea1c9cf781ce6940db02c352cf24e6f">show</a>();</div>
 <div class="line">        viewer-&gt;setWindowTitle(<span class="stringliteral">&quot;alcapone poisson phi&quot;</span>);</div>
-<div class="line">        <a class="code" href="structDGtal_1_1Display3DFactory.html#a79e8970940a0f5e80e850e39691807c5">DisplayFactory::draw</a>(*viewer, phi);</div>
+<div class="line">        <a class="code" href="structDGtal_1_1Display3DFactory.html#a79e8970940a0f5e80e850e39691807c5">DisplayFactory::draw</a>(*viewer, <a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a>);</div>
 <div class="line">        (*viewer) &lt;&lt; <a class="code" href="classDGtal_1_1Display3D.html#a96b45e0a0c762c14c0e5e27045d1ca04a96910329360ab83c484f03e0fff1cb45">Viewer::updateDisplay</a>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
@@ -264,13 +264,13 @@ Solution dual 0-form.</div></div>
 <div class="line"> </div>
 <div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;digital surface&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">const</span> <a class="code" href="classDGtal_1_1HyperRectDomain.html">DGtal::Z3i::Domain</a> input_domain(<a name="a37"></a><a class="code" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">DGtal::Z3i::Point::diagonal</a>(-1), <a class="code" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">DGtal::Z3i::Point::diagonal</a>(2));</div>
+<div class="line">    <span class="keyword">const</span> <a class="code" href="classDGtal_1_1HyperRectDomain.html">DGtal::Z3i::Domain</a> input_domain(<a name="a39"></a><a class="code" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">DGtal::Z3i::Point::diagonal</a>(-1), <a class="code" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">DGtal::Z3i::Point::diagonal</a>(2));</div>
 <div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;input_domain=&quot;</span> &lt;&lt; input_domain &lt;&lt; endl;</div>
 <div class="line"> </div>
 <div class="line">    <a class="code" href="classDGtal_1_1KhalimskySpaceND.html">DGtal::Z3i::KSpace</a> kspace;</div>
 <div class="line">    kspace.<a class="code" href="classDGtal_1_1KhalimskySpaceND.html#a15dcbcaae831dd1c36090e6336c177d4">init</a>(input_domain.lowerBound(), input_domain.upperBound(), <span class="keyword">true</span>);</div>
 <div class="line"> </div>
-<div class="line">    <a name="_a38"></a><a class="code" href="classDGtal_1_1DigitalSetByAssociativeContainer.html">DGtal::Z3i::DigitalSet</a> input_set(input_domain);</div>
+<div class="line">    <a name="_a40"></a><a class="code" href="classDGtal_1_1DigitalSetByAssociativeContainer.html">DGtal::Z3i::DigitalSet</a> input_set(input_domain);</div>
 <div class="line">    input_set.insert( <a class="code" href="classDGtal_1_1PointVector.html">DGtal::Z3i::Point</a>(0,0,0) );</div>
 <div class="line">    input_set.insert( <a class="code" href="classDGtal_1_1PointVector.html">DGtal::Z3i::Point</a>(1,0,0) );</div>
 <div class="line">    input_set.insert( <a class="code" href="classDGtal_1_1PointVector.html">DGtal::Z3i::Point</a>(1,1,0) );</div>
@@ -328,27 +328,27 @@ Solution dual 0-form.</div></div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1DiscreteExteriorCalculusFactory.html">DGtal::DiscreteExteriorCalculusFactory&lt;DGtal::EigenLinearAlgebraBackend&gt;</a> CalculusFactory;</div>
 <div class="line">    <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1DiscreteExteriorCalculus.html">DGtal::DiscreteExteriorCalculus&lt;2, 3, DGtal::EigenLinearAlgebraBackend&gt;</a> Calculus;</div>
-<div class="line">    <span class="keyword">const</span> Calculus calculus = CalculusFactory::createFromNSCells&lt;2&gt;(digital_surface.begin(), digital_surface.end());</div>
-<div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;calculus=&quot;</span> &lt;&lt; calculus &lt;&lt; endl;</div>
+<div class="line">    <span class="keyword">const</span> Calculus <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a> = CalculusFactory::createFromNSCells&lt;2&gt;(digital_surface.begin(), digital_surface.end());</div>
+<div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;calculus=&quot;</span> &lt;&lt; <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a> &lt;&lt; endl;</div>
 <div class="line"> </div>
 <div class="line">    {</div>
 <div class="line">        <a class="code" href="classDGtal_1_1Viewer3D.html">Viewer</a>* viewer = <span class="keyword">new</span> <a class="code" href="classDGtal_1_1Viewer3D.html">Viewer</a>(kspace);</div>
 <div class="line">        viewer-&gt;<a class="code" href="classDGtal_1_1Viewer3D.html#a1ea1c9cf781ce6940db02c352cf24e6f">show</a>();</div>
 <div class="line">        viewer-&gt;setWindowTitle(<span class="stringliteral">&quot;discrete exterior calculus&quot;</span>);</div>
-<div class="line">        <a class="code" href="structDGtal_1_1Display3DFactory.html#a79e8970940a0f5e80e850e39691807c5">DisplayFactory::draw</a>(*viewer, calculus);</div>
+<div class="line">        <a class="code" href="structDGtal_1_1Display3DFactory.html#a79e8970940a0f5e80e850e39691807c5">DisplayFactory::draw</a>(*viewer, <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>);</div>
 <div class="line">        (*viewer) &lt;&lt; <a class="code" href="classDGtal_1_1Display3D.html#a96b45e0a0c762c14c0e5e27045d1ca04a96910329360ab83c484f03e0fff1cb45">Viewer::updateDisplay</a>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">using</span> <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745da7b7d86a1d82efbe8b9bc0ad3c7c80bd7">DGtal::PRIMAL</a>;</div>
 <div class="line">    <span class="keyword">using</span> <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DGtal::DUAL</a>;</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">const</span> Calculus::PrimalForm2 primal_surfel_area = calculus.hodge&lt;0, <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DUAL</a>&gt;() *</div>
-<div class="line">        Calculus::DualForm0(calculus, Eigen::VectorXd::Ones(calculus.kFormLength(0, DUAL)));</div>
+<div class="line">    <span class="keyword">const</span> Calculus::PrimalForm2 primal_surfel_area = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.hodge&lt;0, <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745dac649578cee4b5463ded5048fdaa47a41">DUAL</a>&gt;() *</div>
+<div class="line">        Calculus::DualForm0(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>, Eigen::VectorXd::Ones(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.kFormLength(0, DUAL)));</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">const</span> Calculus::DualForm2 dual_surfel_area = calculus.hodge&lt;0, <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745da7b7d86a1d82efbe8b9bc0ad3c7c80bd7">PRIMAL</a>&gt;() *</div>
-<div class="line">        Calculus::PrimalForm0(calculus, Eigen::VectorXd::Ones(calculus.kFormLength(0, PRIMAL)));</div>
+<div class="line">    <span class="keyword">const</span> Calculus::DualForm2 dual_surfel_area = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.hodge&lt;0, <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745da7b7d86a1d82efbe8b9bc0ad3c7c80bd7">PRIMAL</a>&gt;() *</div>
+<div class="line">        Calculus::PrimalForm0(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>, Eigen::VectorXd::Ones(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.kFormLength(0, PRIMAL)));</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> area_th = calculus.kFormLength(2, PRIMAL);</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> area_th = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.kFormLength(2, PRIMAL);</div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> area_primal = dual_surfel_area.myContainer.sum();</div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> area_dual = primal_surfel_area.myContainer.sum();</div>
 <div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;area_th=&quot;</span> &lt;&lt; area_th &lt;&lt; endl;</div>
@@ -357,16 +357,16 @@ Solution dual 0-form.</div></div>
 <div class="line">    FATAL_ERROR( area_th == area_primal );</div>
 <div class="line">    FATAL_ERROR( area_th == area_dual );</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">const</span> Calculus::DualForm1 dual_edge_length = calculus.hodge&lt;1, <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745da7b7d86a1d82efbe8b9bc0ad3c7c80bd7">PRIMAL</a>&gt;() *</div>
-<div class="line">        Calculus::PrimalForm1(calculus, Eigen::VectorXd::Ones(calculus.kFormLength(1, PRIMAL)));</div>
+<div class="line">    <span class="keyword">const</span> Calculus::DualForm1 dual_edge_length = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.hodge&lt;1, <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745da7b7d86a1d82efbe8b9bc0ad3c7c80bd7">PRIMAL</a>&gt;() *</div>
+<div class="line">        Calculus::PrimalForm1(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>, Eigen::VectorXd::Ones(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.kFormLength(1, PRIMAL)));</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">bool</span> dual_edge_length_match = dual_edge_length.myContainer == Eigen::VectorXd::Ones(calculus.kFormLength(1, DUAL)) ;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">bool</span> dual_edge_length_match = dual_edge_length.myContainer == Eigen::VectorXd::Ones(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.kFormLength(1, DUAL)) ;</div>
 <div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;dual_edge_length_match=&quot;</span> &lt;&lt; dual_edge_length_match &lt;&lt; endl;</div>
 <div class="line">    FATAL_ERROR( dual_edge_length_match );</div>
 <div class="line"> </div>
 <div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;dual surfel area&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">for</span> (<a name="a39"></a><a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Calculus::Index</a> index=0; index&lt;dual_surfel_area.length(); index++)</div>
+<div class="line">    <span class="keywordflow">for</span> (<a name="a41"></a><a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Calculus::Index</a> index=0; index&lt;dual_surfel_area.length(); index++)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keyword">const</span> <a class="code" href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">Calculus::SCell</a> cell = dual_surfel_area.getSCell(index);</div>
 <div class="line">        <span class="keyword">const</span> Calculus::Scalar area = dual_surfel_area.myContainer(index);</div>
@@ -380,7 +380,7 @@ Solution dual 0-form.</div></div>
 <div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> <a name="a40"></a><a class="code" href="testArithmeticDSS-benchmark_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[])</div>
+<div class="line"><span class="keywordtype">int</span> <a name="a42"></a><a class="code" href="testArithmeticDSS-benchmark_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[])</div>
 <div class="line">{</div>
 <div class="line">    QApplication app(argc, argv);</div>
 <div class="line"> </div>
@@ -412,6 +412,8 @@ Solution dual 0-form.</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
 <div class="ttc" id="aclassDGtal_1_1Viewer3D_html"><div class="ttname"><a href="classDGtal_1_1Viewer3D.html">DGtal::Viewer3D</a></div><div class="ttdef"><b>Definition:</b> <a href="Viewer3D_8h_source.html#l00131">Viewer3D.h:132</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Viewer3D_html_a1ea1c9cf781ce6940db02c352cf24e6f"><div class="ttname"><a href="classDGtal_1_1Viewer3D.html#a1ea1c9cf781ce6940db02c352cf24e6f">DGtal::Viewer3D::show</a></div><div class="ttdeci">virtual void show()</div><div class="ttdoc">Overload QWidget method in order to add a call to updateList() method (to ensure that the lists are w...</div></div>
+<div class="ttc" id="adgtalCalculus-bunny_8cpp_html_acaa84cf4416595d5df297727152b78e2"><div class="ttname"><a href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a></div><div class="ttdeci">PolygonalCalculus&lt; SH3::RealPoint, SH3::RealVector &gt;::Vector phi(const Face f)</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-bunny_8cpp_source.html#l00069">dgtalCalculus-bunny.cpp:69</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a4e9d205fb8308b3d07478e48bf63308c"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a></div><div class="ttdeci">PolyCalculus * calculus</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00070">dgtalCalculus-geodesic.cpp:70</a></div></div>
 <div class="ttc" id="adigitalPolyhedronBuilder3D_8cpp_html_a6c4dc4f5610ba8c9b7ee6e83ecea8d24"><div class="ttname"><a href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">SCell</a></div><div class="ttdeci">Z3i::SCell SCell</div><div class="ttdef"><b>Definition:</b> <a href="digitalPolyhedronBuilder3D_8cpp_source.html#l00079">digitalPolyhedronBuilder3D.cpp:79</a></div></div>
 <div class="ttc" id="afullConvexitySphereGeodesics_8cpp_html_ab053a8ae7537e4f87fa9a46962f7617a"><div class="ttname"><a href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a></div><div class="ttdeci">SMesh::Index Index</div><div class="ttdef"><b>Definition:</b> <a href="fullConvexitySphereGeodesics_8cpp_source.html#l00117">fullConvexitySphereGeodesics.cpp:117</a></div></div>
 <div class="ttc" id="agreedy-plane-segmentation-ex2_8cpp_html_a6d06fad433cff067dfcbbbf16d6e2dbf"><div class="ttname"><a href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a></div><div class="ttdeci">MyDigitalSurface::ConstIterator ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="greedy-plane-segmentation-ex2_8cpp_source.html#l00093">greedy-plane-segmentation-ex2.cpp:93</a></div></div>
@@ -437,7 +439,7 @@ Solution dual 0-form.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 8 2024 20:20:35 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:02:52 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

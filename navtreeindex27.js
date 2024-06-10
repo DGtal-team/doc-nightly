@@ -1,5 +1,9 @@
 var NAVTREEINDEX27 =
 {
+"classDGtal_1_1LabelledMap_1_1BlockIterator.html#aa32928eb20fa33b3b3d38844aca3a1a7":[6,0,2,128,3,0],
+"classDGtal_1_1LabelledMap_1_1BlockIterator.html#aa58e1a7782d84916836a3f33af32076f":[6,0,2,128,3,3],
+"classDGtal_1_1LabelledMap_1_1BlockIterator.html#aa6e8da569e1c2605033d05007ace4e72":[6,0,2,128,3,16],
+"classDGtal_1_1LabelledMap_1_1BlockIterator.html#aae189476e43319bebcffc77582286e23":[6,0,2,128,3,25],
 "classDGtal_1_1LabelledMap_1_1BlockIterator.html#ac27b7da1f57ee98325e64b22f9a50f50":[6,0,2,128,3,4],
 "classDGtal_1_1LabelledMap_1_1BlockIterator.html#ac57c57bf57968738d29b8ebacd6eb493":[6,0,2,128,3,6],
 "classDGtal_1_1LabelledMap_1_1BlockIterator.html#acde7c54e3676f4a8db76b7ef1e8fc791":[6,0,2,128,3,28],
@@ -245,9 +249,5 @@ var NAVTREEINDEX27 =
 "classDGtal_1_1LatticePolytope2D.html#a4ef71c3372d388655888e2b08665f898":[6,0,2,8,37],
 "classDGtal_1_1LatticePolytope2D.html#a5609acf0454e12661fe5792ce68b7d56":[6,0,2,8,59],
 "classDGtal_1_1LatticePolytope2D.html#a57ed873785dd23be2163feef9f78df53":[6,0,2,8,83],
-"classDGtal_1_1LatticePolytope2D.html#a586efe8443d374cdc3b628fe5a470556":[6,0,2,8,38],
-"classDGtal_1_1LatticePolytope2D.html#a5944fcd087a1164c9b332c38a989ca17":[6,0,2,8,62],
-"classDGtal_1_1LatticePolytope2D.html#a5c403ae8dc6f5f0d38c004f789b332eb":[6,0,2,8,77],
-"classDGtal_1_1LatticePolytope2D.html#a63a7a5ba1b6aed5a64b3b681daa813ce":[6,0,2,8,36],
-"classDGtal_1_1LatticePolytope2D.html#a63ba9f19e52f2fc28711d25b52f42253":[6,0,2,8,32]
+"classDGtal_1_1LatticePolytope2D.html#a586efe8443d374cdc3b628fe5a470556":[6,0,2,8,38]
 };

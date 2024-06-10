@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -174,9 +174,10 @@ Load vol file -&gt; ...</h2>
 -&gt; build main connected digital surface</h3>
 <div class="fragment"><div class="line">    <span class="keyword">auto</span> al_capone = SH3::makeBinaryImage( examplesPath + <span class="stringliteral">&quot;samples/Al.100.vol&quot;</span>, params );</div>
 <div class="line">    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>         = SH3::getKSpace( al_capone );</div>
-<div class="line">    <span class="keyword">auto</span> surface   = SH3::makeLightDigitalSurface( al_capone, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;#surfels=&quot;</span> &lt;&lt; surface-&gt;size() &lt;&lt; std::endl;</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>   = SH3::makeLightDigitalSurface( al_capone, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;#surfels=&quot;</span> &lt;&lt; <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>-&gt;size() &lt;&lt; std::endl;</div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fc7012708b0416880a5c8b12dfdf9dd"><div class="ttname"><a href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">DGtal::trace</a></div><div class="ttdeci">Trace trace</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00153">Common.h:153</a></div></div>
 <div class="ttc" id="atestCubicalComplex_8cpp_html_a2b87ed989d2519d025bd5d4fbcbac062"><div class="ttname"><a href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a></div><div class="ttdeci">KSpace K</div><div class="ttdef"><b>Definition:</b> <a href="testCubicalComplex_8cpp_source.html#l00062">testCubicalComplex.cpp:62</a></div></div>
 </div><!-- fragment --> <h3><a class="anchor" id="dgtal_shortcuts_ssec2_1_3"></a>
@@ -226,12 +227,12 @@ Rendering of lobster 40 (red semi-transparent) and 150 (blue) isosurfaces.</div>
 <div class="line">      ( <span class="stringliteral">&quot;colormap&quot;</span>, <span class="stringliteral">&quot;Jet&quot;</span> ); <span class="comment">// specifies the colormap</span></div>
 <div class="line">    <span class="keyword">auto</span> al_capone = SH3::makeBinaryImage( examplesPath + <span class="stringliteral">&quot;samples/Al.100.vol&quot;</span>, params );</div>
 <div class="line">    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>         = SH3::getKSpace( al_capone );</div>
-<div class="line">    <span class="keyword">auto</span> surface   = SH3::makeLightDigitalSurface( al_capone, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line">    <span class="keyword">auto</span> surfels   = SH3::getSurfelRange( surface, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>   = SH3::makeLightDigitalSurface( al_capone, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> surfels   = SH3::getSurfelRange( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params );</div>
 <div class="line">    <span class="keyword">auto</span> cmap      = SH3::getColorMap( 0, surfels.size(), params );</div>
 <div class="line">    SH3::Colors colors( surfels.size() );</div>
 <div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; surfels.size(); ++i ) colors[ i ] = cmap( i );</div>
-<div class="line">    <span class="keywordtype">bool</span> ok        = SH3::saveOBJ( surface, SH3::RealVectors(), colors, <span class="stringliteral">&quot;al-primal-bft.obj&quot;</span> );</div>
+<div class="line">    <span class="keywordtype">bool</span> ok        = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, SH3::RealVectors(), colors, <span class="stringliteral">&quot;al-primal-bft.obj&quot;</span> );</div>
 </div><!-- fragment --> <div class="image">
 <img src="al-primal-bft-blender-small.png" alt=""/>
 <div class="caption">
@@ -243,15 +244,15 @@ Rendering of Al Capone with a breadth-first traversal colored according to dista
 <div class="line">    params( <span class="stringliteral">&quot;colormap&quot;</span>, <span class="stringliteral">&quot;Tics&quot;</span> );</div>
 <div class="line">    <span class="keyword">auto</span> bimage    = SH3::makeBinaryImage( examplesPath + <span class="stringliteral">&quot;samples/Al.100.vol&quot;</span>, params );</div>
 <div class="line">    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>         = SH3::getKSpace( bimage, params );</div>
-<div class="line">    <span class="keyword">auto</span> surface   = SH3::makeDigitalSurface( bimage, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line">    <span class="keyword">auto</span> surfels   = SH3::getSurfelRange( surface, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>   = SH3::makeDigitalSurface( bimage, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> surfels   = SH3::getSurfelRange( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params );</div>
 <div class="line">    <span class="keyword">auto</span> curv      = SHG3::getIIMeanCurvatures( bimage, surfels, params );</div>
 <div class="line">    <span class="comment">// To get Gauss curvatures, write instead:</span></div>
 <div class="line">    <span class="comment">// auto curv = SHG3::getIIGaussianCurvatures( bimage, surfels, params );</span></div>
 <div class="line">    <span class="keyword">auto</span> cmap      = SH3::getColorMap( -0.5, 0.5, params );</div>
 <div class="line">    <span class="keyword">auto</span> colors    = SH3::Colors( surfels.size() );</div>
 <div class="line">    std::transform( curv.cbegin(), curv.cend(), colors.begin(), cmap );</div>
-<div class="line">    <span class="keywordtype">bool</span> ok        = SH3::saveOBJ( surface, SH3::RealVectors(), colors,</div>
+<div class="line">    <span class="keywordtype">bool</span> ok        = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, SH3::RealVectors(), colors,</div>
 <div class="line">                                   <span class="stringliteral">&quot;al-H-II.obj&quot;</span> );</div>
 </div><!-- fragment --> <table class="doxtable">
 <tr>
@@ -282,9 +283,10 @@ Build polynomial shape -&gt; digitize -&gt; ...</h2>
 <div class="line">    <span class="keyword">auto</span> implicit_shape  = SH3::makeImplicitShape3D  ( params );</div>
 <div class="line">    <span class="keyword">auto</span> digitized_shape = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );</div>
 <div class="line">    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>               = SH3::getKSpace( params );</div>
-<div class="line">    <span class="keyword">auto</span> binary_image    = SH3::makeBinaryImage( digitized_shape, params );</div>
-<div class="line">    <span class="keyword">auto</span> surface         = SH3::makeDigitalSurface( binary_image, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line">    <span class="keywordtype">bool</span> ok              = SH3::saveOBJ( surface, <span class="stringliteral">&quot;goursat-primal.obj&quot;</span> );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>    = SH3::makeBinaryImage( digitized_shape, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>         = SH3::makeDigitalSurface( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keywordtype">bool</span> ok              = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, <span class="stringliteral">&quot;goursat-primal.obj&quot;</span> );</div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_aa50a9c9e8c2b62bc7ff1c3c577d25ffd"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a></div><div class="ttdeci">CountedPtr&lt; SH3::BinaryImage &gt; binary_image</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00065">dgtalCalculus-geodesic.cpp:65</a></div></div>
 </div><!-- fragment --> <div class="image">
 <img src="goursat-primal-blender-small.png" alt=""/>
 <div class="caption">
@@ -299,11 +301,11 @@ Rendering of goursat-primal.obj.</div></div>
 <div class="line">    <span class="keyword">auto</span> digitized_shape = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );</div>
 <div class="line">    <span class="keyword">auto</span> Kwhole          = SH3::getKSpace( params );</div>
 <div class="line">    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>               = SH3::getKSpace( <a class="code" href="classDGtal_1_1PointVector.html#acd6b03ecf112cf2ae8bae7b644164932">SH3::Point::zero</a>, Kwhole.upperBound(), params );</div>
-<div class="line">    <span class="keyword">auto</span> binary_image    = SH3::makeBinaryImage( digitized_shape, </div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>    = SH3::makeBinaryImage( digitized_shape, </div>
 <div class="line">                                                 <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">SH3::Domain</a>(<a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.lowerBound(),<a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.upperBound()),</div>
 <div class="line">                                                 params );</div>
-<div class="line">    <span class="keyword">auto</span> surface         = SH3::makeIdxDigitalSurface( binary_image, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;#surfels=&quot;</span> &lt;&lt; surface-&gt;size() &lt;&lt; std::endl;</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>         = SH3::makeIdxDigitalSurface( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;#surfels=&quot;</span> &lt;&lt; <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>-&gt;size() &lt;&lt; std::endl;</div>
 <div class="ttc" id="aclassDGtal_1_1PointVector_html_acd6b03ecf112cf2ae8bae7b644164932"><div class="ttname"><a href="classDGtal_1_1PointVector.html#acd6b03ecf112cf2ae8bae7b644164932">DGtal::PointVector&lt; dim, Integer &gt;::zero</a></div><div class="ttdeci">static Self zero</div><div class="ttdoc">Static const for zero PointVector.</div><div class="ttdef"><b>Definition:</b> <a href="PointVector_8h_source.html#l01595">PointVector.h:1595</a></div></div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_acd532b318489cd93df57e0b3d136d050"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a></div><div class="ttdeci">HyperRectDomain&lt; Space &gt; Domain</div><div class="ttdef"><b>Definition:</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00044">testSimpleRandomAccessRangeFromPoint.cpp:44</a></div></div>
 </div><!-- fragment --> <h3><a class="anchor" id="dgtal_shortcuts_ssec2_2_4"></a>
@@ -314,13 +316,13 @@ Rendering of goursat-primal.obj.</div></div>
 <div class="line">    <span class="keyword">auto</span> implicit_shape  = SH3::makeImplicitShape3D  ( params );</div>
 <div class="line">    <span class="keyword">auto</span> digitized_shape = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );</div>
 <div class="line">    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>               = SH3::getKSpace( params );</div>
-<div class="line">    <span class="keyword">auto</span> binary_image    = SH3::makeBinaryImage(digitized_shape,</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>    = SH3::makeBinaryImage(digitized_shape,</div>
 <div class="line">                                                <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">SH3::Domain</a>(<a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.lowerBound(),<a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.upperBound()),</div>
 <div class="line">                                                params );</div>
 <div class="line">    <span class="comment">// Extracts the whole surface (with all components)</span></div>
-<div class="line">    <span class="keyword">auto</span> surface         = SH3::makeDigitalSurface( binary_image, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>         = SH3::makeDigitalSurface( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
 <div class="line">    <span class="comment">// Extracts a vector of connected surfaces.</span></div>
-<div class="line">    <span class="keyword">auto</span> vec_surfs       = SH3::makeLightDigitalSurfaces( binary_image, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> vec_surfs       = SH3::makeLightDigitalSurfaces( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
 <div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;#connected components = &quot;</span> &lt;&lt; vec_surfs.size() &lt;&lt; std::endl;</div>
 <div class="line">    std::map&lt; SH3::Surfel, unsigned int&gt; label;</div>
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n = 0;</div>
@@ -330,11 +332,11 @@ Rendering of goursat-primal.obj.</div></div>
 <div class="line">      n += 1;</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keyword">auto</span> cmap        = SH3::getColorMap( 0, vec_surfs.size(), params );</div>
-<div class="line">    <span class="keyword">auto</span> all_surfels = SH3::getSurfelRange( surface, params );</div>
+<div class="line">    <span class="keyword">auto</span> all_surfels = SH3::getSurfelRange( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params );</div>
 <div class="line">    SH3::Colors colors( all_surfels.size() );</div>
 <div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; all_surfels.size(); ++i )</div>
 <div class="line">      colors[ i ] = cmap( label[ all_surfels[ i ] ] );</div>
-<div class="line">    <span class="keywordtype">bool</span> ok = SH3::saveOBJ( surface, SH3::RealVectors(), colors, <span class="stringliteral">&quot;leopold-primal-cc.obj&quot;</span> );</div>
+<div class="line">    <span class="keywordtype">bool</span> ok = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, SH3::RealVectors(), colors, <span class="stringliteral">&quot;leopold-primal-cc.obj&quot;</span> );</div>
 </div><!-- fragment --> <div class="image">
 <img src="leopold-primal-cc-blender-small.png" alt=""/>
 <div class="caption">
@@ -345,10 +347,10 @@ Rendering of leopold-primal-cc.obj.</div></div>
 <div class="fragment"><div class="line">    params( <span class="stringliteral">&quot;polynomial&quot;</span>, <span class="stringliteral">&quot;3*x^2+2*y^2+z^2-90&quot;</span> )( <span class="stringliteral">&quot;gridstep&quot;</span>, 0.25 );</div>
 <div class="line">    <span class="keyword">auto</span> implicit_shape  = SH3::makeImplicitShape3D  ( params );</div>
 <div class="line">    <span class="keyword">auto</span> digitized_shape = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );</div>
-<div class="line">    <span class="keyword">auto</span> binary_image    = SH3::makeBinaryImage      ( digitized_shape, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>    = SH3::makeBinaryImage      ( digitized_shape, params );</div>
 <div class="line">    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>               = SH3::getKSpace( params );</div>
-<div class="line">    <span class="keyword">auto</span> surface         = SH3::makeLightDigitalSurface( binary_image, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line">    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange( surface, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>         = SH3::makeLightDigitalSurface( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params );</div>
 <div class="line">    <span class="keyword">auto</span> positions       = SHG3::getPositions( implicit_shape, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, surfels, params );</div>
 <div class="line">    <span class="keyword">auto</span> normals         = SHG3::getNormalVectors( implicit_shape, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, surfels, params );</div>
 <div class="line">    <span class="keyword">auto</span> mean_curvs      = SHG3::getMeanCurvatures( implicit_shape, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, surfels, params );</div>
@@ -360,17 +362,17 @@ Rendering of leopold-primal-cc.obj.</div></div>
 <div class="line">    params( <span class="stringliteral">&quot;polynomial&quot;</span>, <span class="stringliteral">&quot;goursat&quot;</span> )( <span class="stringliteral">&quot;gridstep&quot;</span>, h );</div>
 <div class="line">    <span class="keyword">auto</span> implicit_shape  = SH3::makeImplicitShape3D  ( params );</div>
 <div class="line">    <span class="keyword">auto</span> digitized_shape = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );</div>
-<div class="line">    <span class="keyword">auto</span> binary_image    = SH3::makeBinaryImage      ( digitized_shape, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>    = SH3::makeBinaryImage      ( digitized_shape, params );</div>
 <div class="line">    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>               = SH3::getKSpace( params );</div>
 <div class="line">    <span class="keyword">auto</span> embedder        = SH3::getCellEmbedder( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a> );</div>
-<div class="line">    <span class="keyword">auto</span> surface         = SH3::makeLightDigitalSurface( binary_image, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>         = SH3::makeLightDigitalSurface( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
 <div class="line">    SH3::Cell2Index c2i;</div>
-<div class="line">    <span class="keyword">auto</span> pointels        = SH3::getPointelRange( c2i, surface );</div>
+<div class="line">    <span class="keyword">auto</span> pointels        = SH3::getPointelRange( c2i, <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> );</div>
 <div class="line">    SH3::RealPoints pos( pointels.size() );</div>
 <div class="line">    std::transform( pointels.cbegin(), pointels.cend(), pos.begin(),</div>
 <div class="line">                    [&amp;] (<span class="keyword">const</span> <a class="code" href="testCubicalComplex_8cpp.html#a9b10591d95c90247f1c7b3bd52853782">SH3::Cell</a>&amp; c) { return h * embedder( c ); } ); </div>
 <div class="line">    <span class="keyword">auto</span> ppos     = SHG3::getPositions( implicit_shape, pos, params );</div>
-<div class="line">    <span class="keywordtype">bool</span> ok       = SH3::saveOBJ( surface,</div>
+<div class="line">    <span class="keywordtype">bool</span> ok       = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>,</div>
 <div class="line">                                  [&amp;] (<span class="keyword">const</span> <a class="code" href="testCubicalComplex_8cpp.html#a9b10591d95c90247f1c7b3bd52853782">SH3::Cell</a>&amp; c){ <span class="keywordflow">return</span> ppos[ c2i[ c ] ];},</div>
 <div class="line">                                  SH3::RealVectors(), SH3::Colors(),</div>
 <div class="line">                                  <span class="stringliteral">&quot;goursat-quad-proj.obj&quot;</span> );</div>
@@ -385,15 +387,15 @@ Rendering of goursat-quad-proj.obj with quad edges in blue.</div></div>
 <div class="fragment"><div class="line">    params( <span class="stringliteral">&quot;polynomial&quot;</span>, <span class="stringliteral">&quot;goursat&quot;</span> )( <span class="stringliteral">&quot;gridstep&quot;</span>, 0.25 )( <span class="stringliteral">&quot;colormap&quot;</span>, <span class="stringliteral">&quot;Tics&quot;</span> );</div>
 <div class="line">    <span class="keyword">auto</span> implicit_shape  = SH3::makeImplicitShape3D  ( params );</div>
 <div class="line">    <span class="keyword">auto</span> digitized_shape = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );</div>
-<div class="line">    <span class="keyword">auto</span> binary_image    = SH3::makeBinaryImage      ( digitized_shape, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>    = SH3::makeBinaryImage      ( digitized_shape, params );</div>
 <div class="line">    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>               = SH3::getKSpace( params );</div>
-<div class="line">    <span class="keyword">auto</span> surface         = SH3::makeLightDigitalSurface( binary_image, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line">    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange( surface, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>         = SH3::makeLightDigitalSurface( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params );</div>
 <div class="line">    <span class="keyword">auto</span> mean_curv       = SHG3::getMeanCurvatures( implicit_shape, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, surfels, params );</div>
 <div class="line">    <span class="keyword">auto</span> cmap            = SH3::getColorMap( -0.3, 0.3, params );</div>
 <div class="line">    <span class="keyword">auto</span> colors          = SH3::Colors( surfels.size() );</div>
 <div class="line">    std::transform( mean_curv.cbegin(), mean_curv.cend(), colors.begin(), cmap );</div>
-<div class="line">    <span class="keywordtype">bool</span> ok              = SH3::saveOBJ( surface, SH3::RealVectors(), colors,</div>
+<div class="line">    <span class="keywordtype">bool</span> ok              = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, SH3::RealVectors(), colors,</div>
 <div class="line">                                         <span class="stringliteral">&quot;goursat-H.obj&quot;</span> );</div>
 </div><!-- fragment --> <div class="image">
 <img src="goursat-H-blender-small.png" alt=""/>
@@ -408,21 +410,21 @@ Rendering of goursat-H.obj</div></div>
 <div class="line">    <span class="keyword">auto</span> digitized_shape = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );</div>
 <div class="line">    <span class="keyword">auto</span> bimage          = SH3::makeBinaryImage      ( digitized_shape, params );</div>
 <div class="line">    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>               = SH3::getKSpace( params );</div>
-<div class="line">    <span class="keyword">auto</span> surface         = SH3::makeLightDigitalSurface( bimage, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line">    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange( surface, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>         = SH3::makeLightDigitalSurface( bimage, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params );</div>
 <div class="line">    <span class="keyword">auto</span> t_curv          = SHG3::getMeanCurvatures( implicit_shape, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, surfels, params );</div>
 <div class="line">    <span class="keyword">auto</span> ii_curv         = SHG3::getIIMeanCurvatures( bimage, surfels, params );</div>
 <div class="line">    <span class="keyword">auto</span> cmap            = SH3::getColorMap( -0.5, 0.5, params );</div>
 <div class="line">    <span class="keyword">auto</span> colors          = SH3::Colors( surfels.size() );</div>
 <div class="line">    std::transform( t_curv.cbegin(),  t_curv.cend(),  colors.begin(), cmap );</div>
-<div class="line">    <span class="keywordtype">bool</span> ok_t  = SH3::saveOBJ( surface, SH3::RealVectors(), colors, <span class="stringliteral">&quot;goursat-H.obj&quot;</span> );</div>
+<div class="line">    <span class="keywordtype">bool</span> ok_t  = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, SH3::RealVectors(), colors, <span class="stringliteral">&quot;goursat-H.obj&quot;</span> );</div>
 <div class="line">    std::transform( ii_curv.cbegin(), ii_curv.cend(), colors.begin(), cmap );</div>
-<div class="line">    <span class="keywordtype">bool</span> ok_ii = SH3::saveOBJ( surface, SH3::RealVectors(), colors, <span class="stringliteral">&quot;goursat-H-ii.obj&quot;</span> );</div>
+<div class="line">    <span class="keywordtype">bool</span> ok_ii = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, SH3::RealVectors(), colors, <span class="stringliteral">&quot;goursat-H-ii.obj&quot;</span> );</div>
 <div class="line">    <span class="keyword">auto</span> errors          = SHG3::getScalarsAbsoluteDifference( t_curv, ii_curv );</div>
 <div class="line">    <span class="keyword">auto</span> stat_errors     = SHG3::getStatistic( errors );</div>
 <div class="line">    <span class="keyword">auto</span> cmap_errors     = SH3::getColorMap( 0.0, stat_errors.max(), params );</div>
 <div class="line">    std::transform( errors.cbegin(), errors.cend(), colors.begin(), cmap_errors );</div>
-<div class="line">    <span class="keywordtype">bool</span> ok_err = SH3::saveOBJ( surface, SH3::RealVectors(), colors, <span class="stringliteral">&quot;goursat-H-ii-err.obj&quot;</span> );</div>
+<div class="line">    <span class="keywordtype">bool</span> ok_err = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, SH3::RealVectors(), colors, <span class="stringliteral">&quot;goursat-H-ii-err.obj&quot;</span> );</div>
 <div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;Error Loo=&quot;</span> &lt;&lt; SHG3::getScalarsNormLoo( t_curv, ii_curv )</div>
 <div class="line">                 &lt;&lt; <span class="stringliteral">&quot; L1=&quot;</span>       &lt;&lt; SHG3::getScalarsNormL1 ( t_curv, ii_curv )</div>
 <div class="line">                 &lt;&lt; <span class="stringliteral">&quot; L2=&quot;</span>       &lt;&lt; SHG3::getScalarsNormL2 ( t_curv, ii_curv )</div>
@@ -452,11 +454,11 @@ Highlight estimation errors (blue small, red high)</div></div>
 <div class="line">    <span class="keyword">auto</span> implicit_shape  = SH3::makeImplicitShape3D  ( params );</div>
 <div class="line">    <span class="keyword">auto</span> digitized_shape = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );</div>
 <div class="line">    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>               = SH3::getKSpace( params );</div>
-<div class="line">    <span class="keyword">auto</span> binary_image    = SH3::makeBinaryImage( digitized_shape, params );</div>
-<div class="line">    <span class="keyword">auto</span> surface         = SH3::makeDigitalSurface( binary_image, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line">    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange( surface, params );</div>
-<div class="line">    <span class="keyword">auto</span> vcm_normals     = SHG3::getVCMNormalVectors( surface, surfels, params );</div>
-<div class="line">    <span class="keywordtype">bool</span> ok              = SH3::saveOBJ( surface, vcm_normals, SH3::Colors(),</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>    = SH3::makeBinaryImage( digitized_shape, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>         = SH3::makeDigitalSurface( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> vcm_normals     = SHG3::getVCMNormalVectors( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, surfels, params );</div>
+<div class="line">    <span class="keywordtype">bool</span> ok              = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, vcm_normals, SH3::Colors(),</div>
 <div class="line">                                         <span class="stringliteral">&quot;goursat-primal-vcm.obj&quot;</span> );</div>
 </div><!-- fragment --> <table class="doxtable">
 <tr>
@@ -477,9 +479,9 @@ Rendering of goursat-primal-vcm.obj (normals estimated by VCM). Note that stairc
 <div class="line">    <span class="keyword">auto</span> implicit_shape  = SH3::makeImplicitShape3D     ( params );</div>
 <div class="line">    <span class="keyword">auto</span> dig_shape       = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );</div>
 <div class="line">    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>               = SH3::getKSpace               ( params );</div>
-<div class="line">    <span class="keyword">auto</span> surface         = SH3::makeDigitalSurface      ( dig_shape, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line">    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange          ( surface, params( <span class="stringliteral">&quot;surfaceTraversal&quot;</span>, <span class="stringliteral">&quot;DepthFirst&quot;</span> ) );</div>
-<div class="line">    <span class="keyword">auto</span> def_surfels     = SH3::getSurfelRange          ( surface, params( <span class="stringliteral">&quot;surfaceTraversal&quot;</span>, <span class="stringliteral">&quot;Default&quot;</span> ) );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>         = SH3::makeDigitalSurface      ( dig_shape, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange          ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params( <span class="stringliteral">&quot;surfaceTraversal&quot;</span>, <span class="stringliteral">&quot;DepthFirst&quot;</span> ) );</div>
+<div class="line">    <span class="keyword">auto</span> def_surfels     = SH3::getSurfelRange          ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params( <span class="stringliteral">&quot;surfaceTraversal&quot;</span>, <span class="stringliteral">&quot;Default&quot;</span> ) );</div>
 <div class="line">    <span class="keyword">auto</span> ii_normals      = SHG3::getIINormalVectors     ( dig_shape, surfels, params );</div>
 <div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>( <span class="stringliteral">&quot;II with default traversal (slower)&quot;</span> );</div>
 <div class="line">    <span class="keyword">auto</span> ii_mean_curv    = SHG3::getIIMeanCurvatures    ( dig_shape, def_surfels, params );</div>
@@ -493,7 +495,7 @@ Rendering of goursat-primal-vcm.obj (normals estimated by VCM). Note that stairc
 <div class="line">    <span class="keyword">auto</span> normals         = SH3::getMatchedRange         ( ii_normals, match );</div>
 <div class="line">    <span class="keywordflow">for</span> ( <a class="code" href="classDGtal_1_1Shortcuts.html#ac314bdae19b68fc429d8a1071ea3e464">SH3::Idx</a> i = 0; i &lt; colors.size(); i++ )</div>
 <div class="line">      colors[ i ] = cmap( ii_mean_curv[ match[ i ] ] ); </div>
-<div class="line">    <span class="keywordtype">bool</span> ok_H  = SH3::saveOBJ( surface, SH3::RealVectors(), colors, <span class="stringliteral">&quot;goursat-imp-H-ii.obj&quot;</span> );</div>
+<div class="line">    <span class="keywordtype">bool</span> ok_H  = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, SH3::RealVectors(), colors, <span class="stringliteral">&quot;goursat-imp-H-ii.obj&quot;</span> );</div>
 <div class="ttc" id="aclassDGtal_1_1Shortcuts_html_ac314bdae19b68fc429d8a1071ea3e464"><div class="ttname"><a href="classDGtal_1_1Shortcuts.html#ac314bdae19b68fc429d8a1071ea3e464">DGtal::Shortcuts::Idx</a></div><div class="ttdeci">IdxVertex Idx</div><div class="ttdef"><b>Definition:</b> <a href="Shortcuts_8h_source.html#l00181">Shortcuts.h:181</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_a352b7160bf722e2f0bcbee5d0bad6ef3"><div class="ttname"><a href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">DGtal::Trace::beginBlock</a></div><div class="ttdeci">void beginBlock(const std::string &amp;keyword=&quot;&quot;)</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
@@ -509,15 +511,15 @@ Rendering of goursat-imp-H-ii.obj with a gridstep of 0.03125, more than 2e6 surf
 <div class="line">    <span class="keyword">auto</span> implicit_shape  = SH3::makeImplicitShape3D  ( params );</div>
 <div class="line">    <span class="keyword">auto</span> digitized_shape = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );</div>
 <div class="line">    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>               = SH3::getKSpace( params );</div>
-<div class="line">    <span class="keyword">auto</span> binary_image    = SH3::makeBinaryImage( digitized_shape, params );</div>
-<div class="line">    <span class="keyword">auto</span> surface         = SH3::makeDigitalSurface( binary_image, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line">    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange( surface, params );</div>
-<div class="line">    <span class="keyword">auto</span> vcm_normals     = SHG3::getVCMNormalVectors( surface, surfels, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>    = SH3::makeBinaryImage( digitized_shape, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>         = SH3::makeDigitalSurface( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> vcm_normals     = SHG3::getVCMNormalVectors( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, surfels, params );</div>
 <div class="line">    <span class="keyword">auto</span> embedder        = SH3::getSCellEmbedder( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a> );</div>
 <div class="line">    SH3::RealPoints positions( surfels.size() );</div>
 <div class="line">    std::transform( surfels.cbegin(), surfels.cend(), positions.begin(),</div>
 <div class="line">                    [&amp;] (<span class="keyword">const</span> <a class="code" href="classDGtal_1_1Shortcuts.html#aeeb2a89c94e05fbd8b12905296e08125">SH3::SCell</a>&amp; c) { return embedder( c ); } ); </div>
-<div class="line">    <span class="keywordtype">bool</span> ok              = SH3::saveOBJ( surface, vcm_normals, SH3::Colors(),</div>
+<div class="line">    <span class="keywordtype">bool</span> ok              = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, vcm_normals, SH3::Colors(),</div>
 <div class="line">                                         <span class="stringliteral">&quot;goursat-primal-vcm.obj&quot;</span> );</div>
 <div class="line">    <span class="keywordtype">bool</span> ok2             = SH3::saveVectorFieldOBJ( positions, vcm_normals, 0.05, SH3::Colors(),</div>
 <div class="line">                                         <span class="stringliteral">&quot;goursat-primal-vcm-normals.obj&quot;</span>,</div>
@@ -528,14 +530,14 @@ Rendering of goursat-imp-H-ii.obj with a gridstep of 0.03125, more than 2e6 surf
 <p>This example requires <a class="el" href="classDGtal_1_1ShortcutsGeometry.html" title="Aim: This class is used to simplify shape and surface creation. With it, you can create new shapes an...">ShortcutsGeometry</a>. You may also use the Ambrosio-Tortorelli functional to get a piecewise smooth approximation of an arbitrary scalar or vector field over a surface. Here we use it to get a piecewise smooth approximation of the II normals.</p>
 <div class="fragment"><div class="line">    <span class="keyword">auto</span> al_capone  = SH3::makeBinaryImage( examplesPath + <span class="stringliteral">&quot;samples/Al.100.vol&quot;</span>, params );</div>
 <div class="line">    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>          = SH3::getKSpace( al_capone );</div>
-<div class="line">    <span class="keyword">auto</span> surface    = SH3::makeLightDigitalSurface( al_capone, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line">    <span class="keyword">auto</span> surfels    = SH3::getSurfelRange( surface, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>    = SH3::makeLightDigitalSurface( al_capone, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> surfels    = SH3::getSurfelRange( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params );</div>
 <div class="line">    <span class="keyword">auto</span> ii_normals = SHG3::getIINormalVectors( al_capone, surfels, params );</div>
-<div class="line">    <span class="keyword">auto</span> linels     = SH3::getCellRange( surface, 1 );</div>
+<div class="line">    <span class="keyword">auto</span> linels     = SH3::getCellRange( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, 1 );</div>
 <div class="line">    <span class="keyword">auto</span> uembedder  = SH3::getCellEmbedder( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a> );</div>
 <div class="line">    <a class="code" href="classDGtal_1_1Shortcuts.html#ab77490cecbb871c2b44fb285aa823644">SH3::Scalars</a> features( linels.size() );</div>
 <div class="line">    <span class="keyword">auto</span> at_normals = SHG3::getATVectorFieldApproximation( features, linels.cbegin(), linels.cend(),</div>
-<div class="line">                                                           surface, surfels,</div>
+<div class="line">                                                           <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, surfels,</div>
 <div class="line">                                                           ii_normals, params );</div>
 <div class="line">    <span class="comment">// Output normals as colors depending on directions</span></div>
 <div class="line">    SH3::Colors colors( surfels.size() );</div>
@@ -543,8 +545,8 @@ Rendering of goursat-imp-H-ii.obj with a gridstep of 0.03125, more than 2e6 surf
 <div class="line">      colors[ i ] = <a class="code" href="classDGtal_1_1Color.html">SH3::Color</a>( (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>) 255.0*fabs( at_normals[ i ][ 0 ] ),</div>
 <div class="line">                                (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>) 255.0*fabs( at_normals[ i ][ 1 ] ),</div>
 <div class="line">                                (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>) 255.0*fabs( at_normals[ i ][ 2 ] ) );</div>
-<div class="line">    <span class="keywordtype">bool</span> ok1 = SH3::saveOBJ( surface, SH3::RealVectors(), SH3::Colors(), <span class="stringliteral">&quot;al-surface.obj&quot;</span> );</div>
-<div class="line">    <span class="keywordtype">bool</span> ok2 = SH3::saveOBJ( surface, at_normals, colors, <span class="stringliteral">&quot;al-colored-at-normals.obj&quot;</span> );</div>
+<div class="line">    <span class="keywordtype">bool</span> ok1 = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, SH3::RealVectors(), SH3::Colors(), <span class="stringliteral">&quot;al-surface.obj&quot;</span> );</div>
+<div class="line">    <span class="keywordtype">bool</span> ok2 = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, at_normals, colors, <span class="stringliteral">&quot;al-colored-at-normals.obj&quot;</span> );</div>
 <div class="line">    <span class="comment">// Output discontinuities as sticks on linels.</span></div>
 <div class="line">    SH3::RealPoints  f0;</div>
 <div class="line">    SH3::RealVectors f1;</div>
@@ -585,8 +587,8 @@ Discontinuities of the piecewise-smooth normal vector field on Al-150 dataset.</
 <div class="line">    <span class="keyword">auto</span> digitized_shape = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );</div>
 <div class="line">    <span class="keyword">auto</span> bimage          = SH3::makeBinaryImage      ( digitized_shape, params );</div>
 <div class="line">    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>               = SH3::getKSpace( params );</div>
-<div class="line">    <span class="keyword">auto</span> surface         = SH3::makeLightDigitalSurface( bimage, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line">    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange( surface, params );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>         = SH3::makeLightDigitalSurface( bimage, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params );</div>
 <div class="line">    <span class="keyword">auto</span> k1              = SHG3::getFirstPrincipalCurvatures( implicit_shape, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, surfels, params );</div>
 <div class="line">    <span class="keyword">auto</span> k2              = SHG3::getSecondPrincipalCurvatures( implicit_shape, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, surfels, params );</div>
 <div class="line">    <span class="keyword">auto</span> d1              = SHG3::getFirstPrincipalDirections( implicit_shape, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, surfels, params );</div>
@@ -595,17 +597,17 @@ Discontinuities of the piecewise-smooth normal vector field on Al-150 dataset.</
 <div class="line">    SH3::RealPoints positions( surfels.size() );</div>
 <div class="line">    std::transform( surfels.cbegin(), surfels.cend(), positions.begin(),</div>
 <div class="line">                    [&amp;] (<span class="keyword">const</span> <a class="code" href="classDGtal_1_1Shortcuts.html#aeeb2a89c94e05fbd8b12905296e08125">SH3::SCell</a>&amp; c) { return embedder( c ); } ); </div>
-<div class="line">    SH3::saveOBJ( surface, SH3::RealVectors(), SH3::Colors(),</div>
+<div class="line">    SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, SH3::RealVectors(), SH3::Colors(),</div>
 <div class="line">                               <span class="stringliteral">&quot;goursat-primal.obj&quot;</span> );</div>
 <div class="line">    <span class="comment">// output principal curvatures and directions</span></div>
 <div class="line">    <span class="keyword">auto</span> cmap  = SH3::getColorMap( -0.5, 0.5, params );</div>
 <div class="line">    <span class="keyword">auto</span> colors= SH3::Colors( surfels.size() );</div>
 <div class="line">    std::transform( k1.cbegin(), k1.cend(), colors.begin(), cmap );</div>
-<div class="line">    <span class="keywordtype">bool</span> ok_k1 = SH3::saveOBJ( surface, SH3::RealVectors(), colors, <span class="stringliteral">&quot;goursat-primal-k1.obj&quot;</span> );</div>
+<div class="line">    <span class="keywordtype">bool</span> ok_k1 = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, SH3::RealVectors(), colors, <span class="stringliteral">&quot;goursat-primal-k1.obj&quot;</span> );</div>
 <div class="line">    <span class="keywordtype">bool</span> ok_d1 = SH3::saveVectorFieldOBJ( positions, d1, 0.05, colors,</div>
 <div class="line">                                          <span class="stringliteral">&quot;goursat-primal-d1.obj&quot;</span>, <a class="code" href="classDGtal_1_1Color.html#ac26d8585885e7a354893b7e93c6a9dda">SH3::Color::Black</a> );</div>
 <div class="line">    std::transform( k2.cbegin(), k2.cend(), colors.begin(), cmap );</div>
-<div class="line">    <span class="keywordtype">bool</span> ok_k2 = SH3::saveOBJ( surface, SH3::RealVectors(), colors, <span class="stringliteral">&quot;goursat-primal-k2.obj&quot;</span> );</div>
+<div class="line">    <span class="keywordtype">bool</span> ok_k2 = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, SH3::RealVectors(), colors, <span class="stringliteral">&quot;goursat-primal-k2.obj&quot;</span> );</div>
 <div class="line">    <span class="keywordtype">bool</span> ok_d2 = SH3::saveVectorFieldOBJ( positions, d2, 0.05, colors,</div>
 <div class="line">                                          <span class="stringliteral">&quot;goursat-primal-d2.obj&quot;</span>, <a class="code" href="classDGtal_1_1Color.html#ac26d8585885e7a354893b7e93c6a9dda">SH3::Color::Black</a> );</div>
 <div class="line">    ASSERT(ok_k1 &amp;&amp; ok_d1 &amp;&amp; ok_k2 &amp;&amp; ok_d2);</div>
@@ -816,7 +818,7 @@ Parameters</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:03 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

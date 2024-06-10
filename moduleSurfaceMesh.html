@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -119,9 +119,10 @@ Creating a surface mesh</h1>
 <p>A surface mesh (class <a class="el" href="structDGtal_1_1SurfaceMesh.html">SurfaceMesh</a>) is a template class parameterized by the types chosen for 3D points and 3D vectors. A common choice is <code><a class="el" href="classDGtal_1_1PointVector.html" title="Aim: Implements basic operations that will be used in Point and Vector classes.">PointVector</a>&lt; double, 3 &gt;</code> for both, or equivalently <code><a class="el" href="namespaceDGtal_1_1Z3i.html#a5f087066515ecd33cefd7bd080ef8114">Z3i::RealPoint</a></code> and <code><a class="el" href="namespaceDGtal_1_1Z3i.html#a5576ca14b13483060ec716f17bf6d81d">Z3i::RealVector</a></code>. Although the topological part of the class does not impose a 3D embedding, the class <a class="el" href="structDGtal_1_1SurfaceMesh.html" title="Aim: Represents an embedded mesh as faces and a list of vertices. Vertices may be shared among faces ...">SurfaceMesh</a> imposes it since its target is 3D geometry processing. Indeed some geometric operations like computing normals from positions or i/o to OBJ format have meaning only in 3D.</p>
 <p>First, write the following typedefs:</p>
 <div class="fragment"><div class="line">  <span class="comment">// The following typedefs are useful</span></div>
-<div class="line">  <span class="keyword">typedef</span> SurfaceMesh&lt; RealPoint, RealVector &gt;       SurfMesh;</div>
+<div class="line">  <span class="keyword">typedef</span> SurfaceMesh&lt; RealPoint, RealVector &gt;       <a class="code" href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a>;</div>
 <div class="line">  <span class="keyword">typedef</span> SurfaceMeshHelper&lt; RealPoint, RealVector &gt; Helper;</div>
 <div class="line">  <span class="keyword">typedef</span> <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#a9b69eb98bda12d4cfd17ccc15a223abc">SurfMesh::Vertices</a>                         <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#a9b69eb98bda12d4cfd17ccc15a223abc">Vertices</a>;</div>
+<div class="ttc" id="adgtalCalculus-bunny_8cpp_html_a0da7de0f9d769404c143f3d032eaa496"><div class="ttname"><a href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a></div><div class="ttdeci">SurfaceMesh&lt; RealPoint, RealVector &gt; SurfMesh</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-bunny_8cpp_source.html#l00052">dgtalCalculus-bunny.cpp:52</a></div></div>
 <div class="ttc" id="afullConvexitySphereGeodesics_8cpp_html_a9b69eb98bda12d4cfd17ccc15a223abc"><div class="ttname"><a href="fullConvexitySphereGeodesics_8cpp.html#a9b69eb98bda12d4cfd17ccc15a223abc">Vertices</a></div><div class="ttdeci">SMesh::Vertices Vertices</div><div class="ttdef"><b>Definition:</b> <a href="fullConvexitySphereGeodesics_8cpp_source.html#l00118">fullConvexitySphereGeodesics.cpp:118</a></div></div>
 </div><!-- fragment --><p> Then, there are several ways for creating a surface mesh (see <a class="el" href="exampleSurfaceMesh_8cpp.html">exampleSurfaceMesh.cpp</a> for several examples):</p>
 <ul>
@@ -131,12 +132,12 @@ Creating a surface mesh</h1>
 <div class="line">    { { 0, 0, 5 }, { 1, 1, 3 }, { -1, 1, 3 }, { -1, -1, 3 }, { 1, -1, 3 } };</div>
 <div class="line">  std::vector&lt; Vertices  &gt; faces =</div>
 <div class="line">    { { 0, 1, 2 }, { 0, 2, 3 }, { 0, 3, 4 }, { 0, 4, 1 }, { 4, 3, 2, 1 } };</div>
-<div class="line">  <span class="keyword">auto</span> pyramid_mesh = SurfMesh( positions.cbegin(), positions.cend(),</div>
+<div class="line">  <span class="keyword">auto</span> pyramid_mesh = <a class="code" href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a>( positions.cbegin(), positions.cend(),</div>
 <div class="line">                                faces.cbegin(), faces.cend() );</div>
 </div><!-- fragment --><ul>
 <li>by reading an OBJ (see <a class="el" href="structDGtal_1_1SurfaceMeshReader.html#a609dcf8e4bfb573e2b8c12b8beda388b">SurfaceMeshReader::readOBJ</a>).</li>
 </ul>
-<div class="fragment"><div class="line">  SurfMesh    smesh;</div>
+<div class="fragment"><div class="line">  <a class="code" href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a>    smesh;</div>
 <div class="line">  std::string S = examplesPath + <span class="stringliteral">&quot;samples/spot.obj&quot;</span>;</div>
 <div class="line">  std::ifstream input( S.c_str() );</div>
 <div class="line">  <span class="keywordtype">bool</span> ok_read  =  <a class="code" href="structDGtal_1_1SurfaceMeshReader.html#a609dcf8e4bfb573e2b8c12b8beda388b">SurfaceMeshReader&lt; RealPoint, RealVector &gt;::readOBJ</a>( input, smesh );</div>
@@ -182,8 +183,8 @@ A surface mesh is a graph</h1>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;DGtal/shapes/SurfaceMesh.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;DGtal/graph/BreadthFirstVisitor.h&quot;</span></div>
 <div class="line">...</div>
-<div class="line">typedef SurfaceMesh&lt; RealPoint, RealVector &gt; SurfMesh;</div>
-<div class="line">SurfMesh smesh;</div>
+<div class="line">typedef SurfaceMesh&lt; RealPoint, RealVector &gt; <a class="code" href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a>;</div>
+<div class="line"><a class="code" href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a> smesh;</div>
 </div><!-- fragment --><div class="fragment"><div class="line">  BreadthFirstVisitor&lt; SurfMesh &gt; visitor( smesh, 0 );</div>
 <div class="line">  std::vector&lt;double&gt;             distances( smesh.nbVertices() );</div>
 <div class="line">  <span class="keywordtype">double</span> biggest_d = 0.0;</div>
@@ -352,7 +353,7 @@ Schwarz lantern after flip: a nicer cylinder</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageShapes.html">Shapes package</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:04 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:22 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -108,8 +108,8 @@ $(document).ready(function(){initNavTree('moduleIntegralInvariant.html',''); ini
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Jérémy Levallois</dd></dl>
 <h1><a class="anchor" id="II_sectOverview"></a>
 Overview</h1>
-<p>The algorithm implemented in the class <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html" title="Aim: This class implement an Integral Invariant estimator which computes for each surfel the volume o...">IntegralInvariantVolumeEstimator</a> and <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html" title="Aim: This class implement an Integral Invariant estimator which computes for each surfel the covarian...">IntegralInvariantCovarianceEstimator</a> are detailed in the article <a class="el" href="citelist.html#CITEREF_Coeurjo-CVIU-2014">[28]</a> .</p>
-<p>In geometry processing, interesting mathematical tools have been developed to design differential estimators on smooth surfaces based on Integral Invariant <a class="el" href="citelist.html#CITEREF_Pottmann2007">[95]</a> <a class="el" href="citelist.html#CITEREF_Pottmann2009">[96]</a> . The principle is simple: we move a convolution kernel along the shape surface and we compute integrals on the intersection between the shape and the convolution kernel, as follow in dimension 3:</p>
+<p>The algorithm implemented in the class <a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html" title="Aim: This class implement an Integral Invariant estimator which computes for each surfel the volume o...">IntegralInvariantVolumeEstimator</a> and <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html" title="Aim: This class implement an Integral Invariant estimator which computes for each surfel the covarian...">IntegralInvariantCovarianceEstimator</a> are detailed in the article <a class="el" href="citelist.html#CITEREF_Coeurjo-CVIU-2014">[29]</a> .</p>
+<p>In geometry processing, interesting mathematical tools have been developed to design differential estimators on smooth surfaces based on Integral Invariant <a class="el" href="citelist.html#CITEREF_Pottmann2007">[96]</a> <a class="el" href="citelist.html#CITEREF_Pottmann2009">[97]</a> . The principle is simple: we move a convolution kernel along the shape surface and we compute integrals on the intersection between the shape and the convolution kernel, as follow in dimension 3:</p>
 <p class="formulaDsp">
 \[ V_r(x) = \int_{B_r(x)} \chi(p)dp\ \]
 </p>
@@ -128,7 +128,7 @@ Integral invariant computation in dimension 3.</div></div>
 Notations.</div></div>
  <h2><a class="anchor" id="subsectIntegralInvariant"></a>
 Integral Invariant for curvature computation</h2>
-<p>In <a class="el" href="citelist.html#CITEREF_Coeurjo2013">[27]</a> , we have demonstrated that some digital integral quantities provide curvature information when the kernel size tends to zero for a sufficiently smooth shape. Indeed, at \( x \) of the surface \( X \) and with a fixed radius \( r \), we obtain convergent local curvature estimators \( \tilde{\kappa}_r(X,x) \) and \( \tilde{H}_r(X,x) \) of quantities \( \kappa(X,x) \) and \( H(X,x) \) respectively:</p>
+<p>In <a class="el" href="citelist.html#CITEREF_Coeurjo2013">[28]</a> , we have demonstrated that some digital integral quantities provide curvature information when the kernel size tends to zero for a sufficiently smooth shape. Indeed, at \( x \) of the surface \( X \) and with a fixed radius \( r \), we obtain convergent local curvature estimators \( \tilde{\kappa}_r(X,x) \) and \( \tilde{H}_r(X,x) \) of quantities \( \kappa(X,x) \) and \( H(X,x) \) respectively:</p>
 <p class="formulaDsp">
 \[ \tilde{\kappa}_r(X,x) = \frac{3\pi}{2r} - \frac{3A_r(x)}{r^3},\quad \tilde{\kappa}_r(X,x) = \kappa(X,x)+ O(r) \]
 </p>
@@ -144,7 +144,7 @@ Integral Invariant for curvature computation</h2>
 \[ \forall 0 &lt; h &lt; r,\quad \hat{H}_r(Z&#39;,x,h) = \frac{8}{3r} - \frac{4\widehat{Vol}(B_{r/h}(\frac{1}{h} \cdot x ) \cap Z&#39;, h)}{\pi r^4}. \]
 </p>
 <p> where \( \hat{H}_r \) is an integral digital mean curvature estimator of a digital shape \( Z&#39; \subset ℤ^3 \) at point \( x \in \rm I\! R^3 \) and step \( h \) .</p>
-<p>We have demonstrated in <a class="el" href="citelist.html#CITEREF_Coeurjo2013">[27]</a> that to prove the multigrid convergence with a convergence speed of \( O(h^{\frac{1}{3}}) \), the Euclidean radius of the kernel must follow the rule \( r = k_mh^{\alpha_m} \) ( \( \alpha_m = \frac{1}{3} \) provides better worst-case errors, so we will use this value).</p>
+<p>We have demonstrated in <a class="el" href="citelist.html#CITEREF_Coeurjo2013">[28]</a> that to prove the multigrid convergence with a convergence speed of \( O(h^{\frac{1}{3}}) \), the Euclidean radius of the kernel must follow the rule \( r = k_mh^{\alpha_m} \) ( \( \alpha_m = \frac{1}{3} \) provides better worst-case errors, so we will use this value).</p>
 <p>Experimental results can be found at <a href="https://liris.cnrs.fr/jeremy.levallois/Papers/DGCI2013/">https://liris.cnrs.fr/jeremy.levallois/Papers/DGCI2013/</a> and <a href="https://liris.cnrs.fr/jeremy.levallois/Papers/AFIG2013/">https://liris.cnrs.fr/jeremy.levallois/Papers/AFIG2013/</a></p>
 <h1><a class="anchor" id="II_sectAlgo"></a>
 Algorithm</h1>
@@ -234,7 +234,7 @@ First principal curvature direction mapped on a Stanford bunny (credit is given 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:04 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -186,13 +186,13 @@ Distance transformation for the l_2 metric.</div></div>
 <div class="line">  board.saveSVG(<span class="stringliteral">&quot;voronoimap-vorol8.svg&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keyword">typedef</span> DistanceTransformation&lt;Z2i::Space, NotPredicate, L2Metric &gt; DT;</div>
-<div class="line">  DT dt(<a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>,notSetPred,l2);</div>
+<div class="line">  DT <a name="a11"></a><a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>(<a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>,notSetPred,l2);</div>
 <div class="line">  board.clear();</div>
 <div class="line">  board &lt;&lt; <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>;</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">//Fast max computation on the range value</span></div>
 <div class="line">  <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">DT::Value</a> maxDT=0.0;</div>
-<div class="line">  <span class="keywordflow">for</span>(<a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">DT::ConstRange::ConstIterator</a> it = dt.constRange().begin(), itend = dt.constRange().end();</div>
+<div class="line">  <span class="keywordflow">for</span>(<a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">DT::ConstRange::ConstIterator</a> it = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>.constRange().begin(), itend = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>.constRange().end();</div>
 <div class="line">      it != itend ; ++it)</div>
 <div class="line">    <span class="keywordflow">if</span> ((*it)&gt;maxDT) maxDT = (*it);</div>
 <div class="line"> </div>
@@ -200,22 +200,23 @@ Distance transformation for the l_2 metric.</div></div>
 <div class="line">  HueShadeColorMap&lt;DT::Value,1&gt; hueMap(0.0,maxDT);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">//Drawing</span></div>
-<div class="line">  <span class="keywordflow">for</span>(<a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">DT::Domain::ConstIterator</a> it = dt.domain().begin(),</div>
-<div class="line">      itend = dt.domain().end(); it != itend; ++it)</div>
+<div class="line">  <span class="keywordflow">for</span>(<a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">DT::Domain::ConstIterator</a> it = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>.domain().begin(),</div>
+<div class="line">      itend = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>.domain().end(); it != itend; ++it)</div>
 <div class="line">  {</div>
-<div class="line">    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">DT::Value</a> dist = dt( *it );   <span class="comment">//distance to closest site to (*it)</span></div>
+<div class="line">    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">DT::Value</a> dist = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>( *it );   <span class="comment">//distance to closest site to (*it)</span></div>
 <div class="line">    board &lt;&lt; CustomStyle( (*it).className(), <span class="keyword">new</span> CustomColors( hueMap(dist), hueMap(dist)))</div>
 <div class="line">          &lt;&lt; (*it);</div>
 <div class="line">  }</div>
 <div class="line">  board.saveSVG(<span class="stringliteral">&quot;voronoimap-dt.svg&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a11"></a><a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
+<div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a12"></a><a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="line"><span class="comment">//                                                                           //</span></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_a352b7160bf722e2f0bcbee5d0bad6ef3"><div class="ttname"><a href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">DGtal::Trace::beginBlock</a></div><div class="ttdeci">void beginBlock(const std::string &amp;keyword=&quot;&quot;)</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a778e38aa889751afffa2dea6b803e67a"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a></div><div class="ttdeci">float dt</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00063">dgtalCalculus-geodesic.cpp:63</a></div></div>
 <div class="ttc" id="agreedy-plane-segmentation-ex2_8cpp_html_a6d06fad433cff067dfcbbbf16d6e2dbf"><div class="ttname"><a href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a></div><div class="ttdeci">MyDigitalSurface::ConstIterator ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="greedy-plane-segmentation-ex2_8cpp_source.html#l00093">greedy-plane-segmentation-ex2.cpp:93</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z2i_html_a5334b5612687982f0154e4ee8f5dd93d"><div class="ttname"><a href="namespaceDGtal_1_1Z2i.html#a5334b5612687982f0154e4ee8f5dd93d">DGtal::Z2i::L2Metric</a></div><div class="ttdeci">ExactPredicateLpSeparableMetric&lt; Space, 2 &gt; L2Metric</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00118">StdDefs.h:118</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1functors_html"><div class="ttname"><a href="namespaceDGtal_1_1functors.html">DGtal::functors</a></div><div class="ttdoc">functors namespace gathers all DGtal functors.</div><div class="ttdef"><b>Definition:</b> <a href="BasicBoolFunctors_8h_source.html#l00049">BasicBoolFunctors.h:49</a></div></div>
@@ -235,7 +236,7 @@ Distance transformation for the l_2 metric.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 8 2024 20:20:35 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:02:53 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

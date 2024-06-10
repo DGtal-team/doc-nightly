@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -343,12 +343,13 @@ class DGtal::ATSolver2D&lt; TKSpace, TLinearAlgebra &gt;</h3>
 </dl>
 <div class="fragment"><div class="line"><span class="comment">// Typical use (with appropriate definitions for types and variables).</span></div>
 <div class="line"><span class="keyword">typedef</span> DiscreteExteriorCalculusFactory&lt;EigenLinearAlgebraBackend&gt; CalculusFactory;</div>
-<div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> calculus = CalculusFactory::createFromNSCells&lt;2&gt;( surfels.begin(), surfels.end() );</div>
-<div class="line">ATSolver2D&lt; KSpace &gt; at_solver(calculus, 1);</div>
+<div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a> = CalculusFactory::createFromNSCells&lt;2&gt;( surfels.begin(), surfels.end() );</div>
+<div class="line">ATSolver2D&lt; KSpace &gt; at_solver(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>, 1);</div>
 <div class="line">at_solver.initInputVectorFieldU2( normals, surfels.cbegin(), surfels.cend() );</div>
 <div class="line">at_solver.setUp( alpha_at, lambda_at );</div>
 <div class="line">at_solver.solveGammaConvergence( 2.0, 0.5, 2.0 );</div>
 <div class="line">at_solver.getOutputVectorFieldU2( normals, surfels.cbegin(), surfels.cend() );</div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a4e9d205fb8308b3d07478e48bf63308c"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a></div><div class="ttdeci">PolyCalculus * calculus</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00070">dgtalCalculus-geodesic.cpp:70</a></div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="exampleSurfaceATNormals_8cpp.html">exampleSurfaceATNormals.cpp</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ATSolver2D_8h_source.html#l00090">90</a> of file <a class="el" href="ATSolver2D_8h_source.html">ATSolver2D.h</a>.</p>
@@ -972,7 +973,7 @@ template&lt;typename TKSpace , typename TLinearAlgebra  = EigenLinearAlgebraBack
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classDGtal_1_1DiscreteExteriorCalculusFactory.html">DiscreteExteriorCalculusFactory</a> <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ae6a44171826c1811fc2f08b86d2f64ed">for</a> creating calculus objects. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classDGtal_1_1DiscreteExteriorCalculusFactory.html">DiscreteExteriorCalculusFactory</a> <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ae6a44171826c1811fc2f08b86d2f64ed">for</a> creating <a class="el" href="dgtalCalculus-halfsphere_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a> objects. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ATSolver2D_8h_source.html#l00202">202</a> of file <a class="el" href="ATSolver2D_8h_source.html">ATSolver2D.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      : <a class="code" href="classDGtal_1_1ATSolver2D.html#aee83b3ac462fb907f43d57a9124e8e7e">ptrCalculus</a>( aCalculus ),</div>
@@ -3575,7 +3576,7 @@ template&lt;typename TKSpace , typename TLinearAlgebra  = EigenLinearAlgebraBack
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1ATSolver2D.html">ATSolver2D</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:06 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:23 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -116,10 +116,10 @@ $(document).ready(function(){initNavTree('testDigitalTopology_8cpp_source.html',
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a> ( <span class="stringliteral">&quot;Testing Digital topology (4,8) in Z2.&quot;</span> );</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1DigitalTopology.html">DigitalTopology&lt; Adj4, Adj8 &gt;</a> DT48;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  DT48 dt( adj4, adj8, <a class="code" href="namespaceDGtal.html#a9f57dcd68d3056024eec6b4205f7083da731ee8276af4e05e2fe322cf2a4fd179">JORDAN_DT</a> );</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; dt &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  DT48 <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>( adj4, adj8, <a class="code" href="namespaceDGtal.html#a9f57dcd68d3056024eec6b4205f7083da731ee8276af4e05e2fe322cf2a4fd179">JORDAN_DT</a> );</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">typedef</span> DT48::ReverseTopology DT84;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  DT84 opp_dt = dt.reverseTopology();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  DT84 opp_dt = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>.reverseTopology();</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; opp_dt &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
@@ -153,6 +153,7 @@ $(document).ready(function(){initNavTree('testDigitalTopology_8cpp_source.html',
 <div class="ttc" id="aclassDGtal_1_1Trace_html_a7b51b5b34d3c1d5e799e0500a2d12acc"><div class="ttname"><a href="classDGtal_1_1Trace.html#a7b51b5b34d3c1d5e799e0500a2d12acc">DGtal::Trace::emphase</a></div><div class="ttdeci">std::ostream &amp; emphase()</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a778e38aa889751afffa2dea6b803e67a"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a></div><div class="ttdeci">float dt</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00063">dgtalCalculus-geodesic.cpp:63</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fc7012708b0416880a5c8b12dfdf9dd"><div class="ttname"><a href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">DGtal::trace</a></div><div class="ttdeci">Trace trace</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00153">Common.h:153</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html_a9f57dcd68d3056024eec6b4205f7083da731ee8276af4e05e2fe322cf2a4fd179"><div class="ttname"><a href="namespaceDGtal.html#a9f57dcd68d3056024eec6b4205f7083da731ee8276af4e05e2fe322cf2a4fd179">DGtal::JORDAN_DT</a></div><div class="ttdeci">@ JORDAN_DT</div><div class="ttdef"><b>Definition:</b> <a href="DigitalTopology_8h_source.html#l00057">DigitalTopology.h:57</a></div></div>
@@ -164,7 +165,7 @@ $(document).ready(function(){initNavTree('testDigitalTopology_8cpp_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_5c34bd9de7ab721f49dc5d2e8cf02612.html">topology</a></li><li class="navelem"><a class="el" href="testDigitalTopology_8cpp.html">testDigitalTopology.cpp</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:20:56 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:13 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

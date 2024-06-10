@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -227,9 +227,10 @@ Input digital set.</div></div>
 <div class="ttc" id="astructDGtal_1_1SignedKhalimskyCell_html"><div class="ttname"><a href="structDGtal_1_1SignedKhalimskyCell.html">DGtal::SignedKhalimskyCell</a></div><div class="ttdoc">Represents a signed cell in a cellular grid space by its Khalimsky coordinates and a boolean value.</div><div class="ttdef"><b>Definition:</b> <a href="KhalimskySpaceND_8h_source.html#l00208">KhalimskySpaceND.h:209</a></div></div>
 </div><!-- fragment --><p> The DEC structure is created by calling <a class="el" href="classDGtal_1_1DiscreteExteriorCalculusFactory.html#ac290b55c774d9fa9e6ac9c1baa150b50">DiscreteExteriorCalculusFactory::createFromNSCells</a> with iterators <a class="el" href="classDGtal_1_1DigitalSurface.html#a876e5a84ca1ccb99ec16feabf1912470">DigitalSurface.begin()</a> and <a class="el" href="classDGtal_1_1DigitalSurface.html#a976e9b87d1ac2ff3387d37419b9a293d">DigitalSurface.end()</a>. Incident lower cells are added automatically as well as Hodge weights. </p><div class="fragment"><div class="line">    <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1DiscreteExteriorCalculusFactory.html">DGtal::DiscreteExteriorCalculusFactory&lt;DGtal::EigenLinearAlgebraBackend&gt;</a> CalculusFactory;</div>
 <div class="line">    <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1DiscreteExteriorCalculus.html">DGtal::DiscreteExteriorCalculus&lt;2, 3, DGtal::EigenLinearAlgebraBackend&gt;</a> Calculus;</div>
-<div class="line">    <span class="keyword">const</span> Calculus calculus = CalculusFactory::createFromNSCells&lt;2&gt;(digital_surface.begin(), digital_surface.end());</div>
+<div class="line">    <span class="keyword">const</span> Calculus <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a> = CalculusFactory::createFromNSCells&lt;2&gt;(digital_surface.begin(), digital_surface.end());</div>
 <div class="ttc" id="aclassDGtal_1_1DiscreteExteriorCalculusFactory_html"><div class="ttname"><a href="classDGtal_1_1DiscreteExteriorCalculusFactory.html">DGtal::DiscreteExteriorCalculusFactory</a></div><div class="ttdoc">Aim: This class provides static members to create DEC structures from various other DGtal structures.</div><div class="ttdef"><b>Definition:</b> <a href="DiscreteExteriorCalculusFactory_8h_source.html#l00061">DiscreteExteriorCalculusFactory.h:62</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1DiscreteExteriorCalculus_html"><div class="ttname"><a href="classDGtal_1_1DiscreteExteriorCalculus.html">DGtal::DiscreteExteriorCalculus</a></div><div class="ttdoc">Aim: DiscreteExteriorCalculus represents a calculus in the dec package. This is the main structure in...</div><div class="ttdef"><b>Definition:</b> <a href="DiscreteExteriorCalculus_8h_source.html#l00097">DiscreteExteriorCalculus.h:98</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a4e9d205fb8308b3d07478e48bf63308c"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a></div><div class="ttdeci">PolyCalculus * calculus</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00070">dgtalCalculus-geodesic.cpp:70</a></div></div>
 </div><!-- fragment --><div class="image">
 <img src="embedding_surface_calculus.png" alt=""/>
 <div class="caption">
@@ -241,7 +242,7 @@ DEC structure from boundary digital set.</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageDEC.html">DEC package</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:03 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

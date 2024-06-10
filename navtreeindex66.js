@@ -1,5 +1,13 @@
 var NAVTREEINDEX66 =
 {
+"structDGtal_1_1Display2DFactory.html#a298dba7e30b298ca61b336e3f676b2af":[6,0,2,406,56],
+"structDGtal_1_1Display2DFactory.html#a33098483f5d34cab766e91c18274762f":[6,0,2,406,23],
+"structDGtal_1_1Display2DFactory.html#a37d1f06f4602d8cea9418ded60010085":[6,0,2,406,61],
+"structDGtal_1_1Display2DFactory.html#a3e2422c2d1bc28516aa5b092f9459fb6":[6,0,2,406,31],
+"structDGtal_1_1Display2DFactory.html#a3f6c40494bd925a93dd3b4f5732bd855":[6,0,2,406,29],
+"structDGtal_1_1Display2DFactory.html#a3ff2d8e5e17f6f90a61fec1c4ca39910":[6,0,2,406,17],
+"structDGtal_1_1Display2DFactory.html#a432d7e41b07229215562a4912a53c691":[6,0,2,406,37],
+"structDGtal_1_1Display2DFactory.html#a47bf6ad9847d8e6af5731c7f8777132e":[6,0,2,406,46],
 "structDGtal_1_1Display2DFactory.html#a4cabae4ba74182454866f22b9a8f429f":[6,0,2,406,30],
 "structDGtal_1_1Display2DFactory.html#a55dc7c00023215044597430798a89af6":[6,0,2,406,39],
 "structDGtal_1_1Display2DFactory.html#a591bca7bf0c0bd946564371da8c3269e":[6,0,2,406,59],
@@ -241,13 +249,5 @@ var NAVTREEINDEX66 =
 "structDGtal_1_1GenericReader_3_01TContainer_00_012_00_01DGtal_1_1uint32__t_01_4.html#a4d912d4ffbf150e42d0a510362c3979c":[6,0,2,424,1],
 "structDGtal_1_1GenericReader_3_01TContainer_00_012_00_01DGtal_1_1uint32__t_01_4.html#af33b5f45411db75744787f0a9e34a99b":[6,0,2,424,0],
 "structDGtal_1_1GenericReader_3_01TContainer_00_012_00_01DGtal_1_1uint32__t_01_4.html#afdbec633c62c5d8902c25b93fb899389":[6,0,2,424,2],
-"structDGtal_1_1GenericReader_3_01TContainer_00_012_00_01TValue_01_4.html":[6,0,2,423],
-"structDGtal_1_1GenericReader_3_01TContainer_00_012_00_01TValue_01_4.html#a06800a1d049939dc95ef0a1e6712140d":[6,0,2,423,3],
-"structDGtal_1_1GenericReader_3_01TContainer_00_012_00_01TValue_01_4.html#a4001c682862f2b5587c61f4da9124caa":[6,0,2,423,0],
-"structDGtal_1_1GenericReader_3_01TContainer_00_012_00_01TValue_01_4.html#ac3151f84c593fb59ed266806aca4037a":[6,0,2,423,2],
-"structDGtal_1_1GenericReader_3_01TContainer_00_012_00_01TValue_01_4.html#ac9cbf583c763b21c20252cc2e3dc230b":[6,0,2,423,1],
-"structDGtal_1_1GenericReader_3_01TContainer_00_013_00_01DGtal_1_1uint32__t_01_4.html":[6,0,2,421],
-"structDGtal_1_1GenericReader_3_01TContainer_00_013_00_01DGtal_1_1uint32__t_01_4.html#a1342c04a8ba32258b7a4f717a67e23c6":[6,0,2,421,2],
-"structDGtal_1_1GenericReader_3_01TContainer_00_013_00_01DGtal_1_1uint32__t_01_4.html#aaf33a7a4eff5fcb1e0768d26efe38f1e":[6,0,2,421,0],
-"structDGtal_1_1GenericReader_3_01TContainer_00_013_00_01DGtal_1_1uint32__t_01_4.html#ae06c1a31f937ebaad9d8109385c5fa6d":[6,0,2,421,1]
+"structDGtal_1_1GenericReader_3_01TContainer_00_012_00_01TValue_01_4.html":[6,0,2,423]
 };

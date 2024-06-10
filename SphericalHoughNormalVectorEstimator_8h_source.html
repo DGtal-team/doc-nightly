@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -221,7 +221,7 @@ $(document).ready(function(){initNavTree('SphericalHoughNormalVectorEstimator_8h
 <div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#a5072a5f391670df6468fb02df26ee050">  215</a></span>&#160;      <a class="code" href="classDGtal_1_1SimpleMatrix.html">Matrix</a> <a class="code" href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#a5072a5f391670df6468fb02df26ee050">randomRotation</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="keyword">      </span>{</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> theta = (rand()+0.f)/RAND_MAX * 2* M_PI;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> phi = (rand()+0.f)/RAND_MAX * 2* M_PI;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a> = (rand()+0.f)/RAND_MAX * 2* M_PI;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keyword">const</span>  <span class="keywordtype">double</span> psi = (rand()+0.f)/RAND_MAX * 2* M_PI;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <a class="code" href="classDGtal_1_1SimpleMatrix.html">Matrix</a> Rt;</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        Rt.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(0,0,1);</div>
@@ -235,15 +235,15 @@ $(document).ready(function(){initNavTree('SphericalHoughNormalVectorEstimator_8h
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        Rt.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(2,2,cos(theta));</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        </div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="classDGtal_1_1SimpleMatrix.html">Matrix</a> Rph;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        Rph.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(0,0,cos(phi));</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        Rph.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(0,0,cos(<a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a>));</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        Rph.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(1,0,0);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        Rph.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(2,0,sin(phi));</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        Rph.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(2,0,sin(<a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a>));</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        Rph.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(0,1,0);</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        Rph.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(1,1,1);</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        Rph.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(2,1,0);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        Rph.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(0,2,-sin(phi));</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        Rph.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(0,2,-sin(<a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a>));</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        Rph.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(1,2,0);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        Rph.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(2,2,cos(phi));</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        Rph.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(2,2,cos(<a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a>));</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        </div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="classDGtal_1_1SimpleMatrix.html">Matrix</a> Rps;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        Rps.<a class="code" href="classDGtal_1_1SimpleMatrix.html#a9879a176ef2e8e22d9d6e4ce6d8c0c56">setComponent</a>(0,0,cos(psi));</div>
@@ -344,6 +344,7 @@ $(document).ready(function(){initNavTree('SphericalHoughNormalVectorEstimator_8h
 <div class="ttc" id="aclassDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator_html_ac8b1c8d966aa47da6fe3ac3112c82a93"><div class="ttname"><a href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#ac8b1c8d966aa47da6fe3ac3112c82a93">DGtal::functors::SphericalHoughNormalVectorEstimator::SphericalHoughNormalVectorEstimator</a></div><div class="ttdeci">SphericalHoughNormalVectorEstimator(ConstAlias&lt; SCellEmbedder &gt; anEmbedder, const double h, const double minimalAspectRatio=0.001, const unsigned int nbTrials=100, const unsigned int accumulatorSize=10, const unsigned int nbAccumulators=5)</div><div class="ttdef"><b>Definition:</b> <a href="SphericalHoughNormalVectorEstimator_8h_source.html#l00104">SphericalHoughNormalVectorEstimator.h:104</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator_html_ac9b97172c59094bee70f721c64ae0b58"><div class="ttname"><a href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#ac9b97172c59094bee70f721c64ae0b58">DGtal::functors::SphericalHoughNormalVectorEstimator::myAspectRatio</a></div><div class="ttdeci">const double myAspectRatio</div><div class="ttdoc">Minimal aspect ratio (norm of the cross-product) to consider a given triangle.</div><div class="ttdef"><b>Definition:</b> <a href="SphericalHoughNormalVectorEstimator_8h_source.html#l00301">SphericalHoughNormalVectorEstimator.h:301</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator_html_af36e29a55c5bcb656984dc2377df2f35"><div class="ttname"><a href="classDGtal_1_1functors_1_1SphericalHoughNormalVectorEstimator.html#af36e29a55c5bcb656984dc2377df2f35">DGtal::functors::SphericalHoughNormalVectorEstimator::eval</a></div><div class="ttdeci">Quantity eval()</div><div class="ttdef"><b>Definition:</b> <a href="SphericalHoughNormalVectorEstimator_8h_source.html#l00152">SphericalHoughNormalVectorEstimator.h:152</a></div></div>
+<div class="ttc" id="adgtalCalculus-bunny_8cpp_html_acaa84cf4416595d5df297727152b78e2"><div class="ttname"><a href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a></div><div class="ttdeci">PolygonalCalculus&lt; SH3::RealPoint, SH3::RealVector &gt;::Vector phi(const Face f)</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-bunny_8cpp_source.html#l00069">dgtalCalculus-bunny.cpp:69</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
 <div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -352,7 +353,7 @@ $(document).ready(function(){initNavTree('SphericalHoughNormalVectorEstimator_8h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f2cd1aeea1cfa982bb13a5f95fa4218c.html">DGtal</a></li><li class="navelem"><a class="el" href="dir_754267a81a1dbd2dcdc6a3e6905a7e31.html">geometry</a></li><li class="navelem"><a class="el" href="dir_63d9c33afbfec9fa25872cb1f269a9db.html">surfaces</a></li><li class="navelem"><a class="el" href="dir_9e526eef16e9947aa548e57a7e0c0334.html">estimation</a></li><li class="navelem"><a class="el" href="dir_362f952b6a56c8b220a4d63ce83d4496.html">estimationFunctors</a></li><li class="navelem"><b>SphericalHoughNormalVectorEstimator.h</b></li>
-    <li class="footer">Generated on Wed May 8 2024 20:20:53 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:11 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

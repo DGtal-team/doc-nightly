@@ -1,5 +1,9 @@
 var NAVTREEINDEX24 =
 {
+"classDGtal_1_1IntegralInvariantVolumeEstimator.html#a7768d266f04cc794ccfc7134016bd196":[6,0,2,262,31],
+"classDGtal_1_1IntegralInvariantVolumeEstimator.html#a7b1228aad35c886cfffe3604590edf3c":[6,0,2,262,37],
+"classDGtal_1_1IntegralInvariantVolumeEstimator.html#a7d78ee1d718299d57bd3a43be7f45e91":[6,0,2,262,0],
+"classDGtal_1_1IntegralInvariantVolumeEstimator.html#a84031278884afdda4b1de767fa313ce4":[6,0,2,262,38],
 "classDGtal_1_1IntegralInvariantVolumeEstimator.html#a8b197f8949e229ecbc80cd5d7a2b1238":[6,0,2,262,6],
 "classDGtal_1_1IntegralInvariantVolumeEstimator.html#a909f6bfd7fca4125d3d1eebd861c9626":[6,0,2,262,48],
 "classDGtal_1_1IntegralInvariantVolumeEstimator.html#a9389423ff64c35a3cb9efbb93b358b11":[6,0,2,262,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX24 =
 "classDGtal_1_1KhalimskySpaceND.html#a1fce177c92db37d39b490132187473d6":[6,0,2,621,122],
 "classDGtal_1_1KhalimskySpaceND.html#a20d4957088627db175adce9cf9e19d80":[6,0,2,621,113],
 "classDGtal_1_1KhalimskySpaceND.html#a22d8a0b3bf9ab0c07596ff57af908f92":[6,0,2,621,148],
-"classDGtal_1_1KhalimskySpaceND.html#a2395674cf702e0e5fb33b60ae78d1ab4":[6,0,2,621,120],
-"classDGtal_1_1KhalimskySpaceND.html#a24313b4260940c60e6e3fba0e15119bf":[6,0,2,621,42],
-"classDGtal_1_1KhalimskySpaceND.html#a2b0f036db47bb9bf004ab01b283a8e1c":[6,0,2,621,103],
-"classDGtal_1_1KhalimskySpaceND.html#a2e072f571929af2dee48e7759e5bd639":[6,0,2,621,31],
-"classDGtal_1_1KhalimskySpaceND.html#a2e14ba64e5ed364417a24ed21a587abb":[6,0,2,621,46]
+"classDGtal_1_1KhalimskySpaceND.html#a2395674cf702e0e5fb33b60ae78d1ab4":[6,0,2,621,120]
 };

@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -180,14 +180,14 @@ $(document).ready(function(){initNavTree('DigitalSurfaceRegularization_8h_source
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    </div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> AdvectionFunction&gt;</div>
 <div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="classDGtal_1_1DigitalSurfaceRegularization.html#ab0c787fe879c43a3a1ece4c518de7dca">  252</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classDGtal_1_1DigitalSurfaceRegularization.html#ab0c787fe879c43a3a1ece4c518de7dca">regularize</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbIters,</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                      <span class="keyword">const</span> <span class="keywordtype">double</span> dt,</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                      <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>,</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                      <span class="keyword">const</span> <span class="keywordtype">double</span> epsilon,</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                      <span class="keyword">const</span> AdvectionFunction &amp; advectionFunc);</div>
 <div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="classDGtal_1_1DigitalSurfaceRegularization.html#a8e6423941b95d67b86f9fdc1b6336b5a">  273</a></span>&#160;       <span class="keywordtype">double</span> <a class="code" href="classDGtal_1_1DigitalSurfaceRegularization.html#a8e6423941b95d67b86f9fdc1b6336b5a">regularize</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbIters = 200,</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">double</span> dt = 1.0,</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">double</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a> = 1.0,</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                         <span class="keyword">const</span> <span class="keywordtype">double</span> epsilon = 0.0001)</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;       {</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;         <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1DigitalSurfaceRegularization.html#ab0c787fe879c43a3a1ece4c518de7dca">regularize</a>(nbIters,dt,epsilon,</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;         <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1DigitalSurfaceRegularization.html#ab0c787fe879c43a3a1ece4c518de7dca">regularize</a>(nbIters,<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>,epsilon,</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                           [](<a class="code" href="classDGtal_1_1PointVector.html">SHG3::RealPoint</a>&amp; p,<a class="code" href="classDGtal_1_1PointVector.html">SHG3::RealPoint</a>&amp; o,<a class="code" href="classDGtal_1_1PointVector.html">SHG3::RealVector</a>&amp; v){ (void)o; p += v; });</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;       }</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      </div>
@@ -403,6 +403,7 @@ $(document).ready(function(){initNavTree('DigitalSurfaceRegularization_8h_source
 <div class="ttc" id="aclassDGtal_1_1Shortcuts_html_aed820ce066390668f6c9c29d826798ff"><div class="ttname"><a href="classDGtal_1_1Shortcuts.html#aed820ce066390668f6c9c29d826798ff">DGtal::Shortcuts::KSpace</a></div><div class="ttdeci">TKSpace KSpace</div><div class="ttdoc">Digital cellular space.</div><div class="ttdef"><b>Definition:</b> <a href="Shortcuts_8h_source.html#l00111">Shortcuts.h:111</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Shortcuts_html_aeeb2a89c94e05fbd8b12905296e08125"><div class="ttname"><a href="classDGtal_1_1Shortcuts.html#aeeb2a89c94e05fbd8b12905296e08125">DGtal::Shortcuts::SCell</a></div><div class="ttdeci">LightDigitalSurface::SCell SCell</div><div class="ttdef"><b>Definition:</b> <a href="Shortcuts_8h_source.html#l00163">Shortcuts.h:163</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Shortcuts_html_afff7b2fb3687cdf7fe27cf1e38af70b0"><div class="ttname"><a href="classDGtal_1_1Shortcuts.html#afff7b2fb3687cdf7fe27cf1e38af70b0">DGtal::Shortcuts::Cell</a></div><div class="ttdeci">LightDigitalSurface::Cell Cell</div><div class="ttdef"><b>Definition:</b> <a href="Shortcuts_8h_source.html#l00162">Shortcuts.h:162</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a778e38aa889751afffa2dea6b803e67a"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a></div><div class="ttdeci">float dt</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00063">dgtalCalculus-geodesic.cpp:63</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
 <div class="ttc" id="anamespaceDGtal_html_a66aca9ad97cfa71ddd5b1333a392d50d"><div class="ttname"><a href="http://dgtal.org/doc/tools/nightly/namespaceDGtal.html#a66aca9ad97cfa71ddd5b1333a392d50d">DGtal::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;out, const ATu0v1&lt; TKSpace, TLinearAlgebra &gt; &amp;object)</div></div>
 <div class="ttc" id="astructDGtal_1_1Parameters_html"><div class="ttname"><a href="structDGtal_1_1Parameters.html">DGtal::Parameters</a></div><div class="ttdef"><b>Definition:</b> <a href="Parameters_8h_source.html#l00146">Parameters.h:146</a></div></div>
@@ -413,7 +414,7 @@ $(document).ready(function(){initNavTree('DigitalSurfaceRegularization_8h_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f2cd1aeea1cfa982bb13a5f95fa4218c.html">DGtal</a></li><li class="navelem"><a class="el" href="dir_754267a81a1dbd2dcdc6a3e6905a7e31.html">geometry</a></li><li class="navelem"><a class="el" href="dir_63d9c33afbfec9fa25872cb1f269a9db.html">surfaces</a></li><li class="navelem"><b>DigitalSurfaceRegularization.h</b></li>
-    <li class="footer">Generated on Wed May 8 2024 20:20:43 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:00 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,9 @@
 var NAVTREEINDEX16 =
 {
+"classDGtal_1_1FPLengthEstimator.html#a96f60785dafc5f4e01123c3806721869":[6,0,2,181,0],
+"classDGtal_1_1FPLengthEstimator.html#a9c093eb0503cc10432fbead4a5378240":[6,0,2,181,2],
+"classDGtal_1_1FPLengthEstimator.html#aa4574fa3a9a04f2df634cfd690eb4ae2":[6,0,2,181,4],
+"classDGtal_1_1FPLengthEstimator.html#ab162d85f242be1df9b2a8197724830bb":[6,0,2,181,6],
 "classDGtal_1_1FPLengthEstimator.html#ac3dbf3023b0795e86664ae1491e8b049":[6,0,2,181,9],
 "classDGtal_1_1Filtered2x2DetComputer.html":[6,0,2,281],
 "classDGtal_1_1Filtered2x2DetComputer.html#a009b133eebd78fe0a7e596750fcf72cd":[6,0,2,281,4],
@@ -184,10 +188,10 @@ var NAVTREEINDEX16 =
 "classDGtal_1_1FreemanChain_1_1CodesRange.html#a02e777f205d7970123d9c2fbceff0a87":[6,0,2,214,0,7],
 "classDGtal_1_1FreemanChain_1_1CodesRange.html#a145319e242da53a5eb9adda3119a35e3":[6,0,2,214,0,10],
 "classDGtal_1_1FreemanChain_1_1CodesRange.html#a1e5075fa532da5e22214ab14909894ff":[6,0,2,214,0,16],
+"classDGtal_1_1FreemanChain_1_1CodesRange.html#a2810e1d9fd1248ac458eae01d11c26eb":[6,0,2,214,0,19],
 "classDGtal_1_1FreemanChain_1_1CodesRange.html#a32fee5511a4b00f9cdd5048668bf69c5":[6,0,2,214,0,0],
 "classDGtal_1_1FreemanChain_1_1CodesRange.html#a7a05870440e8e538b66814ea7e79ac49":[6,0,2,214,0,12],
 "classDGtal_1_1FreemanChain_1_1CodesRange.html#a7ddd1417b755cc56eb744d5019441a6d":[6,0,2,214,0,6],
-"classDGtal_1_1FreemanChain_1_1CodesRange.html#a80dff6859a577076830a45f491cdd6d4":[6,0,2,214,0,19],
 "classDGtal_1_1FreemanChain_1_1CodesRange.html#a920bb29541274e3323770d337830994e":[6,0,2,214,0,15],
 "classDGtal_1_1FreemanChain_1_1CodesRange.html#a9d15eacd1676eb6729b24e744eb91aba":[6,0,2,214,0,11],
 "classDGtal_1_1FreemanChain_1_1CodesRange.html#ab01d5123e6d3ee85ef582167cee849f8":[6,0,2,214,0,8],
@@ -245,9 +249,5 @@ var NAVTREEINDEX16 =
 "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#acc47fe3726e89c5441a8e89cecbab626":[6,0,2,101,10],
 "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#add5bf9eca9b376b0150ee9e07cd477ca":[6,0,2,101,1],
 "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#add9bbf8ad386ef6b537c1f62c4dee67e":[6,0,2,101,2],
-"classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#ae568857c1a41d7e6933a03d482c3f1e9":[6,0,2,101,15],
-"classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#ae8f9b497ac6666fa4b4e32d25b890c14":[6,0,2,101,11],
-"classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#aef9497acf4396c8ea1d302e0c5d96588":[6,0,2,101,0],
-"classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#af7f4a29e1834105772898668ed1ae118":[6,0,2,101,14],
-"classDGtal_1_1FunctorOnCells.html":[6,0,2,276]
+"classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#ae568857c1a41d7e6933a03d482c3f1e9":[6,0,2,101,15]
 };

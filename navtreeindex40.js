@@ -1,5 +1,9 @@
 var NAVTREEINDEX40 =
 {
+"classDGtal_1_1ShortcutsGeometry.html#aff727350522f5ac25562fd432b725de1":[6,0,2,349,22],
+"classDGtal_1_1ShortcutsGeometry.html#affbc330f433bf1821994c4de7bc56f8e":[6,0,2,349,3],
+"classDGtal_1_1ShroudsRegularization.html":[6,0,2,278],
+"classDGtal_1_1ShroudsRegularization.html#a09543f86e56ce26c5bffafb50a9d708d":[6,0,2,278,17],
 "classDGtal_1_1ShroudsRegularization.html#a0bf53e1d6e720304991c5fa42bb81fe4":[6,0,2,278,9],
 "classDGtal_1_1ShroudsRegularization.html#a0cfd33165d7f7947f40efcb820d36c56":[6,0,2,278,13],
 "classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895b":[6,0,2,278,15],
@@ -100,8 +104,8 @@ var NAVTREEINDEX40 =
 "classDGtal_1_1Simple2x2DetComputer.html#a8a451864b69cf5299e6bbbc4509a39df":[6,0,2,286,16],
 "classDGtal_1_1Simple2x2DetComputer.html#a8f300a26fb0eaaf0e68a7880832c461a":[6,0,2,286,1],
 "classDGtal_1_1Simple2x2DetComputer.html#a98a37b994f278848af12d263eae0ad82":[6,0,2,286,6],
-"classDGtal_1_1Simple2x2DetComputer.html#aa2ebf33b035d2ed17ac750a4dea6a4bf":[6,0,2,286,9],
 "classDGtal_1_1Simple2x2DetComputer.html#aa2ebf33b035d2ed17ac750a4dea6a4bf":[6,0,2,286,10],
+"classDGtal_1_1Simple2x2DetComputer.html#aa2ebf33b035d2ed17ac750a4dea6a4bf":[6,0,2,286,9],
 "classDGtal_1_1Simple2x2DetComputer.html#ad4b92159a8e0fed6a891069243cb4588":[6,0,2,286,4],
 "classDGtal_1_1Simple2x2DetComputer.html#aeed06b1bae7535748b7d11a5e98adc78":[6,0,2,286,11],
 "classDGtal_1_1SimpleConstRange.html":[6,0,2,137],
@@ -142,8 +146,8 @@ var NAVTREEINDEX40 =
 "classDGtal_1_1SimpleIncremental2x2DetComputer.html":[6,0,2,287],
 "classDGtal_1_1SimpleIncremental2x2DetComputer.html#a016da84edd14e53a08c932d158a38430":[6,0,2,287,28],
 "classDGtal_1_1SimpleIncremental2x2DetComputer.html#a02e8adfc635c76e7c433e0cc7ff8632c":[6,0,2,287,1],
-"classDGtal_1_1SimpleIncremental2x2DetComputer.html#a1b64b5e3d7fb80aa738256891db7775b":[6,0,2,287,9],
 "classDGtal_1_1SimpleIncremental2x2DetComputer.html#a1b64b5e3d7fb80aa738256891db7775b":[6,0,2,287,10],
+"classDGtal_1_1SimpleIncremental2x2DetComputer.html#a1b64b5e3d7fb80aa738256891db7775b":[6,0,2,287,9],
 "classDGtal_1_1SimpleIncremental2x2DetComputer.html#a1f9de627b96e84072b819b5e4de88431":[6,0,2,287,19],
 "classDGtal_1_1SimpleIncremental2x2DetComputer.html#a2082ea290109538eea067b4024d2d731":[6,0,2,287,15],
 "classDGtal_1_1SimpleIncremental2x2DetComputer.html#a214900d38bda4dd54a22fc54d01719ed":[6,0,2,287,27],
@@ -245,9 +249,5 @@ var NAVTREEINDEX40 =
 "classDGtal_1_1SimpleMatrix.html#ad9c54ae5ada1d13b8bac6cb967e062af":[6,0,2,531,10],
 "classDGtal_1_1SimpleMatrix.html#adb61697ab5abfdf88f123baf0caf49fb":[6,0,2,531,29],
 "classDGtal_1_1SimpleMatrix.html#adb66d77cb5f2c74a82009e9eb6bd8fb3":[6,0,2,531,2],
-"classDGtal_1_1SimpleMatrix.html#adc1857361c376a28deebcb23c7af21dc":[6,0,2,531,32],
-"classDGtal_1_1SimpleMatrix.html#ae4afc9da5f946f2128ce4d36e3944937":[6,0,2,531,38],
-"classDGtal_1_1SimpleMatrix.html#aef46b1a9e636414aafb681bbf0f5f02e":[6,0,2,531,11],
-"classDGtal_1_1SimpleMatrix.html#aef46b1a9e636414aafb681bbf0f5f02e":[6,0,2,531,12],
-"classDGtal_1_1SimpleMatrix.html#af5e025fb588807857becae19115e4840":[6,0,2,531,37]
+"classDGtal_1_1SimpleMatrix.html#adc1857361c376a28deebcb23c7af21dc":[6,0,2,531,32]
 };

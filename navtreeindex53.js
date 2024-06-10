@@ -1,5 +1,9 @@
 var NAVTREEINDEX53 =
 {
+"classDGtal_1_1functors_1_1deprecated_1_1SCellToMidPoint.html#abf225421fbfba99f6e255bfa92b46316":[6,0,2,5,0,0,1],
+"classLibBoard_1_1Board.html":[6,0,3,0],
+"classLibBoard_1_1Board.html#a0024d8e472fa1eaa60a4ff38a276c7c0":[6,0,3,0,36],
+"classLibBoard_1_1Board.html#a0294d06eb705554499da69d12233ee1a":[6,0,3,0,79],
 "classLibBoard_1_1Board.html#a02e945c6b75c2b3c43df97e1babc767f":[6,0,3,0,23],
 "classLibBoard_1_1Board.html#a04ace80d059bc92b6eccca1806686d71":[6,0,3,0,45],
 "classLibBoard_1_1Board.html#a0bdaff97ec6f4dc5afcd6c312096ef1d":[6,0,3,0,75],
@@ -234,8 +238,8 @@ var NAVTREEINDEX53 =
 "functions_rela.html":[6,3,6],
 "functions_s.html":[6,3,0,19],
 "functions_t.html":[6,3,0,20],
-"functions_type.html":[6,3,3,0],
 "functions_type.html":[6,3,3],
+"functions_type.html":[6,3,3,0],
 "functions_type_b.html":[6,3,3,1],
 "functions_type_c.html":[6,3,3,2],
 "functions_type_d.html":[6,3,3,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX53 =
 "functions_type_h.html":[6,3,3,7],
 "functions_type_i.html":[6,3,3,8],
 "functions_type_k.html":[6,3,3,9],
-"functions_type_l.html":[6,3,3,10],
-"functions_type_m.html":[6,3,3,11],
-"functions_type_n.html":[6,3,3,12],
-"functions_type_o.html":[6,3,3,13],
-"functions_type_p.html":[6,3,3,14]
+"functions_type_l.html":[6,3,3,10]
 };

@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -162,7 +162,7 @@ $(document).ready(function(){initNavTree('exampleEstimatorFromSurfelFunctors_8cp
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <a class="code" href="structDGtal_1_1SignedKhalimskyCell.html">Surfel</a> bel = <a class="code" href="classDGtal_1_1Surfaces.html">Surfaces&lt;KSpace&gt;::findABel</a>( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, ellipse, 10000 );</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  SurfaceContainer* surfaceContainer = <span class="keyword">new</span> SurfaceContainer</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    ( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, ellipse, <a class="code" href="classDGtal_1_1SurfelAdjacency.html">SurfelAdjacency&lt;KSpace::dimension&gt;</a>( <span class="keyword">true</span> ), bel );</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="classDGtal_1_1DigitalSurface.html">Surface</a> surface( surfaceContainer ); <span class="comment">// acquired</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="classDGtal_1_1DigitalSurface.html">Surface</a> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>( surfaceContainer ); <span class="comment">// acquired</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#ifdef WITH_CGAL</span></div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('exampleEstimatorFromSurfelFunctors_8cp
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                                 FunctorNormalElem, <a class="code" href="structDGtal_1_1functors_1_1GaussianKernel.html">DGtal::functors::GaussianKernel</a>&gt; ReporterNormalElem;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="structDGtal_1_1CanonicSCellEmbedder.html">CanonicSCellEmbedder&lt;KSpace&gt;</a> embedder(surface.container().space());</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="structDGtal_1_1CanonicSCellEmbedder.html">CanonicSCellEmbedder&lt;KSpace&gt;</a> embedder(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.container().space());</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#ifdef WITH_CGAL</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  FunctorGaussian estimatorK(embedder,1.0);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  FunctorMean estimatorH(embedder, 1.0);</div>
@@ -203,36 +203,36 @@ $(document).ready(function(){initNavTree('exampleEstimatorFromSurfelFunctors_8cp
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <a class="code" href="classDGtal_1_1LpMetric.html">LpMetric&lt;Z3i::Space&gt;</a> l2(2.0);</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  FunctorNormalElem estimatorNormalElem(embedder,1.0);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <a class="code" href="structDGtal_1_1functors_1_1GaussianKernel.html">DGtal::functors::GaussianKernel</a> gaussian(2.0);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  ReporterNormalElem reporterElem(surface, l2,</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  ReporterNormalElem reporterElem(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, l2,</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                                  estimatorNormalElem, gaussian);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#ifdef WITH_CGAL</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  reporterK.attach(surface);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  reporterH.attach(surface);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  reporterN.attach(surface);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  reporterL.attach(surface);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  reporterK.attach(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  reporterH.attach(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  reporterN.attach(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  reporterL.attach(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  reporterK.init(1, surface.begin(), surface.end());</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  reporterH.init(1, surface.begin(), surface.end());</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  reporterN.init(1, surface.begin(), surface.end());</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  reporterL.init(1, surface.begin(), surface.end());</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  reporterK.init(1, <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.begin(), <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.end());</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  reporterH.init(1, <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.begin(), <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.end());</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  reporterN.init(1, <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.begin(), <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.end());</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  reporterL.init(1, <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.begin(), <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.end());</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  reporterK.setParams(l2, estimatorK, constFunctor, 5.0);</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  reporterH.setParams(l2, estimatorH, constFunctor, 5.0);</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  reporterN.setParams(l2, estimatorN, constFunctor, 5.0);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  reporterL.setParams(l2, estimatorL, constFunctor, 5.0);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  FunctorGaussian::Quantity valK = reporterK.eval( surface.begin());</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  FunctorMean::Quantity valH = reporterH.eval( surface.begin());</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  FunctorNormal::Quantity valN = reporterN.eval( surface.begin());</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  FunctorNormalLeast::Quantity valL = reporterL.eval( surface.begin());</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  FunctorGaussian::Quantity valK = reporterK.eval( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.begin());</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  FunctorMean::Quantity valH = reporterH.eval( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.begin());</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  FunctorNormal::Quantity valN = reporterN.eval( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.begin());</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  FunctorNormalLeast::Quantity valL = reporterL.eval( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.begin());</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  reporterElem.attach(surface);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  reporterElem.attach(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>);</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  reporterElem.setParams(l2,</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                         estimatorNormalElem, gaussian, 5.0);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  reporterElem.init(1.0, surface.begin(), surface.end());</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  FunctorNormalElem::Quantity valElem = reporterElem.eval( surface.begin());</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  reporterElem.init(1.0, <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.begin(), <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.end());</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  FunctorNormalElem::Quantity valElem = reporterElem.eval( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.begin());</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#ifdef WITH_CGAL</span></div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;Gaussian = &quot;</span>&lt;&lt;valK &lt;&lt;std::endl;</div>
@@ -260,6 +260,7 @@ $(document).ready(function(){initNavTree('exampleEstimatorFromSurfelFunctors_8cp
 <div class="ttc" id="aclassDGtal_1_1functors_1_1MongeJetFittingGaussianCurvatureEstimator_html"><div class="ttname"><a href="classDGtal_1_1functors_1_1MongeJetFittingGaussianCurvatureEstimator.html">DGtal::functors::MongeJetFittingGaussianCurvatureEstimator</a></div><div class="ttdoc">Aim: Estimates Gaussian curvature using CGAL Jet Fitting and Monge Form.</div><div class="ttdef"><b>Definition:</b> <a href="MongeJetFittingGaussianCurvatureEstimator_8h_source.html#l00077">MongeJetFittingGaussianCurvatureEstimator.h:78</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1functors_1_1MongeJetFittingMeanCurvatureEstimator_html"><div class="ttname"><a href="classDGtal_1_1functors_1_1MongeJetFittingMeanCurvatureEstimator.html">DGtal::functors::MongeJetFittingMeanCurvatureEstimator</a></div><div class="ttdoc">Aim: Estimates Mean curvature using CGAL Jet Fitting and Monge Form.</div><div class="ttdef"><b>Definition:</b> <a href="MongeJetFittingMeanCurvatureEstimator_8h_source.html#l00090">MongeJetFittingMeanCurvatureEstimator.h:91</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1functors_1_1MongeJetFittingNormalVectorEstimator_html"><div class="ttname"><a href="classDGtal_1_1functors_1_1MongeJetFittingNormalVectorEstimator.html">DGtal::functors::MongeJetFittingNormalVectorEstimator</a></div><div class="ttdoc">Aim: Estimates normal vector using CGAL Jet Fitting and Monge Form.</div><div class="ttdef"><b>Definition:</b> <a href="MongeJetFittingNormalVectorEstimator_8h_source.html#l00081">MongeJetFittingNormalVectorEstimator.h:82</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
 <div class="ttc" id="aexampleMaximalSegmentSliceEstimation_8cpp_html_a86f9b721e4e72a3388a69cb2ed596f8f"><div class="ttname"><a href="exampleMaximalSegmentSliceEstimation_8cpp.html#a86f9b721e4e72a3388a69cb2ed596f8f">Surface</a></div><div class="ttdeci">SH3::DigitalSurface Surface</div><div class="ttdef"><b>Definition:</b> <a href="exampleMaximalSegmentSliceEstimation_8cpp_source.html#l00045">exampleMaximalSegmentSliceEstimation.cpp:45</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fc7012708b0416880a5c8b12dfdf9dd"><div class="ttname"><a href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">DGtal::trace</a></div><div class="ttdeci">Trace trace</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00153">Common.h:153</a></div></div>
@@ -276,7 +277,7 @@ $(document).ready(function(){initNavTree('exampleEstimatorFromSurfelFunctors_8cp
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_bbc6006c4fa8019b84b7adc573485eac.html">geometry</a></li><li class="navelem"><a class="el" href="dir_b5e93de485fa0805eb39c4f1e57dd22a.html">surfaces</a></li><li class="navelem"><b>exampleEstimatorFromSurfelFunctors.cpp</b></li>
-    <li class="footer">Generated on Wed May 8 2024 20:20:44 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:02 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

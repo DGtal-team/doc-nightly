@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -124,24 +124,24 @@ $(document).ready(function(){initNavTree('tangency-explorer_8cpp_source.html',''
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1Shortcuts.html">Shortcuts&lt;Z3i::KSpace&gt;</a>         <a class="code" href="testArithmeticalDSSComputerOnSurfels_8cpp.html#ac6834e172d5d8c2b796bc846aa0d643b">SH3</a>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1ShortcutsGeometry.html">ShortcutsGeometry&lt;Z3i::KSpace&gt;</a> <a class="code" href="testIntegralInvariantShortcuts_8cpp.html#ae4f1207d47e755c2bacefd09fa73c44f">SHG3</a>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">// The following typedefs are useful</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">typedef</span> <a class="code" href="structDGtal_1_1SurfaceMesh.html">SurfaceMesh&lt; RealPoint, RealVector &gt;</a>  <a class="code" href="structDGtal_1_1SurfaceMesh.html">SurfMesh</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">typedef</span> <a class="code" href="structDGtal_1_1SurfaceMesh.html">SurfaceMesh&lt; RealPoint, RealVector &gt;</a>  <a class="code" href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">typedef</span> <a class="code" href="structDGtal_1_1SurfaceMesh.html#aa1fa77b6fe00fc9e213be5e71ecf282a">SurfMesh::Face</a>                        <a class="code" href="testTriangulatedSurface_8cpp.html#aa7e89e659ae870a9963bb6109a53da62">Face</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">typedef</span> <a class="code" href="structDGtal_1_1SurfaceMesh.html#ac8fba76a794fd9912af755f620606cf0">SurfMesh::Vertex</a>                      <a class="code" href="testTriangulatedSurface_8cpp.html#ae931baebcf0de56dd5f3b9342207e4fd">Vertex</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">typedef</span> <a class="code" href="structDGtal_1_1ConvexHullIntegralKernel.html">DGtal::ConvexHullIntegralKernel&lt; 3 &gt;</a> <a class="code" href="structDGtal_1_1ConvexHullIntegralKernel.html">Kernel3D</a>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">typedef</span> <a class="code" href="structDGtal_1_1QuickHull.html">DGtal::QuickHull&lt; Kernel3D &gt;</a>         <a class="code" href="structDGtal_1_1QuickHull.html">QuickHull3D</a>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//Polyscope global</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;polyscope::SurfaceMesh *psMesh;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;polyscope::SurfaceMesh *<a class="code" href="dgtalCalculus-bunny_8cpp.html#ab75f85f061e7253666cda221eabe2eac">psMesh</a>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;polyscope::SurfaceMesh *psDualMesh;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;polyscope::SurfaceMesh *psTriangle;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;polyscope::PointCloud*  psCloud;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;polyscope::PointCloud*  psCloudCvx;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="structDGtal_1_1SurfaceMesh.html">SurfMesh</a> surfmesh;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="structDGtal_1_1SurfaceMesh.html">SurfMesh</a> <a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="structDGtal_1_1SurfaceMesh.html">SurfMesh</a> dual_surfmesh;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">float</span> gridstep   = 1.0;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">int</span>   vertex_idx = -1;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">int</span>   face_idx   = -1;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">int</span>   edge_idx   = -1;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">int</span>   <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a9afead1c6f9fcac4ac605b3271180e94">vertex_idx</a> = -1;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">int</span>   <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a73e84b42e62ecb05907245a86421ecee">face_idx</a>   = -1;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">int</span>   <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a9b42a27087ee12efa94537cd721928fa">edge_idx</a>   = -1;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">float</span> Time = 0.0;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">bool</span>  is_selected = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="classDGtal_1_1PointVector.html">Point</a> selected_kpoint; <span class="comment">// valid if selection == true</span></div>
@@ -340,11 +340,11 @@ $(document).ready(function(){initNavTree('tangency-explorer_8cpp_source.html',''
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;{</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="keywordflow">if</span> ( digital_points.empty() ) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keywordflow">if</span> ( vertex_idx &lt; 0 || vertex_idx &gt;= digital_points.size() ) <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> p = digital_points[ vertex_idx ];</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> p = digital_points[ <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a9afead1c6f9fcac4ac605b3271180e94">vertex_idx</a> ];</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>( <span class="stringliteral">&quot;Compute tangent cone&quot;</span> );</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keyword">auto</span> local_X_idx = TC.getCotangentPoints( p );</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;#cone=&quot;</span> &lt;&lt; local_X_idx.size() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  local_X_idx.push_back( vertex_idx );</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  local_X_idx.push_back( <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a9afead1c6f9fcac4ac605b3271180e94">vertex_idx</a> );</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  std::vector&lt; Point &gt; local_X;</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  std::vector&lt; RealPoint &gt; emb_local_X;</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> idx : local_X_idx )</div>
@@ -483,10 +483,10 @@ $(document).ready(function(){initNavTree('tangency-explorer_8cpp_source.html',''
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  <span class="keywordflow">if</span> ( vertex_idx &lt; 0 || vertex_idx &gt;= digital_points.size() ) <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>( <span class="stringliteral">&quot;Compute best triangle&quot;</span> );</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  TriangleContext ctx;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  ctx.p      = digital_points[ vertex_idx ];</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  ctx.p      = digital_points[ <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a9afead1c6f9fcac4ac605b3271180e94">vertex_idx</a> ];</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  ctx.cone_P = tangentCone( ctx.p );</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;#cone=&quot;</span> &lt;&lt; ctx.cone_P.size() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  ctx.cone_P.push_back( vertex_idx );</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  ctx.cone_P.push_back( <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a9afead1c6f9fcac4ac605b3271180e94">vertex_idx</a> );</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  ctx.d_P    = distances( ctx.p, ctx.cone_P );</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  ctx.max_d  = *( std::max_element( ctx.d_P.cbegin(), ctx.d_P.cend() ) );</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  ctx.min_d  = ctx.max_d / 3.0;</div>
@@ -509,7 +509,7 @@ $(document).ready(function(){initNavTree('tangency-explorer_8cpp_source.html',''
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  psTriangle = polyscope::registerSurfaceMesh(<span class="stringliteral">&quot;Triangle&quot;</span>, positions, faces);</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;}</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160; </div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="keywordtype">void</span> myCallback()</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="keywordtype">void</span> <a class="code" href="dgtalCalculus-bunny_8cpp.html#aa94374962c8d3d29f9952d031dd7537c">myCallback</a>()</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;{</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  <span class="comment">// Select a vertex with the mouse</span></div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <span class="keywordflow">if</span> (polyscope::pick::haveSelection()) {</div>
@@ -529,45 +529,45 @@ $(document).ready(function(){initNavTree('tangency-explorer_8cpp_source.html',''
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;      {</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        <span class="keywordflow">if</span> ( idx &lt; nv )</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;          {</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;            vertex_idx = idx;</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;            <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a9afead1c6f9fcac4ac605b3271180e94">vertex_idx</a> = idx;</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;            is_selected  = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;            selected_kpoint = digital_points[ vertex_idx ] * 2;</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;            selected_kpoint = digital_points[ <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a9afead1c6f9fcac4ac605b3271180e94">vertex_idx</a> ] * 2;</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            std::ostringstream otext;</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            otext &lt;&lt; <span class="stringliteral">&quot;Selected vertex = &quot;</span> &lt;&lt; vertex_idx</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            otext &lt;&lt; <span class="stringliteral">&quot;Selected vertex = &quot;</span> &lt;&lt; <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a9afead1c6f9fcac4ac605b3271180e94">vertex_idx</a></div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; pos=&quot;</span> &lt;&lt; selected_kpoint; </div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;            ImGui::Text( <span class="stringliteral">&quot;%s&quot;</span>, otext.str().c_str() );</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;          }</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( idx - nv &lt; nf )</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;          {</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            face_idx  = idx - nv;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a73e84b42e62ecb05907245a86421ecee">face_idx</a>  = idx - nv;</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;            is_selected  = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            selected_kpoint = <a class="code" href="classDGtal_1_1PointVector.html#acd6b03ecf112cf2ae8bae7b644164932">Point::zero</a>;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i : selectedSurface-&gt;faces[ face_idx ] )</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i : selectedSurface-&gt;faces[ <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a73e84b42e62ecb05907245a86421ecee">face_idx</a> ] )</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;              selected_kpoint += digital_points[ i ];</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;            selected_kpoint /= 2;</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;            std::ostringstream otext;</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;            otext &lt;&lt; <span class="stringliteral">&quot;Selected face = &quot;</span> &lt;&lt; face_idx</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;            otext &lt;&lt; <span class="stringliteral">&quot;Selected face = &quot;</span> &lt;&lt; <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a73e84b42e62ecb05907245a86421ecee">face_idx</a></div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; pos=&quot;</span> &lt;&lt; selected_kpoint; </div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;            ImGui::Text( <span class="stringliteral">&quot;%s&quot;</span>, otext.str().c_str() );</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;          }</div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( idx - nv - nf &lt; ne )</div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;          {</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;            edge_idx  = idx - nv - nf;</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;            <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a9b42a27087ee12efa94537cd721928fa">edge_idx</a>  = idx - nv - nf;</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;            is_selected  = <span class="keyword">false</span>; <span class="comment">// true; // ne fonctionne pas</span></div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;            selected_kpoint = <a class="code" href="classDGtal_1_1PointVector.html#acd6b03ecf112cf2ae8bae7b644164932">Point::zero</a>;</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i : selectedSurface-&gt;edgeIndices[ edge_idx ] )</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i : selectedSurface-&gt;edgeIndices[ <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a9b42a27087ee12efa94537cd721928fa">edge_idx</a> ] )</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;              selected_kpoint += digital_points[ i ];</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;            selected_kpoint /= 2;</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            std::ostringstream otext;</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            otext &lt;&lt; <span class="stringliteral">&quot;Selected edge = &quot;</span> &lt;&lt; edge_idx</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            otext &lt;&lt; <span class="stringliteral">&quot;Selected edge = &quot;</span> &lt;&lt; <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a9b42a27087ee12efa94537cd721928fa">edge_idx</a></div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot; pos=&quot;</span> &lt;&lt; selected_kpoint; </div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;            ImGui::Text( <span class="stringliteral">&quot;%s&quot;</span>, otext.str().c_str() );</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;          }</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;          {</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            vertex_idx = -1;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;            face_idx   = -1;</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;            edge_idx   = -1;</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a9afead1c6f9fcac4ac605b3271180e94">vertex_idx</a> = -1;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;            <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a73e84b42e62ecb05907245a86421ecee">face_idx</a>   = -1;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;            <a class="code" href="dgtalCalculus-halfsphere_8cpp.html#a9b42a27087ee12efa94537cd721928fa">edge_idx</a>   = -1;</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;            is_selected= <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;          }</div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;      }</div>
@@ -591,12 +591,12 @@ $(document).ready(function(){initNavTree('tangency-explorer_8cpp_source.html',''
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;  params(<span class="stringliteral">&quot;surfaceComponents&quot;</span>, <span class="stringliteral">&quot;All&quot;</span>);</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;  std::string filename = examplesPath + std::string(<span class="stringliteral">&quot;/samples/bunny-32.vol&quot;</span>);</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;  <span class="keywordflow">if</span> ( argc &gt; 1 ) filename = std::string( argv[ 1 ] );</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;  <span class="keyword">auto</span> binary_image    = SH3::makeBinaryImage(filename, params );</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>                    = SH3::getKSpace( binary_image, params );</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  <span class="keyword">auto</span> surface         = SH3::makeDigitalSurface( binary_image, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  <span class="keyword">auto</span> primalSurface   = SH3::makePrimalSurfaceMesh(surface);</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;  <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>    = SH3::makeBinaryImage(filename, params );</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>                    = SH3::getKSpace( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, params );</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>         = SH3::makeDigitalSurface( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  <span class="keyword">auto</span> primalSurface   = SH3::makePrimalSurfaceMesh(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>);</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  <a class="code" href="classDGtal_1_1Shortcuts.html#a2e45f9a3a263fc85691bddf0494532c5">SH3::Surfel2Index</a> s2i;</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  <span class="keyword">auto</span> dualSurface     = SH3::makeDualPolygonalSurface( s2i, surface );  </div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  <span class="keyword">auto</span> dualSurface     = SH3::makeDualPolygonalSurface( s2i, <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> );  </div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  <span class="comment">//Need to convert the faces</span></div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;  std::vector&lt;std::vector&lt;SH3::SurfaceMesh::Vertex&gt;&gt; faces;</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  std::vector&lt;RealPoint&gt; positions;</div>
@@ -606,7 +606,7 @@ $(document).ready(function(){initNavTree('tangency-explorer_8cpp_source.html',''
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  <span class="comment">//Recasting to vector of vertices</span></div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  positions = primalSurface-&gt;positions();</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160; </div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;  surfmesh = <a class="code" href="structDGtal_1_1SurfaceMesh.html">SurfMesh</a>(positions.begin(),</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;  <a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a> = <a class="code" href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a>(positions.begin(),</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;                      positions.end(),</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                      faces.begin(),</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                      faces.end());</div>
@@ -619,13 +619,13 @@ $(document).ready(function(){initNavTree('tangency-explorer_8cpp_source.html',''
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> vtx = 0; vtx &lt; dualSurface-&gt;nbVertices(); ++vtx )</div>
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;    dual_positions.push_back( dualSurface-&gt;position( vtx ) );</div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    </div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;  dual_surfmesh = <a class="code" href="structDGtal_1_1SurfaceMesh.html">SurfMesh</a>(dual_positions.begin(),</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;  dual_surfmesh = <a class="code" href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a>(dual_positions.begin(),</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;                           dual_positions.end(),</div>
 <div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;                           dual_faces.begin(),</div>
 <div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;                           dual_faces.end());</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;  std::cout &lt;&lt; surfmesh &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;  std::cout &lt;&lt; <a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;number of non-manifold Edges = &quot;</span></div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;            &lt;&lt; surfmesh.<a class="code" href="structDGtal_1_1SurfaceMesh.html#add89b6762bb7150e760351ca110d28f8">computeNonManifoldEdges</a>().size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;            &lt;&lt; <a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.<a class="code" href="structDGtal_1_1SurfaceMesh.html#add89b6762bb7150e760351ca110d28f8">computeNonManifoldEdges</a>().size() &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;  std::cout &lt;&lt; dual_surfmesh &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;number of non-manifold Edges = &quot;</span></div>
 <div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;            &lt;&lt; dual_surfmesh.<a class="code" href="structDGtal_1_1SurfaceMesh.html#add89b6762bb7150e760351ca110d28f8">computeNonManifoldEdges</a>().size() &lt;&lt; std::endl;</div>
@@ -647,11 +647,11 @@ $(document).ready(function(){initNavTree('tangency-explorer_8cpp_source.html',''
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;  <span class="comment">// Initialize polyscope</span></div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  <a class="code" href="testCubicalComplex_8cpp.html#a2ab29adfd8ee31956627f4230b96a34b">polyscope::init</a>();</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160; </div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;  psMesh = polyscope::registerSurfaceMesh(<span class="stringliteral">&quot;Input surface&quot;</span>, positions, faces);</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;  <a class="code" href="dgtalCalculus-bunny_8cpp.html#ab75f85f061e7253666cda221eabe2eac">psMesh</a> = polyscope::registerSurfaceMesh(<span class="stringliteral">&quot;Input surface&quot;</span>, positions, faces);</div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;  psDualMesh = polyscope::registerSurfaceMesh(<span class="stringliteral">&quot;Input dual surface&quot;</span>, dual_positions, dual_faces);</div>
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160; </div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;  <span class="comment">// Set the callback function</span></div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  polyscope::state::userCallback = myCallback;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  polyscope::state::userCallback = <a class="code" href="dgtalCalculus-bunny_8cpp.html#aa94374962c8d3d29f9952d031dd7537c">myCallback</a>;</div>
 <div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;  polyscope::show();</div>
 <div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;  <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
 <div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;}</div>
@@ -677,6 +677,15 @@ $(document).ready(function(){initNavTree('tangency-explorer_8cpp_source.html',''
 <div class="ttc" id="aclassDGtal_1_1Trace_html_a352b7160bf722e2f0bcbee5d0bad6ef3"><div class="ttname"><a href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">DGtal::Trace::beginBlock</a></div><div class="ttdeci">void beginBlock(const std::string &amp;keyword=&quot;&quot;)</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
+<div class="ttc" id="adgtalCalculus-bunny_8cpp_html_a0da7de0f9d769404c143f3d032eaa496"><div class="ttname"><a href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a></div><div class="ttdeci">SurfaceMesh&lt; RealPoint, RealVector &gt; SurfMesh</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-bunny_8cpp_source.html#l00052">dgtalCalculus-bunny.cpp:52</a></div></div>
+<div class="ttc" id="adgtalCalculus-bunny_8cpp_html_aa94374962c8d3d29f9952d031dd7537c"><div class="ttname"><a href="dgtalCalculus-bunny_8cpp.html#aa94374962c8d3d29f9952d031dd7537c">myCallback</a></div><div class="ttdeci">void myCallback()</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-bunny_8cpp_source.html#l00207">dgtalCalculus-bunny.cpp:207</a></div></div>
+<div class="ttc" id="adgtalCalculus-bunny_8cpp_html_ab75f85f061e7253666cda221eabe2eac"><div class="ttname"><a href="dgtalCalculus-bunny_8cpp.html#ab75f85f061e7253666cda221eabe2eac">psMesh</a></div><div class="ttdeci">polyscope::SurfaceMesh * psMesh</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-bunny_8cpp_source.html#l00057">dgtalCalculus-bunny.cpp:57</a></div></div>
+<div class="ttc" id="adgtalCalculus-bunny_8cpp_html_ae3ccdba7d575baf979261b4c02a6b9bb"><div class="ttname"><a href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a></div><div class="ttdeci">SurfMesh surfmesh</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-bunny_8cpp_source.html#l00058">dgtalCalculus-bunny.cpp:58</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_aa50a9c9e8c2b62bc7ff1c3c577d25ffd"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a></div><div class="ttdeci">CountedPtr&lt; SH3::BinaryImage &gt; binary_image</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00065">dgtalCalculus-geodesic.cpp:65</a></div></div>
+<div class="ttc" id="adgtalCalculus-halfsphere_8cpp_html_a73e84b42e62ecb05907245a86421ecee"><div class="ttname"><a href="dgtalCalculus-halfsphere_8cpp.html#a73e84b42e62ecb05907245a86421ecee">face_idx</a></div><div class="ttdeci">int face_idx</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-halfsphere_8cpp_source.html#l00066">dgtalCalculus-halfsphere.cpp:66</a></div></div>
+<div class="ttc" id="adgtalCalculus-halfsphere_8cpp_html_a9afead1c6f9fcac4ac605b3271180e94"><div class="ttname"><a href="dgtalCalculus-halfsphere_8cpp.html#a9afead1c6f9fcac4ac605b3271180e94">vertex_idx</a></div><div class="ttdeci">int vertex_idx</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-halfsphere_8cpp_source.html#l00065">dgtalCalculus-halfsphere.cpp:65</a></div></div>
+<div class="ttc" id="adgtalCalculus-halfsphere_8cpp_html_a9b42a27087ee12efa94537cd721928fa"><div class="ttname"><a href="dgtalCalculus-halfsphere_8cpp.html#a9b42a27087ee12efa94537cd721928fa">edge_idx</a></div><div class="ttdeci">int edge_idx</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-halfsphere_8cpp_source.html#l00067">dgtalCalculus-halfsphere.cpp:67</a></div></div>
 <div class="ttc" id="afullConvexitySphereGeodesics_8cpp_html_ab053a8ae7537e4f87fa9a46962f7617a"><div class="ttname"><a href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a></div><div class="ttdeci">SMesh::Index Index</div><div class="ttdef"><b>Definition:</b> <a href="fullConvexitySphereGeodesics_8cpp_source.html#l00117">fullConvexitySphereGeodesics.cpp:117</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z3i_html_a5f087066515ecd33cefd7bd080ef8114"><div class="ttname"><a href="namespaceDGtal_1_1Z3i.html#a5f087066515ecd33cefd7bd080ef8114">DGtal::Z3i::RealPoint</a></div><div class="ttdeci">Space::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00170">StdDefs.h:170</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z3i_html_a8d69892de6b10119a8070bd5d0871bf5"><div class="ttname"><a href="namespaceDGtal_1_1Z3i.html#a8d69892de6b10119a8070bd5d0871bf5">DGtal::Z3i::Point</a></div><div class="ttdeci">Space::Point Point</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00168">StdDefs.h:168</a></div></div>
@@ -708,7 +717,7 @@ $(document).ready(function(){initNavTree('tangency-explorer_8cpp_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_ab39b723b60ad4999451562bfaa77037.html">polyscope-examples</a></li><li class="navelem"><b>tangency-explorer.cpp</b></li>
-    <li class="footer">Generated on Wed May 8 2024 20:20:54 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:12 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

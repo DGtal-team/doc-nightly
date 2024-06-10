@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('classDGtal_1_1AlphaThickSegmentCompute
 </div><!--header-->
 <div class="contents">
 
-<p>Aim: This class is devoted to the recognition of alpha thick segments as described in <a class="el" href="citelist.html#CITEREF_FaureTangential2008">[50]</a> . From a maximal diagonal alphaMax thickness, it recognizes thick segments and may thus take into account some noise in the input contour. Moreover points of the segment may not be (digitally) connected and may have floating point coordinates. Connection is only given by the order of the points.  
+<p>Aim: This class is devoted to the recognition of alpha thick segments as described in <a class="el" href="citelist.html#CITEREF_FaureTangential2008">[51]</a> . From a maximal diagonal alphaMax thickness, it recognizes thick segments and may thus take into account some noise in the input contour. Moreover points of the segment may not be (digitally) connected and may have floating point coordinates. Connection is only given by the order of the points.  
  <a href="classDGtal_1_1AlphaThickSegmentComputer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="AlphaThickSegmentComputer_8h_source.html">DGtal/geometry/curves/AlphaThickSegmentComputer.h</a>&gt;</code></p>
@@ -273,9 +273,9 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename TInputPoint, typename TConstIterator = typename std::vector&lt; TInputPoint &gt;::const_iterator&gt;<br />
 class DGtal::AlphaThickSegmentComputer&lt; TInputPoint, TConstIterator &gt;</h3>
 
-<p>Aim: This class is devoted to the recognition of alpha thick segments as described in <a class="el" href="citelist.html#CITEREF_FaureTangential2008">[50]</a> . From a maximal diagonal alphaMax thickness, it recognizes thick segments and may thus take into account some noise in the input contour. Moreover points of the segment may not be (digitally) connected and may have floating point coordinates. Connection is only given by the order of the points. </p>
+<p>Aim: This class is devoted to the recognition of alpha thick segments as described in <a class="el" href="citelist.html#CITEREF_FaureTangential2008">[51]</a> . From a maximal diagonal alphaMax thickness, it recognizes thick segments and may thus take into account some noise in the input contour. Moreover points of the segment may not be (digitally) connected and may have floating point coordinates. Connection is only given by the order of the points. </p>
 <p>Description of class '<a class="el" href="classDGtal_1_1AlphaThickSegmentComputer.html" title="Aim: This class is devoted to the recognition of alpha thick segments as described in  ....">AlphaThickSegmentComputer</a>' </p>
-<p>As other solutions like <a class="el" href="citelist.html#CITEREF_DebledRennessonBlurred2005">[46]</a> the algorithm given here is based on the height/width computation of the convex hull computed from a given set of points. The actual implementation exploits the height/width update defined in the <a class="el" href="citelist.html#CITEREF_FaureTangential2008">[50]</a> (see <a class="el" href="citelist.html#CITEREF_FaureTangential2008">[50]</a> page 363) which reduces the complexity from \(O(n\ log\ n) \) in \(O( log\ n) \). Note that the convexhull update in linear time (with point substraction) proposed by Buzer <a class="el" href="citelist.html#CITEREF_lilianComputing2007">[83]</a> is not yet implemented.</p>
+<p>As other solutions like <a class="el" href="citelist.html#CITEREF_DebledRennessonBlurred2005">[47]</a> the algorithm given here is based on the height/width computation of the convex hull computed from a given set of points. The actual implementation exploits the height/width update defined in the <a class="el" href="citelist.html#CITEREF_FaureTangential2008">[51]</a> (see <a class="el" href="citelist.html#CITEREF_FaureTangential2008">[51]</a> page 363) which reduces the complexity from \(O(n\ log\ n) \) in \(O( log\ n) \). Note that the convexhull update in linear time (with point substraction) proposed by Buzer <a class="el" href="citelist.html#CITEREF_lilianComputing2007">[84]</a> is not yet implemented.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">TInputPoint</td><td>the type of input points: their dimension must be two but their components may be integers or floating-point values.</td></tr>
@@ -2041,7 +2041,7 @@ template&lt;typename TInputPoint , typename TConstIterator  = typename std::vect
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1AlphaThickSegmentComputer.html">AlphaThickSegmentComputer</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:06 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:23 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -256,10 +256,10 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2checkFullConvexityT
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb_ok = 0;</div>
 <div class="line">  <span class="keywordflow">for</span> ( Dimension a = 0; a &lt; Space::dimension; a++ )</div>
 <div class="line">    {</div>
-<div class="line">      ProjPoint plo, phi;</div>
+<div class="line">      ProjPoint plo, <a name="a22"></a><a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a>;</div>
 <div class="line">      <a class="code" href="checkFullConvexityTheorems_8cpp.html#ad19c7670aca76aabbe997e1bd1a103e6">project</a>( plo, lo, a ); </div>
-<div class="line">      <a class="code" href="checkFullConvexityTheorems_8cpp.html#ad19c7670aca76aabbe997e1bd1a103e6">project</a>( phi, hi, a ); </div>
-<div class="line">      ProjDConvexity pdconv( plo, phi );</div>
+<div class="line">      <a class="code" href="checkFullConvexityTheorems_8cpp.html#ad19c7670aca76aabbe997e1bd1a103e6">project</a>( <a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a>, hi, a ); </div>
+<div class="line">      ProjDConvexity pdconv( plo, <a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a> );</div>
 <div class="line">      std::vector&lt; ProjPoint &gt; PE;</div>
 <div class="line">      <a class="code" href="checkFullConvexityTheorems_8cpp.html#a381b254000dc3c5fc014420aa68b5def">projectRange</a>( PE, E, a );</div>
 <div class="line">      <span class="keywordtype">bool</span> ok = pdconv.isFullyConvex( PE );</div>
@@ -274,7 +274,7 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2checkFullConvexityT
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Po<span class="keywordtype">int</span>&gt;</div>
-<div class="line"><span class="keywordtype">void</span> <a name="a22"></a><a class="code" href="checkFullConvexityTheorems_8cpp.html#af2729743160cf63f4f0c5a181bc038c9">displayPointRange2D</a>( <span class="keyword">const</span> std::vector&lt; Point &gt;&amp; X )</div>
+<div class="line"><span class="keywordtype">void</span> <a name="a23"></a><a class="code" href="checkFullConvexityTheorems_8cpp.html#af2729743160cf63f4f0c5a181bc038c9">displayPointRange2D</a>( <span class="keyword">const</span> std::vector&lt; Point &gt;&amp; X )</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordflow">if</span> ( X.empty() ) <span class="keywordflow">return</span>;</div>
 <div class="line">  <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> lo  = X[ 0 ];</div>
@@ -295,7 +295,7 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2checkFullConvexityT
 <div class="line"><span class="comment">// @param width the width of the domain</span></div>
 <div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Space&gt;</div>
 <div class="line"><span class="keywordtype">bool</span></div>
-<div class="line"><a name="a23"></a><a class="code" href="checkFullConvexityTheorems_8cpp.html#ac065f0b9cad4efec5b0ae7b26b18bd64">checkFullConvexityCharacterization</a>( <span class="keywordtype">int</span> width )</div>
+<div class="line"><a name="a24"></a><a class="code" href="checkFullConvexityTheorems_8cpp.html#ac065f0b9cad4efec5b0ae7b26b18bd64">checkFullConvexityCharacterization</a>( <span class="keywordtype">int</span> width )</div>
 <div class="line">{</div>
 <div class="line">  <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Space::Integer</a>    <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a>;</div>
 <div class="line">  <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1KhalimskySpaceND.html">DGtal::KhalimskySpaceND&lt; Space::dimension, Integer &gt;</a> <a class="code" href="testArithmeticalDSSComputerOnSurfels_8cpp.html#aebe586e91159919ccf2f565d4407fff7">KSpace</a>;</div>
@@ -316,7 +316,7 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2checkFullConvexityT
 <div class="line">  <a class="code" href="checkFullConvexityTheorems_8cpp.html#a347c4e6d8e7716b1af0314cbf9d2102c">makeRandomRange</a>( X, n, width );</div>
 <div class="line">  <span class="keyword">auto</span>  P  = dconv.<a class="code" href="classDGtal_1_1DigitalConvexity.html#af4528961df07c0a68287a7744c93e22f">makePolytope</a>( X );</div>
 <div class="line">  P.<a class="code" href="classDGtal_1_1BoundedLatticePolytope.html#af641cdb97623643b2da06ed9439e5253">getPoints</a>( Y );  </div>
-<div class="line">  <span class="keyword">const</span> <span class="keywordtype">bool</span> cvx = dconv.<a name="a24"></a><a class="code" href="classDGtal_1_1DigitalConvexity.html#a4b5bf83b01cd9b62e92cc2572e8df5a8">is0Convex</a>( Y );</div>
+<div class="line">  <span class="keyword">const</span> <span class="keywordtype">bool</span> cvx = dconv.<a name="a25"></a><a class="code" href="classDGtal_1_1DigitalConvexity.html#a4b5bf83b01cd9b62e92cc2572e8df5a8">is0Convex</a>( Y );</div>
 <div class="line">  <span class="keyword">const</span> <span class="keywordtype">bool</span> fc = dconv.<a class="code" href="classDGtal_1_1DigitalConvexity.html#a3cd5bd9f858176e274f5320674ca2026">isFullyConvex</a>( Y );</div>
 <div class="line">  <span class="keywordtype">bool</span>  proj_fc = <span class="keyword">true</span>;</div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;#X=&quot;</span> &lt;&lt; Y.size()</div>
@@ -324,10 +324,10 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2checkFullConvexityT
 <div class="line">            &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; ( fc ? <span class="stringliteral">&quot;X FC&quot;</span> : <span class="stringliteral">&quot;X NFC&quot;</span> );</div>
 <div class="line">  <span class="keywordflow">for</span> ( Dimension a = 0; a &lt; Space::dimension; a++ )</div>
 <div class="line">    {</div>
-<div class="line">      ProjPoint plo, phi;</div>
+<div class="line">      ProjPoint plo, <a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a>;</div>
 <div class="line">      <a class="code" href="checkFullConvexityTheorems_8cpp.html#ad19c7670aca76aabbe997e1bd1a103e6">project</a>( plo, lo, a ); </div>
-<div class="line">      <a class="code" href="checkFullConvexityTheorems_8cpp.html#ad19c7670aca76aabbe997e1bd1a103e6">project</a>( phi, hi, a ); </div>
-<div class="line">      ProjDConvexity pdconv( plo, phi );</div>
+<div class="line">      <a class="code" href="checkFullConvexityTheorems_8cpp.html#ad19c7670aca76aabbe997e1bd1a103e6">project</a>( <a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a>, hi, a ); </div>
+<div class="line">      ProjDConvexity pdconv( plo, <a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a> );</div>
 <div class="line">      std::vector&lt; ProjPoint &gt; PE;</div>
 <div class="line">      <a class="code" href="checkFullConvexityTheorems_8cpp.html#a381b254000dc3c5fc014420aa68b5def">projectRange</a>( PE, Y, a );</div>
 <div class="line">      <span class="keywordflow">if</span> ( Space::dimension == 3 )</div>
@@ -350,15 +350,15 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2checkFullConvexityT
 <div class="line">  <span class="keywordflow">return</span> fc == proj_fc;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> <a name="a25"></a><a class="code" href="testArithmeticDSS-benchmark_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>( <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[] )</div>
+<div class="line"><span class="keywordtype">int</span> <a name="a26"></a><a class="code" href="testArithmeticDSS-benchmark_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>( <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[] )</div>
 <div class="line">{</div>
 <div class="line">  <span class="keywordtype">int</span> NB_TEST1 = 5;</div>
 <div class="line">  <span class="keywordtype">int</span> NB_TEST2 = 5;</div>
 <div class="line">  <span class="keywordtype">int</span> NB_TEST3 = 5;</div>
 <div class="line">  <span class="keywordtype">int</span> NB_TEST4 = 25;</div>
 <div class="line">  {</div>
-<div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a26"></a><a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>( <span class="stringliteral">&quot;Check SkelStarCvxH(X) full convexity 2D&quot;</span> );</div>
-<div class="line">    <span class="keyword">typedef</span> <a name="_a27"></a><a class="code" href="classDGtal_1_1SpaceND.html">DGtal::SpaceND&lt; 2, int &gt;</a> <a name="a28"></a><a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a38dfaf1641eab4d3fb805df4b52ab10d">Space</a>;</div>
+<div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a27"></a><a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>( <span class="stringliteral">&quot;Check SkelStarCvxH(X) full convexity 2D&quot;</span> );</div>
+<div class="line">    <span class="keyword">typedef</span> <a name="_a28"></a><a class="code" href="classDGtal_1_1SpaceND.html">DGtal::SpaceND&lt; 2, int &gt;</a> <a name="a29"></a><a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a38dfaf1641eab4d3fb805df4b52ab10d">Space</a>;</div>
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb    = 0;</div>
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb_ok = 0;</div>
 <div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; NB_TEST1; i++ )</div>
@@ -367,7 +367,7 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2checkFullConvexityT
 <div class="line">        nb    += 1;</div>
 <div class="line">      }</div>
 <div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; nb_ok &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; nb &lt;&lt; <span class="stringliteral">&quot; OK tests&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a29"></a><a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
+<div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a30"></a><a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line">  }</div>
 <div class="line">  {</div>
 <div class="line">    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>( <span class="stringliteral">&quot;Check SkelStarCvxH(X) full convexity 3D&quot;</span> );</div>
@@ -511,6 +511,7 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2checkFullConvexityT
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ae3ef773d8a851319b34d2fbcb4e80bb7"><div class="ttname"><a href="classDGtal_1_1Trace.html#ae3ef773d8a851319b34d2fbcb4e80bb7">DGtal::Trace::warning</a></div><div class="ttdeci">std::ostream &amp; warning()</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
+<div class="ttc" id="adgtalCalculus-bunny_8cpp_html_acaa84cf4416595d5df297727152b78e2"><div class="ttname"><a href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a></div><div class="ttdeci">PolygonalCalculus&lt; SH3::RealPoint, SH3::RealVector &gt;::Vector phi(const Face f)</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-bunny_8cpp_source.html#l00069">dgtalCalculus-bunny.cpp:69</a></div></div>
 <div class="ttc" id="adigitalPolyhedronBuilder3D_8cpp_html_a7e851e605c414ed13c6604af4bba8107"><div class="ttname"><a href="digitalPolyhedronBuilder3D_8cpp.html#a7e851e605c414ed13c6604af4bba8107">PointRange</a></div><div class="ttdeci">std::vector&lt; Point &gt; PointRange</div><div class="ttdef"><b>Definition:</b> <a href="digitalPolyhedronBuilder3D_8cpp_source.html#l00084">digitalPolyhedronBuilder3D.cpp:84</a></div></div>
 <div class="ttc" id="aexamplePlaneProbingParallelepipedEstimator_8cpp_html_ad31c3eca44cf6770809bc47f2b456212"><div class="ttname"><a href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a></div><div class="ttdeci">Point::Coordinate Integer</div><div class="ttdef"><b>Definition:</b> <a href="examplePlaneProbingParallelepipedEstimator_8cpp_source.html#l00044">examplePlaneProbingParallelepipedEstimator.cpp:44</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
@@ -525,7 +526,7 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2checkFullConvexityT
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 8 2024 20:20:35 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:02:53 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

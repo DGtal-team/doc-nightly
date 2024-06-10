@@ -1,5 +1,13 @@
 var NAVTREEINDEX70 =
 {
+"structDGtal_1_1PGMWriter.html#aa3aac545f58415d9c194ebfaaad29a65":[6,0,2,464,2],
+"structDGtal_1_1PGMWriter.html#ab86e1077d57fa038ccecb4ec60fd7e27":[6,0,2,464,1],
+"structDGtal_1_1PGMWriter.html#addd0f963fde9b4d7dad2d8ab3e69e5c5":[6,0,2,464,4],
+"structDGtal_1_1PGMWriter.html#aea1f9f2729f8da56df859a813bf5250b":[6,0,2,464,5],
+"structDGtal_1_1PGMWriter.html#af90610c588fe28067db9fb5255b2c1c0":[6,0,2,464,6],
+"structDGtal_1_1PPMReader.html":[6,0,2,434],
+"structDGtal_1_1PPMReader.html#a433ae742bcf38eb138d392b9b720c8be":[6,0,2,434,5],
+"structDGtal_1_1PPMReader.html#a52a94f714117f67e6880b2a9fadb2901":[6,0,2,434,7],
 "structDGtal_1_1PPMReader.html#a61134bf270538c350286fa18a3bb9e7e":[6,0,2,434,6],
 "structDGtal_1_1PPMReader.html#a6dc7f2ad03193d102730a662edc1eef9":[6,0,2,434,0],
 "structDGtal_1_1PPMReader.html#adf8577cf3be223c7d69bb641dd3f915c":[6,0,2,434,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX70 =
 "structDGtal_1_1RegularBinner.html#aab04c114c2ce4f7cb46d248a5fc1319b":[6,0,2,525,0],
 "structDGtal_1_1RegularBinner.html#abec789c40b1bdd21e9f0aeb8491e2d19":[6,0,2,525,5],
 "structDGtal_1_1RegularBinner.html#ace0defcd89e8f2f4ec3abfc8c3369c74":[6,0,2,525,6],
-"structDGtal_1_1RegularBinner.html#ae9ce1e0f685bcb92749db8ca42f4485e":[6,0,2,525,9],
-"structDGtal_1_1RowMajorStorage.html":[6,0,2,483],
-"structDGtal_1_1SegmentComputerTraits.html":[6,0,2,235],
-"structDGtal_1_1SegmentComputerTraits.html#aec543e23f154c340dd52511204ed977f":[6,0,2,235,0],
-"structDGtal_1_1SequenceCategory.html":[6,0,2,43],
-"structDGtal_1_1SetAssociativeCategory.html":[6,0,2,51],
-"structDGtal_1_1SetFromImage.html":[6,0,2,378],
-"structDGtal_1_1SetFromImage.html#a20e6aef455df915e027c381c62bbc563":[6,0,2,378,5],
-"structDGtal_1_1SetFromImage.html#a260f7eef5972b22f1e1f4b55a5aa419a":[6,0,2,378,3]
+"structDGtal_1_1RegularBinner.html#ae9ce1e0f685bcb92749db8ca42f4485e":[6,0,2,525,9]
 };

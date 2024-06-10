@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -251,7 +251,7 @@ class DGtal::PowerMap&lt; TWeightImage, TPowerSeparableMetric, TImageContainer &
 
 <p>Aim: Implementation of the linear in time Power map construction. </p>
 <p>Description of template class '<a class="el" href="classDGtal_1_1PowerMap.html" title="Aim: Implementation of the linear in time Power map construction.">PowerMap</a>' </p>
-<p>The algorithm uses a separable process to construct Power maps as discussed in <a class="el" href="citelist.html#CITEREF_dcoeurjo_pami_RDMA">[26]</a>. Along periodic dimensions, the algorithm is adapted following <a class="el" href="citelist.html#CITEREF_Coeurjo2008">[33]</a>.</p>
+<p>The algorithm uses a separable process to construct Power maps as discussed in <a class="el" href="citelist.html#CITEREF_dcoeurjo_pami_RDMA">[27]</a>. Along periodic dimensions, the algorithm is adapted following <a class="el" href="citelist.html#CITEREF_Coeurjo2008">[34]</a>.</p>
 <p>Given an image mapping points to values and a power separable metric, the class computes the power map of the weighted points specified in the image. Similarly to the <a class="el" href="classDGtal_1_1VoronoiMap.html" title="Aim: Implementation of the linear in time Voronoi map construction.">VoronoiMap</a> class, if two points are equi-distant according to the power distance, this power map will only consider one of them.</p>
 <p>By default, the domain is considered non-periodic but per-dimension periodicity can be specified in the constructor. When the domain has periodic dimensions, the closest point coordinates <code>B</code> to a given point <code>A</code> may not be between the lower and upper bounds of the domain, in such a way that the non-periodic power distance between <code>A</code> and <code>B</code> is equal to their power distance considering the periodicity.</p>
 <p>If the separable metric has a complexity of O(h) for its "hiddenByPower" predicate, the overall Power map construction algorithm is in \( O(h.d.n^d)\) for \( n^d\) domains (see class constructor). For Euclidean the \( l_2\) metric, the overall computation is in \( O(d.n^d)\), which is optimal.</p>
@@ -1713,7 +1713,7 @@ template&lt;typename TWeightImage , typename TPowerSeparableMetric , typename TI
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1PowerMap.html">PowerMap</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:09 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:27 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

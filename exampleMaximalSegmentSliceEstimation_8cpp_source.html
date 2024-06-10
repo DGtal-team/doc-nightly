@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -136,9 +136,9 @@ $(document).ready(function(){initNavTree('exampleMaximalSegmentSliceEstimation_8
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">auto</span> implicit_shape  = SH3::makeImplicitShape3D  ( params );</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">auto</span> digitized_shape = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>               = SH3::getKSpace( params );</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">auto</span> binary_image    = SH3::makeBinaryImage( digitized_shape, params );</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">auto</span> surface         = SH3::makeDigitalSurface( binary_image, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange(surface);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>    = SH3::makeBinaryImage( digitized_shape, params );</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>         = SH3::makeDigitalSurface( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">auto</span> surfels         = SH3::getSurfelRange(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">double</span> gridstep = params[<span class="stringliteral">&quot;gridstep&quot;</span>].as&lt;<span class="keywordtype">double</span>&gt;();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('exampleMaximalSegmentSliceEstimation_8
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">using</span> <a class="code" href="classDGtal_1_1PlaneProbingParallelepipedEstimator.html">Estimator</a> = <a class="code" href="classDGtal_1_1MaximalSegmentSliceEstimation.html">MaximalSegmentSliceEstimation&lt;Surface&gt;</a>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classDGtal_1_1PlaneProbingParallelepipedEstimator.html">Estimator</a> estimator;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    estimator.init(gridstep, surfels.begin(), surfels.end());</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    estimator.attach(surface);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    estimator.attach(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// Usage</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    std::vector&lt;Estimator::Quantity&gt; quantities;</div>
@@ -191,6 +191,8 @@ $(document).ready(function(){initNavTree('exampleMaximalSegmentSliceEstimation_8
 <div class="ttc" id="aclassDGtal_1_1Shortcuts_html"><div class="ttname"><a href="classDGtal_1_1Shortcuts.html">DGtal::Shortcuts</a></div><div class="ttdoc">Aim: This class is used to simplify shape and surface creation. With it, you can create new shapes an...</div><div class="ttdef"><b>Definition:</b> <a href="Shortcuts_8h_source.html#l00104">Shortcuts.h:105</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Shortcuts_html_aeeb2a89c94e05fbd8b12905296e08125"><div class="ttname"><a href="classDGtal_1_1Shortcuts.html#aeeb2a89c94e05fbd8b12905296e08125">DGtal::Shortcuts::SCell</a></div><div class="ttdeci">LightDigitalSurface::SCell SCell</div><div class="ttdef"><b>Definition:</b> <a href="Shortcuts_8h_source.html#l00163">Shortcuts.h:163</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Viewer3D_html"><div class="ttname"><a href="classDGtal_1_1Viewer3D.html">DGtal::Viewer3D</a></div><div class="ttdef"><b>Definition:</b> <a href="Viewer3D_8h_source.html#l00131">Viewer3D.h:132</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_aa50a9c9e8c2b62bc7ff1c3c577d25ffd"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a></div><div class="ttdeci">CountedPtr&lt; SH3::BinaryImage &gt; binary_image</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00065">dgtalCalculus-geodesic.cpp:65</a></div></div>
 <div class="ttc" id="aexampleMaximalSegmentSliceEstimation_8cpp_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="exampleMaximalSegmentSliceEstimation_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> <a href="exampleMaximalSegmentSliceEstimation_8cpp_source.html#l00065">exampleMaximalSegmentSliceEstimation.cpp:65</a></div></div>
 <div class="ttc" id="aexampleMaximalSegmentSliceEstimation_8cpp_html_a3d4aa83f14233e7834541cfde4d49a00"><div class="ttname"><a href="exampleMaximalSegmentSliceEstimation_8cpp.html#a3d4aa83f14233e7834541cfde4d49a00">Surfel</a></div><div class="ttdeci">Surface::Surfel Surfel</div><div class="ttdef"><b>Definition:</b> <a href="exampleMaximalSegmentSliceEstimation_8cpp_source.html#l00046">exampleMaximalSegmentSliceEstimation.cpp:46</a></div></div>
 <div class="ttc" id="aexampleMaximalSegmentSliceEstimation_8cpp_html_aafed6689a906f7d29d4daadfdcd25b54"><div class="ttname"><a href="exampleMaximalSegmentSliceEstimation_8cpp.html#aafed6689a906f7d29d4daadfdcd25b54">centerSurfel</a></div><div class="ttdeci">RealPoint centerSurfel(KSpace const &amp;K, SH3::SCell const &amp;s)</div><div class="ttdef"><b>Definition:</b> <a href="exampleMaximalSegmentSliceEstimation_8cpp_source.html#l00050">exampleMaximalSegmentSliceEstimation.cpp:50</a></div></div>
@@ -208,7 +210,7 @@ $(document).ready(function(){initNavTree('exampleMaximalSegmentSliceEstimation_8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_bbc6006c4fa8019b84b7adc573485eac.html">geometry</a></li><li class="navelem"><a class="el" href="dir_b5e93de485fa0805eb39c4f1e57dd22a.html">surfaces</a></li><li class="navelem"><a class="el" href="exampleMaximalSegmentSliceEstimation_8cpp.html">exampleMaximalSegmentSliceEstimation.cpp</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:20:45 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:02 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

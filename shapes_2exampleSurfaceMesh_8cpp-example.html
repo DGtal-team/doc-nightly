@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -150,19 +150,19 @@ Visualisation of three surface meshes, using conversion from SurfaceMesh to Mesh
 <div class="line"><span class="keywordtype">int</span> <a name="a0"></a><a class="code" href="testArithmeticDSS-benchmark_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>( <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv )</div>
 <div class="line">{</div>
 <div class="line">  <span class="comment">// The following typedefs are useful</span></div>
-<div class="line">  <span class="keyword">typedef</span> SurfaceMesh&lt; RealPoint, RealVector &gt;       SurfMesh;</div>
+<div class="line">  <span class="keyword">typedef</span> SurfaceMesh&lt; RealPoint, RealVector &gt;       <a name="a1"></a><a class="code" href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a>;</div>
 <div class="line">  <span class="keyword">typedef</span> SurfaceMeshHelper&lt; RealPoint, RealVector &gt; Helper;</div>
-<div class="line">  <span class="keyword">typedef</span> <a name="a1"></a><a class="code" href="fullConvexitySphereGeodesics_8cpp.html#a9b69eb98bda12d4cfd17ccc15a223abc">SurfMesh::Vertices</a>                         <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#a9b69eb98bda12d4cfd17ccc15a223abc">Vertices</a>;</div>
+<div class="line">  <span class="keyword">typedef</span> <a name="a2"></a><a class="code" href="fullConvexitySphereGeodesics_8cpp.html#a9b69eb98bda12d4cfd17ccc15a223abc">SurfMesh::Vertices</a>                         <a class="code" href="fullConvexitySphereGeodesics_8cpp.html#a9b69eb98bda12d4cfd17ccc15a223abc">Vertices</a>;</div>
 <div class="line">  </div>
-<div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a2"></a><a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a> ( <span class="stringliteral">&quot;Reading a mesh OBJ file&quot;</span> );</div>
-<div class="line">  SurfMesh    smesh;</div>
+<div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a3"></a><a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a> ( <span class="stringliteral">&quot;Reading a mesh OBJ file&quot;</span> );</div>
+<div class="line">  <a class="code" href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a>    smesh;</div>
 <div class="line">  std::string S = examplesPath + <span class="stringliteral">&quot;samples/spot.obj&quot;</span>;</div>
 <div class="line">  std::ifstream input( S.c_str() );</div>
 <div class="line">  <span class="keywordtype">bool</span> ok_read  =  SurfaceMeshReader&lt; RealPoint, RealVector &gt;::readOBJ( input, smesh );</div>
 <div class="line">  input.close();</div>
-<div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a3"></a><a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;Read &quot;</span> &lt;&lt; ( ok_read ? <span class="stringliteral">&quot;OK&quot;</span> : <span class="stringliteral">&quot;ERROR&quot;</span> )</div>
+<div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a4"></a><a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;Read &quot;</span> &lt;&lt; ( ok_read ? <span class="stringliteral">&quot;OK&quot;</span> : <span class="stringliteral">&quot;ERROR&quot;</span> )</div>
 <div class="line">               &lt;&lt; <span class="stringliteral">&quot; mesh=&quot;</span> &lt;&lt; smesh &lt;&lt; std::endl;</div>
-<div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a4"></a><a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
+<div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a5"></a><a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"> </div>
 <div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a> ( <span class="stringliteral">&quot;Building a torus&quot;</span> );</div>
 <div class="line">  <span class="keyword">auto</span> torus_mesh = Helper::makeTorus</div>
@@ -174,7 +174,7 @@ Visualisation of three surface meshes, using conversion from SurfaceMesh to Mesh
 <div class="line">    { { 0, 0, 5 }, { 1, 1, 3 }, { -1, 1, 3 }, { -1, -1, 3 }, { 1, -1, 3 } };</div>
 <div class="line">  std::vector&lt; Vertices  &gt; faces =</div>
 <div class="line">    { { 0, 1, 2 }, { 0, 2, 3 }, { 0, 3, 4 }, { 0, 4, 1 }, { 4, 3, 2, 1 } };</div>
-<div class="line">  <span class="keyword">auto</span> pyramid_mesh = SurfMesh( positions.cbegin(), positions.cend(),</div>
+<div class="line">  <span class="keyword">auto</span> pyramid_mesh = <a class="code" href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a>( positions.cbegin(), positions.cend(),</div>
 <div class="line">                                faces.cbegin(), faces.cend() );</div>
 <div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"> </div>
@@ -197,7 +197,7 @@ Visualisation of three surface meshes, using conversion from SurfaceMesh to Mesh
 <div class="line">  <span class="keyword">auto</span> face_distances = smesh.computeFaceValuesFromVertexValues( distances );</div>
 <div class="line">  <span class="keyword">auto</span> cmap = GradientColorMap&lt; double &gt;( 0.0, biggest_d, <a class="code" href="namespaceDGtal.html#aa68309838cffd86a3c671c44ef129cb2ac677c31e4299bc29c4e591063b4fc9bb">CMAP_JET</a> );</div>
 <div class="line">  std::vector&lt;Color&gt; face_colors( smesh.nbFaces() );</div>
-<div class="line">  <span class="keywordflow">for</span> ( <a name="a5"></a><a class="code" href="testTriangulatedSurface_8cpp.html#aa7e89e659ae870a9963bb6109a53da62">SurfMesh::Face</a> j = 0; j &lt; smesh.nbFaces(); ++j )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <a name="a6"></a><a class="code" href="testTriangulatedSurface_8cpp.html#aa7e89e659ae870a9963bb6109a53da62">SurfMesh::Face</a> j = 0; j &lt; smesh.nbFaces(); ++j )</div>
 <div class="line">    face_colors[ j ] = cmap( face_distances[ j ] );      </div>
 <div class="line">  <span class="keyword">typedef</span> SurfaceMeshWriter&lt; RealPoint, RealVector &gt; Writer;</div>
 <div class="line">  Writer::writeOBJ( <span class="stringliteral">&quot;spot-bft.obj&quot;</span>, smesh, face_colors );</div>
@@ -231,6 +231,7 @@ Visualisation of three surface meshes, using conversion from SurfaceMesh to Mesh
 <div class="ttc" id="aclassDGtal_1_1Trace_html_a352b7160bf722e2f0bcbee5d0bad6ef3"><div class="ttname"><a href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">DGtal::Trace::beginBlock</a></div><div class="ttdeci">void beginBlock(const std::string &amp;keyword=&quot;&quot;)</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
+<div class="ttc" id="adgtalCalculus-bunny_8cpp_html_a0da7de0f9d769404c143f3d032eaa496"><div class="ttname"><a href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a></div><div class="ttdeci">SurfaceMesh&lt; RealPoint, RealVector &gt; SurfMesh</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-bunny_8cpp_source.html#l00052">dgtalCalculus-bunny.cpp:52</a></div></div>
 <div class="ttc" id="afullConvexitySphereGeodesics_8cpp_html_a9b69eb98bda12d4cfd17ccc15a223abc"><div class="ttname"><a href="fullConvexitySphereGeodesics_8cpp.html#a9b69eb98bda12d4cfd17ccc15a223abc">Vertices</a></div><div class="ttdeci">SMesh::Vertices Vertices</div><div class="ttdef"><b>Definition:</b> <a href="fullConvexitySphereGeodesics_8cpp_source.html#l00118">fullConvexitySphereGeodesics.cpp:118</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fc7012708b0416880a5c8b12dfdf9dd"><div class="ttname"><a href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">DGtal::trace</a></div><div class="ttdeci">Trace trace</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00153">Common.h:153</a></div></div>
@@ -243,7 +244,7 @@ Visualisation of three surface meshes, using conversion from SurfaceMesh to Mesh
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 8 2024 20:20:35 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:02:53 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -174,7 +174,7 @@ Antiderivative</h3>
 </p>
 <h3><a class="anchor" id="sectDECoperatorMusical"></a>
 Sharp and flat</h3>
-<p>Sharp \(\sharp\) and flat \(\flat\), called <em>musical isomorphisms</em> in <a class="el" href="citelist.html#CITEREF_goes2013digital">[43]</a>, transform 1-form into vector field and the other way around. In the continuous world, these two operators cancel each other exactly.</p>
+<p>Sharp \(\sharp\) and flat \(\flat\), called <em>musical isomorphisms</em> in <a class="el" href="citelist.html#CITEREF_goes2013digital">[44]</a>, transform 1-form into vector field and the other way around. In the continuous world, these two operators cancel each other exactly.</p>
 <p class="formulaDsp">
 \[ (x ^\sharp) ^\flat = x \]
 </p>
@@ -227,8 +227,8 @@ DEC linear problem</h2>
 <h2><a class="anchor" id="sectDECIntroductionFurther"></a>
 Further reading</h2>
 <ul>
-<li>Keenan Crane SIGGRAPH lecture 2013 "Geometry processing using DEC" <a href="https://github.com/dgpdec/course">github repository</a> <a class="el" href="citelist.html#CITEREF_goes2013digital">[43]</a></li>
-<li>Mathieu Desbrun article on discrete exterior calculus <a class="el" href="citelist.html#CITEREF_desbrun2005discrete">[48]</a></li>
+<li>Keenan Crane SIGGRAPH lecture 2013 "Geometry processing using DEC" <a href="https://github.com/dgpdec/course">github repository</a> <a class="el" href="citelist.html#CITEREF_goes2013digital">[44]</a></li>
+<li>Mathieu Desbrun article on discrete exterior calculus <a class="el" href="citelist.html#CITEREF_desbrun2005discrete">[49]</a></li>
 <li>Digital foam presentation with an introduction to DEC in the second section <a href="http://sd-33294.dedibox.fr/~pierre/presentation_dec.pdf">pdf</a></li>
 </ul>
 <h1><a class="anchor" id="sectDECHandsOn"></a>
@@ -247,12 +247,13 @@ Main DEC object creation</h2>
 </div><!-- fragment --><p> The <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html" title="Aim: DiscreteExteriorCalculus represents a calculus in the dec package. This is the main structure in...">DiscreteExteriorCalculus</a> provides a default constructor that initializes an empty structure, ready to be filled with <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a3847b77d16aef735e8bd41d1af99b04e">DiscreteExteriorCalculus::SCell</a> through the <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a8e3c021b594f326a72ed4485b1aa7ea3">DiscreteExteriorCalculus.insertSCell</a> member. <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html" title="Aim: DiscreteExteriorCalculus represents a calculus in the dec package. This is the main structure in...">DiscreteExteriorCalculus</a> objects can also be created using the <a class="el" href="classDGtal_1_1DiscreteExteriorCalculusFactory.html" title="Aim: This class provides static members to create DEC structures from various other DGtal structures.">DiscreteExteriorCalculusFactory</a> factory. <a class="el" href="classDGtal_1_1DiscreteExteriorCalculusFactory.html#a0f0410c21d66a8c7ef951321e52bf587">DiscreteExteriorCalculusFactory::createFromDigitalSet</a> static member inserts each point of a digital set as a primal n-cell in the structure and then fills in-between k-cells to glue all n-cells together. <a class="el" href="classDGtal_1_1DiscreteExteriorCalculusFactory.html#ac290b55c774d9fa9e6ac9c1baa150b50">DiscreteExteriorCalculusFactory::createFromNSCells</a> static member creates embedded structures. See <a class="el" href="moduleDECEmbedding.html">Embedding n-dimensional DEC structures into m-dimensional space</a> for a discussion about manifold embedding. Borders can be added or removed from the generated structure using the add_border boolean to enforce various boundary condition. Dual k-cells are created automatically. Note that the structure can be altered after creation to adjust small details or created completely manually via calls to <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a8e3c021b594f326a72ed4485b1aa7ea3">DiscreteExteriorCalculus.insertSCell</a> and <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a8a16a4f15194fbd08f0b569b44ab4b41">DiscreteExteriorCalculus.eraseCell</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>Internal indexes should be reset by calling <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a0875e7462461a50cbb68339071882740">DiscreteExteriorCalculus.updateIndexes</a> after <b>any</b> call to <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a8e3c021b594f326a72ed4485b1aa7ea3">DiscreteExteriorCalculus.insertSCell</a> or <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a8a16a4f15194fbd08f0b569b44ab4b41">DiscreteExteriorCalculus.eraseCell</a> and <b>before</b> doing anything else with the structure. This includes instanciation of any <a class="el" href="classDGtal_1_1KForm.html" title="Aim: KForm represents discrete kforms in the dec package.">KForm</a>, <a class="el" href="classDGtal_1_1VectorField.html" title="Aim: VectorField represents a discrete vector field in the dec package. Vector field values are attac...">VectorField</a> or <a class="el" href="classDGtal_1_1LinearOperator.html" title="Aim: LinearOperator represents discrete linear operator between discrete kforms in the DEC package.">LinearOperator</a> as well as any type of output and size computation. <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html" title="Aim: DiscreteExteriorCalculus represents a calculus in the dec package. This is the main structure in...">DiscreteExteriorCalculus</a> created by <a class="el" href="classDGtal_1_1DiscreteExteriorCalculusFactory.html" title="Aim: This class provides static members to create DEC structures from various other DGtal structures.">DiscreteExteriorCalculusFactory</a> have valid indexes and can be used as it is.</dd></dl>
 <p>This snippet shows how to create a DEC structure. The first call to <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a8a16a4f15194fbd08f0b569b44ab4b41">DiscreteExteriorCalculus.eraseCell</a> removes the primal n-cell located of the right of the structure. The associated dual 0-cell is destroyed automatically. Note that n-cells are created using <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a7d5231f241513f15be0a1ee092db2590" title="From the digital coordinates of a point in Zn, builds the corresponding spel (cell of maximal dimensi...">KhalimskySpaceND.sSpel</a>, and that coordinates of such cells are given in the same system as points from the input set. The second call removes a primal 1-cell and opens the hole created by the first call. Here coordinates are given in the <a class="el" href="classDGtal_1_1KhalimskySpaceND.html" title="Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex,...">KhalimskySpaceND</a> signed cell frame of reference. To finalize the structure, a call to <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a0875e7462461a50cbb68339071882740">DiscreteExteriorCalculus.updateIndexes</a> is performed.</p>
-<div class="fragment"><div class="line">    Calculus calculus = CalculusFactory::createFromDigitalSet(generateRingSet(<a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>), <span class="keyword">true</span>);</div>
+<div class="fragment"><div class="line">    Calculus <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a> = CalculusFactory::createFromDigitalSet(generateRingSet(<a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>), <span class="keyword">true</span>);</div>
 <div class="line"> </div>
-<div class="line">    calculus.eraseCell(calculus.myKSpace.uSpel(<a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a>(8, 5)));</div>
-<div class="line">    calculus.eraseCell(calculus.myKSpace.uCell(<a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a>(18, 11)));</div>
+<div class="line">    <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.eraseCell(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.myKSpace.uSpel(<a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a>(8, 5)));</div>
+<div class="line">    <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.eraseCell(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.myKSpace.uCell(<a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a>(18, 11)));</div>
 <div class="line"> </div>
-<div class="line">    calculus.updateIndexes();</div>
+<div class="line">    <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.updateIndexes();</div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a4e9d205fb8308b3d07478e48bf63308c"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a></div><div class="ttdeci">PolyCalculus * calculus</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00070">dgtalCalculus-geodesic.cpp:70</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z2i_html_ac0a04516c81db6f4a583eddda0f64875"><div class="ttname"><a href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">DGtal::Z2i::Point</a></div><div class="ttdeci">Space::Point Point</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00095">StdDefs.h:95</a></div></div>
 <div class="ttc" id="atestProjection_8cpp_html_a1f1a69f8d8b037b72c2160ed12b3ef51"><div class="ttname"><a href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a></div><div class="ttdeci">Domain domain</div><div class="ttdef"><b>Definition:</b> <a href="testProjection_8cpp_source.html#l00088">testProjection.cpp:88</a></div></div>
 </div><!-- fragment --><p> Note moreover that in DEC, <b>positive</b> 1-cells are oriented is the <b>opposite</b> direction of increasing coordinates.</p>
@@ -261,11 +262,11 @@ Main DEC object creation</h2>
 <div class="caption">
 Calculus with border.</div></div>
 <p>If you want to have border-less structure, simply reset the add_border boolean. See <a class="el" href="moduleDECEmbedding.html#sectDECBorderDefinition">Border definition</a> for a discussion about border definition. The second call to <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a8a16a4f15194fbd08f0b569b44ab4b41">DiscreteExteriorCalculus.eraseCell</a> isn't needed anymore since the edge was not inserted in the first place.</p>
-<div class="fragment"><div class="line">    Calculus calculus = CalculusFactory::createFromDigitalSet(generateRingSet(<a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>), <span class="keyword">false</span>);</div>
+<div class="fragment"><div class="line">    Calculus <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a> = CalculusFactory::createFromDigitalSet(generateRingSet(<a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>), <span class="keyword">false</span>);</div>
 <div class="line"> </div>
-<div class="line">    calculus.eraseCell(calculus.myKSpace.uSpel(<a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a>(8, 5)));</div>
+<div class="line">    <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.eraseCell(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.myKSpace.uSpel(<a class="code" href="namespaceDGtal_1_1Z2i.html#ac0a04516c81db6f4a583eddda0f64875">Z2i::Point</a>(8, 5)));</div>
 <div class="line"> </div>
-<div class="line">    calculus.updateIndexes();</div>
+<div class="line">    <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.updateIndexes();</div>
 </div><!-- fragment --><div class="image">
 <img src="usage_calculus_without_border.png" alt=""/>
 <div class="caption">
@@ -275,11 +276,11 @@ Calculus without border.</div></div>
 KForm and VectorField manipulation</h2>
 <p>K-forms are represented by the <a class="el" href="classDGtal_1_1KForm.html" title="Aim: KForm represents discrete kforms in the dec package.">KForm</a> templated class and vector field are represented by the <a class="el" href="classDGtal_1_1VectorField.html" title="Aim: VectorField represents a discrete vector field in the dec package. Vector field values are attac...">VectorField</a> templated class. Note that <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html" title="Aim: DiscreteExteriorCalculus represents a calculus in the dec package. This is the main structure in...">DiscreteExteriorCalculus</a> provides handy typedef of common k-forms and vector field, such as <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a93139e8d35019c8edeed41a4beb21cc6">DiscreteExteriorCalculus::PrimalForm0</a>, <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a7b0fdce92ad2444aad7014fb362fd82d">DiscreteExteriorCalculus::DualForm2</a>, <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#afe6524b41e6c4aff575b3e2de440a6cf">DiscreteExteriorCalculus::PrimalVectorField</a> and <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#ace4e6442cca56661799f2dcd64345a6d">DiscreteExteriorCalculus::DualVectorField</a>. Once a k-form is created, its actual values can by accessed through <a class="el" href="classDGtal_1_1KForm.html#a19e859f462f1d851550465b7fcc2c68d">KForm.myContainer</a>. Cell indexes can be retrieved from cells using <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a60d5c4790f28ac28d8b595de9002e44d">DiscreteExteriorCalculus.getSCell</a> and cell can be retrieved from cells using <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#a60d5c4790f28ac28d8b595de9002e44d">DiscreteExteriorCalculus.getSCell</a>.</p>
 <p>Convenience members <a class="el" href="classDGtal_1_1KForm.html#a1cc70af046b3d7be85f8f49121a56d39">KForm.length</a>, <a class="el" href="classDGtal_1_1VectorField.html#a41d23b8dc915244c696d2d53d121b83d">VectorField.length</a>, <a class="el" href="classDGtal_1_1KForm.html#acbbda0e8b98473c552b3dd12aa6a8853">KForm.getSCell</a> and <a class="el" href="classDGtal_1_1VectorField.html#ab4bdaa2b59b29f2c467c1e25ca31e888">VectorField.getSCell</a> can be used to traverse structures easily. Here is a example snippet that compute a Euclidean distance map (scalar field) on the structure defined above.</p>
-<div class="fragment"><div class="line">        Calculus::PrimalForm0 primal_zero_form(calculus);</div>
+<div class="fragment"><div class="line">        Calculus::PrimalForm0 primal_zero_form(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>);</div>
 <div class="line">        <span class="keywordflow">for</span> (<a class="code" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Calculus::Index</a> index=0; index&lt;primal_zero_form.length(); index++)</div>
 <div class="line">        {</div>
 <div class="line">            <span class="keyword">const</span> <a class="code" href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">Calculus::SCell</a>&amp; cell = primal_zero_form.getSCell(index);</div>
-<div class="line">            <span class="keyword">const</span> Calculus::Scalar&amp; value = <a class="code" href="namespaceDGtal_1_1Z2i.html#afa16730fe413692cdb474b45d4fff388">Z2i::l2Metric</a>(calculus.myKSpace.sKCoords(cell), center)/2;</div>
+<div class="line">            <span class="keyword">const</span> Calculus::Scalar&amp; value = <a class="code" href="namespaceDGtal_1_1Z2i.html#afa16730fe413692cdb474b45d4fff388">Z2i::l2Metric</a>(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.myKSpace.sKCoords(cell), center)/2;</div>
 <div class="line">            primal_zero_form.myContainer(index) = value;</div>
 <div class="line">        }</div>
 <div class="ttc" id="adigitalPolyhedronBuilder3D_8cpp_html_a6c4dc4f5610ba8c9b7ee6e83ecea8d24"><div class="ttname"><a href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">SCell</a></div><div class="ttdeci">Z3i::SCell SCell</div><div class="ttdef"><b>Definition:</b> <a href="digitalPolyhedronBuilder3D_8cpp_source.html#l00079">digitalPolyhedronBuilder3D.cpp:79</a></div></div>
@@ -292,25 +293,25 @@ Primal 0-form.</div></div>
 <p>K-forms, as vector field, can be scaled, added and subtracted using standard cpp operators.</p>
 <div class="fragment"><div class="line">        <span class="keyword">const</span> Calculus::PrimalForm0 foo = 2 * primal_zero_form + primal_zero_form;</div>
 </div><!-- fragment --><p> In the snippet, we compute the primal gradient of the previous scalar field using formula from <a class="el" href="moduleDECIntroduction.html#sectDECOperatorClassical">Classical vector analysis</a>. Convenience linear operator <a class="el" href="classDGtal_1_1DiscreteExteriorCalculus.html#afa5ee348ea8634877e8098d28cd0d4cd">DiscreteExteriorCalculus::DualDerivative0</a> is used.</p>
-<div class="fragment"><div class="line">        <span class="keyword">const</span> Calculus::PrimalDerivative0 primal_zero_derivative = calculus.derivative&lt;0, <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745da7b7d86a1d82efbe8b9bc0ad3c7c80bd7">PRIMAL</a>&gt;();</div>
+<div class="fragment"><div class="line">        <span class="keyword">const</span> Calculus::PrimalDerivative0 primal_zero_derivative = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.derivative&lt;0, <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745da7b7d86a1d82efbe8b9bc0ad3c7c80bd7">PRIMAL</a>&gt;();</div>
 <div class="line">        <span class="keyword">const</span> Calculus::PrimalForm1 primal_one_form = primal_zero_derivative * primal_zero_form;</div>
-<div class="line">        <span class="keyword">const</span> Calculus::PrimalVectorField primal_vector_field = calculus.sharp(primal_one_form);</div>
+<div class="line">        <span class="keyword">const</span> Calculus::PrimalVectorField primal_vector_field = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.sharp(primal_one_form);</div>
 <div class="ttc" id="anamespaceDGtal_html_ab8007ddbb5627666913e18c3b951745da7b7d86a1d82efbe8b9bc0ad3c7c80bd7"><div class="ttname"><a href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745da7b7d86a1d82efbe8b9bc0ad3c7c80bd7">DGtal::PRIMAL</a></div><div class="ttdeci">@ PRIMAL</div><div class="ttdef"><b>Definition:</b> <a href="Duality_8h_source.html#l00061">Duality.h:61</a></div></div>
 </div><!-- fragment --><div class="image">
 <img src="usage_primal_one_form.png" alt=""/>
 <div class="caption">
 Gradient primal 1-form and primal vector field.</div></div>
 <p>Flat and sharp operators are applied to test the property presented in <a class="el" href="moduleDECIntroduction.html#sectDECoperatorMusical">Sharp and flat</a>. Original vector field and its dual sharped version differ slightly along the border of the structure. See bottom right part on the inner hole for example.</p>
-<div class="fragment"><div class="line">        <span class="keyword">const</span> Calculus::PrimalForm1 flat_sharp_primal_one_form = calculus.flat(primal_vector_field);</div>
-<div class="line">        <span class="keyword">const</span> Calculus::PrimalVectorField sharp_flat_primal_vector_field = calculus.sharp(flat_sharp_primal_one_form);</div>
+<div class="fragment"><div class="line">        <span class="keyword">const</span> Calculus::PrimalForm1 flat_sharp_primal_one_form = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.flat(primal_vector_field);</div>
+<div class="line">        <span class="keyword">const</span> Calculus::PrimalVectorField sharp_flat_primal_vector_field = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.sharp(flat_sharp_primal_one_form);</div>
 </div><!-- fragment --><div class="image">
 <img src="usage_primal_one_form_sharp_flat.png" alt=""/>
 <div class="caption">
 Flat sharped primal gradient vector field.</div></div>
 <p>The orthogonality of the Hodge operator is demonstrated here, as we compute the dual of the gradient vector field described above. One can see that primal of dual vector fields are always locally orthogonal everywhere.</p>
-<div class="fragment"><div class="line">        <span class="keyword">const</span> Calculus::PrimalHodge1 primal_one_hodge = calculus.hodge&lt;1, <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745da7b7d86a1d82efbe8b9bc0ad3c7c80bd7">PRIMAL</a>&gt;();</div>
+<div class="fragment"><div class="line">        <span class="keyword">const</span> Calculus::PrimalHodge1 primal_one_hodge = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.hodge&lt;1, <a class="code" href="namespaceDGtal.html#ab8007ddbb5627666913e18c3b951745da7b7d86a1d82efbe8b9bc0ad3c7c80bd7">PRIMAL</a>&gt;();</div>
 <div class="line">        <span class="keyword">const</span> Calculus::DualForm1 dual_one_form = primal_one_hodge * primal_zero_derivative * primal_zero_form;</div>
-<div class="line">        <span class="keyword">const</span> Calculus::DualVectorField dual_vector_field = calculus.sharp(dual_one_form);</div>
+<div class="line">        <span class="keyword">const</span> Calculus::DualVectorField dual_vector_field = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.sharp(dual_one_form);</div>
 </div><!-- fragment --><div class="image">
 <img src="usage_primal_one_form_hodge.png" alt=""/>
 <div class="caption">
@@ -330,7 +331,7 @@ DEC linear solver</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageDEC.html">DEC package</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:03 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

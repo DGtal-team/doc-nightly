@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -1094,14 +1094,15 @@ template&lt;typename Set &gt; </div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160; </div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot; DT computation&quot;</span>);</div>
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1DistanceTransformation.html">DistanceTransformation&lt;typename Set::Space, Set, L2Metric&gt;</a> DT;</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  DT dt(aSet.domain(), mySet, l2, periodicity);</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  DT <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>(aSet.domain(), mySet, l2, periodicity);</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160; </div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;  <span class="keywordflow">return</span> nbok == nb;</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;}</div>
 <div class="ttc" id="aclassDGtal_1_1DistanceTransformation_html"><div class="ttname"><a href="classDGtal_1_1DistanceTransformation.html">DGtal::DistanceTransformation</a></div><div class="ttdoc">Aim: Implementation of the linear in time distance transformation for separable metrics.</div><div class="ttdef"><b>Definition:</b> <a href="DistanceTransformation_8h_source.html#l00097">DistanceTransformation.h:99</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a778e38aa889751afffa2dea6b803e67a"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a></div><div class="ttdeci">float dt</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00063">dgtalCalculus-geodesic.cpp:63</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">DGtal::Trace::beginBlock()</a>, <a class="el" href="testVoronoiMap_8cpp_source.html#l00145">checkVoronoi()</a>, <a class="el" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock()</a>, and <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>.</p>
+<p class="reference">References <a class="el" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">DGtal::Trace::beginBlock()</a>, <a class="el" href="testVoronoiMap_8cpp_source.html#l00145">checkVoronoi()</a>, <a class="el" href="dgtalCalculus-geodesic_8cpp_source.html#l00063">dt</a>, <a class="el" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock()</a>, and <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>.</p>
 
 </div>
 </div>
@@ -1178,7 +1179,7 @@ template&lt;typename Set &gt; </div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot; DT computation&quot;</span>);</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1DistanceTransformation.html">DistanceTransformation&lt;typename Set::Space, Set, L2Metric&gt;</a> DT;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  DT dt( aSet.domain(), mySet, l2, periodicity );</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  DT <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>( aSet.domain(), mySet, l2, periodicity );</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
@@ -1306,7 +1307,7 @@ template&lt;typename Set &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_2751d6f01b35f5fec7131f6adf42b522.html">geometry</a></li><li class="navelem"><a class="el" href="dir_617e36e15bcfca8ade183f7b877528e1.html">volumes</a></li><li class="navelem"><a class="el" href="dir_ccf58f49583a53a57f7232121888f6dd.html">distance</a></li><li class="navelem"><a class="el" href="testVoronoiMap_8cpp.html">testVoronoiMap.cpp</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:03 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:20 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

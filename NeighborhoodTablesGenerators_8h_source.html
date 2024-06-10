@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('NeighborhoodTablesGenerators_8h_source
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TObject, <span class="keyword">typename</span> TMap&gt;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="namespaceDGtal_1_1functions.html#a924114c3907d5c86e064a513779d24a8">   71</a></span>&#160;  <a class="code" href="namespaceDGtal_1_1functions.html#a924114c3907d5c86e064a513779d24a8">generateSimplicityTable</a>(</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keyword">const</span> <span class="keyword">typename</span> TObject::DigitalTopology &amp; dt,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keyword">const</span> <span class="keyword">typename</span> TObject::DigitalTopology &amp; <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>,</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      TMap &amp; map )</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code" href="testVoronoiMapComplete_8cpp.html#ac14360761d68859fc57ca37aea0b5c93">TObject::DigitalSet</a> <a class="code" href="testVoronoiMapComplete_8cpp.html#ac14360761d68859fc57ca37aea0b5c93">DigitalSet</a>;</div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('NeighborhoodTablesGenerators_8h_source
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> c = Point::diagonal( 0 );</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="classDGtal_1_1HyperRectDomain.html">Domain</a> <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>( p1, p2 );</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="classDGtal_1_1DigitalSetByAssociativeContainer.html">DigitalSet</a> shapeSet( <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a> );</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    TObject shape( dt, shapeSet );</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    TObject shape( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>, shapeSet );</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k = 0;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">for</span> ( DomainConstIterator it = <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.begin(); it != <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.end(); ++it )</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">if</span> ( *it != c ) ++k;</div>
@@ -228,6 +228,7 @@ $(document).ready(function(){initNavTree('NeighborhoodTablesGenerators_8h_source
 <div class="ttc" id="aclassDGtal_1_1KhalimskySpaceND_html"><div class="ttname"><a href="classDGtal_1_1KhalimskySpaceND.html">DGtal::KhalimskySpaceND</a></div><div class="ttdoc">Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex,...</div><div class="ttdef"><b>Definition:</b> <a href="KhalimskySpaceND_8h_source.html#l00392">KhalimskySpaceND.h:394</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1KhalimskySpaceND_html_a15dcbcaae831dd1c36090e6336c177d4"><div class="ttname"><a href="classDGtal_1_1KhalimskySpaceND.html#a15dcbcaae831dd1c36090e6336c177d4">DGtal::KhalimskySpaceND::init</a></div><div class="ttdeci">bool init(const Point &amp;lower, const Point &amp;upper, bool isClosed)</div><div class="ttdoc">Specifies the upper and lower bounds for the maximal cells in this space.</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad8efd553b31277903be115e7aa256f74"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad8efd553b31277903be115e7aa256f74">DGtal::Trace::progressBar</a></div><div class="ttdeci">void progressBar(const double currentValue, const double maximalValue)</div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a778e38aa889751afffa2dea6b803e67a"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a></div><div class="ttdeci">float dt</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00063">dgtalCalculus-geodesic.cpp:63</a></div></div>
 <div class="ttc" id="agreedy-plane-segmentation-ex2_8cpp_html_a6d06fad433cff067dfcbbbf16d6e2dbf"><div class="ttname"><a href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a></div><div class="ttdeci">MyDigitalSurface::ConstIterator ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="greedy-plane-segmentation-ex2_8cpp_source.html#l00093">greedy-plane-segmentation-ex2.cpp:93</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z3i_html_a39a69f8da09f1094df563ca067927c61"><div class="ttname"><a href="namespaceDGtal_1_1Z3i.html#a39a69f8da09f1094df563ca067927c61">DGtal::Z3i::Domain</a></div><div class="ttdeci">HyperRectDomain&lt; Space &gt; Domain</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00172">StdDefs.h:172</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1functions_html_a1fc0eb12f18205fd5335ef3068753109"><div class="ttname"><a href="namespaceDGtal_1_1functions.html#a1fc0eb12f18205fd5335ef3068753109">DGtal::functions::generateVoxelComplexTable</a></div><div class="ttdeci">void generateVoxelComplexTable(TMap &amp;map, std::function&lt; bool(const TVoxelComplex &amp;, const typename TVoxelComplex::Cell &amp;) &gt; skelFunction)</div><div class="ttdef"><b>Definition:</b> <a href="NeighborhoodTablesGenerators_8h_source.html#l00132">NeighborhoodTablesGenerators.h:132</a></div></div>
@@ -247,7 +248,7 @@ $(document).ready(function(){initNavTree('NeighborhoodTablesGenerators_8h_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f2cd1aeea1cfa982bb13a5f95fa4218c.html">DGtal</a></li><li class="navelem"><a class="el" href="dir_beb349dd51fade10e83e4caaef469050.html">topology</a></li><li class="navelem"><a class="el" href="dir_c9b24e753616c7aa4594d722216a0bda.html">tables</a></li><li class="navelem"><b>NeighborhoodTablesGenerators.h</b></li>
-    <li class="footer">Generated on Wed May 8 2024 20:20:50 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:08 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

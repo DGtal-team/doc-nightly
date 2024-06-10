@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -258,7 +258,7 @@ class DGtal::IntegralInvariantVolumeEstimator&lt; TKSpace, TPointPredicate, TVol
 
 <p>Aim: This class implement an Integral Invariant estimator which computes for each surfel the volume of the intersection of the shape with a ball of given radius centered on the surfel. </p>
 <p>Description of template class '<a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html" title="Aim: This class implement an Integral Invariant estimator which computes for each surfel the volume o...">IntegralInvariantVolumeEstimator</a>' </p>
-<p><a class="el" href="citelist.html#CITEREF_Coeurjo-CVIU-2014">[28]</a></p>
+<p><a class="el" href="citelist.html#CITEREF_Coeurjo-CVIU-2014">[29]</a></p>
 <p>The algorithm we propose uses a kernel (2D: <a class="el" href="classDGtal_1_1Ball2D.html" title="Aim: Model of the concept StarShaped represents any circle in the plane.">Ball2D</a>, 3D: <a class="el" href="classDGtal_1_1Ball3D.html" title="Aim: Model of the concept StarShaped3D represents any Sphere in the space.">Ball3D</a>) that is moved along the surface. The volume of this kernel intersected with the shape carries local geometric information. It can be used to compute the mean curvature in 2D and 3D. Theorical multigrid convergence is proved, with a convergence speed of O(h^1/3) with hypothesis about the shape geometry and the convolution kernel radius. Experimental results confirm the multigrid convergence.</p>
 <p>Optimization is available when we give a range of 0-adjacent surfels to the estimator. Note that you should use <a class="el" href="classDGtal_1_1IntegralInvariantCovarianceEstimator.html" title="Aim: This class implement an Integral Invariant estimator which computes for each surfel the covarian...">IntegralInvariantCovarianceEstimator</a> instead when trying to estimate the normal or principal curvature directions, the Gaussian curvature or individual principal curvature values.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -1703,7 +1703,7 @@ template&lt;typename TKSpace , typename TPointPredicate , typename TVolumeFuncto
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1IntegralInvariantVolumeEstimator.html">IntegralInvariantVolumeEstimator</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:07 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:25 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

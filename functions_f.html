@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 : <a class="el" href="structDGtal_1_1ConvexCellComplex.html#a7ed2108d78fcf1780afb957838b5d030">DGtal::ConvexCellComplex&lt; TPoint &gt;</a>
 , <a class="el" href="structDGtal_1_1CorrectedNormalCurrentComputer.html#a294132af3ea8cc5ecfee056d9679e832">DGtal::CorrectedNormalCurrentComputer&lt; TRealPoint, TRealVector &gt;</a>
 , <a class="el" href="structDGtal_1_1DigitalSurface_1_1Face.html#a879f0cc2eeac8db370dcad50fa5dda0a">DGtal::DigitalSurface&lt; TDigitalSurfaceContainer &gt;::Face</a>
+, <a class="el" href="structDGtal_1_1functors_1_1EmbedderFromNormalVectors.html#a920a00c7bf18c38fa2fbe3bee08175ef">DGtal::functors::EmbedderFromNormalVectors&lt; TRealPoint, TRealVector &gt;</a>
 </li>
 <li>face
 : <a class="el" href="structDGtal_1_1HalfEdgeDataStructure_1_1HalfEdge.html#adf24ad847f8298ffe2d473b75655b419">DGtal::HalfEdgeDataStructure::HalfEdge</a>
@@ -130,7 +131,7 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 , <a class="el" href="classDGtal_1_1TriangulatedSurface.html#ae5b100e101085f03d714f6f56beaac3f">DGtal::TriangulatedSurface&lt; TPoint &gt;</a>
 </li>
 <li>faceBegin()
-: <a class="el" href="classDGtal_1_1Mesh.html#ae271e7ad2800e9b92178cc94c527c423">DGtal::Mesh&lt; TPoint &gt;</a>
+: <a class="el" href="classDGtal_1_1Mesh.html#adb2c8773748de5e896e52fadc61b5f1f">DGtal::Mesh&lt; TPoint &gt;</a>
 </li>
 <li>faceCell()
 : <a class="el" href="structDGtal_1_1ConvexCellComplex.html#a2f191e0aafdd4fe95ab37e7809a1aa16">DGtal::ConvexCellComplex&lt; TPoint &gt;</a>
@@ -168,7 +169,7 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 <li>faceNormal()
 : <a class="el" href="structDGtal_1_1ConvexCellComplex.html#a14728828108df1e1e55e4f5352974034">DGtal::ConvexCellComplex&lt; TPoint &gt;</a>
 , <a class="el" href="classDGtal_1_1PolygonalCalculus.html#a491c4fbc07d42e5e21c523eea1ff2a7b">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;</a>
-, <a class="el" href="structDGtal_1_1SurfaceMesh.html#a948e411e0314296b0fad607bd2f06c9e">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
+, <a class="el" href="structDGtal_1_1SurfaceMesh.html#a66a25c58fc620a6e56dd4ffc2057e59e">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
 </li>
 <li>faceNormalAsDGtalVector()
 : <a class="el" href="classDGtal_1_1PolygonalCalculus.html#a5a5e7749773f09fe206c3e13ec1a839e">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;</a>
@@ -212,7 +213,7 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 : <a class="el" href="classDGtal_1_1Mesh.html#ac8161ce3fd292ad535ab620ab2a0ef1c">DGtal::Mesh&lt; TPoint &gt;</a>
 </li>
 <li>Facet()
-: <a class="el" href="structDGtal_1_1QuickHull_1_1Facet.html#adb82be1de0983ba868a3c25cb8364bd0">DGtal::QuickHull&lt; TKernel &gt;::Facet</a>
+: <a class="el" href="structDGtal_1_1QuickHull_1_1Facet.html#a4e4e81a15e2f5f184494d5bd4c94dcaf">DGtal::QuickHull&lt; TKernel &gt;::Facet</a>
 </li>
 <li>facet_counter
 : <a class="el" href="structDGtal_1_1QuickHull.html#a9b46be3914d310d1053d8af1bcea1f98">DGtal::QuickHull&lt; TKernel &gt;</a>
@@ -317,8 +318,8 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 <li>find()
 : <a class="el" href="classDGtal_1_1concepts_1_1CDigitalSetArchetype.html#a1aebb4fc61d119f70bf8447d650a2eeb">DGtal::concepts::CDigitalSetArchetype&lt; TDomain &gt;</a>
 , <a class="el" href="classDGtal_1_1CubicalComplex.html#af6e8bc8455f64f22b0762de86ade8625">DGtal::CubicalComplex&lt; TKSpace, TCellContainer &gt;</a>
-, <a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#a8f839c5f5b9210993419ca7731e3621c">DGtal::DigitalSetByAssociativeContainer&lt; TDomain, TContainer &gt;</a>
-, <a class="el" href="classDGtal_1_1DigitalSetBySTLSet.html#a933ba7b0c959d7de3c260dde35b33967">DGtal::DigitalSetBySTLSet&lt; TDomain, TCompare &gt;</a>
+, <a class="el" href="classDGtal_1_1DigitalSetByAssociativeContainer.html#a5da5341d4ebe1467384e2a9a6b6151db">DGtal::DigitalSetByAssociativeContainer&lt; TDomain, TContainer &gt;</a>
+, <a class="el" href="classDGtal_1_1DigitalSetBySTLSet.html#a5a9079b2c145d8033456ee64accd0174">DGtal::DigitalSetBySTLSet&lt; TDomain, TCompare &gt;</a>
 , <a class="el" href="classDGtal_1_1DigitalSetBySTLVector.html#aa57e0b8685de86ead8e4913cf51f816c">DGtal::DigitalSetBySTLVector&lt; TDomain &gt;</a>
 , <a class="el" href="classDGtal_1_1DigitalSetFromMap.html#a776dd9727ee1ae91587e45a233d2f664">DGtal::DigitalSetFromMap&lt; TMapImage &gt;</a>
 , <a class="el" href="classDGtal_1_1LabelledMap.html#a0c007bc1cec5e9b69e428820944e3e95">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;</a>
@@ -463,7 +464,7 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 : <a class="el" href="classDGtal_1_1IntegerComputer.html#afdc53f491a43ffb962e8ca9b403f9a6f">DGtal::IntegerComputer&lt; TInteger &gt;</a>
 </li>
 <li>Flower2D()
-: <a class="el" href="classDGtal_1_1Flower2D.html#a41b0d3cda4745d200ec4b4e6912a8833">DGtal::Flower2D&lt; TSpace &gt;</a>
+: <a class="el" href="classDGtal_1_1Flower2D.html#a8f245594b1bb01c9a17f27a53315a909">DGtal::Flower2D&lt; TSpace &gt;</a>
 </li>
 <li>flushCairo()
 : <a class="el" href="structLibBoard_1_1Arc.html#ac86d1b588879f31c59c9abbb81f6c2fb">LibBoard::Arc</a>
@@ -643,7 +644,7 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 : <a class="el" href="classDGtal_1_1LightSternBrocot.html#a0186aaa5d03b3115cc8a27a3bf7a2b4c">DGtal::LightSternBrocot&lt; TInteger, TQuotient, TMap &gt;</a>
 </li>
 <li>Fraction()
-: <a class="el" href="classDGtal_1_1LightSternBrocot_1_1Fraction.html#a8b8d094db4a08b58c39c19f19710f369">DGtal::LightSternBrocot&lt; TInteger, TQuotient, TMap &gt;::Fraction</a>
+: <a class="el" href="classDGtal_1_1LightSternBrocot_1_1Fraction.html#af2255ab9f8683e158c5f2d7cae4ce1c7">DGtal::LightSternBrocot&lt; TInteger, TQuotient, TMap &gt;::Fraction</a>
 , <a class="el" href="classDGtal_1_1Pattern.html#a39a42af8fa3e9404d96f0a0cd2264a64">DGtal::Pattern&lt; TFraction &gt;</a>
 , <a class="el" href="classDGtal_1_1StandardDSLQ0.html#a059b7206f0c8edebd5694696b379d164">DGtal::StandardDSLQ0&lt; TFraction &gt;</a>
 </li>
@@ -685,7 +686,7 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 , <a class="el" href="classDGtal_1_1OneBalancedWordComputer.html#a7deb16485a949182479bd76160c2cf72">DGtal::OneBalancedWordComputer&lt; TConstIterator, TInteger &gt;</a>
 </li>
 <li>FrontierPredicate()
-: <a class="el" href="classDGtal_1_1functors_1_1FrontierPredicate.html#a38c0b09338ed42eecb30951e59700602">DGtal::functors::FrontierPredicate&lt; TKSpace, TImage &gt;</a>
+: <a class="el" href="classDGtal_1_1functors_1_1FrontierPredicate.html#afd7ce1729047c5969a060bcb795d502e">DGtal::functors::FrontierPredicate&lt; TKSpace, TImage &gt;</a>
 </li>
 <li>FrontInsertionSequenceToStackAdapter()
 : <a class="el" href="classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#a40a69b9a9f8c16993c36e31678c1ca01">DGtal::FrontInsertionSequenceToStackAdapter&lt; TSequence &gt;</a>
@@ -775,7 +776,7 @@ $(document).ready(function(){initNavTree('functions_f.html',''); initResizable()
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 8 2024 20:21:16 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:34 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

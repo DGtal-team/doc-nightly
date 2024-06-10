@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -666,8 +666,8 @@ $(document).ready(function(){initNavTree('testFMM_8cpp_source.html',''); initRes
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1ExactPredicateLpSeparableMetric.html">ExactPredicateLpSeparableMetric&lt;SpaceND&lt;dimension,int&gt;</a>, norm&gt; LNorm;</div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1DistanceTransformation.html">DistanceTransformation&lt;SpaceND&lt;dimension,int&gt;</a>, Predicate, LNorm&gt; DT; </div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;  LNorm lnorm;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;  DT dt(&amp;d,&amp;aPredicate, &amp;lnorm);</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; dt &lt;&lt; std::endl; </div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;  DT <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>(&amp;d,&amp;aPredicate, &amp;lnorm);</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a> &lt;&lt; std::endl; </div>
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160; </div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160; </div>
@@ -683,7 +683,7 @@ $(document).ready(function(){initNavTree('testFMM_8cpp_source.html',''); initRes
 <div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        flagIsOk = <span class="keyword">false</span>; </div>
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;      <span class="keywordflow">else</span> </div>
 <div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        {</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;          <span class="keywordflow">if</span> (dt(*it) != map(*it))</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;          <span class="keywordflow">if</span> (<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>(*it) != map(*it))</div>
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;            flagIsOk = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;        }</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    }</div>
@@ -785,6 +785,7 @@ $(document).ready(function(){initNavTree('testFMM_8cpp_source.html',''); initRes
 <div class="ttc" id="aclassDGtal_1_1functors_1_1SimpleThresholdForegroundPredicate_html"><div class="ttname"><a href="classDGtal_1_1functors_1_1SimpleThresholdForegroundPredicate.html">DGtal::functors::SimpleThresholdForegroundPredicate</a></div><div class="ttdoc">Aim: Define a simple Foreground predicate thresholding image values given a single thresold....</div><div class="ttdef"><b>Definition:</b> <a href="SimpleThresholdForegroundPredicate_8h_source.html#l00065">SimpleThresholdForegroundPredicate.h:66</a></div></div>
 <div class="ttc" id="aclassLibBoard_1_1Board_html_a3f79f876d837d6d427deb9e15e5589e5a584cabe1c19d9b128244ef55e712273e"><div class="ttname"><a href="classLibBoard_1_1Board.html#a3f79f876d837d6d427deb9e15e5589e5a584cabe1c19d9b128244ef55e712273e">LibBoard::Board::UCentimeter</a></div><div class="ttdeci">@ UCentimeter</div><div class="ttdef"><b>Definition:</b> <a href="Board_8h_source.html#l00043">Board.h:43</a></div></div>
 <div class="ttc" id="aclassLibBoard_1_1Board_html_ad3f3f29633091b70b9e12452837f6c6c"><div class="ttname"><a href="classLibBoard_1_1Board.html#ad3f3f29633091b70b9e12452837f6c6c">LibBoard::Board::setUnit</a></div><div class="ttdeci">void setUnit(Unit unit)</div><div class="ttdef"><b>Definition:</b> <a href="Board_8cpp_source.html#l00239">Board.cpp:239</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a778e38aa889751afffa2dea6b803e67a"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a></div><div class="ttdeci">float dt</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00063">dgtalCalculus-geodesic.cpp:63</a></div></div>
 <div class="ttc" id="adigitalPolyhedronBuilder3D_8cpp_html_a6c4dc4f5610ba8c9b7ee6e83ecea8d24"><div class="ttname"><a href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">SCell</a></div><div class="ttdeci">Z3i::SCell SCell</div><div class="ttdef"><b>Definition:</b> <a href="digitalPolyhedronBuilder3D_8cpp_source.html#l00079">digitalPolyhedronBuilder3D.cpp:79</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1functors_html"><div class="ttname"><a href="namespaceDGtal_1_1functors.html">DGtal::functors</a></div><div class="ttdoc">functors namespace gathers all DGtal functors.</div><div class="ttdef"><b>Definition:</b> <a href="BasicBoolFunctors_8h_source.html#l00049">BasicBoolFunctors.h:49</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
@@ -822,7 +823,7 @@ $(document).ready(function(){initNavTree('testFMM_8cpp_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_2751d6f01b35f5fec7131f6adf42b522.html">geometry</a></li><li class="navelem"><a class="el" href="dir_617e36e15bcfca8ade183f7b877528e1.html">volumes</a></li><li class="navelem"><a class="el" href="dir_ccf58f49583a53a57f7232121888f6dd.html">distance</a></li><li class="navelem"><a class="el" href="testFMM_8cpp.html">testFMM.cpp</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:20:56 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:14 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -167,9 +167,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">auto</span> implicit_shape  = SH3::makeImplicitShape3D  ( params );</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">auto</span> digitized_shape = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>               = SH3::getKSpace( params );</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">auto</span> surface         = SH3::makeDigitalSurface( digitized_shape, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>         = SH3::makeDigitalSurface( digitized_shape, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">auto</span> idxsurface     = SH3::makeIdxDigitalSurface( surface, params );</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">auto</span> idxsurface     = SH3::makeIdxDigitalSurface( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params );</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="classDGtal_1_1ShroudsRegularization.html">ShroudsRegularization&lt; Container &gt;</a> shrouds_reg( idxsurface );</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">auto</span> originalPos    = shrouds_reg.positions();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  {</div>
@@ -217,11 +217,12 @@ Functions</h2></td></tr>
 <div class="ttc" id="aclassDGtal_1_1Shortcuts_html"><div class="ttname"><a href="classDGtal_1_1Shortcuts.html">DGtal::Shortcuts</a></div><div class="ttdoc">Aim: This class is used to simplify shape and surface creation. With it, you can create new shapes an...</div><div class="ttdef"><b>Definition:</b> <a href="Shortcuts_8h_source.html#l00104">Shortcuts.h:105</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html">DGtal::ShroudsRegularization</a></div><div class="ttdoc">Aim: Implements the Shrouds Regularization algorithm of Nielson et al .</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00073">ShroudsRegularization.h:74</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a0d43ce039fb5444d8c401029e04b895b"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895b">DGtal::ShroudsRegularization::Regularization</a></div><div class="ttdeci">Regularization</div><div class="ttdoc">The enum class specifying the possible shrouds regularization.</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00096">ShroudsRegularization.h:96</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
 <div class="ttc" id="atestArithmeticalDSSComputerOnSurfels_8cpp_html_ac6834e172d5d8c2b796bc846aa0d643b"><div class="ttname"><a href="testArithmeticalDSSComputerOnSurfels_8cpp.html#ac6834e172d5d8c2b796bc846aa0d643b">SH3</a></div><div class="ttdeci">Shortcuts&lt; KSpace &gt; SH3</div><div class="ttdef"><b>Definition:</b> <a href="testArithmeticalDSSComputerOnSurfels_8cpp_source.html#l00049">testArithmeticalDSSComputerOnSurfels.cpp:49</a></div></div>
 <div class="ttc" id="atestCubicalComplex_8cpp_html_a2b87ed989d2519d025bd5d4fbcbac062"><div class="ttname"><a href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a></div><div class="ttdeci">KSpace K</div><div class="ttdef"><b>Definition:</b> <a href="testCubicalComplex_8cpp_source.html#l00062">testCubicalComplex.cpp:62</a></div></div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_ad8a25b2bbbbdb64c30a5442284db5bfb"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a></div><div class="ttdeci">REQUIRE(domain.isInside(aPoint))</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00336">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::energy()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, <a class="el" href="testCubicalComplex_8cpp_source.html#l00062">K</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00196">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::positions()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00304">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::regularize()</a>, and <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE()</a>.</p>
+<p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00336">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::energy()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, <a class="el" href="testCubicalComplex_8cpp_source.html#l00062">K</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00196">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::positions()</a>, <a class="el" href="ShroudsRegularization_8h_source.html#l00304">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::regularize()</a>, <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE()</a>, and <a class="el" href="dgtalCalculus-geodesic_8cpp_source.html#l00066">surface</a>.</p>
 
 </div>
 </div>
@@ -231,7 +232,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_2751d6f01b35f5fec7131f6adf42b522.html">geometry</a></li><li class="navelem"><a class="el" href="dir_e226bbce94b418b2b8019d48fb57e0e0.html">surfaces</a></li><li class="navelem"><a class="el" href="testShroudsRegularization_8cpp.html">testShroudsRegularization.cpp</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:02 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:20 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

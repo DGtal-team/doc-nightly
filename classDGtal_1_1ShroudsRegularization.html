@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('classDGtal_1_1ShroudsRegularization.ht
 </div><!--header-->
 <div class="contents">
 
-<p>Aim: Implements the Shrouds Regularization algorithm of Nielson et al <a class="el" href="citelist.html#CITEREF_nielson2003shrouds">[91]</a>.  
+<p>Aim: Implements the Shrouds Regularization algorithm of Nielson et al <a class="el" href="citelist.html#CITEREF_nielson2003shrouds">[92]</a>.  
  <a href="classDGtal_1_1ShroudsRegularization.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="ShroudsRegularization_8h_source.html">DGtal/geometry/surfaces/ShroudsRegularization.h</a>&gt;</code></p>
@@ -149,7 +149,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afcb7f7bbf52f7e21d078122392894e1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ShroudsRegularization.html#afcb7f7bbf52f7e21d078122392894e1f">ShroudsRegularization</a> ()</td></tr>
 <tr class="memdesc:afcb7f7bbf52f7e21d078122392894e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. The object is not valid.  <a href="classDGtal_1_1ShroudsRegularization.html#afcb7f7bbf52f7e21d078122392894e1f">More...</a><br /></td></tr>
 <tr class="separator:afcb7f7bbf52f7e21d078122392894e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09543f86e56ce26c5bffafb50a9d708d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ShroudsRegularization.html#a09543f86e56ce26c5bffafb50a9d708d">ShroudsRegularization</a> (<a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1ShroudsRegularization.html#ac05ea3e5ba70e9ce379ca13d9a8bc888">IdxDigitalSurface</a> &gt; surface)</td></tr>
+<tr class="memitem:a09543f86e56ce26c5bffafb50a9d708d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ShroudsRegularization.html#a09543f86e56ce26c5bffafb50a9d708d">ShroudsRegularization</a> (<a class="el" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="el" href="classDGtal_1_1ShroudsRegularization.html#ac05ea3e5ba70e9ce379ca13d9a8bc888">IdxDigitalSurface</a> &gt; <a class="el" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>)</td></tr>
 <tr class="separator:a09543f86e56ce26c5bffafb50a9d708d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd9ed2d6a1d44d68f4face278583e1fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ShroudsRegularization.html#abd9ed2d6a1d44d68f4face278583e1fc">init</a> ()</td></tr>
 <tr class="separator:abd9ed2d6a1d44d68f4face278583e1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,7 +253,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename TDigitalSurfaceContainer&gt;<br />
 class DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;</h3>
 
-<p>Aim: Implements the Shrouds Regularization algorithm of Nielson et al <a class="el" href="citelist.html#CITEREF_nielson2003shrouds">[91]</a>. </p>
+<p>Aim: Implements the Shrouds Regularization algorithm of Nielson et al <a class="el" href="citelist.html#CITEREF_nielson2003shrouds">[92]</a>. </p>
 <p>Description of template class '<a class="el" href="classDGtal_1_1ShroudsRegularization.html" title="Aim: Implements the Shrouds Regularization algorithm of Nielson et al .">ShroudsRegularization</a>' </p>
 <p>Represents a decomposition of a closed digital surface into three stacks of slices, one per dimension. Gives methods to optimize the positions of vertices and smooth the resulting surface, generally according to curvature-related regularizers.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="moduleShrouds.html">Digital surface regularization using the Shrouds algorithm</a></dd></dl>
@@ -643,8 +643,8 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <dl class="section note"><dt>Note</dt><dd>Complexity is linear in the number of surfels of <em>surface</em>. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="ShroudsRegularization_8h_source.html#l00113">113</a> of file <a class="el" href="ShroudsRegularization_8h_source.html">ShroudsRegularization.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      : <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">myPtrIdxSurface</a>( surface ),</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a714dbedf94934b5dd548e43eab5e7504">myPtrK</a>( &amp;surface-&gt;container().space() ),</div>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      : <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">myPtrIdxSurface</a>( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> ),</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a714dbedf94934b5dd548e43eab5e7504">myPtrK</a>( &amp;<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>-&gt;container().space() ),</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="classDGtal_1_1ShroudsRegularization.html#aba157cc02aef27a4fcab320a1a90acfe">myEpsilon</a>( 0.0001 ), <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a2cf4b873203bc6ae4de022606c440ec0">myAlpha</a>( 1.0 ), <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a9ad64ee5cb89e21fcd3f3e03973c2587">myBeta</a>( 1.0 )</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a2da9e42790984a3e6c77899b6dbeaeac">precomputeTopology</a>();</div>
@@ -655,6 +655,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a9ad64ee5cb89e21fcd3f3e03973c2587"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a9ad64ee5cb89e21fcd3f3e03973c2587">DGtal::ShroudsRegularization::myBeta</a></div><div class="ttdeci">Scalar myBeta</div><div class="ttdoc">The beta parameter for Snake second order regularization (~ curvature)</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00544">ShroudsRegularization.h:544</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_aba157cc02aef27a4fcab320a1a90acfe"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#aba157cc02aef27a4fcab320a1a90acfe">DGtal::ShroudsRegularization::myEpsilon</a></div><div class="ttdeci">Scalar myEpsilon</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00540">ShroudsRegularization.h:540</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_abd9ed2d6a1d44d68f4face278583e1fc"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#abd9ed2d6a1d44d68f4face278583e1fc">DGtal::ShroudsRegularization::init</a></div><div class="ttdeci">void init()</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00128">ShroudsRegularization.h:128</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="ShroudsRegularization_8h_source.html#l00128">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::init()</a>, and <a class="el" href="ShroudsRegularization_8h_source.html#l00477">DGtal::ShroudsRegularization&lt; TDigitalSurfaceContainer &gt;::precomputeTopology()</a>.</p>
 
@@ -2154,7 +2155,7 @@ template&lt;typename TDigitalSurfaceContainer &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1ShroudsRegularization.html">ShroudsRegularization</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:07 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:25 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

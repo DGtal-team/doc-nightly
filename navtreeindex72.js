@@ -1,5 +1,13 @@
 var NAVTREEINDEX72 =
 {
+"structDGtal_1_1SurfaceMesh.html#a89017ac4cfe01fe33f97635e74b5f532":[6,0,2,590,19],
+"structDGtal_1_1SurfaceMesh.html#a8a5e75d81736dd8a757a2c66843e8dc8":[6,0,2,590,27],
+"structDGtal_1_1SurfaceMesh.html#a904cd306aab505863c425df461373bec":[6,0,2,590,126],
+"structDGtal_1_1SurfaceMesh.html#a92ae3f4852fbbd81c0e98eb01fbdad49":[6,0,2,590,34],
+"structDGtal_1_1SurfaceMesh.html#a948e411e0314296b0fad607bd2f06c9e":[6,0,2,590,75],
+"structDGtal_1_1SurfaceMesh.html#a94ca1e662aa8011cf3363006871a9526":[6,0,2,590,115],
+"structDGtal_1_1SurfaceMesh.html#a94e2b676c2c1cd9ec39f4354d222868e":[6,0,2,590,62],
+"structDGtal_1_1SurfaceMesh.html#a95f5eaf3fcfe06f2644bd2fdf98f527a":[6,0,2,590,58],
 "structDGtal_1_1SurfaceMesh.html#a99b2d742041e19b10336656e4eb3d403":[6,0,2,590,110],
 "structDGtal_1_1SurfaceMesh.html#a99e26c01409fb926ef2b6215e3296b14":[6,0,2,590,15],
 "structDGtal_1_1SurfaceMesh.html#a9b07c042333e0e6a71cb7a861a45c77b":[6,0,2,590,48],
@@ -241,13 +249,5 @@ var NAVTREEINDEX72 =
 "structDGtal_1_1TangentFromDSS3DFunctor_1_1Value.html#a5d419114660c7be265fe0bf520fb0097":[6,0,2,183,0,2],
 "structDGtal_1_1TangentFromDSS3DFunctor_1_1Value.html#ab7bbe10294484ea5cc398489b5ac19b5":[6,0,2,183,0,0],
 "structDGtal_1_1ToDGtalCategory.html":[6,0,2,113],
-"structDGtal_1_1ToDGtalCategory.html#a87f9502d08d9643512a5845afaf9d69c":[6,0,2,113,0],
-"structDGtal_1_1ToDGtalCategory_3_01boost_1_1bidirectional__traversal__tag_01_4.html":[6,0,2,118],
-"structDGtal_1_1ToDGtalCategory_3_01boost_1_1bidirectional__traversal__tag_01_4.html#aab4c9d9ccf1b9994774a22ff0c0203b6":[6,0,2,118,0],
-"structDGtal_1_1ToDGtalCategory_3_01boost_1_1forward__traversal__tag_01_4.html":[6,0,2,117],
-"structDGtal_1_1ToDGtalCategory_3_01boost_1_1forward__traversal__tag_01_4.html#af2b35c5e5e65e51359ee9934b54f6bf1":[6,0,2,117,0],
-"structDGtal_1_1ToDGtalCategory_3_01boost_1_1iterators_1_1detail_1_1iterator__category__with__tra1420f29943a047e87f8a1879f4727e46.html":[6,0,2,120],
-"structDGtal_1_1ToDGtalCategory_3_01boost_1_1iterators_1_1detail_1_1iterator__category__with__tra1420f29943a047e87f8a1879f4727e46.html#ad3124c1e1ee19eeaedb680b881947848":[6,0,2,120,0],
-"structDGtal_1_1ToDGtalCategory_3_01boost_1_1iterators_1_1detail_1_1iterator__category__with__tra5f13519ab9c7b4373448083983b5e2c4.html":[6,0,2,121],
-"structDGtal_1_1ToDGtalCategory_3_01boost_1_1iterators_1_1detail_1_1iterator__category__with__tra5f13519ab9c7b4373448083983b5e2c4.html#a3d2fdf03091adeed50b6f81c9b94ae31":[6,0,2,121,0]
+"structDGtal_1_1ToDGtalCategory.html#a87f9502d08d9643512a5845afaf9d69c":[6,0,2,113,0]
 };

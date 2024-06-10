@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -110,13 +110,13 @@ $(document).ready(function(){initNavTree('moduleHull2D.html',''); initResizable(
 <h1><a class="anchor" id="sectmoduleHull2D1"></a>
 Convex hull</h1>
 <p>Let us recall that a polygon is a weakly externally visible polygon (WEVP) if for every point on it, there exists an infinite half-line beginning at this point, which does not intersect the polygon at anywhere else.</p>
-<p>The two basic procedures <a class="el" href="namespaceDGtal_1_1functions_1_1Hull2D.html#a22b3737b4aeb5443d541b9336116f6d8" title="Procedure that retrieves the vertices of the convex hull of a weakly externally visible polygon (WEVP...">functions::Hull2D::buildHullWithStack</a> (the object having a stack interface is passed by reference) and <a class="el" href="namespaceDGtal_1_1functions_1_1Hull2D.html#a6c864509908d68566f323096fbe7bbcc" title="Procedure that calls Hull2D::buildHullWithStack on a copy of the stack object used to retrieved the h...">functions::Hull2D::buildHullWithAdaptedStack</a> (the object having a stack interface is passed by copy) retrieve the extremal vertices of a WEVP in linear-time. This is an implementation of a well-known method, called Sklansky's scan, Graham's scan or 3-coins algorithm, which has been proven to correctly retrieve the convex hull of any WEVP [Toussaint and Avis, 1982: <a class="el" href="citelist.html#CITEREF_ToussaintAvis1982">[114]</a>]. <br  />
+<p>The two basic procedures <a class="el" href="namespaceDGtal_1_1functions_1_1Hull2D.html#a22b3737b4aeb5443d541b9336116f6d8" title="Procedure that retrieves the vertices of the convex hull of a weakly externally visible polygon (WEVP...">functions::Hull2D::buildHullWithStack</a> (the object having a stack interface is passed by reference) and <a class="el" href="namespaceDGtal_1_1functions_1_1Hull2D.html#a6c864509908d68566f323096fbe7bbcc" title="Procedure that calls Hull2D::buildHullWithStack on a copy of the stack object used to retrieved the h...">functions::Hull2D::buildHullWithAdaptedStack</a> (the object having a stack interface is passed by copy) retrieve the extremal vertices of a WEVP in linear-time. This is an implementation of a well-known method, called Sklansky's scan, Graham's scan or 3-coins algorithm, which has been proven to correctly retrieve the convex hull of any WEVP [Toussaint and Avis, 1982: <a class="el" href="citelist.html#CITEREF_ToussaintAvis1982">[115]</a>]. <br  />
 </p>
 <p>Three convex hull algorithms use this basic procedure: <br  />
 </p><ul>
 <li><a class="el" href="namespaceDGtal_1_1functions_1_1Hull2D.html#a248898c40cc98e35b6dbcfe944c8adff" title="Procedure that retrieves the vertices of the hull of a set of 2D points given by the range [ itb ,...">functions::Hull2D::andrewConvexHullAlgorithm</a> [Andrew, 1979: <a class="el" href="citelist.html#CITEREF_Andrew1979">[6]</a>]</li>
-<li><a class="el" href="namespaceDGtal_1_1functions_1_1Hull2D.html#ae9140238e424c6e4121991d410a19011" title="Procedure that retrieves the vertices of the convex hull of a set of 2D points given by the range [ i...">functions::Hull2D::grahamConvexHullAlgorithm</a> [Graham, 1972: <a class="el" href="citelist.html#CITEREF_Graham1972">[60]</a>]</li>
-<li><a class="el" href="namespaceDGtal_1_1functions_1_1Hull2D.html#acab511ebdfea4fa4b0d02901fa5f1464" title="Procedure that retrieves the vertices of the hull of a set of 2D points given by the range [ itb ,...">functions::Hull2D::melkmanConvexHullAlgorithm</a> [Melkman, 1987: <a class="el" href="citelist.html#CITEREF_Melkman1987">[86]</a>]</li>
+<li><a class="el" href="namespaceDGtal_1_1functions_1_1Hull2D.html#ae9140238e424c6e4121991d410a19011" title="Procedure that retrieves the vertices of the convex hull of a set of 2D points given by the range [ i...">functions::Hull2D::grahamConvexHullAlgorithm</a> [Graham, 1972: <a class="el" href="citelist.html#CITEREF_Graham1972">[61]</a>]</li>
+<li><a class="el" href="namespaceDGtal_1_1functions_1_1Hull2D.html#acab511ebdfea4fa4b0d02901fa5f1464" title="Procedure that retrieves the vertices of the hull of a set of 2D points given by the range [ itb ,...">functions::Hull2D::melkmanConvexHullAlgorithm</a> [Melkman, 1987: <a class="el" href="citelist.html#CITEREF_Melkman1987">[87]</a>]</li>
 </ul>
 <p>Before calling these algoritms, you must use the <a class="el" href="namespaceDGtal_1_1functions_1_1Hull2D.html" title="Hull2D namespace gathers useful functions to compute and return the convex hull or the alpha-shape of...">functions::Hull2D</a> namespace defined in the file <a class="el" href="Hull2DHelpers_8h_source.html">Hull2DHelpers.h</a>. </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;DGtal/geometry/tools/Hull2DHelpers.h&quot;</span></div>
 </div><!-- fragment --><div class="fragment"><div class="line">  <span class="keyword">using namespace </span>functions::Hull2D; </div>
@@ -166,7 +166,7 @@ All points lying on the boundary of the convex hull of the digitization of a dis
 Clockwise-oriented list of extremal points of the digitization of a disk</div></div>
  <h2><a class="anchor" id="subsectmoduleHull2D12"></a>
 Graham's algorithm</h2>
-<p>Graham's algorithm is another well-known algorithm to compute the convex hull of a 2D point set of size \( n \) in \( O(n\log{(n)}) \) [Graham, 1972: <a class="el" href="citelist.html#CITEREF_Graham1972">[60]</a>]. The method can be coarsely described as follows:</p><ul>
+<p>Graham's algorithm is another well-known algorithm to compute the convex hull of a 2D point set of size \( n \) in \( O(n\log{(n)}) \) [Graham, 1972: <a class="el" href="citelist.html#CITEREF_Graham1972">[61]</a>]. The method can be coarsely described as follows:</p><ul>
 <li>choose a pole and sort the points by increasing angle about the pole</li>
 <li>apply a simple Graham's scan on the sorted list of points.</li>
 </ul>
@@ -240,7 +240,7 @@ Constructing a Melkman convex hull from both sides.</h3>
 Illustration of the convex hull result starting from the point P0 and adding alternately the points Pi. (1) shows wrong convex hull obtained without the convex hull reverse, (2) is the correct convex hull obtained by using the reverse() method after each addition of points.</div></div>
  <h2><a class="anchor" id="subsectmoduleHull2D14"></a>
 Convex hull thickness</h2>
-<p>From a convex hull it can be useful to compute its associated thickness. We propose the implementation of the well known rotating caliper algorithm allowing to compute all the antipodal pairs in linear time [Shamos , 1978: <a class="el" href="citelist.html#CITEREF_Shamos1978">[109]</a>].</p>
+<p>From a convex hull it can be useful to compute its associated thickness. We propose the implementation of the well known rotating caliper algorithm allowing to compute all the antipodal pairs in linear time [Shamos , 1978: <a class="el" href="citelist.html#CITEREF_Shamos1978">[110]</a>].</p>
 <p>Two definitions of thickness can be computed from an iterator on the convex hull. The first one is the vertical/horizontal thickness obtained by projection on the main x-y axis from antipodal pairs. The second one is given from the normal projection on the edge of the same antipodal pairs. The two definitions are illustrated on the following figures:</p>
 <div class="image">
 <img src="exampleConvexHullHV.png" alt=""/>
@@ -274,7 +274,7 @@ Example of antipodal pair obtained from the computation of the horizontal/vertic
  <dl class="section warning"><dt>Warning</dt><dd>The convex hull should be oriented in counter clockwise else it will return wrong result.</dd></dl>
 <h1><a class="anchor" id="sectmoduleHull2D2"></a>
 Alpha-shape</h1>
-<p>The alpha-shape of a finite set of points has been introduced in [Edelsbrunner et. al., 1983: <a class="el" href="citelist.html#CITEREF_Edelsbrunner1983">[49]</a>]. This geometric structure is based on the following concept of generalized disk. <br  />
+<p>The alpha-shape of a finite set of points has been introduced in [Edelsbrunner et. al., 1983: <a class="el" href="citelist.html#CITEREF_Edelsbrunner1983">[50]</a>]. This geometric structure is based on the following concept of generalized disk. <br  />
  For an arbitrary real \( \alpha \), a <em>generalized</em> <em>disk</em> of radius \( 1/\alpha \) is defined as</p><ul>
 <li>a disk of radius \( 1/\alpha \) if \( \alpha &gt; 0 \)</li>
 <li>a complement of the disk of radius \( -1/\alpha \) if \( \alpha &lt; 0 \)</li>
@@ -350,7 +350,7 @@ alpha = 0.125 (points lying on the smallest enclosing circle)</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:04 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,9 @@
 var NAVTREEINDEX13 =
 {
+"classDGtal_1_1DiscreteExteriorCalculus.html#a109ccf25f703d4c6a2606966d40856e4":[6,0,2,150,3],
+"classDGtal_1_1DiscreteExteriorCalculus.html#a13ac8d49539a86851a94e7a0bd2ad82f":[6,0,2,150,64],
+"classDGtal_1_1DiscreteExteriorCalculus.html#a15087d17ef6e9dea296adf107064f2c6":[6,0,2,150,68],
+"classDGtal_1_1DiscreteExteriorCalculus.html#a155cc1a3981d0827d74a1b0642f6f706":[6,0,2,150,61],
 "classDGtal_1_1DiscreteExteriorCalculus.html#a17017d82096647a2933427a07889224e":[6,0,2,150,32],
 "classDGtal_1_1DiscreteExteriorCalculus.html#a187bb433d9283436022176311b636b33":[6,0,2,150,50],
 "classDGtal_1_1DiscreteExteriorCalculus.html#a187c5ce40e7820b209ac9504aa5796ab":[6,0,2,150,38],
@@ -245,9 +249,5 @@ var NAVTREEINDEX13 =
 "classDGtal_1_1DistanceBreadthFirstVisitor.html#a1686b9566ad22882782a0691ef031dea":[6,0,2,342,33],
 "classDGtal_1_1DistanceBreadthFirstVisitor.html#a2583a3450611716a03acfdcb87ad9ab8":[6,0,2,342,7],
 "classDGtal_1_1DistanceBreadthFirstVisitor.html#a2ac08c46e08651ccb85de8e47127f668":[6,0,2,342,28],
-"classDGtal_1_1DistanceBreadthFirstVisitor.html#a2c789832006713b40ed0d902d71f79fd":[6,0,2,342,13],
-"classDGtal_1_1DistanceBreadthFirstVisitor.html#a2d3d4a6eaa3734a0b573ec915a716ebb":[6,0,2,342,9],
-"classDGtal_1_1DistanceBreadthFirstVisitor.html#a2f0fc542670ce3872bd74ca41446e007":[6,0,2,342,12],
-"classDGtal_1_1DistanceBreadthFirstVisitor.html#a2fc758e1eae72d9862b2c5696022d55f":[6,0,2,342,29],
-"classDGtal_1_1DistanceBreadthFirstVisitor.html#a3c960416fdc7d2ccf36f551ff46af4b6":[6,0,2,342,23]
+"classDGtal_1_1DistanceBreadthFirstVisitor.html#a2c789832006713b40ed0d902d71f79fd":[6,0,2,342,13]
 };

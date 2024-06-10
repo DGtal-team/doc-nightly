@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('classDGtal_1_1DigitalSurfaceRegulariza
 </div><!--header-->
 <div class="contents">
 
-<p>Aim: Implements Digital Surface Regularization as described in <a class="el" href="citelist.html#CITEREF_coeurjolly17regDGCI">[30]</a>.  
+<p>Aim: Implements Digital Surface Regularization as described in <a class="el" href="citelist.html#CITEREF_coeurjolly17regDGCI">[31]</a>.  
  <a href="classDGtal_1_1DigitalSurfaceRegularization.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="DigitalSurfaceRegularization_8h_source.html">DGtal/geometry/surfaces/DigitalSurfaceRegularization.h</a>&gt;</code></p>
@@ -158,10 +158,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9d084244e4b1cfed41cffcde2005fdb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurfaceRegularization.html#ae9d084244e4b1cfed41cffcde2005fdb">computeGradientLocalWeights</a> ()</td></tr>
 <tr class="separator:ae9d084244e4b1cfed41cffcde2005fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0c787fe879c43a3a1ece4c518de7dca"><td class="memTemplParams" colspan="2">template&lt;typename AdvectionFunction &gt; </td></tr>
-<tr class="memitem:ab0c787fe879c43a3a1ece4c518de7dca"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurfaceRegularization.html#ab0c787fe879c43a3a1ece4c518de7dca">regularize</a> (const unsigned int nbIters, const double dt, const double epsilon, const AdvectionFunction &amp;advectionFunc)</td></tr>
+<tr class="memitem:ab0c787fe879c43a3a1ece4c518de7dca"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurfaceRegularization.html#ab0c787fe879c43a3a1ece4c518de7dca">regularize</a> (const unsigned int nbIters, const double <a class="el" href="dgtalCalculus-halfsphere_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>, const double epsilon, const AdvectionFunction &amp;advectionFunc)</td></tr>
 <tr class="memdesc:ab0c787fe879c43a3a1ece4c518de7dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main regularization loop.  <a href="classDGtal_1_1DigitalSurfaceRegularization.html#ab0c787fe879c43a3a1ece4c518de7dca">More...</a><br /></td></tr>
 <tr class="separator:ab0c787fe879c43a3a1ece4c518de7dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e6423941b95d67b86f9fdc1b6336b5a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurfaceRegularization.html#a8e6423941b95d67b86f9fdc1b6336b5a">regularize</a> (const unsigned int nbIters=200, const double dt=1.0, const double epsilon=0.0001)</td></tr>
+<tr class="memitem:a8e6423941b95d67b86f9fdc1b6336b5a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurfaceRegularization.html#a8e6423941b95d67b86f9fdc1b6336b5a">regularize</a> (const unsigned int nbIters=200, const double <a class="el" href="dgtalCalculus-halfsphere_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>=1.0, const double epsilon=0.0001)</td></tr>
 <tr class="memdesc:a8e6423941b95d67b86f9fdc1b6336b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main regularization loop.  <a href="classDGtal_1_1DigitalSurfaceRegularization.html#a8e6423941b95d67b86f9fdc1b6336b5a">More...</a><br /></td></tr>
 <tr class="separator:a8e6423941b95d67b86f9fdc1b6336b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8869004499e29a263e3d2e210b59e2b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDGtal_1_1ShortcutsGeometry.html#ac4dc46311175d5df78438b511f4026a6">SHG3::RealPoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1DigitalSurfaceRegularization.html#a8869004499e29a263e3d2e210b59e2b7">getRegularizedPosition</a> (const <a class="el" href="classDGtal_1_1Shortcuts.html#afff7b2fb3687cdf7fe27cf1e38af70b0">SH3::Cell</a> &amp;aPointel)</td></tr>
@@ -279,7 +279,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename TDigitalSurface&gt;<br />
 class DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;</h3>
 
-<p>Aim: Implements Digital Surface Regularization as described in <a class="el" href="citelist.html#CITEREF_coeurjolly17regDGCI">[30]</a>. </p>
+<p>Aim: Implements Digital Surface Regularization as described in <a class="el" href="citelist.html#CITEREF_coeurjolly17regDGCI">[31]</a>. </p>
 <p>Description of template class '<a class="el" href="classDGtal_1_1DigitalSurfaceRegularization.html" title="Aim: Implements Digital Surface Regularization as described in .">DigitalSurfaceRegularization</a>' </p>
 <p>Given a digital surface and a normal vector field attached to the surfels, this class performs a regularization of the digital surface vertices to obtain a piecewise smooth surface such that each quad of the output surface is as perpendicular as possible to the given input normal vector field.</p>
 <dl class="section note"><dt>Note</dt><dd>The digital surface must be a closed.</dd></dl>
@@ -287,7 +287,7 @@ class DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;</h3>
 \[\mathcal{E}(P) := \alpha \sum_{i=1}^{n} \|p_i - \hat{p}_i\|^2 + \beta \sum_{f\in F} \sum_{{e_j} \in \partial{f} } ( e_j \cdot n_{f} )^2 + \gamma \sum_{i=1}^{n} \|\hat{p}_i - \hat{b}_i\|^2\,.\]
 </p>
 <p> where \(&quot;\cdot&quot;\) is the standard \(\mathbb{R}^3\) scalar product, \(e_j\in \partial{f}\) is an edge of the face \(f\) (and is equal to some \(p_k - p_l\)) and \( \hat{b}_i\) is the barycenter of the vertices adjacent to \(\hat{p}_i\).</p>
-<p>To minimize this energy, instead of solving the associated sparse linear system as described in <a class="el" href="citelist.html#CITEREF_coeurjolly17regDGCI">[30]</a>, we perform a gradient descent strategy which allows us a finer control over the vertices displacement (see advection methods).</p>
+<p>To minimize this energy, instead of solving the associated sparse linear system as described in <a class="el" href="citelist.html#CITEREF_coeurjolly17regDGCI">[31]</a>, we perform a gradient descent strategy which allows us a finer control over the vertices displacement (see advection methods).</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="testDigitalSurfaceRegularization_8cpp.html">testDigitalSurfaceRegularization.cpp</a></dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -584,7 +584,7 @@ template&lt;typename TDigitalSurface &gt; </div>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="testDigitalSurfaceRegularization_8cpp_source.html#l00047">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dgtalCalculus-geodesic_8cpp_source.html#l00213">main()</a>, and <a class="el" href="testDigitalSurfaceRegularization_8cpp_source.html#l00047">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1043,7 @@ template&lt;typename TDigitalSurface &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="DigitalSurfaceRegularization_8h_source.html#l00436">DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;::myInit</a>, and <a class="el" href="DigitalSurfaceRegularization_8h_source.html#l00448">DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;::myRegularizedPositions</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="testDigitalSurfaceRegularization_8cpp_source.html#l00047">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dgtalCalculus-geodesic_8cpp_source.html#l00213">main()</a>, and <a class="el" href="testDigitalSurfaceRegularization_8cpp_source.html#l00047">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1132,7 @@ template&lt;typename TDigitalSurface &gt; </div>
   </dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="testDigitalSurfaceRegularization_8cpp_source.html#l00047">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dgtalCalculus-geodesic_8cpp_source.html#l00213">main()</a>, and <a class="el" href="testDigitalSurfaceRegularization_8cpp_source.html#l00047">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -1338,7 +1338,7 @@ template&lt;typename AdvectionFunction &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the energy at the final step. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="DigitalSurfaceRegularization_8h_source.html#l00273">DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;::regularize()</a>, and <a class="el" href="testDigitalSurfaceRegularization_8cpp_source.html#l00047">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dgtalCalculus-geodesic_8cpp_source.html#l00213">main()</a>, <a class="el" href="DigitalSurfaceRegularization_8h_source.html#l00273">DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;::regularize()</a>, and <a class="el" href="testDigitalSurfaceRegularization_8cpp_source.html#l00047">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -1400,13 +1400,14 @@ template&lt;typename TDigitalSurface &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="DigitalSurfaceRegularization_8h_source.html#l00273">273</a> of file <a class="el" href="DigitalSurfaceRegularization_8h_source.html">DigitalSurfaceRegularization.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;       {</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;         <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1DigitalSurfaceRegularization.html#ab0c787fe879c43a3a1ece4c518de7dca">regularize</a>(nbIters,dt,epsilon,</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;         <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1DigitalSurfaceRegularization.html#ab0c787fe879c43a3a1ece4c518de7dca">regularize</a>(nbIters,<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>,epsilon,</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                           [](<a class="code" href="classDGtal_1_1PointVector.html">SHG3::RealPoint</a>&amp; p,<a class="code" href="classDGtal_1_1PointVector.html">SHG3::RealPoint</a>&amp; o,<a class="code" href="classDGtal_1_1PointVector.html">SHG3::RealVector</a>&amp; v){ (void)o; p += v; });</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;       }</div>
 <div class="ttc" id="aclassDGtal_1_1DigitalSurfaceRegularization_html_ab0c787fe879c43a3a1ece4c518de7dca"><div class="ttname"><a href="classDGtal_1_1DigitalSurfaceRegularization.html#ab0c787fe879c43a3a1ece4c518de7dca">DGtal::DigitalSurfaceRegularization::regularize</a></div><div class="ttdeci">double regularize(const unsigned int nbIters, const double dt, const double epsilon, const AdvectionFunction &amp;advectionFunc)</div><div class="ttdoc">Main regularization loop.</div></div>
 <div class="ttc" id="aclassDGtal_1_1PointVector_html"><div class="ttname"><a href="classDGtal_1_1PointVector.html">DGtal::PointVector</a></div><div class="ttdoc">Aim: Implements basic operations that will be used in Point and Vector classes.</div><div class="ttdef"><b>Definition:</b> <a href="PointVector_8h_source.html#l00592">PointVector.h:593</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a778e38aa889751afffa2dea6b803e67a"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a></div><div class="ttdeci">float dt</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00063">dgtalCalculus-geodesic.cpp:63</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classDGtal_1_1DigitalSurfaceRegularization.html#ab0c787fe879c43a3a1ece4c518de7dca">DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;::regularize()</a>.</p>
+<p class="reference">References <a class="el" href="dgtalCalculus-geodesic_8cpp_source.html#l00063">dt</a>, and <a class="el" href="classDGtal_1_1DigitalSurfaceRegularization.html#ab0c787fe879c43a3a1ece4c518de7dca">DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;::regularize()</a>.</p>
 
 </div>
 </div>
@@ -2203,7 +2204,7 @@ template&lt;typename TDigitalSurface &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1DigitalSurfaceRegularization.html">DigitalSurfaceRegularization</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:07 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:24 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

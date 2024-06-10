@@ -80,6 +80,7 @@ var packageDEC =
         ] ]
       ] ],
       [ "Global calculus", "modulePolygonalCalculus.html#sectPolygonalCalculusGlo", null ],
+      [ "Corrected Calculus using Estimated Normal Vectors", "modulePolygonalCalculus.html#sectCorrected", null ],
       [ "Example: Solving a Laplace problem", "modulePolygonalCalculus.html#secLap", [
         [ "Vector Calculus", "modulePolygonalCalculus.html#Global", null ]
       ] ],

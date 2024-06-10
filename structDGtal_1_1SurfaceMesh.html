@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -873,8 +873,9 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 <p>Default constructor.</p>
 <p>A typical construction usage is </p><div class="fragment"><div class="line">std::vector&lt; RealPoint &gt; <a class="code" href="structDGtal_1_1SurfaceMesh.html#a588ded45e821d2e139b23e8b6cbbe45c">positions</a> = { { 0, 0, 5 }, { 1, 1, 3 }, { -1, 1, 3 }, { -1, -1, 3 }, { 1, -1, 3 } };</div>
 <div class="line">std::vector&lt; Vertices  &gt; faces = { { 0, 1, 2 }, { 0, 2, 3 }, { 0, 3, 4 }, { 0, 4, 1 }, { 4, 3, 2, 1 } };</div>
-<div class="line">SurfMesh pyramid_mesh;</div>
+<div class="line"><a class="code" href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a> pyramid_mesh;</div>
 <div class="line">pyramid_mesh.init( <a class="code" href="structDGtal_1_1SurfaceMesh.html#a588ded45e821d2e139b23e8b6cbbe45c">positions</a>.cbegin(), <a class="code" href="structDGtal_1_1SurfaceMesh.html#a588ded45e821d2e139b23e8b6cbbe45c">positions</a>.cend(), faces.cbegin(), faces.cend() );</div>
+<div class="ttc" id="adgtalCalculus-bunny_8cpp_html_a0da7de0f9d769404c143f3d032eaa496"><div class="ttname"><a href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a></div><div class="ttdeci">SurfaceMesh&lt; RealPoint, RealVector &gt; SurfMesh</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-bunny_8cpp_source.html#l00052">dgtalCalculus-bunny.cpp:52</a></div></div>
 <div class="ttc" id="astructDGtal_1_1SurfaceMesh_html_a588ded45e821d2e139b23e8b6cbbe45c"><div class="ttname"><a href="structDGtal_1_1SurfaceMesh.html#a588ded45e821d2e139b23e8b6cbbe45c">DGtal::SurfaceMesh::positions</a></div><div class="ttdeci">const std::vector&lt; RealPoint &gt; &amp; positions() const</div><div class="ttdef"><b>Definition:</b> <a href="SurfaceMesh_8h_source.html#l00641">SurfaceMesh.h:641</a></div></div>
 </div><!-- fragment --> 
 </div>
@@ -1007,7 +1008,7 @@ template&lt;typename RealPointIterator , typename VerticesIterator &gt; </div>
 </dl>
 <p>A typical construction usage is </p><div class="fragment"><div class="line">std::vector&lt; RealPoint &gt; <a class="code" href="structDGtal_1_1SurfaceMesh.html#a588ded45e821d2e139b23e8b6cbbe45c">positions</a> = { { 0, 0, 5 }, { 1, 1, 3 }, { -1, 1, 3 }, { -1, -1, 3 }, { 1, -1, 3 } };</div>
 <div class="line">std::vector&lt; Vertices  &gt; faces = { { 0, 1, 2 }, { 0, 2, 3 }, { 0, 3, 4 }, { 0, 4, 1 }, { 4, 3, 2, 1 } };</div>
-<div class="line"><span class="keyword">auto</span> pyramid_mesh = SurfMesh( <a class="code" href="structDGtal_1_1SurfaceMesh.html#a588ded45e821d2e139b23e8b6cbbe45c">positions</a>.cbegin(), <a class="code" href="structDGtal_1_1SurfaceMesh.html#a588ded45e821d2e139b23e8b6cbbe45c">positions</a>.cend(), faces.cbegin(), faces.cend() );</div>
+<div class="line"><span class="keyword">auto</span> pyramid_mesh = <a class="code" href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a>( <a class="code" href="structDGtal_1_1SurfaceMesh.html#a588ded45e821d2e139b23e8b6cbbe45c">positions</a>.cbegin(), <a class="code" href="structDGtal_1_1SurfaceMesh.html#a588ded45e821d2e139b23e8b6cbbe45c">positions</a>.cend(), faces.cbegin(), faces.cend() );</div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -1917,7 +1918,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the edges that lie on the boundary of the mesh, i.e. they have only one incident face. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="SurfaceMesh_8h_source.html#l00483">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::computeManifoldBoundaryChains()</a>, <a class="el" href="SurfaceMesh_8h_source.html#l00456">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::isBoundariesManifold()</a>, <a class="el" href="testConvexityHelper_8cpp_source.html#l00181">SCENARIO()</a>, and <a class="el" href="testPolygonalCalculus_8cpp_source.html#l00280">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dgtalCalculus-poisson_8cpp_source.html#l00058">computeLaplace()</a>, <a class="el" href="SurfaceMesh_8h_source.html#l00483">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::computeManifoldBoundaryChains()</a>, <a class="el" href="SurfaceMesh_8h_source.html#l00456">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::isBoundariesManifold()</a>, <a class="el" href="testConvexityHelper_8cpp_source.html#l00181">SCENARIO()</a>, and <a class="el" href="testPolygonalCalculus_8cpp_source.html#l00280">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -2021,7 +2022,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the edges that are non manifold, i.e. neither boundary or inner edges: they may have more than two incident faces, or two left incident faces for instance. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="testConvexityHelper_8cpp_source.html#l00181">SCENARIO()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dgtalCalculus-bunny_8cpp_source.html#l00224">main()</a>, and <a class="el" href="testConvexityHelper_8cpp_source.html#l00181">SCENARIO()</a>.</p>
 
 </div>
 </div>
@@ -2061,7 +2062,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Uses the normals associated with faces to compute a normal vector to each vertex of the mesh. It uses the weights proposed by <a class="el" href="citelist.html#CITEREF_max1999weights">[85]</a> for combining face information into vertex information. </p>
+<p>Uses the normals associated with faces to compute a normal vector to each vertex of the mesh. It uses the weights proposed by <a class="el" href="citelist.html#CITEREF_max1999weights">[86]</a> for combining face information into vertex information. </p>
 
 </div>
 </div>
@@ -2459,7 +2460,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="SurfaceMesh_8h_source.html#l00981">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::myEdgeVertices</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SurfaceMesh_8h_source.html#l00483">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::computeManifoldBoundaryChains()</a>, <a class="el" href="SurfaceMesh_8h_source.html#l00456">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::isBoundariesManifold()</a>, and <a class="el" href="testPolygonalCalculus_8cpp_source.html#l00280">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dgtalCalculus-poisson_8cpp_source.html#l00058">computeLaplace()</a>, <a class="el" href="SurfaceMesh_8h_source.html#l00483">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::computeManifoldBoundaryChains()</a>, <a class="el" href="SurfaceMesh_8h_source.html#l00456">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::isBoundariesManifold()</a>, and <a class="el" href="testPolygonalCalculus_8cpp_source.html#l00280">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -2586,6 +2587,8 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the centroid (or barycenter) of face <em>f</em>. </dd></dl>
 
+<p class="reference">Referenced by <a class="el" href="dgtalCalculus-halfsphere_8cpp_source.html#l00071">precompute()</a>.</p>
+
 </div>
 </div>
 <a id="aa5638c6a5e2d42c160c0e07b50fd460c"></a>
@@ -2673,6 +2676,8 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 <div class="ttc" id="astructDGtal_1_1SurfaceMesh_html_ae05f830c68a02278be71c7922daabbaf"><div class="ttname"><a href="structDGtal_1_1SurfaceMesh.html#ae05f830c68a02278be71c7922daabbaf">DGtal::SurfaceMesh::myFaceNormals</a></div><div class="ttdeci">std::vector&lt; RealVector &gt; myFaceNormals</div><div class="ttdoc">For each face, its normal vector.</div><div class="ttdef"><b>Definition:</b> <a href="SurfaceMesh_8h_source.html#l00975">SurfaceMesh.h:975</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="SurfaceMesh_8h_source.html#l00975">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::myFaceNormals</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dgtalCalculus-halfsphere_8cpp_source.html#l00071">precompute()</a>.</p>
 
 </div>
 </div>
@@ -2863,7 +2868,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the Max's weights for each incident face to <em>v</em>, in the same order as <code>myIncidentFaces[ v ]</code>. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Used in computeVertexNormalsFromFaceNormalsWithMaxWeights, see <a class="el" href="citelist.html#CITEREF_max1999weights">[85]</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Used in computeVertexNormalsFromFaceNormalsWithMaxWeights, see <a class="el" href="citelist.html#CITEREF_max1999weights">[86]</a> </dd></dl>
 
 </div>
 </div>
@@ -2905,7 +2910,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="SurfaceMesh_8h_source.html#l00969">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::myIncidentFaces</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="PolygonalCalculus_8h_source.html#l01149">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::computeVertexNormal()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00902">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::doubledGlobalLumpedMassMatrix()</a>, and <a class="el" href="PolygonalCalculus_8h_source.html#l00824">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalLumpedMassMatrix()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PolygonalCalculus_8h_source.html#l01207">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::computeVertexNormal()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00960">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::doubledGlobalLumpedMassMatrix()</a>, and <a class="el" href="PolygonalCalculus_8h_source.html#l00882">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalLumpedMassMatrix()</a>.</p>
 
 </div>
 </div>
@@ -2947,7 +2952,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="SurfaceMesh_8h_source.html#l00967">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::myIncidentVertices</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="PolygonalCalculus_8h_source.html#l00870">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalConnectionLaplace()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00797">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalLaplaceBeltrami()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00655">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::shapeOperator()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00586">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::Tf()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00676">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::transportAndFormatVectorField()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l01071">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::updateFaceDegree()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00316">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::vectorArea()</a>, and <a class="el" href="PolygonalCalculus_8h_source.html#l00236">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::X()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PolygonalCalculus_8h_source.html#l00928">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalConnectionLaplace()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00855">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalLaplaceBeltrami()</a>, <a class="el" href="dgtalCalculus-bunny_8cpp_source.html#l00069">phi()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00713">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::shapeOperator()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00644">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::Tf()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00734">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::transportAndFormatVectorField()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l01129">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::updateFaceDegree()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00374">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::vectorArea()</a>, and <a class="el" href="PolygonalCalculus_8h_source.html#l00294">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::X()</a>.</p>
 
 </div>
 </div>
@@ -3011,7 +3016,7 @@ template&lt;typename RealPointIterator , typename VerticesIterator &gt; </div>
 </dl>
 <p>A typical construction usage is </p><div class="fragment"><div class="line">std::vector&lt; RealPoint &gt; <a class="code" href="structDGtal_1_1SurfaceMesh.html#a588ded45e821d2e139b23e8b6cbbe45c">positions</a> = { { 0, 0, 5 }, { 1, 1, 3 }, { -1, 1, 3 }, { -1, -1, 3 }, { 1, -1, 3 } };</div>
 <div class="line">std::vector&lt; Vertices  &gt; faces = { { 0, 1, 2 }, { 0, 2, 3 }, { 0, 3, 4 }, { 0, 4, 1 }, { 4, 3, 2, 1 } };</div>
-<div class="line">SurfMesh pyramid_mesh;</div>
+<div class="line"><a class="code" href="dgtalCalculus-bunny_8cpp.html#a0da7de0f9d769404c143f3d032eaa496">SurfMesh</a> pyramid_mesh;</div>
 <div class="line">pyramid_mesh.init( <a class="code" href="structDGtal_1_1SurfaceMesh.html#a588ded45e821d2e139b23e8b6cbbe45c">positions</a>.cbegin(), <a class="code" href="structDGtal_1_1SurfaceMesh.html#a588ded45e821d2e139b23e8b6cbbe45c">positions</a>.cend(), faces.cbegin(), faces.cend() );</div>
 </div><!-- fragment --> 
 <p class="reference">Referenced by <a class="el" href="fullConvexitySphereGeodesics_8cpp_source.html#l00158">main()</a>.</p>
@@ -3261,7 +3266,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="SurfaceMesh_8h_source.html#l00967">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::myIncidentVertices</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="SurfaceMesh_8h_source.html#l00302">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::Euler()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00941">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::getOperatorCacheMatrix()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00965">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::getOperatorCacheVector()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00870">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalConnectionLaplace()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00797">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalLaplaceBeltrami()</a>, <a class="el" href="digitalPolyhedronBuilder3D_8cpp_source.html#l00086">main()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l01017">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::nbFaces()</a>, <a class="el" href="fullConvexitySphereGeodesics_8cpp_source.html#l00120">saveToObj()</a>, <a class="el" href="testConvexityHelper_8cpp_source.html#l00181">SCENARIO()</a>, <a class="el" href="testPolygonalCalculus_8cpp_source.html#l00280">TEST_CASE()</a>, and <a class="el" href="PolygonalCalculus_8h_source.html#l01071">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::updateFaceDegree()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SurfaceMesh_8h_source.html#l00302">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::Euler()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00999">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::getOperatorCacheMatrix()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l01023">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::getOperatorCacheVector()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00928">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalConnectionLaplace()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00855">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalLaplaceBeltrami()</a>, <a class="el" href="dgtalCalculus-bunny_8cpp_source.html#l00091">initQuantities()</a>, <a class="el" href="dgtalCalculus-bunny_8cpp_source.html#l00129">initQuantitiesCached()</a>, <a class="el" href="digitalPolyhedronBuilder3D_8cpp_source.html#l00086">main()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l01075">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::nbFaces()</a>, <a class="el" href="fullConvexitySphereGeodesics_8cpp_source.html#l00120">saveToObj()</a>, <a class="el" href="testConvexityHelper_8cpp_source.html#l00181">SCENARIO()</a>, and <a class="el" href="PolygonalCalculus_8h_source.html#l01129">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::updateFaceDegree()</a>.</p>
 
 </div>
 </div>
@@ -3296,7 +3301,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="SurfaceMesh_8h_source.html#l00969">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::myIncidentFaces</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="PolygonalCalculus_8h_source.html#l00902">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::doubledGlobalLumpedMassMatrix()</a>, <a class="el" href="SurfaceMesh_8h_source.html#l00630">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::end()</a>, <a class="el" href="SurfaceMesh_8h_source.html#l00302">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::Euler()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00870">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalConnectionLaplace()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00797">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalLaplaceBeltrami()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00824">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalLumpedMassMatrix()</a>, <a class="el" href="digitalPolyhedronBuilder3D_8cpp_source.html#l00086">main()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l01011">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::nbVertices()</a>, <a class="el" href="testConvexityHelper_8cpp_source.html#l00181">SCENARIO()</a>, <a class="el" href="SurfaceMesh_8h_source.html#l00560">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::size()</a>, <a class="el" href="testPolygonalCalculus_8cpp_source.html#l00280">TEST_CASE()</a>, and <a class="el" href="PolygonalCalculus_8h_source.html#l00620">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::toExtrinsicVectors()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dgtalCalculus-geodesic_8cpp_source.html#l00128">addSource()</a>, <a class="el" href="dgtalCalculus-bunny_8cpp_source.html#l00167">computeLaplace()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00960">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::doubledGlobalLumpedMassMatrix()</a>, <a class="el" href="SurfaceMesh_8h_source.html#l00630">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::end()</a>, <a class="el" href="SurfaceMesh_8h_source.html#l00302">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::Euler()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00928">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalConnectionLaplace()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00855">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalLaplaceBeltrami()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00882">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::globalLumpedMassMatrix()</a>, <a class="el" href="dgtalCalculus-bunny_8cpp_source.html#l00083">initPhi()</a>, <a class="el" href="digitalPolyhedronBuilder3D_8cpp_source.html#l00086">main()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l01069">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::nbVertices()</a>, <a class="el" href="testConvexityHelper_8cpp_source.html#l00181">SCENARIO()</a>, <a class="el" href="SurfaceMesh_8h_source.html#l00560">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::size()</a>, <a class="el" href="testPolygonalCalculus_8cpp_source.html#l00280">TEST_CASE()</a>, and <a class="el" href="PolygonalCalculus_8h_source.html#l00678">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::toExtrinsicVectors()</a>.</p>
 
 </div>
 </div>
@@ -3378,7 +3383,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="SurfaceMesh_8h_source.html#l00979">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::myNeighborVertices</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="PolygonalCalculus_8h_source.html#l00566">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::Tv()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="PolygonalCalculus_8h_source.html#l00624">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::Tv()</a>.</p>
 
 </div>
 </div>
@@ -3536,7 +3541,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="SurfaceMesh_8h_source.html#l00971">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;::myPositions</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="digitalPolyhedronBuilder3D_8cpp_source.html#l00086">main()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00116">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::PolygonalCalculus()</a>, <a class="el" href="testPolygonalCalculus_8cpp_source.html#l00280">TEST_CASE()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00586">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::Tf()</a>, and <a class="el" href="PolygonalCalculus_8h_source.html#l00566">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::Tv()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="dgtalCalculus-poisson_8cpp_source.html#l00058">computeLaplace()</a>, <a class="el" href="digitalPolyhedronBuilder3D_8cpp_source.html#l00086">main()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00089">DGtal::functors::EmbedderFromNormalVectors&lt; TRealPoint, TRealVector &gt;::operator()()</a>, <a class="el" href="dgtalCalculus-bunny_8cpp_source.html#l00063">phiVertex()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00174">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::PolygonalCalculus()</a>, <a class="el" href="dgtalCalculus-halfsphere_8cpp_source.html#l00071">precompute()</a>, <a class="el" href="testPolygonalCalculus_8cpp_source.html#l00280">TEST_CASE()</a>, <a class="el" href="PolygonalCalculus_8h_source.html#l00644">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::Tf()</a>, and <a class="el" href="PolygonalCalculus_8h_source.html#l00624">DGtal::PolygonalCalculus&lt; TRealPoint, TRealVector &gt;::Tv()</a>.</p>
 
 </div>
 </div>
@@ -3836,6 +3841,8 @@ template&lt;typename RealVectorIterator &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Given a range of real vectors, sets the normals of every face to the given vectors. </p>
+
+<p class="reference">Referenced by <a class="el" href="dgtalCalculus-halfsphere_8cpp_source.html#l00154">main()</a>.</p>
 
 </div>
 </div>
@@ -4622,7 +4629,7 @@ template&lt;typename TRealPoint , typename TRealVector &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="structDGtal_1_1SurfaceMesh.html">SurfaceMesh</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:11 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:29 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

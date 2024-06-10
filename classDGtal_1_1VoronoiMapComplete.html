@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -248,7 +248,7 @@ class DGtal::VoronoiMapComplete&lt; TSpace, TPointPredicate, TSeparableMetric, T
 
 <p>Aim: Implementation of the linear in time Voronoi map construction. </p>
 <p>Description of template class '<a class="el" href="classDGtal_1_1VoronoiMapComplete.html" title="Aim: Implementation of the linear in time Voronoi map construction.">VoronoiMapComplete</a>' </p>
-<p>The algorithm uses a seperable process to construct Voronoi maps which has been described in <a class="el" href="citelist.html#CITEREF_Maurer2003PAMI">[84]</a> <a class="el" href="citelist.html#CITEREF_dcoeurjo_these">[32]</a>. Along periodic dimensions, the algorithm is adapted following <a class="el" href="citelist.html#CITEREF_Coeurjo2008">[33]</a>, and uses the co-cyclic site approach from <a class="el" href="citelist.html#CITEREF_Couprie2007">[39]</a>.</p>
+<p>The algorithm uses a seperable process to construct Voronoi maps which has been described in <a class="el" href="citelist.html#CITEREF_Maurer2003PAMI">[85]</a> <a class="el" href="citelist.html#CITEREF_dcoeurjo_these">[33]</a>. Along periodic dimensions, the algorithm is adapted following <a class="el" href="citelist.html#CITEREF_Coeurjo2008">[34]</a>, and uses the co-cyclic site approach from <a class="el" href="citelist.html#CITEREF_Couprie2007">[40]</a>.</p>
 <p>Given a domain and a point predicate, an instance returns, for each point in the domain, the collection of closest points for which the predicate is false. Following Computational Geometry terminology, points for which the predicate is false are "sites" for the Voronoi map construction.</p>
 <p>If a point is equi-distant to several sites, all sites will be attached to that point (contrary to the class <a class="el" href="classDGtal_1_1VoronoiMap.html" title="Aim: Implementation of the linear in time Voronoi map construction.">VoronoiMap</a> that will only keep one of them). This implies a computational overhead:</p><ul>
 <li>if \( f \) is the max number of co-cyclic points per grid point, we have an extra \( O(f log f) \) factor to the computational cost (cf below), plus the cost of insertion/removal in the container (O(log f) with std::set).</li>
@@ -1663,7 +1663,7 @@ template&lt;typename TSpace , typename TPointPredicate , typename TSeparableMetr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1VoronoiMapComplete.html">VoronoiMapComplete</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:09 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:27 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

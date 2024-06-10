@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('moduleVCM.html',''); initResizable(); 
 </div>
 <div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: </dt><dd>Jacques-Olivier Lachaud</dd></dl>
 <p>Part of the <a class="el" href="packageGeometry.html">Geometry package</a>.</p>
-<p>This part of the manual describes classes and functions related to the Voronoi Covariance <a class="el" href="classDGtal_1_1Measure.html" title="Aim: Implements a simple measure computation (in the Lesbegue sens) of a set. In dimension 2,...">Measure</a> (VCM) of a set of points in arbitrary dimension. The VCM is a covariance tensor related to a distance function to the input data points. It was introduced by Mérigot, Ovsjanikov and Guibas <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[89]</a>. The digital version of the VCM was studied by Cuel, Lachaud, and Thibert <a class="el" href="citelist.html#CITEREF_Cuel_2014-dgci">[41]</a>. Stability and multigrid convergence results have been established. This documentation presents the implementation of the digital VCM. The VCM is useful for the following tasks:</p>
+<p>This part of the manual describes classes and functions related to the Voronoi Covariance <a class="el" href="classDGtal_1_1Measure.html" title="Aim: Implements a simple measure computation (in the Lesbegue sens) of a set. In dimension 2,...">Measure</a> (VCM) of a set of points in arbitrary dimension. The VCM is a covariance tensor related to a distance function to the input data points. It was introduced by Mérigot, Ovsjanikov and Guibas <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[90]</a>. The digital version of the VCM was studied by Cuel, Lachaud, and Thibert <a class="el" href="citelist.html#CITEREF_Cuel_2014-dgci">[42]</a>. Stability and multigrid convergence results have been established. This documentation presents the implementation of the digital VCM. The VCM is useful for the following tasks:</p>
 <ul>
 <li><b>normal</b> <b>cone</b> <b>estimation:</b> Given a set of digital points approximating a surface, the VCM estimates robustly the normal vector to this underlying surface.</li>
 <li><b>geometry</b> <b>estimation:</b> Given a digital surface approximating some surface, the VCM can estimate robustly the oriented normal vector and the principal directions of the underlying surface.</li>
@@ -114,15 +114,15 @@ $(document).ready(function(){initNavTree('moduleVCM.html',''); initResizable(); 
 <p>Related examples are <a class="el" href="dvcm-2d_8cpp_source.html">geometry/volumes/dvcm-2d.cpp</a>, <a class="el" href="dvcm-3d_8cpp_source.html">geometry/surfaces/dvcm-3d.cpp</a>, <a class="el" href="dvcm-2d-curvature_8cpp_source.html">geometry/surfaces/dvcm-2d-curvature.cpp</a>.</p>
 <h1><a class="anchor" id="moduleVCM_sec1"></a>
 Voronoi Covariance Measure</h1>
-<p>The <em>Voronoi</em> <em>covariance</em> <em>measure</em> (VCM) has been introduced in <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[89]</a> for normals and curvature estimations. Let <em>K</em> be a compact subset of \(\mathbb{R}^3\) and \(d_K\) the <em>distance</em> <em>function</em> to <em>K</em>, i.e. the map \( d_K(x) := \min_{p\in K} \|p-x\| \). A point <em>p</em> where the previous minimum is reached is called a <em>projection</em> of <em>x</em> on <em>K</em>. Almost every point admits a single projection on <em>K</em>, thus definining a map \( p_K: \mathbb{R}^3 \to K \) almost everywhere. The <em>R-<em>offset</em> of</em> <em>K</em> is the <em>R-sublevel</em> set of \( d_K\), i.e. the set \(K^R:=d_K^{-1}(]-\infty, R[)\). The VCM maps any integrable function \(\chi:\mathbb{R}^3 \to \mathbb{R}^+\) to the matrix </p><p class="formulaDsp">
+<p>The <em>Voronoi</em> <em>covariance</em> <em>measure</em> (VCM) has been introduced in <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[90]</a> for normals and curvature estimations. Let <em>K</em> be a compact subset of \(\mathbb{R}^3\) and \(d_K\) the <em>distance</em> <em>function</em> to <em>K</em>, i.e. the map \( d_K(x) := \min_{p\in K} \|p-x\| \). A point <em>p</em> where the previous minimum is reached is called a <em>projection</em> of <em>x</em> on <em>K</em>. Almost every point admits a single projection on <em>K</em>, thus definining a map \( p_K: \mathbb{R}^3 \to K \) almost everywhere. The <em>R-<em>offset</em> of</em> <em>K</em> is the <em>R-sublevel</em> set of \( d_K\), i.e. the set \(K^R:=d_K^{-1}(]-\infty, R[)\). The VCM maps any integrable function \(\chi:\mathbb{R}^3 \to \mathbb{R}^+\) to the matrix </p><p class="formulaDsp">
 \[ \mathcal{V}_{K,R}(\chi) := \int_{K^R}(x-p_K(x))(x-p_K(x))^{\mathbf{t}} \chi(p_K(x)) d x. \]
 </p>
 <div class="image">
 <img src="vcm.png" alt=""/>
 <div class="caption">
 Voronoi Covariance Measure of a point set in the plane.</div></div>
- <dl class="section note"><dt>Note</dt><dd>The stability result of <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[89]</a> implies that information extracted from the covariance matrix such as normals or principal directions are <b>stable</b> with respect to <b>Hausdorff</b> <b>perturbation</b>.</dd></dl>
-<dl class="section user"><dt>Advanced: </dt><dd>Remark that this definition matches the definition introduced in <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[89]</a> : when \(\chi\) is the characteristic function of a ball, one recovers a notion similar to the convolved VCM.</dd></dl>
+ <dl class="section note"><dt>Note</dt><dd>The stability result of <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[90]</a> implies that information extracted from the covariance matrix such as normals or principal directions are <b>stable</b> with respect to <b>Hausdorff</b> <b>perturbation</b>.</dd></dl>
+<dl class="section user"><dt>Advanced: </dt><dd>Remark that this definition matches the definition introduced in <a class="el" href="citelist.html#CITEREF_Merigot_2011-tvcg">[90]</a> : when \(\chi\) is the characteristic function of a ball, one recovers a notion similar to the convolved VCM.</dd></dl>
 <h1><a class="anchor" id="moduleVCM_sec2"></a>
 Computing the Voronoi Covariance Measure of a point set</h1>
 <p>Let <em>K</em> be some point set. In this case, the computation of the VCM can be split into isolated calculations in each Voronoi cell of <em>K</em>. In the digital setting, the Voronoi cells can be efficiently computed by repeated scans of the domain (see <a class="el" href="moduleVolumetric.html">nD Volumetric Analysis using Separable Processes</a>). That's exactly how is computed the VCM. The computational complexity of the VCM is thus the computational complexity of the Voronoi map in nD. The templated class <a class="el" href="classDGtal_1_1VoronoiCovarianceMeasure.html" title="Aim: This class precomputes the Voronoi Covariance Measure of a set of points. It can compute the cov...">VoronoiCovarianceMeasure</a> is the one taking of the computation. It requires two type parameters:</p>
@@ -190,8 +190,9 @@ The class VoronoiCovarianceMeasureOnDigitalSurface</h2>
 </div><!-- fragment --><div class="fragment"><div class="line">  <a class="code" href="namespaceDGtal.html#aaad242ffef715835e8928579a506b2d5">Surfel2PointEmbedding</a> embType = <a class="code" href="namespaceDGtal.html#aaad242ffef715835e8928579a506b2d5ac0a8bc5774ff6530ee71a7cacd6ca6f4">Pointels</a>; <span class="comment">// Could be Pointels|InnerSpel|OuterSpel;</span></div>
 <div class="line">  Metric l2;                                <span class="comment">// Euclidean L2 metric</span></div>
 <div class="line">  KernelFunction chi( 1.0, r );             <span class="comment">// hat function with support of radius r</span></div>
-<div class="line">  VCMOnSurface vcm_surface( surface, embType, R, r,</div>
+<div class="line">  VCMOnSurface vcm_surface( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, embType, R, r,</div>
 <div class="line">                            chi, trivial_r, l2, <span class="keyword">true</span> <span class="comment">/* verbose */</span> );</div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html_aaad242ffef715835e8928579a506b2d5"><div class="ttname"><a href="namespaceDGtal.html#aaad242ffef715835e8928579a506b2d5">DGtal::Surfel2PointEmbedding</a></div><div class="ttdeci">Surfel2PointEmbedding</div><div class="ttdoc">Possible embeddings for surfel as point(s)</div><div class="ttdef"><b>Definition:</b> <a href="VoronoiCovarianceMeasureOnDigitalSurface_8h_source.html#l00058">VoronoiCovarianceMeasureOnDigitalSurface.h:58</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html_aaad242ffef715835e8928579a506b2d5ac0a8bc5774ff6530ee71a7cacd6ca6f4"><div class="ttname"><a href="namespaceDGtal.html#aaad242ffef715835e8928579a506b2d5ac0a8bc5774ff6530ee71a7cacd6ca6f4">DGtal::Pointels</a></div><div class="ttdeci">@ Pointels</div><div class="ttdef"><b>Definition:</b> <a href="VoronoiCovarianceMeasureOnDigitalSurface_8h_source.html#l00058">VoronoiCovarianceMeasureOnDigitalSurface.h:58</a></div></div>
 </div><!-- fragment --><p> The whole VCM computation is done in the constructor. Once this is done, you may access to the whole VCM tensor information with the methods:</p>
@@ -254,7 +255,7 @@ Absolute curvature estimation with Voronoi Covariance Measure.</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:04 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

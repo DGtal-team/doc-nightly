@@ -20,6 +20,7 @@ var structDGtal_1_1ConvexityHelper =
     [ "BOOST_CONCEPT_ASSERT", "structDGtal_1_1ConvexityHelper.html#a3c0458667843659bb49f161d162ce9c1", null ],
     [ "BOOST_CONCEPT_ASSERT", "structDGtal_1_1ConvexityHelper.html#aceb5b57048ca82b32ec1cd818d65f65c", null ],
     [ "BOOST_STATIC_ASSERT", "structDGtal_1_1ConvexityHelper.html#a2fe85eb80b944c815453c928e90122d1", null ],
+    [ "compute3DTriangle", "structDGtal_1_1ConvexityHelper.html#acf0712e736c29abed972506333b048ba", null ],
     [ "computeConvexHullBoundary", "structDGtal_1_1ConvexityHelper.html#aa24dbd82ee2d96fd42e44dde11f71ea8", null ],
     [ "computeConvexHullBoundary", "structDGtal_1_1ConvexityHelper.html#a242379823d41a6a2514ee696e00785d1", null ],
     [ "computeConvexHullBoundary", "structDGtal_1_1ConvexityHelper.html#aebe6bd050526a9d387cb5db806f3f355", null ],
@@ -29,11 +30,13 @@ var structDGtal_1_1ConvexityHelper =
     [ "computeConvexHullVertices", "structDGtal_1_1ConvexityHelper.html#a04169b86b5cbe5cacce6537040f428ac", null ],
     [ "computeDegeneratedConvexHullVertices", "structDGtal_1_1ConvexityHelper.html#a2e72ce3d62b44089e2e22152e4d3bf0d", null ],
     [ "computeDegeneratedLatticePolytope", "structDGtal_1_1ConvexityHelper.html#a87114a82134eb84357435e3a18fe4bb1", null ],
+    [ "computeDegeneratedTriangle", "structDGtal_1_1ConvexityHelper.html#a6993e5f812474cafa35e030dd288de9c", null ],
     [ "computeDelaunayCellComplex", "structDGtal_1_1ConvexityHelper.html#a19314769e3ba486f8751bbdce97d3a5c", null ],
     [ "computeDelaunayCellComplex", "structDGtal_1_1ConvexityHelper.html#a1f766bc6da6bc3a783d673255d311cd1", null ],
     [ "computeFacetAndRidgeVertices", "structDGtal_1_1ConvexityHelper.html#a1dcc1a6135fa3dd99a3856314ad839dd", null ],
     [ "computeLatticePolytope", "structDGtal_1_1ConvexityHelper.html#af88821410e5a9327537ee884249d7034", null ],
     [ "computeRationalPolytope", "structDGtal_1_1ConvexityHelper.html#a7379862326baa896c4ea93a05f8147bd", null ],
+    [ "computeSegment", "structDGtal_1_1ConvexityHelper.html#a631da3c93606979b8f651fb27da991a1", null ],
     [ "computeSimplex", "structDGtal_1_1ConvexityHelper.html#a299c2da4588ed410b579774d6105fd3c", null ],
     [ "dimension", "structDGtal_1_1ConvexityHelper.html#a556209b9719d1be518d335b6821bf549", null ]
 ];

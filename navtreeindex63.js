@@ -1,13 +1,18 @@
 var NAVTREEINDEX63 =
 {
+"structDGtal_1_1CameraPosition.html#a8d0e0b0130e9a88fe4814ba404d468fd":[6,0,2,393,4],
+"structDGtal_1_1CameraPosition.html#a90673da75efad1797a085dec4cb5d7bd":[6,0,2,393,2],
+"structDGtal_1_1CameraUpVector.html":[6,0,2,395],
+"structDGtal_1_1CameraUpVector.html#a100ac7548ecccbbb44ca640a331d9bb5":[6,0,2,395,4],
+"structDGtal_1_1CameraUpVector.html#aa2945f21822eb0bda17278908acf91a4":[6,0,2,395,2],
 "structDGtal_1_1CameraUpVector.html#af9da32a35d7ad6cd48c064f7554ff629":[6,0,2,395,3],
 "structDGtal_1_1CameraUpVector.html#afcb2f64a0eae62fcdab0b0bb1909cabd":[6,0,2,395,1],
 "structDGtal_1_1CameraUpVector.html#afcb2f64a0eae62fcdab0b0bb1909cabd":[6,0,2,395,0],
 "structDGtal_1_1CameraZNearFar.html":[6,0,2,396],
 "structDGtal_1_1CameraZNearFar.html#a55aba9e68bbdbdee51538b8d6f5882cb":[6,0,2,396,2],
 "structDGtal_1_1CameraZNearFar.html#ac064d965377de0c9f8b0457e330c1165":[6,0,2,396,3],
-"structDGtal_1_1CameraZNearFar.html#aeeef0aa646c4ee90f07f1c105ed2a4c5":[6,0,2,396,1],
 "structDGtal_1_1CameraZNearFar.html#aeeef0aa646c4ee90f07f1c105ed2a4c5":[6,0,2,396,0],
+"structDGtal_1_1CameraZNearFar.html#aeeef0aa646c4ee90f07f1c105ed2a4c5":[6,0,2,396,1],
 "structDGtal_1_1CanonicCellEmbedder.html":[6,0,2,594],
 "structDGtal_1_1CanonicCellEmbedder.html#a02ee9de8f5d83792c4404e19dce2c482":[6,0,2,594,10],
 "structDGtal_1_1CanonicCellEmbedder.html#a0861981c477b84b5fbfb6d03c2af7f14":[6,0,2,594,19],
@@ -244,10 +249,5 @@ var NAVTREEINDEX63 =
 "structDGtal_1_1ContainerTraits_3_01std_1_1multimap_3_01Key_00_01T_00_01Compare_00_01Alloc_01_4_01_4.html#adcdda241ef4afd56e9f58e1f149f8ba7":[6,0,2,68,0],
 "structDGtal_1_1ContainerTraits_3_01std_1_1multiset_3_01T_00_01Compare_00_01Alloc_01_4_01_4.html":[6,0,2,67],
 "structDGtal_1_1ContainerTraits_3_01std_1_1multiset_3_01T_00_01Compare_00_01Alloc_01_4_01_4.html#ad9bc17ef697d610845c97eb6fd297803":[6,0,2,67,0],
-"structDGtal_1_1ContainerTraits_3_01std_1_1set_3_01T_00_01Compare_00_01Alloc_01_4_01_4.html":[6,0,2,65],
-"structDGtal_1_1ContainerTraits_3_01std_1_1set_3_01T_00_01Compare_00_01Alloc_01_4_01_4.html#a570a9415ad10946c62de6d6f4d5cd017":[6,0,2,65,0],
-"structDGtal_1_1ContainerTraits_3_01std_1_1unordered__map_3_01Key_00_01T_00_01Hash_00_01Pred_00_01Alloc_01_4_01_4.html":[6,0,2,75],
-"structDGtal_1_1ContainerTraits_3_01std_1_1unordered__map_3_01Key_00_01T_00_01Hash_00_01Pred_00_01Alloc_01_4_01_4.html#a07e27ff9fa5c0fb08a3b3dbf441ee3ce":[6,0,2,75,0],
-"structDGtal_1_1ContainerTraits_3_01std_1_1unordered__multimap_3_01Key_00_01T_00_01Hash_00_01Pred_00_01Alloc_01_4_01_4.html":[6,0,2,76],
-"structDGtal_1_1ContainerTraits_3_01std_1_1unordered__multimap_3_01Key_00_01T_00_01Hash_00_01Pred_00_01Alloc_01_4_01_4.html#adee1cc89451febd77e6f6c1070155b8b":[6,0,2,76,0]
+"structDGtal_1_1ContainerTraits_3_01std_1_1set_3_01T_00_01Compare_00_01Alloc_01_4_01_4.html":[6,0,2,65]
 };

@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -129,7 +129,11 @@ Introduction and first build</h1>
 <li><em>doxygen</em> &gt;= 1.8.0,</li>
 <li><em>graphviz</em>.</li>
 </ul>
-<dl class="section note"><dt>Note</dt><dd>Since 1.4, some dependencies could be installed using <a href="https://conan.io">conan.io</a>. Just install the conan binary (1.57) and cmake will install all libraries (which may take some time for the first build).</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Since 1.4, some dependencies could be installed using <a href="https://conan.io">conan.io</a>. Just install the conan 2 binary and cmake will install all libraries (which may take some time for the first build). For instance: <div class="fragment"><div class="line">conan profile detect --force ##Conan profile</div>
+<div class="line">cd build</div>
+<div class="line">conan install .. --build=missing</div>
+<div class="line">cmake .. -G <span class="stringliteral">&quot;Visual Studio 15 2017&quot;</span> -DCMAKE_TOOLCHAIN_FILE=<span class="stringliteral">&quot;conan_toolchain.cmake&quot;</span> -DCMAKE_POLICY_DEFAULT_CMP0091=NEW </div>
+</div><!-- fragment --></dd></dl>
 <h2><a class="anchor" id="linux"></a>
 Build on Linux-based distributions</h2>
 <p>To build <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> from the source archive, we use the CMake tool to generate a Makefile or a project file for various IDE (KDevelop, Xcode, Codeblock...). In most linux distributions, all mandatory and optional dependencies are available as packages (debian, ubuntu, ...). Please refer to your package manager to find the appropriate package name and versions.</p>
@@ -178,7 +182,7 @@ Build on Windows / Visual Studio</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageIntroduction.html">Preliminaries</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:03 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

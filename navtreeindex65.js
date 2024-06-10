@@ -1,5 +1,13 @@
 var NAVTREEINDEX65 =
 {
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#a7fd74d33ebf6b2f695e09e93cdba729c":[6,0,2,241,19],
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#a8102272f829cf6893c5e9e2a48289d44":[6,0,2,241,15],
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#a8527127abc074e5e9d149fd0255ffa10":[6,0,2,241,16],
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#a92c14693fd9af6773da15e3fe387353e":[6,0,2,241,25],
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#a9953caabf2dc5daeb4a1c02c5aca8d69":[6,0,2,241,23],
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#a9f6b26669d34be53fdf8b1543cfe455b":[6,0,2,241,20],
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#aa27dc4b67c83a944fcd627ec080c67dd":[6,0,2,241,28],
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#aabcf75ee8a19107f8165caa12c2f86f0":[6,0,2,241,12],
 "structDGtal_1_1CorrectedNormalCurrentFormula.html#aba952b2900d01d8e2770c8b789c9a31d":[6,0,2,241,13],
 "structDGtal_1_1CorrectedNormalCurrentFormula.html#abf990595e7622ba036c0f2ee6076ce3f":[6,0,2,241,5],
 "structDGtal_1_1CorrectedNormalCurrentFormula.html#ac4d25870aa203ffc91a9eef62cf4159c":[6,0,2,241,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX65 =
 "structDGtal_1_1Display2DFactory.html#a22bc78a987ac67e708111902eae1c698":[6,0,2,406,27],
 "structDGtal_1_1Display2DFactory.html#a23cc8c865a41f6cb7e7efbd980d55330":[6,0,2,406,15],
 "structDGtal_1_1Display2DFactory.html#a27009afadf67d36cd5476432d6254327":[6,0,2,406,50],
-"structDGtal_1_1Display2DFactory.html#a2888d20e57df2ac1d289d882f996a8d6":[6,0,2,406,24],
-"structDGtal_1_1Display2DFactory.html#a298dba7e30b298ca61b336e3f676b2af":[6,0,2,406,56],
-"structDGtal_1_1Display2DFactory.html#a33098483f5d34cab766e91c18274762f":[6,0,2,406,23],
-"structDGtal_1_1Display2DFactory.html#a37d1f06f4602d8cea9418ded60010085":[6,0,2,406,61],
-"structDGtal_1_1Display2DFactory.html#a3e2422c2d1bc28516aa5b092f9459fb6":[6,0,2,406,31],
-"structDGtal_1_1Display2DFactory.html#a3f6c40494bd925a93dd3b4f5732bd855":[6,0,2,406,29],
-"structDGtal_1_1Display2DFactory.html#a3ff2d8e5e17f6f90a61fec1c4ca39910":[6,0,2,406,17],
-"structDGtal_1_1Display2DFactory.html#a432d7e41b07229215562a4912a53c691":[6,0,2,406,37],
-"structDGtal_1_1Display2DFactory.html#a47bf6ad9847d8e6af5731c7f8777132e":[6,0,2,406,46]
+"structDGtal_1_1Display2DFactory.html#a2888d20e57df2ac1d289d882f996a8d6":[6,0,2,406,24]
 };

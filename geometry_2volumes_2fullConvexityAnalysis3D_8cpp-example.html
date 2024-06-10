@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2fullConvexityAnalys
 <pre class="fragment">fullConvexityAnalysis3D 2 ${DGTAL}/examples/samples/Al.100.vol
 </pre><p>Results are displayed, then saved in 'geom-cvx.obj'. You may also analyse the same shape in multiscale fashion with</p>
 <pre class="fragment">fullConvexityAnalysis3D 2 ${DGTAL}/examples/samples/Al.100.vol
-</pre><p>The result is saved in 'geom-scale-cvx.obj'. You will obtain images like below, where green means convex, blue means concave, white is planar and red is atypical (see <a class="el" href="citelist.html#CITEREF_lachaud_dgmm_2021">[76]</a> for details).</p>
+</pre><p>The result is saved in 'geom-scale-cvx.obj'. You will obtain images like below, where green means convex, blue means concave, white is planar and red is atypical (see <a class="el" href="citelist.html#CITEREF_lachaud_dgmm_2021">[77]</a> for details).</p>
 <table class="doxtable">
 <tr>
 <td><div class="image">
@@ -320,7 +320,7 @@ Full convexity smooth multiscale analysis (scales 1-5)</div></div>
 <div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;  [Done]&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">  <span class="comment">// Compute surface</span></div>
 <div class="line">  params( <span class="stringliteral">&quot;surfaceComponents&quot;</span> , <span class="stringliteral">&quot;All&quot;</span> );</div>
-<div class="line">  <span class="keyword">auto</span> surface = SH3::makeDigitalSurface( bimage, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">  <span class="keyword">auto</span> <a name="a7"></a><a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> = SH3::makeDigitalSurface( bimage, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Compute interior boundary points</span></div>
 <div class="line">  <span class="comment">// They are less immediate interior points than surfels.</span></div>
@@ -328,7 +328,7 @@ Full convexity smooth multiscale analysis (scales 1-5)</div></div>
 <div class="line">  std::map&lt; SCell, int &gt; surfel2idx;</div>
 <div class="line">  std::map&lt; Point, int &gt; point2idx;</div>
 <div class="line">  <span class="keywordtype">int</span> idx = 0;</div>
-<div class="line">  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> s : (*surface) )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> s : (*<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>) )</div>
 <div class="line">    {</div>
 <div class="line">      <span class="comment">// get inside point on the border of the shape.</span></div>
 <div class="line">      <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> k = <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.sOrthDir( s );</div>
@@ -349,31 +349,31 @@ Full convexity smooth multiscale analysis (scales 1-5)</div></div>
 <div class="line">  <span class="keywordflow">if</span> ( N != 0 )</div>
 <div class="line">    {</div>
 <div class="line">      std::vector&lt; int &gt; result;</div>
-<div class="line">      <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a7"></a><a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a> ( <span class="stringliteral">&quot;Single scale analysis&quot;</span> );</div>
+<div class="line">      <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a8"></a><a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a> ( <span class="stringliteral">&quot;Single scale analysis&quot;</span> );</div>
 <div class="line">      <span class="keywordflow">if</span> ( N == 1 ) result = Analyzer&lt; KSpace, 1 &gt;::run( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, points, bimage );</div>
 <div class="line">      <span class="keywordflow">if</span> ( N == 2 ) result = Analyzer&lt; KSpace, 2 &gt;::run( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, points, bimage );</div>
 <div class="line">      <span class="keywordflow">if</span> ( N == 3 ) result = Analyzer&lt; KSpace, 3 &gt;::run( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, points, bimage );</div>
 <div class="line">      <span class="keywordflow">if</span> ( N == 4 ) result = Analyzer&lt; KSpace, 4 &gt;::run( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, points, bimage );</div>
 <div class="line">      <span class="keywordflow">if</span> ( N == 5 ) result = Analyzer&lt; KSpace, 5 &gt;::run( <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, points, bimage );</div>
-<div class="line">      <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a8"></a><a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
+<div class="line">      <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a9"></a><a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line">      <a class="code" href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">SCell</a> dummy;</div>
 <div class="line">      Color colors[ 4 ] =</div>
 <div class="line">        { Color( 255, 0, 0, 255 ), Color( 0, 255, 0, 255 ),</div>
 <div class="line">          Color( 0, 0, 255, 255 ), Color( 255, 255, 255, 255 ) };</div>
-<div class="line">      <span class="keyword">auto</span> surfels   = SH3::getSurfelRange( surface, params );</div>
+<div class="line">      <span class="keyword">auto</span> surfels   = SH3::getSurfelRange( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params );</div>
 <div class="line">      SH3::Colors all_colors( surfels.size() );</div>
 <div class="line">      <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; surfels.size(); i++ )</div>
 <div class="line">        {</div>
 <div class="line">          <span class="keyword">const</span> <span class="keyword">auto</span>    j = surfel2idx[ surfels[ i ] ];</div>
 <div class="line">          all_colors[ i ] = colors[ result[ j ] ];</div>
 <div class="line">        }</div>
-<div class="line">      SH3::saveOBJ( surface, SH3::RealVectors(), all_colors, <span class="stringliteral">&quot;geom-cvx.obj&quot;</span> );</div>
+<div class="line">      SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, SH3::RealVectors(), all_colors, <span class="stringliteral">&quot;geom-cvx.obj&quot;</span> );</div>
 <div class="line">      Viewer3D&lt;&gt; viewer;</div>
 <div class="line">      viewer.setWindowTitle(<span class="stringliteral">&quot;fullConvexityAnalysis3D&quot;</span>);</div>
 <div class="line">      viewer.show();  </div>
 <div class="line">      <span class="keywordtype">int</span> i = 0;</div>
 <div class="line">      viewer &lt;&lt; SetMode3D( dummy.className(), <span class="stringliteral">&quot;Basic&quot;</span> );</div>
-<div class="line">      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> s : (*surface) )</div>
+<div class="line">      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> s : (*<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>) )</div>
 <div class="line">        {</div>
 <div class="line">          viewer &lt;&lt; CustomColors3D( all_colors[ i ], all_colors[ i ] )</div>
 <div class="line">                 &lt;&lt; s;</div>
@@ -402,12 +402,12 @@ Full convexity smooth multiscale analysis (scales 1-5)</div></div>
 <div class="line">        { Color( 0, 0, 255, 255 ), Color( 50, 50, 255, 255 ),</div>
 <div class="line">          Color( 100, 100, 255, 255 ), Color( 150, 150, 255, 255 ),</div>
 <div class="line">          Color( 200, 200, 255, 255 ) };</div>
-<div class="line">      <span class="keyword">auto</span> surfels   = SH3::getSurfelRange( surface, params );</div>
+<div class="line">      <span class="keyword">auto</span> surfels   = SH3::getSurfelRange( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params );</div>
 <div class="line">      SH3::Colors all_colors( surfels.size() );</div>
 <div class="line">      <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; surfels.size(); i++ ) {</div>
 <div class="line">        <span class="keyword">const</span> <span class="keyword">auto</span> j = surfel2idx[ surfels[ i ] ];</div>
 <div class="line">        <span class="keywordtype">int</span> m0 = std::min( geometry[ j ].first, geometry[ j ].second );</div>
-<div class="line">        <span class="keywordtype">int</span> m1 = <a name="a9"></a><a class="code" href="testArithmeticalDSS_8cpp.html#af082905f7eac6d03e92015146bbc1925">std::max</a>( geometry[ j ].first, geometry[ j ].second );</div>
+<div class="line">        <span class="keywordtype">int</span> m1 = <a name="a10"></a><a class="code" href="testArithmeticalDSS_8cpp.html#af082905f7eac6d03e92015146bbc1925">std::max</a>( geometry[ j ].first, geometry[ j ].second );</div>
 <div class="line">        <span class="keywordflow">if</span> ( m1 == 0 ) all_colors[ i ] = color_atypical;</div>
 <div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( m0 == m1 ) all_colors[ i ] = colors_planar[ 5 ];</div>
 <div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( geometry[ j ].first &gt; geometry[ j ].second )</div>
@@ -415,14 +415,14 @@ Full convexity smooth multiscale analysis (scales 1-5)</div></div>
 <div class="line">        <span class="keywordflow">else</span></div>
 <div class="line">          all_colors[ i ] = colors_ccv[ 5 - <a class="code" href="namespaceDGtal_1_1functions.html#af95dcf36f806f7fc15626ca6b1c27d22">abs</a>( m0 - m1 ) ];</div>
 <div class="line">      }</div>
-<div class="line">      SH3::saveOBJ( surface, SH3::RealVectors(), all_colors, <span class="stringliteral">&quot;geom-scale-cvx.obj&quot;</span> );</div>
+<div class="line">      SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, SH3::RealVectors(), all_colors, <span class="stringliteral">&quot;geom-scale-cvx.obj&quot;</span> );</div>
 <div class="line">      <a class="code" href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">SCell</a> dummy;</div>
 <div class="line">      <span class="keywordtype">int</span> i = 0;</div>
 <div class="line">      Viewer3D&lt;&gt; viewer;</div>
 <div class="line">      viewer.setWindowTitle(<span class="stringliteral">&quot;fullConvexityAnalysis3D&quot;</span>);</div>
 <div class="line">      viewer.show();  </div>
 <div class="line">      viewer &lt;&lt; SetMode3D( dummy.className(), <span class="stringliteral">&quot;Basic&quot;</span> );</div>
-<div class="line">      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> s : (*surface) )</div>
+<div class="line">      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> s : (*<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>) )</div>
 <div class="line">        {</div>
 <div class="line">          viewer &lt;&lt; CustomColors3D( all_colors[ i ], all_colors[ i ] )</div>
 <div class="line">                 &lt;&lt; s;</div>
@@ -439,6 +439,7 @@ Full convexity smooth multiscale analysis (scales 1-5)</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad8efd553b31277903be115e7aa256f74"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad8efd553b31277903be115e7aa256f74">DGtal::Trace::progressBar</a></div><div class="ttdeci">void progressBar(const double currentValue, const double maximalValue)</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
 <div class="ttc" id="adigitalPolyhedronBuilder3D_8cpp_html_a6c4dc4f5610ba8c9b7ee6e83ecea8d24"><div class="ttname"><a href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">SCell</a></div><div class="ttdeci">Z3i::SCell SCell</div><div class="ttdef"><b>Definition:</b> <a href="digitalPolyhedronBuilder3D_8cpp_source.html#l00079">digitalPolyhedronBuilder3D.cpp:79</a></div></div>
 <div class="ttc" id="afullConvexityThinning3D_8cpp_html_ae3da7f498b2ab1db86d633cb277cb6bd"><div class="ttname"><a href="fullConvexityThinning3D_8cpp.html#ae3da7f498b2ab1db86d633cb277cb6bd">NCA</a></div><div class="ttdeci">NeighborhoodConvexityAnalyzer&lt; KSpace, 1 &gt; NCA</div><div class="ttdef"><b>Definition:</b> <a href="fullConvexityThinning3D_8cpp_source.html#l00060">fullConvexityThinning3D.cpp:60</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1functions_html_af95dcf36f806f7fc15626ca6b1c27d22"><div class="ttname"><a href="namespaceDGtal_1_1functions.html#af95dcf36f806f7fc15626ca6b1c27d22">DGtal::functions::abs</a></div><div class="ttdeci">T abs(const T &amp;a)</div><div class="ttdef"><b>Definition:</b> <a href="BasicMathFunctions_8h_source.html#l00116">BasicMathFunctions.h:116</a></div></div>
@@ -456,7 +457,7 @@ Full convexity smooth multiscale analysis (scales 1-5)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 8 2024 20:20:35 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:02:53 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

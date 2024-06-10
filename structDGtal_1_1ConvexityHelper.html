@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -170,6 +170,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a87114a82134eb84357435e3a18fe4bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e72ce3d62b44089e2e22152e4d3bf0d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDGtal_1_1ConvexityHelper.html#afc3a1ef390f6664bdf70bc1c52f32a62">PointRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ConvexityHelper.html#a2e72ce3d62b44089e2e22152e4d3bf0d">computeDegeneratedConvexHullVertices</a> (<a class="el" href="structDGtal_1_1ConvexityHelper.html#afc3a1ef390f6664bdf70bc1c52f32a62">PointRange</a> &amp;input_points)</td></tr>
 <tr class="separator:a2e72ce3d62b44089e2e22152e4d3bf0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0712e736c29abed972506333b048ba"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDGtal_1_1ConvexityHelper.html#af47e8b71056789970556433d41788138">LatticePolytope</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ConvexityHelper.html#acf0712e736c29abed972506333b048ba">compute3DTriangle</a> (const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;a, const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;b, const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;c, bool make_minkowski_summable=false)</td></tr>
+<tr class="separator:acf0712e736c29abed972506333b048ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6993e5f812474cafa35e030dd288de9c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDGtal_1_1ConvexityHelper.html#af47e8b71056789970556433d41788138">LatticePolytope</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ConvexityHelper.html#a6993e5f812474cafa35e030dd288de9c">computeDegeneratedTriangle</a> (const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;a, const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;b, const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;c)</td></tr>
+<tr class="separator:a6993e5f812474cafa35e030dd288de9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631da3c93606979b8f651fb27da991a1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDGtal_1_1ConvexityHelper.html#af47e8b71056789970556433d41788138">LatticePolytope</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ConvexityHelper.html#a631da3c93606979b8f651fb27da991a1">computeSegment</a> (const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;a, const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;b)</td></tr>
+<tr class="separator:a631da3c93606979b8f651fb27da991a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Lattice Delaunay services</div></td></tr>
 <tr class="memitem:a19314769e3ba486f8751bbdce97d3a5c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1ConvexityHelper.html#a19314769e3ba486f8751bbdce97d3a5c">computeDelaunayCellComplex</a> (<a class="el" href="structDGtal_1_1ConvexCellComplex.html">ConvexCellComplex</a>&lt; <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &gt; &amp;cell_complex, const <a class="el" href="structDGtal_1_1ConvexityHelper.html#afc3a1ef390f6664bdf70bc1c52f32a62">PointRange</a> &amp;input_points, bool remove_duplicates=true)</td></tr>
 <tr class="separator:a19314769e3ba486f8751bbdce97d3a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -590,6 +596,67 @@ template&lt;int dim, typename TInteger  = DGtal::int32_t, typename TInternalInte
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf0712e736c29abed972506333b048ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf0712e736c29abed972506333b048ba">&#9670;&nbsp;</a></span>compute3DTriangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, typename TInteger  = DGtal::int32_t, typename TInternalInteger  = DGtal::int64_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structDGtal_1_1ConvexityHelper.html#af47e8b71056789970556433d41788138">LatticePolytope</a> <a class="el" href="structDGtal_1_1ConvexityHelper.html">DGtal::ConvexityHelper</a>&lt; <a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>, TInteger, TInternalInteger &gt;::compute3DTriangle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>make_minkowski_summable</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Computes the lattice polytope enclosing a triangle in dimension 3. Takes care of degeneracies (non distinct points or alignment).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">a</td><td>any point </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">b</td><td>any point </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">c</td><td>any point</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">make_minkowski_summable</td><td>Other constraints are added so that we can perform axis aligned Minkowski sums on this polytope. Useful for checking full convexity (see moduleDigitalConvexity).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the tightiest bounded lattice polytope (i.e. H-representation) including the given range of points. </dd></dl>
 
 </div>
 </div>
@@ -1083,6 +1150,60 @@ This function works for dimension no greater than 3.</dd></dl>
 
 </div>
 </div>
+<a id="a6993e5f812474cafa35e030dd288de9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6993e5f812474cafa35e030dd288de9c">&#9670;&nbsp;</a></span>computeDegeneratedTriangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, typename TInteger  = DGtal::int32_t, typename TInternalInteger  = DGtal::int64_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structDGtal_1_1ConvexityHelper.html#af47e8b71056789970556433d41788138">LatticePolytope</a> <a class="el" href="structDGtal_1_1ConvexityHelper.html">DGtal::ConvexityHelper</a>&lt; <a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>, TInteger, TInternalInteger &gt;::computeDegeneratedTriangle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Computes the lattice polytope enclosing a degenerated triangle. The points must be aligned (or non distinct).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>any point </td></tr>
+    <tr><td class="paramname">b</td><td>any point </td></tr>
+    <tr><td class="paramname">c</td><td>any point</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the tightiest bounded lattice polytope (i.e. H-representation) including the given range of points. </dd></dl>
+
+</div>
+</div>
 <a id="a19314769e3ba486f8751bbdce97d3a5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19314769e3ba486f8751bbdce97d3a5c">&#9670;&nbsp;</a></span>computeDelaunayCellComplex() <span class="overload">[1/2]</span></h2>
 
@@ -1387,6 +1508,53 @@ template&lt;int dim, typename TInteger  = DGtal::int32_t, typename TInternalInte
 
 </div>
 </div>
+<a id="a631da3c93606979b8f651fb27da991a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a631da3c93606979b8f651fb27da991a1">&#9670;&nbsp;</a></span>computeSegment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, typename TInteger  = DGtal::int32_t, typename TInternalInteger  = DGtal::int64_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structDGtal_1_1ConvexityHelper.html#af47e8b71056789970556433d41788138">LatticePolytope</a> <a class="el" href="structDGtal_1_1ConvexityHelper.html">DGtal::ConvexityHelper</a>&lt; <a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a>, TInteger, TInternalInteger &gt;::computeSegment </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structDGtal_1_1ConvexityHelper.html#a3dc92942e3a6bed2067f60ac0aa99f88">Point</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Computes the lattice polytope enclosing a segment.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>any point </td></tr>
+    <tr><td class="paramname">b</td><td>any point</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the tightiest bounded lattice polytope (i.e. H-representation) including the given range of points. It is always Minkowski summable. </dd></dl>
+
+</div>
+</div>
 <a id="a299c2da4588ed410b579774d6105fd3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a299c2da4588ed410b579774d6105fd3c">&#9670;&nbsp;</a></span>computeSimplex()</h2>
 
@@ -1473,7 +1641,7 @@ template&lt;int dim, typename TInteger  = DGtal::int32_t, typename TInternalInte
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="structDGtal_1_1ConvexityHelper.html">ConvexityHelper</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:08 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:26 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

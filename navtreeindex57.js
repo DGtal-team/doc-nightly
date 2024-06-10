@@ -1,5 +1,9 @@
 var NAVTREEINDEX57 =
 {
+"moduleIntegralInvariant.html#subsectIntegralInvariant":[0,8,7,0,0],
+"moduleIntegralInvariant.html#subsubsectEstimators":[0,8,7,1,0,1],
+"moduleIntegralInvariant.html#subsubsectFunctors":[0,8,7,1,0,0],
+"moduleIntroduction.html":[0,4,0],
 "moduleIntroduction.html#dgtalintroBasicConcepts":[0,4,0,0],
 "moduleIntroduction.html#dgtalintroBasicConceptsExplicitSet":[0,4,0,0,1],
 "moduleIntroduction.html#dgtalintroBasicConceptsImage":[0,4,0,0,3],
@@ -108,12 +112,13 @@ var NAVTREEINDEX57 =
 "modulePlaneRecognition.html#modulePlaneRecognition_sec4":[0,8,5,3],
 "modulePlaneRecognition.html#modulePlaneRecognition_sec5":[0,8,5,4],
 "modulePolygonalCalculus.html":[0,11,7],
-"modulePolygonalCalculus.html#Global":[0,11,7,3,0],
-"modulePolygonalCalculus.html#secLap":[0,11,7,3],
-"modulePolygonalCalculus.html#sectMisc":[0,11,7,4],
+"modulePolygonalCalculus.html#Global":[0,11,7,4,0],
+"modulePolygonalCalculus.html#secLap":[0,11,7,4],
+"modulePolygonalCalculus.html#sectCorrected":[0,11,7,3],
+"modulePolygonalCalculus.html#sectMisc":[0,11,7,5],
 "modulePolygonalCalculus.html#sectPolygonalCalculus2":[0,11,7,1],
 "modulePolygonalCalculus.html#sectPolygonalCalculusGlo":[0,11,7,2],
-"modulePolygonalCalculus.html#sectPolygonalCalculusHP":[0,11,7,4,0],
+"modulePolygonalCalculus.html#sectPolygonalCalculusHP":[0,11,7,5,0],
 "modulePolygonalCalculus.html#sectPolygonalCalculusIntro":[0,11,7,0],
 "modulePolygonalCalculus.html#sectVL":[0,11,7,1,2,1],
 "modulePolygonalCalculus.html#sectcovOP":[0,11,7,1,2,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX57 =
 "moduleVolumetric.html#toricVol":[0,8,14,5],
 "moduleVolumetric.html#vorocomplete":[0,8,14,2],
 "moduleVolumetric.html#voronoiSect":[0,8,14,1],
-"moduleVoxelComplex.html":[0,10,5],
-"moduleVoxelComplex.html#dgtal_vcomplex_sec1":[0,10,5,0],
-"moduleVoxelComplex.html#dgtal_vcomplex_sec2":[0,10,5,1],
-"moduleVoxelComplex.html#dgtal_vcomplex_sec3":[0,10,5,2],
-"moduleVoxelComplex.html#dgtal_vcomplex_sec4":[0,10,5,3],
-"moduleVoxelComplex.html#dgtal_vcomplex_sec5":[0,10,5,4]
+"moduleVoxelComplex.html":[0,10,5]
 };

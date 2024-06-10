@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -252,7 +252,7 @@ Additional Inherited Members</h2></td></tr>
 class DGtal::NaiveDSL&lt; TCoordinate, TInteger &gt;</h3>
 
 <p>Aim: This class is an alias of <a class="el" href="classDGtal_1_1ArithmeticalDSS.html" title="Aim: This class represents a naive (resp. standard) digital straight segment (DSS),...">ArithmeticalDSS</a> for naive DSL. It represents a naive digital straight line (DSL), ie. the set of digital points \( (x,y) \in \mathbb{Z}^2 \) such that \( \mu \leq ax - by &lt; \mu + \omega \) with \( a,b,\mu,\omega \in \mathbb{Z} \), \( \gcd(a,b) = 1 \) and \( \omega = \max(|a|,|b|) \). Note that any DSL such that \( \omega = \max(|a|,|b|) \) is simply 8-connected. </p>
-<p>[Reveilles, 1991 : <a class="el" href="citelist.html#CITEREF_Reveilles_1991_thesis">[98]</a>].</p>
+<p>[Reveilles, 1991 : <a class="el" href="citelist.html#CITEREF_Reveilles_1991_thesis">[99]</a>].</p>
 <p>As a quick start, a naive DSL can be declared and constructed as follows: </p><div class="fragment"><div class="line">  <span class="comment">// Construct a naive DSL from a, b, mu</span></div>
 <div class="line">  NaiveDSL&lt;Integer&gt; line( 2, 5, 0 ); </div>
 </div><!-- fragment --><p> Then, within a window defined by two points (called firstPoint and lastPoint below), you can iterate over the DSL points: </p><div class="fragment"><div class="line">  <span class="comment">// Draw the DSL points between firstPoint and lastPoint</span></div>
@@ -445,7 +445,7 @@ template&lt;typename TCoordinate , typename TInteger  = TCoordinate&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1NaiveDSL.html">NaiveDSL</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:06 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:24 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

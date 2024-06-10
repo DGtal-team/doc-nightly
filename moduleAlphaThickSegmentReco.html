@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -113,22 +113,22 @@ $(document).ready(function(){initNavTree('moduleAlphaThickSegmentReco.html','');
 <div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: </dt><dd>Bertrand Kerautret</dd></dl>
 <p>Part of the <a class="el" href="packageGeometry.html">Geometry package</a>.</p>
 <p>The Digital Straight Segment primitive (described here: <a class="el" href="moduleArithDSSReco.html">Digital straight lines and segments <br  />
-</a>) is commonly used to extract geometric information from digital contours. It is exploited in various estimators as for instance in tangent <a class="el" href="citelist.html#CITEREF_LachaudIVC2007">[71]</a> or curvature estimation <a class="el" href="citelist.html#CITEREF_KerautretLachaud2009">[63]</a> . However, this primitive is not efficient to directly process real contours with the potential presence of noise. To overcome this limitation the alpha-thick segments (called initially Blurred Segments) were first introduced by Debled-Rennesson <em>et</em> al <a class="el" href="citelist.html#CITEREF_debledFuzzy2005">[47]</a> which handle noise or contour irregularities.</p>
-<p>We present here the recognition of alpha-thick segments as described in <a class="el" href="citelist.html#CITEREF_debledFuzzy2005">[47]</a> and <a class="el" href="citelist.html#CITEREF_FaureTangential2008">[50]</a>. From a maximal thickness, it permits the recognition of a thick segment with the possibility to take into accounts some noise. Moreover the segment can be detected from points which are not necessarily connected nor necessarily digital points (RealPoint for instance).</p>
+</a>) is commonly used to extract geometric information from digital contours. It is exploited in various estimators as for instance in tangent <a class="el" href="citelist.html#CITEREF_LachaudIVC2007">[72]</a> or curvature estimation <a class="el" href="citelist.html#CITEREF_KerautretLachaud2009">[64]</a> . However, this primitive is not efficient to directly process real contours with the potential presence of noise. To overcome this limitation the alpha-thick segments (called initially Blurred Segments) were first introduced by Debled-Rennesson <em>et</em> al <a class="el" href="citelist.html#CITEREF_debledFuzzy2005">[48]</a> which handle noise or contour irregularities.</p>
+<p>We present here the recognition of alpha-thick segments as described in <a class="el" href="citelist.html#CITEREF_debledFuzzy2005">[48]</a> and <a class="el" href="citelist.html#CITEREF_FaureTangential2008">[51]</a>. From a maximal thickness, it permits the recognition of a thick segment with the possibility to take into accounts some noise. Moreover the segment can be detected from points which are not necessarily connected nor necessarily digital points (RealPoint for instance).</p>
 <dl class="section note"><dt>Note</dt><dd>The proposed implementation is mainly a backport from ImaGene with some various refactoring.</dd></dl>
 <h1><a class="anchor" id="moduleAlphaThickSegmentRecoIntro"></a>
 Alpha-thick Segment</h1>
-<p>The first definition of <b>blurred</b> <b>segment</b> <a class="el" href="citelist.html#CITEREF_debledFuzzy2005">[47]</a> relies on the definition of the digital straight lines (<a class="el" href="moduleArithDSSReco.html">Digital straight lines and segments <br  />
+<p>The first definition of <b>blurred</b> <b>segment</b> <a class="el" href="citelist.html#CITEREF_debledFuzzy2005">[48]</a> relies on the definition of the digital straight lines (<a class="el" href="moduleArithDSSReco.html">Digital straight lines and segments <br  />
 </a>):</p>
 <p>A set \( \mathcal{S}_f \) of consecutive points ( \( \mathcal{S}_f \geq 2 \)) of an 8-connected curve is a blurred segment with order \( d \) if there exists a discrete line \( \mathcal{D}(a,b, \mu, \omega) \) such that all points of \( \mathcal{S}_f \) belong to \( \mathcal{D} \) and \( \frac{\omega}{max(|a|,|b|)} \leq d \). The line \( D \) is said bounding for \( \mathcal{S}_f \).</p>
-<p>Following this definition, the authors also propose an incremental linear time algorithm to segment a digital curve into blurred segments of order \( d \). The main drawback of such a decomposition is the non optimality (it implies over segmentation). Then the author introduce the notion of blurred segment of width \( \nu \) <a class="el" href="citelist.html#CITEREF_DebledRennessonBlurred2005">[46]</a>. The width \( \nu \) is associated to the isothetic thickness of a set of points, ie. the minimum value between its vertical and horizontal thicknesses (see figure below).</p>
+<p>Following this definition, the authors also propose an incremental linear time algorithm to segment a digital curve into blurred segments of order \( d \). The main drawback of such a decomposition is the non optimality (it implies over segmentation). Then the author introduce the notion of blurred segment of width \( \nu \) <a class="el" href="citelist.html#CITEREF_DebledRennessonBlurred2005">[47]</a>. The width \( \nu \) is associated to the isothetic thickness of a set of points, ie. the minimum value between its vertical and horizontal thicknesses (see figure below).</p>
 <div class="image">
 <img src="exampleConvexHullHV.png" alt=""/>
 <div class="caption">
 The isothetic thickness of this convexhull is the minimum between its vertical (dV) and horizontal (dH) thickness. The points P,Q and R are the antipodal pair.</div></div>
- <p>From this notion of isothetic thickness follows the <b>blurred</b> <b>segment</b> definition <a class="el" href="citelist.html#CITEREF_DebledRennessonBlurred2005">[46]</a> :</p>
+ <p>From this notion of isothetic thickness follows the <b>blurred</b> <b>segment</b> definition <a class="el" href="citelist.html#CITEREF_DebledRennessonBlurred2005">[47]</a> :</p>
 <p>A bounding line of a digital set \( \mathcal{S}_b \) is said optimal if its isothetic thickness is equal to the isothetic thickness of the convex hull \( conv(\mathcal{S}_b) \). \( \mathcal{S}_b \) is a blurred segment of width \( \nu \) if and only if its optimal bounding line has an isothetic distance less or equal to \( \nu \).</p>
-<p>The implementation proposed here relies on the convex hull computed incrementally with the Melkman algorithm in linear time <a class="el" href="citelist.html#CITEREF_melkmanLine1987">[87]</a> (by using the <a class="el" href="classDGtal_1_1MelkmanConvexHull.html" title="Aim: This class implements the on-line algorithm of Melkman for the computation of the convex hull of...">MelkmanConvexHull</a> class, see the module main documentation: <a class="el" href="moduleHull2D.html#subsectmoduleHull2D13">Melkman's algorithm</a>). It allows to add point on the front of the current segment and the value of vertical/horizontal thickness are computed in linear time by using the rotating caliper algorithm (see <a class="el" href="moduleHull2D.html#subsectmoduleHull2D14">Convex hull thickness</a>). The Buzer optimisation <a class="el" href="citelist.html#CITEREF_lilianComputing2007">[83]</a> to update the convex hull thickness with a coast of \(O(log\ n) \) or the linear time point substraction are not yet implemented. Note that you can use also the Euclidean thickness (see illustration below) also defined from the rotating caliper algorithm.</p>
+<p>The implementation proposed here relies on the convex hull computed incrementally with the Melkman algorithm in linear time <a class="el" href="citelist.html#CITEREF_melkmanLine1987">[88]</a> (by using the <a class="el" href="classDGtal_1_1MelkmanConvexHull.html" title="Aim: This class implements the on-line algorithm of Melkman for the computation of the convex hull of...">MelkmanConvexHull</a> class, see the module main documentation: <a class="el" href="moduleHull2D.html#subsectmoduleHull2D13">Melkman's algorithm</a>). It allows to add point on the front of the current segment and the value of vertical/horizontal thickness are computed in linear time by using the rotating caliper algorithm (see <a class="el" href="moduleHull2D.html#subsectmoduleHull2D14">Convex hull thickness</a>). The Buzer optimisation <a class="el" href="citelist.html#CITEREF_lilianComputing2007">[84]</a> to update the convex hull thickness with a coast of \(O(log\ n) \) or the linear time point substraction are not yet implemented. Note that you can use also the Euclidean thickness (see illustration below) also defined from the rotating caliper algorithm.</p>
 <div class="image">
 <img src="exampleConvexHullEucl.png" alt=""/>
 <div class="caption">
@@ -138,7 +138,7 @@ Alpha-thick Segment Recognition</h1>
 <h2><a class="anchor" id="moduleAlphaThickSegmentRecoDetails-TypeInputContours"></a>
 Type of Input Points</h2>
 <p>This implementation of the alpha-thick segments can take as input different types of points which just need to be given in the template parameter (TInputPoint). The input points are not necessary connected but the important constraint is that the sequence of point should not contains loop. Open or closed contours can be processed by the segment computer (if you use contour iterator in the initialisation you have just to check manually the end condition or the iterator type).</p>
-<dl class="section note"><dt>Note</dt><dd>Contrary to the implementation proposed in <a class="el" href="citelist.html#CITEREF_DebledRennessonBlurred2005">[46]</a> the input points do not need to have axis increasing coordinates.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Contrary to the implementation proposed in <a class="el" href="citelist.html#CITEREF_DebledRennessonBlurred2005">[47]</a> the input points do not need to have axis increasing coordinates.</dd></dl>
 <p>As illustration, the alpha-thick segments can be recognized on such contours: </p><div class="image">
 <img src="alphThickSegmentInputPoints.png" alt=""/>
 <div class="caption">
@@ -264,7 +264,7 @@ Tangential cover with alpha-thick segments with alpha = 4 for a point of index 8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:03 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

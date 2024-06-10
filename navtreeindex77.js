@@ -1,5 +1,14 @@
 var NAVTREEINDEX77 =
 {
+"structDGtal_1_1concepts_1_1COrientationFunctor.html#adccca48b4051c668dd5bca74a1edea53":[4,0,45,4],
+"structDGtal_1_1concepts_1_1COrientationFunctor2.html":[4,0,46],
+"structDGtal_1_1concepts_1_1COrientationFunctor2.html#a617f6b1ecad681ec932ef57b5e90c7a0":[4,0,46,1],
+"structDGtal_1_1concepts_1_1COrientationFunctor2.html#aa282e05a6310d7b5bfd5e637483f7223":[4,0,46,0],
+"structDGtal_1_1concepts_1_1COrientationFunctor2.html#ab4b5d6223e4df5a7fa5885421735883c":[4,0,46,3],
+"structDGtal_1_1concepts_1_1COrientationFunctor2.html#afd66df6d4060a651e3f74760afc265f0":[4,0,46,2],
+"structDGtal_1_1concepts_1_1CPointEmbedder.html":[4,0,74],
+"structDGtal_1_1concepts_1_1CPointEmbedder.html#a0d8b8c72b0344d2a2788024e41d82eab":[4,0,74,6],
+"structDGtal_1_1concepts_1_1CPointEmbedder.html#a4b183401c1f3561698ef168f8920a704":[4,0,74,1],
 "structDGtal_1_1concepts_1_1CPointEmbedder.html#a6cd6790475c169126fd29505e1c59213":[4,0,74,11],
 "structDGtal_1_1concepts_1_1CPointEmbedder.html#a6d75fed84d70ef16314f2260f1e15a7f":[4,0,74,5],
 "structDGtal_1_1concepts_1_1CPointEmbedder.html#a6e9433a85c92abca8658a8814bdea04a":[4,0,74,3],
@@ -240,14 +249,5 @@ var NAVTREEINDEX77 =
 "structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIterator.html#af78acff83409e7c4fbec08b5a94d092f":[4,0,15,3],
 "structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIteratorFromPoint.html":[4,0,16],
 "structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIteratorFromPoint.html#a1c12ea960f19a3ee2168e7ea5a1a732a":[4,0,16,1],
-"structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIteratorFromPoint.html#a77f89c014605fd0f1c0a7371ea76b44a":[4,0,16,3],
-"structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIteratorFromPoint.html#ab0d8fe603a9b408d3888044aec6bd629":[4,0,16,2],
-"structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIteratorFromPoint.html#ade54955cd15c990196d15578b70fcb81":[4,0,16,0],
-"structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIteratorFromPoint.html#af3e74428697ccf042794bc4a042a4cb0":[4,0,16,5],
-"structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIteratorFromPoint.html#afae9d6fd680fccc01f8ccb707295707f":[4,0,16,4],
-"structDGtal_1_1concepts_1_1CSpace.html":[4,0,78],
-"structDGtal_1_1concepts_1_1CSpace.html#a14597556529da04a3bf6e6e8fe2a4e81":[4,0,78,11],
-"structDGtal_1_1concepts_1_1CSpace.html#a3bdfb68f4052e5ccc676bb736861d708":[4,0,78,14],
-"structDGtal_1_1concepts_1_1CSpace.html#a504e4dde8e7a98dd47939c387c259715":[4,0,78,6],
-"structDGtal_1_1concepts_1_1CSpace.html#a6c783bd601d3b60ad16b30f50011113a":[4,0,78,9]
+"structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIteratorFromPoint.html#a77f89c014605fd0f1c0a7371ea76b44a":[4,0,16,3]
 };

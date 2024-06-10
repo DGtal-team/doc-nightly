@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -146,9 +146,9 @@ $(document).ready(function(){initNavTree('ShroudsRegularization_8h_source.html',
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      : <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">myPtrIdxSurface</a>( nullptr ), <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a714dbedf94934b5dd548e43eab5e7504">myPtrK</a>( nullptr )</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {}</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    </div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classDGtal_1_1ShroudsRegularization.html#a09543f86e56ce26c5bffafb50a9d708d">  113</a></span>&#160;    <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a09543f86e56ce26c5bffafb50a9d708d">ShroudsRegularization</a>( <a class="code" href="classDGtal_1_1CountedPtr.html">CountedPtr&lt; IdxDigitalSurface &gt;</a> surface )</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      : <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">myPtrIdxSurface</a>( surface ),</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a714dbedf94934b5dd548e43eab5e7504">myPtrK</a>( &amp;surface-&gt;container().space() ),</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classDGtal_1_1ShroudsRegularization.html#a09543f86e56ce26c5bffafb50a9d708d">  113</a></span>&#160;    <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a09543f86e56ce26c5bffafb50a9d708d">ShroudsRegularization</a>( <a class="code" href="classDGtal_1_1CountedPtr.html">CountedPtr&lt; IdxDigitalSurface &gt;</a> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> )</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      : <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a5c26e7420c0b5f2c84bae78177cde92e">myPtrIdxSurface</a>( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> ),</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a714dbedf94934b5dd548e43eab5e7504">myPtrK</a>( &amp;<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>-&gt;container().space() ),</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="classDGtal_1_1ShroudsRegularization.html#aba157cc02aef27a4fcab320a1a90acfe">myEpsilon</a>( 0.0001 ), <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a2cf4b873203bc6ae4de022606c440ec0">myAlpha</a>( 1.0 ), <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a9ad64ee5cb89e21fcd3f3e03973c2587">myBeta</a>( 1.0 )</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <a class="code" href="classDGtal_1_1ShroudsRegularization.html#a2da9e42790984a3e6c77899b6dbeaeac">precomputeTopology</a>();</div>
@@ -404,10 +404,10 @@ $(document).ready(function(){initNavTree('ShroudsRegularization_8h_source.html',
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  <span class="keyword">template</span> &lt; <span class="keyword">typename</span> TDigitalSurfaceContainer &gt; </div>
 <div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;  <a class="code" href="classDGtal_1_1ShroudsRegularization.html">ShroudsRegularization&lt;TDigitalSurfaceContainer&gt;</a></div>
 <div class="line"><a name="l00586"></a><span class="lineno"><a class="line" href="namespaceDGtal.html#ad0d8c1b64f3a1ecebc8132001fecd7f6">  586</a></span>&#160;  <a class="code" href="namespaceDGtal.html#ad0d8c1b64f3a1ecebc8132001fecd7f6">makeShroudsRegularization</a></div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;  ( <a class="code" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="code" href="classDGtal_1_1IndexedDigitalSurface.html">IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a> &gt; surface,</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;  ( <a class="code" href="classDGtal_1_1CountedPtr.html">CountedPtr</a>&lt; <a class="code" href="classDGtal_1_1IndexedDigitalSurface.html">IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a> &gt; <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>,</div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;    <span class="keywordtype">double</span> eps = 0.00001 )</div>
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;  {</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ShroudsRegularization.html">ShroudsRegularization&lt;TDigitalSurfaceContainer&gt;</a>( surface, eps );</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classDGtal_1_1ShroudsRegularization.html">ShroudsRegularization&lt;TDigitalSurfaceContainer&gt;</a>( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, eps );</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;  }</div>
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;  </div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;} <span class="comment">// namespace surfaces</span></div>
@@ -489,6 +489,7 @@ $(document).ready(function(){initNavTree('ShroudsRegularization_8h_source.html',
 <div class="ttc" id="aclassDGtal_1_1SpaceND_html"><div class="ttname"><a href="classDGtal_1_1SpaceND.html">DGtal::SpaceND</a></div><div class="ttdef"><b>Definition:</b> <a href="SpaceND_8h_source.html#l00095">SpaceND.h:96</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_a1e786a1f3b1047e92b73c82f67e3c295"><div class="ttname"><a href="classDGtal_1_1Trace.html#a1e786a1f3b1047e92b73c82f67e3c295">DGtal::Trace::error</a></div><div class="ttdeci">std::ostream &amp; error()</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fbe8c8d47ca5c36ced14284ac62613d"><div class="ttname"><a href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">DGtal::Dimension</a></div><div class="ttdeci">DGtal::uint32_t Dimension</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00136">Common.h:136</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fc7012708b0416880a5c8b12dfdf9dd"><div class="ttname"><a href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">DGtal::trace</a></div><div class="ttdeci">Trace trace</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00153">Common.h:153</a></div></div>
@@ -503,7 +504,7 @@ $(document).ready(function(){initNavTree('ShroudsRegularization_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f2cd1aeea1cfa982bb13a5f95fa4218c.html">DGtal</a></li><li class="navelem"><a class="el" href="dir_754267a81a1dbd2dcdc6a3e6905a7e31.html">geometry</a></li><li class="navelem"><a class="el" href="dir_63d9c33afbfec9fa25872cb1f269a9db.html">surfaces</a></li><li class="navelem"><b>ShroudsRegularization.h</b></li>
-    <li class="footer">Generated on Wed May 8 2024 20:20:53 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:11 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -168,8 +168,8 @@ $(document).ready(function(){initNavTree('standardDigitalPolyhedronBuilder3D_8cp
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">int</span>        view = argc &gt; 3 ? atoi( argv[ 3 ] ) : 31;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="comment">// Read OBJ file</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  std::ifstream input( fn.c_str() );</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <a class="code" href="structDGtal_1_1SurfaceMesh.html">DGtal::SurfaceMesh&lt; RealPoint, RealVector &gt;</a> surfmesh;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">bool</span> ok = <a class="code" href="structDGtal_1_1SurfaceMeshReader.html">SurfaceMeshReader&lt; RealPoint, RealVector &gt;::readOBJ</a>( input, surfmesh );</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <a class="code" href="structDGtal_1_1SurfaceMesh.html">DGtal::SurfaceMesh&lt; RealPoint, RealVector &gt;</a> <a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">bool</span> ok = <a class="code" href="structDGtal_1_1SurfaceMeshReader.html">SurfaceMeshReader&lt; RealPoint, RealVector &gt;::readOBJ</a>( input, <a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a> );</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordflow">if</span> ( ! ok )</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    {</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a1e786a1f3b1047e92b73c82f67e3c295">error</a>() &lt;&lt; <span class="stringliteral">&quot;Unable to read obj file : &quot;</span> &lt;&lt; fn &lt;&lt; std::endl;</div>
@@ -187,23 +187,23 @@ $(document).ready(function(){initNavTree('standardDigitalPolyhedronBuilder3D_8cp
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <a class="code" href="classDGtal_1_1DigitalConvexity.html">DigitalConvexity&lt; KSpace &gt;</a> dconv( lo, up );</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1DigitalConvexity.html">DigitalConvexity&lt; KSpace &gt;::EnvelopeAlgorithm</a> Algorithm;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keyword">auto</span> vertices = std::vector&lt;Point&gt;( surfmesh.<a class="code" href="structDGtal_1_1SurfaceMesh.html#ad32cc734fe88ed61b14c03632d2cde31">nbVertices</a>() );</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> v : surfmesh )</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keyword">auto</span> vertices = std::vector&lt;Point&gt;( <a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.<a class="code" href="structDGtal_1_1SurfaceMesh.html#ad32cc734fe88ed61b14c03632d2cde31">nbVertices</a>() );</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> v : <a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a> )</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <a class="code" href="classDGtal_1_1PointVector.html">RealPoint</a> p = (1.0 / h) * surfmesh.<a class="code" href="structDGtal_1_1SurfaceMesh.html#a1963ef0c711e98ceff402c5f610dd7b1">position</a>( v );</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <a class="code" href="classDGtal_1_1PointVector.html">RealPoint</a> p = (1.0 / h) * <a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.<a class="code" href="structDGtal_1_1SurfaceMesh.html#a1963ef0c711e98ceff402c5f610dd7b1">position</a>( v );</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> q ( (<a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a>) round( p[ 0 ] ),</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                (<a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a>) round( p[ 1 ] ),</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                (<a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a>) round( p[ 2 ] ) );</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      vertices[ v ] = q;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  std::set&lt; Point &gt; faces_set, pos_edges_set, neg_edges_set;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keyword">auto</span> faceVertices = surfmesh.<a class="code" href="structDGtal_1_1SurfaceMesh.html#ac0a2983a80c66e39b85cf71368cb9053">allIncidentVertices</a>();</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keyword">auto</span> faceVertices = <a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.<a class="code" href="structDGtal_1_1SurfaceMesh.html#ac0a2983a80c66e39b85cf71368cb9053">allIncidentVertices</a>();</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>( <span class="stringliteral">&quot;Checking face planarity&quot;</span> );</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  std::vector&lt; Plane &gt; face_planes;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  face_planes.resize( surfmesh.<a class="code" href="structDGtal_1_1SurfaceMesh.html#aac6df23e1b3e15f57df733bb6db40a81">nbFaces</a>() );</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  face_planes.resize( <a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.<a class="code" href="structDGtal_1_1SurfaceMesh.html#aac6df23e1b3e15f57df733bb6db40a81">nbFaces</a>() );</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordtype">bool</span> planarity = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> f = 0; f &lt; surfmesh.<a class="code" href="structDGtal_1_1SurfaceMesh.html#aac6df23e1b3e15f57df733bb6db40a81">nbFaces</a>() &amp;&amp; planarity; ++f )</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> f = 0; f &lt; <a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.<a class="code" href="structDGtal_1_1SurfaceMesh.html#aac6df23e1b3e15f57df733bb6db40a81">nbFaces</a>() &amp;&amp; planarity; ++f )</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    {</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <a class="code" href="digitalPolyhedronBuilder3D_8cpp.html#a7e851e605c414ed13c6604af4bba8107">PointRange</a> X;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> v : faceVertices[ f ] )</div>
@@ -219,7 +219,7 @@ $(document).ready(function(){initNavTree('standardDigitalPolyhedronBuilder3D_8cp
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordflow">if</span> ( ! planarity ) <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>( <span class="stringliteral">&quot;Computing polyhedron&quot;</span> );</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> f = 0; f &lt; surfmesh.<a class="code" href="structDGtal_1_1SurfaceMesh.html#aac6df23e1b3e15f57df733bb6db40a81">nbFaces</a>(); ++f )</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> f = 0; f &lt; <a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.<a class="code" href="structDGtal_1_1SurfaceMesh.html#aac6df23e1b3e15f57df733bb6db40a81">nbFaces</a>(); ++f )</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    {</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      <a class="code" href="digitalPolyhedronBuilder3D_8cpp.html#a7e851e605c414ed13c6604af4bba8107">PointRange</a> X;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> v : faceVertices[ f ] )</div>
@@ -329,6 +329,7 @@ $(document).ready(function(){initNavTree('standardDigitalPolyhedronBuilder3D_8cp
 <div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
 <div class="ttc" id="aclassDGtal_1_1Viewer3D_html"><div class="ttname"><a href="classDGtal_1_1Viewer3D.html">DGtal::Viewer3D&lt; Space, KSpace &gt;</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Viewer3D_html_a1ea1c9cf781ce6940db02c352cf24e6f"><div class="ttname"><a href="classDGtal_1_1Viewer3D.html#a1ea1c9cf781ce6940db02c352cf24e6f">DGtal::Viewer3D::show</a></div><div class="ttdeci">virtual void show()</div><div class="ttdoc">Overload QWidget method in order to add a call to updateList() method (to ensure that the lists are w...</div></div>
+<div class="ttc" id="adgtalCalculus-bunny_8cpp_html_ae3ccdba7d575baf979261b4c02a6b9bb"><div class="ttname"><a href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a></div><div class="ttdeci">SurfMesh surfmesh</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-bunny_8cpp_source.html#l00058">dgtalCalculus-bunny.cpp:58</a></div></div>
 <div class="ttc" id="adigitalPolyhedronBuilder3D_8cpp_html_a7e851e605c414ed13c6604af4bba8107"><div class="ttname"><a href="digitalPolyhedronBuilder3D_8cpp.html#a7e851e605c414ed13c6604af4bba8107">PointRange</a></div><div class="ttdeci">std::vector&lt; Point &gt; PointRange</div><div class="ttdef"><b>Definition:</b> <a href="digitalPolyhedronBuilder3D_8cpp_source.html#l00084">digitalPolyhedronBuilder3D.cpp:84</a></div></div>
 <div class="ttc" id="aexamplePlaneProbingParallelepipedEstimator_8cpp_html_a23c0623485ed9af765bab12ac424843c"><div class="ttname"><a href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a></div><div class="ttdeci">DigitalPlane::Point Vector</div><div class="ttdef"><b>Definition:</b> <a href="examplePlaneProbingParallelepipedEstimator_8cpp_source.html#l00045">examplePlaneProbingParallelepipedEstimator.cpp:45</a></div></div>
 <div class="ttc" id="aexamplePlaneProbingParallelepipedEstimator_8cpp_html_ad31c3eca44cf6770809bc47f2b456212"><div class="ttname"><a href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a></div><div class="ttdeci">Point::Coordinate Integer</div><div class="ttdef"><b>Definition:</b> <a href="examplePlaneProbingParallelepipedEstimator_8cpp_source.html#l00044">examplePlaneProbingParallelepipedEstimator.cpp:44</a></div></div>
@@ -363,7 +364,7 @@ $(document).ready(function(){initNavTree('standardDigitalPolyhedronBuilder3D_8cp
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_bbc6006c4fa8019b84b7adc573485eac.html">geometry</a></li><li class="navelem"><a class="el" href="dir_4e2b6255776ee794b28cc39d3a586de0.html">volumes</a></li><li class="navelem"><a class="el" href="standardDigitalPolyhedronBuilder3D_8cpp.html">standardDigitalPolyhedronBuilder3D.cpp</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:20:54 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:11 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

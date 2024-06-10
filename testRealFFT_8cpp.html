@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -698,8 +698,8 @@ template&lt;typename TDomain , typename TValue &gt; </div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      <span class="keywordtype">bool</span> applyConj;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( fft.calcNativeFreqCoords( freq_pt, applyConj ) == it_max.getPoint() );</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ! applyConj );</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::norm( fft.calcNativeFreqValue( freq_pt, freq_val ) - *it_max ) == Approx(0.).scale(std::norm(*it_max)) );</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::norm( fft.getScaledFreqValue( freq_pt ) - freq_val ) == Approx(0.).scale(std::norm(freq_val)) );</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::norm( fft.calcNativeFreqValue( freq_pt, freq_val ) - *it_max ) == Approx(0.).<a class="code" href="dgtalCalculus-bunny_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>(std::norm(*it_max)) );</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::norm( fft.getScaledFreqValue( freq_pt ) - freq_val ) == Approx(0.).<a class="code" href="dgtalCalculus-bunny_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>(std::norm(freq_val)) );</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      <span class="keywordflow">if</span> ( freq_pt[ TDomain::dimension-1 ] * freq &lt; 0 )</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        {</div>
@@ -707,8 +707,8 @@ template&lt;typename TDomain , typename TValue &gt; </div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;          freq_val = std::conj( freq_val );</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        }</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ( freq_pt - RealPoint::base( TDomain::dimension-1, freq ) ).norm() == Approx( 0 ).scale(freq_pt.norm()) );</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ( std::fmod( std::fmod( std::arg( freq_val ) - phase, 2*pi ) + 3*pi, 2*pi ) - pi ) == Approx( 0 ).scale(pi) );</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ( freq_pt - RealPoint::base( TDomain::dimension-1, freq ) ).norm() == Approx( 0 ).<a class="code" href="dgtalCalculus-bunny_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>(freq_pt.norm()) );</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ( std::fmod( std::fmod( std::arg( freq_val ) - phase, 2*pi ) + 3*pi, 2*pi ) - pi ) == Approx( 0 ).<a class="code" href="dgtalCalculus-bunny_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>(pi) );</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
@@ -722,8 +722,8 @@ template&lt;typename TDomain , typename TValue &gt; </div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      <span class="keywordtype">bool</span> applyConj;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( fft.calcNativeFreqCoords( freq_pt, applyConj ) == it_max.getPoint() );</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ! applyConj );</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::norm( fft.calcNativeFreqValue( freq_pt, freq_val ) - *it_max ) == Approx(0.).scale(std::norm(*it_max)) );</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::norm( fft.getScaledFreqValue( freq_pt ) - freq_val ) == Approx(0.).scale(std::norm(freq_val)) );</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::norm( fft.calcNativeFreqValue( freq_pt, freq_val ) - *it_max ) == Approx(0.).<a class="code" href="dgtalCalculus-bunny_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>(std::norm(*it_max)) );</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::norm( fft.getScaledFreqValue( freq_pt ) - freq_val ) == Approx(0.).<a class="code" href="dgtalCalculus-bunny_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>(std::norm(freq_val)) );</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      <span class="keywordflow">if</span> ( freq_pt[ TDomain::dimension-1 ] * freq &lt; 0 )</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        {</div>
@@ -731,8 +731,8 @@ template&lt;typename TDomain , typename TValue &gt; </div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;          freq_val = std::conj( freq_val );</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        }</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ( freq_pt - RealPoint::base( TDomain::dimension-1, freq ) ).norm() == Approx( 0 ).scale(freq_pt.norm()) );</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ( std::fmod( std::fmod( std::arg( freq_val ) - phase + pi/2, 2*pi) + 3*pi, 2*pi ) - pi ) == Approx( 0 ).scale(pi) );</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ( freq_pt - RealPoint::base( TDomain::dimension-1, freq ) ).norm() == Approx( 0 ).<a class="code" href="dgtalCalculus-bunny_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>(freq_pt.norm()) );</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ( std::fmod( std::fmod( std::arg( freq_val ) - phase + pi/2, 2*pi) + 3*pi, 2*pi ) - pi ) == Approx( 0 ).<a class="code" href="dgtalCalculus-bunny_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>(pi) );</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  INFO( <span class="stringliteral">&quot;Checks maximal frequency on translated initial domain.&quot;</span> );</div>
@@ -748,8 +748,8 @@ template&lt;typename TDomain , typename TValue &gt; </div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      <span class="keywordtype">bool</span> applyConj;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( fft.calcNativeFreqCoords( freq_pt, applyConj ) == it_max.getPoint() );</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ! applyConj );</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::norm( fft.calcNativeFreqValue( freq_pt, freq_val ) - *it_max ) == Approx(0.).scale(std::norm(*it_max)) );</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::norm( fft.getScaledFreqValue( freq_pt ) - freq_val ) == Approx(0.).scale(std::norm(freq_val)) );</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::norm( fft.calcNativeFreqValue( freq_pt, freq_val ) - *it_max ) == Approx(0.).<a class="code" href="dgtalCalculus-bunny_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>(std::norm(*it_max)) );</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::norm( fft.getScaledFreqValue( freq_pt ) - freq_val ) == Approx(0.).<a class="code" href="dgtalCalculus-bunny_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>(std::norm(freq_val)) );</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      <span class="keywordflow">if</span> ( freq_pt[ TDomain::dimension-1 ] * freq &lt; 0 )</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        {</div>
@@ -758,16 +758,17 @@ template&lt;typename TDomain , typename TValue &gt; </div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        }</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span> scaled_factor = freq/anImage.<a class="code" href="classDGtal_1_1ImageContainerBySTLVector.html#a18c38dc85d8509116b8b004efbf8a83e">extent</a>()[ TDomain::dimension-1 ];</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ( freq_pt - RealPoint::base( TDomain::dimension-1, scaled_factor ) ).norm() == Approx( 0 ).scale(freq_pt.norm()) );</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ( std::fmod( std::fmod( std::arg( freq_val ) - phase + 2*pi*scaled_factor*shift[TDomain::dimension-1], 2*pi ) + 3*pi, 2*pi ) - pi ) == Approx( 0 ).scale(pi) );</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ( freq_pt - RealPoint::base( TDomain::dimension-1, scaled_factor ) ).norm() == Approx( 0 ).<a class="code" href="dgtalCalculus-bunny_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>(freq_pt.norm()) );</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( ( std::fmod( std::fmod( std::arg( freq_val ) - phase + 2*pi*scaled_factor*shift[TDomain::dimension-1], 2*pi ) + 3*pi, 2*pi ) - pi ) == Approx( 0 ).<a class="code" href="dgtalCalculus-bunny_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a>(pi) );</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}</div>
 <div class="ttc" id="aclassDGtal_1_1PointVector_html"><div class="ttname"><a href="classDGtal_1_1PointVector.html">DGtal::PointVector&lt; 3, double &gt;</a></div></div>
+<div class="ttc" id="adgtalCalculus-bunny_8cpp_html_a1d28dec57cce925ad92342891bd71e7c"><div class="ttname"><a href="dgtalCalculus-bunny_8cpp.html#a1d28dec57cce925ad92342891bd71e7c">scale</a></div><div class="ttdeci">float scale</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-bunny_8cpp_source.html#l00059">dgtalCalculus-bunny.cpp:59</a></div></div>
 <div class="ttc" id="atestRealFFT_8cpp_html_a4106a34e7d57e8a11093bdfdbc82516c"><div class="ttname"><a href="testRealFFT_8cpp.html#a4106a34e7d57e8a11093bdfdbc82516c">findMaxNorm</a></div><div class="ttdeci">TIterator findMaxNorm(TIterator it, TIterator const &amp;it_end)</div><div class="ttdef"><b>Definition:</b> <a href="testRealFFT_8cpp_source.html#l00105">testRealFFT.cpp:105</a></div></div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_ad8a25b2bbbbdb64c30a5442284db5bfb"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a></div><div class="ttdeci">REQUIRE(domain.isInside(aPoint))</div></div>
 <div class="ttc" id="atestTriangulatedSurface_8cpp_html_abb3595c097987c9d2c4f0cc1902df316"><div class="ttname"><a href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a></div><div class="ttdeci">PointVector&lt; 3, double &gt; RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="testTriangulatedSurface_8cpp_source.html#l00051">testTriangulatedSurface.cpp:51</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classDGtal_1_1ImageContainerBySTLVector.html#a01e9383b24908cf4b6bb52e5f8cdf136">DGtal::ImageContainerBySTLVector&lt; TDomain, TValue &gt;::domain()</a>, <a class="el" href="classDGtal_1_1ImageContainerBySTLVector.html#a18c38dc85d8509116b8b004efbf8a83e">DGtal::ImageContainerBySTLVector&lt; TDomain, TValue &gt;::extent()</a>, <a class="el" href="testRealFFT_8cpp_source.html#l00105">findMaxNorm()</a>, and <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE()</a>.</p>
+<p class="reference">References <a class="el" href="classDGtal_1_1ImageContainerBySTLVector.html#a01e9383b24908cf4b6bb52e5f8cdf136">DGtal::ImageContainerBySTLVector&lt; TDomain, TValue &gt;::domain()</a>, <a class="el" href="classDGtal_1_1ImageContainerBySTLVector.html#a18c38dc85d8509116b8b004efbf8a83e">DGtal::ImageContainerBySTLVector&lt; TDomain, TValue &gt;::extent()</a>, <a class="el" href="testRealFFT_8cpp_source.html#l00105">findMaxNorm()</a>, <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE()</a>, and <a class="el" href="dgtalCalculus-bunny_8cpp_source.html#l00059">scale</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="testRealFFT_8cpp_source.html#l00305">TEST_CASE()</a>.</p>
 
@@ -848,7 +849,7 @@ template&lt;typename TDomain , typename TValue &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_89a953e969bebe1af0bcb31d1e92bf3f.html">math</a></li><li class="navelem"><a class="el" href="testRealFFT_8cpp.html">testRealFFT.cpp</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:02 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:20 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

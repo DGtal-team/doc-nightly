@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('moduleMeshVoxelization.html',''); init
 <dl class="section see"><dt>See also</dt><dd>DGtalTools <a class="el" href="classDGtal_1_1MeshVoxelizer.html" title="Aim: A class for computing the digitization of a triangle or a Mesh.">MeshVoxelizer</a></dd></dl>
 <h1><a class="anchor" id="sectVoxelization1"></a>
 Introduction</h1>
-<p>This documentation describes a voxelization approach of a triangulated structure. The proposed approach follows the method described by Laine <a class="el" href="citelist.html#CITEREF_Laine13">[78]</a>.</p>
+<p>This documentation describes a voxelization approach of a triangulated structure. The proposed approach follows the method described by Laine <a class="el" href="citelist.html#CITEREF_Laine13">[79]</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>The digitization is not a <em>solid</em> voxelization in the sense that if the input mesh is a closed surface, interior voxels are not exported. Only the triangles are digitized.</dd></dl>
 <p>The approach is rather simple: Given a triangulated mesh, the MeshVoxlizer processes each triangle independently. If the triangle intersects a given <em>template</em> centered at a given grid point, then the grid point belongs to the digitization of the triangle.</p>
 <p>The geometry of the template is used to control the topology of the resulting digital set. We provide two templates to obtain 6- and 26-separable digital sets (see <a class="el" href="moduleMeshVoxelization.html#sectVoxelization3">Limitations</a> for discussion).</p>
@@ -185,7 +185,7 @@ Limitations</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageShapes.html">Shapes package</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:04 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:22 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

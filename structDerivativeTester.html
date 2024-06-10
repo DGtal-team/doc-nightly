@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a832aae116bd24219bbb479622f302ef3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDerivativeTester.html#a832aae116bd24219bbb479622f302ef3">test</a> (const Calculus &amp;calculus)</td></tr>
+<tr class="memitem:a832aae116bd24219bbb479622f302ef3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDerivativeTester.html#a832aae116bd24219bbb479622f302ef3">test</a> (const Calculus &amp;<a class="el" href="dgtalCalculus-halfsphere_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>)</td></tr>
 <tr class="separator:a832aae116bd24219bbb479622f302ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -169,9 +169,9 @@ template&lt;typename Calculus , int order&gt; </div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        { <span class="comment">// test primal composition</span></div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1LinearOperator.html">DGtal::LinearOperator&lt;Calculus, order, DGtal::PRIMAL, order+1, DGtal::PRIMAL&gt;</a> FirstDerivative;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            FirstDerivative first_derivative = calculus.template derivative&lt;order, DGtal::PRIMAL&gt;();</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            FirstDerivative first_derivative = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.template derivative&lt;order, DGtal::PRIMAL&gt;();</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1LinearOperator.html">DGtal::LinearOperator&lt;Calculus, order+1, DGtal::PRIMAL, order+2, DGtal::PRIMAL&gt;</a> SecondDerivative;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            SecondDerivative second_derivative = calculus.template derivative&lt;order+1, DGtal::PRIMAL&gt;();</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            SecondDerivative second_derivative = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.template derivative&lt;order+1, DGtal::PRIMAL&gt;();</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1LinearOperator.html">DGtal::LinearOperator&lt;Calculus, order, DGtal::PRIMAL, order+2, DGtal::PRIMAL&gt;</a> DoubleDerivative;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            DoubleDerivative double_derivative = second_derivative * first_derivative;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keywordflow">if</span> (!is_all_zero(double_derivative.myContainer)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -181,9 +181,9 @@ template&lt;typename Calculus , int order&gt; </div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        { <span class="comment">// test dual composition</span></div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1LinearOperator.html">DGtal::LinearOperator&lt;Calculus, order, DGtal::DUAL, order+1, DGtal::DUAL&gt;</a> FirstDerivative;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            FirstDerivative first_derivative = calculus.template derivative&lt;order, DGtal::DUAL&gt;();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            FirstDerivative first_derivative = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.template derivative&lt;order, DGtal::DUAL&gt;();</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1LinearOperator.html">DGtal::LinearOperator&lt;Calculus, order+1, DGtal::DUAL, order+2, DGtal::DUAL&gt;</a> SecondDerivative;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            SecondDerivative second_derivative = calculus.template derivative&lt;order+1, DGtal::DUAL&gt;();</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            SecondDerivative second_derivative = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.template derivative&lt;order+1, DGtal::DUAL&gt;();</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1LinearOperator.html">DGtal::LinearOperator&lt;Calculus, order, DGtal::DUAL, order+2, DGtal::DUAL&gt;</a> DoubleDerivative;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            DoubleDerivative double_derivative = second_derivative * first_derivative;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keywordflow">if</span> (!is_all_zero(double_derivative.myContainer)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -212,14 +212,15 @@ template&lt;typename Calculus , int order&gt; </div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="comment">        }</span></div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment">        */</span></div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structDerivativeTester.html#a832aae116bd24219bbb479622f302ef3">DerivativeTester&lt;Calculus, order-1&gt;::test</a>(calculus);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="structDerivativeTester.html#a832aae116bd24219bbb479622f302ef3">DerivativeTester&lt;Calculus, order-1&gt;::test</a>(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>);</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    }</div>
 <div class="ttc" id="aclassDGtal_1_1LinearOperator_html"><div class="ttname"><a href="classDGtal_1_1LinearOperator.html">DGtal::LinearOperator</a></div><div class="ttdoc">Aim: LinearOperator represents discrete linear operator between discrete kforms in the DEC package.</div><div class="ttdef"><b>Definition:</b> <a href="LinearOperator_8h_source.html#l00068">LinearOperator.h:69</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a4e9d205fb8308b3d07478e48bf63308c"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a></div><div class="ttdeci">PolyCalculus * calculus</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00070">dgtalCalculus-geodesic.cpp:70</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fc7012708b0416880a5c8b12dfdf9dd"><div class="ttname"><a href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">DGtal::trace</a></div><div class="ttdeci">Trace trace</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00153">Common.h:153</a></div></div>
 <div class="ttc" id="astructDerivativeTester_html_a832aae116bd24219bbb479622f302ef3"><div class="ttname"><a href="structDerivativeTester.html#a832aae116bd24219bbb479622f302ef3">DerivativeTester::test</a></div><div class="ttdeci">static bool test(const Calculus &amp;calculus)</div><div class="ttdef"><b>Definition:</b> <a href="DECCommon_8h_source.html#l00200">DECCommon.h:200</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info()</a>, and <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>.</p>
+<p class="reference">References <a class="el" href="dgtalCalculus-geodesic_8cpp_source.html#l00070">calculus</a>, <a class="el" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info()</a>, and <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>.</p>
 
 </div>
 </div>
@@ -232,7 +233,7 @@ template&lt;typename Calculus , int order&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structDerivativeTester.html">DerivativeTester</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:05 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:22 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

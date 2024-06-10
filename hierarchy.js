@@ -770,6 +770,7 @@ var hierarchy =
     [ "DGtal::VoronoiCovarianceMeasureOnDigitalSurface< TDigitalSurfaceContainer, TSeparableMetric, TKernelFunction >::EigenStructure", "structDGtal_1_1VoronoiCovarianceMeasureOnDigitalSurface_1_1EigenStructure.html", null ],
     [ "DGtal::functors::ElementaryConvolutionNormalVectorEstimator< TSurfel, TEmbedder >", "classDGtal_1_1functors_1_1ElementaryConvolutionNormalVectorEstimator.html", null ],
     [ "DGtal::EllipticHelix< TSpace >", "classDGtal_1_1EllipticHelix.html", null ],
+    [ "DGtal::functors::EmbedderFromNormalVectors< TRealPoint, TRealVector >", "structDGtal_1_1functors_1_1EmbedderFromNormalVectors.html", null ],
     [ "boost::EqualityComparable< T >", "structboost_1_1EqualityComparable.html", [
       [ "DGtal::concepts::CLabel< T >", "structDGtal_1_1concepts_1_1CLabel.html", null ],
       [ "DGtal::concepts::CSegment< T >", "structDGtal_1_1concepts_1_1CSegment.html", null ]

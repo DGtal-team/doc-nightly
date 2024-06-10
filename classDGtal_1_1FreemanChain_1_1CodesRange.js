@@ -19,5 +19,5 @@ var classDGtal_1_1FreemanChain_1_1CodesRange =
     [ "selfDisplay", "classDGtal_1_1FreemanChain_1_1CodesRange.html#a1e5075fa532da5e22214ab14909894ff", null ],
     [ "size", "classDGtal_1_1FreemanChain_1_1CodesRange.html#af6ad5f1cb7c42d85c1a087fcddf24d06", null ],
     [ "operator<<", "classDGtal_1_1FreemanChain_1_1CodesRange.html#afd847f599121ec0f0a812fe8550821fc", null ],
-    [ "myChain", "classDGtal_1_1FreemanChain_1_1CodesRange.html#a80dff6859a577076830a45f491cdd6d4", null ]
+    [ "myChain", "classDGtal_1_1FreemanChain_1_1CodesRange.html#a2810e1d9fd1248ac458eae01d11c26eb", null ]
 ];

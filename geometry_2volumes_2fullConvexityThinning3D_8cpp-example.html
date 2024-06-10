@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -179,8 +179,8 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2fullConvexityThinni
 <div class="line"> </div>
 <div class="line">  {</div>
 <div class="line">    params( <span class="stringliteral">&quot;surfaceComponents&quot;</span> , <span class="stringliteral">&quot;All&quot;</span> );</div>
-<div class="line">    <span class="keyword">auto</span> surface = SH3::makeDigitalSurface( bimage, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line">    <span class="keywordtype">bool</span> ok      = SH3::saveOBJ( surface, <span class="stringliteral">&quot;source.obj&quot;</span> );</div>
+<div class="line">    <span class="keyword">auto</span> <a name="a9"></a><a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> = SH3::makeDigitalSurface( bimage, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    <span class="keywordtype">bool</span> ok      = SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, <span class="stringliteral">&quot;source.obj&quot;</span> );</div>
 <div class="line">  }</div>
 <div class="line">  </div>
 <div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a> ( <span class="stringliteral">&quot;Thinning&quot;</span> );</div>
@@ -198,7 +198,7 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2fullConvexityThinni
 <div class="line">      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> it  = to_process.begin(), itE = to_process.end(); it != itE; ++it )</div>
 <div class="line">        {</div>
 <div class="line">          <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p = *it;</div>
-<div class="line">          <span class="keywordflow">if</span> ( ! <a name="a9"></a><a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a614d1b1c043b31763c1eb50f64666737">image</a>( p ) ) <span class="keywordflow">continue</span>; <span class="comment">// already removed</span></div>
+<div class="line">          <span class="keywordflow">if</span> ( ! <a name="a10"></a><a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a614d1b1c043b31763c1eb50f64666737">image</a>( p ) ) <span class="keywordflow">continue</span>; <span class="comment">// already removed</span></div>
 <div class="line">          nca.setCenter( p, image );</div>
 <div class="line">          <span class="keywordflow">if</span> ( full_cvx</div>
 <div class="line">               ? nca.isFullyConvexCollapsible()</div>
@@ -217,12 +217,12 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2fullConvexityThinni
 <div class="line">        std::swap( to_process, next_to_process );</div>
 <div class="line">    }</div>
 <div class="line">  <span class="keywordflow">while</span> ( nb_simple != 0 );</div>
-<div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a10"></a><a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
+<div class="line">  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a name="a11"></a><a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"> </div>
 <div class="line">  {</div>
 <div class="line">    params( <span class="stringliteral">&quot;surfaceComponents&quot;</span> , <span class="stringliteral">&quot;All&quot;</span> );</div>
-<div class="line">    <span class="keyword">auto</span> surface = SH3::makeDigitalSurface( bimage, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
-<div class="line">    SH3::saveOBJ( surface, <span class="stringliteral">&quot;geom-thinned.obj&quot;</span> );</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> = SH3::makeDigitalSurface( bimage, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">    SH3::saveOBJ( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, <span class="stringliteral">&quot;geom-thinned.obj&quot;</span> );</div>
 <div class="line">  }</div>
 <div class="line">    </div>
 <div class="line">  <span class="comment">// Display by using two different list to manage OpenGL transparency.</span></div>
@@ -250,6 +250,7 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2fullConvexityThinni
 <div class="ttc" id="aclassDGtal_1_1Trace_html_a352b7160bf722e2f0bcbee5d0bad6ef3"><div class="ttname"><a href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">DGtal::Trace::beginBlock</a></div><div class="ttdeci">void beginBlock(const std::string &amp;keyword=&quot;&quot;)</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
 <div class="ttc" id="afullConvexityThinning3D_8cpp_html_ae3da7f498b2ab1db86d633cb277cb6bd"><div class="ttname"><a href="fullConvexityThinning3D_8cpp.html#ae3da7f498b2ab1db86d633cb277cb6bd">NCA</a></div><div class="ttdeci">NeighborhoodConvexityAnalyzer&lt; KSpace, 1 &gt; NCA</div><div class="ttdef"><b>Definition:</b> <a href="fullConvexityThinning3D_8cpp_source.html#l00060">fullConvexityThinning3D.cpp:60</a></div></div>
 <div class="ttc" id="agreedy-plane-segmentation-ex2_8cpp_html_a6d06fad433cff067dfcbbbf16d6e2dbf"><div class="ttname"><a href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a></div><div class="ttdeci">MyDigitalSurface::ConstIterator ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="greedy-plane-segmentation-ex2_8cpp_source.html#l00093">greedy-plane-segmentation-ex2.cpp:93</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
@@ -268,7 +269,7 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2fullConvexityThinni
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 8 2024 20:20:35 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:02:53 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

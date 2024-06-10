@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -102,10 +102,10 @@ $(document).ready(function(){initNavTree('moduleShrouds.html',''); initResizable
 </div>
 <div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: </dt><dd>Jacques-Olivier Lachaud</dd></dl>
 <p>Part of the <a class="el" href="packageGeometry.html">Geometry package</a>.</p>
-<p>This part of the manual describes classes and functions related to the regularization of digital surfaces using the "Shrouds" algorithm, by Nielson et al <a class="el" href="citelist.html#CITEREF_nielson2003shrouds">[91]</a>.</p>
+<p>This part of the manual describes classes and functions related to the regularization of digital surfaces using the "Shrouds" algorithm, by Nielson et al <a class="el" href="citelist.html#CITEREF_nielson2003shrouds">[92]</a>.</p>
 <p>On binary 3D images, the "Shrouds" algorithm builds a smooth surface that separates the interior voxels from the exterior voxels. It starts from the (closed) digital surface that separates interior voxels from exterior voxels. The 3D smooth surface reconstruction problem is transformed into a series of 2D smooth contour reconstruction problems, by slicing the 3D volume (and thus the digital surface) with axis-align planes. Each contour is regularized to minimize its squared curvature and the separation property is obtained by forcing each vertex to lie on its unit edge joining an interior voxel to an exterior voxel (i.e. the edge that is dual to the surfel). The 2D problems are intertwined since each vertex is shared by two slices.</p>
 <dl class="section note"><dt>Note</dt><dd>This method is limited to closed surface reconstruction, in opposition to the method presented in <a class="el" href="moduleRegularization.html">Digital surface regularization by normal vector alignment</a>.</dd></dl>
-<p><b>Disclaimer</b>. This implementation is our interpretation of the work presented in <a class="el" href="citelist.html#CITEREF_nielson2003shrouds">[91]</a>, and tries to follow at best the ideas presented therein. However, a major part of the numerical resolution is not detailed. We have inferred a reasonable way of solving the fourth-order equations but results may differ from the original implementation. For instance, visually on the bunny example of the paper, our results are very close (and look better). This implementation comes thus without any guarantee.</p>
+<p><b>Disclaimer</b>. This implementation is our interpretation of the work presented in <a class="el" href="citelist.html#CITEREF_nielson2003shrouds">[92]</a>, and tries to follow at best the ideas presented therein. However, a major part of the numerical resolution is not detailed. We have inferred a reasonable way of solving the fourth-order equations but results may differ from the original implementation. For instance, visually on the bunny example of the paper, our results are very close (and look better). This implementation comes thus without any guarantee.</p>
 <p>Related example: <a class="el" href="testShroudsRegularization_8cpp.html">geometry/surfaces/testShroudsRegularization.cpp</a></p>
 <h1><a class="anchor" id="moduleShrouds_sec1"></a>
 Introduction</h1>
@@ -134,9 +134,10 @@ Main usage with squared curvature energy</h1>
 <div class="line">  <span class="keyword">auto</span> implicit_shape  = SH3::makeImplicitShape3D  ( params );</div>
 <div class="line">  <span class="keyword">auto</span> digitized_shape = SH3::makeDigitizedImplicitShape3D( implicit_shape, params );</div>
 <div class="line">  <span class="keyword">auto</span> <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>               = SH3::getKSpace( params );</div>
-<div class="line">  <span class="keyword">auto</span> surface         = SH3::makeDigitalSurface( digitized_shape, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">  <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>         = SH3::makeDigitalSurface( digitized_shape, <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
 <div class="ttc" id="aclassDGtal_1_1SetOfSurfels_html"><div class="ttname"><a href="classDGtal_1_1SetOfSurfels.html">DGtal::SetOfSurfels</a></div><div class="ttdoc">Aim: A model of CDigitalSurfaceContainer which defines the digital surface as connected surfels....</div><div class="ttdef"><b>Definition:</b> <a href="SetOfSurfels_8h_source.html#l00073">SetOfSurfels.h:74</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1ShroudsRegularization_html_a0d43ce039fb5444d8c401029e04b895b"><div class="ttname"><a href="classDGtal_1_1ShroudsRegularization.html#a0d43ce039fb5444d8c401029e04b895b">DGtal::ShroudsRegularization::Regularization</a></div><div class="ttdeci">Regularization</div><div class="ttdoc">The enum class specifying the possible shrouds regularization.</div><div class="ttdef"><b>Definition:</b> <a href="ShroudsRegularization_8h_source.html#l00096">ShroudsRegularization.h:96</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
 <div class="ttc" id="atestArithmeticalDSSComputerOnSurfels_8cpp_html_ac6834e172d5d8c2b796bc846aa0d643b"><div class="ttname"><a href="testArithmeticalDSSComputerOnSurfels_8cpp.html#ac6834e172d5d8c2b796bc846aa0d643b">SH3</a></div><div class="ttdeci">Shortcuts&lt; KSpace &gt; SH3</div><div class="ttdef"><b>Definition:</b> <a href="testArithmeticalDSSComputerOnSurfels_8cpp_source.html#l00049">testArithmeticalDSSComputerOnSurfels.cpp:49</a></div></div>
 <div class="ttc" id="atestCubicalComplex_8cpp_html_a2b87ed989d2519d025bd5d4fbcbac062"><div class="ttname"><a href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a></div><div class="ttdeci">KSpace K</div><div class="ttdef"><b>Definition:</b> <a href="testCubicalComplex_8cpp_source.html#l00062">testCubicalComplex.cpp:62</a></div></div>
 </div><!-- fragment --><p> we obtain the following slice geometry, best seen on the polygonal surface dual to the digital surface:</p>
@@ -145,7 +146,7 @@ Main usage with squared curvature energy</h1>
 <div class="caption">
 Initialization for the Shrouds algorithm (dual surface to goursat digital surface).</div></div>
 <p>The regularization class instance can be set up with default parameters using the following syntax:</p>
-<div class="fragment"><div class="line">  <span class="keyword">auto</span> idxsurface     = SH3::makeIdxDigitalSurface( surface, params );</div>
+<div class="fragment"><div class="line">  <span class="keyword">auto</span> idxsurface     = SH3::makeIdxDigitalSurface( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>, params );</div>
 <div class="line">  ShroudsRegularization&lt; Container &gt; shrouds_reg( idxsurface );</div>
 <div class="line">  <span class="keyword">auto</span> originalPos    = shrouds_reg.positions();</div>
 </div><!-- fragment --><p> You may use <a class="el" href="classDGtal_1_1ShroudsRegularization.html#aa74ddbddd6208fff3d7a7850a4f9f385">ShroudsRegularization::setParams</a> to change some parameters:</p>
@@ -222,7 +223,7 @@ Optimized surface according to area.</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:04 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

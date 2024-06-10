@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('moduleMaximalSegmentSliceEstimation.ht
 <div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: </dt><dd>Jocelyn Meyron, Tristan Roussillon</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.2</dd></dl>
 <p>Part of the <a class="el" href="packageGeometry.html">Geometry package</a>.</p>
-<p>This part of the manual describes the normal estimation algorithm based on the computation of maximal segment on slices of a digital surface (see <a class="el" href="citelist.html#CITEREF_Lachaud03c">[69]</a> and <a class="el" href="citelist.html#CITEREF_lenoir1996fast">[81]</a>).</p>
+<p>This part of the manual describes the normal estimation algorithm based on the computation of maximal segment on slices of a digital surface (see <a class="el" href="citelist.html#CITEREF_Lachaud03c">[70]</a> and <a class="el" href="citelist.html#CITEREF_lenoir1996fast">[82]</a>).</p>
 <p>The following programs are related to this documentation: <a class="el" href="exampleMaximalSegmentSliceEstimation_8cpp.html">geometry/surfaces/exampleMaximalSegmentSliceEstimation.cpp</a>, <a class="el" href="testArithmeticalDSSComputerOnSurfels_8cpp.html">testArithmeticalDSSComputerOnSurfels.cpp</a>.</p>
 <h1><a class="anchor" id="sectMaximalSegmentSliceEstimation1"></a>
 Introduction</h1>
@@ -131,11 +131,12 @@ Usage</h1>
 <div class="line">    <span class="keyword">using</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#acf36ecb2b183354828ddd0b48821b752">Estimator</a> = MaximalSegmentSliceEstimation&lt;Surface&gt;;</div>
 <div class="line">    <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#acf36ecb2b183354828ddd0b48821b752">Estimator</a> estimator;</div>
 <div class="line">    estimator.init(gridstep, surfels.begin(), surfels.end());</div>
-<div class="line">    estimator.attach(surface);</div>
+<div class="line">    estimator.attach(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Usage</span></div>
 <div class="line">    std::vector&lt;Estimator::Quantity&gt; quantities;</div>
 <div class="line">    estimator.eval(surfels.begin(), surfels.end(), std::back_inserter(quantities));</div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
 <div class="ttc" id="aexamplePlaneProbingParallelepipedEstimator_8cpp_html_acf36ecb2b183354828ddd0b48821b752"><div class="ttname"><a href="examplePlaneProbingParallelepipedEstimator_8cpp.html#acf36ecb2b183354828ddd0b48821b752">Estimator</a></div><div class="ttdeci">PlaneProbingParallelepipedEstimator&lt; DigitalPlane, ProbingMode::R1 &gt; Estimator</div><div class="ttdef"><b>Definition:</b> <a href="examplePlaneProbingParallelepipedEstimator_8cpp_source.html#l00046">examplePlaneProbingParallelepipedEstimator.cpp:46</a></div></div>
 </div><!-- fragment --> <h1><a class="anchor" id="sectMaximalSegmentSliceEstimation3"></a>
 Implementation details</h1>
@@ -168,7 +169,7 @@ Implementation details</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:04 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

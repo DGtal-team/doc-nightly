@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -270,7 +270,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="examples_2tutorial-examples_2polyhedralizer_8cpp-example.html#a8">examples/tutorial-examples/polyhedralizer.cpp</a>, <a class="el" href="geometry_2curves_2exampleGridCurve3d-2_8cpp-example.html#a5">geometry/curves/exampleGridCurve3d-2.cpp</a>, <a class="el" href="geometry_2surfaces_2dvcm-3d_8cpp-example.html#a7">geometry/surfaces/dvcm-3d.cpp</a>, <a class="el" href="topology_2digitalSurfaceSlice_8cpp-example.html#a5">topology/digitalSurfaceSlice.cpp</a>, <a class="el" href="topology_2trackImplicitPolynomialSurfaceToOFF_8cpp-example.html#a9">topology/trackImplicitPolynomialSurfaceToOFF.cpp</a>, <a class="el" href="tutorial-examples_2AreaSurfaceEstimation-final_8cpp-example.html#a11">tutorial-examples/AreaSurfaceEstimation-final.cpp</a>, and <a class="el" href="tutorial-examples_2polyhedralizer_8cpp-example.html#a8">tutorial-examples/polyhedralizer.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="examples_2tutorial-examples_2polyhedralizer_8cpp-example.html#a8">examples/tutorial-examples/polyhedralizer.cpp</a>, <a class="el" href="geometry_2curves_2exampleGridCurve3d-2_8cpp-example.html#a5">geometry/curves/exampleGridCurve3d-2.cpp</a>, <a class="el" href="geometry_2surfaces_2dvcm-3d_8cpp-example.html#a7">geometry/surfaces/dvcm-3d.cpp</a>, <a class="el" href="topology_2digitalSurfaceSlice_8cpp-example.html#a5">topology/digitalSurfaceSlice.cpp</a>, <a class="el" href="topology_2trackImplicitPolynomialSurfaceToOFF_8cpp-example.html#a9">topology/trackImplicitPolynomialSurfaceToOFF.cpp</a>, <a class="el" href="tutorial-examples_2AreaSurfaceEstimation-final_8cpp-example.html#a12">tutorial-examples/AreaSurfaceEstimation-final.cpp</a>, and <a class="el" href="tutorial-examples_2polyhedralizer_8cpp-example.html#a8">tutorial-examples/polyhedralizer.cpp</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="testArithmeticalDSSComputerOnSurfels_8cpp_source.html#l00050">50</a> of file <a class="el" href="testArithmeticalDSSComputerOnSurfels_8cpp_source.html">testArithmeticalDSSComputerOnSurfels.cpp</a>.</p>
@@ -391,15 +391,15 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">auto</span> implicit_shape = SH3::makeImplicitShape3D(params);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">auto</span> digitized_shape = SH3::makeDigitizedImplicitShape3D(implicit_shape, params);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">auto</span> binary_image = SH3::makeBinaryImage(digitized_shape, params);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">auto</span> kspace = SH3::getKSpace(binary_image, params);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">auto</span> surface = SH3::makeDigitalSurface(binary_image, kspace, params);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a> = SH3::makeBinaryImage(digitized_shape, params);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">auto</span> kspace = SH3::getKSpace(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, params);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">auto</span> <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> = SH3::makeDigitalSurface(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, kspace, params);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="structDGtal_1_1SignedKhalimskyCell.html">Surfel</a> surfel = <a class="code" href="classDGtal_1_1Surfaces.html">Surfaces&lt;KSpace&gt;::findABel</a>(kspace, *binary_image, 10000);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="structDGtal_1_1SignedKhalimskyCell.html">Surfel</a> surfel = <a class="code" href="classDGtal_1_1Surfaces.html">Surfaces&lt;KSpace&gt;::findABel</a>(kspace, *<a class="code" href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a>, 10000);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classDGtal_1_1KhalimskySpaceND.html#ae43e64aef19d01b248cdece71825e1b6">KSpace::DirIterator</a> q1 = kspace.sDirs(surfel);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> dim1 = *q1, dim2 = kspace.sOrthDir(surfel);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">auto</span> tracker = surface-&gt;container().newTracker(surfel);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">auto</span> tracker = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>-&gt;container().newTracker(surfel);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    SurfaceSlice surfaceSlice(tracker, dim1);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">delete</span> tracker;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
@@ -412,8 +412,12 @@ Functions</h2></td></tr>
 <div class="ttc" id="aclassDGtal_1_1DigitalSurface2DSlice_html"><div class="ttname"><a href="classDGtal_1_1DigitalSurface2DSlice.html">DGtal::DigitalSurface2DSlice</a></div><div class="ttdoc">Aim: Represents a 2-dimensional slice in a DigitalSurface. In a sense, it is a 4-connected contour,...</div><div class="ttdef"><b>Definition:</b> <a href="DigitalSurface2DSlice_8h_source.html#l00093">DigitalSurface2DSlice.h:94</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1KhalimskySpaceND_html_ae43e64aef19d01b248cdece71825e1b6"><div class="ttname"><a href="classDGtal_1_1KhalimskySpaceND.html#ae43e64aef19d01b248cdece71825e1b6">DGtal::KhalimskySpaceND::DirIterator</a></div><div class="ttdeci">typename PreCellularGridSpace::DirIterator DirIterator</div><div class="ttdef"><b>Definition:</b> <a href="KhalimskySpaceND_8h_source.html#l00422">KhalimskySpaceND.h:422</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Surfaces_html"><div class="ttname"><a href="classDGtal_1_1Surfaces.html">DGtal::Surfaces</a></div><div class="ttdoc">Aim: A utility class for constructing surfaces (i.e. set of (n-1)-cells).</div><div class="ttdef"><b>Definition:</b> <a href="Surfaces_8h_source.html#l00078">Surfaces.h:79</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_aa50a9c9e8c2b62bc7ff1c3c577d25ffd"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#aa50a9c9e8c2b62bc7ff1c3c577d25ffd">binary_image</a></div><div class="ttdeci">CountedPtr&lt; SH3::BinaryImage &gt; binary_image</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00065">dgtalCalculus-geodesic.cpp:65</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fbe8c8d47ca5c36ced14284ac62613d"><div class="ttname"><a href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">DGtal::Dimension</a></div><div class="ttdeci">DGtal::uint32_t Dimension</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00136">Common.h:136</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="dgtalCalculus-geodesic_8cpp_source.html#l00065">binary_image</a>, and <a class="el" href="dgtalCalculus-geodesic_8cpp_source.html#l00066">surface</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="testArithmeticalDSSComputerOnSurfels_8cpp_source.html#l00140">TEST_CASE()</a>.</p>
 
 </div>
@@ -483,7 +487,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_2751d6f01b35f5fec7131f6adf42b522.html">geometry</a></li><li class="navelem"><a class="el" href="dir_e226bbce94b418b2b8019d48fb57e0e0.html">surfaces</a></li><li class="navelem"><a class="el" href="testArithmeticalDSSComputerOnSurfels_8cpp.html">testArithmeticalDSSComputerOnSurfels.cpp</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:01 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:19 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

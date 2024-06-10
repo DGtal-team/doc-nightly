@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -156,19 +156,20 @@ Introduction and preliminary example</h2>
 <div class="line"> </div>
 <div class="line">  <span class="keyword">using</span> DTL2 = DistanceTransformation&lt;<a class="code" href="namespaceDGtal_1_1Z2i.html#a9b96ab8175cf9c54b1f451858ccd46a4">Z2i::Space</a>, decltype(mickey), <a class="code" href="namespaceDGtal_1_1Z2i.html#a5334b5612687982f0154e4ee8f5dd93d">Z2i::L2Metric</a>&gt;;</div>
 <div class="line"> </div>
-<div class="line">  DTL2 dt( <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>, mickey, <a class="code" href="namespaceDGtal_1_1Z2i.html#afa16730fe413692cdb474b45d4fff388">Z2i::l2Metric</a> );</div>
+<div class="line">  DTL2 <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>( <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>, mickey, <a class="code" href="namespaceDGtal_1_1Z2i.html#afa16730fe413692cdb474b45d4fff388">Z2i::l2Metric</a> );</div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a778e38aa889751afffa2dea6b803e67a"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a></div><div class="ttdeci">float dt</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00063">dgtalCalculus-geodesic.cpp:63</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z2i_html_a5334b5612687982f0154e4ee8f5dd93d"><div class="ttname"><a href="namespaceDGtal_1_1Z2i.html#a5334b5612687982f0154e4ee8f5dd93d">DGtal::Z2i::L2Metric</a></div><div class="ttdeci">ExactPredicateLpSeparableMetric&lt; Space, 2 &gt; L2Metric</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00118">StdDefs.h:118</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z2i_html_a9b96ab8175cf9c54b1f451858ccd46a4"><div class="ttname"><a href="namespaceDGtal_1_1Z2i.html#a9b96ab8175cf9c54b1f451858ccd46a4">DGtal::Z2i::Space</a></div><div class="ttdeci">SpaceND&lt; 2, Integer &gt; Space</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00075">StdDefs.h:75</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z2i_html_aca523bebdae58eb19385aaefffff8bc5"><div class="ttname"><a href="namespaceDGtal_1_1Z2i.html#aca523bebdae58eb19385aaefffff8bc5">DGtal::Z2i::Domain</a></div><div class="ttdeci">HyperRectDomain&lt; Space &gt; Domain</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00099">StdDefs.h:99</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z2i_html_afa16730fe413692cdb474b45d4fff388"><div class="ttname"><a href="namespaceDGtal_1_1Z2i.html#afa16730fe413692cdb474b45d4fff388">DGtal::Z2i::l2Metric</a></div><div class="ttdeci">static const L2Metric l2Metric</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00123">StdDefs.h:123</a></div></div>
 <div class="ttc" id="atestProjection_8cpp_html_a1f1a69f8d8b037b72c2160ed12b3ef51"><div class="ttname"><a href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a></div><div class="ttdeci">Domain domain</div><div class="ttdef"><b>Definition:</b> <a href="testProjection_8cpp_source.html#l00088">testProjection.cpp:88</a></div></div>
 </div><!-- fragment --><p>The <code>decltype</code> specifier is used to deduce the type of the functor, see <a class="el" href="moduleFunctors.html#passing_functorholder">Passing a FunctorHolder as a parameter</a>.</p>
-<p>Finally, export the result: </p><div class="fragment"><div class="line">  <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">DTL2::Value</a> maxDT = *boost::first_max_element( dt.constRange().begin(), dt.constRange().end() );</div>
+<p>Finally, export the result: </p><div class="fragment"><div class="line">  <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">DTL2::Value</a> maxDT = *boost::first_max_element( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>.constRange().begin(), <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>.constRange().end() );</div>
 <div class="line">  <span class="keyword">using</span> HueTwice = HueShadeColorMap&lt;DTL2::Value, 1&gt;;</div>
 <div class="line"> </div>
 <div class="line">  Board2D aBoard;</div>
 <div class="line">  aBoard &lt;&lt; <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>;</div>
-<div class="line">  Display2DFactory::drawImage&lt;HueTwice&gt;(aBoard, dt, 0, maxDT);</div>
+<div class="line">  Display2DFactory::drawImage&lt;HueTwice&gt;(aBoard, <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>, 0, maxDT);</div>
 <div class="line">  aBoard.saveEPS(<span class="stringliteral">&quot;examplePointFunctorHolder.eps&quot;</span>);</div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_a566a00621638570a4186414035153a2e"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a></div><div class="ttdeci">double Value</div><div class="ttdef"><b>Definition:</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00041">testSimpleRandomAccessRangeFromPoint.cpp:38</a></div></div>
 </div><!-- fragment --><div class="image">
@@ -792,7 +793,7 @@ Image generated from a point-dependent lambda.</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageBase.html">Base package</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:03 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:20 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

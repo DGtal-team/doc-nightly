@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('testNeighborhoodConfigurations_8cpp_so
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> TObject&gt;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;TObject</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="testNeighborhoodConfigurations_8cpp.html#aa6aae41a8c397be4def08c18bf9e57c0">   45</a></span>&#160;<a class="code" href="testNeighborhoodConfigurations_8cpp.html#aa6aae41a8c397be4def08c18bf9e57c0">Object3D</a>(<span class="keyword">const</span> <span class="keyword">typename</span> TObject::DigitalTopology &amp;dt)</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="testNeighborhoodConfigurations_8cpp.html#aa6aae41a8c397be4def08c18bf9e57c0">   45</a></span>&#160;<a class="code" href="testNeighborhoodConfigurations_8cpp.html#aa6aae41a8c397be4def08c18bf9e57c0">Object3D</a>(<span class="keyword">const</span> <span class="keyword">typename</span> TObject::DigitalTopology &amp;<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>)</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">using namespace </span><a class="code" href="namespaceDGtal.html">DGtal</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">using namespace </span>Z3i;</div>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('testNeighborhoodConfigurations_8cpp_so
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.<a class="code" href="classDGtal_1_1KhalimskySpaceND.html#a15dcbcaae831dd1c36090e6336c177d4">init</a>( <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code" href="classDGtal_1_1HyperRectDomain.html#a6348ffb3dfb06c744df64fd2d6ccceee">lowerBound</a>(),</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code" href="classDGtal_1_1HyperRectDomain.html#a87116f19b257b1f2b852e24627c8d456">upperBound</a>(), <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">return</span> TObject(dt, diamond_set);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">return</span> TObject(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>, diamond_set);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="testNeighborhoodConfigurations_8cpp.html#a4b17c265950ff33e66c144f356f455cb">   67</a></span>&#160;<a class="code" href="testNeighborhoodConfigurations_8cpp.html#a4b17c265950ff33e66c144f356f455cb">TEST_CASE</a>(<span class="stringliteral">&quot;Check that each neighborhood point in 3D (26 points) has associated a bit in an unsigned integer (NeighborhoodConfiguration).&quot;</span>, <span class="stringliteral">&quot;[map][mask][3D]&quot;</span> )</div>
@@ -394,6 +394,7 @@ $(document).ready(function(){initNavTree('testNeighborhoodConfigurations_8cpp_so
 <div class="ttc" id="aclassDGtal_1_1KhalimskySpaceND_html"><div class="ttname"><a href="classDGtal_1_1KhalimskySpaceND.html">DGtal::KhalimskySpaceND</a></div><div class="ttdoc">Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex,...</div><div class="ttdef"><b>Definition:</b> <a href="KhalimskySpaceND_8h_source.html#l00392">KhalimskySpaceND.h:394</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1KhalimskySpaceND_html_a15dcbcaae831dd1c36090e6336c177d4"><div class="ttname"><a href="classDGtal_1_1KhalimskySpaceND.html#a15dcbcaae831dd1c36090e6336c177d4">DGtal::KhalimskySpaceND::init</a></div><div class="ttdeci">bool init(const Point &amp;lower, const Point &amp;upper, bool isClosed)</div><div class="ttdoc">Specifies the upper and lower bounds for the maximal cells in this space.</div></div>
 <div class="ttc" id="aclassDGtal_1_1Shapes_html"><div class="ttname"><a href="classDGtal_1_1Shapes.html">DGtal::Shapes</a></div><div class="ttdoc">Aim: A utility class for constructing different shapes (balls, diamonds, and others).</div><div class="ttdef"><b>Definition:</b> <a href="DGtal_2shapes_2Shapes_8h_source.html#l00071">DGtal/shapes/Shapes.h:72</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a778e38aa889751afffa2dea6b803e67a"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a></div><div class="ttdeci">float dt</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00063">dgtalCalculus-geodesic.cpp:63</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z2i_html_a3ac2150ad3b1a395a08aac72650d855a"><div class="ttname"><a href="namespaceDGtal_1_1Z2i.html#a3ac2150ad3b1a395a08aac72650d855a">DGtal::Z2i::Object8_4</a></div><div class="ttdeci">Object&lt; DT8_4, DigitalSet &gt; Object8_4</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00105">StdDefs.h:105</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z2i_html_a7b2f164e461fd4e76244e919ffedf685"><div class="ttname"><a href="namespaceDGtal_1_1Z2i.html#a7b2f164e461fd4e76244e919ffedf685">DGtal::Z2i::Object4_8</a></div><div class="ttdeci">Object&lt; DT4_8, DigitalSet &gt; Object4_8</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00101">StdDefs.h:101</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1functions_html"><div class="ttname"><a href="namespaceDGtal_1_1functions.html">DGtal::functions</a></div><div class="ttdoc">functions namespace gathers all DGtal functionsxs.</div></div>
@@ -414,7 +415,7 @@ $(document).ready(function(){initNavTree('testNeighborhoodConfigurations_8cpp_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_5c34bd9de7ab721f49dc5d2e8cf02612.html">topology</a></li><li class="navelem"><a class="el" href="testNeighborhoodConfigurations_8cpp.html">testNeighborhoodConfigurations.cpp</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:20:58 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:15 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

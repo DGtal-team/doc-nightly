@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -130,6 +130,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a415b8381ea0cfdf550c6e9bfadf731fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a571cb82f93ccb9f7aea33df9316a7d57"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceDGtal.html#a9f6cc75dc44e45506a66cd233e0deb41">Orientation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1WindingNumbersShape.html#a571cb82f93ccb9f7aea33df9316a7d57">orientationBatch</a> (const Eigen::MatrixXd &amp;queries, const double threshold=0.3) const</td></tr>
 <tr class="separator:a571cb82f93ccb9f7aea33df9316a7d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adedc011d0780cf7c74364322607cf679"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1WindingNumbersShape.html#adedc011d0780cf7c74364322607cf679">rawWindingNumberBatch</a> (const Eigen::MatrixXd &amp;queries, Eigen::VectorXd &amp;W) const</td></tr>
+<tr class="separator:adedc011d0780cf7c74364322607cf679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -351,15 +353,15 @@ template&lt;typename TSpace &gt; </div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ad054990834d2763627166540087a2980"><div class="ttname"><a href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info</a></div><div class="ttdeci">std::ostream &amp; info()</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_ae3ef773d8a851319b34d2fbcb4e80bb7"><div class="ttname"><a href="classDGtal_1_1Trace.html#ae3ef773d8a851319b34d2fbcb4e80bb7">DGtal::Trace::warning</a></div><div class="ttdeci">std::ostream &amp; warning()</div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fc7012708b0416880a5c8b12dfdf9dd"><div class="ttname"><a href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">DGtal::trace</a></div><div class="ttdeci">Trace trace</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00153">Common.h:153</a></div></div>
-<div class="ttc" id="astructDGtal_1_1WindingNumbersShape_html_a042b39c25efb7cb3e626dc8bfa6b05fd"><div class="ttname"><a href="structDGtal_1_1WindingNumbersShape.html#a042b39c25efb7cb3e626dc8bfa6b05fd">DGtal::WindingNumbersShape::myPointAreas</a></div><div class="ttdeci">Eigen::VectorXd myPointAreas</div><div class="ttdoc">Const alias to point area measure.</div><div class="ttdef"><b>Definition:</b> <a href="WindingNumbersShape_8h_source.html#l00202">WindingNumbersShape.h:202</a></div></div>
-<div class="ttc" id="astructDGtal_1_1WindingNumbersShape_html_a25db799389b2433f0e044cc3257021c1"><div class="ttname"><a href="structDGtal_1_1WindingNumbersShape.html#a25db799389b2433f0e044cc3257021c1">DGtal::WindingNumbersShape::myO_CN</a></div><div class="ttdeci">Eigen::MatrixXd myO_CN</div><div class="ttdoc">libIGL octree for fast queries data structure</div><div class="ttdef"><b>Definition:</b> <a href="WindingNumbersShape_8h_source.html#l00209">WindingNumbersShape.h:209</a></div></div>
-<div class="ttc" id="astructDGtal_1_1WindingNumbersShape_html_a2642a8b87893813ddb6fb8451793995e"><div class="ttname"><a href="structDGtal_1_1WindingNumbersShape.html#a2642a8b87893813ddb6fb8451793995e">DGtal::WindingNumbersShape::myO_W</a></div><div class="ttdeci">Eigen::VectorXd myO_W</div><div class="ttdoc">libIGL octree for fast queries data structure</div><div class="ttdef"><b>Definition:</b> <a href="WindingNumbersShape_8h_source.html#l00211">WindingNumbersShape.h:211</a></div></div>
-<div class="ttc" id="astructDGtal_1_1WindingNumbersShape_html_a7d67f77c8eba41f21f68ed796d941427"><div class="ttname"><a href="structDGtal_1_1WindingNumbersShape.html#a7d67f77c8eba41f21f68ed796d941427">DGtal::WindingNumbersShape::myPoints</a></div><div class="ttdeci">CountedConstPtrOrConstPtr&lt; Eigen::MatrixXd &gt; myPoints</div><div class="ttdoc">Const alias to the points.</div><div class="ttdef"><b>Definition:</b> <a href="WindingNumbersShape_8h_source.html#l00198">WindingNumbersShape.h:198</a></div></div>
-<div class="ttc" id="astructDGtal_1_1WindingNumbersShape_html_ab0446ba2a5cd539424eaa48431f342cc"><div class="ttname"><a href="structDGtal_1_1WindingNumbersShape.html#ab0446ba2a5cd539424eaa48431f342cc">DGtal::WindingNumbersShape::myO_CH</a></div><div class="ttdeci">Eigen::MatrixXi myO_CH</div><div class="ttdoc">libIGL octree for fast queries data structure</div><div class="ttdef"><b>Definition:</b> <a href="WindingNumbersShape_8h_source.html#l00207">WindingNumbersShape.h:207</a></div></div>
-<div class="ttc" id="astructDGtal_1_1WindingNumbersShape_html_adc060724468e882aaf7b323c4c417c8f"><div class="ttname"><a href="structDGtal_1_1WindingNumbersShape.html#adc060724468e882aaf7b323c4c417c8f">DGtal::WindingNumbersShape::myO_PI</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int &gt; &gt; myO_PI</div><div class="ttdoc">libIGL octree for fast queries data structure</div><div class="ttdef"><b>Definition:</b> <a href="WindingNumbersShape_8h_source.html#l00205">WindingNumbersShape.h:205</a></div></div>
-<div class="ttc" id="astructDGtal_1_1WindingNumbersShape_html_ae638fff01fc0ec328fe68364072f19b2"><div class="ttname"><a href="structDGtal_1_1WindingNumbersShape.html#ae638fff01fc0ec328fe68364072f19b2">DGtal::WindingNumbersShape::myNormals</a></div><div class="ttdeci">CountedConstPtrOrConstPtr&lt; Eigen::MatrixXd &gt; myNormals</div><div class="ttdoc">Const alias to the normals.</div><div class="ttdef"><b>Definition:</b> <a href="WindingNumbersShape_8h_source.html#l00200">WindingNumbersShape.h:200</a></div></div>
+<div class="ttc" id="astructDGtal_1_1WindingNumbersShape_html_a042b39c25efb7cb3e626dc8bfa6b05fd"><div class="ttname"><a href="structDGtal_1_1WindingNumbersShape.html#a042b39c25efb7cb3e626dc8bfa6b05fd">DGtal::WindingNumbersShape::myPointAreas</a></div><div class="ttdeci">Eigen::VectorXd myPointAreas</div><div class="ttdoc">Const alias to point area measure.</div><div class="ttdef"><b>Definition:</b> <a href="WindingNumbersShape_8h_source.html#l00214">WindingNumbersShape.h:214</a></div></div>
+<div class="ttc" id="astructDGtal_1_1WindingNumbersShape_html_a25db799389b2433f0e044cc3257021c1"><div class="ttname"><a href="structDGtal_1_1WindingNumbersShape.html#a25db799389b2433f0e044cc3257021c1">DGtal::WindingNumbersShape::myO_CN</a></div><div class="ttdeci">Eigen::MatrixXd myO_CN</div><div class="ttdoc">libIGL octree for fast queries data structure</div><div class="ttdef"><b>Definition:</b> <a href="WindingNumbersShape_8h_source.html#l00221">WindingNumbersShape.h:221</a></div></div>
+<div class="ttc" id="astructDGtal_1_1WindingNumbersShape_html_a2642a8b87893813ddb6fb8451793995e"><div class="ttname"><a href="structDGtal_1_1WindingNumbersShape.html#a2642a8b87893813ddb6fb8451793995e">DGtal::WindingNumbersShape::myO_W</a></div><div class="ttdeci">Eigen::VectorXd myO_W</div><div class="ttdoc">libIGL octree for fast queries data structure</div><div class="ttdef"><b>Definition:</b> <a href="WindingNumbersShape_8h_source.html#l00223">WindingNumbersShape.h:223</a></div></div>
+<div class="ttc" id="astructDGtal_1_1WindingNumbersShape_html_a7d67f77c8eba41f21f68ed796d941427"><div class="ttname"><a href="structDGtal_1_1WindingNumbersShape.html#a7d67f77c8eba41f21f68ed796d941427">DGtal::WindingNumbersShape::myPoints</a></div><div class="ttdeci">CountedConstPtrOrConstPtr&lt; Eigen::MatrixXd &gt; myPoints</div><div class="ttdoc">Const alias to the points.</div><div class="ttdef"><b>Definition:</b> <a href="WindingNumbersShape_8h_source.html#l00210">WindingNumbersShape.h:210</a></div></div>
+<div class="ttc" id="astructDGtal_1_1WindingNumbersShape_html_ab0446ba2a5cd539424eaa48431f342cc"><div class="ttname"><a href="structDGtal_1_1WindingNumbersShape.html#ab0446ba2a5cd539424eaa48431f342cc">DGtal::WindingNumbersShape::myO_CH</a></div><div class="ttdeci">Eigen::MatrixXi myO_CH</div><div class="ttdoc">libIGL octree for fast queries data structure</div><div class="ttdef"><b>Definition:</b> <a href="WindingNumbersShape_8h_source.html#l00219">WindingNumbersShape.h:219</a></div></div>
+<div class="ttc" id="astructDGtal_1_1WindingNumbersShape_html_adc060724468e882aaf7b323c4c417c8f"><div class="ttname"><a href="structDGtal_1_1WindingNumbersShape.html#adc060724468e882aaf7b323c4c417c8f">DGtal::WindingNumbersShape::myO_PI</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; int &gt; &gt; myO_PI</div><div class="ttdoc">libIGL octree for fast queries data structure</div><div class="ttdef"><b>Definition:</b> <a href="WindingNumbersShape_8h_source.html#l00217">WindingNumbersShape.h:217</a></div></div>
+<div class="ttc" id="astructDGtal_1_1WindingNumbersShape_html_ae638fff01fc0ec328fe68364072f19b2"><div class="ttname"><a href="structDGtal_1_1WindingNumbersShape.html#ae638fff01fc0ec328fe68364072f19b2">DGtal::WindingNumbersShape::myNormals</a></div><div class="ttdeci">CountedConstPtrOrConstPtr&lt; Eigen::MatrixXd &gt; myNormals</div><div class="ttdoc">Const alias to the normals.</div><div class="ttdef"><b>Definition:</b> <a href="WindingNumbersShape_8h_source.html#l00212">WindingNumbersShape.h:212</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info()</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00200">DGtal::WindingNumbersShape&lt; TSpace &gt;::myNormals</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00207">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_CH</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00209">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_CN</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00205">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_PI</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00211">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_W</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00202">DGtal::WindingNumbersShape&lt; TSpace &gt;::myPointAreas</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00198">DGtal::WindingNumbersShape&lt; TSpace &gt;::myPoints</a>, <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>, and <a class="el" href="classDGtal_1_1Trace.html#ae3ef773d8a851319b34d2fbcb4e80bb7">DGtal::Trace::warning()</a>.</p>
+<p class="reference">References <a class="el" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info()</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00212">DGtal::WindingNumbersShape&lt; TSpace &gt;::myNormals</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00219">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_CH</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00221">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_CN</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00217">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_PI</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00223">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_W</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00214">DGtal::WindingNumbersShape&lt; TSpace &gt;::myPointAreas</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00210">DGtal::WindingNumbersShape&lt; TSpace &gt;::myPoints</a>, <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>, and <a class="el" href="classDGtal_1_1Trace.html#ae3ef773d8a851319b34d2fbcb4e80bb7">DGtal::Trace::warning()</a>.</p>
 
 </div>
 </div>
@@ -422,7 +424,7 @@ template&lt;typename TSpace &gt; </div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      igl::octree(*<a class="code" href="structDGtal_1_1WindingNumbersShape.html#a7d67f77c8eba41f21f68ed796d941427">myPoints</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#adc060724468e882aaf7b323c4c417c8f">myO_PI</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#ab0446ba2a5cd539424eaa48431f342cc">myO_CH</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#a25db799389b2433f0e044cc3257021c1">myO_CN</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#a2642a8b87893813ddb6fb8451793995e">myO_W</a>);</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="WindingNumbersShape_8h_source.html#l00200">DGtal::WindingNumbersShape&lt; TSpace &gt;::myNormals</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00207">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_CH</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00209">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_CN</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00205">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_PI</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00211">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_W</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00202">DGtal::WindingNumbersShape&lt; TSpace &gt;::myPointAreas</a>, and <a class="el" href="WindingNumbersShape_8h_source.html#l00198">DGtal::WindingNumbersShape&lt; TSpace &gt;::myPoints</a>.</p>
+<p class="reference">References <a class="el" href="WindingNumbersShape_8h_source.html#l00212">DGtal::WindingNumbersShape&lt; TSpace &gt;::myNormals</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00219">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_CH</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00221">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_CN</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00217">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_PI</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00223">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_W</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00214">DGtal::WindingNumbersShape&lt; TSpace &gt;::myPointAreas</a>, and <a class="el" href="WindingNumbersShape_8h_source.html#l00210">DGtal::WindingNumbersShape&lt; TSpace &gt;::myPoints</a>.</p>
 
 </div>
 </div>
@@ -536,34 +538,91 @@ template&lt;typename TSpace &gt; </div>
 <div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    {</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      Eigen::VectorXd W;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      std::vector&lt;Orientation&gt; results( queries.rows(), <a class="code" href="namespaceDGtal.html#a9f6cc75dc44e45506a66cd233e0deb41a5f4bdeccc29812b7de1cc0c05b724734">DGtal::OUTSIDE</a> );</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      Eigen::MatrixXd O_CM;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      Eigen::VectorXd O_R;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      Eigen::MatrixXd O_EC;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <span class="comment">//Checking if the areas</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      igl::fast_winding_number(*<a class="code" href="structDGtal_1_1WindingNumbersShape.html#a7d67f77c8eba41f21f68ed796d941427">myPoints</a>,*<a class="code" href="structDGtal_1_1WindingNumbersShape.html#ae638fff01fc0ec328fe68364072f19b2">myNormals</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#a042b39c25efb7cb3e626dc8bfa6b05fd">myPointAreas</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#adc060724468e882aaf7b323c4c417c8f">myO_PI</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#ab0446ba2a5cd539424eaa48431f342cc">myO_CH</a>,2,O_CM,O_R,O_EC);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      igl::fast_winding_number(*<a class="code" href="structDGtal_1_1WindingNumbersShape.html#a7d67f77c8eba41f21f68ed796d941427">myPoints</a>,*<a class="code" href="structDGtal_1_1WindingNumbersShape.html#ae638fff01fc0ec328fe68364072f19b2">myNormals</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#a042b39c25efb7cb3e626dc8bfa6b05fd">myPointAreas</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#adc060724468e882aaf7b323c4c417c8f">myO_PI</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#ab0446ba2a5cd539424eaa48431f342cc">myO_CH</a>,O_CM,O_R,O_EC,queries,2,W);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <span class="comment">//Reformating the output</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> i=0u; i &lt; queries.rows(); ++i)</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">if</span> (std::abs(W(i)) &lt; threshold )</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;          results[i] = <a class="code" href="namespaceDGtal.html#a9f6cc75dc44e45506a66cd233e0deb41a5f4bdeccc29812b7de1cc0c05b724734">DGtal::OUTSIDE</a>;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;          <span class="keywordflow">if</span> (std::abs(W(i)) &gt; threshold)</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            results[i] = <a class="code" href="namespaceDGtal.html#a9f6cc75dc44e45506a66cd233e0deb41a528af0eaf947edc94796219523aa9553">DGtal::INSIDE</a>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;          <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            results[i] = <a class="code" href="namespaceDGtal.html#a9f6cc75dc44e45506a66cd233e0deb41a7671a5416d92f37137f9999ca23dd65e">DGtal::ON</a>;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      }</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      <span class="keywordflow">return</span> results;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      <a class="code" href="structDGtal_1_1WindingNumbersShape.html#adedc011d0780cf7c74364322607cf679">rawWindingNumberBatch</a>(queries, W);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;     </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      <span class="comment">//Reformating the output</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> i=0u; i &lt; queries.rows(); ++i)</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">if</span> (std::abs(W(i)) &lt; threshold )</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;          results[i] = <a class="code" href="namespaceDGtal.html#a9f6cc75dc44e45506a66cd233e0deb41a5f4bdeccc29812b7de1cc0c05b724734">DGtal::OUTSIDE</a>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;          <span class="keywordflow">if</span> (std::abs(W(i)) &gt; threshold)</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            results[i] = <a class="code" href="namespaceDGtal.html#a9f6cc75dc44e45506a66cd233e0deb41a528af0eaf947edc94796219523aa9553">DGtal::INSIDE</a>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;          <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            results[i] = <a class="code" href="namespaceDGtal.html#a9f6cc75dc44e45506a66cd233e0deb41a7671a5416d92f37137f9999ca23dd65e">DGtal::ON</a>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="keywordflow">return</span> results;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
 <div class="ttc" id="anamespaceDGtal_html_a9f6cc75dc44e45506a66cd233e0deb41a528af0eaf947edc94796219523aa9553"><div class="ttname"><a href="namespaceDGtal.html#a9f6cc75dc44e45506a66cd233e0deb41a528af0eaf947edc94796219523aa9553">DGtal::INSIDE</a></div><div class="ttdeci">@ INSIDE</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00141">Common.h:141</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html_a9f6cc75dc44e45506a66cd233e0deb41a5f4bdeccc29812b7de1cc0c05b724734"><div class="ttname"><a href="namespaceDGtal.html#a9f6cc75dc44e45506a66cd233e0deb41a5f4bdeccc29812b7de1cc0c05b724734">DGtal::OUTSIDE</a></div><div class="ttdeci">@ OUTSIDE</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00141">Common.h:141</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html_a9f6cc75dc44e45506a66cd233e0deb41a7671a5416d92f37137f9999ca23dd65e"><div class="ttname"><a href="namespaceDGtal.html#a9f6cc75dc44e45506a66cd233e0deb41a7671a5416d92f37137f9999ca23dd65e">DGtal::ON</a></div><div class="ttdeci">@ ON</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00141">Common.h:141</a></div></div>
+<div class="ttc" id="astructDGtal_1_1WindingNumbersShape_html_adedc011d0780cf7c74364322607cf679"><div class="ttname"><a href="structDGtal_1_1WindingNumbersShape.html#adedc011d0780cf7c74364322607cf679">DGtal::WindingNumbersShape::rawWindingNumberBatch</a></div><div class="ttdeci">void rawWindingNumberBatch(const Eigen::MatrixXd &amp;queries, Eigen::VectorXd &amp;W) const</div><div class="ttdef"><b>Definition:</b> <a href="WindingNumbersShape_8h_source.html#l00197">WindingNumbersShape.h:197</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Common_8h_source.html#l00141">DGtal::INSIDE</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00200">DGtal::WindingNumbersShape&lt; TSpace &gt;::myNormals</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00207">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_CH</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00205">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_PI</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00202">DGtal::WindingNumbersShape&lt; TSpace &gt;::myPointAreas</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00198">DGtal::WindingNumbersShape&lt; TSpace &gt;::myPoints</a>, <a class="el" href="Common_8h_source.html#l00141">DGtal::ON</a>, and <a class="el" href="Common_8h_source.html#l00141">DGtal::OUTSIDE</a>.</p>
+<p class="reference">References <a class="el" href="Common_8h_source.html#l00141">DGtal::INSIDE</a>, <a class="el" href="Common_8h_source.html#l00141">DGtal::ON</a>, <a class="el" href="Common_8h_source.html#l00141">DGtal::OUTSIDE</a>, and <a class="el" href="WindingNumbersShape_8h_source.html#l00197">DGtal::WindingNumbersShape&lt; TSpace &gt;::rawWindingNumberBatch()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="WindingNumbersShape_8h_source.html#l00155">DGtal::WindingNumbersShape&lt; TSpace &gt;::orientation()</a>.</p>
+
+</div>
+</div>
+<a id="adedc011d0780cf7c74364322607cf679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adedc011d0780cf7c74364322607cf679">&#9670;&nbsp;</a></span>rawWindingNumberBatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSpace &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structDGtal_1_1WindingNumbersShape.html">DGtal::WindingNumbersShape</a>&lt; TSpace &gt;::rawWindingNumberBatch </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::MatrixXd &amp;&#160;</td>
+          <td class="paramname"><em>queries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::VectorXd &amp;&#160;</td>
+          <td class="paramname"><em>W</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the raw value of the Winding Number funciton at a set of points (queries).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">queries</td><td>[in] a "nx3" matrix with the query points in space. </td></tr>
+    <tr><td class="paramname">W</td><td>[out] a vector with all windung number values. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="WindingNumbersShape_8h_source.html#l00197">197</a> of file <a class="el" href="WindingNumbersShape_8h_source.html">WindingNumbersShape.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      Eigen::MatrixXd O_CM;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      Eigen::VectorXd O_R;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      Eigen::MatrixXd O_EC;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      <span class="comment">//Checking if the areas</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      igl::fast_winding_number(*<a class="code" href="structDGtal_1_1WindingNumbersShape.html#a7d67f77c8eba41f21f68ed796d941427">myPoints</a>,*<a class="code" href="structDGtal_1_1WindingNumbersShape.html#ae638fff01fc0ec328fe68364072f19b2">myNormals</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#a042b39c25efb7cb3e626dc8bfa6b05fd">myPointAreas</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#adc060724468e882aaf7b323c4c417c8f">myO_PI</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#ab0446ba2a5cd539424eaa48431f342cc">myO_CH</a>,2,O_CM,O_R,O_EC);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      igl::fast_winding_number(*<a class="code" href="structDGtal_1_1WindingNumbersShape.html#a7d67f77c8eba41f21f68ed796d941427">myPoints</a>,*<a class="code" href="structDGtal_1_1WindingNumbersShape.html#ae638fff01fc0ec328fe68364072f19b2">myNormals</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#a042b39c25efb7cb3e626dc8bfa6b05fd">myPointAreas</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#adc060724468e882aaf7b323c4c417c8f">myO_PI</a>,<a class="code" href="structDGtal_1_1WindingNumbersShape.html#ab0446ba2a5cd539424eaa48431f342cc">myO_CH</a>,O_CM,O_R,O_EC,queries,2,W);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="WindingNumbersShape_8h_source.html#l00212">DGtal::WindingNumbersShape&lt; TSpace &gt;::myNormals</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00219">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_CH</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00217">DGtal::WindingNumbersShape&lt; TSpace &gt;::myO_PI</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00214">DGtal::WindingNumbersShape&lt; TSpace &gt;::myPointAreas</a>, and <a class="el" href="WindingNumbersShape_8h_source.html#l00210">DGtal::WindingNumbersShape&lt; TSpace &gt;::myPoints</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="WindingNumbersShape_8h_source.html#l00170">DGtal::WindingNumbersShape&lt; TSpace &gt;::orientationBatch()</a>.</p>
 
 </div>
 </div>
@@ -604,7 +663,7 @@ template&lt;typename TSpace &gt; </div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <a class="code" href="structDGtal_1_1WindingNumbersShape.html#a042b39c25efb7cb3e626dc8bfa6b05fd">myPointAreas</a> = areas;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="WindingNumbersShape_8h_source.html#l00202">DGtal::WindingNumbersShape&lt; TSpace &gt;::myPointAreas</a>.</p>
+<p class="reference">References <a class="el" href="WindingNumbersShape_8h_source.html#l00214">DGtal::WindingNumbersShape&lt; TSpace &gt;::myPointAreas</a>.</p>
 
 </div>
 </div>
@@ -625,9 +684,9 @@ template&lt;typename TSpace &gt; </div>
 
 <p>Const alias to the normals. </p>
 
-<p class="definition">Definition at line <a class="el" href="WindingNumbersShape_8h_source.html#l00200">200</a> of file <a class="el" href="WindingNumbersShape_8h_source.html">WindingNumbersShape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="WindingNumbersShape_8h_source.html#l00212">212</a> of file <a class="el" href="WindingNumbersShape_8h_source.html">WindingNumbersShape.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WindingNumbersShape_8h_source.html#l00170">DGtal::WindingNumbersShape&lt; TSpace &gt;::orientationBatch()</a>, and <a class="el" href="WindingNumbersShape_8h_source.html#l00097">DGtal::WindingNumbersShape&lt; TSpace &gt;::WindingNumbersShape()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WindingNumbersShape_8h_source.html#l00197">DGtal::WindingNumbersShape&lt; TSpace &gt;::rawWindingNumberBatch()</a>, and <a class="el" href="WindingNumbersShape_8h_source.html#l00097">DGtal::WindingNumbersShape&lt; TSpace &gt;::WindingNumbersShape()</a>.</p>
 
 </div>
 </div>
@@ -647,9 +706,9 @@ template&lt;typename TSpace &gt; </div>
 
 <p>libIGL octree for fast queries data structure </p>
 
-<p class="definition">Definition at line <a class="el" href="WindingNumbersShape_8h_source.html#l00207">207</a> of file <a class="el" href="WindingNumbersShape_8h_source.html">WindingNumbersShape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="WindingNumbersShape_8h_source.html#l00219">219</a> of file <a class="el" href="WindingNumbersShape_8h_source.html">WindingNumbersShape.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WindingNumbersShape_8h_source.html#l00170">DGtal::WindingNumbersShape&lt; TSpace &gt;::orientationBatch()</a>, and <a class="el" href="WindingNumbersShape_8h_source.html#l00097">DGtal::WindingNumbersShape&lt; TSpace &gt;::WindingNumbersShape()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WindingNumbersShape_8h_source.html#l00197">DGtal::WindingNumbersShape&lt; TSpace &gt;::rawWindingNumberBatch()</a>, and <a class="el" href="WindingNumbersShape_8h_source.html#l00097">DGtal::WindingNumbersShape&lt; TSpace &gt;::WindingNumbersShape()</a>.</p>
 
 </div>
 </div>
@@ -669,7 +728,7 @@ template&lt;typename TSpace &gt; </div>
 
 <p>libIGL octree for fast queries data structure </p>
 
-<p class="definition">Definition at line <a class="el" href="WindingNumbersShape_8h_source.html#l00209">209</a> of file <a class="el" href="WindingNumbersShape_8h_source.html">WindingNumbersShape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="WindingNumbersShape_8h_source.html#l00221">221</a> of file <a class="el" href="WindingNumbersShape_8h_source.html">WindingNumbersShape.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="WindingNumbersShape_8h_source.html#l00097">DGtal::WindingNumbersShape&lt; TSpace &gt;::WindingNumbersShape()</a>.</p>
 
@@ -691,9 +750,9 @@ template&lt;typename TSpace &gt; </div>
 
 <p>libIGL octree for fast queries data structure </p>
 
-<p class="definition">Definition at line <a class="el" href="WindingNumbersShape_8h_source.html#l00205">205</a> of file <a class="el" href="WindingNumbersShape_8h_source.html">WindingNumbersShape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="WindingNumbersShape_8h_source.html#l00217">217</a> of file <a class="el" href="WindingNumbersShape_8h_source.html">WindingNumbersShape.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WindingNumbersShape_8h_source.html#l00170">DGtal::WindingNumbersShape&lt; TSpace &gt;::orientationBatch()</a>, and <a class="el" href="WindingNumbersShape_8h_source.html#l00097">DGtal::WindingNumbersShape&lt; TSpace &gt;::WindingNumbersShape()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WindingNumbersShape_8h_source.html#l00197">DGtal::WindingNumbersShape&lt; TSpace &gt;::rawWindingNumberBatch()</a>, and <a class="el" href="WindingNumbersShape_8h_source.html#l00097">DGtal::WindingNumbersShape&lt; TSpace &gt;::WindingNumbersShape()</a>.</p>
 
 </div>
 </div>
@@ -713,7 +772,7 @@ template&lt;typename TSpace &gt; </div>
 
 <p>libIGL octree for fast queries data structure </p>
 
-<p class="definition">Definition at line <a class="el" href="WindingNumbersShape_8h_source.html#l00211">211</a> of file <a class="el" href="WindingNumbersShape_8h_source.html">WindingNumbersShape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="WindingNumbersShape_8h_source.html#l00223">223</a> of file <a class="el" href="WindingNumbersShape_8h_source.html">WindingNumbersShape.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="WindingNumbersShape_8h_source.html#l00097">DGtal::WindingNumbersShape&lt; TSpace &gt;::WindingNumbersShape()</a>.</p>
 
@@ -735,9 +794,9 @@ template&lt;typename TSpace &gt; </div>
 
 <p>Const alias to point area measure. </p>
 
-<p class="definition">Definition at line <a class="el" href="WindingNumbersShape_8h_source.html#l00202">202</a> of file <a class="el" href="WindingNumbersShape_8h_source.html">WindingNumbersShape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="WindingNumbersShape_8h_source.html#l00214">214</a> of file <a class="el" href="WindingNumbersShape_8h_source.html">WindingNumbersShape.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WindingNumbersShape_8h_source.html#l00170">DGtal::WindingNumbersShape&lt; TSpace &gt;::orientationBatch()</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00142">DGtal::WindingNumbersShape&lt; TSpace &gt;::setPointAreas()</a>, and <a class="el" href="WindingNumbersShape_8h_source.html#l00097">DGtal::WindingNumbersShape&lt; TSpace &gt;::WindingNumbersShape()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WindingNumbersShape_8h_source.html#l00197">DGtal::WindingNumbersShape&lt; TSpace &gt;::rawWindingNumberBatch()</a>, <a class="el" href="WindingNumbersShape_8h_source.html#l00142">DGtal::WindingNumbersShape&lt; TSpace &gt;::setPointAreas()</a>, and <a class="el" href="WindingNumbersShape_8h_source.html#l00097">DGtal::WindingNumbersShape&lt; TSpace &gt;::WindingNumbersShape()</a>.</p>
 
 </div>
 </div>
@@ -757,9 +816,9 @@ template&lt;typename TSpace &gt; </div>
 
 <p>Const alias to the points. </p>
 
-<p class="definition">Definition at line <a class="el" href="WindingNumbersShape_8h_source.html#l00198">198</a> of file <a class="el" href="WindingNumbersShape_8h_source.html">WindingNumbersShape.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="WindingNumbersShape_8h_source.html#l00210">210</a> of file <a class="el" href="WindingNumbersShape_8h_source.html">WindingNumbersShape.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="WindingNumbersShape_8h_source.html#l00170">DGtal::WindingNumbersShape&lt; TSpace &gt;::orientationBatch()</a>, and <a class="el" href="WindingNumbersShape_8h_source.html#l00097">DGtal::WindingNumbersShape&lt; TSpace &gt;::WindingNumbersShape()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="WindingNumbersShape_8h_source.html#l00197">DGtal::WindingNumbersShape&lt; TSpace &gt;::rawWindingNumberBatch()</a>, and <a class="el" href="WindingNumbersShape_8h_source.html#l00097">DGtal::WindingNumbersShape&lt; TSpace &gt;::WindingNumbersShape()</a>.</p>
 
 </div>
 </div>
@@ -772,7 +831,7 @@ template&lt;typename TSpace &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="structDGtal_1_1WindingNumbersShape.html">WindingNumbersShape</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:11 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:29 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

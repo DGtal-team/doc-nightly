@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -129,13 +129,13 @@ $(document).ready(function(){initNavTree('testMetricBalls_8cpp_source.html','');
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">typedef</span>  <a class="code" href="classDGtal_1_1DistanceTransformation.html">DistanceTransformation&lt; Z2i::Space, NegPred, Metric&gt;</a> DT;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  Metric metric;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  DT dt( &amp;<a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>, &amp;predicate, &amp;metric);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  DT <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>( &amp;<a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>, &amp;predicate, &amp;metric);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="classDGtal_1_1Board2D.html">Board2D</a> board;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1HueShadeColorMap.html">HueShadeColorMap&lt;typename DT::Value,2&gt;</a> Hue;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  board.<a class="code" href="classLibBoard_1_1Board.html#ad3f3f29633091b70b9e12452837f6c6c">setUnit</a> ( <a class="code" href="classLibBoard_1_1Board.html#a3f79f876d837d6d427deb9e15e5589e5a584cabe1c19d9b128244ef55e712273e">LibBoard::Board::UCentimeter</a> );</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  Display2DFactory::drawImage&lt;Hue&gt; (board, dt,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  Display2DFactory::drawImage&lt;Hue&gt; (board, <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>,</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                  0.0,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                  32*sqrt(2)/2.0);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  </div>
@@ -162,13 +162,13 @@ $(document).ready(function(){initNavTree('testMetricBalls_8cpp_source.html','');
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">typedef</span>  <a class="code" href="classDGtal_1_1DistanceTransformation.html">DistanceTransformation&lt; Z2i::Space, NegPred, Metric&gt;</a> DT;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  Metric metric(norm);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  DT dt( &amp;<a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>, &amp;predicate, &amp;metric);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  DT <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>( &amp;<a class="code" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>, &amp;predicate, &amp;metric);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <a class="code" href="classDGtal_1_1Board2D.html">Board2D</a> board;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1HueShadeColorMap.html">HueShadeColorMap&lt; DT::Value,2&gt;</a> Hue;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  board.<a class="code" href="classLibBoard_1_1Board.html#ad3f3f29633091b70b9e12452837f6c6c">setUnit</a> ( <a class="code" href="classLibBoard_1_1Board.html#a3f79f876d837d6d427deb9e15e5589e5a584cabe1c19d9b128244ef55e712273e">LibBoard::Board::UCentimeter</a> );</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  Display2DFactory::drawImage&lt;Hue&gt; (board, dt,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  Display2DFactory::drawImage&lt;Hue&gt; (board, <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>,</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                  0.0,</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                  32*sqrt(2)/2.0);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  </div>
@@ -218,6 +218,7 @@ $(document).ready(function(){initNavTree('testMetricBalls_8cpp_source.html','');
 <div class="ttc" id="aclassLibBoard_1_1Board_html_a3f79f876d837d6d427deb9e15e5589e5a584cabe1c19d9b128244ef55e712273e"><div class="ttname"><a href="classLibBoard_1_1Board.html#a3f79f876d837d6d427deb9e15e5589e5a584cabe1c19d9b128244ef55e712273e">LibBoard::Board::UCentimeter</a></div><div class="ttdeci">@ UCentimeter</div><div class="ttdef"><b>Definition:</b> <a href="Board_8h_source.html#l00043">Board.h:43</a></div></div>
 <div class="ttc" id="aclassLibBoard_1_1Board_html_ad3f3f29633091b70b9e12452837f6c6c"><div class="ttname"><a href="classLibBoard_1_1Board.html#ad3f3f29633091b70b9e12452837f6c6c">LibBoard::Board::setUnit</a></div><div class="ttdeci">void setUnit(Unit unit)</div><div class="ttdef"><b>Definition:</b> <a href="Board_8cpp_source.html#l00239">Board.cpp:239</a></div></div>
 <div class="ttc" id="aclassLibBoard_1_1Board_html_af43e6ef7c37394c490ebd2bc7722f1ed"><div class="ttname"><a href="classLibBoard_1_1Board.html#af43e6ef7c37394c490ebd2bc7722f1ed">LibBoard::Board::saveCairo</a></div><div class="ttdeci">void saveCairo(const char *filename, CairoType type=CairoPNG, PageSize size=Board::BoundingBox, double margin=10.0) const</div><div class="ttdef"><b>Definition:</b> <a href="Board_8cpp_source.html#l01138">Board.cpp:1138</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a778e38aa889751afffa2dea6b803e67a"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a></div><div class="ttdeci">float dt</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00063">dgtalCalculus-geodesic.cpp:63</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1functors_html"><div class="ttname"><a href="namespaceDGtal_1_1functors.html">DGtal::functors</a></div><div class="ttdoc">functors namespace gathers all DGtal functors.</div><div class="ttdef"><b>Definition:</b> <a href="BasicBoolFunctors_8h_source.html#l00049">BasicBoolFunctors.h:49</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fc7012708b0416880a5c8b12dfdf9dd"><div class="ttname"><a href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">DGtal::trace</a></div><div class="ttdeci">Trace trace</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00153">Common.h:153</a></div></div>
@@ -232,7 +233,7 @@ $(document).ready(function(){initNavTree('testMetricBalls_8cpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_2751d6f01b35f5fec7131f6adf42b522.html">geometry</a></li><li class="navelem"><a class="el" href="dir_617e36e15bcfca8ade183f7b877528e1.html">volumes</a></li><li class="navelem"><a class="el" href="dir_ccf58f49583a53a57f7232121888f6dd.html">distance</a></li><li class="navelem"><a class="el" href="testMetricBalls_8cpp.html">testMetricBalls.cpp</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:20:58 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:15 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

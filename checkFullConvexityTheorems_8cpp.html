@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -255,7 +255,7 @@ template&lt;typename Space &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="geometry_2volumes_2checkFullConvexityTheorems_8cpp-example.html#a23">geometry/volumes/checkFullConvexityTheorems.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="geometry_2volumes_2checkFullConvexityTheorems_8cpp-example.html#a24">geometry/volumes/checkFullConvexityTheorems.cpp</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00244">244</a> of file <a class="el" href="checkFullConvexityTheorems_8cpp_source.html">checkFullConvexityTheorems.cpp</a>.</p>
@@ -287,10 +287,10 @@ template&lt;typename Space &gt; </div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; ( fc ? <span class="stringliteral">&quot;X FC&quot;</span> : <span class="stringliteral">&quot;X NFC&quot;</span> );</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keywordflow">for</span> ( <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> a = 0; a &lt; Space::dimension; a++ )</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      ProjPoint plo, phi;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      ProjPoint plo, <a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a>;</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      <a class="code" href="checkFullConvexityTheorems_8cpp.html#ad19c7670aca76aabbe997e1bd1a103e6">project</a>( plo, lo, a ); </div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <a class="code" href="checkFullConvexityTheorems_8cpp.html#ad19c7670aca76aabbe997e1bd1a103e6">project</a>( phi, hi, a ); </div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      ProjDConvexity pdconv( plo, phi );</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <a class="code" href="checkFullConvexityTheorems_8cpp.html#ad19c7670aca76aabbe997e1bd1a103e6">project</a>( <a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a>, hi, a ); </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      ProjDConvexity pdconv( plo, <a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a> );</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      std::vector&lt; ProjPoint &gt; PE;</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      <a class="code" href="checkFullConvexityTheorems_8cpp.html#a381b254000dc3c5fc014420aa68b5def">projectRange</a>( PE, Y, a );</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      <span class="keywordflow">if</span> ( Space::dimension == 3 )</div>
@@ -316,8 +316,9 @@ template&lt;typename Space &gt; </div>
 <div class="ttc" id="acheckFullConvexityTheorems_8cpp_html_ad19c7670aca76aabbe997e1bd1a103e6"><div class="ttname"><a href="checkFullConvexityTheorems_8cpp.html#ad19c7670aca76aabbe997e1bd1a103e6">project</a></div><div class="ttdeci">void project(ProjectedPoint &amp;pp, const Point &amp;p, Dimension a)</div><div class="ttdef"><b>Definition:</b> <a href="checkFullConvexityTheorems_8cpp_source.html#l00071">checkFullConvexityTheorems.cpp:71</a></div></div>
 <div class="ttc" id="acheckFullConvexityTheorems_8cpp_html_af2729743160cf63f4f0c5a181bc038c9"><div class="ttname"><a href="checkFullConvexityTheorems_8cpp.html#af2729743160cf63f4f0c5a181bc038c9">displayPointRange2D</a></div><div class="ttdeci">void displayPointRange2D(const std::vector&lt; Point &gt; &amp;X)</div><div class="ttdef"><b>Definition:</b> <a href="checkFullConvexityTheorems_8cpp_source.html#l00223">checkFullConvexityTheorems.cpp:223</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1DigitalConvexity_html_a4b5bf83b01cd9b62e92cc2572e8df5a8"><div class="ttname"><a href="classDGtal_1_1DigitalConvexity.html#a4b5bf83b01cd9b62e92cc2572e8df5a8">DGtal::DigitalConvexity::is0Convex</a></div><div class="ttdeci">bool is0Convex(const PointRange &amp;X) const</div></div>
+<div class="ttc" id="adgtalCalculus-bunny_8cpp_html_acaa84cf4416595d5df297727152b78e2"><div class="ttname"><a href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a></div><div class="ttdeci">PolygonalCalculus&lt; SH3::RealPoint, SH3::RealVector &gt;::Vector phi(const Face f)</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-bunny_8cpp_source.html#l00069">dgtalCalculus-bunny.cpp:69</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00223">displayPointRange2D()</a>, <a class="el" href="classDGtal_1_1BoundedLatticePolytope.html#af641cdb97623643b2da06ed9439e5253">DGtal::BoundedLatticePolytope&lt; TSpace &gt;::getPoints()</a>, <a class="el" href="classDGtal_1_1DigitalConvexity.html#a4b5bf83b01cd9b62e92cc2572e8df5a8">DGtal::DigitalConvexity&lt; TKSpace &gt;::is0Convex()</a>, <a class="el" href="classDGtal_1_1DigitalConvexity.html#a3cd5bd9f858176e274f5320674ca2026">DGtal::DigitalConvexity&lt; TKSpace &gt;::isFullyConvex()</a>, <a class="el" href="classDGtal_1_1DigitalConvexity.html#af4528961df07c0a68287a7744c93e22f">DGtal::DigitalConvexity&lt; TKSpace &gt;::makePolytope()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00063">makeRandomRange()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00071">project()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00079">projectRange()</a>, <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>, and <a class="el" href="classDGtal_1_1Trace.html#ae3ef773d8a851319b34d2fbcb4e80bb7">DGtal::Trace::warning()</a>.</p>
+<p class="reference">References <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00223">displayPointRange2D()</a>, <a class="el" href="classDGtal_1_1BoundedLatticePolytope.html#af641cdb97623643b2da06ed9439e5253">DGtal::BoundedLatticePolytope&lt; TSpace &gt;::getPoints()</a>, <a class="el" href="classDGtal_1_1DigitalConvexity.html#a4b5bf83b01cd9b62e92cc2572e8df5a8">DGtal::DigitalConvexity&lt; TKSpace &gt;::is0Convex()</a>, <a class="el" href="classDGtal_1_1DigitalConvexity.html#a3cd5bd9f858176e274f5320674ca2026">DGtal::DigitalConvexity&lt; TKSpace &gt;::isFullyConvex()</a>, <a class="el" href="classDGtal_1_1DigitalConvexity.html#af4528961df07c0a68287a7744c93e22f">DGtal::DigitalConvexity&lt; TKSpace &gt;::makePolytope()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00063">makeRandomRange()</a>, <a class="el" href="dgtalCalculus-bunny_8cpp_source.html#l00069">phi()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00071">project()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00079">projectRange()</a>, <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>, and <a class="el" href="classDGtal_1_1Trace.html#ae3ef773d8a851319b34d2fbcb4e80bb7">DGtal::Trace::warning()</a>.</p>
 
 </div>
 </div>
@@ -365,10 +366,10 @@ template&lt;typename Space &gt; </div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb_ok = 0;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordflow">for</span> ( <a class="code" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> a = 0; a &lt; Space::dimension; a++ )</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    {</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      ProjPoint plo, phi;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      ProjPoint plo, <a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a>;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      <a class="code" href="checkFullConvexityTheorems_8cpp.html#ad19c7670aca76aabbe997e1bd1a103e6">project</a>( plo, lo, a ); </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      <a class="code" href="checkFullConvexityTheorems_8cpp.html#ad19c7670aca76aabbe997e1bd1a103e6">project</a>( phi, hi, a ); </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      ProjDConvexity pdconv( plo, phi );</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      <a class="code" href="checkFullConvexityTheorems_8cpp.html#ad19c7670aca76aabbe997e1bd1a103e6">project</a>( <a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a>, hi, a ); </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      ProjDConvexity pdconv( plo, <a class="code" href="dgtalCalculus-bunny_8cpp.html#acaa84cf4416595d5df297727152b78e2">phi</a> );</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      std::vector&lt; ProjPoint &gt; PE;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      <a class="code" href="checkFullConvexityTheorems_8cpp.html#a381b254000dc3c5fc014420aa68b5def">projectRange</a>( PE, E, a );</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      <span class="keywordtype">bool</span> ok = pdconv.isFullyConvex( PE );</div>
@@ -382,7 +383,7 @@ template&lt;typename Space &gt; </div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordflow">return</span> nb_ok == nb;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classDGtal_1_1DigitalConvexity.html#a8c1f8c406bf52d7654ebdcd91542e107">DGtal::DigitalConvexity&lt; TKSpace &gt;::envelope()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00063">makeRandomRange()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00071">project()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00079">projectRange()</a>, <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>, and <a class="el" href="classDGtal_1_1Trace.html#ae3ef773d8a851319b34d2fbcb4e80bb7">DGtal::Trace::warning()</a>.</p>
+<p class="reference">References <a class="el" href="classDGtal_1_1DigitalConvexity.html#a8c1f8c406bf52d7654ebdcd91542e107">DGtal::DigitalConvexity&lt; TKSpace &gt;::envelope()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00063">makeRandomRange()</a>, <a class="el" href="dgtalCalculus-bunny_8cpp_source.html#l00069">phi()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00071">project()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00079">projectRange()</a>, <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>, and <a class="el" href="classDGtal_1_1Trace.html#ae3ef773d8a851319b34d2fbcb4e80bb7">DGtal::Trace::warning()</a>.</p>
 
 </div>
 </div>
@@ -466,7 +467,7 @@ template&lt;typename Point &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="geometry_2volumes_2checkFullConvexityTheorems_8cpp-example.html#a22">geometry/volumes/checkFullConvexityTheorems.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="geometry_2volumes_2checkFullConvexityTheorems_8cpp-example.html#a23">geometry/volumes/checkFullConvexityTheorems.cpp</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00223">223</a> of file <a class="el" href="checkFullConvexityTheorems_8cpp_source.html">checkFullConvexityTheorems.cpp</a>.</p>
@@ -860,7 +861,7 @@ template&lt;typename ProjectedPoint , typename Point &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_bbc6006c4fa8019b84b7adc573485eac.html">geometry</a></li><li class="navelem"><a class="el" href="dir_4e2b6255776ee794b28cc39d3a586de0.html">volumes</a></li><li class="navelem"><a class="el" href="checkFullConvexityTheorems_8cpp.html">checkFullConvexityTheorems.cpp</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:01 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:18 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

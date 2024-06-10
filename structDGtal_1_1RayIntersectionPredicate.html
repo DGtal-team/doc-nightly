@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -151,7 +151,8 @@ Storage Ray/Triangle Intersection", Möller &amp; Trumbore. Journal of Graphics 
 <li>Ray-Surfel intersection is performed in KhalimskySpace coordinates for exact computations. For example, a surfel with coordinates (i,j,k) with i being even, is associated to the quad (i,j+/-1,k+/-1).</li>
 </ul>
 <p>For the later case, this predicate is useful to get the surfel (an iterator on a surfel) of a digital surface intersected by the ray using for instance:</p>
-<div class="fragment"><div class="line"><a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">Surface::ConstIterator</a> it = std::find_if(surface.begin(), surface.end(), rayPredicateInstance);</div>
+<div class="fragment"><div class="line"><a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">Surface::ConstIterator</a> it = std::find_if(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.begin(), <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a>.end(), rayPredicateInstance);</div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a74206273d94e57c9b5aa280170896031"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a></div><div class="ttdeci">CountedPtr&lt; SH3::DigitalSurface &gt; surface</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00066">dgtalCalculus-geodesic.cpp:66</a></div></div>
 <div class="ttc" id="agreedy-plane-segmentation-ex2_8cpp_html_a6d06fad433cff067dfcbbbf16d6e2dbf"><div class="ttname"><a href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a></div><div class="ttdeci">MyDigitalSurface::ConstIterator ConstIterator</div><div class="ttdef"><b>Definition:</b> <a href="greedy-plane-segmentation-ex2_8cpp_source.html#l00093">greedy-plane-segmentation-ex2.cpp:93</a></div></div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -647,7 +648,7 @@ template&lt;typename TPoint &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="structDGtal_1_1RayIntersectionPredicate.html">RayIntersectionPredicate</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:21:07 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:25 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -246,90 +246,102 @@ $(document).ready(function(){initNavTree('ConvexityHelper_8h_source.html',''); i
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keyword">static</span></div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#afc3a1ef390f6664bdf70bc1c52f32a62">PointRange</a></div>
 <div class="line"><a name="l00381"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#a2e72ce3d62b44089e2e22152e4d3bf0d">  381</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#a2e72ce3d62b44089e2e22152e4d3bf0d">computeDegeneratedConvexHullVertices</a>( <a class="code" href="structDGtal_1_1ConvexityHelper.html#afc3a1ef390f6664bdf70bc1c52f32a62">PointRange</a>&amp; input_points );</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    </div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    </div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="comment">// ----------------- lattice Delaunay services -------------------------</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keyword">static</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#a19314769e3ba486f8751bbdce97d3a5c">  409</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#a19314769e3ba486f8751bbdce97d3a5c">computeDelaunayCellComplex</a>( <a class="code" href="structDGtal_1_1ConvexCellComplex.html">ConvexCellComplex&lt; Point &gt;</a>&amp; cell_complex,</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                                <span class="keyword">const</span> <a class="code" href="structDGtal_1_1ConvexityHelper.html#afc3a1ef390f6664bdf70bc1c52f32a62">PointRange</a>&amp; input_points,</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                                <span class="keywordtype">bool</span> remove_duplicates = <span class="keyword">true</span> );</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    </div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="comment">// ----------------- rational convex hull services -------------------------</span></div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    </div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    <span class="keyword">static</span></div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <a class="code" href="classDGtal_1_1BoundedRationalPolytope.html">RationalPolytope</a></div>
-<div class="line"><a name="l00443"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#a7379862326baa896c4ea93a05f8147bd">  443</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#a7379862326baa896c4ea93a05f8147bd">computeRationalPolytope</a>( <span class="keyword">const</span> std::vector&lt; RealPoint &gt;&amp; input_points,</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;                             <a class="code" href="structDGtal_1_1ConvexityHelper.html#ad380b949243419e4b5fabe43bffee2e0">Integer</a> denominator, </div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;                             <span class="keywordtype">bool</span> remove_duplicates = <span class="keyword">true</span>,</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                             <span class="keywordtype">bool</span> make_minkowski_summable = <span class="keyword">false</span> );</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160; </div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <span class="keyword">template</span> &lt; <span class="keyword">typename</span> TSurfaceMesh &gt;</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <span class="keyword">static</span></div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00477"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#ab5167e5428cd248f8381c0f1d2899822">  477</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#ab5167e5428cd248f8381c0f1d2899822">computeConvexHullBoundary</a>( TSurfaceMesh&amp;               mesh,</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                               <span class="keyword">const</span> std::vector&lt; RealPoint &gt;&amp; input_points,</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                               <span class="keywordtype">double</span> precision = 1024.0,</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                               <span class="keywordtype">bool</span> remove_duplicates = <span class="keyword">true</span> );</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160; </div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <span class="keyword">static</span></div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00504"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#a242379823d41a6a2514ee696e00785d1">  504</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#a242379823d41a6a2514ee696e00785d1">computeConvexHullBoundary</a>( <a class="code" href="classDGtal_1_1PolygonalSurface.html">PolygonalSurface&lt; RealPoint &gt;</a> &amp; polysurf,</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                               <span class="keyword">const</span> std::vector&lt; RealPoint &gt;&amp; input_points,</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                               <span class="keywordtype">double</span> precision = 1024.0,</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                               <span class="keywordtype">bool</span> remove_duplicates = <span class="keyword">true</span> );</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160; </div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    <span class="keyword">static</span></div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00531"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#afce39494f87458a7eff21a4d9c3c253f">  531</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#afce39494f87458a7eff21a4d9c3c253f">computeConvexHullCellComplex</a>( <a class="code" href="structDGtal_1_1ConvexCellComplex.html">ConvexCellComplex&lt; RealPoint &gt;</a>&amp; cell_complex,</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                                  <span class="keyword">const</span> std::vector&lt; RealPoint &gt;&amp; input_points,</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;                                  <span class="keywordtype">double</span> precision = 1024.0,</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;                                  <span class="keywordtype">bool</span> remove_duplicates = <span class="keyword">true</span> );</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    </div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160; </div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160; </div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    <span class="comment">// ----------------- real Delaunay services -------------------------</span></div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160; </div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="keyword">static</span></div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00567"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#a1f766bc6da6bc3a783d673255d311cd1">  567</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#a1f766bc6da6bc3a783d673255d311cd1">computeDelaunayCellComplex</a>( <a class="code" href="structDGtal_1_1ConvexCellComplex.html">ConvexCellComplex&lt; RealPoint &gt;</a>&amp; cell_complex,</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;                                <span class="keyword">const</span> std::vector&lt; RealPoint &gt;&amp; input_points,</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;                                <span class="keywordtype">double</span> precision = 1024.0,</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;                                <span class="keywordtype">bool</span> remove_duplicates = <span class="keyword">true</span> );</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    </div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    </div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="comment">// ----------------- utility services -------------------------</span></div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160; </div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <span class="keyword">template</span> &lt; <span class="keyword">typename</span> QHull &gt;</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="keyword">static</span></div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00597"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#a1dcc1a6135fa3dd99a3856314ad839dd">  597</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#a1dcc1a6135fa3dd99a3856314ad839dd">computeFacetAndRidgeVertices</a>( <span class="keyword">const</span> QHull&amp; hull,</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;                                  std::vector&lt; IndexRange &gt;&amp; cell_vertices,</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;                                  std::map&lt; typename QHull::Ridge, Index &gt;&amp; r2f,</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;                                  std::vector&lt; IndexRange &gt;&amp; face_vertices );</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160; </div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    </div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;  }; <span class="comment">// class ConvexityHelper</span></div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160; </div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;  </div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;} <span class="comment">// namespace DGtal</span></div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160; </div>
-<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;<span class="comment">// Includes inline functions.</span></div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;<span class="preprocessor">#include &quot;ConvexityHelper.ih&quot;</span></div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160; </div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;<span class="comment">//                                                                           //</span></div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// !defined ConvexityHelper_h</span></div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160; </div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;<span class="preprocessor">#undef ConvexityHelper_RECURSES</span></div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// else defined(ConvexityHelper_RECURSES)</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keyword">static</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <a class="code" href="classDGtal_1_1BoundedLatticePolytope.html">LatticePolytope</a></div>
+<div class="line"><a name="l00400"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#acf0712e736c29abed972506333b048ba">  400</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#acf0712e736c29abed972506333b048ba">compute3DTriangle</a>( <span class="keyword">const</span> <a class="code" href="classDGtal_1_1PointVector.html">Point</a>&amp; a, <span class="keyword">const</span> <a class="code" href="classDGtal_1_1PointVector.html">Point</a>&amp; b, <span class="keyword">const</span> <a class="code" href="classDGtal_1_1PointVector.html">Point</a>&amp; c,</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                       <span class="keywordtype">bool</span> make_minkowski_summable = <span class="keyword">false</span> );</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160; </div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keyword">static</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <a class="code" href="classDGtal_1_1BoundedLatticePolytope.html">LatticePolytope</a></div>
+<div class="line"><a name="l00414"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#a6993e5f812474cafa35e030dd288de9c">  414</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#a6993e5f812474cafa35e030dd288de9c">computeDegeneratedTriangle</a>( <span class="keyword">const</span> <a class="code" href="classDGtal_1_1PointVector.html">Point</a>&amp; a, <span class="keyword">const</span> <a class="code" href="classDGtal_1_1PointVector.html">Point</a>&amp; b, <span class="keyword">const</span> <a class="code" href="classDGtal_1_1PointVector.html">Point</a>&amp; c );</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160; </div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keyword">static</span></div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    <a class="code" href="classDGtal_1_1BoundedLatticePolytope.html">LatticePolytope</a></div>
+<div class="line"><a name="l00426"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#a631da3c93606979b8f651fb27da991a1">  426</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#a631da3c93606979b8f651fb27da991a1">computeSegment</a>( <span class="keyword">const</span> <a class="code" href="classDGtal_1_1PointVector.html">Point</a>&amp; a, <span class="keyword">const</span> <a class="code" href="classDGtal_1_1PointVector.html">Point</a>&amp; b );</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    </div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    </div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="comment">// ----------------- lattice Delaunay services -------------------------</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160; </div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keyword">static</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#a19314769e3ba486f8751bbdce97d3a5c">  453</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#a19314769e3ba486f8751bbdce97d3a5c">computeDelaunayCellComplex</a>( <a class="code" href="structDGtal_1_1ConvexCellComplex.html">ConvexCellComplex&lt; Point &gt;</a>&amp; cell_complex,</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;                                <span class="keyword">const</span> <a class="code" href="structDGtal_1_1ConvexityHelper.html#afc3a1ef390f6664bdf70bc1c52f32a62">PointRange</a>&amp; input_points,</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;                                <span class="keywordtype">bool</span> remove_duplicates = <span class="keyword">true</span> );</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    </div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160; </div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <span class="comment">// ----------------- rational convex hull services -------------------------</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;    </div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="keyword">static</span></div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    <a class="code" href="classDGtal_1_1BoundedRationalPolytope.html">RationalPolytope</a></div>
+<div class="line"><a name="l00487"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#a7379862326baa896c4ea93a05f8147bd">  487</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#a7379862326baa896c4ea93a05f8147bd">computeRationalPolytope</a>( <span class="keyword">const</span> std::vector&lt; RealPoint &gt;&amp; input_points,</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;                             <a class="code" href="structDGtal_1_1ConvexityHelper.html#ad380b949243419e4b5fabe43bffee2e0">Integer</a> denominator, </div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;                             <span class="keywordtype">bool</span> remove_duplicates = <span class="keyword">true</span>,</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;                             <span class="keywordtype">bool</span> make_minkowski_summable = <span class="keyword">false</span> );</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160; </div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <span class="keyword">template</span> &lt; <span class="keyword">typename</span> TSurfaceMesh &gt;</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <span class="keyword">static</span></div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00521"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#ab5167e5428cd248f8381c0f1d2899822">  521</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#ab5167e5428cd248f8381c0f1d2899822">computeConvexHullBoundary</a>( TSurfaceMesh&amp;               mesh,</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                               <span class="keyword">const</span> std::vector&lt; RealPoint &gt;&amp; input_points,</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;                               <span class="keywordtype">double</span> precision = 1024.0,</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;                               <span class="keywordtype">bool</span> remove_duplicates = <span class="keyword">true</span> );</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160; </div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    <span class="keyword">static</span></div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00548"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#a242379823d41a6a2514ee696e00785d1">  548</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#a242379823d41a6a2514ee696e00785d1">computeConvexHullBoundary</a>( <a class="code" href="classDGtal_1_1PolygonalSurface.html">PolygonalSurface&lt; RealPoint &gt;</a> &amp; polysurf,</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;                               <span class="keyword">const</span> std::vector&lt; RealPoint &gt;&amp; input_points,</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;                               <span class="keywordtype">double</span> precision = 1024.0,</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;                               <span class="keywordtype">bool</span> remove_duplicates = <span class="keyword">true</span> );</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160; </div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    <span class="keyword">static</span></div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00575"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#afce39494f87458a7eff21a4d9c3c253f">  575</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#afce39494f87458a7eff21a4d9c3c253f">computeConvexHullCellComplex</a>( <a class="code" href="structDGtal_1_1ConvexCellComplex.html">ConvexCellComplex&lt; RealPoint &gt;</a>&amp; cell_complex,</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;                                  <span class="keyword">const</span> std::vector&lt; RealPoint &gt;&amp; input_points,</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;                                  <span class="keywordtype">double</span> precision = 1024.0,</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;                                  <span class="keywordtype">bool</span> remove_duplicates = <span class="keyword">true</span> );</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    </div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160; </div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160; </div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    <span class="comment">// ----------------- real Delaunay services -------------------------</span></div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160; </div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    <span class="keyword">static</span></div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00611"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#a1f766bc6da6bc3a783d673255d311cd1">  611</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#a1f766bc6da6bc3a783d673255d311cd1">computeDelaunayCellComplex</a>( <a class="code" href="structDGtal_1_1ConvexCellComplex.html">ConvexCellComplex&lt; RealPoint &gt;</a>&amp; cell_complex,</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;                                <span class="keyword">const</span> std::vector&lt; RealPoint &gt;&amp; input_points,</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;                                <span class="keywordtype">double</span> precision = 1024.0,</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;                                <span class="keywordtype">bool</span> remove_duplicates = <span class="keyword">true</span> );</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    </div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    </div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <span class="comment">// ----------------- utility services -------------------------</span></div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160; </div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <span class="keyword">template</span> &lt; <span class="keyword">typename</span> QHull &gt;</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="keyword">static</span></div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00641"></a><span class="lineno"><a class="line" href="structDGtal_1_1ConvexityHelper.html#a1dcc1a6135fa3dd99a3856314ad839dd">  641</a></span>&#160;    <a class="code" href="structDGtal_1_1ConvexityHelper.html#a1dcc1a6135fa3dd99a3856314ad839dd">computeFacetAndRidgeVertices</a>( <span class="keyword">const</span> QHull&amp; hull,</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;                                  std::vector&lt; IndexRange &gt;&amp; cell_vertices,</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;                                  std::map&lt; typename QHull::Ridge, Index &gt;&amp; r2f,</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;                                  std::vector&lt; IndexRange &gt;&amp; face_vertices );</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160; </div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    </div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;  }; <span class="comment">// class ConvexityHelper</span></div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160; </div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;  </div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;} <span class="comment">// namespace DGtal</span></div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160; </div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;<span class="comment">// Includes inline functions.</span></div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;<span class="preprocessor">#include &quot;ConvexityHelper.ih&quot;</span></div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160; </div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="comment">//                                                                           //</span></div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// !defined ConvexityHelper_h</span></div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160; </div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;<span class="preprocessor">#undef ConvexityHelper_RECURSES</span></div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// else defined(ConvexityHelper_RECURSES)</span></div>
 <div class="ttc" id="aclassDGtal_1_1BoundedLatticePolytope_html"><div class="ttname"><a href="classDGtal_1_1BoundedLatticePolytope.html">DGtal::BoundedLatticePolytope</a></div><div class="ttdoc">Aim: Represents an nD lattice polytope, i.e. a convex polyhedron bounded with vertices with integer c...</div><div class="ttdef"><b>Definition:</b> <a href="BoundedLatticePolytope_8h_source.html#l00073">BoundedLatticePolytope.h:74</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1BoundedRationalPolytope_html"><div class="ttname"><a href="classDGtal_1_1BoundedRationalPolytope.html">DGtal::BoundedRationalPolytope</a></div><div class="ttdoc">Aim: Represents an nD rational polytope, i.e. a convex polyhedron bounded by vertices with rational c...</div><div class="ttdef"><b>Definition:</b> <a href="BoundedRationalPolytope_8h_source.html#l00074">BoundedRationalPolytope.h:75</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1PointVector_html"><div class="ttname"><a href="classDGtal_1_1PointVector.html">DGtal::PointVector&lt; dim, Integer &gt;</a></div></div>
@@ -359,6 +371,8 @@ $(document).ready(function(){initNavTree('ConvexityHelper_8h_source.html',''); i
 <div class="ttc" id="astructDGtal_1_1ConvexityHelper_html_a4e6cf430725ebe7d5536067c59c1f9a9"><div class="ttname"><a href="structDGtal_1_1ConvexityHelper.html#a4e6cf430725ebe7d5536067c59c1f9a9">DGtal::ConvexityHelper::RealPoint</a></div><div class="ttdeci">Space::RealPoint RealPoint</div><div class="ttdef"><b>Definition:</b> <a href="ConvexityHelper_8h_source.html#l00178">ConvexityHelper.h:178</a></div></div>
 <div class="ttc" id="astructDGtal_1_1ConvexityHelper_html_a543a4cc392a17f54107de302ab43b307"><div class="ttname"><a href="structDGtal_1_1ConvexityHelper.html#a543a4cc392a17f54107de302ab43b307">DGtal::ConvexityHelper::RealVector</a></div><div class="ttdeci">Space::RealVector RealVector</div><div class="ttdef"><b>Definition:</b> <a href="ConvexityHelper_8h_source.html#l00179">ConvexityHelper.h:179</a></div></div>
 <div class="ttc" id="astructDGtal_1_1ConvexityHelper_html_a556209b9719d1be518d335b6821bf549"><div class="ttname"><a href="structDGtal_1_1ConvexityHelper.html#a556209b9719d1be518d335b6821bf549">DGtal::ConvexityHelper::dimension</a></div><div class="ttdeci">static const Dimension dimension</div><div class="ttdef"><b>Definition:</b> <a href="ConvexityHelper_8h_source.html#l00171">ConvexityHelper.h:171</a></div></div>
+<div class="ttc" id="astructDGtal_1_1ConvexityHelper_html_a631da3c93606979b8f651fb27da991a1"><div class="ttname"><a href="structDGtal_1_1ConvexityHelper.html#a631da3c93606979b8f651fb27da991a1">DGtal::ConvexityHelper::computeSegment</a></div><div class="ttdeci">static LatticePolytope computeSegment(const Point &amp;a, const Point &amp;b)</div></div>
+<div class="ttc" id="astructDGtal_1_1ConvexityHelper_html_a6993e5f812474cafa35e030dd288de9c"><div class="ttname"><a href="structDGtal_1_1ConvexityHelper.html#a6993e5f812474cafa35e030dd288de9c">DGtal::ConvexityHelper::computeDegeneratedTriangle</a></div><div class="ttdeci">static LatticePolytope computeDegeneratedTriangle(const Point &amp;a, const Point &amp;b, const Point &amp;c)</div></div>
 <div class="ttc" id="astructDGtal_1_1ConvexityHelper_html_a6c9e0e8e7c870660573b627f3afa1a28"><div class="ttname"><a href="structDGtal_1_1ConvexityHelper.html#a6c9e0e8e7c870660573b627f3afa1a28">DGtal::ConvexityHelper::RationalPolytope</a></div><div class="ttdeci">BoundedRationalPolytope&lt; Space &gt; RationalPolytope</div><div class="ttdef"><b>Definition:</b> <a href="ConvexityHelper_8h_source.html#l00193">ConvexityHelper.h:193</a></div></div>
 <div class="ttc" id="astructDGtal_1_1ConvexityHelper_html_a6c9f1ad880860633843ead77adc35d07"><div class="ttname"><a href="structDGtal_1_1ConvexityHelper.html#a6c9f1ad880860633843ead77adc35d07">DGtal::ConvexityHelper::RealConvexHullKernel</a></div><div class="ttdeci">ConvexHullRationalKernel&lt; dim, Integer, InternalInteger &gt; RealConvexHullKernel</div><div class="ttdef"><b>Definition:</b> <a href="ConvexityHelper_8h_source.html#l00187">ConvexityHelper.h:187</a></div></div>
 <div class="ttc" id="astructDGtal_1_1ConvexityHelper_html_a7379862326baa896c4ea93a05f8147bd"><div class="ttname"><a href="structDGtal_1_1ConvexityHelper.html#a7379862326baa896c4ea93a05f8147bd">DGtal::ConvexityHelper::computeRationalPolytope</a></div><div class="ttdeci">static RationalPolytope computeRationalPolytope(const std::vector&lt; RealPoint &gt; &amp;input_points, Integer denominator, bool remove_duplicates=true, bool make_minkowski_summable=false)</div></div>
@@ -371,6 +385,7 @@ $(document).ready(function(){initNavTree('ConvexityHelper_8h_source.html',''); i
 <div class="ttc" id="astructDGtal_1_1ConvexityHelper_html_ab7d9bd9a99bba5cb39b8b04cba3fb51c"><div class="ttname"><a href="structDGtal_1_1ConvexityHelper.html#ab7d9bd9a99bba5cb39b8b04cba3fb51c">DGtal::ConvexityHelper::LatticeConvexHullKernel</a></div><div class="ttdeci">ConvexHullIntegralKernel&lt; dim, Integer, InternalInteger &gt; LatticeConvexHullKernel</div><div class="ttdef"><b>Definition:</b> <a href="ConvexityHelper_8h_source.html#l00185">ConvexityHelper.h:185</a></div></div>
 <div class="ttc" id="astructDGtal_1_1ConvexityHelper_html_ab80376ba7f51b5156ba26eb9e91f364e"><div class="ttname"><a href="structDGtal_1_1ConvexityHelper.html#ab80376ba7f51b5156ba26eb9e91f364e">DGtal::ConvexityHelper::IndexRange</a></div><div class="ttdeci">std::vector&lt; Index &gt; IndexRange</div><div class="ttdef"><b>Definition:</b> <a href="ConvexityHelper_8h_source.html#l00182">ConvexityHelper.h:182</a></div></div>
 <div class="ttc" id="astructDGtal_1_1ConvexityHelper_html_aceb5b57048ca82b32ec1cd818d65f65c"><div class="ttname"><a href="structDGtal_1_1ConvexityHelper.html#aceb5b57048ca82b32ec1cd818d65f65c">DGtal::ConvexityHelper::BOOST_CONCEPT_ASSERT</a></div><div class="ttdeci">BOOST_CONCEPT_ASSERT((concepts::CInteger&lt; TInternalInteger &gt;))</div></div>
+<div class="ttc" id="astructDGtal_1_1ConvexityHelper_html_acf0712e736c29abed972506333b048ba"><div class="ttname"><a href="structDGtal_1_1ConvexityHelper.html#acf0712e736c29abed972506333b048ba">DGtal::ConvexityHelper::compute3DTriangle</a></div><div class="ttdeci">static LatticePolytope compute3DTriangle(const Point &amp;a, const Point &amp;b, const Point &amp;c, bool make_minkowski_summable=false)</div></div>
 <div class="ttc" id="astructDGtal_1_1ConvexityHelper_html_ad380b949243419e4b5fabe43bffee2e0"><div class="ttname"><a href="structDGtal_1_1ConvexityHelper.html#ad380b949243419e4b5fabe43bffee2e0">DGtal::ConvexityHelper::Integer</a></div><div class="ttdeci">TInteger Integer</div><div class="ttdef"><b>Definition:</b> <a href="ConvexityHelper_8h_source.html#l00173">ConvexityHelper.h:173</a></div></div>
 <div class="ttc" id="astructDGtal_1_1ConvexityHelper_html_aebe6bd050526a9d387cb5db806f3f355"><div class="ttname"><a href="structDGtal_1_1ConvexityHelper.html#aebe6bd050526a9d387cb5db806f3f355">DGtal::ConvexityHelper::computeConvexHullBoundary</a></div><div class="ttdeci">static bool computeConvexHullBoundary(TSurfaceMesh &amp;mesh, const PointRange &amp;input_points, bool remove_duplicates=true)</div></div>
 <div class="ttc" id="astructDGtal_1_1ConvexityHelper_html_af47e8b71056789970556433d41788138"><div class="ttname"><a href="structDGtal_1_1ConvexityHelper.html#af47e8b71056789970556433d41788138">DGtal::ConvexityHelper::LatticePolytope</a></div><div class="ttdeci">BoundedLatticePolytope&lt; Space &gt; LatticePolytope</div><div class="ttdef"><b>Definition:</b> <a href="ConvexityHelper_8h_source.html#l00192">ConvexityHelper.h:192</a></div></div>
@@ -397,7 +412,7 @@ $(document).ready(function(){initNavTree('ConvexityHelper_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f2cd1aeea1cfa982bb13a5f95fa4218c.html">DGtal</a></li><li class="navelem"><a class="el" href="dir_754267a81a1dbd2dcdc6a3e6905a7e31.html">geometry</a></li><li class="navelem"><a class="el" href="dir_2dd8463e31daa17dc635e58ffe393814.html">volumes</a></li><li class="navelem"><b>ConvexityHelper.h</b></li>
-    <li class="footer">Generated on Wed May 8 2024 20:20:41 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:02:58 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -138,30 +138,31 @@ $(document).ready(function(){initNavTree('testVectorsInHeat_8cpp_source.html',''
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9d67e4c9f9fd0cbd27970d9c2719b15a">SECTION</a>(<span class="stringliteral">&quot;Construction and basic operators&quot;</span>)</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classDGtal_1_1VectorsInHeat.html">VectorsInHeat&lt;PolygonalCalculus&lt;RealPoint,RealVector&gt;</a>&gt; heat(boxCalculus);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( heat.isValid() == <span class="keyword">false</span> );</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classDGtal_1_1VectorsInHeat.html">VectorsInHeat&lt;PolygonalCalculus&lt;RealPoint,RealVector&gt;</a>&gt; <a class="code" href="dgtalCalculus-geodesic_8cpp.html#af181e5dea5a5305e8a829f489f0265d7">heat</a>(boxCalculus);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#af181e5dea5a5305e8a829f489f0265d7">heat</a>.isValid() == <span class="keyword">false</span> );</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;init solvers&quot;</span>);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    heat.init(0.1);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="dgtalCalculus-geodesic_8cpp.html#af181e5dea5a5305e8a829f489f0265d7">heat</a>.init(0.1);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( heat.isValid()  );</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( <a class="code" href="dgtalCalculus-geodesic_8cpp.html#af181e5dea5a5305e8a829f489f0265d7">heat</a>.isValid()  );</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    heat.addSource(0,Eigen::Vector3d(0.1,0.2,0.3));</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    std::vector&lt;VectorsInHeat&lt;PolygonalCalculus&lt;RealPoint,RealVector&gt;&gt;<a class="code" href="classDGtal_1_1PointVector.html">::Vector</a>&gt; d = heat.compute();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="dgtalCalculus-geodesic_8cpp.html#af181e5dea5a5305e8a829f489f0265d7">heat</a>.addSource(0,Eigen::Vector3d(0.1,0.2,0.3));</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    std::vector&lt;VectorsInHeat&lt;PolygonalCalculus&lt;RealPoint,RealVector&gt;&gt;<a class="code" href="classDGtal_1_1PointVector.html">::Vector</a>&gt; d = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#af181e5dea5a5305e8a829f489f0265d7">heat</a>.compute();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( d.size() == positions.size() );</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( d[5][0] == Approx(-0.111302) );</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    heat.clearSource();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classDGtal_1_1VectorsInHeat.html">VectorsInHeat&lt;PolygonalCalculus&lt;RealPoint,RealVector&gt;</a>&gt;<a class="code" href="classDGtal_1_1PointVector.html">::Vector</a> sources=heat.vectorSource();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="dgtalCalculus-geodesic_8cpp.html#af181e5dea5a5305e8a829f489f0265d7">heat</a>.clearSource();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classDGtal_1_1VectorsInHeat.html">VectorsInHeat&lt;PolygonalCalculus&lt;RealPoint,RealVector&gt;</a>&gt;<a class="code" href="classDGtal_1_1PointVector.html">::Vector</a> sources=<a class="code" href="dgtalCalculus-geodesic_8cpp.html#af181e5dea5a5305e8a829f489f0265d7">heat</a>.vectorSource();</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( sources.sum() == 0);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="ttc" id="aclassDGtal_1_1Mesh_html"><div class="ttname"><a href="classDGtal_1_1Mesh.html">DGtal::Mesh</a></div><div class="ttdoc">Aim: This class is defined to represent a surface mesh through a set of vertices and faces....</div><div class="ttdef"><b>Definition:</b> <a href="Mesh_8h_source.html#l00091">Mesh.h:92</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1PointVector_html"><div class="ttname"><a href="classDGtal_1_1PointVector.html">DGtal::PointVector&lt; dim, Integer &gt;</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1PolygonalCalculus_html"><div class="ttname"><a href="classDGtal_1_1PolygonalCalculus.html">DGtal::PolygonalCalculus</a></div><div class="ttdoc">Implements differential operators on polygonal surfaces from .</div><div class="ttdef"><b>Definition:</b> <a href="PolygonalCalculus_8h_source.html#l00070">PolygonalCalculus.h:71</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1PolygonalCalculus_html"><div class="ttname"><a href="classDGtal_1_1PolygonalCalculus.html">DGtal::PolygonalCalculus</a></div><div class="ttdoc">Implements differential operators on polygonal surfaces from .</div><div class="ttdef"><b>Definition:</b> <a href="PolygonalCalculus_8h_source.html#l00128">PolygonalCalculus.h:129</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_a352b7160bf722e2f0bcbee5d0bad6ef3"><div class="ttname"><a href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">DGtal::Trace::beginBlock</a></div><div class="ttdeci">void beginBlock(const std::string &amp;keyword=&quot;&quot;)</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
 <div class="ttc" id="aclassDGtal_1_1VectorsInHeat_html"><div class="ttname"><a href="classDGtal_1_1VectorsInHeat.html">DGtal::VectorsInHeat</a></div><div class="ttdoc">This class implements  on polygonal surfaces (using Discrete differential calculus on polygonal surfa...</div><div class="ttdef"><b>Definition:</b> <a href="VectorsInHeat_8h_source.html#l00062">VectorsInHeat.h:63</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_af181e5dea5a5305e8a829f489f0265d7"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#af181e5dea5a5305e8a829f489f0265d7">heat</a></div><div class="ttdeci">GeodesicsInHeat&lt; PolyCalculus &gt; * heat</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00069">dgtalCalculus-geodesic.cpp:69</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fc7012708b0416880a5c8b12dfdf9dd"><div class="ttname"><a href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">DGtal::trace</a></div><div class="ttdeci">Trace trace</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00153">Common.h:153</a></div></div>
 <div class="ttc" id="astructDGtal_1_1SurfaceMesh_html"><div class="ttname"><a href="structDGtal_1_1SurfaceMesh.html">DGtal::SurfaceMesh</a></div><div class="ttdoc">Aim: Represents an embedded mesh as faces and a list of vertices. Vertices may be shared among faces ...</div><div class="ttdef"><b>Definition:</b> <a href="SurfaceMesh_8h_source.html#l00091">SurfaceMesh.h:92</a></div></div>
@@ -175,7 +176,7 @@ $(document).ready(function(){initNavTree('testVectorsInHeat_8cpp_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_92ba2d8e2c8319e7ec8693a28d8b598c.html">dec</a></li><li class="navelem"><a class="el" href="testVectorsInHeat_8cpp.html">testVectorsInHeat.cpp</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:20:59 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:16 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

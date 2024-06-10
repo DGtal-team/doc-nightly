@@ -34,7 +34,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DGtal
-   &#160;<span id="projectnumber">1.4.beta</span>
+   &#160;<span id="projectnumber">1.5.beta</span>
    </div>
   </td>
  </tr>
@@ -1094,10 +1094,10 @@ $(document).ready(function(){initNavTree('testVoxelComplex_8cpp_source.html','')
 <div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9d67e4c9f9fd0cbd27970d9c2719b15a">SECTION</a>(<span class="stringliteral">&quot;Fixture_X Distance Map&quot;</span>) {</div>
 <div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;        <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>(<span class="stringliteral">&quot;With a Distance Map&quot;</span>);</div>
 <div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;        L3Metric l3;</div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;        DT dt(set_fixture.domain(), set_fixture, l3);</div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;        DT <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>(set_fixture.domain(), set_fixture, l3);</div>
 <div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;        <span class="comment">// Create wrap around selectMaxValue to use the thinning.</span></div>
-<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;        <span class="keyword">auto</span> selectDistMax = [&amp;dt](<span class="keyword">const</span> FixtureComplex::Clique &amp;clique) {</div>
-<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;            <span class="keywordflow">return</span> selectMaxValue&lt;DT, FixtureComplex&gt;(dt, clique);</div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;        <span class="keyword">auto</span> selectDistMax = [&amp;<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>](<span class="keyword">const</span> FixtureComplex::Clique &amp;clique) {</div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;            <span class="keywordflow">return</span> selectMaxValue&lt;DT, FixtureComplex&gt;(<a class="code" href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a>, clique);</div>
 <div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;        };</div>
 <div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;        <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a9d67e4c9f9fd0cbd27970d9c2719b15a">SECTION</a>(<span class="stringliteral">&quot;asymetricThinning&quot;</span>){</div>
 <div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;            <span class="keyword">auto</span> vc_new = asymetricThinningScheme&lt;FixtureComplex&gt;(</div>
@@ -1161,6 +1161,7 @@ $(document).ready(function(){initNavTree('testVoxelComplex_8cpp_source.html','')
 <div class="ttc" id="aclassDGtal_1_1Trace_html_a352b7160bf722e2f0bcbee5d0bad6ef3"><div class="ttname"><a href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">DGtal::Trace::beginBlock</a></div><div class="ttdeci">void beginBlock(const std::string &amp;keyword=&quot;&quot;)</div></div>
 <div class="ttc" id="aclassDGtal_1_1Trace_html_afa3a2874289734884107b1ce68ccb93d"><div class="ttname"><a href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">DGtal::Trace::endBlock</a></div><div class="ttdeci">double endBlock()</div></div>
 <div class="ttc" id="aclassDGtal_1_1VoxelComplex_html"><div class="ttname"><a href="classDGtal_1_1VoxelComplex.html">DGtal::VoxelComplex&lt; KSpace &gt;</a></div></div>
+<div class="ttc" id="adgtalCalculus-geodesic_8cpp_html_a778e38aa889751afffa2dea6b803e67a"><div class="ttname"><a href="dgtalCalculus-geodesic_8cpp.html#a778e38aa889751afffa2dea6b803e67a">dt</a></div><div class="ttdeci">float dt</div><div class="ttdef"><b>Definition:</b> <a href="dgtalCalculus-geodesic_8cpp_source.html#l00063">dgtalCalculus-geodesic.cpp:63</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z3i_html_a39a69f8da09f1094df563ca067927c61"><div class="ttname"><a href="namespaceDGtal_1_1Z3i.html#a39a69f8da09f1094df563ca067927c61">DGtal::Z3i::Domain</a></div><div class="ttdeci">HyperRectDomain&lt; Space &gt; Domain</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00172">StdDefs.h:172</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z3i_html_a4c1b0b50dafb838783bc2347a840147d"><div class="ttname"><a href="namespaceDGtal_1_1Z3i.html#a4c1b0b50dafb838783bc2347a840147d">DGtal::Z3i::KSpace</a></div><div class="ttdeci">KhalimskySpaceND&lt; 3, Integer &gt; KSpace</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00146">StdDefs.h:146</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z3i_html_a8d69892de6b10119a8070bd5d0871bf5"><div class="ttname"><a href="namespaceDGtal_1_1Z3i.html#a8d69892de6b10119a8070bd5d0871bf5">DGtal::Z3i::Point</a></div><div class="ttdeci">Space::Point Point</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00168">StdDefs.h:168</a></div></div>
@@ -1190,7 +1191,7 @@ $(document).ready(function(){initNavTree('testVoxelComplex_8cpp_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_5c34bd9de7ab721f49dc5d2e8cf02612.html">topology</a></li><li class="navelem"><a class="el" href="testVoxelComplex_8cpp.html">testVoxelComplex.cpp</a></li>
-    <li class="footer">Generated on Wed May 8 2024 20:20:59 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jun 10 2024 19:03:17 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
