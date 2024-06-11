@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf":[6,0,2,5,83,11],
+"classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a1236e292562e8215110479f3f2b9c364":[6,0,2,5,83,9],
 "classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a16ca23dbe497acc07dc2099eb69e905c":[6,0,2,5,83,13],
 "classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a2ca6d255885fb300fcb85eba39c929da":[6,0,2,5,83,4],
 "classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a6b9b3cb66ed9ba6b822f8403b8765cde":[6,0,2,5,83,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX51 =
 "classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a140c913e35b25a12e489561f33229b3e":[6,0,2,5,56,12],
 "classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a15de542fa154537d0ac7521ca47aa56d":[6,0,2,5,56,2],
 "classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a1a36bad01a85b4e31e09b2670e081679":[6,0,2,5,56,1],
-"classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a1ed38e918f92a5efabee7eb05549bd0b":[6,0,2,5,56,13],
-"classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a40edaceed9244a21ea2246b9196e301c":[6,0,2,5,56,14],
-"classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a47654057518369662ef661438b18d929":[6,0,2,5,56,5]
+"classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a1ed38e918f92a5efabee7eb05549bd0b":[6,0,2,5,56,13]
 };

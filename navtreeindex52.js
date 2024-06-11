@@ -1,5 +1,7 @@
 var NAVTREEINDEX52 =
 {
+"classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a40edaceed9244a21ea2246b9196e301c":[6,0,2,5,56,14],
+"classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a47654057518369662ef661438b18d929":[6,0,2,5,56,5],
 "classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a5f9b70e840ab6304464fe3823c8cb39f":[6,0,2,5,56,8],
 "classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a6c999f4e2f95e0df62aa4eac9dda2c65":[6,0,2,5,56,6],
 "classDGtal_1_1functors_1_1MongeJetFittingPrincipalCurvaturesEstimator.html#a700e76d05e4429760df0d6770b2b7a69":[6,0,2,5,56,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX52 =
 "classDGtal_1_1functors_1_1deprecated_1_1SCellToMidPoint.html#a7f7eb78e9bd4a833faef56fdca4e00dd":[6,0,2,5,0,0,0],
 "classDGtal_1_1functors_1_1deprecated_1_1SCellToMidPoint.html#a8173fdcf4e9f896fca4c99c3d9c3ed19":[6,0,2,5,0,0,4],
 "classDGtal_1_1functors_1_1deprecated_1_1SCellToMidPoint.html#a890eaaca0a2dd68b79e667ff0cd579ab":[6,0,2,5,0,0,3],
-"classDGtal_1_1functors_1_1deprecated_1_1SCellToMidPoint.html#a976f1dba740cf290aac0916148649ec0":[6,0,2,5,0,0,7],
-"classDGtal_1_1functors_1_1deprecated_1_1SCellToMidPoint.html#abf225421fbfba99f6e255bfa92b46316":[6,0,2,5,0,0,1],
-"classLibBoard_1_1Board.html":[6,0,3,0]
+"classDGtal_1_1functors_1_1deprecated_1_1SCellToMidPoint.html#a976f1dba740cf290aac0916148649ec0":[6,0,2,5,0,0,7]
 };

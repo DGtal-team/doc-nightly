@@ -1,5 +1,7 @@
 var NAVTREEINDEX78 =
 {
+"structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIteratorFromPoint.html#ab0d8fe603a9b408d3888044aec6bd629":[4,0,16,2],
+"structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIteratorFromPoint.html#ade54955cd15c990196d15578b70fcb81":[4,0,16,0],
 "structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIteratorFromPoint.html#af3e74428697ccf042794bc4a042a4cb0":[4,0,16,5],
 "structDGtal_1_1concepts_1_1CSinglePassRangeWithWritableIteratorFromPoint.html#afae9d6fd680fccc01f8ccb707295707f":[4,0,16,4],
 "structDGtal_1_1concepts_1_1CSpace.html":[4,0,78],
@@ -247,7 +249,5 @@ var NAVTREEINDEX78 =
 "structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01false_00_01true_01_4.html#a63d1770ac85e6c84c44ec7468ee8f6c7":[6,0,2,2,24,2],
 "structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01false_00_01true_01_4.html#a659f0f2619b62a02f5e9a7e1f5ee9c76":[6,0,2,2,24,4],
 "structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01false_00_01true_01_4.html#aaafd9b888118c2e0eab232329fa7c7c0":[6,0,2,2,24,0],
-"structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01false_00_01true_01_4.html#aba52ac3459f593b69a46d05c8f89e69d":[6,0,2,2,24,5],
-"structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01true_00_01false_01_4.html":[6,0,2,2,21],
-"structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01true_00_01false_01_4.html#a395a0a88c99310356ac09f7e53e382c9":[6,0,2,2,21,1]
+"structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01false_00_01true_01_4.html#aba52ac3459f593b69a46d05c8f89e69d":[6,0,2,2,24,5]
 };

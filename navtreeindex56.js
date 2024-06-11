@@ -1,5 +1,7 @@
 var NAVTREEINDEX56 =
 {
+"moduleDigitalTopology.html#dgtal_topology_sec3_3":[0,10,0,2,2],
+"moduleDigitalTopology.html#dgtal_topology_sec3_4":[0,10,0,2,3],
 "moduleDigitalTopology.html#dgtal_topology_sec3_5":[0,10,0,2,4],
 "moduleDigitalTopology.html#dgtal_topology_sec3_digital_object":[0,10,0,2],
 "moduleDigitalTopology.html#dgtal_topology_sec4":[0,10,0,3],
@@ -148,8 +150,8 @@ var NAVTREEINDEX56 =
 "moduleHalfEdgeMesh.html":[0,9,3],
 "moduleHalfEdgeMesh.html#HEM_sec1":[0,10,6,0],
 "moduleHalfEdgeMesh.html#HEM_sec1":[0,9,3,0],
-"moduleHalfEdgeMesh.html#HEM_sec1_1":[0,10,6,0,0],
 "moduleHalfEdgeMesh.html#HEM_sec1_1":[0,9,3,0,0],
+"moduleHalfEdgeMesh.html#HEM_sec1_1":[0,10,6,0,0],
 "moduleHalfEdgeMesh.html#HEM_sec1_2":[0,9,3,0,1],
 "moduleHalfEdgeMesh.html#HEM_sec1_2":[0,10,6,0,1],
 "moduleHalfEdgeMesh.html#HEM_sec1_3":[0,10,6,0,2],
@@ -164,10 +166,10 @@ var NAVTREEINDEX56 =
 "moduleHalfEdgeMesh.html#HEM_sec2_2":[0,10,6,1,1],
 "moduleHalfEdgeMesh.html#HEM_sec2_3":[0,10,6,1,2],
 "moduleHalfEdgeMesh.html#HEM_sec2_3":[0,9,3,1,2],
-"moduleHalfEdgeMesh.html#HEM_sec2_4":[0,9,3,1,3],
 "moduleHalfEdgeMesh.html#HEM_sec2_4":[0,10,6,1,3],
-"moduleHalfEdgeMesh.html#HEM_sec2_5":[0,9,3,1,4],
+"moduleHalfEdgeMesh.html#HEM_sec2_4":[0,9,3,1,3],
 "moduleHalfEdgeMesh.html#HEM_sec2_5":[0,10,6,1,4],
+"moduleHalfEdgeMesh.html#HEM_sec2_5":[0,9,3,1,4],
 "moduleHalfEdgeMesh.html#HEM_sec2_6":[0,10,6,1,5],
 "moduleHalfEdgeMesh.html#HEM_sec2_6":[0,9,3,1,5],
 "moduleHalfEdgeMesh.html#HEM_sec2_7":[0,10,6,1,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX56 =
 "moduleIntegralInvariant.html#II_sectImplementation":[0,8,7,2],
 "moduleIntegralInvariant.html#II_sectOverview":[0,8,7,0],
 "moduleIntegralInvariant.html#II_subsectDef":[0,8,7,1,0],
-"moduleIntegralInvariant.html#sectResults":[0,8,7,3],
-"moduleIntegralInvariant.html#subsectIntegralInvariant":[0,8,7,0,0],
-"moduleIntegralInvariant.html#subsubsectEstimators":[0,8,7,1,0,1]
+"moduleIntegralInvariant.html#sectResults":[0,8,7,3]
 };

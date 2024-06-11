@@ -1,5 +1,7 @@
 var NAVTREEINDEX75 =
 {
+"structDGtal_1_1concepts_1_1CCellEmbedder.html#a16b64586598abf1465a353e241d0dfc4":[4,0,102,2],
+"structDGtal_1_1concepts_1_1CCellEmbedder.html#a270dee9ff1cfa70b2e74f22d0d1ab225":[4,0,102,5],
 "structDGtal_1_1concepts_1_1CCellEmbedder.html#a41bbfa01fbe9b96b86ebfbe114318585":[4,0,102,10],
 "structDGtal_1_1concepts_1_1CCellEmbedder.html#a5c501c4f847a9df7521294ce6ffd9ff5":[4,0,102,8],
 "structDGtal_1_1concepts_1_1CCellEmbedder.html#a8521eeb4d9764e4cad76e12cb426ad0c":[4,0,102,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX75 =
 "structDGtal_1_1concepts_1_1CDrawableWithBoard3DTo2D.html#a8bc2fb59e5f55fd6721a759ee499491d":[6,0,2,0,67,0],
 "structDGtal_1_1concepts_1_1CDrawableWithBoard3DTo2D.html#ab889405d560e3f69bfd0f9744b8217aa":[6,0,2,0,67,4],
 "structDGtal_1_1concepts_1_1CDrawableWithDisplay3D.html":[6,0,2,0,69],
-"structDGtal_1_1concepts_1_1CDrawableWithDisplay3D.html#a233b18e0e2a283c739acde42c5ea12a3":[6,0,2,0,69,2],
-"structDGtal_1_1concepts_1_1CDrawableWithDisplay3D.html#a63fe458161a2f37a0ed260be804167b9":[6,0,2,0,69,3],
-"structDGtal_1_1concepts_1_1CDrawableWithDisplay3D.html#a85b361054097955fe574ae62bd06575d":[6,0,2,0,69,0]
+"structDGtal_1_1concepts_1_1CDrawableWithDisplay3D.html#a233b18e0e2a283c739acde42c5ea12a3":[6,0,2,0,69,2]
 };

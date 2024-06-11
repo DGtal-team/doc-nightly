@@ -1,5 +1,7 @@
 var NAVTREEINDEX34 =
 {
+"classDGtal_1_1OwningOrAliasingPtr.html#a76cf9dcc58ae373a354f13ae464bb983":[6,0,2,135,0],
+"classDGtal_1_1OwningOrAliasingPtr.html#a852c47a6f7d96c96810300ef7813a637":[6,0,2,135,1],
 "classDGtal_1_1OwningOrAliasingPtr.html#a9f55f4deff66fe88e618ada7a12767d9":[6,0,2,135,9],
 "classDGtal_1_1OwningOrAliasingPtr.html#aa2d23f0647f7b1429276f9b5234743b5":[6,0,2,135,7],
 "classDGtal_1_1OwningOrAliasingPtr.html#ab0129fbf6ff50f1fe2e18bd97d2ae53b":[6,0,2,135,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX34 =
 "classDGtal_1_1PlaneProbingParallelepipedEstimator.html#a3b9bc696dd729852a29052553f6c3eed":[6,0,2,269,5],
 "classDGtal_1_1PlaneProbingParallelepipedEstimator.html#a3bf78725c9ea54ae01a6834d69d47c8f":[6,0,2,269,19],
 "classDGtal_1_1PlaneProbingParallelepipedEstimator.html#a4556001f9e42d134762ab5f3d76758f8":[6,0,2,269,4],
-"classDGtal_1_1PlaneProbingParallelepipedEstimator.html#a4816fe0dabc8a3eaaf850811caec6d42":[6,0,2,269,2],
-"classDGtal_1_1PlaneProbingParallelepipedEstimator.html#a4eac44ebc0dccb4d6919ccbb95369dd0":[6,0,2,269,7],
-"classDGtal_1_1PlaneProbingParallelepipedEstimator.html#a4fc3e65385ee3c5fd2b0f5df46f8ec7d":[6,0,2,269,9]
+"classDGtal_1_1PlaneProbingParallelepipedEstimator.html#a4816fe0dabc8a3eaaf850811caec6d42":[6,0,2,269,2]
 };

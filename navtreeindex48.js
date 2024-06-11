@@ -1,5 +1,7 @@
 var NAVTREEINDEX48 =
 {
+"classDGtal_1_1VoxelComplex.html#adc577464281af18ea27c0e4494dcf543":[6,0,2,634,8],
+"classDGtal_1_1VoxelComplex.html#addcf1a81bf51b20d3ff0226ad488b11e":[6,0,2,634,52],
 "classDGtal_1_1VoxelComplex.html#adf1a64158c8458e93475ede54f79fe0c":[6,0,2,634,36],
 "classDGtal_1_1VoxelComplex.html#ae2aa8bbcf1842f01f49c7e6dd6a2aa1e":[6,0,2,634,32],
 "classDGtal_1_1VoxelComplex.html#ae489040b9159a8f4e607624a476affe4":[6,0,2,634,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX48 =
 "classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html#a405c536f5c60105f40492467a5b94284":[6,0,2,1,3,21],
 "classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html#a40c91690cf6b53e1688b1b73d20bd3be":[6,0,2,1,3,37],
 "classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html#a436b76d5d282b830e13415b7439b9f2b":[6,0,2,1,3,55],
-"classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html#a451271416f3d90decb8e795f8dfeee94":[6,0,2,1,3,20],
-"classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html#a4720d1df34f41dcf430bb436b872a7ad":[6,0,2,1,3,52],
-"classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html#a479d8e5ac32e877f09922954441b30d2":[6,0,2,1,3,14]
+"classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html#a451271416f3d90decb8e795f8dfeee94":[6,0,2,1,3,20]
 };
