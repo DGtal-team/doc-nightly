@@ -1,7 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"classDGtal_1_1FPLengthEstimator.html#a96f60785dafc5f4e01123c3806721869":[6,0,2,181,0],
-"classDGtal_1_1FPLengthEstimator.html#a9c093eb0503cc10432fbead4a5378240":[6,0,2,181,2],
 "classDGtal_1_1FPLengthEstimator.html#aa4574fa3a9a04f2df634cfd690eb4ae2":[6,0,2,181,4],
 "classDGtal_1_1FPLengthEstimator.html#ab162d85f242be1df9b2a8197724830bb":[6,0,2,181,6],
 "classDGtal_1_1FPLengthEstimator.html#ac3dbf3023b0795e86664ae1491e8b049":[6,0,2,181,9],
@@ -249,5 +247,7 @@ var NAVTREEINDEX16 =
 "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#acc47fe3726e89c5441a8e89cecbab626":[6,0,2,101,10],
 "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#add5bf9eca9b376b0150ee9e07cd477ca":[6,0,2,101,1],
 "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#add9bbf8ad386ef6b537c1f62c4dee67e":[6,0,2,101,2],
-"classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#ae568857c1a41d7e6933a03d482c3f1e9":[6,0,2,101,15]
+"classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#ae568857c1a41d7e6933a03d482c3f1e9":[6,0,2,101,15],
+"classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#ae8f9b497ac6666fa4b4e32d25b890c14":[6,0,2,101,11],
+"classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#aef9497acf4396c8ea1d302e0c5d96588":[6,0,2,101,0]
 };

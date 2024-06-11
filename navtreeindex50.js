@@ -1,7 +1,5 @@
 var NAVTREEINDEX50 =
 {
-"classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a633ca2ddac6b3c9aa5e4b99077d1a3fd":[6,0,2,4,1,71],
-"classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a63fdabe03b2b6d7b7a978809828dc33a":[6,0,2,4,1,18],
 "classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a64c60e2de8263f3aa3b6372f176b465e":[6,0,2,4,1,49],
 "classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a659c109760d83ac2ae995702f49d0062":[6,0,2,4,1,61],
 "classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a69bb1bd7edb29f45863bfaaf23cd5316":[6,0,2,4,1,16],
@@ -249,5 +247,7 @@ var NAVTREEINDEX50 =
 "classDGtal_1_1functors_1_1ForwardRigidTransformation2D.html#ac1de62064b683862a9873b4de3a7b9d6":[6,0,2,5,80,6],
 "classDGtal_1_1functors_1_1ForwardRigidTransformation2D.html#adf4f816780c99d176d6ff6686d7248b4":[6,0,2,5,80,8],
 "classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html":[6,0,2,5,83],
-"classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e":[6,0,2,5,83,8]
+"classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0320aaac603a14ed0618a524917c279e":[6,0,2,5,83,8],
+"classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a0a4d60e2519e746f2a3c9dff79bfc1cf":[6,0,2,5,83,11],
+"classDGtal_1_1functors_1_1ForwardRigidTransformation3D.html#a1236e292562e8215110479f3f2b9c364":[6,0,2,5,83,9]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX80 =
 {
-"structDGtal_1_1functors_1_1BallConstantPointFunction.html#aad068343b0260727b3b1248480e8dc95":[6,0,2,5,113,3],
-"structDGtal_1_1functors_1_1BallConstantPointFunction.html#aed997033bf568a3f8638a0157cddf11e":[6,0,2,5,113,5],
 "structDGtal_1_1functors_1_1BinaryPointPredicate.html":[6,0,2,5,107],
 "structDGtal_1_1functors_1_1BinaryPointPredicate.html#a04c1dd630e1ba62a08481655831532d7":[6,0,2,5,107,3],
 "structDGtal_1_1functors_1_1BinaryPointPredicate.html#a1b20f35ee098b97bfd0578c3fae57513":[6,0,2,5,107,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX80 =
 "structDGtal_1_1functors_1_1IsLowerPointPredicate.html#a7e84c098003524f4851217063af3c8de":[6,0,2,5,102,0],
 "structDGtal_1_1functors_1_1IsLowerPointPredicate.html#ae528868c536c51f3ad5d7d8b39ade7c0":[6,0,2,5,102,1],
 "structDGtal_1_1functors_1_1IsUpperPointPredicate.html":[6,0,2,5,103],
-"structDGtal_1_1functors_1_1IsUpperPointPredicate.html#a02bab836406cbc5fe746a0fbb954170d":[6,0,2,5,103,2]
+"structDGtal_1_1functors_1_1IsUpperPointPredicate.html#a02bab836406cbc5fe746a0fbb954170d":[6,0,2,5,103,2],
+"structDGtal_1_1functors_1_1IsUpperPointPredicate.html#a48f6a71ac4075dc7ff30f31e8d90daea":[6,0,2,5,103,3],
+"structDGtal_1_1functors_1_1IsUpperPointPredicate.html#a890e79b60a61f35919cd41b3887a0811":[6,0,2,5,103,0]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX84 =
 {
-"structLibBoard_1_1Shape.html#af09a3c6f719c8a846447c0cd2e2d0368af51ba83a785ff46338b9798783b40ec2":[6,0,3,6,0,2],
-"structLibBoard_1_1Shape.html#af55b6e8ba4edab84c3297742ad7f31a6":[6,0,3,6,10],
 "structLibBoard_1_1Shape.html#afa039e72e735987002a07db4c3e9cd7e":[6,0,3,6,23],
 "structLibBoard_1_1ShapeList.html":[6,0,3,4],
 "structLibBoard_1_1ShapeList.html#a0e02eec9eb323bffea0ed336e76aee3f":[6,0,3,4,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX84 =
 "topology_2ctopo-2-3d_8cpp-example.html":[8,156],
 "topology_2ctopo-2_8cpp-example.html":[8,159],
 "topology_2ctopo-fillContours_8cpp-example.html":[8,160],
-"topology_2cubical-complex-collapse_8cpp-example.html":[8,161]
+"topology_2cubical-complex-collapse_8cpp-example.html":[8,161],
+"topology_2cubical-complex-illustrations_8cpp-example.html":[8,162],
+"topology_2digitalSetToCubicalComplexes2D_8cpp-example.html":[8,163]
 };
