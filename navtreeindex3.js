@@ -1,7 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"classDGtal_1_1BackInsertionSequenceToStackAdapter.html#af531272f01348527c97fcadd4b2fb1ad":[6,0,2,16,1],
-"classDGtal_1_1BackInsertionSequenceToStackAdapter.html#afccd835a5530031f1c513c3a07825412":[6,0,2,16,14],
 "classDGtal_1_1BackInsertionSequenceToStackAdapter.html#afd79823e2aca826d944b476ea59fc096":[6,0,2,16,3],
 "classDGtal_1_1Ball2D.html":[6,0,2,580],
 "classDGtal_1_1Ball2D.html#a01706dd221f22e9cec13178efa0a91b9":[6,0,2,580,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX3 =
 "classDGtal_1_1BoundedLatticePolytopeCounter.html#a2cc55b0f386aed0ebdc6cc004f642081":[6,0,2,301,3],
 "classDGtal_1_1BoundedLatticePolytopeCounter.html#a351ecf4a4df0528d124c69f5b583e16d":[6,0,2,301,2],
 "classDGtal_1_1BoundedLatticePolytopeCounter.html#a35473c477455706e4d48f70b6d212fcf":[6,0,2,301,14],
-"classDGtal_1_1BoundedLatticePolytopeCounter.html#a3e810947eebbdb3fc8b24871d1591c7e":[6,0,2,301,26]
+"classDGtal_1_1BoundedLatticePolytopeCounter.html#a3e810947eebbdb3fc8b24871d1591c7e":[6,0,2,301,26],
+"classDGtal_1_1BoundedLatticePolytopeCounter.html#a52d8f5066aba3212965847dbd942ddae":[6,0,2,301,8],
+"classDGtal_1_1BoundedLatticePolytopeCounter.html#a58fe5ac4781f962c46009e40e9d8eea3":[6,0,2,301,33]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX30 =
 {
-"classDGtal_1_1MLPLengthEstimator.html#a9ed02636b8f15dc7078d3492962a44f0":[6,0,2,194,6],
-"classDGtal_1_1MLPLengthEstimator.html#aadecc58131c9903832ed305ca09e752a":[6,0,2,194,5],
 "classDGtal_1_1MLPLengthEstimator.html#ab64b5891c5cb3b3c8bbbcba55cf45129":[6,0,2,194,7],
 "classDGtal_1_1MLPLengthEstimator.html#ae4b252043e3bf08d34cc74da49f16732":[6,0,2,194,3],
 "classDGtal_1_1MPolynomial.html":[6,0,2,538],
@@ -249,5 +247,7 @@ var NAVTREEINDEX30 =
 "classDGtal_1_1MeasureOfStraightLines.html#a3bcbddb636c300a997e858d2ec8c62f8":[6,0,2,537,3],
 "classDGtal_1_1MeasureOfStraightLines.html#a47a38639becf26e5e6f2e75911a6c96c":[6,0,2,537,8],
 "classDGtal_1_1MeasureOfStraightLines.html#a4b6a4b2a683a4f63f3778db043a20380":[6,0,2,537,15],
-"classDGtal_1_1MeasureOfStraightLines.html#a4d72c943a7adca61d9ce91c644f6d368":[6,0,2,537,14]
+"classDGtal_1_1MeasureOfStraightLines.html#a4d72c943a7adca61d9ce91c644f6d368":[6,0,2,537,14],
+"classDGtal_1_1MeasureOfStraightLines.html#a5308b161b175922207a5890781708884":[6,0,2,537,2],
+"classDGtal_1_1MeasureOfStraightLines.html#a7628e8d86f9763f3ef26168e70b84e50":[6,0,2,537,4]
 };

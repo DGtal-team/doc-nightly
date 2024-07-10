@@ -1,7 +1,5 @@
 var NAVTREEINDEX81 =
 {
-"structDGtal_1_1functors_1_1IsUpperPointPredicate.html#a48f6a71ac4075dc7ff30f31e8d90daea":[6,0,2,5,103,3],
-"structDGtal_1_1functors_1_1IsUpperPointPredicate.html#a890e79b60a61f35919cd41b3887a0811":[6,0,2,5,103,0],
 "structDGtal_1_1functors_1_1IsUpperPointPredicate.html#ae30295a91f0589f9c3310b0fabf5a79c":[6,0,2,5,103,1],
 "structDGtal_1_1functors_1_1IsWithinPointPredicate.html":[6,0,2,5,104],
 "structDGtal_1_1functors_1_1IsWithinPointPredicate.html#a0656b0a2954bc7fa1fa590f9bf739fe1":[6,0,2,5,104,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX81 =
 "structDGtal_1_1functors_1_1SurfelSetPredicate.html#adc46263fccaa28693f3069cf9936208e":[6,0,2,5,131,1],
 "structDGtal_1_1functors_1_1SurfelSetPredicate.html#af394a582e916e01f29718bd7a7caa7af":[6,0,2,5,131,3],
 "structDGtal_1_1functors_1_1SurfelSetPredicate.html#af98cbbed9927e0bf8232451fe250bde4":[6,0,2,5,131,6],
-"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01false_01_4.html":[6,0,2,5,30]
+"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01false_01_4.html":[6,0,2,5,30],
+"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01false_01_4.html#a0277717d74c7ac53a63a87419b432ddb":[6,0,2,5,30,3],
+"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01false_01_4.html#a02c75711cc17c68372e966e3509103b0":[6,0,2,5,30,1]
 };

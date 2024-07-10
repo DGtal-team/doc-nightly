@@ -1,7 +1,5 @@
 var NAVTREEINDEX71 =
 {
-"structDGtal_1_1RowMajorStorage.html":[6,0,2,483],
-"structDGtal_1_1SegmentComputerTraits.html":[6,0,2,235],
 "structDGtal_1_1SegmentComputerTraits.html#aec543e23f154c340dd52511204ed977f":[6,0,2,235,0],
 "structDGtal_1_1SequenceCategory.html":[6,0,2,43],
 "structDGtal_1_1SetAssociativeCategory.html":[6,0,2,51],
@@ -249,5 +247,7 @@ var NAVTREEINDEX71 =
 "structDGtal_1_1SurfaceMesh.html#a7be58ac805a733844b58c2f0f3ee173e":[6,0,2,590,123],
 "structDGtal_1_1SurfaceMesh.html#a80cb55915caac152ae7aeff72aa757d5":[6,0,2,590,38],
 "structDGtal_1_1SurfaceMesh.html#a85030ad862347fa37721d7ad7a0531f5":[6,0,2,590,30],
-"structDGtal_1_1SurfaceMesh.html#a8732240a38e43fcea424bd37b90ddcbf":[6,0,2,590,3]
+"structDGtal_1_1SurfaceMesh.html#a8732240a38e43fcea424bd37b90ddcbf":[6,0,2,590,3],
+"structDGtal_1_1SurfaceMesh.html#a89017ac4cfe01fe33f97635e74b5f532":[6,0,2,590,19],
+"structDGtal_1_1SurfaceMesh.html#a8a5e75d81736dd8a757a2c66843e8dc8":[6,0,2,590,27]
 };

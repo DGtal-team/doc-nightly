@@ -1,7 +1,5 @@
 var NAVTREEINDEX70 =
 {
-"structDGtal_1_1PGMWriter.html#aa3aac545f58415d9c194ebfaaad29a65":[6,0,2,464,2],
-"structDGtal_1_1PGMWriter.html#ab86e1077d57fa038ccecb4ec60fd7e27":[6,0,2,464,1],
 "structDGtal_1_1PGMWriter.html#addd0f963fde9b4d7dad2d8ab3e69e5c5":[6,0,2,464,4],
 "structDGtal_1_1PGMWriter.html#aea1f9f2729f8da56df859a813bf5250b":[6,0,2,464,5],
 "structDGtal_1_1PGMWriter.html#af90610c588fe28067db9fb5255b2c1c0":[6,0,2,464,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX70 =
 "structDGtal_1_1RegularBinner.html#aab04c114c2ce4f7cb46d248a5fc1319b":[6,0,2,525,0],
 "structDGtal_1_1RegularBinner.html#abec789c40b1bdd21e9f0aeb8491e2d19":[6,0,2,525,5],
 "structDGtal_1_1RegularBinner.html#ace0defcd89e8f2f4ec3abfc8c3369c74":[6,0,2,525,6],
-"structDGtal_1_1RegularBinner.html#ae9ce1e0f685bcb92749db8ca42f4485e":[6,0,2,525,9]
+"structDGtal_1_1RegularBinner.html#ae9ce1e0f685bcb92749db8ca42f4485e":[6,0,2,525,9],
+"structDGtal_1_1RowMajorStorage.html":[6,0,2,483],
+"structDGtal_1_1SegmentComputerTraits.html":[6,0,2,235]
 };

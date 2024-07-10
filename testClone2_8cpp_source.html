@@ -895,7 +895,7 @@ $(document).ready(function(){initNavTree('testClone2_8cpp_source.html',''); init
 <div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;  <span class="keywordtype">double</span> t4 = computeTriangles&lt;TriangleByClone&gt;( size );</div>
 <div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;Perimeter is &quot;</span> &lt;&lt; t4 &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;  ++nb; nbok += Point::nbCreated == Point::nbDeleted ? 1 : 0;</div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;  ++nb; nbok += Point::nbCreated &lt; nbC ? 1 : 0;</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;  ++nb; nbok += Point::nbCreated &lt;= nbC ? 1 : 0;</div>
 <div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; nbok &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; nb &lt;&lt; <span class="stringliteral">&quot;)&quot;</span></div>
 <div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;               &lt;&lt; <span class="stringliteral">&quot; Point nbCreated=&quot;</span> &lt;&lt; Point::nbCreated </div>
 <div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;               &lt;&lt; <span class="stringliteral">&quot; nbDeleted=&quot;</span> &lt;&lt; Point::nbDeleted &lt;&lt; std::endl; </div>
@@ -966,7 +966,7 @@ $(document).ready(function(){initNavTree('testClone2_8cpp_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_a49f9b051925a4cbbe82ac92a0123656.html">base</a></li><li class="navelem"><a class="el" href="testClone2_8cpp.html">testClone2.cpp</a></li>
-    <li class="footer">Generated on Tue Jun 11 2024 13:12:27 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 10 2024 19:22:20 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

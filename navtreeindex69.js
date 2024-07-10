@@ -1,7 +1,5 @@
 var NAVTREEINDEX69 =
 {
-"structDGtal_1_1LongvolReader.html#a9e97b3e99fa0aedd3a879e261c4d9aa9":[6,0,2,428,9],
-"structDGtal_1_1LongvolReader.html#aa20677992e8239b60c5855d11a40a598":[6,0,2,428,2],
 "structDGtal_1_1LongvolReader.html#aaf0fa019f897751e4af34ccbf8e11df3":[6,0,2,428,6],
 "structDGtal_1_1LongvolReader.html#abe2f5f1237442bf28ff2b3618719486d":[6,0,2,428,7],
 "structDGtal_1_1LongvolReader.html#ac4dff3aa301b4e612a46c32606303475":[6,0,2,428,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX69 =
 "structDGtal_1_1PGMReader.html#aeba228bf859e00fa381a43382c156958":[6,0,2,432,0],
 "structDGtal_1_1PGMWriter.html":[6,0,2,464],
 "structDGtal_1_1PGMWriter.html#a977c70c3566cfdbe81b1502f62384f63":[6,0,2,464,0],
-"structDGtal_1_1PGMWriter.html#a9fbc453e97b16e7f1a8057120443588a":[6,0,2,464,3]
+"structDGtal_1_1PGMWriter.html#a9fbc453e97b16e7f1a8057120443588a":[6,0,2,464,3],
+"structDGtal_1_1PGMWriter.html#aa3aac545f58415d9c194ebfaaad29a65":[6,0,2,464,2],
+"structDGtal_1_1PGMWriter.html#ab86e1077d57fa038ccecb4ec60fd7e27":[6,0,2,464,1]
 };

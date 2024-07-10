@@ -119,11 +119,12 @@ Introduction and first build</h1>
 <p>To build <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> in is full configuration, you may need these dependencies too:</p>
 <ul>
 <li><em>gmp</em>,</li>
+<li><em></em> <a href="http://cgal.org">CGAL</a> (build with Eigen enabled),</li>
+<li><em></em> <a href="https://libigl.github.io">libIGL</a>,</li>
 <li><em>cairo</em>,</li>
 <li><em>qglviewer</em>,</li>
 <li><em>insighttoolkit</em> (ITK),</li>
 <li><em></em> <a href="http://www.hdfgroup.org/HDF5/">HDF5</a></li>
-<li><em></em> <a href="http://cgal.org">CGAL</a> (build with Eigen enabled)</li>
 </ul>
 <p>If you want to generate the documentation, you would need:</p><ul>
 <li><em>doxygen</em> &gt;= 1.8.0,</li>
@@ -147,11 +148,7 @@ Build on Linux-based distributions</h2>
 </div><!-- fragment --><h2><a class="anchor" id="macos"></a>
 Build on Mac OS X</h2>
 <p>Then, since recent Mac OS systems are unix-like operating systems, the easiest way to compile <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> with cmake/make is to follow Linux-based instructions from source code archive.</p>
-<p>If you use <a href="https://brew.sh">Homebrew</a> package manager on Mac, <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> is available in the package repository: </p><div class="fragment"><div class="line">brew tap <a class="code" href="namespaceDGtal.html">DGtal</a>-team/<a class="code" href="namespaceDGtal.html">DGtal</a></div>
-<div class="line">brew install dgtal</div>
-<div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
-</div><!-- fragment --><p> and to get build options: </p><div class="fragment"><div class="line">brew options dgtal</div>
-</div><!-- fragment --><h1><a class="anchor" id="cmakeDGtal"></a>
+<h1><a class="anchor" id="cmakeDGtal"></a>
 Main DGtal cmake options</h1>
 <p>In <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> CMakeLists.txt, several options can be specified to custom the library build. First, cmake has predefined build options (<em>CMAKE_BUILD_TYPE</em>) such as:</p><ul>
 <li><em>CMAKE_BUILD_TYPE</em> <ul>
@@ -182,7 +179,7 @@ Build on Windows / Visual Studio</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageIntroduction.html">Preliminaries</a></li>
-    <li class="footer">Generated on Tue Jun 11 2024 13:12:35 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Jul 10 2024 19:22:29 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
