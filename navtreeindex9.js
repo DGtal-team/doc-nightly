@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"classDGtal_1_1DSSLengthLessEqualFilter.html#a0e0f98da447a6f9ace843655da9dd280":[6,0,2,185,5],
+"classDGtal_1_1DSSLengthLessEqualFilter.html#a22ef060272fc524aea922896e953cbc6":[6,0,2,185,0],
 "classDGtal_1_1DSSLengthLessEqualFilter.html#a56a03bed373d460fdeae8e938429cf87":[6,0,2,185,8],
 "classDGtal_1_1DSSLengthLessEqualFilter.html#a7bb287f16cd002e0a98790b09b29096e":[6,0,2,185,4],
 "classDGtal_1_1DSSLengthLessEqualFilter.html#a8b2a9ded8eccc9a2256b44db48bdaa0a":[6,0,2,185,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "classDGtal_1_1DigitalPlanePredicate.html#acf6ee48d0effa83e7041161b1185bd6d":[6,0,2,252,14],
 "classDGtal_1_1DigitalPlanePredicate.html#ada07059b4871e82c45424e3c7a52a6fd":[6,0,2,252,18],
 "classDGtal_1_1DigitalPlanePredicate.html#aecc07da4f549bbb5b1c360f46b4f4119":[6,0,2,252,13],
-"classDGtal_1_1DigitalSetBoundary.html":[6,0,2,600],
-"classDGtal_1_1DigitalSetBoundary.html#a083d897930eb7400b3ac4755d692496e":[6,0,2,600,7],
-"classDGtal_1_1DigitalSetBoundary.html#a17d431b0c42bdf35033a75eeee7e0d59":[6,0,2,600,8]
+"classDGtal_1_1DigitalSetBoundary.html":[6,0,2,600]
 };

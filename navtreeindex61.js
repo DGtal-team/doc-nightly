@@ -1,5 +1,7 @@
 var NAVTREEINDEX61 =
 {
+"namespaceDGtal_1_1functions.html#ac8e2160844093488cdd738354027daa1":[5,0,2,6,63],
+"namespaceDGtal_1_1functions.html#ac97099c06241a42dce86a53230b665d7":[5,0,2,6,4],
 "namespaceDGtal_1_1functions.html#acba16c21435994b725465e08cb77a9fb":[5,0,2,6,35],
 "namespaceDGtal_1_1functions.html#ad171e7dc7973f3fc0ee8363712059124":[5,0,2,6,30],
 "namespaceDGtal_1_1functions.html#ad1a335e8f7956c3188e031a8d83a5ea7":[5,0,2,6,57],
@@ -247,7 +249,5 @@ var NAVTREEINDEX61 =
 "shapes_2exampleMeshVoxelizer_8cpp-example.html":[8,147],
 "shapes_2exampleSurfaceMesh_8cpp-example.html":[8,148],
 "shapes_2mesh3DConstructionAndVisualisation_8cpp-example.html":[8,149],
-"shapes_2viewMarchingCubes_8cpp-example.html":[8,3],
-"shapes_2viewPolygonalMarchingCubes_8cpp-example.html":[8,4],
-"structDGtal_1_1AddTextureImage2DWithFunctor.html":[6,0,2,444]
+"shapes_2viewMarchingCubes_8cpp-example.html":[8,3]
 };

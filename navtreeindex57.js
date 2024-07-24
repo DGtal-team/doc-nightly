@@ -1,5 +1,7 @@
 var NAVTREEINDEX57 =
 {
+"moduleIntegralInvariant.html#subsectIntegralInvariant":[0,8,7,0,0],
+"moduleIntegralInvariant.html#subsubsectEstimators":[0,8,7,1,0,1],
 "moduleIntegralInvariant.html#subsubsectFunctors":[0,8,7,1,0,0],
 "moduleIntroduction.html":[0,4,0],
 "moduleIntroduction.html#dgtalintroBasicConcepts":[0,4,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX57 =
 "moduleVolumetric.html#toricVol":[0,8,14,5],
 "moduleVolumetric.html#vorocomplete":[0,8,14,2],
 "moduleVolumetric.html#voronoiSect":[0,8,14,1],
-"moduleVoxelComplex.html":[0,10,5],
-"moduleVoxelComplex.html#dgtal_vcomplex_sec1":[0,10,5,0],
-"moduleVoxelComplex.html#dgtal_vcomplex_sec2":[0,10,5,1]
+"moduleVoxelComplex.html":[0,10,5]
 };

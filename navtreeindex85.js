@@ -1,5 +1,7 @@
 var NAVTREEINDEX85 =
 {
+"topology_2cubical-complex-illustrations_8cpp-example.html":[8,162],
+"topology_2digitalSetToCubicalComplexes2D_8cpp-example.html":[8,163],
 "topology_2digitalSurfaceSlice_8cpp-example.html":[8,164],
 "topology_2frontierAndBoundary_8cpp-example.html":[8,165],
 "topology_2generateSimplicityTables2D_8cpp-example.html":[8,6],
@@ -101,7 +103,5 @@ var NAVTREEINDEX85 =
 "unionDGtal_1_1LabelledMap_1_1BlockPointer.html#afb0e3dabc22347e467f3dcef41370f29":[6,0,2,128,4,1],
 "unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html":[6,0,2,128,6],
 "unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html#a3150bcd6afc894eae9353c91e3f71754":[6,0,2,128,6,0],
-"unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html#adec6679ce95f9adb91a2ad1d7878c6ed":[6,0,2,128,6,1],
-"":[5,0,2,6,0],
-"":[5,0,4]
+"unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html#adec6679ce95f9adb91a2ad1d7878c6ed":[6,0,2,128,6,1]
 };

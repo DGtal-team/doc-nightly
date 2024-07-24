@@ -1,5 +1,7 @@
 var NAVTREEINDEX64 =
 {
+"structDGtal_1_1ContainerTraits_3_01std_1_1set_3_01T_00_01Compare_00_01Alloc_01_4_01_4.html#a570a9415ad10946c62de6d6f4d5cd017":[6,0,2,65,0],
+"structDGtal_1_1ContainerTraits_3_01std_1_1unordered__map_3_01Key_00_01T_00_01Hash_00_01Pred_00_01Alloc_01_4_01_4.html":[6,0,2,75],
 "structDGtal_1_1ContainerTraits_3_01std_1_1unordered__map_3_01Key_00_01T_00_01Hash_00_01Pred_00_01Alloc_01_4_01_4.html#a07e27ff9fa5c0fb08a3b3dbf441ee3ce":[6,0,2,75,0],
 "structDGtal_1_1ContainerTraits_3_01std_1_1unordered__multimap_3_01Key_00_01T_00_01Hash_00_01Pred_00_01Alloc_01_4_01_4.html":[6,0,2,76],
 "structDGtal_1_1ContainerTraits_3_01std_1_1unordered__multimap_3_01Key_00_01T_00_01Hash_00_01Pred_00_01Alloc_01_4_01_4.html#adee1cc89451febd77e6f6c1070155b8b":[6,0,2,76,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX64 =
 "structDGtal_1_1CorrectedNormalCurrentFormula.html#a55b4b9cc4156c0ef995ada4d11b97d4b":[6,0,2,241,8],
 "structDGtal_1_1CorrectedNormalCurrentFormula.html#a57a2b76f14a3fef4760dae2225734819":[6,0,2,241,27],
 "structDGtal_1_1CorrectedNormalCurrentFormula.html#a5e4a65929182ccd65472537f345ae83a":[6,0,2,241,2],
-"structDGtal_1_1CorrectedNormalCurrentFormula.html#a73907db9a1f01d34855ae752744dd480":[6,0,2,241,3],
-"structDGtal_1_1CorrectedNormalCurrentFormula.html#a7fd74d33ebf6b2f695e09e93cdba729c":[6,0,2,241,19],
-"structDGtal_1_1CorrectedNormalCurrentFormula.html#a8102272f829cf6893c5e9e2a48289d44":[6,0,2,241,15]
+"structDGtal_1_1CorrectedNormalCurrentFormula.html#a73907db9a1f01d34855ae752744dd480":[6,0,2,241,3]
 };
