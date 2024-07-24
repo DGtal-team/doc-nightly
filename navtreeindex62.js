@@ -1,5 +1,7 @@
 var NAVTREEINDEX62 =
 {
+"shapes_2viewPolygonalMarchingCubes_8cpp-example.html":[8,4],
+"structDGtal_1_1AddTextureImage2DWithFunctor.html":[6,0,2,444],
 "structDGtal_1_1AddTextureImage2DWithFunctor.html#a1148351a8670b8b49ed833c108591540":[6,0,2,444,3],
 "structDGtal_1_1AddTextureImage2DWithFunctor.html#a174b4d72a9aec2aa7115484187f815a8":[6,0,2,444,4],
 "structDGtal_1_1AddTextureImage2DWithFunctor.html#a5799703fe06693dc604075f3a81f9ac3":[6,0,2,444,5],
@@ -240,14 +242,12 @@ var NAVTREEINDEX62 =
 "structDGtal_1_1CSinglePassIteratorArchetype.html":[4,1,0],
 "structDGtal_1_1CameraDirection.html":[6,0,2,394],
 "structDGtal_1_1CameraDirection.html#a059d219a8ce5382b15da1f733b1a5dfc":[6,0,2,394,3],
-"structDGtal_1_1CameraDirection.html#a0cb54d513942f37de2f775b261f9e319":[6,0,2,394,0],
 "structDGtal_1_1CameraDirection.html#a0cb54d513942f37de2f775b261f9e319":[6,0,2,394,1],
+"structDGtal_1_1CameraDirection.html#a0cb54d513942f37de2f775b261f9e319":[6,0,2,394,0],
 "structDGtal_1_1CameraDirection.html#ac4293307d8e6f2041d721fd6d71d8ba9":[6,0,2,394,2],
 "structDGtal_1_1CameraDirection.html#af19dfd66f2040bc634309f9f5b949c5e":[6,0,2,394,4],
 "structDGtal_1_1CameraPosition.html":[6,0,2,393],
 "structDGtal_1_1CameraPosition.html#a34f376d32f4da4c734026b2ac84e776b":[6,0,2,393,3],
-"structDGtal_1_1CameraPosition.html#a7b01517ecf26718aa93c008f2f8071dc":[6,0,2,393,1],
 "structDGtal_1_1CameraPosition.html#a7b01517ecf26718aa93c008f2f8071dc":[6,0,2,393,0],
-"structDGtal_1_1CameraPosition.html#a8d0e0b0130e9a88fe4814ba404d468fd":[6,0,2,393,4],
-"structDGtal_1_1CameraPosition.html#a90673da75efad1797a085dec4cb5d7bd":[6,0,2,393,2]
+"structDGtal_1_1CameraPosition.html#a7b01517ecf26718aa93c008f2f8071dc":[6,0,2,393,1]
 };

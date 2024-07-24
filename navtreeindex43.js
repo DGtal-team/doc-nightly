@@ -1,5 +1,7 @@
 var NAVTREEINDEX43 =
 {
+"classDGtal_1_1SternBrocot.html#a207178c9e01f5615e0710a63f60c93f6":[6,0,2,14,16],
+"classDGtal_1_1SternBrocot.html#a37bbaf658b20fd093376451d4a3522b5":[6,0,2,14,15],
 "classDGtal_1_1SternBrocot.html#a3a0defa05acb1b2bc351bd25d03f3ff1":[6,0,2,14,9],
 "classDGtal_1_1SternBrocot.html#a3cd60240f5e34f974a893ccd7a272890":[6,0,2,14,19],
 "classDGtal_1_1SternBrocot.html#a4e7228bebf42eacea49a42efa86f2f87":[6,0,2,14,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX43 =
 "classDGtal_1_1TangentAngleFromDSSEstimator.html":[6,0,2,202],
 "classDGtal_1_1TangentAngleFromDSSEstimator.html#a05a7a2a6d14feca876e4928d7582ffb3":[6,0,2,202,1],
 "classDGtal_1_1TangentAngleFromDSSEstimator.html#a58fd5b226b36860bfc3f917a5d5fe44a":[6,0,2,202,2],
-"classDGtal_1_1TangentAngleFromDSSEstimator.html#add42151185bf0ee70b4ccea29e3ba83b":[6,0,2,202,0],
-"classDGtal_1_1TangentFromDCAEstimator.html":[6,0,2,205],
-"classDGtal_1_1TangentFromDCAEstimator.html#a17dd4711b6f2225e1b6e7fd2fc5db022":[6,0,2,205,2]
+"classDGtal_1_1TangentAngleFromDSSEstimator.html#add42151185bf0ee70b4ccea29e3ba83b":[6,0,2,202,0]
 };

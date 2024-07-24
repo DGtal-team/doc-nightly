@@ -1,5 +1,7 @@
 var NAVTREEINDEX35 =
 {
+"classDGtal_1_1PlaneProbingParallelepipedEstimator.html#a4eac44ebc0dccb4d6919ccbb95369dd0":[6,0,2,269,7],
+"classDGtal_1_1PlaneProbingParallelepipedEstimator.html#a4fc3e65385ee3c5fd2b0f5df46f8ec7d":[6,0,2,269,9],
 "classDGtal_1_1PlaneProbingParallelepipedEstimator.html#a5e7a4562c5f68200b5eadf78fa584b45":[6,0,2,269,33],
 "classDGtal_1_1PlaneProbingParallelepipedEstimator.html#a6b7c28f43f2a2f9d544d9d86c4149626":[6,0,2,269,41],
 "classDGtal_1_1PlaneProbingParallelepipedEstimator.html#a7014cb8ade2d538237a2700edaba6f24":[6,0,2,269,35],
@@ -247,7 +249,5 @@ var NAVTREEINDEX35 =
 "classDGtal_1_1PointVector.html#af85e53aaf46f05a6b04e456a61152052":[6,0,2,502,70],
 "classDGtal_1_1PointVector.html#af935e91e665ae4eacb9c3ddd52dd2ef1":[6,0,2,502,3],
 "classDGtal_1_1PointVector.html#af97b299e750792929698ac638540d6e6":[6,0,2,502,66],
-"classDGtal_1_1PointVector.html#afef160f79b48d813e83d3a7c4bfcd369":[6,0,2,502,57],
-"classDGtal_1_1PolygonalCalculus.html":[6,0,2,158],
-"classDGtal_1_1PolygonalCalculus.html#a04cc99aba79e62d0064386d0027a73c7":[6,0,2,158,65]
+"classDGtal_1_1PointVector.html#afef160f79b48d813e83d3a7c4bfcd369":[6,0,2,502,57]
 };

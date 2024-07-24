@@ -1,5 +1,7 @@
 var NAVTREEINDEX82 =
 {
+"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01false_01_4.html#a0277717d74c7ac53a63a87419b432ddb":[6,0,2,5,30,3],
+"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01false_01_4.html#a02c75711cc17c68372e966e3509103b0":[6,0,2,5,30,1],
 "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01false_01_4.html#a4460e4142c7c0a57e953230dca7be23f":[6,0,2,5,30,4],
 "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01false_01_4.html#a5628d0f65226e2aa553ab6415b4d2674":[6,0,2,5,30,2],
 "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01false_01_4.html#a69d11d23b96c31495b5d97359a658ccd":[6,0,2,5,30,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX82 =
 "structLibBoard_1_1GouraudTriangle.html#ab83c41027c784a79df60b516731df075":[6,0,3,15,0],
 "structLibBoard_1_1GouraudTriangle.html#ac577fb325617aad3211a11fabc1506ae":[6,0,3,15,6],
 "structLibBoard_1_1GouraudTriangle.html#ac8517171724f45594b3b0185020e6852":[6,0,3,15,4],
-"structLibBoard_1_1GouraudTriangle.html#aeba49ce6be8114e3df94595b28224f8b":[6,0,3,15,9],
-"structLibBoard_1_1GouraudTriangle.html#aed04ece911fe7e732f27c046c4defa25":[6,0,3,15,21],
-"structLibBoard_1_1GouraudTriangle.html#af6409d33604d89447609ca41d28a42d4":[6,0,3,15,19]
+"structLibBoard_1_1GouraudTriangle.html#aeba49ce6be8114e3df94595b28224f8b":[6,0,3,15,9]
 };

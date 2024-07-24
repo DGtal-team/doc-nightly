@@ -1,5 +1,7 @@
 var NAVTREEINDEX76 =
 {
+"structDGtal_1_1concepts_1_1CDrawableWithDisplay3D.html#a63fe458161a2f37a0ed260be804167b9":[6,0,2,0,69,3],
+"structDGtal_1_1concepts_1_1CDrawableWithDisplay3D.html#a85b361054097955fe574ae62bd06575d":[6,0,2,0,69,0],
 "structDGtal_1_1concepts_1_1CDrawableWithDisplay3D.html#a9886caa865c16ad9c08aab2662166f7b":[6,0,2,0,69,4],
 "structDGtal_1_1concepts_1_1CDrawableWithDisplay3D.html#aac97a84716b8ad37bef95974d560d1ad":[6,0,2,0,69,1],
 "structDGtal_1_1concepts_1_1CDrawableWithViewer3D.html":[4,0,68],
@@ -247,7 +249,5 @@ var NAVTREEINDEX76 =
 "structDGtal_1_1concepts_1_1COrientationFunctor.html#a567cb52f5f0cc694c06cf9fddc230818":[4,0,45,2],
 "structDGtal_1_1concepts_1_1COrientationFunctor.html#a787d14890e4d364c9da0b99d0c86d61a":[4,0,45,3],
 "structDGtal_1_1concepts_1_1COrientationFunctor.html#a8291330dab9ca47d289796366983a3de":[4,0,45,0],
-"structDGtal_1_1concepts_1_1COrientationFunctor.html#ab8a87364c77dc5cf39d4cd4bc66403f8":[4,0,45,6],
-"structDGtal_1_1concepts_1_1COrientationFunctor.html#adccca48b4051c668dd5bca74a1edea53":[4,0,45,4],
-"structDGtal_1_1concepts_1_1COrientationFunctor2.html":[4,0,46]
+"structDGtal_1_1concepts_1_1COrientationFunctor.html#ab8a87364c77dc5cf39d4cd4bc66403f8":[4,0,45,6]
 };
