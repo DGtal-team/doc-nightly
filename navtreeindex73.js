@@ -1,7 +1,5 @@
 var NAVTREEINDEX73 =
 {
-"structDGtal_1_1ToDGtalCategory_3_01boost_1_1bidirectional__traversal__tag_01_4.html":[6,0,2,118],
-"structDGtal_1_1ToDGtalCategory_3_01boost_1_1bidirectional__traversal__tag_01_4.html#aab4c9d9ccf1b9994774a22ff0c0203b6":[6,0,2,118,0],
 "structDGtal_1_1ToDGtalCategory_3_01boost_1_1forward__traversal__tag_01_4.html":[6,0,2,117],
 "structDGtal_1_1ToDGtalCategory_3_01boost_1_1forward__traversal__tag_01_4.html#af2b35c5e5e65e51359ee9934b54f6bf1":[6,0,2,117,0],
 "structDGtal_1_1ToDGtalCategory_3_01boost_1_1iterators_1_1detail_1_1iterator__category__with__tra1420f29943a047e87f8a1879f4727e46.html":[6,0,2,120],
@@ -249,5 +247,7 @@ var NAVTREEINDEX73 =
 "structDGtal_1_1Viewer3DFactory.html#a8e4920c6e02d12f127e34e2322586514":[6,0,2,451,64],
 "structDGtal_1_1Viewer3DFactory.html#a9407838dc45a67798bde74ea46e9c511":[6,0,2,451,79],
 "structDGtal_1_1Viewer3DFactory.html#a99ae22bddbc53aa8033c6494939e041e":[6,0,2,451,11],
-"structDGtal_1_1Viewer3DFactory.html#a9a1c29375a717457a9127206ef9683b6":[6,0,2,451,0]
+"structDGtal_1_1Viewer3DFactory.html#a9a1c29375a717457a9127206ef9683b6":[6,0,2,451,0],
+"structDGtal_1_1Viewer3DFactory.html#aa89c961aff9d01775675ee297a543616":[6,0,2,451,1],
+"structDGtal_1_1Viewer3DFactory.html#aab3cd2fc754b361d91e4dcd08be4942d":[6,0,2,451,45]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX42 =
 {
-"classDGtal_1_1StabbingLineComputer.html#a1453b4b75f2a307bb85aa8bc9a8ac61d":[6,0,2,237,33],
-"classDGtal_1_1StabbingLineComputer.html#a14d31ecd4a0122acaa65e16110aa9665":[6,0,2,237,1],
 "classDGtal_1_1StabbingLineComputer.html#a14fe88c71ebb453b57a5e108ead92426":[6,0,2,237,18],
 "classDGtal_1_1StabbingLineComputer.html#a16f454f6eff7896f60bbf040f2a62340":[6,0,2,237,10],
 "classDGtal_1_1StabbingLineComputer.html#a1db63234ae9328401aac238597708497":[6,0,2,237,12],
@@ -249,5 +247,7 @@ var NAVTREEINDEX42 =
 "classDGtal_1_1SternBrocot.html":[6,0,2,14],
 "classDGtal_1_1SternBrocot.html#a0aa0ad3b7f1e1b888fa543857fc63ad6":[6,0,2,14,20],
 "classDGtal_1_1SternBrocot.html#a0b6cc2bfb842e41846ec46af92f72ed5":[6,0,2,14,18],
-"classDGtal_1_1SternBrocot.html#a12faf68f60e71d2bfc28fead3cca7382":[6,0,2,14,3]
+"classDGtal_1_1SternBrocot.html#a12faf68f60e71d2bfc28fead3cca7382":[6,0,2,14,3],
+"classDGtal_1_1SternBrocot.html#a207178c9e01f5615e0710a63f60c93f6":[6,0,2,14,16],
+"classDGtal_1_1SternBrocot.html#a37bbaf658b20fd093376451d4a3522b5":[6,0,2,14,15]
 };

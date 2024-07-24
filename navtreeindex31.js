@@ -1,7 +1,5 @@
 var NAVTREEINDEX31 =
 {
-"classDGtal_1_1MeasureOfStraightLines.html#a5308b161b175922207a5890781708884":[6,0,2,537,2],
-"classDGtal_1_1MeasureOfStraightLines.html#a7628e8d86f9763f3ef26168e70b84e50":[6,0,2,537,4],
 "classDGtal_1_1MeasureOfStraightLines.html#a7f294f8081495f7629a48d3ee12d67d4":[6,0,2,537,16],
 "classDGtal_1_1MeasureOfStraightLines.html#a8de6f1a4f89c18af3afa86b3fad1292f":[6,0,2,537,11],
 "classDGtal_1_1MeasureOfStraightLines.html#aa146f55eac57652bec51a31cdefa0bf3":[6,0,2,537,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX31 =
 "classDGtal_1_1MultiStatistics.html#a883eeabf60edb7bea65fe4d341bfc1c8":[6,0,2,552,35],
 "classDGtal_1_1MultiStatistics.html#a8c0d2efc3e472deec869d3977935f98c":[6,0,2,552,11],
 "classDGtal_1_1MultiStatistics.html#a903fb26501034b1d7566df710c44b67c":[6,0,2,552,7],
-"classDGtal_1_1MultiStatistics.html#aa1fa7a91a7d26d5de0e2f26545cf1652":[6,0,2,552,31]
+"classDGtal_1_1MultiStatistics.html#aa1fa7a91a7d26d5de0e2f26545cf1652":[6,0,2,552,31],
+"classDGtal_1_1MultiStatistics.html#aaf8cb059c4a7034645060716a4277111":[6,0,2,552,17],
+"classDGtal_1_1MultiStatistics.html#ab29c7f6a8ad5e2fa0fd24ab8636c41f0":[6,0,2,552,36]
 };

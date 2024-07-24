@@ -1,7 +1,5 @@
 var NAVTREEINDEX83 =
 {
-"structLibBoard_1_1GouraudTriangle.html#aed04ece911fe7e732f27c046c4defa25":[6,0,3,15,21],
-"structLibBoard_1_1GouraudTriangle.html#af6409d33604d89447609ca41d28a42d4":[6,0,3,15,19],
 "structLibBoard_1_1Group.html":[6,0,3,5],
 "structLibBoard_1_1Group.html#a00fb957a46fb08c370fc7cfec3e57292":[6,0,3,5,18],
 "structLibBoard_1_1Group.html#a0431e986bcc09f212f04d1c40c24a7fc":[6,0,3,5,25],
@@ -249,5 +247,7 @@ var NAVTREEINDEX83 =
 "structLibBoard_1_1Shape.html#ae563bd5313851462fd37ab180e680b3b":[6,0,3,6,11],
 "structLibBoard_1_1Shape.html#af09a3c6f719c8a846447c0cd2e2d0368":[6,0,3,6,0],
 "structLibBoard_1_1Shape.html#af09a3c6f719c8a846447c0cd2e2d0368aa26d3fdce6499d0eb8d8b677db3269f4":[6,0,3,6,0,0],
-"structLibBoard_1_1Shape.html#af09a3c6f719c8a846447c0cd2e2d0368ad2b5f9290405771e387b70d62ae0c194":[6,0,3,6,0,1]
+"structLibBoard_1_1Shape.html#af09a3c6f719c8a846447c0cd2e2d0368ad2b5f9290405771e387b70d62ae0c194":[6,0,3,6,0,1],
+"structLibBoard_1_1Shape.html#af09a3c6f719c8a846447c0cd2e2d0368af51ba83a785ff46338b9798783b40ec2":[6,0,3,6,0,2],
+"structLibBoard_1_1Shape.html#af55b6e8ba4edab84c3297742ad7f31a6":[6,0,3,6,10]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"classDGtal_1_1ShortcutsGeometry.html#aff727350522f5ac25562fd432b725de1":[6,0,2,349,22],
-"classDGtal_1_1ShortcutsGeometry.html#affbc330f433bf1821994c4de7bc56f8e":[6,0,2,349,3],
 "classDGtal_1_1ShroudsRegularization.html":[6,0,2,278],
 "classDGtal_1_1ShroudsRegularization.html#a09543f86e56ce26c5bffafb50a9d708d":[6,0,2,278,17],
 "classDGtal_1_1ShroudsRegularization.html#a0bf53e1d6e720304991c5fa42bb81fe4":[6,0,2,278,9],
@@ -249,5 +247,7 @@ var NAVTREEINDEX40 =
 "classDGtal_1_1SimpleMatrix.html#ad9c54ae5ada1d13b8bac6cb967e062af":[6,0,2,531,10],
 "classDGtal_1_1SimpleMatrix.html#adb61697ab5abfdf88f123baf0caf49fb":[6,0,2,531,29],
 "classDGtal_1_1SimpleMatrix.html#adb66d77cb5f2c74a82009e9eb6bd8fb3":[6,0,2,531,2],
-"classDGtal_1_1SimpleMatrix.html#adc1857361c376a28deebcb23c7af21dc":[6,0,2,531,32]
+"classDGtal_1_1SimpleMatrix.html#adc1857361c376a28deebcb23c7af21dc":[6,0,2,531,32],
+"classDGtal_1_1SimpleMatrix.html#ae4afc9da5f946f2128ce4d36e3944937":[6,0,2,531,38],
+"classDGtal_1_1SimpleMatrix.html#aef46b1a9e636414aafb681bbf0f5f02e":[6,0,2,531,11]
 };

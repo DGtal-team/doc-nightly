@@ -1,7 +1,5 @@
 var NAVTREEINDEX79 =
 {
-"structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01true_00_01false_01_4.html":[6,0,2,2,21],
-"structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01true_00_01false_01_4.html#a395a0a88c99310356ac09f7e53e382c9":[6,0,2,2,21,1],
 "structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01true_00_01false_01_4.html#a3d1121205bd2a3448a6592961a9a7ea2":[6,0,2,2,21,6],
 "structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01true_00_01false_01_4.html#a52351bb9e4eb435ffc85ec195fb605fc":[6,0,2,2,21,2],
 "structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01true_00_01false_01_4.html#a6ec5191d5ee28d6f79359bb2b4ce871b":[6,0,2,2,21,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX79 =
 "structDGtal_1_1functors_1_1BallConstantPointFunction.html#a49554e79d2cebed8e4ed63c98c29ecf4":[6,0,2,5,113,0],
 "structDGtal_1_1functors_1_1BallConstantPointFunction.html#a50140afe6903b7db2f07bca54ac86496":[6,0,2,5,113,7],
 "structDGtal_1_1functors_1_1BallConstantPointFunction.html#a72519c28a770ab907a136780f8512e17":[6,0,2,5,113,6],
-"structDGtal_1_1functors_1_1BallConstantPointFunction.html#a736627307456163122d25a65dc6440a8":[6,0,2,5,113,2]
+"structDGtal_1_1functors_1_1BallConstantPointFunction.html#a736627307456163122d25a65dc6440a8":[6,0,2,5,113,2],
+"structDGtal_1_1functors_1_1BallConstantPointFunction.html#aad068343b0260727b3b1248480e8dc95":[6,0,2,5,113,3],
+"structDGtal_1_1functors_1_1BallConstantPointFunction.html#aed997033bf568a3f8638a0157cddf11e":[6,0,2,5,113,5]
 };
