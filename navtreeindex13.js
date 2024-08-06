@@ -1,7 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"classDGtal_1_1DiscreteExteriorCalculus.html#a109ccf25f703d4c6a2606966d40856e4":[6,0,2,150,3],
-"classDGtal_1_1DiscreteExteriorCalculus.html#a13ac8d49539a86851a94e7a0bd2ad82f":[6,0,2,150,64],
 "classDGtal_1_1DiscreteExteriorCalculus.html#a15087d17ef6e9dea296adf107064f2c6":[6,0,2,150,68],
 "classDGtal_1_1DiscreteExteriorCalculus.html#a155cc1a3981d0827d74a1b0642f6f706":[6,0,2,150,61],
 "classDGtal_1_1DiscreteExteriorCalculus.html#a17017d82096647a2933427a07889224e":[6,0,2,150,32],
@@ -242,12 +240,14 @@ var NAVTREEINDEX13 =
 "classDGtal_1_1Display3D.html#af91242acbef600d4d4b0485e860103b2":[6,0,2,25,106],
 "classDGtal_1_1Display3D.html#afb46d675d16dd1d210d0a0927e962bb3":[6,0,2,25,49],
 "classDGtal_1_1Display3D.html#afe07e54daeab2e4175acc9caa8e02d91":[6,0,2,25,94],
-"classDGtal_1_1DistanceBreadthFirstVisitor.html":[6,0,2,342],
-"classDGtal_1_1DistanceBreadthFirstVisitor.html#a05403f418ddc3102dd8a9e955584a68b":[6,0,2,342,21],
-"classDGtal_1_1DistanceBreadthFirstVisitor.html#a11a12dd7018b8d8cd98ea424544b82b4":[6,0,2,342,36],
-"classDGtal_1_1DistanceBreadthFirstVisitor.html#a12bab904423fab10c17195d9448c8111":[6,0,2,342,24],
-"classDGtal_1_1DistanceBreadthFirstVisitor.html#a1686b9566ad22882782a0691ef031dea":[6,0,2,342,33],
-"classDGtal_1_1DistanceBreadthFirstVisitor.html#a2583a3450611716a03acfdcb87ad9ab8":[6,0,2,342,7],
-"classDGtal_1_1DistanceBreadthFirstVisitor.html#a2ac08c46e08651ccb85de8e47127f668":[6,0,2,342,28],
-"classDGtal_1_1DistanceBreadthFirstVisitor.html#a2c789832006713b40ed0d902d71f79fd":[6,0,2,342,13]
+"classDGtal_1_1DistanceBreadthFirstVisitor.html":[6,0,2,343],
+"classDGtal_1_1DistanceBreadthFirstVisitor.html#a05403f418ddc3102dd8a9e955584a68b":[6,0,2,343,21],
+"classDGtal_1_1DistanceBreadthFirstVisitor.html#a11a12dd7018b8d8cd98ea424544b82b4":[6,0,2,343,36],
+"classDGtal_1_1DistanceBreadthFirstVisitor.html#a12bab904423fab10c17195d9448c8111":[6,0,2,343,24],
+"classDGtal_1_1DistanceBreadthFirstVisitor.html#a1686b9566ad22882782a0691ef031dea":[6,0,2,343,33],
+"classDGtal_1_1DistanceBreadthFirstVisitor.html#a2583a3450611716a03acfdcb87ad9ab8":[6,0,2,343,7],
+"classDGtal_1_1DistanceBreadthFirstVisitor.html#a2ac08c46e08651ccb85de8e47127f668":[6,0,2,343,28],
+"classDGtal_1_1DistanceBreadthFirstVisitor.html#a2c789832006713b40ed0d902d71f79fd":[6,0,2,343,13],
+"classDGtal_1_1DistanceBreadthFirstVisitor.html#a2d3d4a6eaa3734a0b573ec915a716ebb":[6,0,2,343,9],
+"classDGtal_1_1DistanceBreadthFirstVisitor.html#a2f0fc542670ce3872bd74ca41446e007":[6,0,2,343,12]
 };

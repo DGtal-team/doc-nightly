@@ -993,6 +993,8 @@ template&lt;typename TKSpace &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1DigitalConvexity.html#af4528961df07c0a68287a7744c93e22f">DGtal::DigitalConvexity&lt; TKSpace &gt;::makePolytope()</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="pConvexity-benchmark_8cpp_source.html#l00122">timingsFullConvexity()</a>, <a class="el" href="pConvexity-benchmark_8cpp_source.html#l00170">timingsFullConvexityFast()</a>, and <a class="el" href="pConvexity-benchmark_8cpp_source.html#l00074">timingsPConvexity()</a>.</p>
+
 </div>
 </div>
 <a id="aec7cc41539c4895a98cb69b625b1bc8b"></a>
@@ -1162,7 +1164,7 @@ template&lt;typename TKSpace &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>\( FC^*( Z ) \)</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If <em>Z</em> is fully convex, then the output is <em>Z</em> itself. Otherwise, the returned set of points includes <em>Z</em> and is fully convex. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00135">checkCvxHPlusHypercubeFullConvexity()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00181">checkProjectionFullConvexity()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00094">checkSkelStarCvxHFullConvexity()</a>, <a class="el" href="digitalPolyhedronBuilder3D_8cpp_source.html#l00086">main()</a>, and <a class="el" href="testDigitalConvexity_8cpp_source.html#l00507">SCENARIO()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00135">checkCvxHPlusHypercubeFullConvexity()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00181">checkProjectionFullConvexity()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00094">checkSkelStarCvxHFullConvexity()</a>, <a class="el" href="digitalPolyhedronBuilder3D_8cpp_source.html#l00086">main()</a>, <a class="el" href="testDigitalConvexity_8cpp_source.html#l00507">SCENARIO()</a>, <a class="el" href="pConvexity-benchmark_8cpp_source.html#l00122">timingsFullConvexity()</a>, <a class="el" href="pConvexity-benchmark_8cpp_source.html#l00170">timingsFullConvexityFast()</a>, and <a class="el" href="pConvexity-benchmark_8cpp_source.html#l00074">timingsPConvexity()</a>.</p>
 
 </div>
 </div>
@@ -1722,7 +1724,7 @@ template&lt;typename TKSpace &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>'true' iff <em>X</em> is fully digitally convex. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="SymmetricConvexExpander_8h_source.html#l00173">DGtal::SymmetricConvexExpander&lt; TKSpace, TPointPredicate &gt;::advance()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00135">checkCvxHPlusHypercubeFullConvexity()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00244">checkFullConvexityCharacterization()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00094">checkSkelStarCvxHFullConvexity()</a>, <a class="el" href="NeighborhoodConvexityAnalyzer_8h_source.html#l00355">DGtal::NeighborhoodConvexityAnalyzer&lt; TKSpace, K &gt;::isComplementaryFullyConvex()</a>, <a class="el" href="NeighborhoodConvexityAnalyzer_8h_source.html#l00288">DGtal::NeighborhoodConvexityAnalyzer&lt; TKSpace, K &gt;::isFullyConvex()</a>, and <a class="el" href="testDigitalConvexity_8cpp_source.html#l00193">SCENARIO()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="SymmetricConvexExpander_8h_source.html#l00173">DGtal::SymmetricConvexExpander&lt; TKSpace, TPointPredicate &gt;::advance()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00135">checkCvxHPlusHypercubeFullConvexity()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00244">checkFullConvexityCharacterization()</a>, <a class="el" href="checkFullConvexityTheorems_8cpp_source.html#l00094">checkSkelStarCvxHFullConvexity()</a>, <a class="el" href="NeighborhoodConvexityAnalyzer_8h_source.html#l00355">DGtal::NeighborhoodConvexityAnalyzer&lt; TKSpace, K &gt;::isComplementaryFullyConvex()</a>, <a class="el" href="NeighborhoodConvexityAnalyzer_8h_source.html#l00288">DGtal::NeighborhoodConvexityAnalyzer&lt; TKSpace, K &gt;::isFullyConvex()</a>, <a class="el" href="testDigitalConvexity_8cpp_source.html#l00193">SCENARIO()</a>, <a class="el" href="pConvexity-benchmark_8cpp_source.html#l00122">timingsFullConvexity()</a>, and <a class="el" href="pConvexity-benchmark_8cpp_source.html#l00261">timingsFullConvexityNonConvex()</a>.</p>
 
 </div>
 </div>
@@ -1781,7 +1783,7 @@ template&lt;typename TKSpace &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>'true' iff <em>X</em> is fully digitally convex.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This method is generally faster than <a class="el" href="classDGtal_1_1DigitalConvexity.html#a3cd5bd9f858176e274f5320674ca2026">DigitalConvexity::isFullyConvex</a> if (1) the set is indeed is fully convex, (2) the dimension is high (&gt;= 3 or 4). </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="testDigitalConvexity_8cpp_source.html#l00193">SCENARIO()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="testDigitalConvexity_8cpp_source.html#l00193">SCENARIO()</a>, <a class="el" href="pConvexity-benchmark_8cpp_source.html#l00170">timingsFullConvexityFast()</a>, and <a class="el" href="pConvexity-benchmark_8cpp_source.html#l00303">timingsFullConvexityFastNonConvex()</a>.</p>
 
 </div>
 </div>
@@ -3552,7 +3554,7 @@ template&lt;typename TKSpace &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1DigitalConvexity.html">DigitalConvexity</a></li>
-    <li class="footer">Generated on Wed Jul 24 2024 12:42:47 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Aug 6 2024 13:01:53 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

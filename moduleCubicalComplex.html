@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('moduleCubicalComplex.html',''); initRe
 <dl class="section since"><dt>Since</dt><dd>0.9.1</dd></dl>
 <p>Part of the <a class="el" href="packageTopology.html">Topology package</a>.</p>
 <p>This part of the manual describes how to represent and process arbitrary cubical complexes.</p>
-<dl class="section note"><dt>Note</dt><dd>Collapse operation is a backport from <em>ImaGene</em>. <a class="el" href="citelist.html#CITEREF_ImaGene">[63]</a></dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Collapse operation is a backport from <em>ImaGene</em>. <a class="el" href="citelist.html#CITEREF_ImaGene">[65]</a></dd></dl>
 <p>The following programs are related to this documentation: <a class="el" href="cubical-complex-collapse_8cpp.html">cubical-complex-collapse.cpp</a>, <a class="el" href="cubical-complex-illustrations_8cpp.html">cubical-complex-illustrations.cpp</a>, <a class="el" href="testCubicalComplex_8cpp.html">testCubicalComplex.cpp</a>, <a class="el" href="cubicalComplexThinning_8cpp.html">cubicalComplexThinning.cpp</a>.</p>
 <h1><a class="anchor" id="dgtal_ccomplex_sec1"></a>
 Introduction to cubical complexes</h1>
@@ -362,7 +362,7 @@ Topological operations: closing, opening, collapsing a complex</h1>
 Homotopic collapse of <em>X</em>, displayed in orange, with fixed points marked in blue.</div></div>
  <h1><a class="anchor" id="dgtal_ccomplex_sec8"></a>
 Thinning in cubical complexes</h1>
-<p>Thinning of digital objects in 2D and 3D with the guarantee that a final skeleton is thin can be achieved directly only in \(\mathbb{Z}^2\) for so-called well-composed images <a class="el" href="citelist.html#CITEREF_Latecki:ER:95">[80]</a>. Nevertheless, the problem can be solved for 3D objects represented by cubical complexes <a class="el" href="citelist.html#CITEREF_Chaussard:IWCIA:09">[24]</a>.</p>
+<p>Thinning of digital objects in 2D and 3D with the guarantee that a final skeleton is thin can be achieved directly only in \(\mathbb{Z}^2\) for so-called well-composed images <a class="el" href="citelist.html#CITEREF_Latecki:ER:95">[82]</a>. Nevertheless, the problem can be solved for 3D objects represented by cubical complexes <a class="el" href="citelist.html#CITEREF_Chaussard:IWCIA:09">[24]</a>.</p>
 <p>In <a class="el" href="citelist.html#CITEREF_Chaussard:IWCIA:09">[24]</a> Chaussard and Couprie proposed a parallel directional thinning schemes in cubical complexes which allow to obtain a thin result. The implementation in <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> works for both 2D and 3D cubical complexes.</p>
 <p>The first scheme, so-called <a class="el" href="classDGtal_1_1ParDirCollapse.html" title="Aim: Implements thinning algorithms in cubical complexes. The implementation supports any model of cu...">ParDirCollapse</a>&mdash;parallel directional collapse&mdash;based on the idea such that free pairs of faces are collapsed with respect to a fixed order of directions and order of face dimensions. In other words, in each iteration we first collapse free pairs of a given direction starting with pairs of the highest dimension. When there is no more free pairs to remove for a given direction then another direction is considered unless the specified number of iterations is not reached . Note in the case of <a class="el" href="classDGtal_1_1ParDirCollapse.html" title="Aim: Implements thinning algorithms in cubical complexes. The implementation supports any model of cu...">ParDirCollapse</a> the thinness of the result depends on the number of iterations.</p>
 <p>The steps below present how to use <a class="el" href="classDGtal_1_1ParDirCollapse.html" title="Aim: Implements thinning algorithms in cubical complexes. The implementation supports any model of cu...">ParDirCollapse</a> in <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a>:</p>
@@ -400,7 +400,7 @@ The starting complex X after IsthmusCollapse.</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageTopology.html">Topology package</a></li>
-    <li class="footer">Generated on Wed Jul 24 2024 12:42:43 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Aug 6 2024 13:01:49 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

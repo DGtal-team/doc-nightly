@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>DGtal: Digital convexity and full digital convexity</title>
+<title>DGtal: Digital convexity, full convexity and P-convexity</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,11 +91,11 @@ $(document).ready(function(){initNavTree('moduleDigitalConvexity.html',''); init
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Digital convexity and full digital convexity </div>  </div>
+<div class="title">Digital convexity, full convexity and P-convexity </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#dgtal_dconvexity_sec1">Introduction to full digital convexity</a></li>
+<ul><li class="level1"><a href="#dgtal_dconvexity_sec1">Introduction to full convexity</a></li>
 <li class="level1"><a href="#dgtal_dconvexity_sec2">Classes and functions related to digital convexity</a><ul><li class="level2"><a href="#dgtal_dconvexity_sec21">Lattice polytopes</a></li>
 <li class="level2"><a href="#dgtal_dconvexity_sec22">Building a set of lattice cells from digital points</a></li>
 <li class="level2"><a href="#dgtal_dconvexity_sec23">Checking digital convexity</a></li>
@@ -103,23 +103,25 @@ $(document).ready(function(){initNavTree('moduleDigitalConvexity.html',''); init
 <li class="level2"><a href="#dgtal_dconvexity_sec25">Ehrhart polynomial of a lattice polytope</a></li>
 </ul>
 </li>
-<li class="level1"><a href="#dgtal_dconvexity_sec3">Rational polytopes</a></li>
-<li class="level1"><a href="#dgtal_dconvexity_sec4">Further notes</a></li>
+<li class="level1"><a href="#dgtal_dconvexity_sec3">P-convexity and convexity measures</a></li>
+<li class="level1"><a href="#dgtal_dconvexity_sec4">Best algorithm for checking full convexity</a></li>
+<li class="level1"><a href="#dgtal_dconvexity_sec5">Rational polytopes</a></li>
+<li class="level1"><a href="#dgtal_dconvexity_sec6">Further notes</a></li>
 </ul>
 </div>
 <div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: </dt><dd>Jacques-Olivier Lachaud</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.1</dd></dl>
 <p>Part of the <a class="el" href="packageGeometry.html">Geometry package</a>.</p>
-<p>This part of the manual describes tools associated to a new definition of digital convexity, called the full convexity <a class="el" href="citelist.html#CITEREF_lachaud_dgmm_2021">[77]</a> <a class="el" href="citelist.html#CITEREF_lachaud_jmiv_2022">[78]</a> . This new definition solves many problems related to the usual definition of digital convexity, like possible non connectedness or non simple connectedness, while encompassing its desirable features. Fully convex sets are digitally convex, but are also connected and simply connected. They have a morphological characterisation, which induces a simple convexity test algorithm. As an important example, arithmetic planes are fully convex too.</p>
-<p>The following programs are related to this documentation: <a class="el" href="exampleDigitalConvexity_8cpp.html" title="An example file for DigitalConvexity in 2D.">geometry/curves/exampleDigitalConvexity.cpp</a>, <a class="el" href="exampleRationalConvexity_8cpp_source.html">geometry/curves/exampleRationalConvexity.cpp</a>, <a class="el" href="testBoundedLatticePolytope_8cpp.html">testBoundedLatticePolytope.cpp</a>, <a class="el" href="testBoundedLatticePolytopeCounter_8cpp.html">testBoundedLatticePolytopeCounter.cpp</a>, <a class="el" href="testCellGeometry_8cpp.html">testCellGeometry.cpp</a>, <a class="el" href="testDigitalConvexity_8cpp.html">testDigitalConvexity.cpp</a>, <a class="el" href="testEhrhartPolynomial_8cpp.html">testEhrhartPolynomial.cpp</a>, <a class="el" href="exampleBoundedLatticePolytopeCount2D_8cpp.html">geometry/volumes/exampleBoundedLatticePolytopeCount2D.cpp</a>, <a class="el" href="exampleBoundedLatticePolytopeCount3D_8cpp.html">geometry/volumes/exampleBoundedLatticePolytopeCount3D.cpp</a>, <a class="el" href="exampleBoundedLatticePolytopeCount4D_8cpp.html">geometry/volumes/exampleBoundedLatticePolytopeCount4D.cpp</a> .</p>
+<p>This part of the manual describes tools associated to a new definition of digital convexity, called the <b>full</b> <b>convexity</b> <a class="el" href="citelist.html#CITEREF_lachaud_dgmm_2021">[79]</a> <a class="el" href="citelist.html#CITEREF_lachaud_jmiv_2022">[80]</a> . This new definition solves many problems related to the usual definition of digital convexity, like possible non connectedness or non simple connectedness, while encompassing its desirable features. Fully convex sets are digitally convex, but are also connected and simply connected. They have a morphological characterisation, which induces a simple convexity test algorithm. As an important example, arithmetic planes are fully convex too. Since <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> release 1.5, <b>P-convexity</b> can also be checked in arbitrary dimension. It is worth to note that it is equivalent to full convexity, and is generally faster to check <a class="el" href="citelist.html#CITEREF_feschet_2024_dgmm">[55]</a> .</p>
+<p>The following programs are related to this documentation: <a class="el" href="exampleDigitalConvexity_8cpp.html" title="An example file for DigitalConvexity in 2D.">geometry/curves/exampleDigitalConvexity.cpp</a>, <a class="el" href="exampleRationalConvexity_8cpp_source.html">geometry/curves/exampleRationalConvexity.cpp</a>, <a class="el" href="testBoundedLatticePolytope_8cpp.html">testBoundedLatticePolytope.cpp</a>, <a class="el" href="testBoundedLatticePolytopeCounter_8cpp.html">testBoundedLatticePolytopeCounter.cpp</a>, <a class="el" href="testCellGeometry_8cpp.html">testCellGeometry.cpp</a>, <a class="el" href="testDigitalConvexity_8cpp.html">testDigitalConvexity.cpp</a>, <a class="el" href="testEhrhartPolynomial_8cpp.html">testEhrhartPolynomial.cpp</a>, <a class="el" href="exampleBoundedLatticePolytopeCount2D_8cpp.html">geometry/volumes/exampleBoundedLatticePolytopeCount2D.cpp</a>, <a class="el" href="exampleBoundedLatticePolytopeCount3D_8cpp.html">geometry/volumes/exampleBoundedLatticePolytopeCount3D.cpp</a>, <a class="el" href="exampleBoundedLatticePolytopeCount4D_8cpp.html">geometry/volumes/exampleBoundedLatticePolytopeCount4D.cpp</a>, <a class="el" href="pConvexity-benchmark_8cpp.html">geometry/volumes/pConvexity-benchmark.cpp</a> .</p>
 <p>This module relies on module <a class="el" href="moduleQuickHull.html">QuickHull algorithm in arbitrary dimension for convex hull and Delaunay cell complex computation</a> for convex hull computations in arbitrary dimensions.</p>
 <p>You may also look at <a class="el" href="moduleDigitalConvexityApplications.html">Applications of full digital convexity</a> to see some applications of full convexity.</p>
 <p>See <a class="el" href="moduleEnvelope.html">Fully convex envelope, relative fully convex envelope and digital polyhedra</a> to see how to build fully convex hulls and digital polyhedra.</p>
 <h1><a class="anchor" id="dgtal_dconvexity_sec1"></a>
-Introduction to full digital convexity</h1>
+Introduction to full convexity</h1>
 <p>The usual definition for <b>digital</b> <b>convexity</b> is as follows. For some digital set \( S \subset \mathbb{Z}^d \), \( S \) is said to be <em>digitally</em> <em>convex</em> whenever \( \mathrm{Conv}(S) \cap \mathbb{Z}^d = S \). Otherwise said, the convex hull of all the digital points contains exactly these digital points and no other.</p>
 <p>Although handy and easy to check, this definition lacks many properties related to (continuous) convexity in the Euclidean plane.</p>
-<p>We extend this definition as follows (see <a class="el" href="citelist.html#CITEREF_lachaud_dgmm_2021">[77]</a> <a class="el" href="citelist.html#CITEREF_lachaud_jmiv_2022">[78]</a> ). Let \( C^d \) be the usual regular cubical complex induced by the lattice \( \mathbb{Z}^d \), and let \( C^d_k \) be its <em>k-cells</em>, for \( 0 \le k \le d \). We have that the 0-cells of \( C^d_0 \) are exactly the lattice points, the 1-cells of \( C^d_1 \) are the open unit segment joining 2 neighboring lattice points, etc.</p>
+<p>We extend this definition as follows (see <a class="el" href="citelist.html#CITEREF_lachaud_dgmm_2021">[79]</a> <a class="el" href="citelist.html#CITEREF_lachaud_jmiv_2022">[80]</a> ). Let \( C^d \) be the usual regular cubical complex induced by the lattice \( \mathbb{Z}^d \), and let \( C^d_k \) be its <em>k-cells</em>, for \( 0 \le k \le d \). We have that the 0-cells of \( C^d_0 \) are exactly the lattice points, the 1-cells of \( C^d_1 \) are the open unit segment joining 2 neighboring lattice points, etc.</p>
 <p>Finally, for an arbitrary subset \( Y \subset \mathbb{R}^d \), we denote by \( C^d_k \lbrack Y \rbrack \) the set of k-cells of \( C^d \) whose closure have a non-empty intersection with \( Y \), i.e. \( C^d_k \lbrack Y \rbrack := \{ c \in C^d_k,~\text{s.t.}~ \bar{c} \cap Y \neq \emptyset \} \).</p>
 <p>A digital set \( S \subset \mathbb{Z}^d \) is said to be <b>digitally</b> <em>k-</em> <b>convex</b> whenever \( C^d_k \lbrack \mathrm{Conv}(S) \rbrack = C^d_k \lbrack S \rbrack \). \( S \) is said to be <b>fully</b> (digitally) <b>convex</b> whenever it is digitally <em>k-</em> convex for \( 0 \le k \le d \).</p>
 <p>A fully convex set is always \( 3^d-1 \)-connected (i.e. 8-connected in 2D, 26-connected in 3D). Furthermore its axis-aligned slices are connected (with the same kind of connectedness). It is also clear that digitally 0-convexity is the usual digital convexity.</p>
@@ -130,6 +132,12 @@ Examples of non fully digitally convex triangles in Z2. Missing 1-cells for 1-di
 <p></p>
 <p>A last useful notion is the <em>subconvexity</em>, or <em>tangency</em>. Let \( X \subset \mathbb{Z}^d \) some arbitrary digital set. Then the digital set \( S \subset \mathbb{Z}^d \) is said to be <b>digitally</b> <em>k-</em> <b>subconvex</b> to \( X \) whenever \( C^d_k \lbrack \mathrm{Conv}(S) \rbrack \subset C^d_k \lbrack X \rbrack \). And \( S \) is said to be <b>fully</b> (digitally) <b>subconvex</b> to \( X \) whenever it is digitally <em>k-</em> subconvex to \( X \) for \( 0 \le k \le d \).</p>
 <p>Subconvexity is a useful for notion for digital contour and surface analysis. It tells which subsets of these digital sets are <em>tangent</em> to them.</p>
+<p>The notion of <b>P-convexity</b> has been proposed in <a class="el" href="citelist.html#CITEREF_feschet_2024_dgmm">[55]</a> . A set \( S \subset \mathbb{Z}^d \) is <b>P-convex</b> if and only if</p>
+<ul>
+<li>\( S \) is 0-convex,</li>
+<li>and, if \( d &gt; 1 \), the $d$ projections of $S$ along each axis is P-convex (in \( \mathbb{Z}^{d-1} \)).</li>
+</ul>
+<p>P-convexity is equivalent to full convexity as shown in <a class="el" href="citelist.html#CITEREF_feschet_2024_dgmm">[55]</a> .</p>
 <h1><a class="anchor" id="dgtal_dconvexity_sec2"></a>
 Classes and functions related to digital convexity</h1>
 <p>Three classes help to check digital convexity.</p>
@@ -137,6 +145,7 @@ Classes and functions related to digital convexity</h1>
 <li><a class="el" href="classDGtal_1_1BoundedLatticePolytope.html" title="Aim: Represents an nD lattice polytope, i.e. a convex polyhedron bounded with vertices with integer c...">BoundedLatticePolytope</a> is the class that is used to build polytopes, i.e. intersections of half-spaces, which are a way to represent convex polyhedra.</li>
 <li><a class="el" href="classDGtal_1_1CellGeometry.html" title="Aim: Computes and stores sets of cells and provides methods to compute intersections of lattice and r...">CellGeometry</a> is used to store sets of cells and provides methods to build the set of cells that intersect a polytope or the set of cells that touch a set of digital points.</li>
 <li><a class="el" href="classDGtal_1_1DigitalConvexity.html" title="Aim: A helper class to build polytopes from digital sets and to check digital k-convexity and full co...">DigitalConvexity</a> provides many helper methods to build <a class="el" href="classDGtal_1_1BoundedLatticePolytope.html" title="Aim: Represents an nD lattice polytope, i.e. a convex polyhedron bounded with vertices with integer c...">BoundedLatticePolytope</a> and <a class="el" href="classDGtal_1_1CellGeometry.html" title="Aim: Computes and stores sets of cells and provides methods to compute intersections of lattice and r...">CellGeometry</a> objects and to check digital convexity and subconvexity.</li>
+<li><a class="el" href="classDGtal_1_1PConvexity.html" title="Aim: A class to check if digital sets are P-convex. The P-convexity is defined as follows: A digital ...">PConvexity</a> provides functions to check digital convexity and P-convexity, as well a full convexity measure that is characteristics of full convex sets (or equivalently P-convex sets).</li>
 </ul>
 <h2><a class="anchor" id="dgtal_dconvexity_sec21"></a>
 Lattice polytopes</h2>
@@ -192,8 +201,7 @@ Since 1.3, inside/interior point counting and retrieval have been considerably o
 <li><a class="el" href="classDGtal_1_1BoundedLatticePolytope.html#af3f7e63f778429a299d056e4fd5e31f3">BoundedLatticePolytope::insertPoints</a> inserts the lattice points in the polytope into some point set</li>
 </ul>
 <p>The class <a class="el" href="structDGtal_1_1ConvexityHelper.html" title="Aim: Provides a set of functions to facilitate the computation of convex hulls and polytopes,...">ConvexityHelper</a> also provides several static methods related to <a class="el" href="classDGtal_1_1BoundedLatticePolytope.html" title="Aim: Represents an nD lattice polytope, i.e. a convex polyhedron bounded with vertices with integer c...">BoundedLatticePolytope</a>:</p><ul>
-<li><a class="el" href="structDGtal_1_1ConvexityHelper.html#af88821410e5a9327537ee884249d7034">ConvexityHelper::computeLatticePolytope</a> computes a <a class="el" href="classDGtal_1_1BoundedLatticePolytope.html" title="Aim: Represents an nD lattice polytope, i.e. a convex polyhedron bounded with vertices with integer c...">BoundedLatticePolytope</a> from an arbitrary range of points (use <a class="el" href="structDGtal_1_1QuickHull.html" title="Aim: Implements the quickhull algorithm by Barber et al. , a famous arbitrary dimensional convex hull...">QuickHull</a> algorithm, <dl class="section see"><dt>See also</dt><dd>moduleQuickHull).</dd></dl>
-</li>
+<li><a class="el" href="structDGtal_1_1ConvexityHelper.html#af88821410e5a9327537ee884249d7034">ConvexityHelper::computeLatticePolytope</a> computes a <a class="el" href="classDGtal_1_1BoundedLatticePolytope.html" title="Aim: Represents an nD lattice polytope, i.e. a convex polyhedron bounded with vertices with integer c...">BoundedLatticePolytope</a> from an arbitrary range of points (use <a class="el" href="structDGtal_1_1QuickHull.html" title="Aim: Implements the quickhull algorithm by Barber et al. , a famous arbitrary dimensional convex hull...">QuickHull</a> algorithm, see also <a class="el" href="moduleQuickHull.html">QuickHull algorithm in arbitrary dimension for convex hull and Delaunay cell complex computation</a> ).</li>
 <li><a class="el" href="structDGtal_1_1ConvexityHelper.html#acf0712e736c29abed972506333b048ba">ConvexityHelper::compute3DTriangle</a> computes the <a class="el" href="classDGtal_1_1BoundedLatticePolytope.html" title="Aim: Represents an nD lattice polytope, i.e. a convex polyhedron bounded with vertices with integer c...">BoundedLatticePolytope</a> enclosing a 3D triangle (faster way than above, but limited to 3D triangles).</li>
 <li><a class="el" href="structDGtal_1_1ConvexityHelper.html#a6993e5f812474cafa35e030dd288de9c">ConvexityHelper::computeDegeneratedTriangle</a> computes the <a class="el" href="classDGtal_1_1BoundedLatticePolytope.html" title="Aim: Represents an nD lattice polytope, i.e. a convex polyhedron bounded with vertices with integer c...">BoundedLatticePolytope</a> enclosing a degenerated triangle (the three points are aligned or non distinct, but may lie in arbitrary dimension).</li>
 <li><a class="el" href="structDGtal_1_1ConvexityHelper.html#a631da3c93606979b8f651fb27da991a1">ConvexityHelper::computeSegment</a> computes the <a class="el" href="classDGtal_1_1BoundedLatticePolytope.html" title="Aim: Represents an nD lattice polytope, i.e. a convex polyhedron bounded with vertices with integer c...">BoundedLatticePolytope</a> enclosing a segment in arbitrary dimension.</li>
@@ -277,7 +285,7 @@ Other convexity services, like digital subconvexity (or tangency)</h2>
 <p>The following snippet shows that a 4D ball is indeed fully convex.</p>
 <div class="fragment"><div class="line">    <span class="keyword">typedef</span> KhalimskySpaceND&lt;4,int&gt;          <a class="code" href="testArithmeticalDSSComputerOnSurfels_8cpp.html#aebe586e91159919ccf2f565d4407fff7">KSpace</a>;</div>
 <div class="line">    <span class="keyword">typedef</span> <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">KSpace::Point</a>                    <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>;</div>
-<div class="line">    <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1SpaceND.html">KSpace::Space</a>                    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a38dfaf1641eab4d3fb805df4b52ab10d">Space</a>;</div>
+<div class="line">    <span class="keyword">typedef</span> <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a38dfaf1641eab4d3fb805df4b52ab10d">KSpace::Space</a>                    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a38dfaf1641eab4d3fb805df4b52ab10d">Space</a>;</div>
 <div class="line">    <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1DigitalConvexity.html">DigitalConvexity&lt; KSpace &gt;</a>       DConvexity;</div>
 <div class="line">    <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1HyperRectDomain.html">HyperRectDomain&lt; Space &gt;</a>         <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a>;</div>
 <div class="line">    <span class="keyword">typedef</span> DigitalSetBySTLSet&lt; Domain &gt;     <a class="code" href="testVoronoiMapComplete_8cpp.html#ac14360761d68859fc57ca37aea0b5c93">DigitalSet</a>;</div>
@@ -295,7 +303,6 @@ Other convexity services, like digital subconvexity (or tangency)</h2>
 <div class="ttc" id="aclassDGtal_1_1DigitalConvexity_html_a4b5bf83b01cd9b62e92cc2572e8df5a8"><div class="ttname"><a href="classDGtal_1_1DigitalConvexity.html#a4b5bf83b01cd9b62e92cc2572e8df5a8">DGtal::DigitalConvexity::is0Convex</a></div><div class="ttdeci">bool is0Convex(const PointRange &amp;X) const</div></div>
 <div class="ttc" id="aclassDGtal_1_1HyperRectDomain_html"><div class="ttname"><a href="classDGtal_1_1HyperRectDomain.html">DGtal::HyperRectDomain&lt; Space &gt;</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Shapes_html_acde0e74411f8d24da89c93f6df58a84f"><div class="ttname"><a href="classDGtal_1_1Shapes.html#acde0e74411f8d24da89c93f6df58a84f">DGtal::Shapes::addNorm2Ball</a></div><div class="ttdeci">static void addNorm2Ball(TDigitalSet &amp;aSet, const Point &amp;aCenter, UnsignedInteger aRadius)</div></div>
-<div class="ttc" id="aclassDGtal_1_1SpaceND_html"><div class="ttname"><a href="classDGtal_1_1SpaceND.html">DGtal::SpaceND</a></div><div class="ttdef"><b>Definition:</b> <a href="SpaceND_8h_source.html#l00095">SpaceND.h:96</a></div></div>
 <div class="ttc" id="atestProjection_8cpp_html_a1f1a69f8d8b037b72c2160ed12b3ef51"><div class="ttname"><a href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a></div><div class="ttdeci">Domain domain</div><div class="ttdef"><b>Definition:</b> <a href="testProjection_8cpp_source.html#l00088">testProjection.cpp:88</a></div></div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_a38dfaf1641eab4d3fb805df4b52ab10d"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a38dfaf1641eab4d3fb805df4b52ab10d">Space</a></div><div class="ttdeci">SpaceND&lt; 2 &gt; Space</div><div class="ttdef"><b>Definition:</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00042">testSimpleRandomAccessRangeFromPoint.cpp:42</a></div></div>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_acd532b318489cd93df57e0b3d136d050"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a></div><div class="ttdeci">HyperRectDomain&lt; Space &gt; Domain</div><div class="ttdef"><b>Definition:</b> <a href="testSimpleRandomAccessRangeFromPoint_8cpp_source.html#l00044">testSimpleRandomAccessRangeFromPoint.cpp:44</a></div></div>
@@ -367,6 +374,111 @@ Ehrhart polynomial of a lattice polytope</h2>
 <div class="ttc" id="atestSimpleRandomAccessRangeFromPoint_8cpp_html_ad8a25b2bbbbdb64c30a5442284db5bfb"><div class="ttname"><a href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a></div><div class="ttdeci">REQUIRE(domain.isInside(aPoint))</div></div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>The Ehrhart polynomial is determined by taking a series of dilation of the polytope <code>(1,2,...,d)</code> and counting by brute-force the number of lattice points within these dilated polytopes. We then compute the Lagrange interpolating polynomial (using class <a class="el" href="classDGtal_1_1LagrangeInterpolation.html" title="Aim: This class implements Lagrange basis functions and Lagrange interpolation.">LagrangeInterpolation</a>) and we know that this must be the Ehrhart polynomial. There exists faster ways to compute it, which are however much more complex. See for instance LattE software: <a href="https://www.math.ucdavis.edu/~latte">https://www.math.ucdavis.edu/~latte</a> .</dd></dl>
 <h1><a class="anchor" id="dgtal_dconvexity_sec3"></a>
+P-convexity and convexity measures</h1>
+<p><b>P-convexity</b> is an equivalenr definition to full convexity, but with a recursive definition <a class="el" href="citelist.html#CITEREF_feschet_2024_dgmm">[55]</a> . It provides thus a quite simple characterization of full convexity, which is implemented in class <a class="el" href="classDGtal_1_1PConvexity.html" title="Aim: A class to check if digital sets are P-convex. The P-convexity is defined as follows: A digital ...">PConvexity</a>.</p>
+<ul>
+<li>constructor <a class="el" href="classDGtal_1_1PConvexity.html#a95e3d676f6d3b7c0f08b726d625873c0">PConvexity::PConvexity</a> allows you to force a safe internal integer representation for convexity computation (default choice induces <code>int64_t</code>),</li>
+<li>method <a class="el" href="classDGtal_1_1PConvexity.html#a862fa013d37ade39074e0fd50b0f7d75">PConvexity::is0Convex</a> checks if a given range of digital points is 0-convex,</li>
+<li>method <a class="el" href="classDGtal_1_1PConvexity.html#a376c0d9053909002280918ba2ed6aff6">PConvexity::isPConvex</a> checks if a given range of digital points is P-convex</li>
+</ul>
+<div class="fragment"><div class="line"><span class="comment">// Minimal examples</span></div>
+<div class="line"><span class="preprocessor">#include &quot;DGtal/geometry/volumes/PConvexity.h&quot;</span></div>
+<div class="line">...</div>
+<div class="line">typedef SpaceND&lt; 2, int &gt;    <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a38dfaf1641eab4d3fb805df4b52ab10d">Space</a>;</div>
+<div class="line"><span class="keyword">typedef</span> <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Space::Point</a>         <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>;</div>
+<div class="line"> </div>
+<div class="line">PConvexity&lt; Space &gt; pconv;</div>
+<div class="line">std::vector&lt;Point&gt; V = { <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(0,0), <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(-1,0), <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(1,0), <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(0,1), <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>(0,-1) };</div>
+<div class="line"><span class="keywordtype">bool</span> ok1 = pconv.is0Convex( V );  <span class="comment">// should be true</span></div>
+<div class="line"><span class="keywordtype">bool</span> ok2 = pconv.isPConvex( V ); <span class="comment">// should be true</span></div>
+</div><!-- fragment --><p>Furthermore, the recursive definition of P-convexity induces a natural measure of full convexity for digital sets. Indeed the classical d-dimensional <b>digital</b> <b>convexity</b> <b>measure</b> of digital set <em>A</em> is </p><p class="formulaDsp">
+\[ M_d(A):=\frac{\#(A)}{\#(\mathrm{CvxH}(A) \cap \mathbf{Z}^d)}, \]
+</p>
+<p> and \( M_d(\emptyset)=1 \).</p>
+<p>The <b>full</b> <b>convexity</b> <b>measure</b> \( M_d^F \) for finite digital set <em>A</em> is </p><p class="formulaDsp">
+\[ M_1^F(A) := M_1(A), \quad M_d^F(A) := M_d(A) \Pi_{k=1}^d M_{d-1}^F( \pi_k(A) )\quad\text{for}\,\, d &gt; 1. \]
+</p>
+<p>It coincides with the digital convexity measure in dimension 1, but may differ starting from dimension 2, and is always less or equal to the convexity measure.</p>
+<ul>
+<li>method <a class="el" href="classDGtal_1_1PConvexity.html#a646a28997f1af639d063b834f1d255bf">PConvexity::convexityMeasure</a> returns the convexity measure \( M_d(A) \) of the given range of digital points <em>A</em>,</li>
+<li>method <a class="el" href="classDGtal_1_1PConvexity.html#a5d05c09feca8b6cb362df16cf4ffd468">PConvexity::fullConvexityMeasure</a> returns the full convexity measure \( M_d^F(A) \) of the given range of digital points <em>A</em>.</li>
+</ul>
+<p>The figure below illustrates the links and the differences between the two convexity measures Md and MdF on simple 2D examples. As one can see, the usual convexity measure may not detect disconnectedness and it is sensitive to specific alignments of pixels. On the contrary, full convexity is globally more stable to perturbation and is never 1 when sets are disconnected.</p>
+<div class="image">
+<img src="full-convexity-measure.png" alt=""/>
+<div class="caption">
+Convexity measure M_d and full convexity measure M_d^F on small 2D digital sets.</div></div>
+<h1><a class="anchor" id="dgtal_dconvexity_sec4"></a>
+Best algorithm for checking full convexity</h1>
+<p>There exists multiple equivalent characterizations of full convexity. Some of them induce algorithms for checking if a digital set is indeed fully convex, but the question `&lsquo;which is the fastest way&rsquo;' remains. We recap here the different characterizations for \( X \subset \mathbb{Z}^d \) being full convex, which lead to an arbitrary dimensional algorithm for checking if a given range of <em>n</em> points <em>X</em> is indeed fully convex:</p>
+<ul>
+<li><p class="startli"><b>discrete</b> <b>morphological</b> <b>characterization</b> <a class="el" href="citelist.html#CITEREF_lachaud_dgmm_2021">[79]</a> <a class="el" href="citelist.html#CITEREF_lachaud_jmiv_2022">[80]</a></p>
+<p class="startli"><em>X</em> is fully convex iff \( \forall \alpha \subset \{1, \ldots, d\}, U_\alpha(X) = \mathrm{CvxH}(U_\alpha(X)) \cap \mathbb{Z}^d \),</p>
+<p class="startli">where \( U_\alpha \) is the discrete Minkowski sum defined as \( U_\emptyset(X):= X \), and for any subset of directions \( \alpha \in \{1,\ldots,d\} \) and a direction \( i \in \alpha \), \( U_\alpha(X) := U_{\alpha \setminus \{i\}}(X) \cup \mathbf{e}_i (U_{\alpha \setminus \{i\}}(X)) \) (the latter being the unit translation of the set along direction <em>i</em>).</p>
+<p class="startli">This is implemented as <a class="el" href="classDGtal_1_1DigitalConvexity.html#a3cd5bd9f858176e274f5320674ca2026">DigitalConvexity::isFullyConvex</a> .</p>
+</li>
+<li><p class="startli"><b>cellular</b> <b>characterization</b> <a class="el" href="citelist.html#CITEREF_feschet_2023_jmiv">[54]</a> (Lemma 13)</p>
+<p class="startli"><em>X</em> is fully convex iff \( X = \mathrm{Star}(\mathrm{Cvxh}(X)) \cap \mathbb{Z}^d \).</p>
+<p class="startli">Furthermore, Theorem 5 of <a class="el" href="citelist.html#CITEREF_feschet_2023_jmiv">[54]</a> tells that \( \mathrm{Star}(\mathrm{CvxH}(X)) \) is directly computable from \( \mathrm{CvxH}(U_{\{1,\ldots,d\}}(X)) \), so one convex hull computation is sufficient.</p>
+<p class="startli">This is implemented as <a class="el" href="classDGtal_1_1DigitalConvexity.html#a3b7d5a39596ba6d88525ce46b0755ccf">DigitalConvexity::isFullyConvexFast</a> .</p>
+</li>
+<li><p class="startli"><b>envelope</b> <b>idempotence</b> <a class="el" href="citelist.html#CITEREF_feschet_2023_jmiv">[54]</a> (Theorem 2)</p>
+<p class="startli"><em>X</em> is fully convex iff \( X = FC(X) \), where \( FC(X):=\mathrm{Extr}( \mathrm{Skel}( \mathrm{Star}( \mathrm{CvxH}( X ) ) ) ) \).</p>
+<p class="startli">This is implemented as <a class="el" href="classDGtal_1_1DigitalConvexity.html#a8c1f8c406bf52d7654ebdcd91542e107">DigitalConvexity::envelope</a>, but its speed is not tested here, since it is similar to the previous one</p>
+</li>
+<li><p class="startli"><b>P-convexity</b> <b>characterization</b> <a class="el" href="citelist.html#CITEREF_feschet_2024_dgmm">[55]</a></p>
+<p class="startli"><em>X</em> is fully convex iff \( X \) is 0-convex, and, if \( d &gt; 1 \), the <em>d</em> projections of \( X \) along each axis is P-convex (in \( \mathbb{Z}^{d-1} \)).</p>
+<p class="startli">This is implemented as <a class="el" href="classDGtal_1_1PConvexity.html#a376c0d9053909002280918ba2ed6aff6">PConvexity::isPConvex</a> .</p>
+</li>
+</ul>
+<p>All three methods are tested for dimension 2, 3, and 4. In the first set of experiments (left of figures) we compare them on generic digital sets, which are randomly generated in a given range with a target density from \( 10\% \) to \( 90\% \). In the second set of experiments (right of figures), we limit our comparison to digital sets that are either digitally 0-convex or fully convex. We then distinguish the timings for checking full convexity depending on the output full convexity property of the input set, since it influences the computation time (typically increases it).</p>
+<p>Figures below sum up the different computation times for dimension 2, 3, and 4.</p>
+<table class="doxtable">
+<tr>
+<td><div class="image">
+<img src="timings-ncvx-Z2.png" alt="" width="98%"/>
+</div>
+  </td><td><div class="image">
+<img src="timings-Z2.png" alt="" width="98%"/>
+</div>
+   </td></tr>
+<tr>
+<td colspan="2">This figure displays the respective computation times (ms) in \( \mathbb{Z}^2 \) of P-convexity (as squares), discrete morphological characterization (as diamonds) and cellular characterization (as disks), as a function of the cardinal of the digital set. <b>Left:</b> digital sets are randomly generated in a given range with a target point density from \( 10\% \) to \( 90\% \). <b>Right:</b> digital sets are randomly generated so that they are either 0-convex or fully convex.   </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<td><div class="image">
+<img src="timings-ncvx-Z3.png" alt="" width="98%"/>
+</div>
+  </td><td><div class="image">
+<img src="timings-Z3.png" alt="" width="98%"/>
+</div>
+   </td></tr>
+<tr>
+<td colspan="2">This figure displays the respective computation times (ms) in \( \mathbb{Z}^3 \) of P-convexity (as squares), discrete morphological characterization (as diamonds) and cellular characterization (as disks), as a function of the cardinal of the digital set. <b>Left:</b> digital sets are randomly generated in a given range with a target point density from \( 10\% \) to \( 90\% \). <b>Right:</b> digital sets are randomly generated so that they are either 0-convex or fully convex.   </td></tr>
+</table>
+<table class="doxtable">
+<tr>
+<td><div class="image">
+<img src="timings-ncvx-Z4.png" alt="" width="98%"/>
+</div>
+  </td><td><div class="image">
+<img src="timings-Z4.png" alt="" width="98%"/>
+</div>
+   </td></tr>
+<tr>
+<td colspan="2">This figure displays the respective computation times (ms) in \( \mathbb{Z}^4 \) of P-convexity (as squares), discrete morphological characterization (as diamonds) and cellular characterization (as disks), as a function of the cardinal of the digital set. <b>Left:</b> digital sets are randomly generated in a given range with a target point density from \( 10\% \) to \( 90\% \). <b>Right:</b> digital sets are randomly generated so that they are either 0-convex or fully convex.   </td></tr>
+</table>
+<p>All approaches follow more or less a linearithmic or subquadratic complexity \( O(n \log n) \) (tests are limited to dimension lower or equal to 4). However, we can distinguish three cases:</p>
+<ul>
+<li>if <em>X</em> is not even convex, both P-convexity and the discrete morphological characterization are the fastest with similar results, since both their first step involves checking 0-convexity. The cellular characterization is the slowest since it computes directly a convex hull with additional vertices.</li>
+<li>if <em>X</em> is convex but not fully convex, then the fastest method remains the P-convexity, followed by the discrete morphological characterization, and the slowest is the cellular characterization.</li>
+<li>if <em>X</em> is fully convex, then the fastest method is again the P-convexity, followed by the cellular characterization, and the slowest is the discrete morphological characterization (especially when increasing the dimension).</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>Overall the <b>P-convexity</b> characterization (method <a class="el" href="classDGtal_1_1PConvexity.html#a376c0d9053909002280918ba2ed6aff6">PConvexity::isPConvex</a>) is <b>almost</b> <b>always</b> <b>the</b> <b>fastest</b> <b>way</b> <b>to</b> <b>check</b> <b>the</b> <b>full</b> <b>convexity</b> of a given range of digital points, with speed-up from 2 to 100 times faster especially when increasing the dimension. This new characterization of full convexity is thus for now the best way to check if a digital set is fully convex.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>One could be surprised by the last graph in 4D. Indeed we expect convex hull computations in \( O(n^2) \) in 4D. We observe here timings close to \( \Theta(n \log n) \). This is due to the fact that the digital sets we are considering are 0-convex, so "full
+of digital points". Convex hull computations by <a class="el" href="structDGtal_1_1QuickHull.html" title="Aim: Implements the quickhull algorithm by Barber et al. , a famous arbitrary dimensional convex hull...">QuickHull</a> are thus faster than expected since many points are "hidden" in the shape. It can also be seen on the left of this figure that timings depend more on the range of random points than on the density (e.g. see horizontal strokes of circles, corresponding to density increases), which confirms the above explanation.</dd></dl>
+<h1><a class="anchor" id="dgtal_dconvexity_sec5"></a>
 Rational polytopes</h1>
 <p>You can also create bounded rational polytopes, i.e. polytopes with vertices with rational coordinates, with class <a class="el" href="classDGtal_1_1BoundedRationalPolytope.html" title="Aim: Represents an nD rational polytope, i.e. a convex polyhedron bounded by vertices with rational c...">BoundedRationalPolytope</a>. You must give a common denominator for all rational coordinates.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;DGtal/geometry/volumes/BoundedRationalPolytope.h&quot;</span></div>
@@ -384,7 +496,7 @@ Rational polytopes</h1>
 <div class="fragment"><div class="line">Polytope Q = Polytope::Rational( 10, 3 ) * P; <span class="comment">// 10/3 * P</span></div>
 </div><!-- fragment --><p>You may also check digital convexity and compute cell covers with bounded rational polytopes, exactly in the same way as with <a class="el" href="classDGtal_1_1BoundedLatticePolytope.html" title="Aim: Represents an nD lattice polytope, i.e. a convex polyhedron bounded with vertices with integer c...">BoundedLatticePolytope</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>Big denominators increase with the same factor coefficients of half space constraints, hence the integer type should be chosen accordingly.</dd></dl>
-<h1><a class="anchor" id="dgtal_dconvexity_sec4"></a>
+<h1><a class="anchor" id="dgtal_dconvexity_sec6"></a>
 Further notes</h1>
 <p>The class <a class="el" href="classDGtal_1_1BoundedLatticePolytope.html" title="Aim: Represents an nD lattice polytope, i.e. a convex polyhedron bounded with vertices with integer c...">BoundedLatticePolytope</a> is different from the class <a class="el" href="classDGtal_1_1LatticePolytope2D.html" title="Aim: Represents a 2D polytope, i.e. a convex polygon, in the two-dimensional digital plane....">LatticePolytope2D</a> for the following two reasons:</p><ul>
 <li>the class <a class="el" href="classDGtal_1_1LatticePolytope2D.html" title="Aim: Represents a 2D polytope, i.e. a convex polygon, in the two-dimensional digital plane....">LatticePolytope2D</a> is limited to 2D</li>
@@ -398,7 +510,7 @@ Further notes</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Wed Jul 24 2024 12:42:42 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Aug 6 2024 13:01:48 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

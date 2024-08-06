@@ -91,6 +91,7 @@ var examples =
     [ "geometry/volumes/fullConvexityShortestPaths3D.cpp", "geometry_2volumes_2fullConvexityShortestPaths3D_8cpp-example.html", null ],
     [ "geometry/volumes/fullConvexitySphereGeodesics.cpp", "geometry_2volumes_2fullConvexitySphereGeodesics_8cpp-example.html", null ],
     [ "geometry/volumes/fullConvexityThinning3D.cpp", "geometry_2volumes_2fullConvexityThinning3D_8cpp-example.html", null ],
+    [ "geometry/volumes/pConvexity-benchmark.cpp", "geometry_2volumes_2pConvexity-benchmark_8cpp-example.html", null ],
     [ "geometry/volumes/standardDigitalPolyhedronBuilder3D.cpp", "geometry_2volumes_2standardDigitalPolyhedronBuilder3D_8cpp-example.html", null ],
     [ "graph/graphTraversal.cpp", "graph_2graphTraversal_8cpp-example.html", null ],
     [ "graph/volDistanceTraversal.cpp", "graph_2volDistanceTraversal_8cpp-example.html", null ],

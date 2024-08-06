@@ -66,6 +66,8 @@ var namespaceDGtal_1_1detail =
     [ "ConvexityHelperInternalInteger< DGtal::int64_t, false >", "structDGtal_1_1detail_1_1ConvexityHelperInternalInteger_3_01DGtal_1_1int64__t_00_01false_01_4.html", "structDGtal_1_1detail_1_1ConvexityHelperInternalInteger_3_01DGtal_1_1int64__t_00_01false_01_4" ],
     [ "ConvexityHelperInternalInteger< DGtal::BigInteger, safe >", "structDGtal_1_1detail_1_1ConvexityHelperInternalInteger_3_01DGtal_1_1BigInteger_00_01safe_01_4.html", "structDGtal_1_1detail_1_1ConvexityHelperInternalInteger_3_01DGtal_1_1BigInteger_00_01safe_01_4" ],
     [ "PointValueCompare", "classDGtal_1_1detail_1_1PointValueCompare.html", "classDGtal_1_1detail_1_1PointValueCompare" ],
+    [ "RecursivePConvexity", "structDGtal_1_1detail_1_1RecursivePConvexity.html", "structDGtal_1_1detail_1_1RecursivePConvexity" ],
+    [ "RecursivePConvexity< 1, TInteger >", "structDGtal_1_1detail_1_1RecursivePConvexity_3_011_00_01TInteger_01_4.html", "structDGtal_1_1detail_1_1RecursivePConvexity_3_011_00_01TInteger_01_4" ],
     [ "ValueConverter", "structDGtal_1_1detail_1_1ValueConverter.html", "structDGtal_1_1detail_1_1ValueConverter" ],
     [ "ValueConverter< std::string, double >", "structDGtal_1_1detail_1_1ValueConverter_3_01std_1_1string_00_01double_01_4.html", "structDGtal_1_1detail_1_1ValueConverter_3_01std_1_1string_00_01double_01_4" ],
     [ "ValueConverter< std::string, float >", "structDGtal_1_1detail_1_1ValueConverter_3_01std_1_1string_00_01float_01_4.html", "structDGtal_1_1detail_1_1ValueConverter_3_01std_1_1string_00_01float_01_4" ],

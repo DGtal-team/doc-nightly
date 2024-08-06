@@ -143,6 +143,7 @@ var group__Tests =
     [ "testEhrhartPolynomial.cpp", "testEhrhartPolynomial_8cpp.html", null ],
     [ "testFullConvexity.cpp", "testFullConvexity_8cpp.html", null ],
     [ "testKanungo.cpp", "testKanungo_8cpp.html", null ],
+    [ "testPConvexity.cpp", "testPConvexity_8cpp.html", null ],
     [ "testShortestPaths.cpp", "testShortestPaths_8cpp.html", null ],
     [ "testBreadthFirstPropagation.cpp", "testBreadthFirstPropagation_8cpp.html", null ],
     [ "testDepthFirstPropagation.cpp", "testDepthFirstPropagation_8cpp.html", null ],

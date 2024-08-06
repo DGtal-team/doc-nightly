@@ -102,10 +102,10 @@ $(document).ready(function(){initNavTree('moduleShrouds.html',''); initResizable
 </div>
 <div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: </dt><dd>Jacques-Olivier Lachaud</dd></dl>
 <p>Part of the <a class="el" href="packageGeometry.html">Geometry package</a>.</p>
-<p>This part of the manual describes classes and functions related to the regularization of digital surfaces using the "Shrouds" algorithm, by Nielson et al <a class="el" href="citelist.html#CITEREF_nielson2003shrouds">[92]</a>.</p>
+<p>This part of the manual describes classes and functions related to the regularization of digital surfaces using the "Shrouds" algorithm, by Nielson et al <a class="el" href="citelist.html#CITEREF_nielson2003shrouds">[94]</a>.</p>
 <p>On binary 3D images, the "Shrouds" algorithm builds a smooth surface that separates the interior voxels from the exterior voxels. It starts from the (closed) digital surface that separates interior voxels from exterior voxels. The 3D smooth surface reconstruction problem is transformed into a series of 2D smooth contour reconstruction problems, by slicing the 3D volume (and thus the digital surface) with axis-align planes. Each contour is regularized to minimize its squared curvature and the separation property is obtained by forcing each vertex to lie on its unit edge joining an interior voxel to an exterior voxel (i.e. the edge that is dual to the surfel). The 2D problems are intertwined since each vertex is shared by two slices.</p>
 <dl class="section note"><dt>Note</dt><dd>This method is limited to closed surface reconstruction, in opposition to the method presented in <a class="el" href="moduleRegularization.html">Digital surface regularization by normal vector alignment</a>.</dd></dl>
-<p><b>Disclaimer</b>. This implementation is our interpretation of the work presented in <a class="el" href="citelist.html#CITEREF_nielson2003shrouds">[92]</a>, and tries to follow at best the ideas presented therein. However, a major part of the numerical resolution is not detailed. We have inferred a reasonable way of solving the fourth-order equations but results may differ from the original implementation. For instance, visually on the bunny example of the paper, our results are very close (and look better). This implementation comes thus without any guarantee.</p>
+<p><b>Disclaimer</b>. This implementation is our interpretation of the work presented in <a class="el" href="citelist.html#CITEREF_nielson2003shrouds">[94]</a>, and tries to follow at best the ideas presented therein. However, a major part of the numerical resolution is not detailed. We have inferred a reasonable way of solving the fourth-order equations but results may differ from the original implementation. For instance, visually on the bunny example of the paper, our results are very close (and look better). This implementation comes thus without any guarantee.</p>
 <p>Related example: <a class="el" href="testShroudsRegularization_8cpp.html">geometry/surfaces/testShroudsRegularization.cpp</a></p>
 <h1><a class="anchor" id="moduleShrouds_sec1"></a>
 Introduction</h1>
@@ -223,7 +223,7 @@ Optimized surface according to area.</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Wed Jul 24 2024 12:42:42 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Aug 6 2024 13:01:48 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

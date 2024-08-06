@@ -147,7 +147,7 @@ Main concepts</h1>
 <p>Power values may be negative but the geometry of the distance (convex unit balls,...) are relevant in volumetric analysis.</p>
 <h1><a class="anchor" id="subSepMetrics"></a>
 SeparableMetric Concept</h1>
-<p>We perform volumetric analysis using separable approaches (see <a class="el" href="moduleVolumetric.html">nD Volumetric Analysis using Separable Processes</a>), additional properties are required for the model of metrics (see <a class="el" href="citelist.html#CITEREF_Maurer2003PAMI">[85]</a>, <a class="el" href="citelist.html#CITEREF_Hirata1996">[62]</a>, <a class="el" href="citelist.html#CITEREF_dcoeurjo_metric14">[36]</a>).</p>
+<p>We perform volumetric analysis using separable approaches (see <a class="el" href="moduleVolumetric.html">nD Volumetric Analysis using Separable Processes</a>), additional properties are required for the model of metrics (see <a class="el" href="citelist.html#CITEREF_Maurer2003PAMI">[87]</a>, <a class="el" href="citelist.html#CITEREF_Hirata1996">[64]</a>, <a class="el" href="citelist.html#CITEREF_dcoeurjo_metric14">[36]</a>).</p>
 <p>Such properties are related to a <em>monotonicity</em> property of the metric. In dimension 2, consider two points \( p(x,y)\), \(q(x&#39;,y&#39;)\) with \(x&lt;x&#39;\). Let \(r( x&#39;&#39;,0)\) be a point on the x-axis such that \(d(p,r) = d(q,r)\) and \( s(u,0)\) be another point on the x-axis. A metric \( d\) is <em>monotonic</em> if</p>
 <p class="formulaDsp">
 \[ u &lt; x&#39;&#39; \implies d(p,s) \leq d(q,s) \]
@@ -155,7 +155,7 @@ SeparableMetric Concept</h1>
 <p> and </p><p class="formulaDsp">
 \[ u &gt; x&#39;&#39; \implies d(p,s) \geq d(q,s) \]
 </p>
-<p>As discussed in <a class="el" href="citelist.html#CITEREF_Hirata1996">[62]</a>, any metric induced by a norm with axis symmetric unit ball is monotonic. Hence, all \(l_p\) are monotonic, as well as most path based norms (chamfer norms, neighborhood sequence norms,...). Such properties are implemented in the concept of <a class="el" href="structDGtal_1_1concepts_1_1CSeparableMetric.html" title="Aim: defines the concept of separable metrics.">CSeparableMetric</a>. Similarly, <a class="el" href="structDGtal_1_1concepts_1_1CPowerSeparableMetric.html" title="Aim: defines the concept of separable metrics.">CPowerSeparableMetric</a> can be defined as a refinement of <a class="el" href="structDGtal_1_1concepts_1_1CPowerMetric.html" title="Aim: defines the concept of special weighted metrics, so called power metrics.">CPowerMetric</a> with monotonicity property of the power metric.</p>
+<p>As discussed in <a class="el" href="citelist.html#CITEREF_Hirata1996">[64]</a>, any metric induced by a norm with axis symmetric unit ball is monotonic. Hence, all \(l_p\) are monotonic, as well as most path based norms (chamfer norms, neighborhood sequence norms,...). Such properties are implemented in the concept of <a class="el" href="structDGtal_1_1concepts_1_1CSeparableMetric.html" title="Aim: defines the concept of separable metrics.">CSeparableMetric</a>. Similarly, <a class="el" href="structDGtal_1_1concepts_1_1CPowerSeparableMetric.html" title="Aim: defines the concept of separable metrics.">CPowerSeparableMetric</a> can be defined as a refinement of <a class="el" href="structDGtal_1_1concepts_1_1CPowerMetric.html" title="Aim: defines the concept of special weighted metrics, so called power metrics.">CPowerMetric</a> with monotonicity property of the power metric.</p>
 <p>The separable metric concept is a refinement of the <a class="el" href="structDGtal_1_1concepts_1_1CMetricSpace.html" title="Aim: defines the concept of metric spaces.">CMetricSpace</a> (resp. <a class="el" href="structDGtal_1_1concepts_1_1CPowerMetric.html" title="Aim: defines the concept of special weighted metrics, so called power metrics.">CPowerMetric</a>) concept in which we require models to implement a method <em>hiddenBy(u,v,w,startingPoint,endPoint,dim)</em>: given three digital points <em>u</em>, <em>v</em>, <em>w</em> and an isothetic segment defined by the pair [<em>startingPoint</em>, <em>endPoint</em>] along the dimension <em>dim</em>, such method returns true if Voronoi cells of <em>u</em> and <em>w</em> <em>hide</em> the Voronoi cell if <em>v</em> on the segment. Such predicate can be illustrated as follows:</p>
 <div class="image">
 <img src="hiddenBy.png" alt=""/>
@@ -213,7 +213,7 @@ Main models and Computational Costs for Volumetric Analysis</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Wed Jul 24 2024 12:42:42 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Aug 6 2024 13:01:48 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

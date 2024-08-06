@@ -92,6 +92,7 @@ var group__Examples =
     [ "fullConvexityShortestPaths3D.cpp", "fullConvexityShortestPaths3D_8cpp.html", null ],
     [ "fullConvexitySphereGeodesics.cpp", "fullConvexitySphereGeodesics_8cpp.html", null ],
     [ "fullConvexityThinning3D.cpp", "fullConvexityThinning3D_8cpp.html", null ],
+    [ "pConvexity-benchmark.cpp", "pConvexity-benchmark_8cpp.html", null ],
     [ "standardDigitalPolyhedronBuilder3D.cpp", "standardDigitalPolyhedronBuilder3D_8cpp.html", null ],
     [ "graphTraversal.cpp", "graphTraversal_8cpp.html", null ],
     [ "volDistanceTraversal.cpp", "volDistanceTraversal_8cpp.html", null ],

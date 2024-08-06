@@ -193,8 +193,8 @@ var packageGeometry =
         [ "Signed distance field to an interface  <br>", "moduleFMM.html#subsectmoduleFMM31", null ]
       ] ]
     ] ],
-    [ "Digital convexity and full digital convexity", "moduleDigitalConvexity.html", [
-      [ "Introduction to full digital convexity", "moduleDigitalConvexity.html#dgtal_dconvexity_sec1", null ],
+    [ "Digital convexity, full convexity and P-convexity", "moduleDigitalConvexity.html", [
+      [ "Introduction to full convexity", "moduleDigitalConvexity.html#dgtal_dconvexity_sec1", null ],
       [ "Classes and functions related to digital convexity", "moduleDigitalConvexity.html#dgtal_dconvexity_sec2", [
         [ "Lattice polytopes", "moduleDigitalConvexity.html#dgtal_dconvexity_sec21", null ],
         [ "Building a set of lattice cells from digital points", "moduleDigitalConvexity.html#dgtal_dconvexity_sec22", null ],
@@ -202,8 +202,10 @@ var packageGeometry =
         [ "Other convexity services, like digital subconvexity (or tangency)", "moduleDigitalConvexity.html#dgtal_dconvexity_sec24", null ],
         [ "Ehrhart polynomial of a lattice polytope", "moduleDigitalConvexity.html#dgtal_dconvexity_sec25", null ]
       ] ],
-      [ "Rational polytopes", "moduleDigitalConvexity.html#dgtal_dconvexity_sec3", null ],
-      [ "Further notes", "moduleDigitalConvexity.html#dgtal_dconvexity_sec4", null ]
+      [ "P-convexity and convexity measures", "moduleDigitalConvexity.html#dgtal_dconvexity_sec3", null ],
+      [ "Best algorithm for checking full convexity", "moduleDigitalConvexity.html#dgtal_dconvexity_sec4", null ],
+      [ "Rational polytopes", "moduleDigitalConvexity.html#dgtal_dconvexity_sec5", null ],
+      [ "Further notes", "moduleDigitalConvexity.html#dgtal_dconvexity_sec6", null ]
     ] ],
     [ "Applications of full digital convexity", "moduleDigitalConvexityApplications.html", [
       [ "Local convexity analysis", "moduleDigitalConvexityApplications.html#dgtal_dconvexityapp_sec1", null ],

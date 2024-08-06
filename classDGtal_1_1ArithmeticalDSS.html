@@ -296,7 +296,7 @@ class DGtal::ArithmeticalDSS&lt; TCoordinate, TInteger, adjacency &gt;</h3>
 <p>Obviously, a given DSS belongs to infinitely many DSLs, but one of them has minimal parameters, ie has a minimal \( \omega \). <a class="el" href="classDGtal_1_1ArithmeticalDSS.html" title="Aim: This class represents a naive (resp. standard) digital straight segment (DSS),...">ArithmeticalDSS</a> uses this minimal bounding DSL to represent its slope and its intercept. <br  />
  <a class="el" href="classDGtal_1_1ArithmeticalDSS.html" title="Aim: This class represents a naive (resp. standard) digital straight segment (DSS),...">ArithmeticalDSS</a> stores as data members not only this minimal bounding DSL, but also its ending points as well as the first and last lower and upper leaning points, due to the role that these points play in the update algorithms. Indeed, <a class="el" href="classDGtal_1_1ArithmeticalDSS.html" title="Aim: This class represents a naive (resp. standard) digital straight segment (DSS),...">ArithmeticalDSS</a> provides some methods to update its internal representation:</p><ul>
 <li><a class="el" href="classDGtal_1_1ArithmeticalDSS.html#ae73dc5dc84c087877ef1fd6af323fd59">ArithmeticalDSS::extendFront</a> and <a class="el" href="classDGtal_1_1ArithmeticalDSS.html#a6e4a8f4ddcf27b6cf0c92dd3599e9a8d">ArithmeticalDSS::extendBack</a> based on the incremental recognition algorithm of [Debled and Reveilles, 1995 : <a class="el" href="citelist.html#CITEREF_Debled_1995_ijprai">[46]</a>].</li>
-<li><a class="el" href="classDGtal_1_1ArithmeticalDSS.html#a619ab2bab18c6967df376858ad6a25aa">ArithmeticalDSS::retractFront</a> and <a class="el" href="classDGtal_1_1ArithmeticalDSS.html#aaf1473297c53a47ac348e31e4ea6454a">ArithmeticalDSS::retractBack</a> based on [Lachaud et. al., 2007, Th. 5 : <a class="el" href="citelist.html#CITEREF_LachaudIVC2007">[72]</a>].</li>
+<li><a class="el" href="classDGtal_1_1ArithmeticalDSS.html#a619ab2bab18c6967df376858ad6a25aa">ArithmeticalDSS::retractFront</a> and <a class="el" href="classDGtal_1_1ArithmeticalDSS.html#aaf1473297c53a47ac348e31e4ea6454a">ArithmeticalDSS::retractBack</a> based on [Lachaud et. al., 2007, Th. 5 : <a class="el" href="citelist.html#CITEREF_LachaudIVC2007">[74]</a>].</li>
 </ul>
 <p>See <a class="el" href="moduleArithDSSReco.html">Digital straight lines and segments <br  />
 </a> for further details. See also <a class="el" href="classDGtal_1_1NaiveDSS8.html" title="Aim: This class represents a standard digital straight segment (DSS), ie. the sequence of simply 8-co...">NaiveDSS8</a> and <a class="el" href="classDGtal_1_1StandardDSS4.html" title="Aim: This class represents a standard digital straight segment (DSS), ie. the sequence of simply 4-co...">StandardDSS4</a>, which are aliases of this class.</p>
@@ -899,7 +899,7 @@ template&lt;typename TCoordinate , typename TInteger  = TCoordinate, unsigned sh
   </table>
   </dd>
 </dl>
-<p>NB: logarithmic-time in the greatest component of the direction vector of the subsegment. Uses smartCH algorithm (see Roussillon 2014 <a class="el" href="citelist.html#CITEREF_RoussillonDGCI2014">[105]</a>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html" title="Aim: Set of static methods that create digital straight segments (DSS) from some input parameters,...">ArithmeticalDSSFactory</a> </dd></dl>
+<p>NB: logarithmic-time in the greatest component of the direction vector of the subsegment. Uses smartCH algorithm (see Roussillon 2014 <a class="el" href="citelist.html#CITEREF_RoussillonDGCI2014">[107]</a>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html" title="Aim: Set of static methods that create digital straight segments (DSS) from some input parameters,...">ArithmeticalDSSFactory</a> </dd></dl>
 
 </div>
 </div>
@@ -945,7 +945,7 @@ template&lt;typename TCoordinate , typename TInteger  = TCoordinate, unsigned sh
   </table>
   </dd>
 </dl>
-<p>NB: logarithmic-time in the greatest component of the direction vector of the subsegment. Uses reversedSmartCH algorithm (see Roussillon 2014 <a class="el" href="citelist.html#CITEREF_RoussillonDGCI2014">[105]</a>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html" title="Aim: Set of static methods that create digital straight segments (DSS) from some input parameters,...">ArithmeticalDSSFactory</a> </dd></dl>
+<p>NB: logarithmic-time in the greatest component of the direction vector of the subsegment. Uses reversedSmartCH algorithm (see Roussillon 2014 <a class="el" href="citelist.html#CITEREF_RoussillonDGCI2014">[107]</a>). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classDGtal_1_1ArithmeticalDSSFactory.html" title="Aim: Set of static methods that create digital straight segments (DSS) from some input parameters,...">ArithmeticalDSSFactory</a> </dd></dl>
 
 </div>
 </div>
@@ -1282,7 +1282,7 @@ template&lt;typename TCoordinate , typename TInteger  = TCoordinate, unsigned sh
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Compute the union of two DSSs. If the union belongs to a DSL, returns the DSS of minimal characteristics that includes the two DSSs. Otherwise, returns the void DSS (DSS(Point(0,0)). See Sivignon 2014 <a class="el" href="citelist.html#CITEREF_SivignonDGCI2014">[114]</a>).</p>
+<p>Compute the union of two DSSs. If the union belongs to a DSL, returns the DSS of minimal characteristics that includes the two DSSs. Otherwise, returns the void DSS (DSS(Point(0,0)). See Sivignon 2014 <a class="el" href="citelist.html#CITEREF_SivignonDGCI2014">[116]</a>).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">aOther</td><td>a DSS </td></tr>
@@ -2595,7 +2595,7 @@ template&lt;typename TCoordinate , typename TInteger  = TCoordinate, unsigned sh
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1ArithmeticalDSS.html">ArithmeticalDSS</a></li>
-    <li class="footer">Generated on Wed Jul 24 2024 12:42:44 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Aug 6 2024 13:01:51 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
