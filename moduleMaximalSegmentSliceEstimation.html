@@ -147,14 +147,14 @@ Implementation details</h1>
 <div class="line"><span class="keyword">using</span> Container = std::vector&lt;Surfel&gt;;</div>
 <div class="line"><span class="keyword">using</span> <a class="code" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a>   = int;</div>
 <div class="line"><span class="keywordtype">short</span> adjacency = 4;</div>
-<div class="line"><span class="keyword">using</span> <a class="code" href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html">SegmentComputerOnSurfels</a> = ArithmeticalDSSComputerOnSurfels&lt;KSpace, Container::const_iterator, Integer, adjacency&gt;;</div>
+<div class="line"><span class="keyword">using</span> <a class="code" href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html">SegmentComputerOnSurfels</a> = ArithmeticalDSSComputerOnSurfels&lt;KSpace, Container::const_iterator, Integer&gt;;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Instantiation</span></div>
 <div class="line"><a class="code" href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html">SegmentComputerOnSurfels</a> computer(kspace, <span class="comment">// A 3D Khalimsky space</span></div>
 <div class="line">                                  dim1,   <span class="comment">// The first dimension to project onto</span></div>
 <div class="line">                                  dim2    <span class="comment">// The second dimension to project onto</span></div>
 <div class="line">                                  );</div>
-<div class="ttc" id="aclassDGtal_1_1ArithmeticalDSSComputerOnSurfels_html"><div class="ttname"><a href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html">DGtal::ArithmeticalDSSComputerOnSurfels</a></div><div class="ttdoc">Aim: This class is a wrapper around ArithmeticalDSS that is devoted to the dynamic recognition of dig...</div><div class="ttdef"><b>Definition:</b> <a href="ArithmeticalDSSComputerOnSurfels_8h_source.html#l00082">ArithmeticalDSSComputerOnSurfels.h:83</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1ArithmeticalDSSComputerOnSurfels_html"><div class="ttname"><a href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html">DGtal::ArithmeticalDSSComputerOnSurfels</a></div><div class="ttdoc">Aim: This class is a wrapper around ArithmeticalDSS that is devoted to the dynamic recognition of dig...</div><div class="ttdef"><b>Definition:</b> <a href="ArithmeticalDSSComputerOnSurfels_8h_source.html#l00085">ArithmeticalDSSComputerOnSurfels.h:86</a></div></div>
 <div class="ttc" id="adigitalPolyhedronBuilder3D_8cpp_html_a6c4dc4f5610ba8c9b7ee6e83ecea8d24"><div class="ttname"><a href="digitalPolyhedronBuilder3D_8cpp.html#a6c4dc4f5610ba8c9b7ee6e83ecea8d24">SCell</a></div><div class="ttdeci">Z3i::SCell SCell</div><div class="ttdef"><b>Definition:</b> <a href="digitalPolyhedronBuilder3D_8cpp_source.html#l00079">digitalPolyhedronBuilder3D.cpp:79</a></div></div>
 <div class="ttc" id="aexamplePlaneProbingParallelepipedEstimator_8cpp_html_ad31c3eca44cf6770809bc47f2b456212"><div class="ttname"><a href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a></div><div class="ttdeci">Point::Coordinate Integer</div><div class="ttdef"><b>Definition:</b> <a href="examplePlaneProbingParallelepipedEstimator_8cpp_source.html#l00044">examplePlaneProbingParallelepipedEstimator.cpp:44</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z3i_html_a4c1b0b50dafb838783bc2347a840147d"><div class="ttname"><a href="namespaceDGtal_1_1Z3i.html#a4c1b0b50dafb838783bc2347a840147d">DGtal::Z3i::KSpace</a></div><div class="ttdeci">KhalimskySpaceND&lt; 3, Integer &gt; KSpace</div><div class="ttdef"><b>Definition:</b> <a href="StdDefs_8h_source.html#l00146">StdDefs.h:146</a></div></div>
@@ -169,7 +169,7 @@ Implementation details</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Tue Aug 6 2024 13:01:48 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 13 2024 15:26:41 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

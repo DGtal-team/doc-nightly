@@ -2,7 +2,7 @@ var classDGtal_1_1MaximalSegmentSliceEstimation =
 [
     [ "Cell", "classDGtal_1_1MaximalSegmentSliceEstimation.html#a9d85578c4c36531688358a8a3614f391", null ],
     [ "Container", "classDGtal_1_1MaximalSegmentSliceEstimation.html#ad6c17427f9b82bed13be0b98ed3523cd", null ],
-    [ "DSSComputer", "classDGtal_1_1MaximalSegmentSliceEstimation.html#ad248be340498b614e9bf33426341c230", null ],
+    [ "DSSComputer", "classDGtal_1_1MaximalSegmentSliceEstimation.html#aca12b133c12f338f994ba1d77bf97caf", null ],
     [ "Integer", "classDGtal_1_1MaximalSegmentSliceEstimation.html#acd2e60988b58b5cd302cd438b38b255a", null ],
     [ "Iterator", "classDGtal_1_1MaximalSegmentSliceEstimation.html#a549226cd4f308b8f14cb3bd06f9179ff", null ],
     [ "KSpace", "classDGtal_1_1MaximalSegmentSliceEstimation.html#a99b4002d8b8f719c35add27aa599befc", null ],

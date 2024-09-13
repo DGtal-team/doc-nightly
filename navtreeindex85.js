@@ -1,5 +1,7 @@
 var NAVTREEINDEX85 =
 {
+"structboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4.html#ac6ab32678ee357ee080873e5f78be233":[6,0,0,56,13],
+"structboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4.html#ac877c14f392936f81e9871f697320792":[6,0,0,56,15],
 "structboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4.html#ac8cd277f7e7ba4217589aa49e7536c7d":[6,0,0,56,14],
 "structboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4.html#acfbb7018ebe5fd5fc82c08d7ae669a93":[6,0,0,56,7],
 "structboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4.html#ad3a0442ace18e47380d6f17bc87f1626":[6,0,0,56,12],
@@ -72,6 +74,10 @@ var NAVTREEINDEX85 =
 "tutoFMMErosion.html#subsecttutoFMMErosion22":[0,2,9,1,1],
 "tutoFMMErosion.html#subsecttutoFMMErosion23":[0,2,9,1,2],
 "tutoFMMErosion.html#subsecttutoFMMErosion24":[0,2,9,1,3],
+"namespaceDGtal.html#a0e131923f413c708e1f30e1caf7f502f":[5,0,2,1021],
+"moduleShape.html#sectmoduleShape2":[0,9,0,1],
+"namespaceDGtal.html#a04c5e0b95cb3bf61322d889850690c71":[5,0,2,955],
+"namespaceDGtal.html#a023df84c861e7dd414bae501a62aff19":[5,0,2,925],
 "tutoFMMErosion.html#subsecttutoFMMErosion31":[0,2,9,2,0],
 "tutoFMMErosion.html#subsecttutoFMMErosion32":[0,2,9,2,1],
 "tutoFileGridCurveRanges.html":[0,2,3],
@@ -111,6 +117,7 @@ var NAVTREEINDEX85 =
 "tutoPolyhedralisation.html#tutoPolyhedralisation_sec1":[0,2,10,0],
 "tutoPolyhedralisation.html#tutoPolyhedralisation_sec2":[0,2,10,1],
 "tutoPolyhedralisation.html#tutoPolyhedralisation_sec3":[0,2,10,2],
+"moduleShortcuts.html":[0,3],
 "tutoPolyhedralisation.html#tutoPolyhedralisation_sec4":[0,2,10,3],
 "tutoPolyhedralisation.html#tutoPolyhedralisation_sec5":[0,2,10,4],
 "tutoPolyhedralisation.html#tutoPolyhedralisation_sec6":[0,2,10,5],
@@ -148,6 +155,5 @@ var NAVTREEINDEX85 =
 "unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html":[6,0,2,128,6],
 "unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html#a3150bcd6afc894eae9353c91e3f71754":[6,0,2,128,6,0],
 "unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html#adec6679ce95f9adb91a2ad1d7878c6ed":[6,0,2,128,6,1],
-"":[5,0,4],
 "":[5,0,2,6,0]
 };

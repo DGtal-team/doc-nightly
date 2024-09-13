@@ -1001,7 +1001,7 @@ var namespaceDGtal =
     [ "operator<<", "namespaceDGtal.html#a35ba602cd04883e50ce0236387bd2e9d", null ],
     [ "operator<<", "namespaceDGtal.html#a2bcd5a800f76e4b4641af33a32f466d5", null ],
     [ "operator<<", "namespaceDGtal.html#a3914f7e1bedd3c522b9a40cbdad75a15", null ],
-    [ "operator<<", "namespaceDGtal.html#a8b6444c3cd63c5b91e183adffeabf64b", null ],
+    [ "operator<<", "namespaceDGtal.html#a2a63108861a6fd621fd1f70254cd2b52", null ],
     [ "operator<<", "namespaceDGtal.html#a3290776c6f437b487cca376b72a32364", null ],
     [ "operator<<", "namespaceDGtal.html#acdf1432bfdb1b6298b58a87b7abe81cf", null ],
     [ "operator<<", "namespaceDGtal.html#a7a89cd5501bdf942f7a188b680a16330", null ],

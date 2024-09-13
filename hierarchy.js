@@ -36,6 +36,7 @@ var hierarchy =
     [ "DGtal::ArithmeticalDSLKernel< TCoordinate, adjacency >", "structDGtal_1_1ArithmeticalDSLKernel.html", null ],
     [ "DGtal::ArithmeticalDSLKernel< TCoordinate, 4 >", "structDGtal_1_1ArithmeticalDSLKernel_3_01TCoordinate_00_014_01_4.html", null ],
     [ "DGtal::ArithmeticalDSS< TCoordinate, TInteger, adjacency >", "classDGtal_1_1ArithmeticalDSS.html", null ],
+    [ "DGtal::ArithmeticalDSS< Coordinate, Integer, 4 >", "classDGtal_1_1ArithmeticalDSS.html", null ],
     [ "DGtal::ArithmeticalDSS< Coordinate, Integer, 8 >", "classDGtal_1_1ArithmeticalDSS.html", null ],
     [ "DGtal::ArithmeticalDSS< TCoordinate, TCoordinate, 4 >", "classDGtal_1_1ArithmeticalDSS.html", [
       [ "DGtal::StandardDSS4< TCoordinate, TInteger >", "classDGtal_1_1StandardDSS4.html", null ]
@@ -47,7 +48,7 @@ var hierarchy =
     [ "DGtal::ArithmeticalDSSComputer< IteratorAdapter, TInteger, 8 >", "classDGtal_1_1ArithmeticalDSSComputer.html", null ],
     [ "DGtal::ArithmeticalDSSComputer< IteratorAdapter, TInteger, connectivity >", "classDGtal_1_1ArithmeticalDSSComputer.html", null ],
     [ "DGtal::ArithmeticalDSSComputer< std::vector< Z2i::Point >::const_iterator, int, 4 >", "classDGtal_1_1ArithmeticalDSSComputer.html", null ],
-    [ "DGtal::ArithmeticalDSSComputerOnSurfels< TKSpace, TIterator, TInteger, adjacency >", "classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html", null ],
+    [ "DGtal::ArithmeticalDSSComputerOnSurfels< TKSpace, TIterator, TInteger >", "classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html", null ],
     [ "DGtal::ArithmeticalDSSFactory< TCoordinate, TInteger, adjacency >", "classDGtal_1_1ArithmeticalDSSFactory.html", null ],
     [ "DGtal::ArithmeticConversionTraits< T, U, Enable >", "structDGtal_1_1ArithmeticConversionTraits.html", null ],
     [ "DGtal::ArithmeticConversionTraits< __gmp_expr< GMP1, GMP2 >, U, typename std::enable_if< std::is_integral< U >::value >::type >", "structDGtal_1_1ArithmeticConversionTraits_3_01____gmp__expr_3_01GMP1_00_01GMP2_01_4_00_01U_00_01b7e75f2d4577aabc7b63b093e79af931.html", null ],
@@ -655,6 +656,9 @@ var hierarchy =
     [ "DGtal::DigitalTopologyTraits< MetricAdjacency< TSpace, 2 >, MetricAdjacency< TSpace, 1 >, 2 >", "structDGtal_1_1DigitalTopologyTraits_3_01MetricAdjacency_3_01TSpace_00_012_01_4_00_01MetricAdjac201c1779eb2f50e0034539cb53f56f01.html", null ],
     [ "DGtal::DigitalTopologyTraits< MetricAdjacency< TSpace, 2 >, MetricAdjacency< TSpace, 1 >, 3 >", "structDGtal_1_1DigitalTopologyTraits_3_01MetricAdjacency_3_01TSpace_00_012_01_4_00_01MetricAdjac295bf7f227800ad6435fcd18401c4237.html", null ],
     [ "DGtal::DigitalTopologyTraits< MetricAdjacency< TSpace, 3 >, MetricAdjacency< TSpace, 1 >, 3 >", "structDGtal_1_1DigitalTopologyTraits_3_01MetricAdjacency_3_01TSpace_00_013_01_4_00_01MetricAdjac1853805a85cff1808e38908d0ecd7d1b.html", null ],
+    [ "DGtal::ArithmeticalDSSComputerOnSurfels< TKSpace, TIterator, TInteger >::DirectPairExtractor", "structDGtal_1_1ArithmeticalDSSComputerOnSurfels_1_1DirectPairExtractor.html", [
+      [ "DGtal::ArithmeticalDSSComputerOnSurfels< TKSpace, TIterator, TInteger >::IndirectPairExtractor", "structDGtal_1_1ArithmeticalDSSComputerOnSurfels_1_1IndirectPairExtractor.html", null ]
+    ] ],
     [ "DGtal::DirichletConditions< TLinearAlgebraBackend >", "classDGtal_1_1DirichletConditions.html", null ],
     [ "DGtal::DiscreteExteriorCalculus< dimEmbedded, dimAmbient, TLinearAlgebraBackend, TInteger >", "classDGtal_1_1DiscreteExteriorCalculus.html", null ],
     [ "DGtal::DiscreteExteriorCalculus< 2, 2, LinearAlgebra >", "classDGtal_1_1DiscreteExteriorCalculus.html", null ],
@@ -1381,6 +1385,7 @@ var hierarchy =
     [ "DGtal::functors::Projector< S >", "structDGtal_1_1functors_1_1Projector.html", null ],
     [ "DGtal::functors::Projector< SpaceND< 2, Coordinate > >", "structDGtal_1_1functors_1_1Projector.html", null ],
     [ "DGtal::functors::Projector< SpaceND< 2, int > >", "structDGtal_1_1functors_1_1Projector.html", null ],
+    [ "DGtal::functors::Projector< SpaceND< 2, typename TKSpace::Space::Integer > >", "structDGtal_1_1functors_1_1Projector.html", null ],
     [ "DGtal::promote_trait< A, B >", "structDGtal_1_1promote__trait.html", null ],
     [ "DGtal::promote_trait< int32_t, int64_t >", "structDGtal_1_1promote__trait_3_01int32__t_00_01int64__t_01_4.html", null ],
     [ "DGtal::DiscreteExteriorCalculus< dimEmbedded, dimAmbient, TLinearAlgebraBackend, TInteger >::Property", "structDGtal_1_1DiscreteExteriorCalculus_1_1Property.html", null ],

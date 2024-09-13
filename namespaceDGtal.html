@@ -772,7 +772,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aim: stores an arbitrary measure on a <a class="el" href="structDGtal_1_1SurfaceMesh.html" title="Aim: Represents an embedded mesh as faces and a list of vertices. Vertices may be shared among faces ...">SurfaceMesh</a> object. The measure can be spread onto its vertices, edges, or faces. This class is notably used by <a class="el" href="structDGtal_1_1CorrectedNormalCurrentComputer.html" title="Aim: Utility class to compute curvature measures induced by (1) a corrected normal current defined by...">CorrectedNormalCurrentComputer</a> and <a class="el" href="structDGtal_1_1NormalCycleComputer.html" title="Aim: Utility class to compute curvatures measures induced by (1) the normal cycle induced by a Surfac...">NormalCycleComputer</a> to store the curvature measures, which may be located on different cells. The measure can be scalar or any other summable type (see template parameter TValue).  <a href="structDGtal_1_1SurfaceMeshMeasure.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html">ArithmeticalDSSComputerOnSurfels</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aim: This class is a wrapper around <a class="el" href="classDGtal_1_1ArithmeticalDSS.html" title="Aim: This class represents a naive (resp. standard) digital straight segment (DSS),...">ArithmeticalDSS</a> that is devoted to the dynamic recognition of digital straight segments (DSS) along any sequence of 3D surfels.  <a href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aim: This class is a wrapper around <a class="el" href="classDGtal_1_1ArithmeticalDSS.html" title="Aim: This class represents a naive (resp. standard) digital straight segment (DSS),...">ArithmeticalDSS</a> that is devoted to the dynamic recognition of digital straight segments (DSS) along a sequence of surfels lying on a slice of the digital surface (i.e., the orthogonal direction of all surfels belong to a same plane, most pairs of consecutive surfels share a common linel).  <a href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1ChordGenericNaivePlaneComputer.html">ChordGenericNaivePlaneComputer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aim: A class that recognizes pieces of digital planes of given axis width. When the width is 1, it corresponds to naive planes. Contrary to <a class="el" href="classDGtal_1_1ChordNaivePlaneComputer.html" title="Aim: A class that contains the chord-based algorithm for recognizing pieces of digital planes of give...">ChordNaivePlaneComputer</a>, the axis is <b>not</b> specified at initialization of the object. This class uses three instances of <a class="el" href="classDGtal_1_1ChordNaivePlaneComputer.html" title="Aim: A class that contains the chord-based algorithm for recognizing pieces of digital planes of give...">ChordNaivePlaneComputer</a>, one per axis.  <a href="classDGtal_1_1ChordGenericNaivePlaneComputer.html#details">More...</a><br /></td></tr>
@@ -2452,9 +2452,9 @@ Functions</h2></td></tr>
 <tr class="separator:aa50c40d2df8aae8bd6ba1fd14e633c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf090f2b7c0b27c606e73a5a83a558b7"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDGtal.html#acf090f2b7c0b27c606e73a5a83a558b7">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classDGtal_1_1ContourHelper.html">ContourHelper</a> &amp;object)</td></tr>
 <tr class="separator:acf090f2b7c0b27c606e73a5a83a558b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b6444c3cd63c5b91e183adffeabf64b"><td class="memTemplParams" colspan="2">template&lt;typename TKSpace , typename TIterator , typename TInteger , unsigned short adjacency&gt; </td></tr>
-<tr class="memitem:a8b6444c3cd63c5b91e183adffeabf64b"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal.html#a8b6444c3cd63c5b91e183adffeabf64b">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html">ArithmeticalDSSComputerOnSurfels</a>&lt; TKSpace, TIterator, TInteger, adjacency &gt; &amp;object)</td></tr>
-<tr class="separator:a8b6444c3cd63c5b91e183adffeabf64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a63108861a6fd621fd1f70254cd2b52"><td class="memTemplParams" colspan="2">template&lt;typename TKSpace , typename TIterator , typename TInteger &gt; </td></tr>
+<tr class="memitem:a2a63108861a6fd621fd1f70254cd2b52"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal.html#a2a63108861a6fd621fd1f70254cd2b52">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html">ArithmeticalDSSComputerOnSurfels</a>&lt; TKSpace, TIterator, TInteger &gt; &amp;object)</td></tr>
+<tr class="separator:a2a63108861a6fd621fd1f70254cd2b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6714a7a10d4957d494e7ed098c066ee4"><td class="memTemplParams" colspan="2">template&lt;typename TSpace , typename TInputPoint , typename TInternalScalar &gt; </td></tr>
 <tr class="memitem:a6714a7a10d4957d494e7ed098c066ee4"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal.html#a6714a7a10d4957d494e7ed098c066ee4">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classDGtal_1_1ChordGenericNaivePlaneComputer.html">ChordGenericNaivePlaneComputer</a>&lt; TSpace, TInputPoint, TInternalScalar &gt; &amp;object)</td></tr>
 <tr class="separator:a6714a7a10d4957d494e7ed098c066ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -11377,13 +11377,13 @@ template&lt;typename TIterator , typename TInteger , unsigned short adjacency&gt
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a8b6444c3cd63c5b91e183adffeabf64b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b6444c3cd63c5b91e183adffeabf64b">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[10/263]</span></h2>
+<a id="a2a63108861a6fd621fd1f70254cd2b52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a63108861a6fd621fd1f70254cd2b52">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[10/263]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename TKSpace , typename TIterator , typename TInteger , unsigned short adjacency&gt; </div>
+template&lt;typename TKSpace , typename TIterator , typename TInteger &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">std::ostream&amp; DGtal::operator&lt;&lt; </td>
@@ -11394,7 +11394,7 @@ template&lt;typename TKSpace , typename TIterator , typename TInteger , unsigned
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html">ArithmeticalDSSComputerOnSurfels</a>&lt; TKSpace, TIterator, TInteger, adjacency &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html">ArithmeticalDSSComputerOnSurfels</a>&lt; TKSpace, TIterator, TInteger &gt; &amp;&#160;</td>
           <td class="paramname"><em>object</em>&#160;</td>
         </tr>
         <tr>
@@ -11413,11 +11413,11 @@ template&lt;typename TKSpace , typename TIterator , typename TInteger , unsigned
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the output stream after the writing. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ArithmeticalDSSComputerOnSurfels_8h_source.html#l00442">442</a> of file <a class="el" href="ArithmeticalDSSComputerOnSurfels_8h_source.html">ArithmeticalDSSComputerOnSurfels.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;{</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <span class="keywordtype">object</span>.selfDisplay( out);</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <span class="keywordflow">return</span> out;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="ArithmeticalDSSComputerOnSurfels_8h_source.html#l00490">490</a> of file <a class="el" href="ArithmeticalDSSComputerOnSurfels_8h_source.html">ArithmeticalDSSComputerOnSurfels.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;{</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  <span class="keywordtype">object</span>.selfDisplay( out);</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  <span class="keywordflow">return</span> out;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -23655,7 +23655,7 @@ template&lt;int n, typename Ring &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li>
-    <li class="footer">Generated on Tue Aug 6 2024 13:01:50 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 13 2024 15:26:42 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
