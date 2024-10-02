@@ -142,8 +142,12 @@ var NAVTREEINDEX55 =
 "moduleDECIntroduction.html":[0,11,0],
 "moduleDECIntroduction.html#sectDECHandsOn":[0,11,0,1],
 "moduleDECIntroduction.html#sectDECIntroduction":[0,11,0,0],
+"moduleDECIntroduction.html#sectDECIntroduction3":[0,11,0,1,0],
+"moduleDECIntroduction.html#sectDECIntroduction4":[0,11,0,1,1],
+"moduleDECIntroduction.html#sectDECIntroductionFurther":[0,11,0,0,4],
 "moduleDECIntroduction.html#sectDECIntroductionObjects":[0,11,0,0,1],
 "moduleDECIntroduction.html#sectDECLinearProblem":[0,11,0,0,3],
+"moduleDECIntroduction.html#sectDECLinearSolver":[0,11,0,1,2],
 "moduleDECIntroduction.html#sectDECOperatorAntiderivative":[0,11,0,0,2,2],
 "moduleDECIntroduction.html#sectDECOperatorClassical":[0,11,0,0,2,4],
 "moduleDECIntroduction.html#sectDECOperatorDerivative":[0,11,0,0,2,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX55 =
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec4_1":[0,9,5,3,0],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec4_1":[0,10,2,3,0],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec4_2":[0,9,5,3,1],
-"moduleDigitalSurfaces.html#dgtal_digsurf_sec4_2":[0,10,2,3,1],
-"moduleDigitalSurfaces.html#dgtal_digsurf_sec4_3":[0,10,2,3,2],
-"moduleDigitalSurfaces.html#dgtal_digsurf_sec4_3":[0,9,5,3,2],
-"moduleDigitalSurfaces.html#dgtal_digsurf_sec5":[0,10,2,4],
-"moduleDigitalSurfaces.html#dgtal_digsurf_sec5":[0,9,5,4]
+"moduleDigitalSurfaces.html#dgtal_digsurf_sec4_2":[0,10,2,3,1]
 };

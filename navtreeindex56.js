@@ -1,5 +1,9 @@
 var NAVTREEINDEX56 =
 {
+"moduleDigitalSurfaces.html#dgtal_digsurf_sec4_3":[0,10,2,3,2],
+"moduleDigitalSurfaces.html#dgtal_digsurf_sec4_3":[0,9,5,3,2],
+"moduleDigitalSurfaces.html#dgtal_digsurf_sec5":[0,10,2,4],
+"moduleDigitalSurfaces.html#dgtal_digsurf_sec5":[0,9,5,4],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec5_1":[0,9,5,4,0],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec5_1":[0,10,2,4,0],
 "moduleDigitalSurfaces.html#dgtal_digsurf_sec5_2":[0,9,5,4,1],
@@ -94,6 +98,7 @@ var NAVTREEINDEX56 =
 "moduleFunctors.html#functorconstimage_advanced_helper":[0,5,3,6,1,3],
 "moduleFunctors.html#functorconstimage_core_skeleton":[0,5,3,6,1,0],
 "moduleFunctors.html#functorconstimage_evaluation":[0,5,3,6,1,2],
+"moduleFunctors.html#functorconstimage_helper":[0,5,3,6,1,1],
 "moduleFunctors.html#functorholder":[0,5,3,1],
 "moduleFunctors.html#functorholder_aim":[0,5,3,1,1],
 "moduleFunctors.html#functorholder_derivates":[0,5,3,1,3],
@@ -244,10 +249,5 @@ var NAVTREEINDEX56 =
 "moduleImages.html#constimage":[0,14,0,3,0],
 "moduleImages.html#dgtalImagesAbstract":[0,14,0,0],
 "moduleImages.html#dgtalImagesAdapters":[0,14,0,3],
-"moduleImages.html#dgtalImagesConcepts":[0,14,0,1,0],
-"moduleImages.html#dgtalImagesDetails":[0,14,0,1],
-"moduleImages.html#dgtalImagesFunctions":[0,14,0,4],
-"moduleImages.html#dgtalImagesMainMethods":[0,14,0,1,1],
-"moduleImages.html#dgtalImagesModels":[0,14,0,2],
-"moduleImages.html#dgtalImagesModelsHashTree":[0,14,0,2,2]
+"moduleImages.html#dgtalImagesConcepts":[0,14,0,1,0]
 };

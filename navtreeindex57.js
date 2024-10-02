@@ -1,5 +1,10 @@
 var NAVTREEINDEX57 =
 {
+"moduleImages.html#dgtalImagesDetails":[0,14,0,1],
+"moduleImages.html#dgtalImagesFunctions":[0,14,0,4],
+"moduleImages.html#dgtalImagesMainMethods":[0,14,0,1,1],
+"moduleImages.html#dgtalImagesModels":[0,14,0,2],
+"moduleImages.html#dgtalImagesModelsHashTree":[0,14,0,2,2],
 "moduleImages.html#dgtalImagesModelsMap":[0,14,0,2,1],
 "moduleImages.html#dgtalImagesModelsVector":[0,14,0,2,0],
 "moduleImages.html#dgtalImagesRanges":[0,14,0,1,2],
@@ -118,6 +123,8 @@ var NAVTREEINDEX57 =
 "modulePlaneRecognition.html#modulePlaneRecognition_sec22":[0,8,5,1,1],
 "modulePlaneRecognition.html#modulePlaneRecognition_sec23":[0,8,5,1,2],
 "modulePlaneRecognition.html#modulePlaneRecognition_sec24":[0,8,5,1,3],
+"modulePlaneRecognition.html#modulePlaneRecognition_sec25":[0,8,5,1,4],
+"modulePlaneRecognition.html#modulePlaneRecognition_sec26":[0,8,5,1,5],
 "modulePlaneRecognition.html#modulePlaneRecognition_sec3":[0,8,5,2],
 "modulePlaneRecognition.html#modulePlaneRecognition_sec31":[0,8,5,2,0],
 "modulePlaneRecognition.html#modulePlaneRecognition_sec32":[0,8,5,2,1],
@@ -188,7 +195,10 @@ var NAVTREEINDEX57 =
 "moduleSetFunctions.html#dgtal_setfunctions_sec5":[0,5,2,4],
 "moduleShape.html":[0,9,0],
 "moduleShape.html#sectmoduleShape1":[0,9,0,0],
+"moduleShape.html#sectmoduleShape2":[0,9,0,1],
+"moduleShape.html#sectmoduleShape3":[0,9,0,2],
 "moduleShape.html#sectmoduleShape4":[0,9,0,3],
+"moduleShortcuts.html":[0,3],
 "moduleShortcuts.html#dgtal_shortcuts_sec1":[0,3,0],
 "moduleShortcuts.html#dgtal_shortcuts_sec2":[0,3,1],
 "moduleShortcuts.html#dgtal_shortcuts_sec2b":[0,3,2],
@@ -239,15 +249,5 @@ var NAVTREEINDEX57 =
 "moduleSurfaceMesh.html#SurfMesh_sec4":[0,9,4,3],
 "moduleSurfaceMesh.html#SurfMesh_sec5":[0,9,4,4],
 "moduleSurfaceMesh.html#SurfMesh_sec6":[0,9,4,5],
-"moduleSurfaceMesh.html#SurfMesh_sec7":[0,9,4,6],
-"moduleSurfaceMesh.html#SurfMesh_sec8":[0,9,4,7],
-"moduleVCM.html":[0,8,9],
-"moduleVCM.html#moduleVCM_sec1":[0,8,9,0],
-"moduleVCM.html#moduleVCM_sec2":[0,8,9,1],
-"moduleVCM.html#moduleVCM_sec3":[0,8,9,2],
-"moduleVCM.html#moduleVCM_sec3_1":[0,8,9,2,0],
-"moduleVCM.html#moduleVCM_sec3_2":[0,8,9,2,1],
-"moduleVectorsInHeat.html":[0,11,9],
-"moduleVectorsInHeat.html#sectVHM2":[0,11,9,1],
-"moduleVectorsInHeat.html#sectVHM3":[0,11,9,2]
+"moduleSurfaceMesh.html#SurfMesh_sec7":[0,9,4,6]
 };
