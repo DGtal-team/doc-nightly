@@ -180,6 +180,7 @@ var NAVTREEINDEX84 =
 "structboost_1_1AdaptablePredicate.html":[6,0,0,27],
 "structboost_1_1AdaptableUnaryFunction.html":[6,0,0,25],
 "structboost_1_1AdjacencyGraphConcept.html":[6,0,0,49],
+"":[5,0,4],
 "structboost_1_1Assignable.html":[6,0,0,1],
 "structboost_1_1AssociativeContainer.html":[6,0,0,40],
 "structboost_1_1BackInsertionSequence.html":[6,0,0,39],
@@ -248,6 +249,5 @@ var NAVTREEINDEX84 =
 "structboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4.html":[6,0,0,56],
 "structboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4.html#a1152e3a4f16f7cc3a8d0f721571c9bee":[6,0,0,56,18],
 "structboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4.html#a2b8204ce8fb083f1092c428bf48c1f50":[6,0,0,56,8],
-"structboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4.html#a3ae86191787ef2bcda721b24aa18c671":[6,0,0,56,16],
-"structboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4.html#a463376455fcc3312ffaeeba7da54b360":[6,0,0,56,17]
+"structboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4.html#a3ae86191787ef2bcda721b24aa18c671":[6,0,0,56,16]
 };

@@ -153,7 +153,7 @@ var NAVTREEINDEX =
 "structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapePrincipalCurvaturesAndDirectionsFunctor.html#abc7534577c5732668cc22d03873c865a",
 "structLibBoard_1_1Ellipse.html",
 "structLibBoard_1_1Shape.html#a0bc5410089c4405e23b6414b0d49dff1",
-"structboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4.html#a4666d909d0d601a1ba2f4918d97f7632"
+"structboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4.html#a463376455fcc3312ffaeeba7da54b360"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
