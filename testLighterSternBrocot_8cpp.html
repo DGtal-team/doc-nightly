@@ -1147,9 +1147,9 @@ template&lt;typename Fraction &gt; </div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;      DSL D1( 5, 12, mu );</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;      <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;DSL D1=&quot;</span> &lt;&lt; D1 &lt;&lt; endl;</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;      <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> U = D1.U();</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;      <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> L = D1.L();</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;      <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a> = D1.L();</div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;      <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>() &lt;&lt; <span class="stringliteral">&quot;- U=&quot;</span> &lt;&lt; U &lt;&lt; <span class="stringliteral">&quot; r(U)=&quot;</span> &lt;&lt; D1.r( U )</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;                   &lt;&lt; <span class="stringliteral">&quot;, L=&quot;</span> &lt;&lt; L &lt;&lt; <span class="stringliteral">&quot; r(L)=&quot;</span> &lt;&lt; D1.r( L ) &lt;&lt; endl;</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;                   &lt;&lt; <span class="stringliteral">&quot;, L=&quot;</span> &lt;&lt; <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a> &lt;&lt; <span class="stringliteral">&quot; r(L)=&quot;</span> &lt;&lt; D1.r( L ) &lt;&lt; endl;</div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;      ++nb; nbok += D1.r( U ) == D1.mu() ? 1 : 0;</div>
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;      ++nb; nbok += D1.r( L ) == D1.mup() ? 1 : 0;</div>
 <div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;    }</div>
@@ -1184,9 +1184,10 @@ template&lt;typename Fraction &gt; </div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160; </div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;  <span class="keywordflow">return</span> nbok == nb;</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;}</div>
+<div class="ttc" id="anamespaceDGtal_html_abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587"><div class="ttname"><a href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">DGtal::ProbingMode::L</a></div><div class="ttdeci">@ L</div></div>
 <div class="ttc" id="astructDGtal_1_1concepts_1_1CPointPredicate_html"><div class="ttname"><a href="structDGtal_1_1concepts_1_1CPointPredicate.html">DGtal::concepts::CPointPredicate</a></div><div class="ttdoc">Aim: Defines a predicate on a point.</div><div class="ttdef"><b>Definition:</b> <a href="CPointPredicate_8h_source.html#l00080">CPointPredicate.h:81</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info()</a>, and <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>.</p>
+<p class="reference">References <a class="el" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">DGtal::Trace::info()</a>, <a class="el" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">DGtal::L</a>, and <a class="el" href="Common_8h_source.html#l00153">DGtal::trace</a>.</p>
 
 </div>
 </div>
@@ -1315,7 +1316,7 @@ template&lt;typename LSB &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_23a5132b2719f1ede5eb4c3c9c25bf7e.html">arithmetic</a></li><li class="navelem"><a class="el" href="testLighterSternBrocot_8cpp.html">testLighterSternBrocot.cpp</a></li>
-    <li class="footer">Generated on Thu Oct 3 2024 09:14:45 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 9 2024 10:49:20 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -221,6 +221,13 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aim: adapter for TDSS used by <a class="el" href="classDGtal_1_1FP.html" title="Aim: Computes the faithful polygon (FP) of a range of 4/8-connected 2D Points.">FP</a> in CONCAVE parts. Has 2 methods:  <a href="classDGtal_1_1detail_1_1DSSDecorator4ConcavePart.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1detail_1_1PointOnProbingRay.html">PointOnProbingRay</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A ray consists of a permutation \( \sigma \) and an integer index \( \lambda \) (position on the ray). For a triplet of vectors \( (m_k)_{0 \leq k \leq 2} \) and a point \( q \), a point on the ray is defined as: \( q - m_{\sigma(0)} + m_{\sigma(1)} + \lambda m_{\sigma(2)} \). \( q - m_{\sigma(0)} + m_{\sigma(1)} \) is called the <em>base</em> point.  <a href="classDGtal_1_1detail_1_1PointOnProbingRay.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1detail_1_1GridPoint.html">GridPoint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A grid point consists of a couple of nonnegative coordinates \( (x,y) \) and an integer index \( k \) that determines a point used as origin. For a triplet of vectors \( (m_k)_{0 \leq k \leq 2} \) and a point \( q \), a grid point is defined as: \( q - m_{k} + x m_{(k+1)\bmod 3} + y m_{(k+2)\bmod 3} \). \( q - m_{k} \), called base point, is used as origin.  <a href="classDGtal_1_1detail_1_1GridPoint.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1detail_1_1GridPointOnProbingRay.html">GridPointOnProbingRay</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aim: Represents a grid point along a discrete ray defined on a grid.  <a href="classDGtal_1_1detail_1_1GridPointOnProbingRay.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDGtal_1_1detail_1_1EuclideanDivisionHelper.html">EuclideanDivisionHelper</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aim: Small stucture that provides a static method returning the Euclidean division of two integers.  <a href="structDGtal_1_1detail_1_1EuclideanDivisionHelper.html#details">More...</a><br /></td></tr>
@@ -360,9 +367,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ac9586385e0667b58e4539a1a5bb923cd"><td class="memTemplParams" colspan="2">template&lt;typename Point &gt; </td></tr>
 <tr class="memitem:ac9586385e0667b58e4539a1a5bb923cd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1detail.html#ac9586385e0667b58e4539a1a5bb923cd">isBasisReduced</a> (<a class="el" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> const &amp;aU, <a class="el" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> const &amp;aV)</td></tr>
 <tr class="separator:ac9586385e0667b58e4539a1a5bb923cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8145e1ac56a4074a096b56e8b5c2e523"><td class="memTemplParams" colspan="2">template&lt;typename Integer &gt; </td></tr>
-<tr class="memitem:a8145e1ac56a4074a096b56e8b5c2e523"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1detail.html#a8145e1ac56a4074a096b56e8b5c2e523">operator&lt;&lt;</a> (std::ostream &amp;aOs, <a class="el" href="classDGtal_1_1detail_1_1PointOnProbingRay.html">PointOnProbingRay</a>&lt; <a class="el" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a> &gt; const &amp;aRay)</td></tr>
-<tr class="separator:a8145e1ac56a4074a096b56e8b5c2e523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56e0dd5a176b5347a43af1c4e92d6257"><td class="memTemplParams" colspan="2">template&lt;typename Integer , typename Index &gt; </td></tr>
+<tr class="memitem:a56e0dd5a176b5347a43af1c4e92d6257"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1detail.html#a56e0dd5a176b5347a43af1c4e92d6257">operator&lt;&lt;</a> (std::ostream &amp;aOs, <a class="el" href="classDGtal_1_1detail_1_1PointOnProbingRay.html">PointOnProbingRay</a>&lt; <a class="el" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a>, <a class="el" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a> &gt; const &amp;aRay)</td></tr>
+<tr class="separator:a56e0dd5a176b5347a43af1c4e92d6257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6495fedf10fa063c4ccac2daf7c22d81"><td class="memTemplParams" colspan="2">template&lt;typename Integer , typename Index &gt; </td></tr>
+<tr class="memitem:a6495fedf10fa063c4ccac2daf7c22d81"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1detail.html#a6495fedf10fa063c4ccac2daf7c22d81">operator&lt;&lt;</a> (std::ostream &amp;aOs, <a class="el" href="classDGtal_1_1detail_1_1GridPoint.html">GridPoint</a>&lt; <a class="el" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a>, <a class="el" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a> &gt; const &amp;aGridPoint)</td></tr>
+<tr class="separator:a6495fedf10fa063c4ccac2daf7c22d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b056b7d2516565a223eb8c9ec3702c8"><td class="memTemplParams" colspan="2">template&lt;typename Point &gt; </td></tr>
 <tr class="memitem:a9b056b7d2516565a223eb8c9ec3702c8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDGtal_1_1detail.html#a9b056b7d2516565a223eb8c9ec3702c8">center</a> (const std::vector&lt; <a class="el" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> &gt; &amp;points)</td></tr>
 <tr class="separator:a9b056b7d2516565a223eb8c9ec3702c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1034,13 +1044,13 @@ template&lt;typename IC &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a8145e1ac56a4074a096b56e8b5c2e523"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8145e1ac56a4074a096b56e8b5c2e523">&#9670;&nbsp;</a></span>operator&lt;&lt;()</h2>
+<a id="a6495fedf10fa063c4ccac2daf7c22d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6495fedf10fa063c4ccac2daf7c22d81">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Integer &gt; </div>
+template&lt;typename Integer , typename Index &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">std::ostream&amp; DGtal::detail::operator&lt;&lt; </td>
@@ -1051,7 +1061,57 @@ template&lt;typename Integer &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classDGtal_1_1detail_1_1PointOnProbingRay.html">PointOnProbingRay</a>&lt; <a class="el" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a> &gt; const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classDGtal_1_1detail_1_1GridPoint.html">GridPoint</a>&lt; <a class="el" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a>, <a class="el" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a> &gt; const &amp;&#160;</td>
+          <td class="paramname"><em>aGridPoint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Display a grid point on the standard output.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aOs</td><td>the output stream where the object is written. </td></tr>
+    <tr><td class="paramname">aGridPoint</td><td>the grid point to display. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the output stream after the writing. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="PlaneProbingEstimatorHelper_8h_source.html#l00401">401</a> of file <a class="el" href="PlaneProbingEstimatorHelper_8h_source.html">PlaneProbingEstimatorHelper.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                                                                                           {</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        aOs &lt;&lt; <span class="stringliteral">&quot;GridPoint[k=&quot;</span> &lt;&lt; aGridPoint.k()</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;, a=&quot;</span> &lt;&lt; aGridPoint.direction().first</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;, b=&quot;</span> &lt;&lt; aGridPoint.direction().second</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        <span class="keywordflow">return</span> aOs; </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;      }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="PlaneProbingEstimatorHelper_8h_source.html#l00275">DGtal::detail::GridPoint&lt; Integer, Index &gt;::direction()</a>, and <a class="el" href="PlaneProbingEstimatorHelper_8h_source.html#l00284">DGtal::detail::GridPoint&lt; Integer, Index &gt;::k()</a>.</p>
+
+</div>
+</div>
+<a id="a56e0dd5a176b5347a43af1c4e92d6257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56e0dd5a176b5347a43af1c4e92d6257">&#9670;&nbsp;</a></span>operator&lt;&lt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Integer , typename Index &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; DGtal::detail::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>aOs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDGtal_1_1detail_1_1PointOnProbingRay.html">PointOnProbingRay</a>&lt; <a class="el" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#ad31c3eca44cf6770809bc47f2b456212">Integer</a>, <a class="el" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a> &gt; const &amp;&#160;</td>
           <td class="paramname"><em>aRay</em>&#160;</td>
         </tr>
         <tr>
@@ -1874,7 +1934,7 @@ template&lt;typename OutputValue , typename ForwardIterator , typename Conversio
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="namespaceDGtal_1_1detail.html">detail</a></li>
-    <li class="footer">Generated on Thu Oct 3 2024 09:14:56 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 9 2024 10:49:32 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

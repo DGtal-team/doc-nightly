@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('functions_type_p.html',''); initResiza
 , <a class="el" href="classDGtal_1_1VoronoiMapComplete.html#a908c20ff131f0f41c7d0d87f0d3b063a">DGtal::VoronoiMapComplete&lt; TSpace, TPointPredicate, TSeparableMetric, TImageContainer &gt;</a>
 </li>
 <li>Permutation
-: <a class="el" href="classDGtal_1_1detail_1_1PointOnProbingRay.html#a82f63ffc3cf3818067955a29e9d44ff3">DGtal::detail::PointOnProbingRay&lt; Integer &gt;</a>
+: <a class="el" href="classDGtal_1_1detail_1_1PointOnProbingRay.html#a13914ff1114ec37f3f844a42af9a90a6">DGtal::detail::PointOnProbingRay&lt; Integer, Index &gt;</a>
 , <a class="el" href="classDGtal_1_1PlaneProbingTetrahedronEstimator.html#a5063eacad3a57b04f770878426078f9c">DGtal::PlaneProbingTetrahedronEstimator&lt; TPredicate, mode &gt;</a>
 </li>
 <li>PHullBackQHullFrontPred
@@ -378,6 +378,7 @@ $(document).ready(function(){initNavTree('functions_type_p.html',''); initResiza
 , <a class="el" href="classDGtal_1_1PConvexity.html#a7ab08f1a8e21833e404648c38a6d4278">DGtal::PConvexity&lt; TSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator.html#aa9bfa813aefc7e517affe1909a8ffacc">DGtal::PlaneProbingDigitalSurfaceLocalEstimator&lt; TSurface, TInternalProbingAlgorithm &gt;</a>
 , <a class="el" href="classDGtal_1_1PlaneProbingHNeighborhood.html#ac2e969f8602c30df24883dc039f0e65b">DGtal::PlaneProbingHNeighborhood&lt; TPredicate &gt;</a>
+, <a class="el" href="classDGtal_1_1PlaneProbingLNeighborhood.html#ac7390ed71d5b3311cae094fd1aa80c15">DGtal::PlaneProbingLNeighborhood&lt; TPredicate &gt;</a>
 , <a class="el" href="classDGtal_1_1PlaneProbingNeighborhood.html#a50d4ebb64e7dd3f67ad10e47653e433d">DGtal::PlaneProbingNeighborhood&lt; TPredicate &gt;</a>
 , <a class="el" href="classDGtal_1_1PlaneProbingParallelepipedEstimator_1_1NotAbovePredicate.html#a95b1fb32fa3eda2bc3b173ae2b93f058">DGtal::PlaneProbingParallelepipedEstimator&lt; TPredicate, mode &gt;::NotAbovePredicate</a>
 , <a class="el" href="classDGtal_1_1PlaneProbingParallelepipedEstimator.html#ab448627c17a0869768d52b279a6ebb8f">DGtal::PlaneProbingParallelepipedEstimator&lt; TPredicate, mode &gt;</a>
@@ -499,13 +500,13 @@ $(document).ready(function(){initNavTree('functions_type_p.html',''); initResiza
 , <a class="el" href="structDGtal_1_1GraphVisitorRange_1_1NodeAccessor.html#aefda7291e40580023d42714fb282da6e">DGtal::GraphVisitorRange&lt; TGraphVisitor &gt;::NodeAccessor</a>
 , <a class="el" href="structDGtal_1_1GraphVisitorRange_1_1VertexAccessor.html#a48073a6943b3efec32bcaba88309eef7">DGtal::GraphVisitorRange&lt; TGraphVisitor &gt;::VertexAccessor</a>
 , <a class="el" href="classDGtal_1_1ImageContainerBySTLVector_1_1SpanIterator.html#a60b007d5e6749328f6f8adde1d3c92ad">DGtal::ImageContainerBySTLVector&lt; TDomain, TValue &gt;::SpanIterator</a>
+, <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1ConstIterator.html#a8f1b4346836ef3a1a6f688aff13ccce6">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::ConstIterator</a>
 </li>
 <li>Pointer
 : <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1ConstIterator.html#ac4abb503d66e2898e6dbd0f54f22a70f">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::ConstIterator</a>
 </li>
 <li>pointer
-: <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1ConstIterator.html#a8f1b4346836ef3a1a6f688aff13ccce6">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::ConstIterator</a>
-, <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1Iterator.html#a66c88b1a93002856a45a80f8fbc92782">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::Iterator</a>
+: <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1Iterator.html#a66c88b1a93002856a45a80f8fbc92782">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::Iterator</a>
 </li>
 <li>Pointer
 : <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1Iterator.html#adc8324ab6e68074731671ac9ecb077dd">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::Iterator</a>
@@ -513,11 +514,15 @@ $(document).ready(function(){initNavTree('functions_type_p.html',''); initResiza
 </li>
 <li>pointer
 : <a class="el" href="classDGtal_1_1IndexedListWithBlocks.html#a5f640be16c2b0cfa2596070438417aa8">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;</a>
-, <a class="el" href="classDGtal_1_1InputIteratorWithRankOnSequence.html#ae2ea97b1657fbaedb8be0f7ba206eec3">DGtal::InputIteratorWithRankOnSequence&lt; TSequence, TRank &gt;</a>
 </li>
 <li>Pointer
 : <a class="el" href="classDGtal_1_1InputIteratorWithRankOnSequence.html#aaf12636be0bd412829939f5edc3010ba">DGtal::InputIteratorWithRankOnSequence&lt; TSequence, TRank &gt;</a>
-, <a class="el" href="structDGtal_1_1IteratorCirculatorTraits.html#ab9c7c3e4445bf661525ec3bd37528ee1">DGtal::IteratorCirculatorTraits&lt; IC &gt;</a>
+</li>
+<li>pointer
+: <a class="el" href="classDGtal_1_1InputIteratorWithRankOnSequence.html#ae2ea97b1657fbaedb8be0f7ba206eec3">DGtal::InputIteratorWithRankOnSequence&lt; TSequence, TRank &gt;</a>
+</li>
+<li>Pointer
+: <a class="el" href="structDGtal_1_1IteratorCirculatorTraits.html#ab9c7c3e4445bf661525ec3bd37528ee1">DGtal::IteratorCirculatorTraits&lt; IC &gt;</a>
 , <a class="el" href="structDGtal_1_1IteratorCirculatorTraits_3_01T_01_5_01_4.html#a0258e13eb918f2777458f1e685e5cbce">DGtal::IteratorCirculatorTraits&lt; T * &gt;</a>
 , <a class="el" href="structDGtal_1_1IteratorCirculatorTraits_3_01T_01const_01_5_01_4.html#a139d573fa21165a2319f787027121422">DGtal::IteratorCirculatorTraits&lt; T const * &gt;</a>
 , <a class="el" href="classDGtal_1_1LabelledMap_1_1BlockConstIterator.html#af02998fee6d418a1789644d68a858525">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;::BlockConstIterator</a>
@@ -571,7 +576,8 @@ $(document).ready(function(){initNavTree('functions_type_p.html',''); initResiza
 <li>PointOnProbingRay
 : <a class="el" href="classDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator.html#afe0c6aed8d4d848b9a946b4997990e63">DGtal::PlaneProbingDigitalSurfaceLocalEstimator&lt; TSurface, TInternalProbingAlgorithm &gt;</a>
 , <a class="el" href="classDGtal_1_1PlaneProbingHNeighborhood.html#ac874a6fe6df0637e1b63a0c668318d9a">DGtal::PlaneProbingHNeighborhood&lt; TPredicate &gt;</a>
-, <a class="el" href="classDGtal_1_1PlaneProbingNeighborhood.html#a802ab2b94f99052902509be82ff9154d">DGtal::PlaneProbingNeighborhood&lt; TPredicate &gt;</a>
+, <a class="el" href="classDGtal_1_1PlaneProbingLNeighborhood.html#a083b99676ecb5ff81fb4225537b5b3fd">DGtal::PlaneProbingLNeighborhood&lt; TPredicate &gt;</a>
+, <a class="el" href="classDGtal_1_1PlaneProbingNeighborhood.html#a213d9f3015f81dbab0d6b50d1d63be82">DGtal::PlaneProbingNeighborhood&lt; TPredicate &gt;</a>
 , <a class="el" href="classDGtal_1_1PlaneProbingParallelepipedEstimator.html#a4556001f9e42d134762ab5f3d76758f8">DGtal::PlaneProbingParallelepipedEstimator&lt; TPredicate, mode &gt;</a>
 , <a class="el" href="classDGtal_1_1PlaneProbingR1Neighborhood.html#ab5995087914d951ab8d2598d036ec93d">DGtal::PlaneProbingR1Neighborhood&lt; TPredicate &gt;</a>
 , <a class="el" href="classDGtal_1_1PlaneProbingRNeighborhood.html#a1b173c568749752cba41d927535d0bbe">DGtal::PlaneProbingRNeighborhood&lt; TPredicate &gt;</a>
@@ -740,6 +746,7 @@ $(document).ready(function(){initNavTree('functions_type_p.html',''); initResiza
 , <a class="el" href="classDGtal_1_1HyperRectDomain.html#a431536af83438afd5392c08d89cfe5d5">DGtal::HyperRectDomain&lt; TSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator.html#acd1bea29ffbd7a5a490251945a08ab13">DGtal::PlaneProbingDigitalSurfaceLocalEstimator&lt; TSurface, TInternalProbingAlgorithm &gt;</a>
 , <a class="el" href="classDGtal_1_1PlaneProbingHNeighborhood.html#ad51aeea633b566714bde359f94031ce0">DGtal::PlaneProbingHNeighborhood&lt; TPredicate &gt;</a>
+, <a class="el" href="classDGtal_1_1PlaneProbingLNeighborhood.html#a6f15d1f8dcadf66b08d089a23e52b157">DGtal::PlaneProbingLNeighborhood&lt; TPredicate &gt;</a>
 , <a class="el" href="classDGtal_1_1PlaneProbingNeighborhood.html#aa389953d5259b335ba8c8948f546db23">DGtal::PlaneProbingNeighborhood&lt; TPredicate &gt;</a>
 , <a class="el" href="classDGtal_1_1PlaneProbingParallelepipedEstimator.html#a3b9bc696dd729852a29052553f6c3eed">DGtal::PlaneProbingParallelepipedEstimator&lt; TPredicate, mode &gt;</a>
 , <a class="el" href="classDGtal_1_1PlaneProbingR1Neighborhood.html#a7f64ea0af98479d8839362e4f76bb7cc">DGtal::PlaneProbingR1Neighborhood&lt; TPredicate &gt;</a>
@@ -887,7 +894,7 @@ $(document).ready(function(){initNavTree('functions_type_p.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 3 2024 09:15:00 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 9 2024 10:49:36 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

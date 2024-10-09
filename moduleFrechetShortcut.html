@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('moduleFrechetShortcut.html',''); initR
 <div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: </dt><dd>Isabelle Sivignon</dd></dl>
 <h1><a class="anchor" id="FS_sectOverview"></a>
 Overview</h1>
-<p>The algorithm implemented in the class <a class="el" href="classDGtal_1_1FrechetShortcut.html" title="Aim: On-line computation Computation of the longest shortcut according to the Fréchet distance for a ...">FrechetShortcut</a> is the one presented in the article <a class="el" href="citelist.html#CITEREF_sivignon2011">[114]</a>. <br  />
+<p>The algorithm implemented in the class <a class="el" href="classDGtal_1_1FrechetShortcut.html" title="Aim: On-line computation Computation of the longest shortcut according to the Fréchet distance for a ...">FrechetShortcut</a> is the one presented in the article <a class="el" href="citelist.html#CITEREF_sivignon2011">[115]</a>. <br  />
  We present here the basic ideas of the algorithm and at the end, give pointers to the relative structures used in the implementation. <br  />
 </p>
 <p>Given a polygonal curve, the curve simplification problem consists in computing another polygonal curve that (i) approximates the original curve, (ii) satisfies a given error criterion, (iii) with as few vertices as possible. This problem arises in a wide range of applications, such as geographic information systems (GIS), computer graphics or computer vision, where the management of the level of details is of crucial importance to save memory space or to speed-up analysis algorithms.</p>
@@ -194,7 +194,7 @@ Updating the backpath length efficiently</h2>
 <div class="image">
 <img src="definition_occulter.png" alt=""/>
 </div>
- <p>We can prove easily (see <a class="el" href="citelist.html#CITEREF_sivignon2011">[114]</a>) that the origin of the longest backpath is an occulter.</p>
+ <p>We can prove easily (see <a class="el" href="citelist.html#CITEREF_sivignon2011">[115]</a>) that the origin of the longest backpath is an occulter.</p>
 <div class="image">
 <img src="occulters.png" alt=""/>
 <div class="caption">
@@ -243,7 +243,7 @@ A guaranteed algorithm</h2>
 <div class="image">
 <img src="lemma3.png" alt=""/>
 </div>
- <p>For more details about this proof, please refer to <a class="el" href="citelist.html#CITEREF_sivignon2011">[114]</a>.</p>
+ <p>For more details about this proof, please refer to <a class="el" href="citelist.html#CITEREF_sivignon2011">[115]</a>.</p>
 <h2><a class="anchor" id="subsectComplexity"></a>
 Complexity</h2>
 <p>The theoretical complexity of this algorithm is \(\mathcal{O}(n\log(n_i))\), for a digital curve of \(n\) points. \(n_i\) is the number of intervals used to store the directions for which there exist a backpath of length greater than the error. \(n_i\) is upper bounded by \(n\). Nevertheless, experiments on noisy shapes show that the general behaviour of the algorithm in linear in time.</p>
@@ -304,7 +304,7 @@ Implementation in DGtal</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Thu Oct 3 2024 09:14:46 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 9 2024 10:49:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

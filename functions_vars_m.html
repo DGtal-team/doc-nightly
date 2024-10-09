@@ -883,14 +883,16 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 : <a class="el" href="structDGtal_1_1functors_1_1Projector.html#ae516b67819e22787d803c4077e99f505">DGtal::functors::Projector&lt; S &gt;</a>
 </li>
 <li>myDir
-: <a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#a01f6d545f0681a71f245665233109da0">DGtal::PreCellDirectionIterator&lt; dim, TInteger &gt;</a>
+: <a class="el" href="classDGtal_1_1detail_1_1GridPoint.html#ada21c1ead9d95d199f5010c10070e9cc">DGtal::detail::GridPoint&lt; Integer, Index &gt;</a>
+, <a class="el" href="classDGtal_1_1PreCellDirectionIterator.html#a01f6d545f0681a71f245665233109da0">DGtal::PreCellDirectionIterator&lt; dim, TInteger &gt;</a>
 , <a class="el" href="classDGtal_1_1Viewer3D.html#a11884fb786b8b964085e18ce84c2fadc">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;</a>
 </li>
 <li>myDiracSource
 : <a class="el" href="classDGtal_1_1VectorsInHeat.html#ac0f1140ba7cbb3b881701636bd34a2cd">DGtal::VectorsInHeat&lt; TPolygonalCalculus &gt;</a>
 </li>
 <li>myDirection
-: <a class="el" href="structDGtal_1_1Viewer3D_1_1GLTextureImage.html#a2319a1dc7dac0211e01ad857aa087864">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;::GLTextureImage</a>
+: <a class="el" href="classDGtal_1_1detail_1_1GridPointOnProbingRay.html#af7e687dbb8aa39f12d0fcdfb5e3fad7c">DGtal::detail::GridPointOnProbingRay&lt; Integer, Index &gt;</a>
+, <a class="el" href="structDGtal_1_1Viewer3D_1_1GLTextureImage.html#a2319a1dc7dac0211e01ad857aa087864">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;::GLTextureImage</a>
 , <a class="el" href="structDGtal_1_1Viewer3D_1_1Image2DDomainD3D.html#a58fe49f07d1f2fca5a80f2f27c92a420">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;::Image2DDomainD3D</a>
 , <a class="el" href="structDGtal_1_1Viewer3D_1_1TextureImage.html#a66b6710da362c78261fc33045fa99dc7">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;::TextureImage</a>
 </li>
@@ -1437,6 +1439,12 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <li>myGreen
 : <a class="el" href="classDGtal_1_1Color.html#a27955b88964c6100e81563573bdb8b9c">DGtal::Color</a>
 </li>
+<li>myGridPoint
+: <a class="el" href="structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html#a8e367313b90e3c73c78ec5cc5de1a850">DGtal::PlaneProbingLNeighborhood&lt; TPredicate &gt;::ClosestGridPoint</a>
+</li>
+<li>myGrids
+: <a class="el" href="classDGtal_1_1PlaneProbingLNeighborhood.html#ad9363f31df93afee7f7116d2980afe2a">DGtal::PlaneProbingLNeighborhood&lt; TPredicate &gt;</a>
+</li>
 <li>myGridSampleDomain
 : <a class="el" href="classDGtal_1_1functors_1_1BasicDomainSubSampler.html#a71ec4bb77edb5b8c912bc5557d7eee96">DGtal::functors::BasicDomainSubSampler&lt; TDomain, TInteger, TValue &gt;</a>
 </li>
@@ -1524,7 +1532,8 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 : <a class="el" href="classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html#ad65bf004c3a1b166b64c46f46636929a">DGtal::functors::TensorVotingFeatureExtraction&lt; TSurfel, TEmbedder &gt;</a>
 </li>
 <li>myIdx
-: <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1ConstIterator.html#aaf29a3ba8959133aeeed351fb132d1a4">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::ConstIterator</a>
+: <a class="el" href="classDGtal_1_1detail_1_1GridPointOnProbingRay.html#abea34d721edfe688f56eb0656b0a21a5">DGtal::detail::GridPointOnProbingRay&lt; Integer, Index &gt;</a>
+, <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1ConstIterator.html#aaf29a3ba8959133aeeed351fb132d1a4">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::ConstIterator</a>
 , <a class="el" href="classDGtal_1_1IndexedListWithBlocks_1_1Iterator.html#a09d3b07c4e31356d068350ca49500d4e">DGtal::IndexedListWithBlocks&lt; TValue, N, M &gt;::Iterator</a>
 , <a class="el" href="classDGtal_1_1LabelledMap_1_1BlockConstIterator.html#a269a9abf2fe87e9baa795726e4f264f4">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;::BlockConstIterator</a>
 , <a class="el" href="classDGtal_1_1LabelledMap_1_1BlockIterator.html#a79cd588ff3fdfc829aeab03a870228cf">DGtal::LabelledMap&lt; TData, L, TWord, N, M &gt;::BlockIterator</a>
@@ -1591,8 +1600,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 : <a class="el" href="structDGtal_1_1SurfaceMesh.html#ae7fc97b6c2697523ca155e726ef343d5">DGtal::SurfaceMesh&lt; TRealPoint, TRealVector &gt;</a>
 </li>
 <li>myIndex
-: <a class="el" href="classDGtal_1_1detail_1_1PointOnProbingRay.html#a29eda47b5fb8118ef37e8b49100a1f15">DGtal::detail::PointOnProbingRay&lt; Integer &gt;</a>
-, <a class="el" href="structDGtal_1_1Translate2DDomain.html#a1608f0312529c98b288e22b91523676b">DGtal::Translate2DDomain</a>
+: <a class="el" href="structDGtal_1_1Translate2DDomain.html#a1608f0312529c98b288e22b91523676b">DGtal::Translate2DDomain</a>
 , <a class="el" href="structDGtal_1_1Update2DDomainPosition.html#a70047dddf3ff0e1fc7daa814d917ace2">DGtal::Update2DDomainPosition&lt; Space, KSpace &gt;</a>
 , <a class="el" href="structDGtal_1_1UpdateImage3DEmbedding.html#a2656c4053357b2982638a90c02275e8d">DGtal::UpdateImage3DEmbedding&lt; Space, KSpace &gt;</a>
 , <a class="el" href="structDGtal_1_1UpdateImageData.html#a73acfb6b5c15d167d6d1bf2a4b1766ff">DGtal::UpdateImageData&lt; TImageType, TFunctor &gt;</a>
@@ -1787,6 +1795,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 : <a class="el" href="classDGtal_1_1AccFlower2D.html#a450448fa7eea34f71bbded48225b147d">DGtal::AccFlower2D&lt; TSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1CellGeometry.html#ab32056057e9fae50f528f0c0fb27fc36">DGtal::CellGeometry&lt; TKSpace &gt;</a>
 , <a class="el" href="structDGtal_1_1concepts_1_1CSCellEmbedder.html#aa66d73aad0c74eacd02b773710b2935e">DGtal::concepts::CSCellEmbedder&lt; T &gt;</a>
+, <a class="el" href="classDGtal_1_1detail_1_1GridPoint.html#aa307e4c70e2bd895bf633878ba4e5af5">DGtal::detail::GridPoint&lt; Integer, Index &gt;</a>
 , <a class="el" href="classDGtal_1_1DigitalConvexity.html#ade0ce0fbf443414698b879b9c92ef685">DGtal::DigitalConvexity&lt; TKSpace &gt;</a>
 , <a class="el" href="classDGtal_1_1DigitalSurfaceRegularization.html#a1b686d1c8e54feeb36c96ac7be9e1f85">DGtal::DigitalSurfaceRegularization&lt; TDigitalSurface &gt;</a>
 , <a class="el" href="classDGtal_1_1Flower2D.html#a94e43cdfc83f5d5c527b0297a872e378">DGtal::Flower2D&lt; TSpace &gt;</a>
@@ -2469,7 +2478,8 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 : <a class="el" href="classDGtal_1_1Viewer3D.html#a331c26a2f205d09f1b4d4984dbafe30c">DGtal::Viewer3D&lt; TSpace, TKSpace &gt;</a>
 </li>
 <li>myOrigin
-: <a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a70055e47374ca5bb1f79bdcea4ff5bd1">DGtal::experimental::ImageContainerByHashTree&lt; TDomain, TValue, THashKey &gt;</a>
+: <a class="el" href="classDGtal_1_1detail_1_1GridPointOnProbingRay.html#a1b8339121dec88ad091e11e27438f718">DGtal::detail::GridPointOnProbingRay&lt; Integer, Index &gt;</a>
+, <a class="el" href="classDGtal_1_1experimental_1_1ImageContainerByHashTree.html#a70055e47374ca5bb1f79bdcea4ff5bd1">DGtal::experimental::ImageContainerByHashTree&lt; TDomain, TValue, THashKey &gt;</a>
 , <a class="el" href="structDGtal_1_1LighterSternBrocot_1_1Node.html#a57e1b56be8b24235f6635cd0abaa000d">DGtal::LighterSternBrocot&lt; TInteger, TQuotient, TMap &gt;::Node</a>
 , <a class="el" href="structDGtal_1_1RayIntersectionPredicate.html#a61413f4774a239d31632631dd6000e63">DGtal::RayIntersectionPredicate&lt; TPoint &gt;</a>
 </li>
@@ -2549,6 +2559,9 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 : <a class="el" href="structDGtal_1_1concepts_1_1CAdjacency.html#a16540a87459ee15b3d6aaa291397f5e3">DGtal::concepts::CAdjacency&lt; Adj &gt;</a>
 , <a class="el" href="structDGtal_1_1concepts_1_1CCellularGridSpaceND.html#a4c0ad5a03eeed26af01a8d28ee843b60">DGtal::concepts::CCellularGridSpaceND&lt; T &gt;</a>
 , <a class="el" href="structDGtal_1_1concepts_1_1CPreCellularGridSpaceND.html#a21eae9cef57588c590d68c790cf6ee82">DGtal::concepts::CPreCellularGridSpaceND&lt; T &gt;</a>
+</li>
+<li>myPair
+: <a class="el" href="structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html#a7bbee197e5f3ed88cd5495b0d7f571a2">DGtal::PlaneProbingLNeighborhood&lt; TPredicate &gt;::ClosestGridPoint</a>
 </li>
 <li>myParallelpipedEstimator
 : <a class="el" href="classDGtal_1_1PlaneProbingParallelepipedEstimator_1_1NotAbovePredicate.html#a332a64f743c103af42ed77d6a29733ad">DGtal::PlaneProbingParallelepipedEstimator&lt; TPredicate, mode &gt;::NotAbovePredicate</a>
@@ -2733,6 +2746,9 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 </li>
 <li>myPosDimAdded
 : <a class="el" href="classDGtal_1_1functors_1_1SliceRotator2D.html#a3737385d4fae626c095c4403bdf85c43">DGtal::functors::SliceRotator2D&lt; TDomain3D, TInteger &gt;</a>
+</li>
+<li>myPosition
+: <a class="el" href="classDGtal_1_1detail_1_1PointOnProbingRay.html#a8d73478ad024750efcc45c4aa054906b">DGtal::detail::PointOnProbingRay&lt; Integer, Index &gt;</a>
 </li>
 <li>myPositions
 : <a class="el" href="classDGtal_1_1IndexedDigitalSurface.html#a6e1a820cd5ad0ee8e3b210e4a3148218">DGtal::IndexedDigitalSurface&lt; TDigitalSurfaceContainer &gt;</a>
@@ -3268,7 +3284,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 </li>
 <li>mySigma
 : <a class="el" href="classDGtal_1_1deprecated_1_1GaussianConvolutionWeights.html#a401f990566f74d0e129769f10c648631">DGtal::deprecated::GaussianConvolutionWeights&lt; TDistance &gt;</a>
-, <a class="el" href="classDGtal_1_1detail_1_1PointOnProbingRay.html#a1bb53e9d87e674203113cc9065003476">DGtal::detail::PointOnProbingRay&lt; Integer &gt;</a>
+, <a class="el" href="classDGtal_1_1detail_1_1PointOnProbingRay.html#a457625851682255d0534a3210c2c1e67">DGtal::detail::PointOnProbingRay&lt; Integer, Index &gt;</a>
 , <a class="el" href="structDGtal_1_1functors_1_1GaussianKernel.html#a88dd483384f56dc51a9289aaa48925ab">DGtal::functors::GaussianKernel</a>
 </li>
 <li>mySign
@@ -4008,7 +4024,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 3 2024 09:15:00 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 9 2024 10:49:36 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

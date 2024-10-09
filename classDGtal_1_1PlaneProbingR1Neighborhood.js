@@ -1,6 +1,7 @@
 var classDGtal_1_1PlaneProbingR1Neighborhood =
 [
     [ "HexagonState", "classDGtal_1_1PlaneProbingR1Neighborhood.html#a3d89035d40cb306096caf00dfdaa9469", null ],
+    [ "Index", "classDGtal_1_1PlaneProbingR1Neighborhood.html#a86c5d32854672a38fca4bb6ed429e1b4", null ],
     [ "Integer", "classDGtal_1_1PlaneProbingR1Neighborhood.html#a8d1aa95aac00cf46c9e8ebf652a19a7e", null ],
     [ "Point", "classDGtal_1_1PlaneProbingR1Neighborhood.html#a854edbca17ecd4ac1475bf83ed650b58", null ],
     [ "PointOnProbingRay", "classDGtal_1_1PlaneProbingR1Neighborhood.html#ab5995087914d951ab8d2598d036ec93d", null ],
@@ -12,7 +13,7 @@ var classDGtal_1_1PlaneProbingR1Neighborhood =
     [ "PlaneProbingR1Neighborhood", "classDGtal_1_1PlaneProbingR1Neighborhood.html#aa0b71df4dd316990025334ed5247f087", null ],
     [ "PlaneProbingR1Neighborhood", "classDGtal_1_1PlaneProbingR1Neighborhood.html#a6849325489a28ab64871801b0864ae21", null ],
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1PlaneProbingR1Neighborhood.html#a6e380f9c2773a0faaca120b0e6761309", null ],
-    [ "candidateRay", "classDGtal_1_1PlaneProbingR1Neighborhood.html#a06828e39852d22fdcd00aada6ffcccd9", null ],
+    [ "candidateRay", "classDGtal_1_1PlaneProbingR1Neighborhood.html#ade8434c41dbb068f9f985991aec5ef70", null ],
     [ "closestPointOnRayConstant", "classDGtal_1_1PlaneProbingR1Neighborhood.html#a952c05c2caf50cbac827d8d28d1b08d1", null ],
     [ "closestPointOnRayLinear", "classDGtal_1_1PlaneProbingR1Neighborhood.html#ad1ef50d5efa77e44ba79b40c757b3dd3", null ],
     [ "closestRayPoint", "classDGtal_1_1PlaneProbingR1Neighborhood.html#a0e8182bd499b1c23161958af30b12092", null ],

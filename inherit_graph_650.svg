@@ -12,10 +12,10 @@
 <!-- Node0 -->
 <g id="node1" class="node">
 <title>Node0</title>
-<g id="a_node1"><a xlink:href="classDGtal_1_1functors_1_1SCellToPoint.html" target="_top" xlink:title="Aim: transforms a scell into a point.">
+<g id="a_node1"><a xlink:href="classDGtal_1_1functors_1_1SCellToCode.html" target="_top" xlink:title="Aim: transforms a 2d signed cell, basically a linel, into a code (0,1,2 or 3),.">
 <polygon fill="white" stroke="black" points="0,-0.5 0,-30.5 131,-30.5 131,-0.5 0,-0.5"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="FreeSans" font-size="10.00">DGtal::functors::SCellTo</text>
-<text text-anchor="middle" x="65.5" y="-7.5" font-family="FreeSans" font-size="10.00">Point&lt; KSpace &gt;</text>
+<text text-anchor="middle" x="65.5" y="-7.5" font-family="FreeSans" font-size="10.00">Code&lt; KSpace &gt;</text>
 </a>
 </g>
 </g>

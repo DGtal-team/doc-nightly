@@ -382,7 +382,7 @@ Example: Solving a Laplace problem</h1>
 <p>The overall code is: </p><div class="fragment"><div class="line">  <span class="keyword">typedef</span> PolygonalCalculus&lt;SH3::RealPoint,SH3::RealVector&gt; PolyDEC;</div>
 <div class="line">  <span class="keyword">typedef</span> DirichletConditions&lt; EigenLinearAlgebraBackend &gt;  DC;</div>
 <div class="line">  PolyDEC <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>(<a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>);</div>
-<div class="line">  <a class="code" href="testHeatLaplace_8cpp.html#aa533d3938cb142911cd0a183dbbe7b28">PolyDEC::SparseMatrix</a> L = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.globalLaplaceBeltrami();</div>
+<div class="line">  <a class="code" href="testHeatLaplace_8cpp.html#aa533d3938cb142911cd0a183dbbe7b28">PolyDEC::SparseMatrix</a> <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a> = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.globalLaplaceBeltrami();</div>
 <div class="line">  PolyDEC::Form g = <a class="code" href="dgtalCalculus-geodesic_8cpp.html#a4e9d205fb8308b3d07478e48bf63308c">calculus</a>.form0();</div>
 <div class="line">  DC::IntegerVector b = DC::IntegerVector::Zero( g.rows() );</div>
 <div class="line">  </div>
@@ -409,6 +409,7 @@ Example: Solving a Laplace problem</h1>
 <div class="line">  PolyDEC::Form g_dirichlet = DC::dirichletVector( L, g, b, g );</div>
 <div class="line">  PolyDEC::Form x_dirichlet = solver.solve( g_dirichlet );</div>
 <div class="line">  PolyDEC::Form u = DC::dirichletSolution( x_dirichlet, b, g );</div>
+<div class="ttc" id="anamespaceDGtal_html_abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587"><div class="ttname"><a href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">DGtal::ProbingMode::L</a></div><div class="ttdeci">@ L</div></div>
 <div class="ttc" id="astructDGtal_1_1SurfaceMesh_html_ac8fba76a794fd9912af755f620606cf0"><div class="ttname"><a href="structDGtal_1_1SurfaceMesh.html#ac8fba76a794fd9912af755f620606cf0">DGtal::SurfaceMesh::Vertex</a></div><div class="ttdeci">Index Vertex</div><div class="ttdef"><b>Definition:</b> <a href="SurfaceMesh_8h_source.html#l00108">SurfaceMesh.h:108</a></div></div>
 <div class="ttc" id="atestHeatLaplace_8cpp_html_aa533d3938cb142911cd0a183dbbe7b28"><div class="ttname"><a href="testHeatLaplace_8cpp.html#aa533d3938cb142911cd0a183dbbe7b28">SparseMatrix</a></div><div class="ttdeci">EigenLinearAlgebraBackend::SparseMatrix SparseMatrix</div><div class="ttdef"><b>Definition:</b> <a href="testHeatLaplace_8cpp_source.html#l00050">testHeatLaplace.cpp:50</a></div></div>
 </div><!-- fragment --><p> Leading to the following results (see <a class="el" href="dgtalCalculus-poisson_8cpp.html">dgtalCalculus-poisson.cpp</a>):</p>
@@ -483,7 +484,7 @@ Cache mechanisms and high-performance computing</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageDEC.html">DEC package</a></li>
-    <li class="footer">Generated on Thu Oct 3 2024 09:14:46 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 9 2024 10:49:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

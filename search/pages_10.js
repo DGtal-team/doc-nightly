@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['parameter_20passing_2c_20cloning_20and_20referencing_17398',['Parameter passing, cloning and referencing',['../moduleCloneAndReference.html',1,'packageBase']]],
-  ['patterns_2c_20digital_20straight_20lines_20and_20subsegments_17399',['Patterns, digital straight lines and subsegments',['../moduleDigitalStraightness.html',1,'packageArithmetic']]],
-  ['patterntriangulation_17400',['patternTriangulation',['http://dgtal.org/doc/tools/nightly/patternTriangulation.html',1,'']]],
-  ['piecewise_2dsmooth_20approximation_20using_20a_20discrete_20calculus_20model_20of_20ambrosio_2dtortorelli_20functional_17401',['Piecewise-smooth approximation using a discrete calculus model of Ambrosio-Tortorelli functional',['../moduleGenericAT.html',1,'packageDEC']]],
-  ['plane_20recognition_20and_20plane_20width_20computation_17402',['Plane recognition and plane width computation',['../modulePlaneRecognition.html',1,'packageGeometry']]],
-  ['plane_2dprobing_20based_20normal_20estimators_17403',['Plane-probing based normal estimators',['../modulePlaneProbing.html',1,'packageGeometry']]],
-  ['poisson_20problem_17404',['Poisson problem',['../moduleDECPoisson.html',1,'packageDEC']]],
-  ['preliminaries_17405',['Preliminaries',['../packageIntroduction.html',1,'index']]],
-  ['propagation_17406',['Propagation',['../moduleDECPropagation.html',1,'packageDEC']]]
+  ['parameter_20passing_2c_20cloning_20and_20referencing_17445',['Parameter passing, cloning and referencing',['../moduleCloneAndReference.html',1,'packageBase']]],
+  ['patterns_2c_20digital_20straight_20lines_20and_20subsegments_17446',['Patterns, digital straight lines and subsegments',['../moduleDigitalStraightness.html',1,'packageArithmetic']]],
+  ['patterntriangulation_17447',['patternTriangulation',['http://dgtal.org/doc/tools/nightly/patternTriangulation.html',1,'']]],
+  ['piecewise_2dsmooth_20approximation_20using_20a_20discrete_20calculus_20model_20of_20ambrosio_2dtortorelli_20functional_17448',['Piecewise-smooth approximation using a discrete calculus model of Ambrosio-Tortorelli functional',['../moduleGenericAT.html',1,'packageDEC']]],
+  ['plane_20recognition_20and_20plane_20width_20computation_17449',['Plane recognition and plane width computation',['../modulePlaneRecognition.html',1,'packageGeometry']]],
+  ['plane_2dprobing_20based_20normal_20estimators_17450',['Plane-probing based normal estimators',['../modulePlaneProbing.html',1,'packageGeometry']]],
+  ['poisson_20problem_17451',['Poisson problem',['../moduleDECPoisson.html',1,'packageDEC']]],
+  ['preliminaries_17452',['Preliminaries',['../packageIntroduction.html',1,'index']]],
+  ['propagation_17453',['Propagation',['../moduleDECPropagation.html',1,'packageDEC']]]
 ];

@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('testMultiMap-benchmark_8cpp_source.htm
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">class </span>DynArrayLXY {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a> ValueType;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> X;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Y;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
@@ -149,10 +149,10 @@ $(document).ready(function(){initNavTree('testMultiMap-benchmark_8cpp_source.htm
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">inline</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  DynArrayLXY( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _L, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _X, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _Y, <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a> invalid )</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    : L( _L ), X( _X ), Y( _Y )</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    : <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>( _L ), X( _X ), Y( _Y )</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    _invalid = invalid;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    _data = <span class="keyword">new</span> <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a>[ L * X * Y ];</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    _data = <span class="keyword">new</span> <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a>[ <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a> * X * Y ];</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    clear();</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">inline</span></div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('testMultiMap-benchmark_8cpp_source.htm
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">inline</span> </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">void</span> clear()</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> l = 0; l &lt; L; ++l )</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> l = 0; l &lt; <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>; ++l )</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x = 0; x &lt; X; ++x )</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y = 0; y &lt; Y; ++y )</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;          setValue( _invalid, l, x, y );</div>
@@ -211,7 +211,7 @@ $(document).ready(function(){initNavTree('testMultiMap-benchmark_8cpp_source.htm
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y )<span class="keyword"> const</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    labels.clear();</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> l = 0; l &lt; L; ++l )</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> l = 0; l &lt; <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>; ++l )</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <span class="keywordflow">if</span> ( hasLabel( l, x, y ) )</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        labels.push_back( l );</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  }</div>
@@ -219,7 +219,7 @@ $(document).ready(function(){initNavTree('testMultiMap-benchmark_8cpp_source.htm
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbLabels( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y )<span class="keyword"> const</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">  </span>{</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb = 0;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> l = 0; l &lt; L; ++l )</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> l = 0; l &lt; <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>; ++l )</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="keywordflow">if</span> ( hasLabel( l, x, y ) ) ++nb;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">return</span> nb;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  }</div>
@@ -230,7 +230,7 @@ $(document).ready(function(){initNavTree('testMultiMap-benchmark_8cpp_source.htm
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keyword">inline</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> area()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">return</span> L * X * Y * <span class="keyword">sizeof</span>( <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a> );</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a> * X * Y * <span class="keyword">sizeof</span>( <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a> );</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  }</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;};</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
@@ -241,7 +241,7 @@ $(document).ready(function(){initNavTree('testMultiMap-benchmark_8cpp_source.htm
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a> ValueType;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> X;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Y;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
@@ -251,7 +251,7 @@ $(document).ready(function(){initNavTree('testMultiMap-benchmark_8cpp_source.htm
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keyword">inline</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  DynArrayXYOfMap( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _L, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _X, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _Y )</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    : L( _L ), X( _X ), Y( _Y )</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    : <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>( _L ), X( _X ), Y( _Y )</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  {</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    _data = <span class="keyword">new</span> MyMap[ X * Y ];</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  }</div>
@@ -350,7 +350,7 @@ $(document).ready(function(){initNavTree('testMultiMap-benchmark_8cpp_source.htm
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> MyList::const_iterator <a class="code" href="greedy-plane-segmentation-ex2_8cpp.html#a6d06fad433cff067dfcbbbf16d6e2dbf">ConstIterator</a>;</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a> ValueType;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>;</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> X;</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Y;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
@@ -361,7 +361,7 @@ $(document).ready(function(){initNavTree('testMultiMap-benchmark_8cpp_source.htm
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="keyword">inline</span></div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  DynArrayXYOfList( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _L, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _X, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _Y )</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    : L( _L ), X( _X ), Y( _Y )</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    : <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>( _L ), X( _X ), Y( _Y )</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  {</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    _data = <span class="keyword">new</span> MyList[ X * Y ];</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  }</div>
@@ -507,7 +507,7 @@ $(document).ready(function(){initNavTree('testMultiMap-benchmark_8cpp_source.htm
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160; </div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160; </div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="keyword">template</span> &lt; <span class="keyword">typename</span> <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L,</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="keyword">template</span> &lt; <span class="keyword">typename</span> <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>,</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;           <span class="keyword">typename</span> TWord, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> M &gt;</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="keyword">class </span>DynArrayXYOfLabelledMap {</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="classDGtal_1_1LabelledMap.html">LabelledMap&lt; Value, L, TWord, N, M&gt;</a> MyLabelledMap;</div>
@@ -849,7 +849,7 @@ $(document).ready(function(){initNavTree('testMultiMap-benchmark_8cpp_source.htm
 <div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;  <span class="keywordtype">long</span> tclear = <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160; </div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;  std::cout &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; L &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; X &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; Y </div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;  std::cout &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; X &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; Y </div>
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;            &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; PROBA_NO_LABEL &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; PROBA_LABEL</div>
 <div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;            &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <span class="keyword">sizeof</span>(<a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a>) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; <span class="keyword">sizeof</span>(<a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a>*) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; mem </div>
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;            &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; tgen &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; tmem </div>
@@ -875,7 +875,7 @@ $(document).ready(function(){initNavTree('testMultiMap-benchmark_8cpp_source.htm
 <div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;<span class="keywordtype">int</span> <a class="code" href="testArithmeticDSS-benchmark_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>( <span class="keywordtype">int</span> <span class="comment">/*argc*/</span>, <span class="keywordtype">char</span>** <span class="comment">/*argv*/</span> )</div>
 <div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;{</div>
 <div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">double</span> <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a566a00621638570a4186414035153a2e">Value</a>;</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L = 16;</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a> = 16;</div>
 <div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;  <a class="code" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code" href="classDGtal_1_1Trace.html#ad054990834d2763627166540087a2980">info</a>()&lt;&lt; <span class="stringliteral">&quot;Test several multi-map structures and compute some statistics.&quot;</span> &lt;&lt;std::endl &lt;&lt; <span class="stringliteral">&quot;With parameter: &quot;</span>&lt;&lt;std::endl</div>
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;\t tested image size: 500  500&quot;</span>&lt;&lt;std::endl</div>
 <div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;              &lt;&lt;<span class="stringliteral">&quot;Probability that there is no data at all at an image position (Bernouilli distribution): 0.5&quot;</span></div>
@@ -959,6 +959,7 @@ $(document).ready(function(){initNavTree('testMultiMap-benchmark_8cpp_source.htm
 <div class="ttc" id="anamespaceDGtal_html"><div class="ttname"><a href="namespaceDGtal.html">DGtal</a></div><div class="ttdoc">DGtal is the top-level namespace which contains all DGtal functions and types.</div></div>
 <div class="ttc" id="anamespaceDGtal_html_a3f01c0f785c605d021be8e328180f502"><div class="ttname"><a href="namespaceDGtal.html#a3f01c0f785c605d021be8e328180f502">DGtal::uint8_t</a></div><div class="ttdeci">boost::uint8_t uint8_t</div><div class="ttdoc">unsigned 8-bit integer.</div><div class="ttdef"><b>Definition:</b> <a href="BasicTypes_8h_source.html#l00059">BasicTypes.h:59</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html_a8fc7012708b0416880a5c8b12dfdf9dd"><div class="ttname"><a href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">DGtal::trace</a></div><div class="ttdeci">Trace trace</div><div class="ttdef"><b>Definition:</b> <a href="Common_8h_source.html#l00153">Common.h:153</a></div></div>
+<div class="ttc" id="anamespaceDGtal_html_abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587"><div class="ttname"><a href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">DGtal::ProbingMode::L</a></div><div class="ttdeci">@ L</div></div>
 <div class="ttc" id="atestArithmeticDSS-benchmark_8cpp_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="testArithmeticDSS-benchmark_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> <a href="testArithmeticDSS-benchmark_8cpp_source.html#l00147">testArithmeticDSS-benchmark.cpp:147</a></div></div>
 <div class="ttc" id="atestIndexedListWithBlocks_8cpp_html_a29ab22910bdfd3cc87f7f2d243ba0165"><div class="ttname"><a href="testIndexedListWithBlocks_8cpp.html#a29ab22910bdfd3cc87f7f2d243ba0165">erase</a></div><div class="ttdeci">void erase(VContainer1 &amp;c1, LContainer2 &amp;c2, unsigned int idx)</div><div class="ttdef"><b>Definition:</b> <a href="testIndexedListWithBlocks_8cpp_source.html#l00073">testIndexedListWithBlocks.cpp:73</a></div></div>
 <div class="ttc" id="atestLabelledMap-benchmark_8cpp_html_a06952c743e46cd29f38a520908661253"><div class="ttname"><a href="testLabelledMap-benchmark_8cpp.html#a06952c743e46cd29f38a520908661253">generateData</a></div><div class="ttdeci">unsigned int generateData(MapLXY &amp;m, double proba_no_label, double proba_label)</div><div class="ttdef"><b>Definition:</b> <a href="testLabelledMap-benchmark_8cpp_source.html#l00522">testLabelledMap-benchmark.cpp:522</a></div></div>
@@ -974,7 +975,7 @@ $(document).ready(function(){initNavTree('testMultiMap-benchmark_8cpp_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_a49f9b051925a4cbbe82ac92a0123656.html">base</a></li><li class="navelem"><b>testMultiMap-benchmark.cpp</b></li>
-    <li class="footer">Generated on Thu Oct 3 2024 09:14:40 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 9 2024 10:49:15 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

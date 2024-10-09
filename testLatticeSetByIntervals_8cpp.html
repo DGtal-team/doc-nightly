@@ -509,17 +509,17 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  WHEN( <span class="stringliteral">&quot;Inserting many points&quot;</span> ) {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::set&lt; Point &gt; S;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    LatticeSet        L;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    LatticeSet        <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb = 10000;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; nb; i++ )</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> p( rand() % 20, rand() % 20, rand() % 20 );</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        S.insert( p );</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        L.insert( p );</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>.insert( p );</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">auto</span> mem_L = L.memory_usage();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">auto</span> mem_S = ( L.size()  * ( <span class="keyword">sizeof</span>( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> ) + <span class="keyword">sizeof</span>( <span class="keywordtype">void</span>* ) ) );</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">auto</span> vec_L = L.toPointRange();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">auto</span> mem_L = <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>.memory_usage();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">auto</span> mem_S = ( <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>.size()  * ( <span class="keyword">sizeof</span>( <a class="code" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a> ) + <span class="keyword">sizeof</span>( <span class="keywordtype">void</span>* ) ) );</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">auto</span> vec_L = <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>.toPointRange();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::sort( vec_L.begin(), vec_L.end() );</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::vector&lt; Point &gt; vec_S( S.begin(), S.end() );</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; vec_L.size(); i++ )</div>
@@ -529,8 +529,8 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      }</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    THEN( <span class="stringliteral">&quot;The lattice set contains the same points as std::set&lt; Point &gt;&quot;</span> ) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( S.size() == L.size() );</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( L.size() == vec_L.size() );</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( S.size() == <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>.size() );</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( <a class="code" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">L</a>.size() == vec_L.size() );</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <a class="code" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE</a>( std::equal( vec_L.begin(), vec_L.end(), vec_S.begin() ) );</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    THEN( <span class="stringliteral">&quot;The lattice set is less costly to store than std::set&lt; Point &gt;&quot;</span> ) {</div>
@@ -549,8 +549,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="ttc" id="anamespaceDGtal_html_abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587"><div class="ttname"><a href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">DGtal::ProbingMode::L</a></div><div class="ttdeci">@ L</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587">DGtal::L</a>, and <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE()</a>.</p>
 
 </div>
 </div>
@@ -560,7 +561,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_2b7a4b5856a4d2068800cbeeeef5e1d8.html">kernel</a></li><li class="navelem"><a class="el" href="testLatticeSetByIntervals_8cpp.html">testLatticeSetByIntervals.cpp</a></li>
-    <li class="footer">Generated on Thu Oct 3 2024 09:14:45 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 9 2024 10:49:20 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

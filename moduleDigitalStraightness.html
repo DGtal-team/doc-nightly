@@ -112,12 +112,12 @@ $(document).ready(function(){initNavTree('moduleDigitalStraightness.html',''); i
 </div>
 <div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: </dt><dd>Jacques-Olivier Lachaud</dd></dl>
 <p>Part of the <a class="el" href="packageArithmetic.html">Arithmetic package</a>.</p>
-<p>This part of the manual describes digital straightness from a combinatoric and arithmetic point of view. It tells you how to create patterns, digital straight lines in the first quadrant, and how to compute subsegments in sublinear time (algorithms SmartDSS [Said, Lachaud, Feschet 2009 : <a class="el" href="citelist.html#CITEREF_Said_2009_dgci">[109]</a> ] and ReversedSmartDSS [Said, Lachaud 2011 : <a class="el" href="citelist.html#CITEREF_Said_2011_dgci">[108]</a>]). Full proofs and details on these two algorithms are given in [Lachaud, Said 2013 : <a class="el" href="citelist.html#CITEREF_Lachaud_2013-dam-ap">[71]</a> ].</p>
+<p>This part of the manual describes digital straightness from a combinatoric and arithmetic point of view. It tells you how to create patterns, digital straight lines in the first quadrant, and how to compute subsegments in sublinear time (algorithms SmartDSS [Said, Lachaud, Feschet 2009 : <a class="el" href="citelist.html#CITEREF_Said_2009_dgci">[110]</a> ] and ReversedSmartDSS [Said, Lachaud 2011 : <a class="el" href="citelist.html#CITEREF_Said_2011_dgci">[109]</a>]). Full proofs and details on these two algorithms are given in [Lachaud, Said 2013 : <a class="el" href="citelist.html#CITEREF_Lachaud_2013-dam-ap">[71]</a> ].</p>
 <h1><a class="anchor" id="dgtal_digstraighness_sec1"></a>
 Standard digital straight lines and patterns</h1>
 <p>A <b>standard</b> <b>digital</b> <b>straight</b> <b>line</b> in 2D (DSL) is the following subset of \( Z^2 \):</p>
 <p>\( \{(x,y) \in Z^2, \mu \le a x - by &lt; \mu + |a| +|b|-1 \} \)</p>
-<p>where the integers \( (a,b,\mu) \), \( gcd(a,b)=1 \), are called the <b>characteristics</b> of the straight line [ Reveilles <a class="el" href="citelist.html#CITEREF_Reveilles_1991_thesis">[101]</a> , Debled and Reveilles <a class="el" href="citelist.html#CITEREF_Debled_1995_ijprai">[46]</a> ].</p>
+<p>where the integers \( (a,b,\mu) \), \( gcd(a,b)=1 \), are called the <b>characteristics</b> of the straight line [ Reveilles <a class="el" href="citelist.html#CITEREF_Reveilles_1991_thesis">[102]</a> , Debled and Reveilles <a class="el" href="citelist.html#CITEREF_Debled_1995_ijprai">[46]</a> ].</p>
 <p>It is well known that this set of digital points is a simple 4-connected curve. Here is a representation of the straight line (3,5,-5).</p>
 <div class="image">
 <img src="dsl-standard-s.png" alt=""/>
@@ -210,7 +210,7 @@ Getting points on a DSL</h2>
 </ul>
 <h2><a class="anchor" id="dgtal_digstraighness_sec3_5"></a>
 Fast computation of subsegments</h2>
-<p>Given two points <em>A</em> and <em>B</em> on the DSL, you can determine the exact characteristics of the subsegment [A,B] in sublinear time with two algorithms: SmartDSS [Said, Lachaud, Feschet 2009 : <a class="el" href="citelist.html#CITEREF_Said_2009_dgci">[109]</a> ] and ReversedSmartDSS [Said, Lachaud 2011 : <a class="el" href="citelist.html#CITEREF_Said_2011_dgci">[108]</a>]. In fact, these algorithms return the DSL which covers [A,B] and whose characteristics are minimal.</p>
+<p>Given two points <em>A</em> and <em>B</em> on the DSL, you can determine the exact characteristics of the subsegment [A,B] in sublinear time with two algorithms: SmartDSS [Said, Lachaud, Feschet 2009 : <a class="el" href="citelist.html#CITEREF_Said_2009_dgci">[110]</a> ] and ReversedSmartDSS [Said, Lachaud 2011 : <a class="el" href="citelist.html#CITEREF_Said_2011_dgci">[109]</a>]. In fact, these algorithms return the DSL which covers [A,B] and whose characteristics are minimal.</p>
 <ul>
 <li>method <a class="el" href="classDGtal_1_1StandardDSLQ0.html#a2ffe39c5656786768cebc01dfc25676a">StandardDSLQ0::smartDSS</a>, given this DSL, <em>A</em> and <em>B</em>, returns this minimal DSL in time proportional to the sum of the quotients of the output DSL.</li>
 <li>method <a class="el" href="classDGtal_1_1StandardDSLQ0.html#a2548ce4c9fcb01f5537d21868c012130">StandardDSLQ0::reversedSmartDSS</a>, given this DSL, <em>A</em> and <em>B</em>, returns this minimal DSL in time proportional to the difference of depth between the input and the output slope.</li>
@@ -229,7 +229,7 @@ Fast computation of subsegments</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageArithmetic.html">Arithmetic package</a></li>
-    <li class="footer">Generated on Thu Oct 3 2024 09:14:45 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 9 2024 10:49:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

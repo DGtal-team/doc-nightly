@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('moduleFMM.html',''); initResizable(); 
 </div>
 <div class="textblock"><dl class="section user"><dt>Author(s) of this documentation: </dt><dd>Tristan Roussillon</dd></dl>
 <p>Part of the <a class="el" href="packageGeometry.html">Geometry package</a>.</p>
-<p>The Fast Marching Method (<a class="el" href="classDGtal_1_1FMM.html" title="Aim: Fast Marching Method (FMM) for nd distance transforms.">FMM</a> for short) is a numerical technique for tracking the evolution of an expanding front within the level-set framework (see <a class="el" href="citelist.html#CITEREF_Sethian1998">[111]</a> for a review). <br  />
+<p>The Fast Marching Method (<a class="el" href="classDGtal_1_1FMM.html" title="Aim: Fast Marching Method (FMM) for nd distance transforms.">FMM</a> for short) is a numerical technique for tracking the evolution of an expanding front within the level-set framework (see <a class="el" href="citelist.html#CITEREF_Sethian1998">[112]</a> for a review). <br  />
  If the front evolves in the normal direction at unit speed, the arrival time at a point \( x \) corresponds to the distance of \( x \) to the initial front. <br  />
 </p>
 <div class="image">
@@ -154,7 +154,7 @@ Data structures</h2>
 <li>find a given point, update its tentative value if found,</li>
 <li>get the point of smallest tentative value,</li>
 </ul>
-<p class="startli">This data structure is usually a min-heap data structure with back pointers from the lattice to the min-heap (see <a class="el" href="citelist.html#CITEREF_Sethian1998">[111]</a>). The memory cost of such solution is however high. That is why, we implemented the candidate point set as a STL set of pairs &lt;point, tentative value&gt;. Instead of updating the tentative values, we insert a new pair &lt;point, tentative value&gt;. This solution is less memory consumming and experimentally (nearly) as efficient as the former one. <br  />
+<p class="startli">This data structure is usually a min-heap data structure with back pointers from the lattice to the min-heap (see <a class="el" href="citelist.html#CITEREF_Sethian1998">[112]</a>). The memory cost of such solution is however high. That is why, we implemented the candidate point set as a STL set of pairs &lt;point, tentative value&gt;. Instead of updating the tentative values, we insert a new pair &lt;point, tentative value&gt;. This solution is less memory consumming and experimentally (nearly) as efficient as the former one. <br  />
 </p>
 </li>
 </ul>
@@ -176,7 +176,7 @@ Computing distances</h2>
 <p>\( \sum_{i = 1 \ldots n } ( d - d_i )^2 = 1 \)</p>
 <p>Obviously, if the distance value \( d&#39; \) of only one 1-neighbor is available, then \( d = d&#39; \pm 1 \) ( \( + \) for positive distance values, \( - \) for negative ones). <br  />
  If the distance values of two (or more than two in nD) 1-neighbors are available, the previous quadratic equation should have two solutions and we take the larger one for \( d \). <br  />
- The numerical approach implemented in L2FirstOrderLocalDistance::operator() to compute \( d \), even with poor initial data or with numerical errors, is detailed in <a class="el" href="citelist.html#CITEREF_OsherFedkiw2003">[95]</a> [p. 72-73]. Note that if \( h \) is the lattice spacing, the approximation error tends to zero in \( O(h) \) (first-order convergence).</p>
+ The numerical approach implemented in L2FirstOrderLocalDistance::operator() to compute \( d \), even with poor initial data or with numerical errors, is detailed in <a class="el" href="citelist.html#CITEREF_OsherFedkiw2003">[96]</a> [p. 72-73]. Note that if \( h \) is the lattice spacing, the approximation error tends to zero in \( O(h) \) (first-order convergence).</p>
 <dl class="section note"><dt>Note</dt><dd>This class deals with positive or negative distance values (0 is arbitrarily considered as a positive value, ie. starting with a seed of null value, you must get positive values). However, the behavior is undefined when there are both positive and negative distance values in the neighborhood of \( x \). See <a class="el" href="moduleFMM.html#subsectmoduleFMM31">Signed distance field to an interface <br  />
 </a> for an example of the use of <em>signed</em> distance values.</dd></dl>
 <h2><a class="anchor" id="sectmoduleFMM12"></a>
@@ -246,7 +246,7 @@ Stopping criteria</h2>
 <div class="ttc" id="atestClone2_8cpp_html_a15e9592ccc512dc691b46185e6814758"><div class="ttname"><a href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a></div><div class="ttdeci">MyPointD Point</div><div class="ttdef"><b>Definition:</b> <a href="testClone2_8cpp_source.html#l00383">testClone2.cpp:383</a></div></div>
 </div><!-- fragment --><h1><a class="anchor" id="sectmoduleFMM3"></a>
 Applications</h1>
-<p>As reported in <a class="el" href="citelist.html#CITEREF_Sethian1998">[111]</a>, the Fast Marching Method has numerous applications.</p>
+<p>As reported in <a class="el" href="citelist.html#CITEREF_Sethian1998">[112]</a>, the Fast Marching Method has numerous applications.</p>
 <h2><a class="anchor" id="subsectmoduleFMM31"></a>
 Signed distance field to an interface  &lt;br&gt;</h2>
 <p>A signed distance field can be used to</p>
@@ -295,7 +295,7 @@ Signed distance field computed in a narrow band around a digital surface. </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Thu Oct 3 2024 09:14:46 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Oct 9 2024 10:49:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

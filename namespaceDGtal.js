@@ -386,6 +386,7 @@ var namespaceDGtal =
     [ "NormalVectorEstimatorLinearCellEmbedder", "classDGtal_1_1NormalVectorEstimatorLinearCellEmbedder.html", "classDGtal_1_1NormalVectorEstimatorLinearCellEmbedder" ],
     [ "PlaneProbingDigitalSurfaceLocalEstimator", "classDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator.html", "classDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator" ],
     [ "PlaneProbingHNeighborhood", "classDGtal_1_1PlaneProbingHNeighborhood.html", "classDGtal_1_1PlaneProbingHNeighborhood" ],
+    [ "PlaneProbingLNeighborhood", "classDGtal_1_1PlaneProbingLNeighborhood.html", "classDGtal_1_1PlaneProbingLNeighborhood" ],
     [ "PlaneProbingNeighborhood", "classDGtal_1_1PlaneProbingNeighborhood.html", "classDGtal_1_1PlaneProbingNeighborhood" ],
     [ "PlaneProbingParallelepipedEstimator", "classDGtal_1_1PlaneProbingParallelepipedEstimator.html", "classDGtal_1_1PlaneProbingParallelepipedEstimator" ],
     [ "PlaneProbingR1Neighborhood", "classDGtal_1_1PlaneProbingR1Neighborhood.html", "classDGtal_1_1PlaneProbingR1Neighborhood" ],
@@ -850,7 +851,8 @@ var namespaceDGtal =
     [ "ProbingMode", "namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49", [
       [ "H", "namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ac1d9f50f86825a1a2302ec2449c17196", null ],
       [ "R", "namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ae1e1d3d40573127e9ee0480caf1283d6", null ],
-      [ "R1", "namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49acda522d4353b166cc2dee84673307b4e", null ]
+      [ "R1", "namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49acda522d4353b166cc2dee84673307b4e", null ],
+      [ "L", "namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ad20caec3b48a1eef164cb4ca81ba2587", null ]
     ] ],
     [ "SignEnum", "namespaceDGtal.html#a679e16b34aad98ff340decf89d1c86db", [
       [ "SIGNED", "namespaceDGtal.html#a679e16b34aad98ff340decf89d1c86dbae3e0717ad611faed845dd64931b1f99c", null ],
@@ -1189,6 +1191,7 @@ var namespaceDGtal =
     [ "operator<<", "namespaceDGtal.html#a343ba2ae1ef6d2cda16db74f36ca777e", null ],
     [ "operator<<", "namespaceDGtal.html#a2d3182e16aadf3b7972b7ab6a0a4cd1c", null ],
     [ "operator<<", "namespaceDGtal.html#a5c63d0d28a2a1e86e6803f77fcff386c", null ],
+    [ "operator<<", "namespaceDGtal.html#a488ed6a2a2bb7a53249bc9c0907cb8d6", null ],
     [ "operator<<", "namespaceDGtal.html#a7f5e1905d819be56862ed900b6ca7f2e", null ],
     [ "operator<<", "namespaceDGtal.html#acab44cd427f90bd85108e3a7ca0e37ca", null ],
     [ "operator<<", "namespaceDGtal.html#a13a71d7c536fd74cbcd231c521d1d412", null ],

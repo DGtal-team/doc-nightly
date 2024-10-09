@@ -330,6 +330,7 @@ var hierarchy =
     [ "DGtal::Clock", "classDGtal_1_1Clock.html", null ],
     [ "DGtal::Clone< T >", "classDGtal_1_1Clone.html", null ],
     [ "DGtal::ClosedIntegerHalfPlane< TSpace >", "structDGtal_1_1ClosedIntegerHalfPlane.html", null ],
+    [ "DGtal::PlaneProbingLNeighborhood< TPredicate >::ClosestGridPoint", "structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html", null ],
     [ "DGtal::concepts::CNormalVectorEstimator< T >", "structDGtal_1_1concepts_1_1CNormalVectorEstimator.html", null ],
     [ "DGtal::COBAGenericNaivePlaneComputer< TSpace, TInternalInteger >", "classDGtal_1_1COBAGenericNaivePlaneComputer.html", null ],
     [ "DGtal::COBAGenericStandardPlaneComputer< TSpace, TInternalInteger >", "classDGtal_1_1COBAGenericStandardPlaneComputer.html", null ],
@@ -894,6 +895,10 @@ var hierarchy =
     [ "DGtal::GreedySegmentation< TSegmentComputer >", "classDGtal_1_1GreedySegmentation.html", null ],
     [ "DGtal::functors::GreenChannel", "structDGtal_1_1functors_1_1GreenChannel.html", null ],
     [ "DGtal::GridCurve< TKSpace >", "classDGtal_1_1GridCurve.html", null ],
+    [ "DGtal::detail::GridPoint< Integer, Index >", "classDGtal_1_1detail_1_1GridPoint.html", null ],
+    [ "DGtal::detail::GridPoint< int, std::size_t >", "classDGtal_1_1detail_1_1GridPoint.html", null ],
+    [ "DGtal::detail::GridPoint< Integer, Index >", "classDGtal_1_1detail_1_1GridPoint.html", null ],
+    [ "DGtal::detail::GridPointOnProbingRay< Integer, Index >", "classDGtal_1_1detail_1_1GridPointOnProbingRay.html", null ],
     [ "DGtal::H5DSpecializations< TImageFactory, T >", "structDGtal_1_1H5DSpecializations.html", null ],
     [ "DGtal::H5DSpecializations< TImageFactory, DGtal::int32_t >", "structDGtal_1_1H5DSpecializations_3_01TImageFactory_00_01DGtal_1_1int32__t_01_4.html", null ],
     [ "DGtal::H5DSpecializations< TImageFactory, DGtal::int64_t >", "structDGtal_1_1H5DSpecializations_3_01TImageFactory_00_01DGtal_1_1int64__t_01_4.html", null ],
@@ -1305,6 +1310,7 @@ var hierarchy =
     [ "DGtal::PlaneProbingNeighborhood< TPredicate >", "classDGtal_1_1PlaneProbingNeighborhood.html", [
       [ "DGtal::PlaneProbingHNeighborhood< TPredicate >", "classDGtal_1_1PlaneProbingHNeighborhood.html", null ],
       [ "DGtal::PlaneProbingRNeighborhood< TPredicate >", "classDGtal_1_1PlaneProbingRNeighborhood.html", [
+        [ "DGtal::PlaneProbingLNeighborhood< TPredicate >", "classDGtal_1_1PlaneProbingLNeighborhood.html", null ],
         [ "DGtal::PlaneProbingR1Neighborhood< TPredicate >", "classDGtal_1_1PlaneProbingR1Neighborhood.html", null ]
       ] ]
     ] ],
@@ -1323,7 +1329,7 @@ var hierarchy =
     [ "DGtal::functors::PointFunctorHolder< TPoint, TValue, TFunctor >", "classDGtal_1_1functors_1_1PointFunctorHolder.html", null ],
     [ "DGtal::functors::PointFunctorPredicate< TPointFunctor, TPredicate >", "structDGtal_1_1functors_1_1PointFunctorPredicate.html", null ],
     [ "DGtal::PointListReader< TPoint >", "structDGtal_1_1PointListReader.html", null ],
-    [ "DGtal::detail::PointOnProbingRay< Integer >", "classDGtal_1_1detail_1_1PointOnProbingRay.html", null ],
+    [ "DGtal::detail::PointOnProbingRay< Integer, Index >", "classDGtal_1_1detail_1_1PointOnProbingRay.html", null ],
     [ "DGtal::detail::PointValueCompare< T >", "classDGtal_1_1detail_1_1PointValueCompare.html", null ],
     [ "DGtal::PointVector< dim, TEuclideanRing, TContainer >", "classDGtal_1_1PointVector.html", null ],
     [ "DGtal::PointVector< 2, double >", "classDGtal_1_1PointVector.html", null ],
