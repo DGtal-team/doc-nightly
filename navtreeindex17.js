@@ -1,7 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#ae8f9b497ac6666fa4b4e32d25b890c14":[6,0,2,101,11],
-"classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#aef9497acf4396c8ea1d302e0c5d96588":[6,0,2,101,0],
 "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#af7f4a29e1834105772898668ed1ae118":[6,0,2,101,14],
 "classDGtal_1_1FunctorOnCells.html":[6,0,2,277],
 "classDGtal_1_1FunctorOnCells.html#a0ec442b4cb4f948c405aba6383e54171":[6,0,2,277,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX17 =
 "classDGtal_1_1GridCurve.html#ad3e57b3dba44c748ecc89917b27d57a8":[6,0,2,216,27],
 "classDGtal_1_1GridCurve.html#ad762b7ea1c376272d343e6708fc1953f":[6,0,2,216,0],
 "classDGtal_1_1GridCurve.html#ad8a48ee566bff4e7810a81dd8f80eea5":[6,0,2,216,4],
-"classDGtal_1_1GridCurve.html#ad99a89c27904a535a61eaae45f9d56a4":[6,0,2,216,43]
+"classDGtal_1_1GridCurve.html#ad99a89c27904a535a61eaae45f9d56a4":[6,0,2,216,43],
+"classDGtal_1_1GridCurve.html#ada8e7a0780d968ce0287db2224eddcce":[6,0,2,216,23],
+"classDGtal_1_1GridCurve.html#adb136498c2a767a53d6b830190612e4a":[6,0,2,216,10]
 };

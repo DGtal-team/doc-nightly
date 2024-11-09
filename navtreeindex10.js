@@ -1,7 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"classDGtal_1_1DigitalSetBoundary.html#a083d897930eb7400b3ac4755d692496e":[6,0,2,602,7],
-"classDGtal_1_1DigitalSetBoundary.html#a17d431b0c42bdf35033a75eeee7e0d59":[6,0,2,602,8],
 "classDGtal_1_1DigitalSetBoundary.html#a2189e08ccd5bd09818ece3c686fa9cd9":[6,0,2,602,26],
 "classDGtal_1_1DigitalSetBoundary.html#a218e143ad9029c7022fda5bf561cbbd4":[6,0,2,602,34],
 "classDGtal_1_1DigitalSetBoundary.html#a385fa7102983841e5d86232916791bda":[6,0,2,602,11],
@@ -249,5 +247,7 @@ var NAVTREEINDEX10 =
 "classDGtal_1_1DigitalSetFromMap.html#a88e3c94411f6e3f3f87d3c08fb09a2cc":[6,0,2,516,39],
 "classDGtal_1_1DigitalSetFromMap.html#a8e3680702b2cbb1366b7aa9b2bd78063":[6,0,2,516,43],
 "classDGtal_1_1DigitalSetFromMap.html#a8e4b675eb4703b5680a7f2cdd290a512":[6,0,2,516,9],
-"classDGtal_1_1DigitalSetFromMap.html#a8ed34593908fb08a70ba0933f5841311":[6,0,2,516,8]
+"classDGtal_1_1DigitalSetFromMap.html#a8ed34593908fb08a70ba0933f5841311":[6,0,2,516,8],
+"classDGtal_1_1DigitalSetFromMap.html#a8f863081ca8d91b62eca6e0654ba7263":[6,0,2,516,41],
+"classDGtal_1_1DigitalSetFromMap.html#a92c064ac6972342141f6069047e8f5ca":[6,0,2,516,16]
 };

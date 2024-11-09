@@ -1,7 +1,5 @@
 var NAVTREEINDEX64 =
 {
-"structDGtal_1_1ChordGenericStandardPlaneComputer_1_1Transform.html#a347f21ddd368111031159ff281aec46f":[6,0,2,247,0,5],
-"structDGtal_1_1ChordGenericStandardPlaneComputer_1_1Transform.html#a40b6a87dfdde29e917707e038cd09b56":[6,0,2,247,0,11],
 "structDGtal_1_1ChordGenericStandardPlaneComputer_1_1Transform.html#a4c93d86778e569213fd67cb51c68c01b":[6,0,2,247,0,4],
 "structDGtal_1_1ChordGenericStandardPlaneComputer_1_1Transform.html#a87ece6850d85ecba675a857b8665dd10":[6,0,2,247,0,1],
 "structDGtal_1_1ChordGenericStandardPlaneComputer_1_1Transform.html#a9bf33cca33e7d4191a37433bd326ee11":[6,0,2,247,0,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX64 =
 "structDGtal_1_1ConvexHullRationalKernel.html#a80f5cfa2b0ae3c1372375d93663b44ad":[6,0,2,295,10],
 "structDGtal_1_1ConvexHullRationalKernel.html#a92d8fc133c3788994d96893c31800395":[6,0,2,295,11],
 "structDGtal_1_1ConvexHullRationalKernel.html#aa02416bcfc04a61206946eae1ea01a78":[6,0,2,295,25],
-"structDGtal_1_1ConvexHullRationalKernel.html#aa35ddda10cc2e98dc809e4b4c7628b84":[6,0,2,295,27]
+"structDGtal_1_1ConvexHullRationalKernel.html#aa35ddda10cc2e98dc809e4b4c7628b84":[6,0,2,295,27],
+"structDGtal_1_1ConvexHullRationalKernel.html#ac9fa4fef208e720da11b1b818ef399dc":[6,0,2,295,13],
+"structDGtal_1_1ConvexHullRationalKernel.html#ad77d49f3508fe17a79903e4f9b8dbd4c":[6,0,2,295,0]
 };

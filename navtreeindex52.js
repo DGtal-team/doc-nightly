@@ -1,7 +1,5 @@
 var NAVTREEINDEX52 =
 {
-"classDGtal_1_1functors_1_1IntervalThresholder.html#a0302777a9ea14cc11eceee69c42b28c6":[6,0,2,5,35,1],
-"classDGtal_1_1functors_1_1IntervalThresholder.html#a0c8501b5f6c0e82e79df71bbb6d0f0c4":[6,0,2,5,35,6],
 "classDGtal_1_1functors_1_1IntervalThresholder.html#a12f556e0652dabd6f7660d1c2373d1c4":[6,0,2,5,35,3],
 "classDGtal_1_1functors_1_1IntervalThresholder.html#a38b1d1471880ff49199d86293bd6c412":[6,0,2,5,35,9],
 "classDGtal_1_1functors_1_1IntervalThresholder.html#a3d118141793768d766196ac82d852259":[6,0,2,5,35,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX52 =
 "classDGtal_1_1functors_1_1SliceRotator2D.html#aaf3de96f7a6f793d855283fde34fbc56":[6,0,2,5,93,2],
 "classDGtal_1_1functors_1_1SliceRotator2D.html#afd9d03e62cde1713dd58781e77300bdc":[6,0,2,5,93,12],
 "classDGtal_1_1functors_1_1SphereFittingEstimator.html":[6,0,2,5,57],
-"classDGtal_1_1functors_1_1SphereFittingEstimator.html#a08338499cf722716ebfd9db0141e14ac":[6,0,2,5,57,19]
+"classDGtal_1_1functors_1_1SphereFittingEstimator.html#a08338499cf722716ebfd9db0141e14ac":[6,0,2,5,57,19],
+"classDGtal_1_1functors_1_1SphereFittingEstimator.html#a162be331113f6fa399f46ea0a3e31f01":[6,0,2,5,57,16],
+"classDGtal_1_1functors_1_1SphereFittingEstimator.html#a1e491fca2c78412572119b924bb4fd04":[6,0,2,5,57,12]
 };

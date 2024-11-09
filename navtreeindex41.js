@@ -1,7 +1,5 @@
 var NAVTREEINDEX41 =
 {
-"classDGtal_1_1SimpleLinearRegression.html#acd291c34d4e69286a8ab2a437f49ba48":[6,0,2,560,28],
-"classDGtal_1_1SimpleLinearRegression.html#acf291bd44b989158dc53a7279be03068":[6,0,2,560,13],
 "classDGtal_1_1SimpleLinearRegression.html#ad71a474b033a15114e513db012532db6":[6,0,2,560,2],
 "classDGtal_1_1SimpleLinearRegression.html#ad78c7f56fde41e886d1063b1ab3d14c3":[6,0,2,560,1],
 "classDGtal_1_1SimpleLinearRegression.html#ade35d1b76666db84addd52e7df0a7f00":[6,0,2,560,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX41 =
 "classDGtal_1_1SphericalTriangle.html#a75b32e4a2da03a0d556ff5fd8f02d58d":[6,0,2,300,9],
 "classDGtal_1_1SphericalTriangle.html#a7914e9736dc4009379eae0b2a022dd19":[6,0,2,300,1],
 "classDGtal_1_1SphericalTriangle.html#a81ec0cd5cd43e42cd36bd036c3075677":[6,0,2,300,22],
-"classDGtal_1_1SphericalTriangle.html#a85f22d07972d679cd7755c7573f11190":[6,0,2,300,11]
+"classDGtal_1_1SphericalTriangle.html#a85f22d07972d679cd7755c7573f11190":[6,0,2,300,11],
+"classDGtal_1_1SphericalTriangle.html#a8d0bfecaf225b2df72ce6afd24027071":[6,0,2,300,5],
+"classDGtal_1_1SphericalTriangle.html#a9a9d2f3e03176ced62fab9922069cce6":[6,0,2,300,14]
 };

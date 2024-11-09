@@ -1,7 +1,5 @@
 var NAVTREEINDEX70 =
 {
-"structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html#a40121a8996aa9004d465beebf53ab21f":[6,0,2,499,12],
-"structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html#a4604d304d991f41bc30d699419ec710a":[6,0,2,499,3],
 "structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html#a463ab2f664630344e92bab9f93bd965a":[6,0,2,499,13],
 "structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html#a554f745fc54bb62c0d67b0af5b22bfaa":[6,0,2,499,4],
 "structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html#a5ff04fd0b2848051d0228265d17cc052":[6,0,2,499,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX70 =
 "structDGtal_1_1QuickHull.html#a93b238171d509759066b3ebc87201826":[6,0,2,291,52],
 "structDGtal_1_1QuickHull.html#a93ed84029ac62c61483631cf9139b94e":[6,0,2,291,39],
 "structDGtal_1_1QuickHull.html#a9ab2c6a4037ab3d2294211b21c105fad":[6,0,2,291,51],
-"structDGtal_1_1QuickHull.html#a9b46be3914d310d1053d8af1bcea1f98":[6,0,2,291,67]
+"structDGtal_1_1QuickHull.html#a9b46be3914d310d1053d8af1bcea1f98":[6,0,2,291,67],
+"structDGtal_1_1QuickHull.html#a9c508d864f305468358786b5ea8deff8":[6,0,2,291,60],
+"structDGtal_1_1QuickHull.html#a9d7091f51f816ab6d0f67baf33778e3d":[6,0,2,291,55]
 };

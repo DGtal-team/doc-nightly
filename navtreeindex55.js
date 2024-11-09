@@ -1,7 +1,5 @@
 var NAVTREEINDEX55 =
 {
-"graph_2graphTraversal_8cpp-example.html":[8,93],
-"graph_2volDistanceTraversal_8cpp-example.html":[8,94],
 "group__Archetypes.html":[4,1],
 "group__Concepts.html":[4,0],
 "group__Examples.html":[4,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX55 =
 "moduleDigitalConvexity.html#dgtal_dconvexity_sec6":[0,8,16,5],
 "moduleDigitalConvexityApplications.html":[0,8,17],
 "moduleDigitalConvexityApplications.html#dgtal_dconvexityapp_sec1":[0,8,17,0],
-"moduleDigitalConvexityApplications.html#dgtal_dconvexityapp_sec2":[0,8,17,1]
+"moduleDigitalConvexityApplications.html#dgtal_dconvexityapp_sec2":[0,8,17,1],
+"moduleDigitalConvexityApplications.html#dgtal_dconvexityapp_sec21":[0,8,17,1,0],
+"moduleDigitalConvexityApplications.html#dgtal_dconvexityapp_sec22":[0,8,17,1,1]
 };

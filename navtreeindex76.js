@@ -1,7 +1,5 @@
 var NAVTREEINDEX76 =
 {
-"structDGtal_1_1concepts_1_1CDigitalSet.html#adcbb84d4c1dbbe4a45a99ffc3fc0ece5":[4,0,81,10],
-"structDGtal_1_1concepts_1_1CDigitalSet.html#aecf0ef9105b069128504bc20f129d3d1":[4,0,81,18],
 "structDGtal_1_1concepts_1_1CDigitalSet.html#aee7f85e5c419c2ad25a0ab53f7c16d5d":[4,0,81,16],
 "structDGtal_1_1concepts_1_1CDigitalSet.html#af125d678097a09063aeed1b0b834754a":[4,0,81,17],
 "structDGtal_1_1concepts_1_1CDigitalSet.html#af4245c21ff20414d5644705f01df2499":[4,0,81,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX76 =
 "structDGtal_1_1concepts_1_1CLMSTDSSFilter.html#a8bf18d2d3db384a736ddd0cde0ee5d1e":[4,0,30,5],
 "structDGtal_1_1concepts_1_1CLMSTDSSFilter.html#ada0c8e4fdf799ba2ef698bb33d6818df":[4,0,30,3],
 "structDGtal_1_1concepts_1_1CLMSTDSSFilter.html#adcea4e03a89d563f982259af032c0012":[4,0,30,8],
-"structDGtal_1_1concepts_1_1CLMSTDSSFilter.html#ae10e4206e4a0c76c80abecd8fa673f07":[4,0,30,1]
+"structDGtal_1_1concepts_1_1CLMSTDSSFilter.html#ae10e4206e4a0c76c80abecd8fa673f07":[4,0,30,1],
+"structDGtal_1_1concepts_1_1CLMSTDSSFilter.html#af549a783c4c80db65b4f21f3523f8aaf":[4,0,30,4],
+"structDGtal_1_1concepts_1_1CLMSTDSSFilter.html#af945d772ecfd4af21d115a3afab2f2fe":[4,0,30,2]
 };

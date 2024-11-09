@@ -1,7 +1,5 @@
 var NAVTREEINDEX44 =
 {
-"classDGtal_1_1SymmetricConvexExpander.html#af3c302a7ee3e1442aad43eed1a6c0792":[6,0,2,637,12],
-"classDGtal_1_1SymmetricConvexExpander.html#af78dceb794abb9837c9e83463c61346d":[6,0,2,637,14],
 "classDGtal_1_1TangencyComputer.html":[6,0,2,341],
 "classDGtal_1_1TangencyComputer.html#a06a20311c94dec3a6ff0374e50ef5caf":[6,0,2,341,40],
 "classDGtal_1_1TangencyComputer.html#a1048a41184e75dfe27d0ff07763907aa":[6,0,2,341,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX44 =
 "classDGtal_1_1TiledImage_1_1TiledIterator.html#a915400de90021b52ecd21b1ff2d7d9ef":[6,0,2,383,0,8],
 "classDGtal_1_1TiledImage_1_1TiledIterator.html#a92f824958fdcd68d9645d448843057e1":[6,0,2,383,0,1],
 "classDGtal_1_1TiledImage_1_1TiledIterator.html#a9bec6c5153796f5c92f3d2863b34620a":[6,0,2,383,0,6],
-"classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f":[6,0,2,383,0,20]
+"classDGtal_1_1TiledImage_1_1TiledIterator.html#aa589eaf34f928482834929139f01a80f":[6,0,2,383,0,20],
+"classDGtal_1_1TiledImage_1_1TiledIterator.html#ab8496aef4ba34c2d7796be5ec1eb5f49":[6,0,2,383,0,19],
+"classDGtal_1_1TiledImage_1_1TiledIterator.html#ab99d03a2da939941e14e74c0a6a0febf":[6,0,2,383,0,4]
 };

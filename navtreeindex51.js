@@ -1,7 +1,5 @@
 var NAVTREEINDEX51 =
 {
-"classDGtal_1_1functors_1_1ConstImageFunctorHolder.html#a8971f29ae5ef3965d09a3ee4df5513d0":[6,0,2,5,78,18],
-"classDGtal_1_1functors_1_1ConstImageFunctorHolder.html#a8e8c9233041540ba2f0b23262baf90bb":[6,0,2,5,78,7],
 "classDGtal_1_1functors_1_1ConstImageFunctorHolder.html#a97bc09d53c18e996fd4a68c4d21a6497":[6,0,2,5,78,14],
 "classDGtal_1_1functors_1_1ConstImageFunctorHolder.html#aa030cda1ae9004b5c63b101dc08ab3fd":[6,0,2,5,78,11],
 "classDGtal_1_1functors_1_1ConstImageFunctorHolder.html#aade1dc4e28434568cbf28aa25d8acf9d":[6,0,2,5,78,16],
@@ -249,5 +247,7 @@ var NAVTREEINDEX51 =
 "classDGtal_1_1functors_1_1IntervalForegroundPredicate.html#abbe93c322727cc80d9d4abaf1facad68":[6,0,2,5,79,3],
 "classDGtal_1_1functors_1_1IntervalForegroundPredicate.html#abbff4a7382998c8d8e0f2349477f408b":[6,0,2,5,79,4],
 "classDGtal_1_1functors_1_1IntervalForegroundPredicate.html#ad6cd5f4d69444fc039d22ca2c2f4c324":[6,0,2,5,79,9],
-"classDGtal_1_1functors_1_1IntervalThresholder.html":[6,0,2,5,35]
+"classDGtal_1_1functors_1_1IntervalThresholder.html":[6,0,2,5,35],
+"classDGtal_1_1functors_1_1IntervalThresholder.html#a0302777a9ea14cc11eceee69c42b28c6":[6,0,2,5,35,1],
+"classDGtal_1_1functors_1_1IntervalThresholder.html#a0c8501b5f6c0e82e79df71bbb6d0f0c4":[6,0,2,5,35,6]
 };

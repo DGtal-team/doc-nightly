@@ -1,7 +1,5 @@
 var NAVTREEINDEX37 =
 {
-"classDGtal_1_1PowerMap.html#a14eaec125300d260ae924e60e054147b":[6,0,2,329,40],
-"classDGtal_1_1PowerMap.html#a154b8445cda9ed4ddf56e1a6a76a6ac1":[6,0,2,329,0],
 "classDGtal_1_1PowerMap.html#a1a3c48ba20075501d2f6e0aa673a8d24":[6,0,2,329,24],
 "classDGtal_1_1PowerMap.html#a1f32b4510be19cb4d947b99622fded05":[6,0,2,329,21],
 "classDGtal_1_1PowerMap.html#a257e5df4f9d27a7039d21056f3fa7e48":[6,0,2,329,13],
@@ -249,5 +247,7 @@ var NAVTREEINDEX37 =
 "classDGtal_1_1RegularPointEmbedder.html#a8edbb61f29cf4bd7d3755ee97182a50d":[6,0,2,510,20],
 "classDGtal_1_1RegularPointEmbedder.html#a97fc348bf7c2d0b436abf1a513848683":[6,0,2,510,17],
 "classDGtal_1_1RegularPointEmbedder.html#a9cb4f2a747070596bc6a23ccd3e9c69a":[6,0,2,510,0],
-"classDGtal_1_1RegularPointEmbedder.html#aa3db0476d3eaed6b798738aeac39d05d":[6,0,2,510,5]
+"classDGtal_1_1RegularPointEmbedder.html#aa3db0476d3eaed6b798738aeac39d05d":[6,0,2,510,5],
+"classDGtal_1_1RegularPointEmbedder.html#aaf7977b46a66420113b0cb5b2c6d1168":[6,0,2,510,9],
+"classDGtal_1_1RegularPointEmbedder.html#ab934665b5e13ad119e0ab1c1db6fdedf":[6,0,2,510,15]
 };

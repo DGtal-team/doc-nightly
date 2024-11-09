@@ -1,7 +1,5 @@
 var NAVTREEINDEX67 =
 {
-"structDGtal_1_1Display3D_1_1PolygonD3D.html":[6,0,2,25,5],
-"structDGtal_1_1Display3D_1_1PolygonD3D.html#a3267f730d6bcf7dda50b2d074fd5058e":[6,0,2,25,5,4],
 "structDGtal_1_1Display3D_1_1PolygonD3D.html#a832ca2d94c318c04c61c86b3dbfce8d5":[6,0,2,25,5,1],
 "structDGtal_1_1Display3D_1_1PolygonD3D.html#a95e0071c1cc5f5a5c09d88f300c4efe5":[6,0,2,25,5,0],
 "structDGtal_1_1Display3D_1_1PolygonD3D.html#ab9111c97b716f1ad59a5c1ae1404acba":[6,0,2,25,5,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX67 =
 "structDGtal_1_1HyperRectDomain_1_1ConstSubRange.html#aab8d9d024c7c325b2cf55b194a7a4e4c":[6,0,2,481,0,5],
 "structDGtal_1_1HyperRectDomain_1_1ConstSubRange.html#aad5dc56ae4a428a94130deafb49760da":[6,0,2,481,0,7],
 "structDGtal_1_1HyperRectDomain_1_1ConstSubRange.html#ab708690f20f12c9f513b1a4f21bdaf7c":[6,0,2,481,0,3],
-"structDGtal_1_1HyperRectDomain_1_1ConstSubRange.html#ada3f548f26eb5e3e802906d473b578a4":[6,0,2,481,0,12]
+"structDGtal_1_1HyperRectDomain_1_1ConstSubRange.html#ada3f548f26eb5e3e802906d473b578a4":[6,0,2,481,0,12],
+"structDGtal_1_1HyperRectDomain_1_1ConstSubRange.html#aeaa7787a9e35ec80ea6e48871a4c0a36":[6,0,2,481,0,6],
+"structDGtal_1_1HyperRectDomain_1_1ConstSubRange.html#aeb0d306930d2ce3ab009e52da5306333":[6,0,2,481,0,1]
 };

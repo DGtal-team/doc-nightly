@@ -1,7 +1,5 @@
 var NAVTREEINDEX85 =
 {
-"structboost_1_1AdaptableBinaryFunction.html":[6,0,0,26],
-"structboost_1_1AdaptableBinaryPredicate.html":[6,0,0,28],
 "structboost_1_1AdaptableGenerator.html":[6,0,0,24],
 "structboost_1_1AdaptablePredicate.html":[6,0,0,27],
 "structboost_1_1AdaptableUnaryFunction.html":[6,0,0,25],
@@ -229,5 +227,7 @@ var NAVTREEINDEX85 =
 "unionDGtal_1_1LabelledMap_1_1BlockPointer.html#afb0e3dabc22347e467f3dcef41370f29":[6,0,2,128,4,1],
 "unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html":[6,0,2,128,6],
 "unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html#a3150bcd6afc894eae9353c91e3f71754":[6,0,2,128,6,0],
-"unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html#adec6679ce95f9adb91a2ad1d7878c6ed":[6,0,2,128,6,1]
+"unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html#adec6679ce95f9adb91a2ad1d7878c6ed":[6,0,2,128,6,1],
+"":[5,0,2,6,0],
+"":[5,0,4]
 };

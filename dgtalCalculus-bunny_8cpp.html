@@ -533,11 +533,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                      faces.begin(),</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                      faces.end());</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  std::cout&lt;&lt;<span class="stringliteral">&quot;number of non-manifold Edges = &quot;</span> &lt;&lt; <a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.<a class="code" href="structDGtal_1_1SurfaceMesh.html#add89b6762bb7150e760351ca110d28f8">computeNonManifoldEdges</a>().size()&lt;&lt;std::endl;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <a class="code" href="dgtalCalculus-bunny_8cpp.html#ab75f85f061e7253666cda221eabe2eac">psMesh</a> = polyscope::registerSurfaceMesh(<span class="stringliteral">&quot;digital surface&quot;</span>, positions, faces);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="comment">// Initialize polyscope</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <a class="code" href="testCubicalComplex_8cpp.html#a2ab29adfd8ee31956627f4230b96a34b">polyscope::init</a>();</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="comment">// Initialize polyscope</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <a class="code" href="testCubicalComplex_8cpp.html#a2ab29adfd8ee31956627f4230b96a34b">polyscope::init</a>();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  std::cout&lt;&lt;<span class="stringliteral">&quot;number of non-manifold Edges = &quot;</span> &lt;&lt; <a class="code" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.<a class="code" href="structDGtal_1_1SurfaceMesh.html#add89b6762bb7150e760351ca110d28f8">computeNonManifoldEdges</a>().size()&lt;&lt;std::endl;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <a class="code" href="dgtalCalculus-bunny_8cpp.html#ab75f85f061e7253666cda221eabe2eac">psMesh</a> = polyscope::registerSurfaceMesh(<span class="stringliteral">&quot;digital surface&quot;</span>, positions, faces);</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  </div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="comment">// Set the callback function</span></div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  polyscope::state::userCallback = <a class="code" href="dgtalCalculus-bunny_8cpp.html#aa94374962c8d3d29f9952d031dd7537c">myCallback</a>;</div>
@@ -748,7 +748,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_ab39b723b60ad4999451562bfaa77037.html">polyscope-examples</a></li><li class="navelem"><a class="el" href="dgtalCalculus-bunny_8cpp.html">dgtalCalculus-bunny.cpp</a></li>
-    <li class="footer">Generated on Wed Oct 9 2024 10:49:18 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Nov 9 2024 12:44:57 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

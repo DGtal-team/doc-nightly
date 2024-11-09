@@ -1,7 +1,5 @@
 var NAVTREEINDEX26 =
 {
-"classDGtal_1_1Knot__6__2.html#af4e330f383744b1e66130b332b82854e":[6,0,2,227,11],
-"classDGtal_1_1Knot__6__2.html#af9512d040674a9527a2aa1d76a82f1f6":[6,0,2,227,5],
 "classDGtal_1_1Knot__7__4.html":[6,0,2,228],
 "classDGtal_1_1Knot__7__4.html#a1b0e3002db24d6121b3f5affcd9b7174":[6,0,2,228,0],
 "classDGtal_1_1Knot__7__4.html#a2c6da812a3e482055b36088680437df2":[6,0,2,228,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX26 =
 "classDGtal_1_1LabelledMap_1_1BlockIterator.html#a7fba8320468b740e3f9a723d1fbc2153":[6,0,2,128,3,5],
 "classDGtal_1_1LabelledMap_1_1BlockIterator.html#a83711387c26391e404c222a9bb79557a":[6,0,2,128,3,10],
 "classDGtal_1_1LabelledMap_1_1BlockIterator.html#a999e38c04d153e5598b9f9d958e83b37":[6,0,2,128,3,13],
-"classDGtal_1_1LabelledMap_1_1BlockIterator.html#a9f45d13cbe1a4980f6f771690310d361":[6,0,2,128,3,1]
+"classDGtal_1_1LabelledMap_1_1BlockIterator.html#a9f45d13cbe1a4980f6f771690310d361":[6,0,2,128,3,1],
+"classDGtal_1_1LabelledMap_1_1BlockIterator.html#aa32928eb20fa33b3b3d38844aca3a1a7":[6,0,2,128,3,0],
+"classDGtal_1_1LabelledMap_1_1BlockIterator.html#aa58e1a7782d84916836a3f33af32076f":[6,0,2,128,3,3]
 };
