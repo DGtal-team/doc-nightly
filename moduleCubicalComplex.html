@@ -371,25 +371,25 @@ Thinning in cubical complexes</h1>
 </div><!-- fragment --><p> c) attach a cubical complex \(X\) to be thinned: </p><div class="fragment"><div class="line">    thinning.attach ( &amp;complex );</div>
 </div><!-- fragment --><p> d) run the algorithm (here two iterations): </p><div class="fragment"><div class="line">    thinning.eval ( 2 );</div>
 </div><!-- fragment --> <div class="image">
-<img src="ComplexBeforeThinning.png" alt="" width="3cm"/>
+<img src="ComplexBeforeThinning.png" alt=""/>
 <div class="caption">
 The starting complex X before thinning.</div></div>
  <div class="image">
-<img src="ParDirCollapse_2.png" alt="" width="5cm"/>
+<img src="ParDirCollapse_2.png" alt=""/>
 <div class="caption">
 The starting complex X after two iterations of ParDirCollapse.</div></div>
  <p>The second scheme, so-called SurfaceCollapse is similar to <a class="el" href="classDGtal_1_1ParDirCollapse.html" title="Aim: Implements thinning algorithms in cubical complexes. The implementation supports any model of cu...">ParDirCollapse</a>. The only difference is that after each iteration of <a class="el" href="classDGtal_1_1ParDirCollapse.html" title="Aim: Implements thinning algorithms in cubical complexes. The implementation supports any model of cu...">ParDirCollapse</a>, faces of dimension \(dim(X) - 1\) which are not included in faces of higher dimension are marked as non-collapsible. The final output is guaranteed to be thin i.e. there is no faces of \(dim(X)\).</p>
 <p>To run SurfaceCollapse we apply steps a&ndash;c for <a class="el" href="classDGtal_1_1ParDirCollapse.html" title="Aim: Implements thinning algorithms in cubical complexes. The implementation supports any model of cu...">ParDirCollapse</a> and then we apply the step below:</p>
 <p>d) run the algorithm: </p><div class="fragment"><div class="line">    thinning.collapseSurface ();</div>
 </div><!-- fragment --> <div class="image">
-<img src="ParDirCollapse_collapseSurface.png" alt="" width="3cm"/>
+<img src="ParDirCollapse_collapseSurface.png" alt=""/>
 <div class="caption">
 The starting complex X after SurfaceCollapse.</div></div>
  <p>The last scheme, so-called IsthmusCollapse is similar to SurfaceCollapse. The only difference is that after each iteration of <a class="el" href="classDGtal_1_1ParDirCollapse.html" title="Aim: Implements thinning algorithms in cubical complexes. The implementation supports any model of cu...">ParDirCollapse</a>, we mark as non-collapsible those faces which are of dimension dim \((X) - 1\) and not included in faces of higher dimension. Moreover, all sub-faces of dimension \(dim(X) - 2\) of those faces have to be not free &ndash; are included in other faces of dimension \(dim(X) - 1\). The final output is guarantee to be thin i.e. there is no faces of \(dim(X)\).</p>
 <p>To run SurfaceCollapse we apply steps a&ndash;c for <a class="el" href="classDGtal_1_1ParDirCollapse.html" title="Aim: Implements thinning algorithms in cubical complexes. The implementation supports any model of cu...">ParDirCollapse</a> and then we apply the step below:</p>
 <p>d) run the algorithm: </p><div class="fragment"><div class="line">    thinning.collapseIsthmus ();</div>
 </div><!-- fragment --> <div class="image">
-<img src="ParDirCollapse_collapseIsthmus.png" alt="" width="3cm"/>
+<img src="ParDirCollapse_collapseIsthmus.png" alt=""/>
 <div class="caption">
 The starting complex X after IsthmusCollapse.</div></div>
  <p>For more details see the example <a class="el" href="cubicalComplexThinning_8cpp.html">topology/cubicalComplexThinning.cpp</a>. </p>
@@ -400,7 +400,7 @@ The starting complex X after IsthmusCollapse.</div></div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageTopology.html">Topology package</a></li>
-    <li class="footer">Generated on Sat Nov 9 2024 12:45:01 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Nov 27 2024 16:05:35 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
