@@ -1,5 +1,7 @@
 var NAVTREEINDEX34 =
 {
+"classDGtal_1_1OwningOrAliasingPtr.html#a76cf9dcc58ae373a354f13ae464bb983":[6,0,2,135,0],
+"classDGtal_1_1OwningOrAliasingPtr.html#a852c47a6f7d96c96810300ef7813a637":[6,0,2,135,1],
 "classDGtal_1_1OwningOrAliasingPtr.html#a9f55f4deff66fe88e618ada7a12767d9":[6,0,2,135,9],
 "classDGtal_1_1OwningOrAliasingPtr.html#aa2d23f0647f7b1429276f9b5234743b5":[6,0,2,135,7],
 "classDGtal_1_1OwningOrAliasingPtr.html#ab0129fbf6ff50f1fe2e18bd97d2ae53b":[6,0,2,135,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX34 =
 "classDGtal_1_1PlaneProbingLNeighborhood.html#ad816437375b4b321354ac7b6b5b9f95a":[6,0,2,268,20],
 "classDGtal_1_1PlaneProbingLNeighborhood.html#ad9363f31df93afee7f7116d2980afe2a":[6,0,2,268,31],
 "classDGtal_1_1PlaneProbingNeighborhood.html":[6,0,2,269],
-"classDGtal_1_1PlaneProbingNeighborhood.html#a08f18457bbee5140c7f73b0e5480ae79":[6,0,2,269,20],
-"classDGtal_1_1PlaneProbingNeighborhood.html#a0b32ad78aa37df725d3c5ac1ba56c9d4":[6,0,2,269,33],
-"classDGtal_1_1PlaneProbingNeighborhood.html#a12c7750d4ab061f124ff99c2fce5d147":[6,0,2,269,17]
+"classDGtal_1_1PlaneProbingNeighborhood.html#a08f18457bbee5140c7f73b0e5480ae79":[6,0,2,269,20]
 };

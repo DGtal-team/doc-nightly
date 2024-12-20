@@ -1,5 +1,7 @@
 var NAVTREEINDEX83 =
 {
+"structLibBoard_1_1Arc.html#ae6e4ed44cf06d15f70142d843f04a0ee":[6,0,3,18,0],
+"structLibBoard_1_1Arc.html#aec0ad6dfc2df3d30f8bdfeb4ea9417c0":[6,0,3,18,4],
 "structLibBoard_1_1Arrow.html":[6,0,3,9],
 "structLibBoard_1_1Arrow.html#a00149df7ba29a6dc61e4762c01cebab3":[6,0,3,9,0],
 "structLibBoard_1_1Arrow.html#a0637fa547677538872ab10d68cfe005a":[6,0,3,9,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX83 =
 "structLibBoard_1_1Point.html#aaf22508fea142493915e9b2c2a567422":[6,0,3,2,12],
 "structLibBoard_1_1Point.html#aaf85cda36aaa7134e0c7c617adcb45f3":[6,0,3,2,4],
 "structLibBoard_1_1Point.html#ac565a8422ad11d12e2a4102c7c314251":[6,0,3,2,10],
-"structLibBoard_1_1Point.html#ad2f8c11d6224e199cf47fcfc05fc88cb":[6,0,3,2,14],
-"structLibBoard_1_1Point.html#aefb5946cccb835e76dcafddfd41c3a9a":[6,0,3,2,0],
-"structLibBoard_1_1Polyline.html":[6,0,3,10]
+"structLibBoard_1_1Point.html#ad2f8c11d6224e199cf47fcfc05fc88cb":[6,0,3,2,14]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX69 =
 {
+"structDGtal_1_1KhalimskyPreCell.html#aa9c487911325d451700f9a8f11b40021":[6,0,2,620,8],
+"structDGtal_1_1KhalimskyPreCell.html#aaa4199995b2cef58b220fc4bdd6cb976":[6,0,2,620,17],
 "structDGtal_1_1KhalimskyPreCell.html#ac1669938b9a3302874cb069caa661a08":[6,0,2,620,19],
 "structDGtal_1_1KhalimskyPreCell.html#acafb8742f2576a231843d58e0ab3be1a":[6,0,2,620,4],
 "structDGtal_1_1KhalimskyPreCell.html#acb8dd971c2d4589480b3a6d443ef4562":[6,0,2,620,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX69 =
 "structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html#a0944a358b204527133af94d98d156a9e":[6,0,2,499,18],
 "structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html#a0c69eb89ca81951c95ff21e9bd7a77e1":[6,0,2,499,5],
 "structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html#a311c734d791aa599e9687936ff3ddf4d":[6,0,2,499,16],
-"structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html#a3d07aa79e12f659b756def7659cc94cb":[6,0,2,499,0],
-"structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html#a40121a8996aa9004d465beebf53ab21f":[6,0,2,499,12],
-"structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html#a4604d304d991f41bc30d699419ec710a":[6,0,2,499,3]
+"structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html#a3d07aa79e12f659b756def7659cc94cb":[6,0,2,499,0]
 };

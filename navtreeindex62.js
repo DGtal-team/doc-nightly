@@ -1,5 +1,7 @@
 var NAVTREEINDEX62 =
 {
+"namespaceboost.html#a9b4917fc7850f916bcbfec9ab2572fe9":[5,0,0,78],
+"namespaceboost.html#aa7510b90ea7550b662f26f55df9d3613":[5,0,0,76],
 "namespaceboost.html#ab58e04607f0e8daacac47b482a99f977":[5,0,0,69],
 "namespaceboost.html#ab9a7c702f7c24ec3ec286891cfe40ed4":[5,0,0,71],
 "namespaceboost.html#abe039e6bee11c63d2c5bc46c82e6f94a":[5,0,0,63],
@@ -247,7 +249,5 @@ var NAVTREEINDEX62 =
 "structDGtal_1_1Board3DTo2DFactory.html#ab20a1ea9d58a76b0923b5e2b38200e8b":[6,0,2,393,52],
 "structDGtal_1_1Board3DTo2DFactory.html#ab2415fbe1cc995d4324f9bb022eeedb3":[6,0,2,393,24],
 "structDGtal_1_1Board3DTo2DFactory.html#ab2ac581129c7582deb056c781c12f106":[6,0,2,393,16],
-"structDGtal_1_1Board3DTo2DFactory.html#ab5f2f2ba37b032557c15a39430cc1958":[6,0,2,393,36],
-"structDGtal_1_1Board3DTo2DFactory.html#abebd42a43fed3c0856d69bb9d3bc4e2e":[6,0,2,393,19],
-"structDGtal_1_1Board3DTo2DFactory.html#abf2c087e2206f2db0b8549eb0942f4f3":[6,0,2,393,49]
+"structDGtal_1_1Board3DTo2DFactory.html#ab5f2f2ba37b032557c15a39430cc1958":[6,0,2,393,36]
 };

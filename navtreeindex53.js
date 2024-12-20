@@ -1,5 +1,7 @@
 var NAVTREEINDEX53 =
 {
+"classDGtal_1_1functors_1_1SphereFittingEstimator.html#a162be331113f6fa399f46ea0a3e31f01":[6,0,2,5,57,16],
+"classDGtal_1_1functors_1_1SphereFittingEstimator.html#a1e491fca2c78412572119b924bb4fd04":[6,0,2,5,57,12],
 "classDGtal_1_1functors_1_1SphereFittingEstimator.html#a1e8d29a04b6ae26317eeb33c30327f16":[6,0,2,5,57,17],
 "classDGtal_1_1functors_1_1SphereFittingEstimator.html#a25007563ce4af6336a1fbfd49d50881e":[6,0,2,5,57,9],
 "classDGtal_1_1functors_1_1SphereFittingEstimator.html#a2976442aae7afbbe7a9b41fc183dd440":[6,0,2,5,57,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX53 =
 "classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1out__edge__iterator.html#a18a78aeced8f341b2ed063bc0e4a08ae":[6,0,0,56,2,4],
 "classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1out__edge__iterator.html#a3c37826e7a9121a110a8bfa7b6a9aee3":[6,0,0,56,2,0],
 "classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1out__edge__iterator.html#a5d88926cd7b2f513f8604748e8437cc9":[6,0,0,56,2,5],
-"classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1out__edge__iterator.html#a73abbd8c61887b8990e9195ef8f94b5c":[6,0,0,56,2,2],
-"classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1out__edge__iterator.html#a7dbe3bd31eaff64f98ccd4863f095302":[6,0,0,56,2,8],
-"classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1out__edge__iterator.html#a7e768870b83830615537e4e4da6c934f":[6,0,0,56,2,1]
+"classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1out__edge__iterator.html#a73abbd8c61887b8990e9195ef8f94b5c":[6,0,0,56,2,2]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX74 =
 {
+"structDGtal_1_1UnorderedSetByBlock_1_1iterator.html#ac09f73e325921cc50ebcd96bed0f8096":[6,0,2,521,1,11],
+"structDGtal_1_1UnorderedSetByBlock_1_1iterator.html#ac2f8326297a436a58ab2f6ca1556d6b6":[6,0,2,521,1,0],
 "structDGtal_1_1UnorderedSetByBlock_1_1iterator.html#ac5b192fd10cbe291cf20849b00b76446":[6,0,2,521,1,15],
 "structDGtal_1_1UnorderedSetByBlock_1_1iterator.html#ae89d257f644690b2bd3b65f38c4d1dbf":[6,0,2,521,1,2],
 "structDGtal_1_1UnorderedSetByBlock_1_1iterator.html#af8415892427c2dc4824599a568d965b8":[6,0,2,521,1,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX74 =
 "structDGtal_1_1VoronoiCovarianceMeasure_1_1CharacteristicSetPredicate.html#af1a79bc180980baa8a33609af3ff3eb9":[6,0,2,337,0,1],
 "structDGtal_1_1WindingNumbersShape.html":[6,0,2,595],
 "structDGtal_1_1WindingNumbersShape.html#a042b39c25efb7cb3e626dc8bfa6b05fd":[6,0,2,595,16],
-"structDGtal_1_1WindingNumbersShape.html#a25db799389b2433f0e044cc3257021c1":[6,0,2,595,13],
-"structDGtal_1_1WindingNumbersShape.html#a2642a8b87893813ddb6fb8451793995e":[6,0,2,595,15],
-"structDGtal_1_1WindingNumbersShape.html#a3cbac5574ca599fdc4355b06d9902af7":[6,0,2,595,0]
+"structDGtal_1_1WindingNumbersShape.html#a25db799389b2433f0e044cc3257021c1":[6,0,2,595,13]
 };

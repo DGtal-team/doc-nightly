@@ -1,5 +1,7 @@
 var NAVTREEINDEX58 =
 {
+"moduleQuickHull.html#dgtal_quickhull_sec38":[0,8,23,2,7],
+"moduleRegularization.html":[0,8,19],
 "moduleRegularization.html#moduleReg_sec1":[0,8,19,0],
 "moduleRegularization.html#moduleReg_sec2":[0,8,19,1],
 "moduleRegularization.html#moduleReg_seclocal":[0,8,19,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX58 =
 "namespaceDGtal.html#a48eda6ac0ad627de337fbf0f380f446a":[5,0,2,827],
 "namespaceDGtal.html#a49730b5a6af3e6dacff53ec86a215a06":[5,0,2,892],
 "namespaceDGtal.html#a49b6251ea39e4165f4aff000e4131f92":[5,0,2,883],
-"namespaceDGtal.html#a4a679186eed201b0844c7bf6f83e76c8":[5,0,2,744],
-"namespaceDGtal.html#a4af248a4c1de019c3ed17fe479c1f341":[5,0,2,936],
-"namespaceDGtal.html#a4b1f11e76731f6b53d58741593de1718":[5,0,2,1020]
+"namespaceDGtal.html#a4a679186eed201b0844c7bf6f83e76c8":[5,0,2,744]
 };

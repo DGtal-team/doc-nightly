@@ -1,5 +1,7 @@
 var NAVTREEINDEX47 =
 {
+"classDGtal_1_1Viewer3D.html#aa90dcde97463a2f87933b914aaf8046c":[6,0,2,452,105],
+"classDGtal_1_1Viewer3D.html#aab6dd34fd3d54d2ad6477b129f692e8d":[6,0,2,452,159],
 "classDGtal_1_1Viewer3D.html#aaf7e93be5f7378919825d702ee4c28ad":[6,0,2,452,82],
 "classDGtal_1_1Viewer3D.html#ab1300190acb72ae96d4fce9676bbfe70":[6,0,2,452,40],
 "classDGtal_1_1Viewer3D.html#ab145cf80823226c605ab7f52939b4cea":[6,0,2,452,146],
@@ -247,7 +249,5 @@ var NAVTREEINDEX47 =
 "classDGtal_1_1VoronoiMapComplete.html#afc052157e885c5391b1d98cd948cdbf4":[6,0,2,334,49],
 "classDGtal_1_1VoronoiMapComplete.html#affb42c23a9575ce138c33eebde10b492":[6,0,2,334,47],
 "classDGtal_1_1VoxelComplex.html":[6,0,2,636],
-"classDGtal_1_1VoxelComplex.html#a09e033a22eaa6a4b5a68b111ef5dae0f":[6,0,2,636,31],
-"classDGtal_1_1VoxelComplex.html#a0b80d1cecc2ba4bcd6acfaf8d2c81131":[6,0,2,636,44],
-"classDGtal_1_1VoxelComplex.html#a0cab7e1dee6c6419b724a8100e8c6830":[6,0,2,636,14]
+"classDGtal_1_1VoxelComplex.html#a09e033a22eaa6a4b5a68b111ef5dae0f":[6,0,2,636,31]
 };

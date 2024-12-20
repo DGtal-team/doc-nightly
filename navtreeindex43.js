@@ -1,5 +1,7 @@
 var NAVTREEINDEX43 =
 {
+"classDGtal_1_1StarShaped3D.html#a9a3e9054236a3e5cdd993d8a459a9255":[6,0,2,589,19],
+"classDGtal_1_1StarShaped3D.html#aac3d13f87babd9f33ead9d948da55d86":[6,0,2,589,17],
 "classDGtal_1_1StarShaped3D.html#ab007b15473ea585fe112670c96ffc740":[6,0,2,589,6],
 "classDGtal_1_1StarShaped3D.html#ac01ca105a4313072e22ad6617db63956":[6,0,2,589,4],
 "classDGtal_1_1StarShaped3D.html#ace1ae6353c4c59ec4b006535f67ec7d2":[6,0,2,589,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX43 =
 "classDGtal_1_1SymmetricConvexExpander.html#add0b65848b8a2a4a2de5c68415d4ff53":[6,0,2,637,31],
 "classDGtal_1_1SymmetricConvexExpander.html#ae2e003d8652632b97f728219c55ab7f3":[6,0,2,637,32],
 "classDGtal_1_1SymmetricConvexExpander.html#ae379c2f27d8a46fd1e6f0e29d8d8ab97":[6,0,2,637,11],
-"classDGtal_1_1SymmetricConvexExpander.html#af321ee1f800deed7b763025de1bb8cda":[6,0,2,637,33],
-"classDGtal_1_1SymmetricConvexExpander.html#af3c302a7ee3e1442aad43eed1a6c0792":[6,0,2,637,12],
-"classDGtal_1_1SymmetricConvexExpander.html#af78dceb794abb9837c9e83463c61346d":[6,0,2,637,14]
+"classDGtal_1_1SymmetricConvexExpander.html#af321ee1f800deed7b763025de1bb8cda":[6,0,2,637,33]
 };

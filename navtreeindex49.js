@@ -1,5 +1,7 @@
 var NAVTREEINDEX49 =
 {
+"classDGtal_1_1deprecated_1_1EuclideanShapesMinus.html#aa9438c7f21bc443af9bee1626bfc10dd":[6,0,2,1,11,1],
+"classDGtal_1_1deprecated_1_1EuclideanShapesMinus.html#aaa2a6a244af3d6fab4c0030d0ef0cb1a":[6,0,2,1,11,7],
 "classDGtal_1_1deprecated_1_1EuclideanShapesMinus.html#abb94b13ca29d41e931f185850403ef15":[6,0,2,1,11,3],
 "classDGtal_1_1deprecated_1_1EuclideanShapesMinus.html#abfea7059eb0ba9565f6a56acb4439b01":[6,0,2,1,11,5],
 "classDGtal_1_1deprecated_1_1EuclideanShapesMinus.html#ad008a0fffe025100f606050086a1c60b":[6,0,2,1,11,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX49 =
 "classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html#ab0c77c17891a53e30e34f321bd0fcf28":[6,0,2,2,33,10],
 "classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html#ab1f1d608527f4d0bcc2f12b44039b0f0":[6,0,2,2,33,2],
 "classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html#ab2661917486eadc5ca457aeb89ab8e19":[6,0,2,2,33,11],
-"classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html#ac1678db92f3f134fc073b9d340677429":[6,0,2,2,33,0],
-"classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html#ac23b30470b729d2e7733071ec540b038":[6,0,2,2,33,9],
-"classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html#ac412baecf14d6092846344ad7f4731e8":[6,0,2,2,33,1]
+"classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html#ac1678db92f3f134fc073b9d340677429":[6,0,2,2,33,0]
 };

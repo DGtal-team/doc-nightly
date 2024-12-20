@@ -1,5 +1,7 @@
 var NAVTREEINDEX36 =
 {
+"classDGtal_1_1PointVector.html#a96136be44fc0e72b1dbdb3076a42bad7":[6,0,2,504,42],
+"classDGtal_1_1PointVector.html#a99d206e3ea69df490a213b41c77673fe":[6,0,2,504,107],
 "classDGtal_1_1PointVector.html#a9c457e5ab96186e89106971b8728f26b":[6,0,2,504,46],
 "classDGtal_1_1PointVector.html#a9cbf808aeb918a210e6cb37e7b36fac2":[6,0,2,504,14],
 "classDGtal_1_1PointVector.html#aa2cb66bc0f2bce2ce16afdb950890622":[6,0,2,504,90],
@@ -247,7 +249,5 @@ var NAVTREEINDEX36 =
 "classDGtal_1_1PowerMap.html":[6,0,2,329],
 "classDGtal_1_1PowerMap.html#a087bfa87f265468c16930df74a004fa9":[6,0,2,329,30],
 "classDGtal_1_1PowerMap.html#a1155d2479efdff7934c4219c932de6ee":[6,0,2,329,48],
-"classDGtal_1_1PowerMap.html#a1451da6b3e4c2521b5e53ee5b0c78bbb":[6,0,2,329,46],
-"classDGtal_1_1PowerMap.html#a14eaec125300d260ae924e60e054147b":[6,0,2,329,40],
-"classDGtal_1_1PowerMap.html#a154b8445cda9ed4ddf56e1a6a76a6ac1":[6,0,2,329,0]
+"classDGtal_1_1PowerMap.html#a1451da6b3e4c2521b5e53ee5b0c78bbb":[6,0,2,329,46]
 };

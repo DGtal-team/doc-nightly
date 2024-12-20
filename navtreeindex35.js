@@ -1,5 +1,7 @@
 var NAVTREEINDEX35 =
 {
+"classDGtal_1_1PlaneProbingNeighborhood.html#a0b32ad78aa37df725d3c5ac1ba56c9d4":[6,0,2,269,33],
+"classDGtal_1_1PlaneProbingNeighborhood.html#a12c7750d4ab061f124ff99c2fce5d147":[6,0,2,269,17],
 "classDGtal_1_1PlaneProbingNeighborhood.html#a213d9f3015f81dbab0d6b50d1d63be82":[6,0,2,269,4],
 "classDGtal_1_1PlaneProbingNeighborhood.html#a27ffd2c59ff158110bd48542db6561ac":[6,0,2,269,7],
 "classDGtal_1_1PlaneProbingNeighborhood.html#a31575349f2232c4c30d16953f95ed2b8":[6,0,2,269,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX35 =
 "classDGtal_1_1PointVector.html#a840d305f95dbfa3fed9158b04db6a99c":[6,0,2,504,29],
 "classDGtal_1_1PointVector.html#a84ef8486b511b05ef0938d08601707a8":[6,0,2,504,30],
 "classDGtal_1_1PointVector.html#a8ee1582e76f9875e278cc1cef7caa3ed":[6,0,2,504,82],
-"classDGtal_1_1PointVector.html#a92b18d6fc6c8aded184c7d16f402df84":[6,0,2,504,32],
-"classDGtal_1_1PointVector.html#a96136be44fc0e72b1dbdb3076a42bad7":[6,0,2,504,42],
-"classDGtal_1_1PointVector.html#a99d206e3ea69df490a213b41c77673fe":[6,0,2,504,107]
+"classDGtal_1_1PointVector.html#a92b18d6fc6c8aded184c7d16f402df84":[6,0,2,504,32]
 };

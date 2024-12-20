@@ -1,5 +1,7 @@
 var NAVTREEINDEX65 =
 {
+"structDGtal_1_1ConvexHullRationalKernel.html#ac9fa4fef208e720da11b1b818ef399dc":[6,0,2,295,13],
+"structDGtal_1_1ConvexHullRationalKernel.html#ad77d49f3508fe17a79903e4f9b8dbd4c":[6,0,2,295,0],
 "structDGtal_1_1ConvexHullRationalKernel.html#af9ab8682281e36b687c09aa48679802b":[6,0,2,295,21],
 "structDGtal_1_1ConvexHullRationalKernel.html#aff3c5f96eb43e46f15c02bd0defbdd96":[6,0,2,295,4],
 "structDGtal_1_1ConvexityHelper.html":[6,0,2,312],
@@ -247,7 +249,5 @@ var NAVTREEINDEX65 =
 "structDGtal_1_1DelaunayRationalKernel.html#a30172332fcd53445e5c91d30fa30a386":[6,0,2,296,26],
 "structDGtal_1_1DelaunayRationalKernel.html#a3d4c8ec2a6a0da6ecefd59c02a0b1bd6":[6,0,2,296,17],
 "structDGtal_1_1DelaunayRationalKernel.html#a3e68ac4e356676f400d243cd173df8eb":[6,0,2,296,5],
-"structDGtal_1_1DelaunayRationalKernel.html#a41ed5ceb08206424bd92aba2e385f9e1":[6,0,2,296,15],
-"structDGtal_1_1DelaunayRationalKernel.html#a4495ba366de050ee69b67e23d80f9a57":[6,0,2,296,2],
-"structDGtal_1_1DelaunayRationalKernel.html#a46afb48002f08d7969ba3b4d06437d84":[6,0,2,296,6]
+"structDGtal_1_1DelaunayRationalKernel.html#a41ed5ceb08206424bd92aba2e385f9e1":[6,0,2,296,15]
 };

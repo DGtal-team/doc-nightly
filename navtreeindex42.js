@@ -1,5 +1,7 @@
 var NAVTREEINDEX42 =
 {
+"classDGtal_1_1SphericalTriangle.html#a8d0bfecaf225b2df72ce6afd24027071":[6,0,2,300,5],
+"classDGtal_1_1SphericalTriangle.html#a9a9d2f3e03176ced62fab9922069cce6":[6,0,2,300,14],
 "classDGtal_1_1SphericalTriangle.html#aa5a1065a03a179b4447243534dfe4aae":[6,0,2,300,18],
 "classDGtal_1_1SphericalTriangle.html#ab4eee5ddf40e576ebf4eaae155e7dfee":[6,0,2,300,12],
 "classDGtal_1_1SphericalTriangle.html#ab57b01467bd568df60078c4ffa39a3b7":[6,0,2,300,20],
@@ -247,7 +249,5 @@ var NAVTREEINDEX42 =
 "classDGtal_1_1StarShaped3D.html#a7edc766878a741cafb4c13bd442e88fa":[6,0,2,589,10],
 "classDGtal_1_1StarShaped3D.html#a8fd731e419edc1ce8948a7c237649c9f":[6,0,2,589,11],
 "classDGtal_1_1StarShaped3D.html#a92d4f1801f24ef614b1250a3cabbd7b8":[6,0,2,589,13],
-"classDGtal_1_1StarShaped3D.html#a983bd21ccddf6dbc1d20299252cc1905":[6,0,2,589,26],
-"classDGtal_1_1StarShaped3D.html#a9a3e9054236a3e5cdd993d8a459a9255":[6,0,2,589,19],
-"classDGtal_1_1StarShaped3D.html#aac3d13f87babd9f33ead9d948da55d86":[6,0,2,589,17]
+"classDGtal_1_1StarShaped3D.html#a983bd21ccddf6dbc1d20299252cc1905":[6,0,2,589,26]
 };

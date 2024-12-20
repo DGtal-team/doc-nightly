@@ -1,5 +1,7 @@
 var NAVTREEINDEX0 =
 {
+"":[5,0,2,6,0],
+"":[5,0,4],
 "LocalEstimatorsFromSurfel.html":[0,8,8],
 "LocalEstimatorsFromSurfel.html#sectLocalEstimImpDetails":[0,8,8,1],
 "LocalEstimatorsFromSurfel.html#sectLocalEstimatorsFromSurfel1":[0,8,8,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "classDGtal_1_1AngleLinearMinimizer.html#aac3fd2b1eb4e28e834e07ff6292673a8":[6,0,2,523,20],
 "classDGtal_1_1AngleLinearMinimizer.html#aad2da75e2f358a46ccd3da135bcbbc69":[6,0,2,523,1],
 "classDGtal_1_1AngleLinearMinimizer.html#ab67f3aab54fcc2f4eb3dddd53767ccc9":[6,0,2,523,16],
-"classDGtal_1_1AngleLinearMinimizer.html#abdb53d8513472f4c9d6c2aa3c3ebb0f4":[6,0,2,523,2],
-"classDGtal_1_1AngleLinearMinimizer.html#abdcd89c1fdc9fdb42264c146cafb9833":[6,0,2,523,24],
-"classDGtal_1_1AngleLinearMinimizer.html#ad15f79e6cf06b243230f743bee038f1c":[6,0,2,523,15]
+"classDGtal_1_1AngleLinearMinimizer.html#abdb53d8513472f4c9d6c2aa3c3ebb0f4":[6,0,2,523,2]
 };

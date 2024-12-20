@@ -1,5 +1,7 @@
 var NAVTREEINDEX39 =
 {
+"classDGtal_1_1Shapes.html#aeb859f6edab357ceca4917118711dd52":[6,0,2,591,21],
+"classDGtal_1_1Shapes.html#aec68ace82ad6d9a4206603fa241a5c9c":[6,0,2,591,0],
 "classDGtal_1_1Shapes.html#af3a1aa18d3baa6d230c2352524bb1c30":[6,0,2,591,15],
 "classDGtal_1_1Shapes.html#afb0284796d305586759d1b4c54b59486":[6,0,2,591,3],
 "classDGtal_1_1Shapes.html#afe9ed4c6e99562772cc794b89074ec95":[6,0,2,591,17],
@@ -247,7 +249,5 @@ var NAVTREEINDEX39 =
 "classDGtal_1_1ShortcutsGeometry.html#a843c684c5f68bad42fd61d208de5a944":[6,0,2,351,28],
 "classDGtal_1_1ShortcutsGeometry.html#a87c704bdc660aabfe6c6a329844bedd4":[6,0,2,351,9],
 "classDGtal_1_1ShortcutsGeometry.html#a88527e5d6142158e0f886bb195060d7a":[6,0,2,351,10],
-"classDGtal_1_1ShortcutsGeometry.html#a8bf2b4515659826bf5b8d858aa0d8204":[6,0,2,351,52],
-"classDGtal_1_1ShortcutsGeometry.html#a8c6aab27df8a905dbebe09174cad6722":[6,0,2,351,6],
-"classDGtal_1_1ShortcutsGeometry.html#a8dc00d62fb334b751cb376fb9d592e2c":[6,0,2,351,21]
+"classDGtal_1_1ShortcutsGeometry.html#a8bf2b4515659826bf5b8d858aa0d8204":[6,0,2,351,52]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX72 =
 {
+"structDGtal_1_1Splitter.html#aad18b1dc232739db43d5901431bd9150":[6,0,2,520,5],
+"structDGtal_1_1Splitter.html#aada48987ba3ea394ce8421b8fbb3f18d":[6,0,2,520,3],
 "structDGtal_1_1Splitter.html#abd9625cd3b474f7d767a9778039504d0":[6,0,2,520,6],
 "structDGtal_1_1Splitter.html#ad1917d98f9e823c57b3cd5839a87f5ab":[6,0,2,520,1],
 "structDGtal_1_1StandardDSLQ0_1_1ConstIterator.html":[6,0,2,13,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX72 =
 "structDGtal_1_1SurfaceMeshMeasure.html#adb3796fdaccf99e47929a60cb2a715f6":[6,0,2,244,14],
 "structDGtal_1_1SurfaceMeshMeasure.html#af62e525fb0cb6aa0d5403a6b9691c2d8":[6,0,2,244,32],
 "structDGtal_1_1SurfaceMeshMeasure.html#af6eb18509d9750b9e503c41c4098330f":[6,0,2,244,37],
-"structDGtal_1_1SurfaceMeshReader.html":[6,0,2,439],
-"structDGtal_1_1SurfaceMeshReader.html#a1a89e6bdc7c21b02fe171d01723beaac":[6,0,2,439,12],
-"structDGtal_1_1SurfaceMeshReader.html#a1f0d104f1539232f914e838fcc9ae2a1":[6,0,2,439,11]
+"structDGtal_1_1SurfaceMeshReader.html":[6,0,2,439]
 };

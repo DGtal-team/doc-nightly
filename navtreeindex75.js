@@ -1,5 +1,7 @@
 var NAVTREEINDEX75 =
 {
+"structDGtal_1_1WindingNumbersShape.html#a2642a8b87893813ddb6fb8451793995e":[6,0,2,595,15],
+"structDGtal_1_1WindingNumbersShape.html#a3cbac5574ca599fdc4355b06d9902af7":[6,0,2,595,0],
 "structDGtal_1_1WindingNumbersShape.html#a415b8381ea0cfdf550c6e9bfadf731fd":[6,0,2,595,7],
 "structDGtal_1_1WindingNumbersShape.html#a43f3d2eac0da58e7c15ff19db1433048":[6,0,2,595,1],
 "structDGtal_1_1WindingNumbersShape.html#a571cb82f93ccb9f7aea33df9316a7d57":[6,0,2,595,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX75 =
 "structDGtal_1_1concepts_1_1CDigitalSet.html#ab876fc5755ec463b6cd05573d9433fe5":[4,0,81,8],
 "structDGtal_1_1concepts_1_1CDigitalSet.html#ac6cdad948f8495d12fa79c752a74214e":[4,0,81,4],
 "structDGtal_1_1concepts_1_1CDigitalSet.html#acdfcf6108dabcde590a3d9bfc8b35d84":[4,0,81,14],
-"structDGtal_1_1concepts_1_1CDigitalSet.html#adb38cebbbf21bb39fcbcda8c660a9f8e":[4,0,81,0],
-"structDGtal_1_1concepts_1_1CDigitalSet.html#adcbb84d4c1dbbe4a45a99ffc3fc0ece5":[4,0,81,10],
-"structDGtal_1_1concepts_1_1CDigitalSet.html#aecf0ef9105b069128504bc20f129d3d1":[4,0,81,18]
+"structDGtal_1_1concepts_1_1CDigitalSet.html#adb38cebbbf21bb39fcbcda8c660a9f8e":[4,0,81,0]
 };

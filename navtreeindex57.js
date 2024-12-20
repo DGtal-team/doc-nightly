@@ -1,5 +1,7 @@
 var NAVTREEINDEX57 =
 {
+"moduleHalfEdgeMesh.html#HEM_sec2_2":[0,9,3,1,1],
+"moduleHalfEdgeMesh.html#HEM_sec2_3":[0,10,6,1,2],
 "moduleHalfEdgeMesh.html#HEM_sec2_3":[0,9,3,1,2],
 "moduleHalfEdgeMesh.html#HEM_sec2_4":[0,10,6,1,3],
 "moduleHalfEdgeMesh.html#HEM_sec2_4":[0,9,3,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX57 =
 "moduleQuickHull.html#dgtal_quickhull_sec34":[0,8,23,2,3],
 "moduleQuickHull.html#dgtal_quickhull_sec35":[0,8,23,2,4],
 "moduleQuickHull.html#dgtal_quickhull_sec36":[0,8,23,2,5],
-"moduleQuickHull.html#dgtal_quickhull_sec37":[0,8,23,2,6],
-"moduleQuickHull.html#dgtal_quickhull_sec38":[0,8,23,2,7],
-"moduleRegularization.html":[0,8,19]
+"moduleQuickHull.html#dgtal_quickhull_sec37":[0,8,23,2,6]
 };
