@@ -1,7 +1,5 @@
 var NAVTREEINDEX66 =
 {
-"structDGtal_1_1DelaunayRationalKernel.html#a4495ba366de050ee69b67e23d80f9a57":[6,0,2,296,2],
-"structDGtal_1_1DelaunayRationalKernel.html#a46afb48002f08d7969ba3b4d06437d84":[6,0,2,296,6],
 "structDGtal_1_1DelaunayRationalKernel.html#a63c510dd0a27dccae2294f3603d27ff2":[6,0,2,296,19],
 "structDGtal_1_1DelaunayRationalKernel.html#a69d68fba6b386425674d097eef18c622":[6,0,2,296,28],
 "structDGtal_1_1DelaunayRationalKernel.html#a6ae173c1e2f5cf631094a3b206c8b68b":[6,0,2,296,18],
@@ -249,5 +247,7 @@ var NAVTREEINDEX66 =
 "structDGtal_1_1Display3D_1_1LineD3D.html#a1b9ca91576b091f2c936732346f753ff":[6,0,2,25,4,3],
 "structDGtal_1_1Display3D_1_1LineD3D.html#ac03ffb77ddc57e8a20937aabf8863b2f":[6,0,2,25,4,0],
 "structDGtal_1_1Display3D_1_1LineD3D.html#ad98a34b6a638ffbfdbf2aac2031a0ddf":[6,0,2,25,4,4],
-"structDGtal_1_1Display3D_1_1LineD3D.html#af625faeb849892fa5253e88b87fda03a":[6,0,2,25,4,1]
+"structDGtal_1_1Display3D_1_1LineD3D.html#af625faeb849892fa5253e88b87fda03a":[6,0,2,25,4,1],
+"structDGtal_1_1Display3D_1_1PolygonD3D.html":[6,0,2,25,5],
+"structDGtal_1_1Display3D_1_1PolygonD3D.html#a3267f730d6bcf7dda50b2d074fd5058e":[6,0,2,25,5,4]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"classDGtal_1_1ShortcutsGeometry.html#a8c6aab27df8a905dbebe09174cad6722":[6,0,2,351,6],
-"classDGtal_1_1ShortcutsGeometry.html#a8dc00d62fb334b751cb376fb9d592e2c":[6,0,2,351,21],
 "classDGtal_1_1ShortcutsGeometry.html#a924b4058666073e38e4eb438464b7a3c":[6,0,2,351,17],
 "classDGtal_1_1ShortcutsGeometry.html#a98da38f9cf3e275dce97bf8e2cfa8adf":[6,0,2,351,13],
 "classDGtal_1_1ShortcutsGeometry.html#a990ca47b5af10af8b74800c06cb5aa43":[6,0,2,351,79],
@@ -249,5 +247,7 @@ var NAVTREEINDEX40 =
 "classDGtal_1_1SimpleLinearRegression.html#abf632663fa3311a68de1e4e30a37c200":[6,0,2,560,8],
 "classDGtal_1_1SimpleLinearRegression.html#ac49ab1b0c6c78b6ca1590682a74e0dfc":[6,0,2,560,18],
 "classDGtal_1_1SimpleLinearRegression.html#ac8d9f79b079ca587d7c0dce4273736ab":[6,0,2,560,20],
-"classDGtal_1_1SimpleLinearRegression.html#acb6fcdee8a135c31803505f1376c1d97":[6,0,2,560,17]
+"classDGtal_1_1SimpleLinearRegression.html#acb6fcdee8a135c31803505f1376c1d97":[6,0,2,560,17],
+"classDGtal_1_1SimpleLinearRegression.html#acd291c34d4e69286a8ab2a437f49ba48":[6,0,2,560,28],
+"classDGtal_1_1SimpleLinearRegression.html#acf291bd44b989158dc53a7279be03068":[6,0,2,560,13]
 };

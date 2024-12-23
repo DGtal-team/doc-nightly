@@ -1,7 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"classDGtal_1_1DigitalSetFromMap.html#a8f863081ca8d91b62eca6e0654ba7263":[6,0,2,516,41],
-"classDGtal_1_1DigitalSetFromMap.html#a92c064ac6972342141f6069047e8f5ca":[6,0,2,516,16],
 "classDGtal_1_1DigitalSetFromMap.html#a9e46d133b55414e517a4e2bee36b3b94":[6,0,2,516,30],
 "classDGtal_1_1DigitalSetFromMap.html#ab5db6fc71453d38d12ea42be7b8490fd":[6,0,2,516,14],
 "classDGtal_1_1DigitalSetFromMap.html#abaa377a0fc9db3204afca228202f1ddc":[6,0,2,516,31],
@@ -249,5 +247,7 @@ var NAVTREEINDEX11 =
 "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#aae0943c86899a610f079b4b131d05abb":[6,0,2,254,29],
 "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#aae26cb89cff708c6ed4f8122c9c31f6a":[6,0,2,254,51],
 "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#ab2a7f972d59f5999698383699469ac69":[6,0,2,254,13],
-"classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#ab58563549ff5a9397f82c82489c74733":[6,0,2,254,4]
+"classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#ab58563549ff5a9397f82c82489c74733":[6,0,2,254,4],
+"classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#aba0ca5e6cf7be3faac1b6fa1420d0cf6":[6,0,2,254,39],
+"classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#ac37a94cd1986a1ba64f01a5708e23b1e":[6,0,2,254,2]
 };

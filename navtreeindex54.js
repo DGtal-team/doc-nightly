@@ -1,7 +1,5 @@
 var NAVTREEINDEX54 =
 {
-"classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1out__edge__iterator.html#a7dbe3bd31eaff64f98ccd4863f095302":[6,0,0,56,2,8],
-"classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1out__edge__iterator.html#a7e768870b83830615537e4e4da6c934f":[6,0,0,56,2,1],
 "classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1out__edge__iterator.html#a8b387055d6a3aac14c28120046d5ff82":[6,0,0,56,2,3],
 "classboost_1_1graph__traits_3_01DGtal_1_1Object_3_01TDigitalTopology_00_01TDigitalSet_01_4_01_4_1_1out__edge__iterator.html#acd4e59b387a2efc3eb9d70b518ece14f":[6,0,0,56,2,7],
 "classes.html":[6,1],
@@ -28,8 +26,8 @@ var NAVTREEINDEX54 =
 "functions_enum.html":[6,3,4],
 "functions_eval.html":[6,3,5],
 "functions_f.html":[6,3,0,6],
-"functions_func.html":[6,3,1],
 "functions_func.html":[6,3,1,0],
+"functions_func.html":[6,3,1],
 "functions_func_a.html":[6,3,1,1],
 "functions_func_b.html":[6,3,1,2],
 "functions_func_c.html":[6,3,1,3],
@@ -210,8 +208,8 @@ var NAVTREEINDEX54 =
 "globals_defs.html":[7,4],
 "globals_e.html":[7,0,5],
 "globals_f.html":[7,0,6],
-"globals_func.html":[7,1,0],
 "globals_func.html":[7,1],
+"globals_func.html":[7,1,0],
 "globals_func_b.html":[7,1,1],
 "globals_func_c.html":[7,1,2],
 "globals_func_d.html":[7,1,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX54 =
 "globals_u.html":[7,0,20],
 "globals_v.html":[7,0,21],
 "globals_vars.html":[7,2],
-"globals_w.html":[7,0,22]
+"globals_w.html":[7,0,22],
+"graph_2graphTraversal_8cpp-example.html":[8,93],
+"graph_2volDistanceTraversal_8cpp-example.html":[8,94]
 };

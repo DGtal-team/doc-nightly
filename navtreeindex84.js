@@ -1,7 +1,5 @@
 var NAVTREEINDEX84 =
 {
-"structLibBoard_1_1Point.html#aefb5946cccb835e76dcafddfd41c3a9a":[6,0,3,2,0],
-"structLibBoard_1_1Polyline.html":[6,0,3,10],
 "structLibBoard_1_1Polyline.html#a061e3bd5af0f605f7ef94f9a846c202a":[6,0,3,10,9],
 "structLibBoard_1_1Polyline.html#a144c94110db8afca508c14917884f355":[6,0,3,10,17],
 "structLibBoard_1_1Polyline.html#a163d053a438714286f2e4035b325424a":[6,0,3,10,16],
@@ -249,5 +247,7 @@ var NAVTREEINDEX84 =
 "structLibBoard_1_1Triangle.html#a931f4d4f18fb2202c242b72e6c719fd4":[6,0,3,13,4],
 "structLibBoard_1_1Triangle.html#abc95459f821c05d17ded732e14117205":[6,0,3,13,2],
 "structLibBoard_1_1Triangle.html#ac5ae3eeaf168e334c3bd1586bb1328b6":[6,0,3,13,3],
-"structLibBoard_1_1Triangle.html#aef38d9d728895f065289f654d4cc4564":[6,0,3,13,6]
+"structLibBoard_1_1Triangle.html#aef38d9d728895f065289f654d4cc4564":[6,0,3,13,6],
+"structboost_1_1AdaptableBinaryFunction.html":[6,0,0,26],
+"structboost_1_1AdaptableBinaryPredicate.html":[6,0,0,28]
 };

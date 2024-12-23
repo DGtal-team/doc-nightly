@@ -1,7 +1,5 @@
 var NAVTREEINDEX50 =
 {
-"classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html#ac23b30470b729d2e7733071ec540b038":[6,0,2,2,33,9],
-"classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html#ac412baecf14d6092846344ad7f4731e8":[6,0,2,2,33,1],
 "classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html#ae3b9d6b856caef74947eae3cabd1e01b":[6,0,2,2,33,12],
 "classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html#ae739a4a6ecaffa3492a21bb6d8f935db":[6,0,2,2,33,16],
 "classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html#af551abbcebd8a3f5b19937437e8df095":[6,0,2,2,33,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX50 =
 "classDGtal_1_1functors_1_1ConstImageFunctorHolder.html#a66d3ce7429068a3579ce770bcf24740d":[6,0,2,5,78,1],
 "classDGtal_1_1functors_1_1ConstImageFunctorHolder.html#a7adca365c6f317a7b7ba6cef4efbe7dc":[6,0,2,5,78,2],
 "classDGtal_1_1functors_1_1ConstImageFunctorHolder.html#a7da68e4c222fcbe2f7bf31d569eee86e":[6,0,2,5,78,22],
-"classDGtal_1_1functors_1_1ConstImageFunctorHolder.html#a83322dad8065e2de6aadfd93b22fb88d":[6,0,2,5,78,8]
+"classDGtal_1_1functors_1_1ConstImageFunctorHolder.html#a83322dad8065e2de6aadfd93b22fb88d":[6,0,2,5,78,8],
+"classDGtal_1_1functors_1_1ConstImageFunctorHolder.html#a8971f29ae5ef3965d09a3ee4df5513d0":[6,0,2,5,78,18],
+"classDGtal_1_1functors_1_1ConstImageFunctorHolder.html#a8e8c9233041540ba2f0b23262baf90bb":[6,0,2,5,78,7]
 };

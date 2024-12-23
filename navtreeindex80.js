@@ -1,7 +1,5 @@
 var NAVTREEINDEX80 =
 {
-"structDGtal_1_1detail_1_1RecursivePConvexity_3_011_00_01TInteger_01_4.html#a83aeac2694b2376a34c505feaab1b702":[6,0,2,2,69,4],
-"structDGtal_1_1detail_1_1RecursivePConvexity_3_011_00_01TInteger_01_4.html#a8f6d58012fddc6afdc7c7f7719c8f80d":[6,0,2,2,69,6],
 "structDGtal_1_1detail_1_1RecursivePConvexity_3_011_00_01TInteger_01_4.html#aa19272ec18b9562a5deff4484c071a80":[6,0,2,2,69,3],
 "structDGtal_1_1detail_1_1RecursivePConvexity_3_011_00_01TInteger_01_4.html#ab1b5f6188f5222fc9a6b0cc03ae53317":[6,0,2,2,69,5],
 "structDGtal_1_1detail_1_1RecursivePConvexity_3_011_00_01TInteger_01_4.html#ab4e9c2d005d850da31ead6d84e6d57b1":[6,0,2,2,69,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX80 =
 "structDGtal_1_1functors_1_1HatPointFunction.html#a0e6a2887df151c8f80fbc6d8bd329905":[6,0,2,5,112,9],
 "structDGtal_1_1functors_1_1HatPointFunction.html#a1b4a58d43d1a6806d513a36fbdcf5580":[6,0,2,5,112,3],
 "structDGtal_1_1functors_1_1HatPointFunction.html#a30736fe4ea53f1a5cb56f0e85d496290":[6,0,2,5,112,2],
-"structDGtal_1_1functors_1_1HatPointFunction.html#a45fb86e475f4fa7884f471fea8dc2ddb":[6,0,2,5,112,6]
+"structDGtal_1_1functors_1_1HatPointFunction.html#a45fb86e475f4fa7884f471fea8dc2ddb":[6,0,2,5,112,6],
+"structDGtal_1_1functors_1_1HatPointFunction.html#a4d5012d14e8efdb1230e205d20c0e327":[6,0,2,5,112,4],
+"structDGtal_1_1functors_1_1HatPointFunction.html#a8fe852da6c0594f31d296eb7827fb13f":[6,0,2,5,112,0]
 };

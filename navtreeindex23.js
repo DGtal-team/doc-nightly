@@ -1,7 +1,5 @@
 var NAVTREEINDEX23 =
 {
-"classDGtal_1_1InputIteratorWithRankOnSequence.html#a5d1b7cb9c6c5523e18092b7dab08c3ec":[6,0,2,103,31],
-"classDGtal_1_1InputIteratorWithRankOnSequence.html#a6c40b637d3f2b1c0846309d9d7bf42bd":[6,0,2,103,9],
 "classDGtal_1_1InputIteratorWithRankOnSequence.html#a6fa3eaa30db201a509f84674eb15c834":[6,0,2,103,26],
 "classDGtal_1_1InputIteratorWithRankOnSequence.html#a72bc046d88641fc4fbbf0abb60ccebbb":[6,0,2,103,13],
 "classDGtal_1_1InputIteratorWithRankOnSequence.html#a7a95cd2d8c945065c08e3d09196e112f":[6,0,2,103,24],
@@ -249,5 +247,7 @@ var NAVTREEINDEX23 =
 "classDGtal_1_1IntegralInvariantVolumeEstimator.html#a66c790daf8df00539d1a111231abaa2a":[6,0,2,262,42],
 "classDGtal_1_1IntegralInvariantVolumeEstimator.html#a6a74b9ccf473063c06b3c931d330a835":[6,0,2,262,45],
 "classDGtal_1_1IntegralInvariantVolumeEstimator.html#a6caafd5b424985da7e11e11e6edd8ba9":[6,0,2,262,59],
-"classDGtal_1_1IntegralInvariantVolumeEstimator.html#a6ed8d1189b940592bc27f283f669a0b9":[6,0,2,262,9]
+"classDGtal_1_1IntegralInvariantVolumeEstimator.html#a6ed8d1189b940592bc27f283f669a0b9":[6,0,2,262,9],
+"classDGtal_1_1IntegralInvariantVolumeEstimator.html#a7768d266f04cc794ccfc7134016bd196":[6,0,2,262,31],
+"classDGtal_1_1IntegralInvariantVolumeEstimator.html#a7b1228aad35c886cfffe3604590edf3c":[6,0,2,262,37]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX82 =
 {
-"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#a3c86457f29a60a49260339b16ac0ef47":[6,0,2,5,1,4,0],
-"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#aa0e99536801c35a02829a0a852c039fd":[6,0,2,5,1,4,9],
 "structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#aa101c6f8a25d1512c39d17d065ddba3e":[6,0,2,5,1,4,1],
 "structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#ac6e315cfae3016a2c1d28541d8020e55":[6,0,2,5,1,4,7],
 "structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#aee5d95252fd9dd599471ac666028897e":[6,0,2,5,1,4,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX82 =
 "structLibBoard_1_1Arc.html#a4b2385a6528e91a28d749038dd86b32a":[6,0,3,18,2],
 "structLibBoard_1_1Arc.html#a5e425f3bf8bd2ef6e84d1b5cadb23985":[6,0,3,18,5],
 "structLibBoard_1_1Arc.html#ac86d1b588879f31c59c9abbb81f6c2fb":[6,0,3,18,1],
-"structLibBoard_1_1Arc.html#ad957f4aceb052140e05e164cfccbbfd8":[6,0,3,18,3]
+"structLibBoard_1_1Arc.html#ad957f4aceb052140e05e164cfccbbfd8":[6,0,3,18,3],
+"structLibBoard_1_1Arc.html#ae6e4ed44cf06d15f70142d843f04a0ee":[6,0,3,18,0],
+"structLibBoard_1_1Arc.html#aec0ad6dfc2df3d30f8bdfeb4ea9417c0":[6,0,3,18,4]
 };

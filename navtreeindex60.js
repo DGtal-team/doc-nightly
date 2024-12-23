@@ -1,7 +1,5 @@
 var NAVTREEINDEX60 =
 {
-"namespaceDGtal.html#abc6d219dcad7382fbe63f8b98941d0d8":[5,0,2,679],
-"namespaceDGtal.html#abcbd59ad8a40756a291c741c52dc1712":[5,0,2,934],
 "namespaceDGtal.html#abcda92e8bf3c2c9337277fb908b3f258":[5,0,2,798],
 "namespaceDGtal.html#abdc15c973e5c46488ab60f46da9efb71":[5,0,2,678],
 "namespaceDGtal.html#abe792e4bd33613a06d18b3021d580384":[5,0,2,810],
@@ -249,5 +247,7 @@ var NAVTREEINDEX60 =
 "namespaceDGtal_1_1concepts_1_1ConceptUtils.html#a615b221937da0113363b724f42c5ce69":[5,0,2,0,0,10],
 "namespaceDGtal_1_1concepts_1_1ConceptUtils.html#a7cc7b2b2393623d84b58bf9e5d79ef38":[5,0,2,0,0,9],
 "namespaceDGtal_1_1concepts_1_1ConceptUtils.html#ada4223f57cd8768b8c2db3de4a26c4e3":[5,0,2,0,0,12],
-"namespaceDGtal_1_1concepts_1_1ConceptUtils.html#ae5eda4fcd7f26921b9335b5c7d5874e1":[5,0,2,0,0,17]
+"namespaceDGtal_1_1concepts_1_1ConceptUtils.html#ae5eda4fcd7f26921b9335b5c7d5874e1":[5,0,2,0,0,17],
+"namespaceDGtal_1_1concepts_1_1ConceptUtils.html#af339bf2d282962efad1dc8103079b922":[5,0,2,0,0,13],
+"namespaceDGtal_1_1concepts_1_1ConceptUtils.html#afc19e2a9e71593448ce38e41e0d13994":[5,0,2,0,0,14]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX48 =
 {
-"classDGtal_1_1VoxelComplex.html#a0b80d1cecc2ba4bcd6acfaf8d2c81131":[6,0,2,636,44],
-"classDGtal_1_1VoxelComplex.html#a0cab7e1dee6c6419b724a8100e8c6830":[6,0,2,636,14],
 "classDGtal_1_1VoxelComplex.html#a11371b3b6bb42732e1a6b158d7867bd8":[6,0,2,636,3],
 "classDGtal_1_1VoxelComplex.html#a149f719435ada8b1c2737adce17ccbd4":[6,0,2,636,45],
 "classDGtal_1_1VoxelComplex.html#a1790ee1fdcf5229a385c9595664f1b7a":[6,0,2,636,59],
@@ -249,5 +247,7 @@ var NAVTREEINDEX48 =
 "classDGtal_1_1deprecated_1_1EuclideanShapesMinus.html#a5f54a0b4314c09bc9865da34fe95163c":[6,0,2,1,11,15],
 "classDGtal_1_1deprecated_1_1EuclideanShapesMinus.html#a6198d26f97a8e301b0f75298c4d5647c":[6,0,2,1,11,14],
 "classDGtal_1_1deprecated_1_1EuclideanShapesMinus.html#a6bc8e0f8b1fcf14500e0f9e1c18a74e7":[6,0,2,1,11,8],
-"classDGtal_1_1deprecated_1_1EuclideanShapesMinus.html#a870b1eb88c6fdf629a6db11b299e7175":[6,0,2,1,11,12]
+"classDGtal_1_1deprecated_1_1EuclideanShapesMinus.html#a870b1eb88c6fdf629a6db11b299e7175":[6,0,2,1,11,12],
+"classDGtal_1_1deprecated_1_1EuclideanShapesMinus.html#aa9438c7f21bc443af9bee1626bfc10dd":[6,0,2,1,11,1],
+"classDGtal_1_1deprecated_1_1EuclideanShapesMinus.html#aaa2a6a244af3d6fab4c0030d0ef0cb1a":[6,0,2,1,11,7]
 };

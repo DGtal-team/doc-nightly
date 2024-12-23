@@ -1,7 +1,5 @@
 var NAVTREEINDEX81 =
 {
-"structDGtal_1_1functors_1_1HatPointFunction.html#a4d5012d14e8efdb1230e205d20c0e327":[6,0,2,5,112,4],
-"structDGtal_1_1functors_1_1HatPointFunction.html#a8fe852da6c0594f31d296eb7827fb13f":[6,0,2,5,112,0],
 "structDGtal_1_1functors_1_1HatPointFunction.html#aaec6cdef7a9afe2f02634ac740965373":[6,0,2,5,112,8],
 "structDGtal_1_1functors_1_1HatPointFunction.html#ad9ccc64fd5d0f04f0261dea076ef1b7f":[6,0,2,5,112,1],
 "structDGtal_1_1functors_1_1HatPointFunction.html#af22bd284d1c5d4123dc0bf6f0e953dc3":[6,0,2,5,112,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX81 =
 "structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html":[6,0,2,5,1,4],
 "structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#a158d533cbc9e277856e7de7679f6c430":[6,0,2,5,1,4,4],
 "structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#a21aa81ea27ee1260f598ad91673a6bf4":[6,0,2,5,1,4,5],
-"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#a2be514cc591cd2a8b0984e77fa27b045":[6,0,2,5,1,4,2]
+"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#a2be514cc591cd2a8b0984e77fa27b045":[6,0,2,5,1,4,2],
+"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#a3c86457f29a60a49260339b16ac0ef47":[6,0,2,5,1,4,0],
+"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#aa0e99536801c35a02829a0a852c039fd":[6,0,2,5,1,4,9]
 };

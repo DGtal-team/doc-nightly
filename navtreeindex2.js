@@ -1,7 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classDGtal_1_1ArithmeticalDSSComputer.html#ab907de66d7e540d0e64da5fd4cb333b7":[6,0,2,171,42],
-"classDGtal_1_1ArithmeticalDSSComputer.html#abe059bc63932315dcd33094854f226c4":[6,0,2,171,1],
 "classDGtal_1_1ArithmeticalDSSComputer.html#ac221e965226a4e0100b654a063247627":[6,0,2,171,44],
 "classDGtal_1_1ArithmeticalDSSComputer.html#ac376578fe40431c6d2b32fc5b6c8a8de":[6,0,2,171,43],
 "classDGtal_1_1ArithmeticalDSSComputer.html#ac3c0b52955fb2ce4905b6ced92b6dc26":[6,0,2,171,55],
@@ -249,5 +247,7 @@ var NAVTREEINDEX2 =
 "classDGtal_1_1BackInsertionSequenceToStackAdapter.html#aa3103311f26d18b5832cc457667c862f":[6,0,2,16,11],
 "classDGtal_1_1BackInsertionSequenceToStackAdapter.html#aeb0db8bb581e7a3a0dc3530a066d5480":[6,0,2,16,8],
 "classDGtal_1_1BackInsertionSequenceToStackAdapter.html#aec5444026ac900c481a1f9dd290f6a95":[6,0,2,16,10],
-"classDGtal_1_1BackInsertionSequenceToStackAdapter.html#af43e3c9290c7181a597735ad46fee833":[6,0,2,16,7]
+"classDGtal_1_1BackInsertionSequenceToStackAdapter.html#af43e3c9290c7181a597735ad46fee833":[6,0,2,16,7],
+"classDGtal_1_1BackInsertionSequenceToStackAdapter.html#af531272f01348527c97fcadd4b2fb1ad":[6,0,2,16,1],
+"classDGtal_1_1BackInsertionSequenceToStackAdapter.html#afccd835a5530031f1c513c3a07825412":[6,0,2,16,14]
 };

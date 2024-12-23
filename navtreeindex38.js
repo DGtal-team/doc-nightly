@@ -1,7 +1,5 @@
 var NAVTREEINDEX38 =
 {
-"classDGtal_1_1RegularPointEmbedder.html#aaf7977b46a66420113b0cb5b2c6d1168":[6,0,2,510,9],
-"classDGtal_1_1RegularPointEmbedder.html#ab934665b5e13ad119e0ab1c1db6fdedf":[6,0,2,510,15],
 "classDGtal_1_1RegularPointEmbedder.html#abc345856dab954d97897613c2e7e8643":[6,0,2,510,2],
 "classDGtal_1_1RegularPointEmbedder.html#ac2453f63881727627c6ddc3e0c38d225":[6,0,2,510,8],
 "classDGtal_1_1RegularPointEmbedder.html#ad8160f18faf1d8505f041525c8c0e462":[6,0,2,510,13],
@@ -249,5 +247,7 @@ var NAVTREEINDEX38 =
 "classDGtal_1_1Shapes.html#a92b16e7cda17dbf159190a2c9a185f1e":[6,0,2,591,22],
 "classDGtal_1_1Shapes.html#aa9a8621947bb3fdbaed2e5f36deb67bf":[6,0,2,591,1],
 "classDGtal_1_1Shapes.html#acde0e74411f8d24da89c93f6df58a84f":[6,0,2,591,13],
-"classDGtal_1_1Shapes.html#aea9516dbca90f4a868852078fe0d5751":[6,0,2,591,11]
+"classDGtal_1_1Shapes.html#aea9516dbca90f4a868852078fe0d5751":[6,0,2,591,11],
+"classDGtal_1_1Shapes.html#aeb859f6edab357ceca4917118711dd52":[6,0,2,591,21],
+"classDGtal_1_1Shapes.html#aec68ace82ad6d9a4206603fa241a5c9c":[6,0,2,591,0]
 };
