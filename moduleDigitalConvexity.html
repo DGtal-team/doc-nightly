@@ -348,7 +348,9 @@ Other convexity services, like digital subconvexity (or tangency)</h2>
 <li>DigitalConvexity::isFullySubconvex( const LatticePolytope&amp; P, const LatticeSet&amp; StarX ) const tells if a given polytope is fully subconvex to a set of cells, represented as a <a class="el" href="classDGtal_1_1LatticeSetByIntervals.html" title="Aim:">LatticeSetByIntervals</a>.</li>
 <li>DigitalConvexity::isFullySubconvex( const PointRange&amp; Y, const LatticeSet&amp; StarX ) const tells is the given range of points is fully subconvex to a set of cells, represented as a <a class="el" href="classDGtal_1_1LatticeSetByIntervals.html" title="Aim:">LatticeSetByIntervals</a>.</li>
 <li>DigitalConvexity::isFullySubconvex( const Point&amp; a, const Point&amp; b, const LatticeSet&amp; StarX ) const tells if the given pair of points is fully subconvex to a set of cells, represented as a <a class="el" href="classDGtal_1_1LatticeSetByIntervals.html" title="Aim:">LatticeSetByIntervals</a> (three times faster than previous generic method).</li>
-<li>DigitalConvexity::isFullySubconvex( const Point&amp; a, const Point&amp; b, const Point&amp; c, const LatticeSet&amp; StarX ) const tells if the given triplets of points is fully subconvex to a set of cells, represented as a <a class="el" href="classDGtal_1_1LatticeSetByIntervals.html" title="Aim:">LatticeSetByIntervals</a> (five times faster than previous generic method).</li>
+<li>DigitalConvexity::isFullySubconvex( const Point&amp; a, const Point&amp; b, const Point&amp; c, const LatticeSet&amp; cells ) const tells if the given triplet of points is fully subconvex to a set of cells, represented as a <a class="el" href="classDGtal_1_1LatticeSetByIntervals.html" title="Aim:">LatticeSetByIntervals</a> (five times faster than previous generic method).</li>
+<li>DigitalConvexity::isFullyCovered( const Point&amp; a, const Point&amp; b, const LatticeSet&amp; cells ) const tells if the segment defined by the input pair of points is fully covered by the given set of cells, represented as a <a class="el" href="classDGtal_1_1LatticeSetByIntervals.html" title="Aim:">LatticeSetByIntervals</a> (limited to 3D at the moment).</li>
+<li>DigitalConvexity::isFullyCovered( const Point&amp; a, const Point&amp; b, const Point&amp; c, const LatticeSet&amp; cells ) const tells if the triangle defined by the input triplet of points is fully covered by the given set of cells, represented as a <a class="el" href="classDGtal_1_1LatticeSetByIntervals.html" title="Aim:">LatticeSetByIntervals</a> (limited to 3D at the moment).</li>
 </ul>
 <h2><a class="anchor" id="dgtal_dconvexity_sec25"></a>
 Ehrhart polynomial of a lattice polytope</h2>
@@ -549,7 +551,7 @@ Further notes</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Mon Jul 7 2025 12:41:09 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jul 7 2025 13:04:06 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

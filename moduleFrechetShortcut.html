@@ -226,22 +226,22 @@ If we now go back to Algorithm 2, we see that the result of the test lines 2-3 i
 the same for all the directions of a given octant. This test can thus be
 done jointly for all the directions of an octant.  &lt;br&gt;
  Nevertheless, to
-determine if a new point \_form#678 is the new active occulter (the furthest 
+determine if a new point \_form#681 is the new active occulter (the furthest 
 point for the direction studied), the projection of the current active
-occulter and the point \_form#678 on a direction are compared: the furthest  &lt;br&gt;
+occulter and the point \_form#681 on a direction are compared: the furthest  &lt;br&gt;
 of the two points is the active occulter. There, for any two points
- \_form#678 and \_form#679 the result of this
+ \_form#681 and \_form#682 the result of this
 comparison is not the same for 
 all the directions of a given octant. This fact is illustrated in the
-figures below for the octant \_form#680: 
+figures below for the octant \_form#683: 
 
-  for any point \_form#679
+  for any point \_form#682
   in the grey area, and for any direction in octant 
- \_form#680, \_form#679 is after \_form#271. 
+ \_form#683, \_form#682 is after \_form#271. 
 
-  for any point \_form#679
+  for any point \_form#682
   in the dashed area, and for any direction in octant 
- \_form#680, \_form#271 is after \_form#679. 
+ \_form#683, \_form#271 is after \_form#682. 
 
   in the white area, the order changes, as illustrated below. 
 
@@ -270,12 +270,12 @@ active occulters. All in all, testing individually all the possible
 backpathes when a new point is added is too expensive. 
 To solve this problem, we propose to maintain a `&amp;lsquo;set&amp;rsquo;' of the directions
 for which there exists a backpath of length greater than the error
- \_form#681. 
+ \_form#684. 
 
 This set actually consists in a list of intervals: for a given backpath
-of length &lt;em&gt;l&lt;/em&gt; and a given error \_form#681, the interval of
+of length &lt;em&gt;l&lt;/em&gt; and a given error \_form#684, the interval of
 directions for which the projection of the backpath is longer than
- \_form#681 is computed easily. The union of all these intervals is
+ \_form#684 is computed easily. The union of all these intervals is
 stored.  &lt;br&gt;
 
 
@@ -287,7 +287,7 @@ An important issue when designing an algorithm that is known not to be
 optimal is to prove that the result of this algorithm is not so
 far from the optimal. 
 In this work, the optimal solution is to compute the
- \_form#681-simplification of a digital curve P according to the
+ \_form#684-simplification of a digital curve P according to the
 Fréchet distance with a minimum number of vertices. 
 The algorithm we propose here is not optimal for
 two reasons:
@@ -364,7 +364,7 @@ Implementation in DGtal</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Mon Jul 7 2025 12:41:09 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jul 7 2025 13:04:06 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

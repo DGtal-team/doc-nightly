@@ -7,6 +7,6 @@ var searchData=
   ['gpolynomial_4',['gpolynomial',['../classDGtal_1_1MPolynomialReader.html#a485944c86c70f3ed2834758183b20371',1,'DGtal::MPolynomialReader']]],
   ['graph_5fvertex_5findex_5',['graph_vertex_index',['../structmy__vertex__copier.html#abc07d553b9a269316a60d22f08bec65a',1,'my_vertex_copier']]],
   ['graph_5fvertex_5fposition_6',['graph_vertex_position',['../structmy__vertex__copier.html#a9f4e8d3eeda5ee24cfe90f0f24d51097',1,'my_vertex_copier']]],
-  ['gray_7',['gray',['../classtestRigidTransformation2D.html#aeb3499da1ca219eeaf0a1039c34fe981',1,'testRigidTransformation2D::gray'],['../classDGtal_1_1Color.html#adc0c09055f0e8817e1f2ede5abefcc0f',1,'DGtal::Color::Gray']]],
+  ['gray_7',['gray',['../classDGtal_1_1Color.html#adc0c09055f0e8817e1f2ede5abefcc0f',1,'DGtal::Color::Gray'],['../classtestRigidTransformation2D.html#aeb3499da1ca219eeaf0a1039c34fe981',1,'testRigidTransformation2D::gray']]],
   ['green_8',['Green',['../classDGtal_1_1Color.html#ae52413c37b58ca78ac99f05f67c1be99',1,'DGtal::Color']]]
 ];

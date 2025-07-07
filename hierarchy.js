@@ -1627,6 +1627,8 @@ var hierarchy =
     [ "DGtal::SternBrocot< TInteger, TQuotient >", "classDGtal_1_1SternBrocot.html", null ],
     [ "DGtal::StraightLineFrom2Points< TPoint >", "classDGtal_1_1StraightLineFrom2Points.html", null ],
     [ "DGtal::functors::StrictTruncationFunctor< Integer >", "structDGtal_1_1functors_1_1StrictTruncationFunctor.html", null ],
+    [ "DGtal::BoundedLatticePolytope< TSpace >::StrictUnitCell", "structDGtal_1_1BoundedLatticePolytope_1_1StrictUnitCell.html", null ],
+    [ "DGtal::BoundedLatticePolytope< TSpace >::StrictUnitSegment", "structDGtal_1_1BoundedLatticePolytope_1_1StrictUnitSegment.html", null ],
     [ "DGtal::Style2DFactory", "structDGtal_1_1Style2DFactory.html", null ],
     [ "DGtal::SpaceND< dim, TInteger >::Subcospace< codimension >", "structDGtal_1_1SpaceND_1_1Subcospace.html", null ],
     [ "DGtal::SpaceND< dim, TInteger >::Subspace< subdimension >", "structDGtal_1_1SpaceND_1_1Subspace.html", null ],

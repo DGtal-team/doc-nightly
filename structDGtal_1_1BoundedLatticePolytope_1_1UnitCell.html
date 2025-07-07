@@ -126,7 +126,7 @@ Friends</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename TSpace&gt;<br />
 struct DGtal::BoundedLatticePolytope&lt; TSpace &gt;::UnitCell</div><p>Represents the unit cell obtained by successive Minkowski sum of <a class="el" href="structDGtal_1_1BoundedLatticePolytope_1_1UnitSegment.html">UnitSegment</a> whose dimensions are stored in <em>dims</em>. When <em>dims</em> is empty, it is only the point (0,...,0). </p>
 
-<p class="definition">Definition at line <a class="el" href="BoundedLatticePolytope_8h_source.html#l00122">122</a> of file <a class="el" href="BoundedLatticePolytope_8h_source.html">BoundedLatticePolytope.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BoundedLatticePolytope_8h_source.html#l00131">131</a> of file <a class="el" href="BoundedLatticePolytope_8h_source.html">BoundedLatticePolytope.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae9942fbe96e558d9a417351dd35b2e22" name="ae9942fbe96e558d9a417351dd35b2e22"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae9942fbe96e558d9a417351dd35b2e22">&#9670;&#160;</a></span>UnitCell()</h2>
@@ -154,9 +154,9 @@ template&lt;typename TSpace &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="BoundedLatticePolytope_8h_source.html#l00124">124</a> of file <a class="el" href="BoundedLatticePolytope_8h_source.html">BoundedLatticePolytope.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  125</span>        : <a class="code hl_variable" href="structDGtal_1_1BoundedLatticePolytope_1_1UnitCell.html#a0ce0df7bfdfa318f827add3a748cdbcb">dims</a>( l.begin(), l.end() ) {}</div>
-<div class="ttc" id="astructDGtal_1_1BoundedLatticePolytope_1_1UnitCell_html_a0ce0df7bfdfa318f827add3a748cdbcb"><div class="ttname"><a href="structDGtal_1_1BoundedLatticePolytope_1_1UnitCell.html#a0ce0df7bfdfa318f827add3a748cdbcb">DGtal::BoundedLatticePolytope::UnitCell::dims</a></div><div class="ttdeci">std::vector&lt; Dimension &gt; dims</div><div class="ttdef"><b>Definition</b> <a href="BoundedLatticePolytope_8h_source.html#l00123">BoundedLatticePolytope.h:123</a></div></div>
+<p class="definition">Definition at line <a class="el" href="BoundedLatticePolytope_8h_source.html#l00133">133</a> of file <a class="el" href="BoundedLatticePolytope_8h_source.html">BoundedLatticePolytope.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  134</span>        : <a class="code hl_variable" href="structDGtal_1_1BoundedLatticePolytope_1_1UnitCell.html#a0ce0df7bfdfa318f827add3a748cdbcb">dims</a>( l.begin(), l.end() ) {}</div>
+<div class="ttc" id="astructDGtal_1_1BoundedLatticePolytope_1_1UnitCell_html_a0ce0df7bfdfa318f827add3a748cdbcb"><div class="ttname"><a href="structDGtal_1_1BoundedLatticePolytope_1_1UnitCell.html#a0ce0df7bfdfa318f827add3a748cdbcb">DGtal::BoundedLatticePolytope::UnitCell::dims</a></div><div class="ttdeci">std::vector&lt; Dimension &gt; dims</div><div class="ttdef"><b>Definition</b> <a href="BoundedLatticePolytope_8h_source.html#l00132">BoundedLatticePolytope.h:132</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -205,13 +205,13 @@ template&lt;typename TSpace &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the output stream after the writing. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="BoundedLatticePolytope_8h_source.html#l00133">133</a> of file <a class="el" href="BoundedLatticePolytope_8h_source.html">BoundedLatticePolytope.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  136</span>      {</div>
-<div class="line"><span class="lineno">  137</span>        out &lt;&lt; <span class="stringliteral">&quot;{&quot;</span>;</div>
-<div class="line"><span class="lineno">  138</span>        <span class="keywordflow">for</span> ( <a class="code hl_typedef" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> i = 0; i &lt; <span class="keywordtype">object</span>.dims.size(); ++i ) out &lt;&lt; <span class="keywordtype">object</span>.<a class="code hl_variable" href="structDGtal_1_1BoundedLatticePolytope_1_1UnitCell.html#a0ce0df7bfdfa318f827add3a748cdbcb">dims</a>[ i ];</div>
-<div class="line"><span class="lineno">  139</span>        out &lt;&lt; <span class="stringliteral">&quot;}&quot;</span>;</div>
-<div class="line"><span class="lineno">  140</span>        <span class="keywordflow">return</span> out;</div>
-<div class="line"><span class="lineno">  141</span>      }</div>
+<p class="definition">Definition at line <a class="el" href="BoundedLatticePolytope_8h_source.html#l00142">142</a> of file <a class="el" href="BoundedLatticePolytope_8h_source.html">BoundedLatticePolytope.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  145</span>      {</div>
+<div class="line"><span class="lineno">  146</span>        out &lt;&lt; <span class="stringliteral">&quot;{&quot;</span>;</div>
+<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">for</span> ( <a class="code hl_typedef" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> i = 0; i &lt; <span class="keywordtype">object</span>.dims.size(); ++i ) out &lt;&lt; <span class="keywordtype">object</span>.<a class="code hl_variable" href="structDGtal_1_1BoundedLatticePolytope_1_1UnitCell.html#a0ce0df7bfdfa318f827add3a748cdbcb">dims</a>[ i ];</div>
+<div class="line"><span class="lineno">  148</span>        out &lt;&lt; <span class="stringliteral">&quot;}&quot;</span>;</div>
+<div class="line"><span class="lineno">  149</span>        <span class="keywordflow">return</span> out;</div>
+<div class="line"><span class="lineno">  150</span>      }</div>
 <div class="ttc" id="anamespaceDGtal_html_a8fbe8c8d47ca5c36ced14284ac62613d"><div class="ttname"><a href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">DGtal::Dimension</a></div><div class="ttdeci">DGtal::uint32_t Dimension</div><div class="ttdef"><b>Definition</b> <a href="Common_8h_source.html#l00119">Common.h:119</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -231,7 +231,7 @@ template&lt;typename TSpace &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="BoundedLatticePolytope_8h_source.html#l00123">123</a> of file <a class="el" href="BoundedLatticePolytope_8h_source.html">BoundedLatticePolytope.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="BoundedLatticePolytope_8h_source.html#l00132">132</a> of file <a class="el" href="BoundedLatticePolytope_8h_source.html">BoundedLatticePolytope.h</a>.</p>
 
 </div>
 </div>
@@ -244,7 +244,7 @@ template&lt;typename TSpace &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1BoundedLatticePolytope.html">BoundedLatticePolytope</a></li><li class="navelem"><a class="el" href="structDGtal_1_1BoundedLatticePolytope_1_1UnitCell.html">UnitCell</a></li>
-    <li class="footer">Generated on Mon Jul 7 2025 12:41:12 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jul 7 2025 13:04:09 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
