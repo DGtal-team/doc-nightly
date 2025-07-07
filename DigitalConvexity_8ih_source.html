@@ -1328,160 +1328,162 @@ $(document).ready(function(){initNavTree('DigitalConvexity_8ih_source.html','');
 <div class="line"><a id="l01221" name="l01221"></a><span class="lineno"> 1221</span>isKConvex( const RationalPolytope&amp; P, const Dimension k ) const</div>
 <div class="line"><a id="l01222" name="l01222"></a><span class="lineno"> 1222</span>{</div>
 <div class="line"><a id="l01223" name="l01223"></a><span class="lineno"> 1223</span>  if ( k == 0 ) return true;</div>
-<div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span>  auto S = insidePoints( P );</div>
-<div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span>  auto touched_cells     = makeCellCover( S.begin(), S.end(), k, k );</div>
-<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span>  auto intersected_cells = makeCellCover( P, k, k );</div>
-<div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span>  return intersected_cells.nbCells() == touched_cells.nbCells()</div>
-<div class="line"><a id="l01228" name="l01228"></a><span class="lineno"> 1228</span>    &amp;&amp; intersected_cells.subset( touched_cells );</div>
-<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span>}</div>
-<div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span> </div>
-<div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span>//-----------------------------------------------------------------------------</div>
-<div class="line"><a id="l01232" name="l01232"></a><span class="lineno"> 1232</span>template &lt;typename TKSpace&gt;</div>
-<div class="line"><a id="l01233" name="l01233"></a><span class="lineno"> 1233</span>bool</div>
-<div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span>DGtal::DigitalConvexity&lt;TKSpace&gt;::</div>
-<div class="line"><a id="l01235" name="l01235"></a><span class="lineno"> 1235</span>isFullyConvex( const RationalPolytope&amp; P ) const</div>
-<div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span>{</div>
-<div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span>  auto S = insidePoints( P );</div>
-<div class="line"><a id="l01238" name="l01238"></a><span class="lineno"> 1238</span>  if ( S.size() &lt;= 1 ) return true;</div>
-<div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span>  for ( Dimension k = 1; k &lt; KSpace::dimension; ++ k )</div>
-<div class="line"><a id="l01240" name="l01240"></a><span class="lineno"> 1240</span>    {</div>
-<div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span>      auto touched_cells     = makeCellCover( S.begin(), S.end(), k, k );</div>
-<div class="line"><a id="l01242" name="l01242"></a><span class="lineno"> 1242</span>      auto intersected_cells = makeCellCover( P, k, k );</div>
-<div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span>      if ( ( intersected_cells.nbCells() != touched_cells.nbCells() )</div>
-<div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span>           || ( ! intersected_cells.subset( touched_cells ) ) )</div>
-<div class="line"><a id="l01245" name="l01245"></a><span class="lineno"> 1245</span>        return false;</div>
-<div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span>    }</div>
-<div class="line"><a id="l01247" name="l01247"></a><span class="lineno"> 1247</span>  return true;</div>
-<div class="line"><a id="l01248" name="l01248"></a><span class="lineno"> 1248</span>}</div>
-<div class="line"><a id="l01249" name="l01249"></a><span class="lineno"> 1249</span> </div>
-<div class="line"><a id="l01250" name="l01250"></a><span class="lineno"> 1250</span>//-----------------------------------------------------------------------------</div>
-<div class="line"><a id="l01251" name="l01251"></a><span class="lineno"> 1251</span>template &lt;typename TKSpace&gt;</div>
-<div class="line"><a id="l01252" name="l01252"></a><span class="lineno"> 1252</span>bool</div>
-<div class="line"><a id="l01253" name="l01253"></a><span class="lineno"> 1253</span>DGtal::DigitalConvexity&lt;TKSpace&gt;::</div>
-<div class="line"><a id="l01254" name="l01254"></a><span class="lineno"> 1254</span>isKSubconvex( const RationalPolytope&amp; P, const CellGeometry&amp; C,</div>
-<div class="line"><a id="l01255" name="l01255"></a><span class="lineno"> 1255</span>              const Dimension k ) const</div>
-<div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span>{</div>
-<div class="line"><a id="l01257" name="l01257"></a><span class="lineno"> 1257</span>  auto intersected_cells = makeCellCover( P, k, k );</div>
-<div class="line"><a id="l01258" name="l01258"></a><span class="lineno"> 1258</span>  return intersected_cells.subset( C );</div>
-<div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span>}</div>
-<div class="line"><a id="l01260" name="l01260"></a><span class="lineno"> 1260</span>//-----------------------------------------------------------------------------</div>
-<div class="line"><a id="l01261" name="l01261"></a><span class="lineno"> 1261</span>template &lt;typename TKSpace&gt;</div>
-<div class="line"><a id="l01262" name="l01262"></a><span class="lineno"> 1262</span>bool</div>
-<div class="line"><a id="l01263" name="l01263"></a><span class="lineno"> 1263</span>DGtal::DigitalConvexity&lt;TKSpace&gt;::</div>
-<div class="line"><a id="l01264" name="l01264"></a><span class="lineno"> 1264</span>isFullySubconvex( const RationalPolytope&amp; P, const CellGeometry&amp; C ) const</div>
-<div class="line"><a id="l01265" name="l01265"></a><span class="lineno"> 1265</span>{</div>
-<div class="line"><a id="l01266" name="l01266"></a><span class="lineno"> 1266</span>  auto intersected_cells = makeCellCover( P, C.minCellDim(), C.maxCellDim() );</div>
-<div class="line"><a id="l01267" name="l01267"></a><span class="lineno"> 1267</span>  return intersected_cells.subset( C );</div>
-<div class="line"><a id="l01268" name="l01268"></a><span class="lineno"> 1268</span>}</div>
-<div class="line"><a id="l01269" name="l01269"></a><span class="lineno"> 1269</span> </div>
-<div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span>//-----------------------------------------------------------------------------</div>
-<div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span>template &lt;typename TKSpace&gt;</div>
-<div class="line"><a id="l01272" name="l01272"></a><span class="lineno"> 1272</span>void </div>
-<div class="line"><a id="l01273" name="l01273"></a><span class="lineno"> 1273</span>DGtal::DigitalConvexity&lt;TKSpace&gt;::</div>
-<div class="line"><a id="l01274" name="l01274"></a><span class="lineno"> 1274</span>eraseInterval( Interval I, std::vector&lt; Interval &gt; &amp; V )</div>
-<div class="line"><a id="l01275" name="l01275"></a><span class="lineno"> 1275</span>{</div>
-<div class="line"><a id="l01276" name="l01276"></a><span class="lineno"> 1276</span>  for ( std::size_t i = 0; i &lt; V.size(); )</div>
-<div class="line"><a id="l01277" name="l01277"></a><span class="lineno"> 1277</span>    {</div>
-<div class="line"><a id="l01278" name="l01278"></a><span class="lineno"> 1278</span>      Interval&amp; J = V[ i ];</div>
-<div class="line"><a id="l01279" name="l01279"></a><span class="lineno"> 1279</span>      // I=[a,b], J=[a&#39;,b&#39;], a &lt;= b, a&#39; &lt;= b&#39;</div>
-<div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span>      if ( I.second &lt; J.first ) { break; } // b &lt; a&#39; : no further intersection</div>
-<div class="line"><a id="l01281" name="l01281"></a><span class="lineno"> 1281</span>      if ( J.second &lt; I.first ) { ++i; continue; } // b&#39; &lt; a : no further intersection</div>
-<div class="line"><a id="l01282" name="l01282"></a><span class="lineno"> 1282</span>      // a&#39; &lt;= b and a &lt;= b&#39;</div>
-<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>      //       a ----------  b</div>
-<div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span>      // a&#39; ...............  a&#39;</div>
-<div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span>      //     b&#39; ................. b&#39;</div>
-<div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span>      </div>
-<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span>      // a&#39; ..................... b&#39; =&gt; a&#39;..a-1       b+1 b&#39;</div>
-<div class="line"><a id="l01288" name="l01288"></a><span class="lineno"> 1288</span>      Interval K1( J.first, I.first - 1 );</div>
-<div class="line"><a id="l01289" name="l01289"></a><span class="lineno"> 1289</span>      Interval K2( I.second + 1, J.second );</div>
-<div class="line"><a id="l01290" name="l01290"></a><span class="lineno"> 1290</span>      bool K1_exist = K1.second &gt;= K1.first;</div>
-<div class="line"><a id="l01291" name="l01291"></a><span class="lineno"> 1291</span>      bool K2_exist = K2.second &gt;= K2.first;</div>
-<div class="line"><a id="l01292" name="l01292"></a><span class="lineno"> 1292</span>      if ( K1_exist &amp;&amp; K2_exist )</div>
-<div class="line"><a id="l01293" name="l01293"></a><span class="lineno"> 1293</span>        {</div>
-<div class="line"><a id="l01294" name="l01294"></a><span class="lineno"> 1294</span>          V[ i ] = K2;</div>
-<div class="line"><a id="l01295" name="l01295"></a><span class="lineno"> 1295</span>          V.insert( V.begin() + i, K1 );</div>
-<div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span>          break; // no further intersection possible</div>
-<div class="line"><a id="l01297" name="l01297"></a><span class="lineno"> 1297</span>        }</div>
-<div class="line"><a id="l01298" name="l01298"></a><span class="lineno"> 1298</span>      else if ( K1_exist )</div>
-<div class="line"><a id="l01299" name="l01299"></a><span class="lineno"> 1299</span>        {</div>
-<div class="line"><a id="l01300" name="l01300"></a><span class="lineno"> 1300</span>          V[ i ] = K1; i++;</div>
-<div class="line"><a id="l01301" name="l01301"></a><span class="lineno"> 1301</span>        }</div>
-<div class="line"><a id="l01302" name="l01302"></a><span class="lineno"> 1302</span>      else if ( K2_exist )</div>
-<div class="line"><a id="l01303" name="l01303"></a><span class="lineno"> 1303</span>        {</div>
-<div class="line"><a id="l01304" name="l01304"></a><span class="lineno"> 1304</span>          V[ i ] = K2; break;</div>
-<div class="line"><a id="l01305" name="l01305"></a><span class="lineno"> 1305</span>        }</div>
-<div class="line"><a id="l01306" name="l01306"></a><span class="lineno"> 1306</span>      else</div>
-<div class="line"><a id="l01307" name="l01307"></a><span class="lineno"> 1307</span>        {</div>
-<div class="line"><a id="l01308" name="l01308"></a><span class="lineno"> 1308</span>          V.erase( V.begin() + i );</div>
-<div class="line"><a id="l01309" name="l01309"></a><span class="lineno"> 1309</span>        }</div>
-<div class="line"><a id="l01310" name="l01310"></a><span class="lineno"> 1310</span>    }</div>
-<div class="line"><a id="l01311" name="l01311"></a><span class="lineno"> 1311</span>}</div>
-<div class="line"><a id="l01312" name="l01312"></a><span class="lineno"> 1312</span> </div>
-<div class="line"><a id="l01313" name="l01313"></a><span class="lineno"> 1313</span>//-----------------------------------------------------------------------------</div>
-<div class="line"><a id="l01314" name="l01314"></a><span class="lineno"> 1314</span>template &lt;typename TKSpace&gt;</div>
-<div class="line"><a id="l01315" name="l01315"></a><span class="lineno"> 1315</span>template &lt;typename Predicate&gt;</div>
-<div class="line"><a id="l01316" name="l01316"></a><span class="lineno"> 1316</span>typename DGtal::DigitalConvexity&lt;TKSpace&gt;::PointRange </div>
-<div class="line"><a id="l01317" name="l01317"></a><span class="lineno"> 1317</span>DGtal::DigitalConvexity&lt;TKSpace&gt;::</div>
-<div class="line"><a id="l01318" name="l01318"></a><span class="lineno"> 1318</span>filter( const PointRange&amp; E, const Predicate&amp; Pred )</div>
-<div class="line"><a id="l01319" name="l01319"></a><span class="lineno"> 1319</span>{</div>
-<div class="line"><a id="l01320" name="l01320"></a><span class="lineno"> 1320</span>  PointRange Out;</div>
-<div class="line"><a id="l01321" name="l01321"></a><span class="lineno"> 1321</span>  Out.reserve( E.size() );</div>
-<div class="line"><a id="l01322" name="l01322"></a><span class="lineno"> 1322</span>  for ( auto&amp;&amp; p : E )</div>
-<div class="line"><a id="l01323" name="l01323"></a><span class="lineno"> 1323</span>    if ( Pred( p ) ) Out.push_back( p );</div>
-<div class="line"><a id="l01324" name="l01324"></a><span class="lineno"> 1324</span>  return Out;</div>
-<div class="line"><a id="l01325" name="l01325"></a><span class="lineno"> 1325</span>}</div>
-<div class="line"><a id="l01326" name="l01326"></a><span class="lineno"> 1326</span> </div>
-<div class="line"><a id="l01327" name="l01327"></a><span class="lineno"> 1327</span>///////////////////////////////////////////////////////////////////////////////</div>
-<div class="line"><a id="l01328" name="l01328"></a><span class="lineno"> 1328</span>// Interface - public :</div>
-<div class="line"><a id="l01329" name="l01329"></a><span class="lineno"> 1329</span> </div>
-<div class="line"><a id="l01330" name="l01330"></a><span class="lineno"> 1330</span>/**</div>
-<div class="line"><a id="l01331" name="l01331"></a><span class="lineno"> 1331</span> * Writes/Displays the object on an output stream.</div>
-<div class="line"><a id="l01332" name="l01332"></a><span class="lineno"> 1332</span> * @param out the output stream where the object is written.</div>
-<div class="line"><a id="l01333" name="l01333"></a><span class="lineno"> 1333</span> */</div>
-<div class="line"><a id="l01334" name="l01334"></a><span class="lineno"> 1334</span>template &lt;typename TKSpace&gt;</div>
-<div class="line"><a id="l01335" name="l01335"></a><span class="lineno"> 1335</span>inline</div>
-<div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span>void</div>
-<div class="line"><a id="l01337" name="l01337"></a><span class="lineno"> 1337</span>DGtal::DigitalConvexity&lt;TKSpace&gt;::selfDisplay ( std::ostream &amp; out ) const</div>
-<div class="line"><a id="l01338" name="l01338"></a><span class="lineno"> 1338</span>{</div>
-<div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span>  out &lt;&lt; &quot;[DigitalConvexity]&quot;;</div>
-<div class="line"><a id="l01340" name="l01340"></a><span class="lineno"> 1340</span>}</div>
-<div class="line"><a id="l01341" name="l01341"></a><span class="lineno"> 1341</span> </div>
-<div class="line"><a id="l01342" name="l01342"></a><span class="lineno"> 1342</span>/**</div>
-<div class="line"><a id="l01343" name="l01343"></a><span class="lineno"> 1343</span> * Checks the validity/consistency of the object.</div>
-<div class="line"><a id="l01344" name="l01344"></a><span class="lineno"> 1344</span> * @return &#39;true&#39; if the object is valid, &#39;false&#39; otherwise.</div>
-<div class="line"><a id="l01345" name="l01345"></a><span class="lineno"> 1345</span> */</div>
-<div class="line"><a id="l01346" name="l01346"></a><span class="lineno"> 1346</span>template &lt;typename TKSpace&gt;</div>
-<div class="line"><a id="l01347" name="l01347"></a><span class="lineno"> 1347</span>inline</div>
-<div class="line"><a id="l01348" name="l01348"></a><span class="lineno"> 1348</span>bool</div>
-<div class="line"><a id="l01349" name="l01349"></a><span class="lineno"> 1349</span>DGtal::DigitalConvexity&lt;TKSpace&gt;::isValid() const</div>
-<div class="line"><a id="l01350" name="l01350"></a><span class="lineno"> 1350</span>{</div>
-<div class="line"><a id="l01351" name="l01351"></a><span class="lineno"> 1351</span>  return true;</div>
-<div class="line"><a id="l01352" name="l01352"></a><span class="lineno"> 1352</span>}</div>
-<div class="line"><a id="l01353" name="l01353"></a><span class="lineno"> 1353</span> </div>
-<div class="line"><a id="l01354" name="l01354"></a><span class="lineno"> 1354</span> </div>
-<div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span>///////////////////////////////////////////////////////////////////////////////</div>
-<div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span>// Implementation of inline functions                                        //</div>
-<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span> </div>
-<div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span>//-----------------------------------------------------------------------------</div>
-<div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span>template &lt;typename TKSpace&gt;</div>
-<div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span>inline</div>
-<div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span>std::ostream&amp;</div>
-<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span>DGtal::operator&lt;&lt; ( std::ostream &amp; out,</div>
-<div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span>                    const DigitalConvexity&lt;TKSpace&gt; &amp; object )</div>
-<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>{</div>
-<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span>  object.selfDisplay( out );</div>
-<div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span>  return out;</div>
-<div class="line"><a id="l01367" name="l01367"></a><span class="lineno"> 1367</span>}</div>
-<div class="line"><a id="l01368" name="l01368"></a><span class="lineno"> 1368</span> </div>
-<div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span>//                                                                           //</div>
-<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span>///////////////////////////////////////////////////////////////////////////////</div>
+<div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span>  auto Q = P.denominator() * P;</div>
+<div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span>  auto S = insidePoints( Q );</div>
+<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span>  auto touched_cells     = makeCellCover( S.begin(), S.end(), k, k );</div>
+<div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span>  auto intersected_cells = makeCellCover( Q, k, k );</div>
+<div class="line"><a id="l01228" name="l01228"></a><span class="lineno"> 1228</span>  return intersected_cells.nbCells() == touched_cells.nbCells()</div>
+<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span>    &amp;&amp; intersected_cells.subset( touched_cells );</div>
+<div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span>}</div>
+<div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span> </div>
+<div class="line"><a id="l01232" name="l01232"></a><span class="lineno"> 1232</span>//-----------------------------------------------------------------------------</div>
+<div class="line"><a id="l01233" name="l01233"></a><span class="lineno"> 1233</span>template &lt;typename TKSpace&gt;</div>
+<div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span>bool</div>
+<div class="line"><a id="l01235" name="l01235"></a><span class="lineno"> 1235</span>DGtal::DigitalConvexity&lt;TKSpace&gt;::</div>
+<div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span>isFullyConvex( const RationalPolytope&amp; P ) const</div>
+<div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span>{</div>
+<div class="line"><a id="l01238" name="l01238"></a><span class="lineno"> 1238</span>  auto Q = P.denominator() * P;</div>
+<div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span>  auto S = insidePoints( Q );</div>
+<div class="line"><a id="l01240" name="l01240"></a><span class="lineno"> 1240</span>  if ( S.size() &lt;= 1 ) return true;</div>
+<div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span>  for ( Dimension k = 1; k &lt; KSpace::dimension; ++ k )</div>
+<div class="line"><a id="l01242" name="l01242"></a><span class="lineno"> 1242</span>    {</div>
+<div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span>      auto touched_cells     = makeCellCover( S.begin(), S.end(), k, k );</div>
+<div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span>      auto intersected_cells = makeCellCover( Q, k, k );</div>
+<div class="line"><a id="l01245" name="l01245"></a><span class="lineno"> 1245</span>      if ( ( intersected_cells.nbCells() != touched_cells.nbCells() )</div>
+<div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span>           || ( ! intersected_cells.subset( touched_cells ) ) )</div>
+<div class="line"><a id="l01247" name="l01247"></a><span class="lineno"> 1247</span>        return false;</div>
+<div class="line"><a id="l01248" name="l01248"></a><span class="lineno"> 1248</span>    }</div>
+<div class="line"><a id="l01249" name="l01249"></a><span class="lineno"> 1249</span>  return true;</div>
+<div class="line"><a id="l01250" name="l01250"></a><span class="lineno"> 1250</span>}</div>
+<div class="line"><a id="l01251" name="l01251"></a><span class="lineno"> 1251</span> </div>
+<div class="line"><a id="l01252" name="l01252"></a><span class="lineno"> 1252</span>//-----------------------------------------------------------------------------</div>
+<div class="line"><a id="l01253" name="l01253"></a><span class="lineno"> 1253</span>template &lt;typename TKSpace&gt;</div>
+<div class="line"><a id="l01254" name="l01254"></a><span class="lineno"> 1254</span>bool</div>
+<div class="line"><a id="l01255" name="l01255"></a><span class="lineno"> 1255</span>DGtal::DigitalConvexity&lt;TKSpace&gt;::</div>
+<div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span>isKSubconvex( const RationalPolytope&amp; P, const CellGeometry&amp; C,</div>
+<div class="line"><a id="l01257" name="l01257"></a><span class="lineno"> 1257</span>              const Dimension k ) const</div>
+<div class="line"><a id="l01258" name="l01258"></a><span class="lineno"> 1258</span>{</div>
+<div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span>  auto intersected_cells = makeCellCover( P, k, k );</div>
+<div class="line"><a id="l01260" name="l01260"></a><span class="lineno"> 1260</span>  return intersected_cells.subset( C );</div>
+<div class="line"><a id="l01261" name="l01261"></a><span class="lineno"> 1261</span>}</div>
+<div class="line"><a id="l01262" name="l01262"></a><span class="lineno"> 1262</span>//-----------------------------------------------------------------------------</div>
+<div class="line"><a id="l01263" name="l01263"></a><span class="lineno"> 1263</span>template &lt;typename TKSpace&gt;</div>
+<div class="line"><a id="l01264" name="l01264"></a><span class="lineno"> 1264</span>bool</div>
+<div class="line"><a id="l01265" name="l01265"></a><span class="lineno"> 1265</span>DGtal::DigitalConvexity&lt;TKSpace&gt;::</div>
+<div class="line"><a id="l01266" name="l01266"></a><span class="lineno"> 1266</span>isFullySubconvex( const RationalPolytope&amp; P, const CellGeometry&amp; C ) const</div>
+<div class="line"><a id="l01267" name="l01267"></a><span class="lineno"> 1267</span>{</div>
+<div class="line"><a id="l01268" name="l01268"></a><span class="lineno"> 1268</span>  auto intersected_cells = makeCellCover( P, C.minCellDim(), C.maxCellDim() );</div>
+<div class="line"><a id="l01269" name="l01269"></a><span class="lineno"> 1269</span>  return intersected_cells.subset( C );</div>
+<div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span>}</div>
+<div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span> </div>
+<div class="line"><a id="l01272" name="l01272"></a><span class="lineno"> 1272</span>//-----------------------------------------------------------------------------</div>
+<div class="line"><a id="l01273" name="l01273"></a><span class="lineno"> 1273</span>template &lt;typename TKSpace&gt;</div>
+<div class="line"><a id="l01274" name="l01274"></a><span class="lineno"> 1274</span>void </div>
+<div class="line"><a id="l01275" name="l01275"></a><span class="lineno"> 1275</span>DGtal::DigitalConvexity&lt;TKSpace&gt;::</div>
+<div class="line"><a id="l01276" name="l01276"></a><span class="lineno"> 1276</span>eraseInterval( Interval I, std::vector&lt; Interval &gt; &amp; V )</div>
+<div class="line"><a id="l01277" name="l01277"></a><span class="lineno"> 1277</span>{</div>
+<div class="line"><a id="l01278" name="l01278"></a><span class="lineno"> 1278</span>  for ( std::size_t i = 0; i &lt; V.size(); )</div>
+<div class="line"><a id="l01279" name="l01279"></a><span class="lineno"> 1279</span>    {</div>
+<div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span>      Interval&amp; J = V[ i ];</div>
+<div class="line"><a id="l01281" name="l01281"></a><span class="lineno"> 1281</span>      // I=[a,b], J=[a&#39;,b&#39;], a &lt;= b, a&#39; &lt;= b&#39;</div>
+<div class="line"><a id="l01282" name="l01282"></a><span class="lineno"> 1282</span>      if ( I.second &lt; J.first ) { break; } // b &lt; a&#39; : no further intersection</div>
+<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>      if ( J.second &lt; I.first ) { ++i; continue; } // b&#39; &lt; a : no further intersection</div>
+<div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span>      // a&#39; &lt;= b and a &lt;= b&#39;</div>
+<div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span>      //       a ----------  b</div>
+<div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span>      // a&#39; ...............  a&#39;</div>
+<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span>      //     b&#39; ................. b&#39;</div>
+<div class="line"><a id="l01288" name="l01288"></a><span class="lineno"> 1288</span>      </div>
+<div class="line"><a id="l01289" name="l01289"></a><span class="lineno"> 1289</span>      // a&#39; ..................... b&#39; =&gt; a&#39;..a-1       b+1 b&#39;</div>
+<div class="line"><a id="l01290" name="l01290"></a><span class="lineno"> 1290</span>      Interval K1( J.first, I.first - 1 );</div>
+<div class="line"><a id="l01291" name="l01291"></a><span class="lineno"> 1291</span>      Interval K2( I.second + 1, J.second );</div>
+<div class="line"><a id="l01292" name="l01292"></a><span class="lineno"> 1292</span>      bool K1_exist = K1.second &gt;= K1.first;</div>
+<div class="line"><a id="l01293" name="l01293"></a><span class="lineno"> 1293</span>      bool K2_exist = K2.second &gt;= K2.first;</div>
+<div class="line"><a id="l01294" name="l01294"></a><span class="lineno"> 1294</span>      if ( K1_exist &amp;&amp; K2_exist )</div>
+<div class="line"><a id="l01295" name="l01295"></a><span class="lineno"> 1295</span>        {</div>
+<div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span>          V[ i ] = K2;</div>
+<div class="line"><a id="l01297" name="l01297"></a><span class="lineno"> 1297</span>          V.insert( V.begin() + i, K1 );</div>
+<div class="line"><a id="l01298" name="l01298"></a><span class="lineno"> 1298</span>          break; // no further intersection possible</div>
+<div class="line"><a id="l01299" name="l01299"></a><span class="lineno"> 1299</span>        }</div>
+<div class="line"><a id="l01300" name="l01300"></a><span class="lineno"> 1300</span>      else if ( K1_exist )</div>
+<div class="line"><a id="l01301" name="l01301"></a><span class="lineno"> 1301</span>        {</div>
+<div class="line"><a id="l01302" name="l01302"></a><span class="lineno"> 1302</span>          V[ i ] = K1; i++;</div>
+<div class="line"><a id="l01303" name="l01303"></a><span class="lineno"> 1303</span>        }</div>
+<div class="line"><a id="l01304" name="l01304"></a><span class="lineno"> 1304</span>      else if ( K2_exist )</div>
+<div class="line"><a id="l01305" name="l01305"></a><span class="lineno"> 1305</span>        {</div>
+<div class="line"><a id="l01306" name="l01306"></a><span class="lineno"> 1306</span>          V[ i ] = K2; break;</div>
+<div class="line"><a id="l01307" name="l01307"></a><span class="lineno"> 1307</span>        }</div>
+<div class="line"><a id="l01308" name="l01308"></a><span class="lineno"> 1308</span>      else</div>
+<div class="line"><a id="l01309" name="l01309"></a><span class="lineno"> 1309</span>        {</div>
+<div class="line"><a id="l01310" name="l01310"></a><span class="lineno"> 1310</span>          V.erase( V.begin() + i );</div>
+<div class="line"><a id="l01311" name="l01311"></a><span class="lineno"> 1311</span>        }</div>
+<div class="line"><a id="l01312" name="l01312"></a><span class="lineno"> 1312</span>    }</div>
+<div class="line"><a id="l01313" name="l01313"></a><span class="lineno"> 1313</span>}</div>
+<div class="line"><a id="l01314" name="l01314"></a><span class="lineno"> 1314</span> </div>
+<div class="line"><a id="l01315" name="l01315"></a><span class="lineno"> 1315</span>//-----------------------------------------------------------------------------</div>
+<div class="line"><a id="l01316" name="l01316"></a><span class="lineno"> 1316</span>template &lt;typename TKSpace&gt;</div>
+<div class="line"><a id="l01317" name="l01317"></a><span class="lineno"> 1317</span>template &lt;typename Predicate&gt;</div>
+<div class="line"><a id="l01318" name="l01318"></a><span class="lineno"> 1318</span>typename DGtal::DigitalConvexity&lt;TKSpace&gt;::PointRange </div>
+<div class="line"><a id="l01319" name="l01319"></a><span class="lineno"> 1319</span>DGtal::DigitalConvexity&lt;TKSpace&gt;::</div>
+<div class="line"><a id="l01320" name="l01320"></a><span class="lineno"> 1320</span>filter( const PointRange&amp; E, const Predicate&amp; Pred )</div>
+<div class="line"><a id="l01321" name="l01321"></a><span class="lineno"> 1321</span>{</div>
+<div class="line"><a id="l01322" name="l01322"></a><span class="lineno"> 1322</span>  PointRange Out;</div>
+<div class="line"><a id="l01323" name="l01323"></a><span class="lineno"> 1323</span>  Out.reserve( E.size() );</div>
+<div class="line"><a id="l01324" name="l01324"></a><span class="lineno"> 1324</span>  for ( auto&amp;&amp; p : E )</div>
+<div class="line"><a id="l01325" name="l01325"></a><span class="lineno"> 1325</span>    if ( Pred( p ) ) Out.push_back( p );</div>
+<div class="line"><a id="l01326" name="l01326"></a><span class="lineno"> 1326</span>  return Out;</div>
+<div class="line"><a id="l01327" name="l01327"></a><span class="lineno"> 1327</span>}</div>
+<div class="line"><a id="l01328" name="l01328"></a><span class="lineno"> 1328</span> </div>
+<div class="line"><a id="l01329" name="l01329"></a><span class="lineno"> 1329</span>///////////////////////////////////////////////////////////////////////////////</div>
+<div class="line"><a id="l01330" name="l01330"></a><span class="lineno"> 1330</span>// Interface - public :</div>
+<div class="line"><a id="l01331" name="l01331"></a><span class="lineno"> 1331</span> </div>
+<div class="line"><a id="l01332" name="l01332"></a><span class="lineno"> 1332</span>/**</div>
+<div class="line"><a id="l01333" name="l01333"></a><span class="lineno"> 1333</span> * Writes/Displays the object on an output stream.</div>
+<div class="line"><a id="l01334" name="l01334"></a><span class="lineno"> 1334</span> * @param out the output stream where the object is written.</div>
+<div class="line"><a id="l01335" name="l01335"></a><span class="lineno"> 1335</span> */</div>
+<div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span>template &lt;typename TKSpace&gt;</div>
+<div class="line"><a id="l01337" name="l01337"></a><span class="lineno"> 1337</span>inline</div>
+<div class="line"><a id="l01338" name="l01338"></a><span class="lineno"> 1338</span>void</div>
+<div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span>DGtal::DigitalConvexity&lt;TKSpace&gt;::selfDisplay ( std::ostream &amp; out ) const</div>
+<div class="line"><a id="l01340" name="l01340"></a><span class="lineno"> 1340</span>{</div>
+<div class="line"><a id="l01341" name="l01341"></a><span class="lineno"> 1341</span>  out &lt;&lt; &quot;[DigitalConvexity]&quot;;</div>
+<div class="line"><a id="l01342" name="l01342"></a><span class="lineno"> 1342</span>}</div>
+<div class="line"><a id="l01343" name="l01343"></a><span class="lineno"> 1343</span> </div>
+<div class="line"><a id="l01344" name="l01344"></a><span class="lineno"> 1344</span>/**</div>
+<div class="line"><a id="l01345" name="l01345"></a><span class="lineno"> 1345</span> * Checks the validity/consistency of the object.</div>
+<div class="line"><a id="l01346" name="l01346"></a><span class="lineno"> 1346</span> * @return &#39;true&#39; if the object is valid, &#39;false&#39; otherwise.</div>
+<div class="line"><a id="l01347" name="l01347"></a><span class="lineno"> 1347</span> */</div>
+<div class="line"><a id="l01348" name="l01348"></a><span class="lineno"> 1348</span>template &lt;typename TKSpace&gt;</div>
+<div class="line"><a id="l01349" name="l01349"></a><span class="lineno"> 1349</span>inline</div>
+<div class="line"><a id="l01350" name="l01350"></a><span class="lineno"> 1350</span>bool</div>
+<div class="line"><a id="l01351" name="l01351"></a><span class="lineno"> 1351</span>DGtal::DigitalConvexity&lt;TKSpace&gt;::isValid() const</div>
+<div class="line"><a id="l01352" name="l01352"></a><span class="lineno"> 1352</span>{</div>
+<div class="line"><a id="l01353" name="l01353"></a><span class="lineno"> 1353</span>  return true;</div>
+<div class="line"><a id="l01354" name="l01354"></a><span class="lineno"> 1354</span>}</div>
+<div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span> </div>
+<div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span> </div>
+<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span>///////////////////////////////////////////////////////////////////////////////</div>
+<div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span>// Implementation of inline functions                                        //</div>
+<div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span> </div>
+<div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span>//-----------------------------------------------------------------------------</div>
+<div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span>template &lt;typename TKSpace&gt;</div>
+<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span>inline</div>
+<div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span>std::ostream&amp;</div>
+<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>DGtal::operator&lt;&lt; ( std::ostream &amp; out,</div>
+<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span>                    const DigitalConvexity&lt;TKSpace&gt; &amp; object )</div>
+<div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span>{</div>
+<div class="line"><a id="l01367" name="l01367"></a><span class="lineno"> 1367</span>  object.selfDisplay( out );</div>
+<div class="line"><a id="l01368" name="l01368"></a><span class="lineno"> 1368</span>  return out;</div>
+<div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span>}</div>
+<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span> </div>
+<div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span>//                                                                           //</div>
+<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>///////////////////////////////////////////////////////////////////////////////</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f2cd1aeea1cfa982bb13a5f95fa4218c.html">DGtal</a></li><li class="navelem"><a class="el" href="dir_754267a81a1dbd2dcdc6a3e6905a7e31.html">geometry</a></li><li class="navelem"><a class="el" href="dir_2dd8463e31daa17dc635e58ffe393814.html">volumes</a></li><li class="navelem"><b>DigitalConvexity.ih</b></li>
-    <li class="footer">Generated on Mon Jul 7 2025 13:03:25 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jul 7 2025 15:13:07 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

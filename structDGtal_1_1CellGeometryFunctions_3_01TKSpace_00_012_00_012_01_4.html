@@ -144,7 +144,7 @@ struct DGtal::CellGeometryFunctions&lt; TKSpace, 2, 2 &gt;</div><p>Specializatio
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="CellGeometry_8h_source.html#l00702">702</a> of file <a class="el" href="CellGeometry_8h_source.html">CellGeometry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellGeometry_8h_source.html#l00714">714</a> of file <a class="el" href="CellGeometry_8h_source.html">CellGeometry.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a4950fc6e80589ffc9272255ac3e2fba2" name="a4950fc6e80589ffc9272255ac3e2fba2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4950fc6e80589ffc9272255ac3e2fba2">&#9670;&#160;</a></span>Cell</h2>
@@ -160,7 +160,7 @@ template&lt;typename TKSpace &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CellGeometry_8h_source.html#l00708">708</a> of file <a class="el" href="CellGeometry_8h_source.html">CellGeometry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellGeometry_8h_source.html#l00720">720</a> of file <a class="el" href="CellGeometry_8h_source.html">CellGeometry.h</a>.</p>
 
 </div>
 </div>
@@ -178,7 +178,7 @@ template&lt;typename TKSpace &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CellGeometry_8h_source.html#l00706">706</a> of file <a class="el" href="CellGeometry_8h_source.html">CellGeometry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellGeometry_8h_source.html#l00718">718</a> of file <a class="el" href="CellGeometry_8h_source.html">CellGeometry.h</a>.</p>
 
 </div>
 </div>
@@ -196,7 +196,7 @@ template&lt;typename TKSpace &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CellGeometry_8h_source.html#l00707">707</a> of file <a class="el" href="CellGeometry_8h_source.html">CellGeometry.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellGeometry_8h_source.html#l00719">719</a> of file <a class="el" href="CellGeometry_8h_source.html">CellGeometry.h</a>.</p>
 
 </div>
 </div>
@@ -300,21 +300,21 @@ template&lt;typename PointelIterator &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the incident 2-cells to the given range of pointels [itB, itE). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CellGeometry_8h_source.html#l00718">718</a> of file <a class="el" href="CellGeometry_8h_source.html">CellGeometry.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  720</span>    {</div>
-<div class="line"><span class="lineno">  721</span>      std::unordered_set&lt;typename KSpace::Cell&gt; cells;</div>
-<div class="line"><span class="lineno">  722</span>      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> it = itB; it != itE; ++it )</div>
-<div class="line"><span class="lineno">  723</span>        {</div>
-<div class="line"><span class="lineno">  724</span>          <span class="keyword">auto</span> pointel = *it;</div>
-<div class="line"><span class="lineno">  725</span>          <span class="keyword">auto</span> linelxp = <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( pointel, 0, <span class="keyword">true</span> );</div>
-<div class="line"><span class="lineno">  726</span>          <span class="keyword">auto</span> linelxm = <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( pointel, 0, <span class="keyword">false</span> );</div>
-<div class="line"><span class="lineno">  727</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxp, 1, <span class="keyword">true</span> ) );</div>
-<div class="line"><span class="lineno">  728</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxp, 1, <span class="keyword">false</span> ) );</div>
-<div class="line"><span class="lineno">  729</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxm, 1, <span class="keyword">true</span> ) );</div>
-<div class="line"><span class="lineno">  730</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxm, 1, <span class="keyword">false</span> ) );</div>
-<div class="line"><span class="lineno">  731</span>        }</div>
-<div class="line"><span class="lineno">  732</span>      <span class="keywordflow">return</span> cells;</div>
-<div class="line"><span class="lineno">  733</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="CellGeometry_8h_source.html#l00730">730</a> of file <a class="el" href="CellGeometry_8h_source.html">CellGeometry.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  732</span>    {</div>
+<div class="line"><span class="lineno">  733</span>      std::unordered_set&lt;typename KSpace::Cell&gt; cells;</div>
+<div class="line"><span class="lineno">  734</span>      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> it = itB; it != itE; ++it )</div>
+<div class="line"><span class="lineno">  735</span>        {</div>
+<div class="line"><span class="lineno">  736</span>          <span class="keyword">auto</span> pointel = *it;</div>
+<div class="line"><span class="lineno">  737</span>          <span class="keyword">auto</span> linelxp = <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( pointel, 0, <span class="keyword">true</span> );</div>
+<div class="line"><span class="lineno">  738</span>          <span class="keyword">auto</span> linelxm = <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( pointel, 0, <span class="keyword">false</span> );</div>
+<div class="line"><span class="lineno">  739</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxp, 1, <span class="keyword">true</span> ) );</div>
+<div class="line"><span class="lineno">  740</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxp, 1, <span class="keyword">false</span> ) );</div>
+<div class="line"><span class="lineno">  741</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxm, 1, <span class="keyword">true</span> ) );</div>
+<div class="line"><span class="lineno">  742</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxm, 1, <span class="keyword">false</span> ) );</div>
+<div class="line"><span class="lineno">  743</span>        }</div>
+<div class="line"><span class="lineno">  744</span>      <span class="keywordflow">return</span> cells;</div>
+<div class="line"><span class="lineno">  745</span>    }</div>
 <div class="ttc" id="atestCubicalComplex_8cpp_html_a2b87ed989d2519d025bd5d4fbcbac062"><div class="ttname"><a href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a></div><div class="ttdeci">KSpace K</div><div class="ttdef"><b>Definition</b> <a href="testCubicalComplex_8cpp_source.html#l00062">testCubicalComplex.cpp:62</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="testCubicalComplex_8cpp_source.html#l00062">K</a>.</p>
@@ -381,22 +381,22 @@ template&lt;typename PointIterator &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>the incident 2-cells to the given range of points [itB, itE). </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>General method. Note as efficient as specializations. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CellGeometry_8h_source.html#l00744">744</a> of file <a class="el" href="CellGeometry_8h_source.html">CellGeometry.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  746</span>    {</div>
-<div class="line"><span class="lineno">  747</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;&lt;2,2&gt; specialization&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  748</span>      std::unordered_set&lt;typename KSpace::Cell&gt; cells;</div>
-<div class="line"><span class="lineno">  749</span>      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> it = itB; it != itE; ++it )</div>
-<div class="line"><span class="lineno">  750</span>        {</div>
-<div class="line"><span class="lineno">  751</span>          <span class="keyword">auto</span> pointel = <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uPointel( *it );</div>
-<div class="line"><span class="lineno">  752</span>          <span class="keyword">auto</span> linelxp = <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( pointel, 0, <span class="keyword">true</span> );</div>
-<div class="line"><span class="lineno">  753</span>          <span class="keyword">auto</span> linelxm = <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( pointel, 0, <span class="keyword">false</span> );</div>
-<div class="line"><span class="lineno">  754</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxp, 1, <span class="keyword">true</span> ) );</div>
-<div class="line"><span class="lineno">  755</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxp, 1, <span class="keyword">false</span> ) );</div>
-<div class="line"><span class="lineno">  756</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxm, 1, <span class="keyword">true</span> ) );</div>
-<div class="line"><span class="lineno">  757</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxm, 1, <span class="keyword">false</span> ) );</div>
-<div class="line"><span class="lineno">  758</span>        }</div>
-<div class="line"><span class="lineno">  759</span>      <span class="keywordflow">return</span> cells;</div>
-<div class="line"><span class="lineno">  760</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="CellGeometry_8h_source.html#l00756">756</a> of file <a class="el" href="CellGeometry_8h_source.html">CellGeometry.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  758</span>    {</div>
+<div class="line"><span class="lineno">  759</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;&lt;2,2&gt; specialization&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  760</span>      std::unordered_set&lt;typename KSpace::Cell&gt; cells;</div>
+<div class="line"><span class="lineno">  761</span>      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> it = itB; it != itE; ++it )</div>
+<div class="line"><span class="lineno">  762</span>        {</div>
+<div class="line"><span class="lineno">  763</span>          <span class="keyword">auto</span> pointel = <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uPointel( *it );</div>
+<div class="line"><span class="lineno">  764</span>          <span class="keyword">auto</span> linelxp = <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( pointel, 0, <span class="keyword">true</span> );</div>
+<div class="line"><span class="lineno">  765</span>          <span class="keyword">auto</span> linelxm = <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( pointel, 0, <span class="keyword">false</span> );</div>
+<div class="line"><span class="lineno">  766</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxp, 1, <span class="keyword">true</span> ) );</div>
+<div class="line"><span class="lineno">  767</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxp, 1, <span class="keyword">false</span> ) );</div>
+<div class="line"><span class="lineno">  768</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxm, 1, <span class="keyword">true</span> ) );</div>
+<div class="line"><span class="lineno">  769</span>          cells.insert( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uIncident( linelxm, 1, <span class="keyword">false</span> ) );</div>
+<div class="line"><span class="lineno">  770</span>        }</div>
+<div class="line"><span class="lineno">  771</span>      <span class="keywordflow">return</span> cells;</div>
+<div class="line"><span class="lineno">  772</span>    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="testCubicalComplex_8cpp_source.html#l00062">K</a>.</p>
 
@@ -461,20 +461,20 @@ template&lt;typename PointIterator &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the incident 2-kpoints to the given range of points [itB, itE). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="CellGeometry_8h_source.html#l00771">771</a> of file <a class="el" href="CellGeometry_8h_source.html">CellGeometry.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  773</span>    {</div>
-<div class="line"><span class="lineno">  774</span>      UnorderedSetByBlock&lt; <span class="keyword">typename</span> <a class="code hl_typedef" href="classDGtal_1_1KhalimskySpaceND.html#a70d1b8007551de58a7b8ccee328bed00">KSpace::Point</a>,</div>
-<div class="line"><span class="lineno">  775</span>                           Splitter&lt; typename KSpace::Point, uint64_t&gt; &gt; kpoints;</div>
-<div class="line"><span class="lineno">  776</span>      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> it = itB; it != itE; ++it )</div>
-<div class="line"><span class="lineno">  777</span>        {</div>
-<div class="line"><span class="lineno">  778</span>          <span class="keyword">auto</span> kp = <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uKCoords( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uPointel( *it ) );</div>
-<div class="line"><span class="lineno">  779</span>          kpoints.emplace( kp[ 0 ] - 1, kp[ 1 ] - 1 );</div>
-<div class="line"><span class="lineno">  780</span>          kpoints.emplace( kp[ 0 ] + 1, kp[ 1 ] - 1 );</div>
-<div class="line"><span class="lineno">  781</span>          kpoints.emplace( kp[ 0 ] - 1, kp[ 1 ] + 1 );</div>
-<div class="line"><span class="lineno">  782</span>          kpoints.emplace( kp[ 0 ] + 1, kp[ 1 ] + 1 );</div>
-<div class="line"><span class="lineno">  783</span>        }</div>
-<div class="line"><span class="lineno">  784</span>      <span class="keywordflow">return</span> kpoints;</div>
-<div class="line"><span class="lineno">  785</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="CellGeometry_8h_source.html#l00783">783</a> of file <a class="el" href="CellGeometry_8h_source.html">CellGeometry.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  785</span>    {</div>
+<div class="line"><span class="lineno">  786</span>      UnorderedSetByBlock&lt; <span class="keyword">typename</span> <a class="code hl_typedef" href="classDGtal_1_1KhalimskySpaceND.html#a70d1b8007551de58a7b8ccee328bed00">KSpace::Point</a>,</div>
+<div class="line"><span class="lineno">  787</span>                           Splitter&lt; typename KSpace::Point, uint64_t&gt; &gt; kpoints;</div>
+<div class="line"><span class="lineno">  788</span>      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> it = itB; it != itE; ++it )</div>
+<div class="line"><span class="lineno">  789</span>        {</div>
+<div class="line"><span class="lineno">  790</span>          <span class="keyword">auto</span> kp = <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uKCoords( <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.uPointel( *it ) );</div>
+<div class="line"><span class="lineno">  791</span>          kpoints.emplace( kp[ 0 ] - 1, kp[ 1 ] - 1 );</div>
+<div class="line"><span class="lineno">  792</span>          kpoints.emplace( kp[ 0 ] + 1, kp[ 1 ] - 1 );</div>
+<div class="line"><span class="lineno">  793</span>          kpoints.emplace( kp[ 0 ] - 1, kp[ 1 ] + 1 );</div>
+<div class="line"><span class="lineno">  794</span>          kpoints.emplace( kp[ 0 ] + 1, kp[ 1 ] + 1 );</div>
+<div class="line"><span class="lineno">  795</span>        }</div>
+<div class="line"><span class="lineno">  796</span>      <span class="keywordflow">return</span> kpoints;</div>
+<div class="line"><span class="lineno">  797</span>    }</div>
 <div class="ttc" id="aclassDGtal_1_1KhalimskySpaceND_html_a70d1b8007551de58a7b8ccee328bed00"><div class="ttname"><a href="classDGtal_1_1KhalimskySpaceND.html#a70d1b8007551de58a7b8ccee328bed00">DGtal::KhalimskySpaceND::Point</a></div><div class="ttdeci">PointVector&lt; dim, Integer &gt; Point</div><div class="ttdef"><b>Definition</b> <a href="KhalimskySpaceND_8h_source.html#l00425">KhalimskySpaceND.h:425</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="testCubicalComplex_8cpp_source.html#l00062">K</a>.</p>
@@ -490,7 +490,7 @@ template&lt;typename PointIterator &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="structDGtal_1_1CellGeometryFunctions_3_01TKSpace_00_012_00_012_01_4.html">CellGeometryFunctions&lt; TKSpace, 2, 2 &gt;</a></li>
-    <li class="footer">Generated on Mon Jul 7 2025 13:04:10 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Mon Jul 7 2025 15:13:49 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
