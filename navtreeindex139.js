@@ -1,5 +1,9 @@
 var NAVTREEINDEX139 =
 {
+"structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html#ac470e584764dae5af20aa0288d23a3dc":[2,0,31,5],
+"structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html#ac5732bf6dd02137c4a8849afaa2d82be":[2,0,31,1],
+"structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html#acc3813bb57f9eb3bdaf79a61f1747f20":[2,0,31,10],
+"structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html#af61e90e098174af30bddc80127af9601":[2,0,31,0],
 "structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html#afe4a6e6a7537dae1f70b7d5e6983d616":[2,0,31,11],
 "structDGtal_1_1concepts_1_1CLabel.html":[2,0,10],
 "structDGtal_1_1concepts_1_1CLinearAlgebra.html":[2,0,83],
@@ -245,9 +249,5 @@ var NAVTREEINDEX139 =
 "structDGtal_1_1concepts_1_1CSCellEmbedder.html#a64985de55245f71c73d73e0624794117":[2,0,106,3],
 "structDGtal_1_1concepts_1_1CSCellEmbedder.html#a7e1770411fddee076fdf1db63de11033":[2,0,106,10],
 "structDGtal_1_1concepts_1_1CSCellEmbedder.html#a81a148de0af9a25b3539818db1328c9b":[2,0,106,7],
-"structDGtal_1_1concepts_1_1CSCellEmbedder.html#a8e9423e0048ead999784d5408575943a":[2,0,106,12],
-"structDGtal_1_1concepts_1_1CSCellEmbedder.html#a96d36f33c7b3802ea936544e3595f1eb":[2,0,106,13],
-"structDGtal_1_1concepts_1_1CSCellEmbedder.html#aa66d73aad0c74eacd02b773710b2935e":[2,0,106,11],
-"structDGtal_1_1concepts_1_1CSCellEmbedder.html#ab6d7d7bb120e8edf439f1b58ea5170ba":[2,0,106,14],
-"structDGtal_1_1concepts_1_1CSCellEmbedder.html#ac568704f0a2042b6ae498902492c610a":[2,0,106,8]
+"structDGtal_1_1concepts_1_1CSCellEmbedder.html#a8e9423e0048ead999784d5408575943a":[2,0,106,12]
 };

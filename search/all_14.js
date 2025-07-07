@@ -13,7 +13,7 @@ var searchData=
   ['kappa_10',['kappa',['../structDGtal_1_1functors_1_1SphereFittingEstimator_1_1Quantity.html#a5d46055b22ff685f0346fe4b253dee33',1,'DGtal::functors::SphereFittingEstimator::Quantity::kappa'],['../classDGtal_1_1DigitalTopology.html#acf38ba4a7042f37f9fc101105fa3279f',1,'DGtal::DigitalTopology::kappa()']]],
   ['kcell_11',['KCell',['../classDGtal_1_1Display3D.html#a142d901cf5c4bffedcdf348d90b9e871',1,'DGtal::Display3D']]],
   ['kconstiter_12',['KConstIter',['../structDGtal_1_1NaiveParametricCurveDigitizer3D_1_1KConstIter.html',1,'DGtal::NaiveParametricCurveDigitizer3D']]],
-  ['kernel_13',['kernel',['../packagePython.html#base_topology_kernel',1,'Base, Topology and Kernel'],['../structDGtal_1_1QuickHull.html#a6fb8bf16bf729246612ba8ff13b18c20',1,'DGtal::QuickHull::Kernel'],['../moduleIntroduction.html#dgtalintroPackagesKernel',1,'Kernel'],['../structDGtal_1_1QuickHull.html#a1defd4c9544221ac6762e1a679f4a8d4',1,'DGtal::QuickHull::kernel']]],
+  ['kernel_13',['kernel',['../packagePython.html#base_topology_kernel',1,'Base, Topology and Kernel'],['../structDGtal_1_1QuickHull.html#a1defd4c9544221ac6762e1a679f4a8d4',1,'DGtal::QuickHull::kernel'],['../moduleIntroduction.html#dgtalintroPackagesKernel',1,'Kernel'],['../structDGtal_1_1QuickHull.html#a6fb8bf16bf729246612ba8ff13b18c20',1,'DGtal::QuickHull::Kernel']]],
   ['kernel_20concepts_14',['Kernel Concepts',['../packageKernelConcepts.html',1,'packageKernel']]],
   ['kernel_20laplace_20ndash_20beltrami_20operator_15',['Heat Kernel Laplace&amp;ndash;Beltrami Operator',['../moduleHeatLaplaceOperator.html',1,'packageDEC']]],
   ['kernel_20package_16',['Kernel package',['../packageKernel.html',1,'index']]],
