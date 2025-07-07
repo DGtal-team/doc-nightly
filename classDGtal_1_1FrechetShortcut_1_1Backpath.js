@@ -10,7 +10,7 @@ var classDGtal_1_1FrechetShortcut_1_1Backpath =
     [ "~Backpath", "classDGtal_1_1FrechetShortcut_1_1Backpath.html#aba3358f91b99bf119f6079dc2f9701d1", null ],
     [ "addNegativePoint", "classDGtal_1_1FrechetShortcut_1_1Backpath.html#afae1ee4c6f2546462c4aa1d014c13652", null ],
     [ "addPositivePoint", "classDGtal_1_1FrechetShortcut_1_1Backpath.html#ae4f4c72bde709c060d3ca943a2a9ed46", null ],
-    [ "operator=", "classDGtal_1_1FrechetShortcut_1_1Backpath.html#a926417d5873723af9c5ce6d205885e48", null ],
+    [ "operator=", "classDGtal_1_1FrechetShortcut_1_1Backpath.html#ab045b199bcb3e12ec09a405415e31dcb", null ],
     [ "reset", "classDGtal_1_1FrechetShortcut_1_1Backpath.html#aa58bcdb04210f1665255f17036ca52a1", null ],
     [ "updateBackPathFirstQuad", "classDGtal_1_1FrechetShortcut_1_1Backpath.html#a851e58666633a0d32f48b51be0f372d3", null ],
     [ "updateIntervals", "classDGtal_1_1FrechetShortcut_1_1Backpath.html#aa29bfbf02f5e88939689494fea1f21f1", null ],

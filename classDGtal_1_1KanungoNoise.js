@@ -13,7 +13,7 @@ var classDGtal_1_1KanungoNoise =
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1KanungoNoise.html#af43d1f3e2f1fcd281c78bca29b1f7a44", null ],
     [ "isValid", "classDGtal_1_1KanungoNoise.html#ace56083e40c9be998b733fc091ffcad9", null ],
     [ "operator()", "classDGtal_1_1KanungoNoise.html#a4629ca5d9e275ce1358a47fb8b928989", null ],
-    [ "operator=", "classDGtal_1_1KanungoNoise.html#abeeca9822c1821013900690066ce00cb", null ],
+    [ "operator=", "classDGtal_1_1KanungoNoise.html#a87c2198b87328ccd5c21a89fcb4a6bbe", null ],
     [ "selfDisplay", "classDGtal_1_1KanungoNoise.html#a6fb301a656d16be43a519bfbe6d214e9", null ],
     [ "myAlpha", "classDGtal_1_1KanungoNoise.html#a8b7a4e1a157706a542945c92bd26dbf6", null ],
     [ "myDomain", "classDGtal_1_1KanungoNoise.html#a33bf58fda834c77b1f9094c173f41830", null ],

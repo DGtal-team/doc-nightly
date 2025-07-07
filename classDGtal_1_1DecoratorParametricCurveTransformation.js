@@ -10,7 +10,7 @@ var classDGtal_1_1DecoratorParametricCurveTransformation =
     [ "DecoratorParametricCurveTransformation", "classDGtal_1_1DecoratorParametricCurveTransformation.html#af33a97d803aca062ce42e08476ff434f", null ],
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1DecoratorParametricCurveTransformation.html#abc87d13ebe1f9ab1c73c8d0891341504", null ],
     [ "isValid", "classDGtal_1_1DecoratorParametricCurveTransformation.html#ac5aa5c40e14784c169f3daa80f9b1b96", null ],
-    [ "operator=", "classDGtal_1_1DecoratorParametricCurveTransformation.html#a4aedb7000b0e80e4f94a289b02a4d354", null ],
+    [ "operator=", "classDGtal_1_1DecoratorParametricCurveTransformation.html#a322f151d618da74d641c08a1eaf37311", null ],
     [ "selfDisplay", "classDGtal_1_1DecoratorParametricCurveTransformation.html#ab7366b7f5cd777c2cd8cf1599f845083", null ],
     [ "x", "classDGtal_1_1DecoratorParametricCurveTransformation.html#aedc8fa07f4b12d698110167504ade20b", null ],
     [ "xp", "classDGtal_1_1DecoratorParametricCurveTransformation.html#a92e1d001dde82e6c61bd203a2e86853b", null ],

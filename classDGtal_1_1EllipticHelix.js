@@ -12,7 +12,7 @@ var classDGtal_1_1EllipticHelix =
     [ "getPeriod", "classDGtal_1_1EllipticHelix.html#ad3e200ba5194752ecaca066f50146111", null ],
     [ "h", "classDGtal_1_1EllipticHelix.html#a4130fbb5c52db3df96651a57c3002ed5", null ],
     [ "isValid", "classDGtal_1_1EllipticHelix.html#a11fe087a7c5a65a2c6f5cc3c47492acd", null ],
-    [ "operator=", "classDGtal_1_1EllipticHelix.html#a2137f9d8b5bbe6c17b5d86179f1d233c", null ],
+    [ "operator=", "classDGtal_1_1EllipticHelix.html#ac538ff6960997095989b753b55755efe", null ],
     [ "selfDisplay", "classDGtal_1_1EllipticHelix.html#a926fbb1516b9f26cf4d53281811219ae", null ],
     [ "x", "classDGtal_1_1EllipticHelix.html#a1ed772f2da08a588ebef7db6e6709716", null ],
     [ "xp", "classDGtal_1_1EllipticHelix.html#a0e71b3a3abe65e070f8c13e926ffe89f", null ],

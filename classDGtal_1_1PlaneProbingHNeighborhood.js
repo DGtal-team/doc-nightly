@@ -13,7 +13,7 @@ var classDGtal_1_1PlaneProbingHNeighborhood =
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1PlaneProbingHNeighborhood.html#a5cd789aee604c01a172329152409e0c5", null ],
     [ "hexagonState", "classDGtal_1_1PlaneProbingHNeighborhood.html#a81996e4862da96ab6317f58b5efabdca", null ],
     [ "isValid", "classDGtal_1_1PlaneProbingHNeighborhood.html#ae97ac8d2056032d2c1abc9966a372075", null ],
-    [ "operator=", "classDGtal_1_1PlaneProbingHNeighborhood.html#a9fb22e9a9e45c591f9c075f26c33ca25", null ],
-    [ "operator=", "classDGtal_1_1PlaneProbingHNeighborhood.html#a26bded82f18be01dcabd3d8144bd2b90", null ],
+    [ "operator=", "classDGtal_1_1PlaneProbingHNeighborhood.html#a34b6608caa2c5b9ec25542700e823789", null ],
+    [ "operator=", "classDGtal_1_1PlaneProbingHNeighborhood.html#aaae2bf25d9a4348bd088e0f69998d6ea", null ],
     [ "selfDisplay", "classDGtal_1_1PlaneProbingHNeighborhood.html#ac0d7d345b36ce45c3aefbd5fc8b7a297", null ]
 ];

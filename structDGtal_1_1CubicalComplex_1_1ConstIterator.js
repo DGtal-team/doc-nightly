@@ -9,7 +9,7 @@ var structDGtal_1_1CubicalComplex_1_1ConstIterator =
     [ "ConstIterator", "structDGtal_1_1CubicalComplex_1_1ConstIterator.html#ad5c5d0309838d4b285ccc8632effa272", null ],
     [ "ConstIterator", "structDGtal_1_1CubicalComplex_1_1ConstIterator.html#af9d84a071e02ce38c23437aa742445a3", null ],
     [ "ConstIterator", "structDGtal_1_1CubicalComplex_1_1ConstIterator.html#ae9056dd52434834f3f9a86b4cc003c0e", null ],
-    [ "dereference", "structDGtal_1_1CubicalComplex_1_1ConstIterator.html#adab08f1e6d0aad15b8f974064fd4db7a", null ],
+    [ "dereference", "structDGtal_1_1CubicalComplex_1_1ConstIterator.html#a7bf877fbfc8a26a353bbed0757fb3bbe", null ],
     [ "dimension", "structDGtal_1_1CubicalComplex_1_1ConstIterator.html#a9342d9c368108f4d42ed169e953f7ce2", null ],
     [ "equal", "structDGtal_1_1CubicalComplex_1_1ConstIterator.html#ae3cb37ef1033e48cb06d9ebb2189b57f", null ],
     [ "increment", "structDGtal_1_1CubicalComplex_1_1ConstIterator.html#ad2ee8ef00e884afd73ad4db20fc7cca5", null ],

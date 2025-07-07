@@ -11,7 +11,7 @@ var classDGtal_1_1detail_1_1PosDepScaleDepSCEstimator =
     [ "eval", "classDGtal_1_1detail_1_1PosDepScaleDepSCEstimator.html#ad3c75467219ef20c091b2ab3ca9809ae", null ],
     [ "init", "classDGtal_1_1detail_1_1PosDepScaleDepSCEstimator.html#a6345df3438a39dc6a2e59dc44b761f4e", null ],
     [ "isValid", "classDGtal_1_1detail_1_1PosDepScaleDepSCEstimator.html#ab0fc4ab3ac006d0184171bf9c91a1673", null ],
-    [ "operator=", "classDGtal_1_1detail_1_1PosDepScaleDepSCEstimator.html#ab02aa3faf3089a7b91f2e56c972af2ff", null ],
+    [ "operator=", "classDGtal_1_1detail_1_1PosDepScaleDepSCEstimator.html#aa23bafe68206e965e5bab8c0629d95fe", null ],
     [ "myBegin", "classDGtal_1_1detail_1_1PosDepScaleDepSCEstimator.html#af6e26e916b040edcbcb4f859265a47d9", null ],
     [ "myEnd", "classDGtal_1_1detail_1_1PosDepScaleDepSCEstimator.html#a0201376a120da9d7e9b3538c0751b109", null ],
     [ "myFunctor", "classDGtal_1_1detail_1_1PosDepScaleDepSCEstimator.html#acaed10f4de284e9c16f031160ab38af4", null ],

@@ -13,7 +13,7 @@ var classDGtal_1_1Flower2D =
     [ "getUpperBound", "classDGtal_1_1Flower2D.html#a77fb0228598ec9b692dd7e206ee259f7", null ],
     [ "isValid", "classDGtal_1_1Flower2D.html#ae372d59339940418d9792cb61c8b3d5a", null ],
     [ "moveTo", "classDGtal_1_1Flower2D.html#ae0d64d75361df0382c209c35d62eb1d7", null ],
-    [ "operator=", "classDGtal_1_1Flower2D.html#acc5f6afce3c231805db77312b4313ae3", null ],
+    [ "operator=", "classDGtal_1_1Flower2D.html#a204c88fb7dfe788a8a9b6687f00797c9", null ],
     [ "parameter", "classDGtal_1_1Flower2D.html#ae68466949c4476af9abc68d5975735b2", null ],
     [ "selfDisplay", "classDGtal_1_1Flower2D.html#a5dd75370b243919ab82ad0fb209a614e", null ],
     [ "x", "classDGtal_1_1Flower2D.html#ad7c72f3ebd2767cb90c86caaf6f6e231", null ],

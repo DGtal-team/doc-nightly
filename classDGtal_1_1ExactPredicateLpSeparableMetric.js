@@ -17,7 +17,7 @@ var classDGtal_1_1ExactPredicateLpSeparableMetric =
     [ "hiddenBy", "classDGtal_1_1ExactPredicateLpSeparableMetric.html#a88fd75ad801228797391c45831892104", null ],
     [ "isValid", "classDGtal_1_1ExactPredicateLpSeparableMetric.html#a2bae421d7bd0ae9e51856450a439f695", null ],
     [ "operator()", "classDGtal_1_1ExactPredicateLpSeparableMetric.html#ae6c347a9e67a99b26864836e00fa39b3", null ],
-    [ "operator=", "classDGtal_1_1ExactPredicateLpSeparableMetric.html#a394a42ccea2835215729c8e6e4be66ce", null ],
+    [ "operator=", "classDGtal_1_1ExactPredicateLpSeparableMetric.html#a33ade7dee7eecd7c2be5d7ee3072d44a", null ],
     [ "rawDistance", "classDGtal_1_1ExactPredicateLpSeparableMetric.html#aa7162fdc57721d422f46e8641beb5b45", null ],
     [ "selfDisplay", "classDGtal_1_1ExactPredicateLpSeparableMetric.html#ad964aea589b07af79bdd09a35e863219", null ]
 ];

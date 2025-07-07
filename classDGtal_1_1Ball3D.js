@@ -14,7 +14,7 @@ var classDGtal_1_1Ball3D =
     [ "gradient", "classDGtal_1_1Ball3D.html#a24ebc8f9d89f84136c1773637f18994f", null ],
     [ "isValid", "classDGtal_1_1Ball3D.html#a7e54ae0f0fdcc5f6e83a9228ec779177", null ],
     [ "moveTo", "classDGtal_1_1Ball3D.html#a8585f30ce073007baac6efdfe72c9b32", null ],
-    [ "operator=", "classDGtal_1_1Ball3D.html#a219287cecc4a3d6d1124a282583bef23", null ],
+    [ "operator=", "classDGtal_1_1Ball3D.html#aec5071d56fb7c9defe08da4f16f5db26", null ],
     [ "parameter", "classDGtal_1_1Ball3D.html#a6e1393c16ecee333156b29d4a81371ee", null ],
     [ "rp", "classDGtal_1_1Ball3D.html#a7d730d7d973046152d5da8bea4d0d073", null ],
     [ "rpp", "classDGtal_1_1Ball3D.html#ab52748c7819e2e24944f214684790be6", null ],

@@ -18,7 +18,7 @@ var classDGtal_1_1OrderedAlphabet =
     [ "lessOrEqual", "classDGtal_1_1OrderedAlphabet.html#ab306a8240b7ea33fbbf2b224f3e6fea9", null ],
     [ "letter", "classDGtal_1_1OrderedAlphabet.html#a035fa3ed9bd1e1a0b1be9a7f77619ce4", null ],
     [ "nextEdge", "classDGtal_1_1OrderedAlphabet.html#af49ca9c78f3ca2f0a0ff53f1a88bcd1f", null ],
-    [ "operator=", "classDGtal_1_1OrderedAlphabet.html#aed564d832771af2222a60dc18684f102", null ],
+    [ "operator=", "classDGtal_1_1OrderedAlphabet.html#ae222e89a1f65578ca526e574f3d658a4", null ],
     [ "order", "classDGtal_1_1OrderedAlphabet.html#a671b7d7736162c178ad453654fa9589b", null ],
     [ "orderedAlphabet", "classDGtal_1_1OrderedAlphabet.html#a9ecdbcb3ba7609422cceb25237a2dbc8", null ],
     [ "reverse", "classDGtal_1_1OrderedAlphabet.html#a76fb2a9e17a5c7a39ca2bcce75555a6f", null ],

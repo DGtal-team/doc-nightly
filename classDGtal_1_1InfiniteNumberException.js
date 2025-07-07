@@ -1,4 +1,4 @@
 var classDGtal_1_1InfiniteNumberException =
 [
-    [ "what", "classDGtal_1_1InfiniteNumberException.html#a1206d66cb72707213030ea694eb7e527", null ]
+    [ "what", "classDGtal_1_1InfiniteNumberException.html#ab5b31c655904570bc25882e7b216e620", null ]
 ];

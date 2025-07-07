@@ -10,5 +10,5 @@ var classDGtal_1_1StandardDSS4 =
     [ "StandardDSS4", "classDGtal_1_1StandardDSS4.html#a8d441c404992a439bdd96c9cf3df6853", null ],
     [ "StandardDSS4", "classDGtal_1_1StandardDSS4.html#a0f242ebd3db851b951d57f64e2c4b15a", null ],
     [ "StandardDSS4", "classDGtal_1_1StandardDSS4.html#accc38540213466fbe9cd244fce09a11d", null ],
-    [ "operator=", "classDGtal_1_1StandardDSS4.html#a04218ed54643b85a6191d57425914be7", null ]
+    [ "operator=", "classDGtal_1_1StandardDSS4.html#afc3361d1f8e0a0346b19dde07a35883d", null ]
 ];

@@ -8,7 +8,7 @@ var classDGtal_1_1Knot__6__2 =
     [ "Knot_6_2", "classDGtal_1_1Knot__6__2.html#af9512d040674a9527a2aa1d76a82f1f6", null ],
     [ "Knot_6_2", "classDGtal_1_1Knot__6__2.html#a3738ea62cb85e0f90e13546a1e440715", null ],
     [ "isValid", "classDGtal_1_1Knot__6__2.html#abeb578dbeca00f12a236604652c1f59e", null ],
-    [ "operator=", "classDGtal_1_1Knot__6__2.html#ad3bd5807c1167de72106ee8acec01ce4", null ],
+    [ "operator=", "classDGtal_1_1Knot__6__2.html#a1e1630cc9edd8a50eda3d2f423596f52", null ],
     [ "selfDisplay", "classDGtal_1_1Knot__6__2.html#ad481d31a2f59d3e2ece36da617cee777", null ],
     [ "x", "classDGtal_1_1Knot__6__2.html#a2cadbfe7889470b26487accdbabce8e5", null ],
     [ "xp", "classDGtal_1_1Knot__6__2.html#af4e330f383744b1e66130b332b82854e", null ],

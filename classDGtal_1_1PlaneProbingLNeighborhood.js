@@ -27,8 +27,8 @@ var classDGtal_1_1PlaneProbingLNeighborhood =
     [ "getOperationFromGridPoint", "classDGtal_1_1PlaneProbingLNeighborhood.html#ab5d8d319af0136c82ba0586af03faa57", null ],
     [ "hexagonState", "classDGtal_1_1PlaneProbingLNeighborhood.html#a7493d07b36dfbba2ac8fd7a4757eba61", null ],
     [ "isValid", "classDGtal_1_1PlaneProbingLNeighborhood.html#aca20c45c4d12dad1110e8837ed9735c5", null ],
-    [ "operator=", "classDGtal_1_1PlaneProbingLNeighborhood.html#a424072e6d81468fd44e20c60208b5bc5", null ],
-    [ "operator=", "classDGtal_1_1PlaneProbingLNeighborhood.html#a36c43aa548e5aafeca53a8ff5cdd9abc", null ],
+    [ "operator=", "classDGtal_1_1PlaneProbingLNeighborhood.html#abc954f1a71969807c65c680a634f94a4", null ],
+    [ "operator=", "classDGtal_1_1PlaneProbingLNeighborhood.html#aec16618e2b7ac535424e21781936ea61", null ],
     [ "selfDisplay", "classDGtal_1_1PlaneProbingLNeighborhood.html#a4124a786bb975067332f3a8b124e8850", null ],
     [ "updateGrid", "classDGtal_1_1PlaneProbingLNeighborhood.html#a1c0f3c1c115733328114bbdf09fea8b3", null ],
     [ "myGrids", "classDGtal_1_1PlaneProbingLNeighborhood.html#ad9363f31df93afee7f7116d2980afe2a", null ]

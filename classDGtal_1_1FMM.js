@@ -36,7 +36,7 @@ var classDGtal_1_1FMM =
     [ "isValid", "classDGtal_1_1FMM.html#a9060b567c48050f3e005700b4794782f", null ],
     [ "max", "classDGtal_1_1FMM.html#aea0f00ab42e2bc6bf55fb8d9c8ea0080", null ],
     [ "min", "classDGtal_1_1FMM.html#a7e5f6f6ef2528f1903afd495c976c81d", null ],
-    [ "operator=", "classDGtal_1_1FMM.html#af55d30994f7e6113497d897011d58ed6", null ],
+    [ "operator=", "classDGtal_1_1FMM.html#a2208cef2b9dc0e3bbec50ed44794db98", null ],
     [ "selfDisplay", "classDGtal_1_1FMM.html#ac5cdcbd41597cddb822bcd0dbf4fb65d", null ],
     [ "update", "classDGtal_1_1FMM.html#a1dd281ec4517b72b6f7d5ac41f5c9b8f", null ],
     [ "dimension", "classDGtal_1_1FMM.html#afeb66bc33b9aecb5c74f523a36831d6c", null ],

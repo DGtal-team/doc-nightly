@@ -13,7 +13,7 @@ var classDGtal_1_1LInfLocalDistance =
     [ "BOOST_STATIC_ASSERT", "classDGtal_1_1LInfLocalDistance.html#a7decd3fb61a7a8798d934ef480fa454b", null ],
     [ "compute", "classDGtal_1_1LInfLocalDistance.html#a5f57bc08717404e0d5cdb204d2e4b879", null ],
     [ "operator()", "classDGtal_1_1LInfLocalDistance.html#adaafb3426c3443d375f5ae83de8d9b8a", null ],
-    [ "operator=", "classDGtal_1_1LInfLocalDistance.html#a4a97a68e5f0e390348cd58bc0fc49096", null ],
+    [ "operator=", "classDGtal_1_1LInfLocalDistance.html#adfacaf88e62ad3783edc5d235db7e21d", null ],
     [ "selfDisplay", "classDGtal_1_1LInfLocalDistance.html#a9314a3e5d8bfa69129e8244fe92249cf", null ],
     [ "myImgPtr", "classDGtal_1_1LInfLocalDistance.html#af25b65772b257e71eb217dd569af53e4", null ],
     [ "mySetPtr", "classDGtal_1_1LInfLocalDistance.html#a6bc0a7f3d98c8addc0420f4663f2723f", null ]

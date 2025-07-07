@@ -7,7 +7,7 @@ var classDGtal_1_1FrechetShortcut_1_1Cone =
     [ "intersectCones", "classDGtal_1_1FrechetShortcut_1_1Cone.html#a2edc60e0b9678106021ddb5a0cf9692d", null ],
     [ "intersectConesSimple", "classDGtal_1_1FrechetShortcut_1_1Cone.html#a9ac7868624bb739661ea14e98a6ce279", null ],
     [ "isEmpty", "classDGtal_1_1FrechetShortcut_1_1Cone.html#ab297b44db86cee3cc921d0ea7b858527", null ],
-    [ "operator=", "classDGtal_1_1FrechetShortcut_1_1Cone.html#a8057c7b66e2c380c585888ff5200dfd1", null ],
+    [ "operator=", "classDGtal_1_1FrechetShortcut_1_1Cone.html#a3084ba3493423eadf3941f21366185f5", null ],
     [ "selfDisplay", "classDGtal_1_1FrechetShortcut_1_1Cone.html#a638d8670076f052a8ee20e2389ed226b", null ],
     [ "symmetricalCone", "classDGtal_1_1FrechetShortcut_1_1Cone.html#a41a2b52d4761869dc96033778cf3dc89", null ],
     [ "myInf", "classDGtal_1_1FrechetShortcut_1_1Cone.html#a6a44b20768cb580a60b2ae88f366d56c", null ],

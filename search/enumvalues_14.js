@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['whole_5fds_17221',['WHOLE_DS',['../namespaceDGtal.html#a07a2f5d6c861cd13dd680ea2e64e2dd4ac6f14eff3712732f6fa6d608f11e79fe',1,'DGtal']]]
+  ['x_0',['X',['../classDGtal_1_1TangentFromDSS3DBy2DFunctor.html#aeaa5d6a79388f3d6a568a82ff8ef92efab7d9da59bd09431276b6c5fcd7bea481',1,'DGtal::TangentFromDSS3DBy2DFunctor']]],
+  ['x_5f_1',['X_',['../classDGtal_1_1PolygonalCalculus.html#a214872a1219ea5fe2c815f1aa9fa248fa336386a365803d7585cdec02a43c3117',1,'DGtal::PolygonalCalculus']]]
 ];

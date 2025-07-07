@@ -9,7 +9,7 @@ var classDGtal_1_1Knot__5__2 =
     [ "Knot_5_2", "classDGtal_1_1Knot__5__2.html#a266cfe009bee4aa389875c950a8af6f0", null ],
     [ "getPeriod", "classDGtal_1_1Knot__5__2.html#a547baa58edfc052a9f04a199ba7d3139", null ],
     [ "isValid", "classDGtal_1_1Knot__5__2.html#ab61b0d1004538cd54f17bc9b23dc8e3c", null ],
-    [ "operator=", "classDGtal_1_1Knot__5__2.html#a1191e279101c84ddebdcf082d6b62c85", null ],
+    [ "operator=", "classDGtal_1_1Knot__5__2.html#ad9fea7df4d1cd0f299f7eda6c82c4182", null ],
     [ "selfDisplay", "classDGtal_1_1Knot__5__2.html#a7044f59c1f41bb0a8eccd7800928afff", null ],
     [ "x", "classDGtal_1_1Knot__5__2.html#a8d1a9edf2b31c3f3b64e8475acf7e15c", null ],
     [ "xp", "classDGtal_1_1Knot__5__2.html#ad4350d8891b59d7b1f8551fa31826fc2", null ],

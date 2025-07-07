@@ -1,7 +1,7 @@
 var classDGtal_1_1DistanceTransformation =
 [
     [ "ConstRange", "classDGtal_1_1DistanceTransformation.html#aa3bbc328e8a5c07a225a8f6a996e5cf0", null ],
-    [ "Domain", "classDGtal_1_1DistanceTransformation.html#a4bc367e600ef6582f37dcf3a0f37c2ae", null ],
+    [ "Domain", "classDGtal_1_1DistanceTransformation.html#a4a384e0b82e197ea209229eabfe81246", null ],
     [ "Parent", "classDGtal_1_1DistanceTransformation.html#a0a948cf4ab33a97e5d607b9b63f8e403", null ],
     [ "Point", "classDGtal_1_1DistanceTransformation.html#aa7463df3cc68446e1ade8d9debdc59a5", null ],
     [ "PointPredicate", "classDGtal_1_1DistanceTransformation.html#a01aebd61126a7392715a29d104ae07fb", null ],
@@ -19,9 +19,9 @@ var classDGtal_1_1DistanceTransformation =
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1DistanceTransformation.html#afaddc14cc915393d92e6f8a38c27c18f", null ],
     [ "BOOST_STATIC_ASSERT", "classDGtal_1_1DistanceTransformation.html#ae88bf65553fdd2fddc40f7c1d86428b4", null ],
     [ "constRange", "classDGtal_1_1DistanceTransformation.html#a635f084e1ae6330eb523b9466def9fe4", null ],
-    [ "domain", "classDGtal_1_1DistanceTransformation.html#a8884f9982273d07ab1b3b9e284f936de", null ],
+    [ "domain", "classDGtal_1_1DistanceTransformation.html#ab53b58cb61819511cb3798aff7f974dd", null ],
     [ "getVoronoiSite", "classDGtal_1_1DistanceTransformation.html#a457ec77722191d1a07005959be5c52db", null ],
-    [ "metric", "classDGtal_1_1DistanceTransformation.html#a31434b818872cb48d4ff37e09c026009", null ],
+    [ "metric", "classDGtal_1_1DistanceTransformation.html#a572193d9b6adf1e238c8580341774841", null ],
     [ "operator()", "classDGtal_1_1DistanceTransformation.html#a831c7680f262b4a3a4176e3124542820", null ],
     [ "selfDisplay", "classDGtal_1_1DistanceTransformation.html#ad47f35e502d7a15196d28cb90953cc1b", null ]
 ];

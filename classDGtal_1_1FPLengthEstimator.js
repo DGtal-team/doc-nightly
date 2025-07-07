@@ -10,6 +10,6 @@ var classDGtal_1_1FPLengthEstimator =
     [ "FPLengthEstimator", "classDGtal_1_1FPLengthEstimator.html#a93e83e68f747aff6f6b186cbf92554a5", null ],
     [ "eval", "classDGtal_1_1FPLengthEstimator.html#a5dec31f543874bd489e61bb95eb71bac", null ],
     [ "isValid", "classDGtal_1_1FPLengthEstimator.html#ac3dbf3023b0795e86664ae1491e8b049", null ],
-    [ "operator=", "classDGtal_1_1FPLengthEstimator.html#a3a80ad166c25473e0e1d511f88ed9fae", null ],
+    [ "operator=", "classDGtal_1_1FPLengthEstimator.html#ae4b30e683efcb1f7dc3e52245b8ca9d2", null ],
     [ "selfDisplay", "classDGtal_1_1FPLengthEstimator.html#a52f6da549c4ec53fea670f85f7433c5d", null ]
 ];

@@ -9,7 +9,7 @@ var classDGtal_1_1Measure =
     [ "eval", "classDGtal_1_1Measure.html#a2f136d681b0b1b0f9bc2ec28d5103873", null ],
     [ "init", "classDGtal_1_1Measure.html#adfaed9bfc8711301fc1056374df1af07", null ],
     [ "isValid", "classDGtal_1_1Measure.html#a5ac36ffc2527e87ddcecc103bd0ad01a", null ],
-    [ "operator=", "classDGtal_1_1Measure.html#a66fc62ec51f9b97b1fdb8d8101701979", null ],
+    [ "operator=", "classDGtal_1_1Measure.html#a22f5c7ef349462f9bf76c6ea1ee45870", null ],
     [ "selfDisplay", "classDGtal_1_1Measure.html#ae4e809caaade7c1180d4e8637c8a7dbe", null ],
     [ "myH", "classDGtal_1_1Measure.html#a23d1c3bea18e68f32e70b9978dfaad1a", null ],
     [ "myIsInitBefore", "classDGtal_1_1Measure.html#a485b31da14eb13513fa5f26ee43beae2", null ],

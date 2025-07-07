@@ -17,7 +17,7 @@ var classDGtal_1_1EstimatorCache =
     [ "h", "classDGtal_1_1EstimatorCache.html#acbcb19bf49b3694c02d617368be1aeca", null ],
     [ "init", "classDGtal_1_1EstimatorCache.html#af6e5423716c8e01bd7d5a4ecf68c1014", null ],
     [ "isValid", "classDGtal_1_1EstimatorCache.html#ae6222a4921d7ff813af47849056bd51d", null ],
-    [ "operator=", "classDGtal_1_1EstimatorCache.html#ae8a76af7a0dd8b734793ff16beb67b62", null ],
+    [ "operator=", "classDGtal_1_1EstimatorCache.html#a6acf23df0b319dc17e54e73e1cbdad20", null ],
     [ "selfDisplay", "classDGtal_1_1EstimatorCache.html#a9c4aec54bf391330f47eef8e181b13d2", null ],
     [ "size", "classDGtal_1_1EstimatorCache.html#a71430cb280f8bad67d7595a5d6566281", null ],
     [ "myContainer", "classDGtal_1_1EstimatorCache.html#a43ff0c31cb51e2f2bbf204ae264bf1a7", null ],

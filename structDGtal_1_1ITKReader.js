@@ -10,5 +10,5 @@ var structDGtal_1_1ITKReader =
     [ "importITK", "structDGtal_1_1ITKReader.html#a70b66ab92b65fa95b39e8e8453c062ec", null ],
     [ "importITK", "structDGtal_1_1ITKReader.html#a0abab1e1acff16b3ac4bdf24d8e5494c", null ],
     [ "readDGtalImageFromITKtypes", "structDGtal_1_1ITKReader.html#a28f4bacbd2449dc4bc3b6261ef83cfbe", null ],
-    [ "readDGtalITKImage", "structDGtal_1_1ITKReader.html#a773cb512a966bbe1d50163495a5d9932", null ]
+    [ "readDGtalITKImage", "structDGtal_1_1ITKReader.html#acb9a67d1d5f036b71c36d535215670a6", null ]
 ];

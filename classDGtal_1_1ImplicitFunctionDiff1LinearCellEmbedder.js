@@ -29,7 +29,7 @@ var classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedder =
     [ "init", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedder.html#a19aebb07de164f9424aa21cdac1884ed", null ],
     [ "isValid", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedder.html#abf5ebf60b4dbddc16adb8ac424c210fc", null ],
     [ "operator()", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedder.html#a261f393fc003dac78a0aa5eabd27889a", null ],
-    [ "operator=", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedder.html#a6876a7985689007614d467dea4d5993e", null ],
+    [ "operator=", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedder.html#a20e4fd48539580473f3d582e41920740", null ],
     [ "selfDisplay", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedder.html#a58fa69053e53bca24b571e5954ac7396", null ],
     [ "myPtrEmbedder", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedder.html#ab23b5d9dcbc331bfaca92d6d514c1500", null ],
     [ "myPtrFct", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedder.html#a4b912fc92a968e13f5ba5f7071a0857f", null ],

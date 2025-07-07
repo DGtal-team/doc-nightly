@@ -21,7 +21,7 @@ var classDGtal_1_1ImplicitFunctionLinearCellEmbedder =
     [ "init", "classDGtal_1_1ImplicitFunctionLinearCellEmbedder.html#a0628368220cf6f305e2b9294c2ae99f3", null ],
     [ "isValid", "classDGtal_1_1ImplicitFunctionLinearCellEmbedder.html#ad67e9e93be5ff19cc4b80aa779a253f8", null ],
     [ "operator()", "classDGtal_1_1ImplicitFunctionLinearCellEmbedder.html#aa88f3a648aa47c5787122c6b6a766b83", null ],
-    [ "operator=", "classDGtal_1_1ImplicitFunctionLinearCellEmbedder.html#aedd533f6fedebaeac55a510c492e7b73", null ],
+    [ "operator=", "classDGtal_1_1ImplicitFunctionLinearCellEmbedder.html#a94da86c4df0dd6e2b6ca3bdd1be35f73", null ],
     [ "selfDisplay", "classDGtal_1_1ImplicitFunctionLinearCellEmbedder.html#a0a9810e6d6b3e341405e95cf7a8e6a6b", null ],
     [ "myPtrEmbedder", "classDGtal_1_1ImplicitFunctionLinearCellEmbedder.html#aa7078bf56ea26885988db2874bdff56b", null ],
     [ "myPtrFct", "classDGtal_1_1ImplicitFunctionLinearCellEmbedder.html#a7cfe300ca7d99fb514aa9393158f6033", null ],

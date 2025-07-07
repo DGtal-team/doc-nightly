@@ -20,7 +20,7 @@ var classDGtal_1_1Surfaces =
     [ "getPrimalVertices", "classDGtal_1_1Surfaces.html#a74c7ea4699593fb54ae92e5df50c69a6", null ],
     [ "getPrimalVertices", "classDGtal_1_1Surfaces.html#a9db77292cbc2b556ed03944da543eb06", null ],
     [ "isValid", "classDGtal_1_1Surfaces.html#add44eb4962d963684347d47b016c51aa", null ],
-    [ "operator=", "classDGtal_1_1Surfaces.html#a31d72cf1ccdf33632636c890e5816d1d", null ],
+    [ "operator=", "classDGtal_1_1Surfaces.html#a837845a666e444cadb74fdf5fffeda83", null ],
     [ "orientSCellExterior", "classDGtal_1_1Surfaces.html#a9eda7d188df09dfdee18747064a8044d", null ],
     [ "selfDisplay", "classDGtal_1_1Surfaces.html#a5e63ce00752d72c354a1396b7800d745", null ],
     [ "sMakeBoundary", "classDGtal_1_1Surfaces.html#af61619b3dbd948aea387202369bddd6f", null ],

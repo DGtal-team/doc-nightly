@@ -20,7 +20,7 @@ var classDGtal_1_1ImplicitPolynomial3Shape =
     [ "meanCurvature", "classDGtal_1_1ImplicitPolynomial3Shape.html#a49f123c080f1fb483251b874a786632d", null ],
     [ "nearestPoint", "classDGtal_1_1ImplicitPolynomial3Shape.html#ac14529a718cbf7e215b8681e9d9becfc", null ],
     [ "operator()", "classDGtal_1_1ImplicitPolynomial3Shape.html#aa3186264db22614635ba89f2eee1acd8", null ],
-    [ "operator=", "classDGtal_1_1ImplicitPolynomial3Shape.html#ae7c6a1b034b6ecc0a387b94e83845dad", null ],
+    [ "operator=", "classDGtal_1_1ImplicitPolynomial3Shape.html#abd16f2ef4cf6752072263feeb1e11b38", null ],
     [ "orientation", "classDGtal_1_1ImplicitPolynomial3Shape.html#a0a305a937d8e03ad921eed75ff4900b1", null ],
     [ "principalCurvatures", "classDGtal_1_1ImplicitPolynomial3Shape.html#a87aed082bc9f9c49fce5a5adc83ea9b8", null ],
     [ "principalDirections", "classDGtal_1_1ImplicitPolynomial3Shape.html#ae72237c8ef235e1a04abc319963d1489", null ],

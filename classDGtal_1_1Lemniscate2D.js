@@ -14,7 +14,7 @@ var classDGtal_1_1Lemniscate2D =
     [ "isAlmostEqual", "classDGtal_1_1Lemniscate2D.html#a2010f2fd12e38c01e97a11beaca69e1f", null ],
     [ "isValid", "classDGtal_1_1Lemniscate2D.html#a12b74679f9ad947596001a030a73a693", null ],
     [ "moveTo", "classDGtal_1_1Lemniscate2D.html#a033937b741725d893c4cd90dcbbbbd4c", null ],
-    [ "operator=", "classDGtal_1_1Lemniscate2D.html#afbef1393aeff8a6956dcd5effcf89473", null ],
+    [ "operator=", "classDGtal_1_1Lemniscate2D.html#a246e3d0e034358a71501865d6f71ebca", null ],
     [ "parameter", "classDGtal_1_1Lemniscate2D.html#ac77982814801987a66d9433a87104540", null ],
     [ "selfDisplay", "classDGtal_1_1Lemniscate2D.html#a9add4c33d58b0a97d430531ca8464aa8", null ],
     [ "x", "classDGtal_1_1Lemniscate2D.html#ac10320bb1b8e43edd33cabdc2d0a46f9", null ],

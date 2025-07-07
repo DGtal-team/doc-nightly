@@ -6,7 +6,7 @@ var classDGtal_1_1functors_1_1BasicDomainSubSampler =
     [ "Size", "classDGtal_1_1functors_1_1BasicDomainSubSampler.html#acd32425fa6cecbbc58f1694fa0630fd0", null ],
     [ "Space", "classDGtal_1_1functors_1_1BasicDomainSubSampler.html#aa3551cf891c85441a4d96515a128d9b3", null ],
     [ "BasicDomainSubSampler", "classDGtal_1_1functors_1_1BasicDomainSubSampler.html#ae8306a94b3e6f7881b9ff00ee0677acf", null ],
-    [ "getSubSampledDomain", "classDGtal_1_1functors_1_1BasicDomainSubSampler.html#a86ee25efdfa301d7470d30a1097e54bb", null ],
+    [ "getSubSampledDomain", "classDGtal_1_1functors_1_1BasicDomainSubSampler.html#a8b54880517d4b4953db48847bb22d886", null ],
     [ "operator()", "classDGtal_1_1functors_1_1BasicDomainSubSampler.html#a299841310965d5c7662c30ab20078967", null ],
     [ "myGridSampleDomain", "classDGtal_1_1functors_1_1BasicDomainSubSampler.html#a71ec4bb77edb5b8c912bc5557d7eee96", null ],
     [ "myGridShift", "classDGtal_1_1functors_1_1BasicDomainSubSampler.html#a244fab19e6ed4ab445101a1f8701cbce", null ],

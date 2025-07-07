@@ -14,7 +14,7 @@ var classDGtal_1_1Astroid2D =
     [ "isAlmostEqual", "classDGtal_1_1Astroid2D.html#acc688752379662f36c8da7a07b2a0338", null ],
     [ "isValid", "classDGtal_1_1Astroid2D.html#a171e89abf7a5f39b63627a7b557f41c2", null ],
     [ "moveTo", "classDGtal_1_1Astroid2D.html#a1fcfbefb168af78143709073015300e2", null ],
-    [ "operator=", "classDGtal_1_1Astroid2D.html#acdb7e97d5d2741e8e9b4d42434bfe802", null ],
+    [ "operator=", "classDGtal_1_1Astroid2D.html#a11227c52a8830638e89a52ddf9078617", null ],
     [ "parameter", "classDGtal_1_1Astroid2D.html#af80ccab9287e45e182158b81ad00c4f9", null ],
     [ "selfDisplay", "classDGtal_1_1Astroid2D.html#ac41cf51fa69e15cd1aed75d855f23958", null ],
     [ "x", "classDGtal_1_1Astroid2D.html#a34523179e6e6e68f34ee37d17b7a3b6d", null ],

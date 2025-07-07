@@ -11,7 +11,7 @@ var classDGtal_1_1L2FirstOrderLocalDistanceFromCells =
     [ "~L2FirstOrderLocalDistanceFromCells", "classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#a7ddbb14d4f099144988a3ca4ea8aeba3", null ],
     [ "compute", "classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#a26a9611dfb5ef27912a81a4b8f39b84d", null ],
     [ "operator()", "classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#a24a7b93516a5da5002b625fe2f371007", null ],
-    [ "operator=", "classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#a4ae670764de957f019a5baca49e6760b", null ],
+    [ "operator=", "classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#ac83f955ebb900c88e5f9c2b4c2e242aa", null ],
     [ "selfDisplay", "classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#abdbc5393a8e196ab703fe794f45d1e91", null ],
     [ "myKSpace", "classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#ad56b9428464448ccfa0a57b5d10f8456", null ],
     [ "myMap", "classDGtal_1_1L2FirstOrderLocalDistanceFromCells.html#ad8385b01b5794c9941464931268d9b02", null ]

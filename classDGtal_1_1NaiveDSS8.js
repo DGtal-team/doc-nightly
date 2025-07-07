@@ -10,5 +10,5 @@ var classDGtal_1_1NaiveDSS8 =
     [ "NaiveDSS8", "classDGtal_1_1NaiveDSS8.html#a7b8d1b6af765798195aa14865840bb5c", null ],
     [ "NaiveDSS8", "classDGtal_1_1NaiveDSS8.html#ac0e70a106616d9a14f312b85dc61f1fd", null ],
     [ "NaiveDSS8", "classDGtal_1_1NaiveDSS8.html#a9a18ec79ea4a0f4d2d655fd4092dcb68", null ],
-    [ "operator=", "classDGtal_1_1NaiveDSS8.html#a4088b183db1783cb16797136731708c5", null ]
+    [ "operator=", "classDGtal_1_1NaiveDSS8.html#ab9bdcdda7b1b5d789ab8b1a26763856b", null ]
 ];

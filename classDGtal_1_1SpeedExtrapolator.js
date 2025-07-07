@@ -15,7 +15,7 @@ var classDGtal_1_1SpeedExtrapolator =
     [ "BOOST_STATIC_ASSERT", "classDGtal_1_1SpeedExtrapolator.html#a42666666994f89568be4162a8ec75810", null ],
     [ "BOOST_STATIC_ASSERT", "classDGtal_1_1SpeedExtrapolator.html#a9f3c47b827374081cd86a14e246ea19e", null ],
     [ "operator()", "classDGtal_1_1SpeedExtrapolator.html#a322a6ceee0b36830f50f8424532e0a28", null ],
-    [ "operator=", "classDGtal_1_1SpeedExtrapolator.html#a1f6622f62a6b017be01cc0ae0c0aa608", null ],
+    [ "operator=", "classDGtal_1_1SpeedExtrapolator.html#af1c77c85b437afebe92e5c856de8d3e3", null ],
     [ "myDistImgPtr", "classDGtal_1_1SpeedExtrapolator.html#a9a130b9747125d914cb97410e2f45c52", null ],
     [ "mySetPtr", "classDGtal_1_1SpeedExtrapolator.html#aae60f5de0cf9ade5121441973fab3d3b", null ],
     [ "mySpeedFuncPtr", "classDGtal_1_1SpeedExtrapolator.html#a3bedf8b1ccc8e65110b3d8212ee8a815", null ]

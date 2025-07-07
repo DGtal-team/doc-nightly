@@ -36,7 +36,7 @@ var classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01
     [ "init", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#afccea1caca1b7a5e7c7337f2022f1e64", null ],
     [ "init", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#a274fec9a986a78de4f0a67428fa03bca", null ],
     [ "isValid", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#aef410c98a92f89be6929051f6a922516", null ],
-    [ "operator=", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#a2637d5e008c0a211796122b7b42736d6", null ],
+    [ "operator=", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#a3eda647d31faec5e55d159298bf60683", null ],
     [ "defaultInnerMoments", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#a5cf457ce040bd6652e78d6b757150b42", null ],
     [ "defaultInnerSpel", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#adcd84b1db7ff1623238e99b86d563da8", null ],
     [ "defaultInnerSum", "classDGtal_1_1DigitalSurfaceConvolver_3_01TFunctor_00_01TKernelFunctor_00_01TKSpace_00_01TDigitalKernel_00_012_01_4.html#aba0ca5e6cf7be3faac1b6fa1420d0cf6", null ],

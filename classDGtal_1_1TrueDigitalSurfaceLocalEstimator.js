@@ -23,7 +23,7 @@ var classDGtal_1_1TrueDigitalSurfaceLocalEstimator =
     [ "h", "classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a13f63d9a6a8085f38bc94d37b99a4f99", null ],
     [ "init", "classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a105268b4b2f823e17d69dac8b6c185e3", null ],
     [ "isValid", "classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a918e0028272a5efa32a50493cd63e946", null ],
-    [ "operator=", "classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a96c2f4361ade3756c0a0e4111d92fd9b", null ],
+    [ "operator=", "classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a88737f5b258c823bf9064cffa6ae0948", null ],
     [ "selfDisplay", "classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#a31f0264f2de70b79003aa8e4d6891a56", null ],
     [ "setParams", "classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#ad1d5ee212f51d2f60b2da87838700b90", null ],
     [ "myAccuracy", "classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html#ad1001046439b79381c12c868f4b696f8", null ],

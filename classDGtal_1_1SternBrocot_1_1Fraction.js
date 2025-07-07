@@ -33,7 +33,7 @@ var classDGtal_1_1SternBrocot_1_1Fraction =
     [ "odd", "classDGtal_1_1SternBrocot_1_1Fraction.html#a3dfc30d3048e122bef93e2c0836038c9", null ],
     [ "operator!=", "classDGtal_1_1SternBrocot_1_1Fraction.html#aad2874c2115258fbd9293cb029864882", null ],
     [ "operator<", "classDGtal_1_1SternBrocot_1_1Fraction.html#abc53f3e4d70b82de116fae594bfa4577", null ],
-    [ "operator=", "classDGtal_1_1SternBrocot_1_1Fraction.html#a590f2a84c725b13b45498ff6d376b467", null ],
+    [ "operator=", "classDGtal_1_1SternBrocot_1_1Fraction.html#af0f2296e76fb55fd60114ab5ca16c545", null ],
     [ "operator==", "classDGtal_1_1SternBrocot_1_1Fraction.html#a351e2f06bee0db759184898201250e51", null ],
     [ "operator>", "classDGtal_1_1SternBrocot_1_1Fraction.html#a709e5cb7bebc26e5b571457906d5fb19", null ],
     [ "p", "classDGtal_1_1SternBrocot_1_1Fraction.html#aee35544c9364b96be486bc0d4fdfc091", null ],

@@ -9,7 +9,7 @@ var classDGtal_1_1OrderedLinearRegression =
     [ "clear", "classDGtal_1_1OrderedLinearRegression.html#a1f9d4cc59d0e0e59d9299da878193492", null ],
     [ "forwardSLR", "classDGtal_1_1OrderedLinearRegression.html#afc258b73fcab9793d30e08dab38919ab", null ],
     [ "isValid", "classDGtal_1_1OrderedLinearRegression.html#a7aeb1200e090ad4f816b9c0b0e7ae2b5", null ],
-    [ "operator=", "classDGtal_1_1OrderedLinearRegression.html#a46814a99668633aa1885d935c52f7ef7", null ],
+    [ "operator=", "classDGtal_1_1OrderedLinearRegression.html#a8bc2ad60a191bf601dcf6a6df731d1cc", null ],
     [ "selfDisplay", "classDGtal_1_1OrderedLinearRegression.html#a138cd5f031072dd2f41ec86812a08e87", null ],
     [ "myEpsilonZero", "classDGtal_1_1OrderedLinearRegression.html#a0cdf25626bbaabb568e62bae9ce63b01", null ],
     [ "myN", "classDGtal_1_1OrderedLinearRegression.html#a5bc7ffcf8a3540e3331988f402d9ee59", null ],

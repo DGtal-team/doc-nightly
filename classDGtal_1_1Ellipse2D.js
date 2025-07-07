@@ -14,7 +14,7 @@ var classDGtal_1_1Ellipse2D =
     [ "isAlmostEqual", "classDGtal_1_1Ellipse2D.html#ad5876135fa55a846bfdc8c107797edcf", null ],
     [ "isValid", "classDGtal_1_1Ellipse2D.html#a3bb6beef82e4c0170e807c49582058f4", null ],
     [ "moveTo", "classDGtal_1_1Ellipse2D.html#a7bab7826930eff5a9d1cf5f6492289c8", null ],
-    [ "operator=", "classDGtal_1_1Ellipse2D.html#a3a13e67d5939a1ea8e9d9c40c18f588d", null ],
+    [ "operator=", "classDGtal_1_1Ellipse2D.html#aa3742206649c70ae4483dcdb3a7e017a", null ],
     [ "parameter", "classDGtal_1_1Ellipse2D.html#afa25d6a690d66a581e4889e1d7f7f414", null ],
     [ "selfDisplay", "classDGtal_1_1Ellipse2D.html#a1a2f9a9175489a187acbbe7bcae12fc4", null ],
     [ "x", "classDGtal_1_1Ellipse2D.html#a4d7d4cf58bf1ce5b50b2cb5eba64c1e9", null ],

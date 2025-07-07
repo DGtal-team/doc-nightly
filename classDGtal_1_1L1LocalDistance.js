@@ -13,7 +13,7 @@ var classDGtal_1_1L1LocalDistance =
     [ "BOOST_STATIC_ASSERT", "classDGtal_1_1L1LocalDistance.html#a67365729f9a8ce6efb4870f4786e545b", null ],
     [ "compute", "classDGtal_1_1L1LocalDistance.html#a7e33f4b96196b61950842e4005bc2e05", null ],
     [ "operator()", "classDGtal_1_1L1LocalDistance.html#ac30ff42ae96497d11070bde0c92d383e", null ],
-    [ "operator=", "classDGtal_1_1L1LocalDistance.html#a87955e648c0205c7d8ce03d499c80991", null ],
+    [ "operator=", "classDGtal_1_1L1LocalDistance.html#a5d6c13b593a700da116557c64821c6d5", null ],
     [ "selfDisplay", "classDGtal_1_1L1LocalDistance.html#ad2e12ba2ac9ebc30b0fa6e650518a790", null ],
     [ "myImgPtr", "classDGtal_1_1L1LocalDistance.html#a6a24969ae2a0f0a0d43a11fc8ed271cb", null ],
     [ "mySetPtr", "classDGtal_1_1L1LocalDistance.html#a39969dfa5677e82449deb176628e6992", null ]

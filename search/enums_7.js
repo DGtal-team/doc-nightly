@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['linecap_16975',['LineCap',['../structLibBoard_1_1Shape.html#af09a3c6f719c8a846447c0cd2e2d0368',1,'LibBoard::Shape']]],
-  ['linejoin_16976',['LineJoin',['../structLibBoard_1_1Shape.html#a5618d9c1f412d36189695c557f1b9be2',1,'LibBoard::Shape']]],
-  ['linestyle_16977',['LineStyle',['../structLibBoard_1_1Shape.html#ad9b9ccfae0a74f1d681cb126a225c900',1,'LibBoard::Shape']]]
+  ['magicnumber_0',['magicnumber',['../structDGtal_1_1PGMReader.html#ae03bf693e32acf80a35cd07ec3175558',1,'DGtal::PGMReader::MagicNumber'],['../structDGtal_1_1PPMReader.html#ae0713fd2f4bcf68ba3f437cdd646f7e3',1,'DGtal::PPMReader::MagicNumber']]],
+  ['main_5faxis_1',['MAIN_AXIS',['../classDGtal_1_1TangentFromDSS3DBy2DFunctor.html#aeaa5d6a79388f3d6a568a82ff8ef92ef',1,'DGtal::TangentFromDSS3DBy2DFunctor']]]
 ];

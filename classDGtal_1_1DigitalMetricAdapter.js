@@ -14,7 +14,7 @@ var classDGtal_1_1DigitalMetricAdapter =
     [ "closest", "classDGtal_1_1DigitalMetricAdapter.html#a2d869b51c16b6b6382639145d326b460", null ],
     [ "isValid", "classDGtal_1_1DigitalMetricAdapter.html#afcf94d73dab21d08f3a42b6128175dcc", null ],
     [ "operator()", "classDGtal_1_1DigitalMetricAdapter.html#aa5006d139eab433a3a5afac90b4a770a", null ],
-    [ "operator=", "classDGtal_1_1DigitalMetricAdapter.html#afbe76f9d8d1707039b0f4989cffdf6be", null ],
+    [ "operator=", "classDGtal_1_1DigitalMetricAdapter.html#a9fcde7a4537afce7b00b9dc3b9d08b1a", null ],
     [ "rawDistance", "classDGtal_1_1DigitalMetricAdapter.html#a5f6b4337f3f91be75b03275990a5f14b", null ],
     [ "selfDisplay", "classDGtal_1_1DigitalMetricAdapter.html#a900600e39b6e04a1cd948e14401481f1", null ],
     [ "myMetric", "classDGtal_1_1DigitalMetricAdapter.html#a70521dfc9dcc4f258ab2437ee971d3fa", null ]

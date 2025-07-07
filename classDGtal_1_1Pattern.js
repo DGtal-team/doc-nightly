@@ -18,7 +18,7 @@ var classDGtal_1_1Pattern =
     [ "isValid", "classDGtal_1_1Pattern.html#a3f0693942ccf936ac35cb4f5b0502bbb", null ],
     [ "L", "classDGtal_1_1Pattern.html#ae70803325c9c129b67268b54d8af710f", null ],
     [ "length", "classDGtal_1_1Pattern.html#a03637571128450dbf8c40751aedeaa0e", null ],
-    [ "operator=", "classDGtal_1_1Pattern.html#a65b65607390cb3da9dde3874c29e96db", null ],
+    [ "operator=", "classDGtal_1_1Pattern.html#a8b1383eac014009f5ead211f8e1a06e5", null ],
     [ "posL", "classDGtal_1_1Pattern.html#a02520b3d720d88492e2de35e42e1b23c", null ],
     [ "posU", "classDGtal_1_1Pattern.html#ae65275848f1303ee43bf2a3b6d2338f5", null ],
     [ "previousPattern", "classDGtal_1_1Pattern.html#a2dbe8d2ebcf1a1c562e1c74b6c9fd6a5", null ],

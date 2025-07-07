@@ -33,7 +33,7 @@ var classDGtal_1_1StabbingLineComputer =
     [ "Lf", "classDGtal_1_1StabbingLineComputer.html#ab9eecf38ed1a25260ac05f39fbaa1a78", null ],
     [ "Ll", "classDGtal_1_1StabbingLineComputer.html#aa8b8b15d756465f341da5c7a3aa9c583", null ],
     [ "operator!=", "classDGtal_1_1StabbingLineComputer.html#ada02a25cccb2ae8272615cbdcc821790", null ],
-    [ "operator=", "classDGtal_1_1StabbingLineComputer.html#a1453b4b75f2a307bb85aa8bc9a8ac61d", null ],
+    [ "operator=", "classDGtal_1_1StabbingLineComputer.html#a58d061df99ba368ccd493925ceb0a2b0", null ],
     [ "operator==", "classDGtal_1_1StabbingLineComputer.html#a063233849e0accfa215d30105b154d6c", null ],
     [ "projects", "classDGtal_1_1StabbingLineComputer.html#a2fd3e11a556def53b5289484369b6dd7", null ],
     [ "selfDisplay", "classDGtal_1_1StabbingLineComputer.html#ab98aef46ecb5faa287ebf7fbccae03ff", null ],

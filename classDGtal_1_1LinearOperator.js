@@ -15,7 +15,7 @@ var classDGtal_1_1LinearOperator =
     [ "BOOST_STATIC_ASSERT", "classDGtal_1_1LinearOperator.html#a36894b369c111acac6d83d5836e1aa63", null ],
     [ "clear", "classDGtal_1_1LinearOperator.html#a67228981cb30d3dfcb617214206f52f8", null ],
     [ "isValid", "classDGtal_1_1LinearOperator.html#a41fe995b98d71c8e2040d414f23af783", null ],
-    [ "operator=", "classDGtal_1_1LinearOperator.html#a2773d84ad6ff1c69a8cb7c666b60564c", null ],
+    [ "operator=", "classDGtal_1_1LinearOperator.html#a1a2ea2cd6f53029e8d7cc1d2d770f11b", null ],
     [ "selfDisplay", "classDGtal_1_1LinearOperator.html#a02d3b9e789a0984b60c7566b49886e0b", null ],
     [ "transpose", "classDGtal_1_1LinearOperator.html#aeee5924a3cc7b145068dacb48611157c", null ],
     [ "myCalculus", "classDGtal_1_1LinearOperator.html#a8f8eb7cc74782bebe8aa0d38fdf08a71", null ],

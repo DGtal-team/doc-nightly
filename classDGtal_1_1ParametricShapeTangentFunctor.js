@@ -7,6 +7,6 @@ var classDGtal_1_1ParametricShapeTangentFunctor =
     [ "ParametricShapeTangentFunctor", "classDGtal_1_1ParametricShapeTangentFunctor.html#a4a7b0e51b7b0263301124a02c2ebb81c", null ],
     [ "~ParametricShapeTangentFunctor", "classDGtal_1_1ParametricShapeTangentFunctor.html#a587d3a7313361f1ae3a7a5f1cfec3423", null ],
     [ "operator()", "classDGtal_1_1ParametricShapeTangentFunctor.html#a21a893c816052bad4be4141684da620a", null ],
-    [ "operator=", "classDGtal_1_1ParametricShapeTangentFunctor.html#a3b804953fe87301ee31724cc46929db6", null ],
+    [ "operator=", "classDGtal_1_1ParametricShapeTangentFunctor.html#a3fc6b09a4c723c6b91dc3484e7aabdd5", null ],
     [ "myShape", "classDGtal_1_1ParametricShapeTangentFunctor.html#aa3f1d709957cff81fdf1feb2333f1902", null ]
 ];

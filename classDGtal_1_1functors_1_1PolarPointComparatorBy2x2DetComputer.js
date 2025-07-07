@@ -13,7 +13,7 @@ var classDGtal_1_1functors_1_1PolarPointComparatorBy2x2DetComputer =
     [ "isBefore", "classDGtal_1_1functors_1_1PolarPointComparatorBy2x2DetComputer.html#a31b566a1fad9a862f82efeb7916d09af", null ],
     [ "isValid", "classDGtal_1_1functors_1_1PolarPointComparatorBy2x2DetComputer.html#ade239223c01b9b77e4cb8f97f705de95", null ],
     [ "operator()", "classDGtal_1_1functors_1_1PolarPointComparatorBy2x2DetComputer.html#a9652ebe8dbec7a46a5ebbf4f5a309d83", null ],
-    [ "operator=", "classDGtal_1_1functors_1_1PolarPointComparatorBy2x2DetComputer.html#a2fecea6a9618571d88794f5bef6ad511", null ],
+    [ "operator=", "classDGtal_1_1functors_1_1PolarPointComparatorBy2x2DetComputer.html#ad519c2a2e1c8361003d4d190c79096e1", null ],
     [ "selfDisplay", "classDGtal_1_1functors_1_1PolarPointComparatorBy2x2DetComputer.html#ad68f6b520aa97b69a695cfedff887629", null ],
     [ "setPole", "classDGtal_1_1functors_1_1PolarPointComparatorBy2x2DetComputer.html#a5e5a6e019a9abdbbf3c695a7775ef440", null ],
     [ "myDetComputer", "classDGtal_1_1functors_1_1PolarPointComparatorBy2x2DetComputer.html#a83f4258d3bf017b1f14a2879c2b0579d", null ],

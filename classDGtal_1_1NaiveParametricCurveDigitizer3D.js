@@ -22,7 +22,7 @@ var classDGtal_1_1NaiveParametricCurveDigitizer3D =
     [ "init", "classDGtal_1_1NaiveParametricCurveDigitizer3D.html#ab0bae60f75077127ecec2bd648879902", null ],
     [ "is26Connected", "classDGtal_1_1NaiveParametricCurveDigitizer3D.html#ad9ed4cf672698db883f851c8a1d82e81", null ],
     [ "isValid", "classDGtal_1_1NaiveParametricCurveDigitizer3D.html#a8315e495289c6bd4e0278b72122bae51", null ],
-    [ "operator=", "classDGtal_1_1NaiveParametricCurveDigitizer3D.html#a85055649d853f2c2704b130729860f6b", null ],
+    [ "operator=", "classDGtal_1_1NaiveParametricCurveDigitizer3D.html#a21a14404331afb77493a3d4ea7405258", null ],
     [ "selfDisplay", "classDGtal_1_1NaiveParametricCurveDigitizer3D.html#a3c9b4bca1af246727b6ffe5732dc35b2", null ],
     [ "setKNext", "classDGtal_1_1NaiveParametricCurveDigitizer3D.html#a17dc76f40133bc1dbaeb4324dfd08cec", null ],
     [ "syncData", "classDGtal_1_1NaiveParametricCurveDigitizer3D.html#a18fda6a8ade6eb6d8f6ae36b2e525cbf", null ],

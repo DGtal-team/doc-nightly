@@ -25,7 +25,7 @@ var classDGtal_1_1VCMDigitalSurfaceLocalEstimator =
     [ "h", "classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a64ef348d85dea6854242d95caa9ec72c", null ],
     [ "init", "classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#ae5bc2aef3a43da2a719472cea7a7b852", null ],
     [ "isValid", "classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a25178f6b7a51512be1c3950216e43a81", null ],
-    [ "operator=", "classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a650bd6b549f2b5a46f12b412face4459", null ],
+    [ "operator=", "classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a833196e68cf4d26612eb3fdeccd765c1", null ],
     [ "selfDisplay", "classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a812a6436b6ee0dacacfa7cc2cf83b498", null ],
     [ "setParams", "classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a9848e10e5a530f371d25e28a49c40b58", null ],
     [ "myGeomFct", "classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html#a6d5b03520f56065712cd3524db9ccaf7", null ],

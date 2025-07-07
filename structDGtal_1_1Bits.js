@@ -22,8 +22,8 @@ var structDGtal_1_1Bits =
     [ "nbSetBits", "structDGtal_1_1Bits.html#aabd288969b001b55e06ecc77e6370297", null ],
     [ "nbSetBits", "structDGtal_1_1Bits.html#aafe78a64ee4e6cd918e5414ce11a043a", null ],
     [ "nbSetBits", "structDGtal_1_1Bits.html#a6c8ae97b5a23db19fe0a04429f6f61c9", null ],
-    [ "myBitCount", "structDGtal_1_1Bits.html#aeaa20cf9579938cc4449dce9fe3273b9", null ],
-    [ "myIndexInSetBits", "structDGtal_1_1Bits.html#a63e3a8687fa5b0c00dae2e3d590f6750", null ],
-    [ "myLSB", "structDGtal_1_1Bits.html#af35b3671127ea8e517ef5dc19dd14092", null ],
-    [ "myMSB", "structDGtal_1_1Bits.html#ac140bef0b74ced0ed1c7fa743fbe02b0", null ]
+    [ "myBitCount", "structDGtal_1_1Bits.html#afb9e1f794241da249a3c5fa43e1209bd", null ],
+    [ "myIndexInSetBits", "structDGtal_1_1Bits.html#afca5e900af3f7a6335cf6d487e26b0b8", null ],
+    [ "myLSB", "structDGtal_1_1Bits.html#a4c8b03b7cb5f04051f60de586638be60", null ],
+    [ "myMSB", "structDGtal_1_1Bits.html#aab6caed4c3b72ae96716310141bcf1bf", null ]
 ];

@@ -2,7 +2,7 @@ var classDGtal_1_1MPolynomialEvaluator =
 [
     [ "Alloc", "classDGtal_1_1MPolynomialEvaluator.html#ae38ea876e19fc1e935ce1f541ceb5841", null ],
     [ "MPolyN", "classDGtal_1_1MPolynomialEvaluator.html#a5d82579e407d2561366ea4d260789652", null ],
-    [ "MPolyNM1", "classDGtal_1_1MPolynomialEvaluator.html#a776903e23c35ec438eaff8d3811ce1ed", null ],
+    [ "MPolyNM1", "classDGtal_1_1MPolynomialEvaluator.html#a8049b33ac94e571b6c5bc1cb5c9322b3", null ],
     [ "Ring", "classDGtal_1_1MPolynomialEvaluator.html#a1547f1bee00e26e5086be2d332fac428", null ],
     [ "X", "classDGtal_1_1MPolynomialEvaluator.html#a2f58bd9b74805c4bdbea6e30390d5c05", null ],
     [ "MPolynomialEvaluator", "classDGtal_1_1MPolynomialEvaluator.html#a95e4ccca75ab1dd6dd05800df2482365", null ],

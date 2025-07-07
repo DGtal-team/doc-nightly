@@ -1,7 +1,7 @@
 var classDGtal_1_1ReverseDistanceTransformation =
 [
     [ "ConstRange", "classDGtal_1_1ReverseDistanceTransformation.html#abb5661d815b1b05ed67945880a0934e5", null ],
-    [ "Domain", "classDGtal_1_1ReverseDistanceTransformation.html#aae3e99ae37d8e9c7928d585b7f1c61bc", null ],
+    [ "Domain", "classDGtal_1_1ReverseDistanceTransformation.html#a0a3c5f64ee63006695e4e7d984903bdc", null ],
     [ "ImageContainer", "classDGtal_1_1ReverseDistanceTransformation.html#a2c6fc246f0cd860fed2d65bb23d24a38", null ],
     [ "Parent", "classDGtal_1_1ReverseDistanceTransformation.html#aca1956e59d93a00d1ed017f8ac94dcfd", null ],
     [ "Point", "classDGtal_1_1ReverseDistanceTransformation.html#ab0ddf8a1e268d8fa080c4dfd0a0dfa99", null ],
@@ -17,9 +17,9 @@ var classDGtal_1_1ReverseDistanceTransformation =
     [ "ReverseDistanceTransformation", "classDGtal_1_1ReverseDistanceTransformation.html#a3f82d5f00bddef66c06062a0a1db4994", null ],
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1ReverseDistanceTransformation.html#a8b3dad65a27b58af15bc044d5a0a8011", null ],
     [ "constRange", "classDGtal_1_1ReverseDistanceTransformation.html#a6c21314d3a24c928787f5aa3915796d0", null ],
-    [ "domain", "classDGtal_1_1ReverseDistanceTransformation.html#a4874d0d80f1fa46bce6f5b8c60c8e196", null ],
+    [ "domain", "classDGtal_1_1ReverseDistanceTransformation.html#ac3b80b2059fc4405aea7968fa2bd40c2", null ],
     [ "getPowerVector", "classDGtal_1_1ReverseDistanceTransformation.html#ad615c235ea7f12c47c8086a897881e12", null ],
-    [ "metricPtr", "classDGtal_1_1ReverseDistanceTransformation.html#a8e2c032a8f9dd6471c33e4f89451e92c", null ],
+    [ "metricPtr", "classDGtal_1_1ReverseDistanceTransformation.html#a1be039fafe3e1806361ca350543addf4", null ],
     [ "operator()", "classDGtal_1_1ReverseDistanceTransformation.html#a5c98e185c8fc19b2e881c388d3f88545", null ],
     [ "selfDisplay", "classDGtal_1_1ReverseDistanceTransformation.html#aa1cc298f6c84a3aa38be20a6aa6dc06f", null ]
 ];

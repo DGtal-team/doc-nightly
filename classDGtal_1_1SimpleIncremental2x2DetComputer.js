@@ -15,7 +15,7 @@ var classDGtal_1_1SimpleIncremental2x2DetComputer =
     [ "isValid", "classDGtal_1_1SimpleIncremental2x2DetComputer.html#aef5d72fff04a3a3a84789b25e690f919", null ],
     [ "operator()", "classDGtal_1_1SimpleIncremental2x2DetComputer.html#a627f5d9dc1cbf6b27201cee3eeca002c", null ],
     [ "operator()", "classDGtal_1_1SimpleIncremental2x2DetComputer.html#a414de394e98fff74456bd1de36de4ca3", null ],
-    [ "operator=", "classDGtal_1_1SimpleIncremental2x2DetComputer.html#a2082ea290109538eea067b4024d2d731", null ],
+    [ "operator=", "classDGtal_1_1SimpleIncremental2x2DetComputer.html#a36d951b85cf0dcb8382c0e53f572dda9", null ],
     [ "partialComputation", "classDGtal_1_1SimpleIncremental2x2DetComputer.html#a400ce1b071fc53007dbddf2e7e795289", null ],
     [ "selfDisplay", "classDGtal_1_1SimpleIncremental2x2DetComputer.html#a6a9fd455d39405d4618b52552727b182", null ],
     [ "myA", "classDGtal_1_1SimpleIncremental2x2DetComputer.html#afff4515db5ef7d963f7488539ae78e4f", null ],

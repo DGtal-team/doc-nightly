@@ -18,7 +18,7 @@ var classDGtal_1_1MetricAdjacency =
     [ "isAdjacentTo", "classDGtal_1_1MetricAdjacency.html#a2693b8266c37014a83b308e28e2b9b25", null ],
     [ "isProperlyAdjacentTo", "classDGtal_1_1MetricAdjacency.html#a3c74f88847aba0c11ec344bd8f595b67", null ],
     [ "isValid", "classDGtal_1_1MetricAdjacency.html#ac0aa6599e88972c782a7914b3aa6e000", null ],
-    [ "operator=", "classDGtal_1_1MetricAdjacency.html#ad463057ad4535f5d660c29496b04f3c5", null ],
+    [ "operator=", "classDGtal_1_1MetricAdjacency.html#ae7c7c497af88eae74d75469e1ac3f012", null ],
     [ "selfDisplay", "classDGtal_1_1MetricAdjacency.html#a79d7048e5e9d102bb7ff7d4f9c9ea9b4", null ],
     [ "writeNeighbors", "classDGtal_1_1MetricAdjacency.html#a09cbcdf22325e74b59cefe88abbaa759", null ],
     [ "writeNeighbors", "classDGtal_1_1MetricAdjacency.html#abf3bf5b10a3b09737bda29b9eccd7697", null ]

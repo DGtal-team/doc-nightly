@@ -36,7 +36,7 @@ var classDGtal_1_1ArithmeticalDSL =
     [ "omega", "classDGtal_1_1ArithmeticalDSL.html#a9e1b99a80ca979e9f28b1690ff196c96", null ],
     [ "operator!=", "classDGtal_1_1ArithmeticalDSL.html#ab87ba04cc6ac01fcdbcc22f62a70d8dd", null ],
     [ "operator()", "classDGtal_1_1ArithmeticalDSL.html#a2040d49a24ed0e5474c2fa89000c0e28", null ],
-    [ "operator=", "classDGtal_1_1ArithmeticalDSL.html#aa5db61fc38caf73008d5f9e908964264", null ],
+    [ "operator=", "classDGtal_1_1ArithmeticalDSL.html#a2a0efba77ad5f244f3a185a05aec24fe", null ],
     [ "operator==", "classDGtal_1_1ArithmeticalDSL.html#aa191b7c3ccd6e56f841bffc36bd1b9ab", null ],
     [ "orthogonalPosition", "classDGtal_1_1ArithmeticalDSL.html#ac9cf4a342953864692cbe44db21109eb", null ],
     [ "patternLength", "classDGtal_1_1ArithmeticalDSL.html#a8c4139997ff06a729a82a2d2f28cec77", null ],

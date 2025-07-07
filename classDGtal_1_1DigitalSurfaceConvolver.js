@@ -36,7 +36,7 @@ var classDGtal_1_1DigitalSurfaceConvolver =
     [ "init", "classDGtal_1_1DigitalSurfaceConvolver.html#a58dd166bd5fb9c92094ad45f0a7b9b29", null ],
     [ "init", "classDGtal_1_1DigitalSurfaceConvolver.html#a901e3e96a5c8c03c6a3afacc104420bd", null ],
     [ "isValid", "classDGtal_1_1DigitalSurfaceConvolver.html#a95283a04051f0f8aee6ac85a46c56d30", null ],
-    [ "operator=", "classDGtal_1_1DigitalSurfaceConvolver.html#a9f3318e500f9cd705b852cd1c380ef95", null ],
+    [ "operator=", "classDGtal_1_1DigitalSurfaceConvolver.html#af09f3e032aaafbed1c3675ef2c600981", null ],
     [ "defaultInnerMoments", "classDGtal_1_1DigitalSurfaceConvolver.html#a26a9174603ebead270cc06d14843218a", null ],
     [ "defaultInnerSpel", "classDGtal_1_1DigitalSurfaceConvolver.html#ab8d2ac04c6e4981a0bab3e6214e9d4ba", null ],
     [ "defaultInnerSum", "classDGtal_1_1DigitalSurfaceConvolver.html#a358ce8035f74b1ae27715fe0f736a6dd", null ],

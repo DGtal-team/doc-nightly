@@ -19,7 +19,7 @@ var classDGtal_1_1SymmetricConvexExpander =
     [ "SymmetricConvexExpander", "classDGtal_1_1SymmetricConvexExpander.html#a13a1f81d2dba82fa5a1bb116d9ffe2b1", null ],
     [ "advance", "classDGtal_1_1SymmetricConvexExpander.html#aa0bbecea225fe28ce2e5df0b6b1b722d", null ],
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1SymmetricConvexExpander.html#a18449199609476ab8b83658a990d605b", null ],
-    [ "current", "classDGtal_1_1SymmetricConvexExpander.html#a4e7124ade44e338b0825430029e693b2", null ],
+    [ "current", "classDGtal_1_1SymmetricConvexExpander.html#a89e8d667da67cff266b62b72a3db2005", null ],
     [ "expand", "classDGtal_1_1SymmetricConvexExpander.html#abdc99033276ed1949a72bd9c0499f287", null ],
     [ "finished", "classDGtal_1_1SymmetricConvexExpander.html#a35873423873e61164a8ca4056efa0159", null ],
     [ "ignore", "classDGtal_1_1SymmetricConvexExpander.html#a6256addd0f4efe44174d870e1c003d85", null ],

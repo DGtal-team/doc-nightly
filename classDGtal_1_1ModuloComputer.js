@@ -14,7 +14,7 @@ var classDGtal_1_1ModuloComputer =
     [ "isValid", "classDGtal_1_1ModuloComputer.html#a61f792d07511a86ff6967b35443dbd63", null ],
     [ "less", "classDGtal_1_1ModuloComputer.html#af49fe21cd3e2f2dde463d15f56a0ed41", null ],
     [ "next", "classDGtal_1_1ModuloComputer.html#ab0344c992f95fc978851d498de163dfd", null ],
-    [ "operator=", "classDGtal_1_1ModuloComputer.html#ad4cea805875e9c9518b06a1e7fb026bb", null ],
+    [ "operator=", "classDGtal_1_1ModuloComputer.html#ac4068bec20c870a46482b1c338dd8156", null ],
     [ "posDiff", "classDGtal_1_1ModuloComputer.html#a97aa7b213a2b0aee3712c01cde1a60dd", null ],
     [ "previous", "classDGtal_1_1ModuloComputer.html#a4dbbd33a5fee66280ae849d0b857291d", null ],
     [ "selfDisplay", "classDGtal_1_1ModuloComputer.html#a8d9cb4cccdef904a517cbd8816f87972", null ],

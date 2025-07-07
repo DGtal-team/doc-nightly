@@ -19,7 +19,7 @@ var classDGtal_1_1MostCenteredMaximalSegmentEstimator =
     [ "eval", "classDGtal_1_1MostCenteredMaximalSegmentEstimator.html#a981afae7158b39ba8eac2a0b3a34cc8b", null ],
     [ "init", "classDGtal_1_1MostCenteredMaximalSegmentEstimator.html#a25e320be7f437674abc9dc2830520b7d", null ],
     [ "isValid", "classDGtal_1_1MostCenteredMaximalSegmentEstimator.html#af8b47d5982f3c89c282fd12beede8757", null ],
-    [ "operator=", "classDGtal_1_1MostCenteredMaximalSegmentEstimator.html#a8e6fa00a8f7e6fa356a7e5145e3db406", null ],
+    [ "operator=", "classDGtal_1_1MostCenteredMaximalSegmentEstimator.html#aeb8845b7710f01f53ab9df6abe15e0fa", null ],
     [ "myBegin", "classDGtal_1_1MostCenteredMaximalSegmentEstimator.html#a88f080e8a7e2a0575b7c6c5986d352b1", null ],
     [ "myEnd", "classDGtal_1_1MostCenteredMaximalSegmentEstimator.html#a1e94ddd57fca212edce50e3bca2f0351", null ],
     [ "mySC", "classDGtal_1_1MostCenteredMaximalSegmentEstimator.html#ac8c86d3e86fffd1c390531694a723044", null ],

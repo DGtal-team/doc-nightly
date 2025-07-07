@@ -15,7 +15,7 @@ var classDGtal_1_1L2SecondOrderLocalDistance =
     [ "compute", "classDGtal_1_1L2SecondOrderLocalDistance.html#aaa5ea0ba8e0013e2bd37095bfd190df4", null ],
     [ "getValue", "classDGtal_1_1L2SecondOrderLocalDistance.html#aa531976b10d0401d011433f5efc984cf", null ],
     [ "operator()", "classDGtal_1_1L2SecondOrderLocalDistance.html#a27ea37b1a49725e5760b7fd1d1e730aa", null ],
-    [ "operator=", "classDGtal_1_1L2SecondOrderLocalDistance.html#aef029c36e459eedaa0ff7d1a63c3e49c", null ],
+    [ "operator=", "classDGtal_1_1L2SecondOrderLocalDistance.html#aa90ddb3510f435c6520bc7e86bbdd60e", null ],
     [ "selfDisplay", "classDGtal_1_1L2SecondOrderLocalDistance.html#a5be95557d2c65399dc259b233335391d", null ],
     [ "myImgPtr", "classDGtal_1_1L2SecondOrderLocalDistance.html#ae737bd5d45c00447dac9b2d748210482", null ],
     [ "mySetPtr", "classDGtal_1_1L2SecondOrderLocalDistance.html#a2ea9ee313314ecad6fd5b2682652022c", null ]

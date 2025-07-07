@@ -23,7 +23,7 @@ var classDGtal_1_1ImageLinearCellEmbedder =
     [ "init", "classDGtal_1_1ImageLinearCellEmbedder.html#a4141e4eb666cb7c83d09007e46798671", null ],
     [ "isValid", "classDGtal_1_1ImageLinearCellEmbedder.html#a8622a54d0ed53462d780c3aca2311fff", null ],
     [ "operator()", "classDGtal_1_1ImageLinearCellEmbedder.html#a587c1f73caa2b240eaef2d588aca4372", null ],
-    [ "operator=", "classDGtal_1_1ImageLinearCellEmbedder.html#a32d5f54935af511dcd1c609d9e2967b7", null ],
+    [ "operator=", "classDGtal_1_1ImageLinearCellEmbedder.html#a6c76dc78995d447a3f82e435502728db", null ],
     [ "selfDisplay", "classDGtal_1_1ImageLinearCellEmbedder.html#ab150c57bf2af8eea6da6545baad68eb2", null ],
     [ "myIsoValue", "classDGtal_1_1ImageLinearCellEmbedder.html#a070afba91efa244e3bb417cea5a02440", null ],
     [ "myPtrEmbedder", "classDGtal_1_1ImageLinearCellEmbedder.html#a38356d5fd357604a30fd81508d6da1f5", null ],

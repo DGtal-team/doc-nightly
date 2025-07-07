@@ -8,7 +8,7 @@ var structDGtal_1_1VolReader =
     [ "BOOST_CONCEPT_ASSERT", "structDGtal_1_1VolReader.html#a254aa9d6a6734835a3eb20f5195171f3", null ],
     [ "BOOST_STATIC_ASSERT", "structDGtal_1_1VolReader.html#a7777794317eabc49bb98e697c35fe9a6", null ],
     [ "getHeaderField", "structDGtal_1_1VolReader.html#abb0b8397f25425ef67d3da096b543d55", null ],
-    [ "getHeaderValue", "structDGtal_1_1VolReader.html#aae9218449282745963931489ccba45b5", null ],
+    [ "getHeaderValue", "structDGtal_1_1VolReader.html#a92059dfa81ea984c55287639ba013c3e", null ],
     [ "getHeaderValueAsInt", "structDGtal_1_1VolReader.html#a38c3d0171da904483dc658da94c4ba70", null ],
     [ "importVol", "structDGtal_1_1VolReader.html#aa4f1ebd956ed345e4c64e78c83da25d2", null ],
     [ "requiredHeaders", "structDGtal_1_1VolReader.html#a919e7c5a7425e58bb7cea9a7c64db87d", null ]

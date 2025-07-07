@@ -12,6 +12,6 @@ var classDGtal_1_1TrueLocalEstimatorOnPoints =
     [ "eval", "classDGtal_1_1TrueLocalEstimatorOnPoints.html#a7a064e51da12178dfc91b334948af8da", null ],
     [ "eval", "classDGtal_1_1TrueLocalEstimatorOnPoints.html#a450b9175ac32f51eaa8b9c9f2df6b70a", null ],
     [ "isValid", "classDGtal_1_1TrueLocalEstimatorOnPoints.html#a7fcfb1b8113d18c26a0f85936c1ff224", null ],
-    [ "operator=", "classDGtal_1_1TrueLocalEstimatorOnPoints.html#a463014eae4303376e8d758bf6b243e58", null ],
+    [ "operator=", "classDGtal_1_1TrueLocalEstimatorOnPoints.html#af5ae61620d663e0837c5cacf935e3e00", null ],
     [ "myFunctorPtr", "classDGtal_1_1TrueLocalEstimatorOnPoints.html#aa7315228311a93b11ac0c455cb685412", null ]
 ];

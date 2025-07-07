@@ -9,10 +9,10 @@ var classDGtal_1_1ExplicitDigitalSurface_1_1Tracker =
     [ "Tracker", "classDGtal_1_1ExplicitDigitalSurface_1_1Tracker.html#aeea695846523705973443905445bf0ff", null ],
     [ "~Tracker", "classDGtal_1_1ExplicitDigitalSurface_1_1Tracker.html#af35a86be1f640ab37254578ecf76adda", null ],
     [ "adjacent", "classDGtal_1_1ExplicitDigitalSurface_1_1Tracker.html#aaeb486154fec63de89c7c17f5db784dd", null ],
-    [ "current", "classDGtal_1_1ExplicitDigitalSurface_1_1Tracker.html#a161c369c77038f72f11d0774dd28dbf6", null ],
+    [ "current", "classDGtal_1_1ExplicitDigitalSurface_1_1Tracker.html#abf45973618026ab959edc26c68647839", null ],
     [ "move", "classDGtal_1_1ExplicitDigitalSurface_1_1Tracker.html#a9fe1c5435a2caa97b0cbc901f855844f", null ],
     [ "orthDir", "classDGtal_1_1ExplicitDigitalSurface_1_1Tracker.html#a79778589ef6e6a3c2ee0a292b2f518f1", null ],
-    [ "surface", "classDGtal_1_1ExplicitDigitalSurface_1_1Tracker.html#a76b825868f79f79ab6fe7fff47dabab0", null ],
+    [ "surface", "classDGtal_1_1ExplicitDigitalSurface_1_1Tracker.html#a27f6981a3d7a8ae139c3fdc2d9b1ce97", null ],
     [ "myNeighborhood", "classDGtal_1_1ExplicitDigitalSurface_1_1Tracker.html#adc9433c6abc0d116b09b1661579175a8", null ],
     [ "mySurface", "classDGtal_1_1ExplicitDigitalSurface_1_1Tracker.html#abc21f9ecb8012dd95fcac5829d8eafb8", null ]
 ];

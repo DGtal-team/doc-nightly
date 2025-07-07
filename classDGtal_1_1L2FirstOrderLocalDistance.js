@@ -14,7 +14,7 @@ var classDGtal_1_1L2FirstOrderLocalDistance =
     [ "compute", "classDGtal_1_1L2FirstOrderLocalDistance.html#a77712816bb024dbb54272751a4afc524", null ],
     [ "gradientNorm", "classDGtal_1_1L2FirstOrderLocalDistance.html#a6d1c7485672bf572107a3e0276af3394", null ],
     [ "operator()", "classDGtal_1_1L2FirstOrderLocalDistance.html#a6c1b62ddef79557d47b7a9d39faa61f8", null ],
-    [ "operator=", "classDGtal_1_1L2FirstOrderLocalDistance.html#a9058e0a36c7c14c54e167cff1d6cd5c5", null ],
+    [ "operator=", "classDGtal_1_1L2FirstOrderLocalDistance.html#a1f3e0537ffd8dce3bd5012dcad535c2c", null ],
     [ "selfDisplay", "classDGtal_1_1L2FirstOrderLocalDistance.html#a28ce624d85d926873d7aaa880baf0905", null ],
     [ "myImgPtr", "classDGtal_1_1L2FirstOrderLocalDistance.html#aae4624d7c28ca9590ad04a23b7ffe444", null ],
     [ "mySetPtr", "classDGtal_1_1L2FirstOrderLocalDistance.html#aa5f418fb347ee77d41a6a451aad75b07", null ]

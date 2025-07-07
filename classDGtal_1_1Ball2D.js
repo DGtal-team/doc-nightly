@@ -13,7 +13,7 @@ var classDGtal_1_1Ball2D =
     [ "getUpperBound", "classDGtal_1_1Ball2D.html#a6e113eff95517529e5fcfaaf2f531037", null ],
     [ "isValid", "classDGtal_1_1Ball2D.html#a0effd2682d6da679a2d830737b14c00b", null ],
     [ "moveTo", "classDGtal_1_1Ball2D.html#aad1cfe12678cba2611b13ff4c386b46f", null ],
-    [ "operator=", "classDGtal_1_1Ball2D.html#ab2d635e1ca4430b5d81d31c5b6000b44", null ],
+    [ "operator=", "classDGtal_1_1Ball2D.html#a2c27caa5eaa95cccd92eaad946093175", null ],
     [ "parameter", "classDGtal_1_1Ball2D.html#a7843a5da6649139158fa2bfa9405def6", null ],
     [ "selfDisplay", "classDGtal_1_1Ball2D.html#a348147035ac1c72a3ca2ea57f7d04877", null ],
     [ "x", "classDGtal_1_1Ball2D.html#a3e9cc935bfa7c583c5e6388120271dfb", null ],

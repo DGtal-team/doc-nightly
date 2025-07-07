@@ -22,9 +22,9 @@ var classDGtal_1_1ConstAlias =
     [ "ConstAlias", "classDGtal_1_1ConstAlias.html#ae8ea00d3d2cc373ea96a5456e11108f1", null ],
     [ "operator const T &", "classDGtal_1_1ConstAlias.html#a10214bec25f01dea637ce5922c090f07", null ],
     [ "operator CountedConstPtrOrConstPtr< T >", "classDGtal_1_1ConstAlias.html#a914a6964657bb0626ba4be455858e8e2", null ],
-    [ "operator&", "classDGtal_1_1ConstAlias.html#a9e55e9c19d8fab0f1960e1453d05c20e", null ],
-    [ "operator->", "classDGtal_1_1ConstAlias.html#a98dca1c6a9b32f2fab29587a7d26bd66", null ],
-    [ "operator=", "classDGtal_1_1ConstAlias.html#ac518824e65a45282d01049c6a0f87694", null ],
+    [ "operator&", "classDGtal_1_1ConstAlias.html#a4073ae624c0f10bfe6ed49a028135865", null ],
+    [ "operator->", "classDGtal_1_1ConstAlias.html#a6d6d9aec43a782bc05c342f3ed3ddee4", null ],
+    [ "operator=", "classDGtal_1_1ConstAlias.html#aee2032625b65f43beff7a5c5db6a8497", null ],
     [ "myParam", "classDGtal_1_1ConstAlias.html#a4af5897fbe95123c3f9b253aa9d94101", null ],
     [ "myPtr", "classDGtal_1_1ConstAlias.html#aa0b527f522c50b357882e3c41cf9e935", null ]
 ];

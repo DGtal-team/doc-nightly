@@ -2,6 +2,11 @@ var hierarchy =
 [
     [ "DGtal::LabelledMap< TData, L, TWord, N, M >::__AnyBlock", "structDGtal_1_1LabelledMap_1_1____AnyBlock.html", null ],
     [ "DGtal::LabelledMap< TData, L, TWord, N, M >::__FirstBlock", "structDGtal_1_1LabelledMap_1_1____FirstBlock.html", null ],
+    [ "A< TC, TD >", "structA.html", null ],
+    [ "A1", "structA1.html", null ],
+    [ "A< TC, int >", "structA.html", [
+      [ "B< TC >", "classB.html", null ]
+    ] ],
     [ "DGtal::functors::Abs< T >", "structDGtal_1_1functors_1_1Abs.html", null ],
     [ "boost::AdaptableBinaryFunction< Func, First, Second >", "structboost_1_1AdaptableBinaryFunction.html", null ],
     [ "boost::AdaptableBinaryPredicate< Func, First, Second >", "structboost_1_1AdaptableBinaryPredicate.html", null ],
@@ -14,9 +19,15 @@ var hierarchy =
     ] ],
     [ "boost::AdjacencyGraphConcept< G >", "structboost_1_1AdjacencyGraphConcept.html", null ],
     [ "DGtal::Alias< T >", "classDGtal_1_1Alias.html", null ],
+    [ "AliasToConstRefMember", "structAliasToConstRefMember.html", null ],
+    [ "AliasToCountedPtrOrPtrMember", "structAliasToCountedPtrOrPtrMember.html", null ],
+    [ "AliasToPtrMember", "structAliasToPtrMember.html", null ],
+    [ "AliasToRefMember", "structAliasToRefMember.html", null ],
     [ "DGtal::AlphaThickSegmentComputer< TInputPoint, TConstIterator >", "classDGtal_1_1AlphaThickSegmentComputer.html", null ],
+    [ "Analyzer< KSpace, N >", "structAnalyzer.html", null ],
     [ "DGtal::functors::AndBoolFct2", "structDGtal_1_1functors_1_1AndBoolFct2.html", null ],
     [ "DGtal::AngleComputer", "structDGtal_1_1AngleComputer.html", null ],
+    [ "AngleLessCell", "structAngleLessCell.html", null ],
     [ "DGtal::AngleLinearMinimizer", "classDGtal_1_1AngleLinearMinimizer.html", [
       [ "DGtal::AngleLinearMinimizerByAdaptiveStepGradientDescent", "classDGtal_1_1AngleLinearMinimizerByAdaptiveStepGradientDescent.html", null ],
       [ "DGtal::AngleLinearMinimizerByGradientDescent", "classDGtal_1_1AngleLinearMinimizerByGradientDescent.html", null ],
@@ -25,25 +36,25 @@ var hierarchy =
     [ "DGtal::IndexedListWithBlocks< TValue, N, M >::AnyBlock", "structDGtal_1_1IndexedListWithBlocks_1_1AnyBlock.html", null ],
     [ "DGtal::DigitalSurface< TDigitalSurfaceContainer >::Arc", "structDGtal_1_1DigitalSurface_1_1Arc.html", null ],
     [ "DGtal::ArithDSSIterator< TInteger, connectivity >", "classDGtal_1_1ArithDSSIterator.html", null ],
-    [ "DGtal::ArithmeticalDSL< TCoordinate, TInteger, adjacency >", "classDGtal_1_1ArithmeticalDSL.html", null ],
-    [ "DGtal::ArithmeticalDSL< Coordinate, Integer, 8 >", "classDGtal_1_1ArithmeticalDSL.html", null ],
-    [ "DGtal::ArithmeticalDSL< TCoordinate, TCoordinate, 4 >", "classDGtal_1_1ArithmeticalDSL.html", [
+    [ "DGtal::ArithmeticalDSL< TCoordinate, TInteger, adjacency >", "classDGtal_1_1ArithmeticalDSL.html", [
+      [ "DGtal::NaiveDSL< TCoordinate, TInteger >", "classDGtal_1_1NaiveDSL.html", null ],
       [ "DGtal::StandardDSL< TCoordinate, TInteger >", "classDGtal_1_1StandardDSL.html", null ]
     ] ],
-    [ "DGtal::ArithmeticalDSL< TCoordinate, TCoordinate, 8 >", "classDGtal_1_1ArithmeticalDSL.html", [
-      [ "DGtal::NaiveDSL< TCoordinate, TInteger >", "classDGtal_1_1NaiveDSL.html", null ]
-    ] ],
+    [ "DGtal::ArithmeticalDSL< Coordinate, Integer, 8 >", "classDGtal_1_1ArithmeticalDSL.html", null ],
+    [ "DGtal::ArithmeticalDSL< Coordinate, Integer, adjacency >", "classDGtal_1_1ArithmeticalDSL.html", null ],
+    [ "DGtal::ArithmeticalDSL< TCoordinate, TCoordinate, 4 >", "classDGtal_1_1ArithmeticalDSL.html", null ],
+    [ "DGtal::ArithmeticalDSL< TCoordinate, TCoordinate, 8 >", "classDGtal_1_1ArithmeticalDSL.html", null ],
     [ "DGtal::ArithmeticalDSLKernel< TCoordinate, adjacency >", "structDGtal_1_1ArithmeticalDSLKernel.html", null ],
     [ "DGtal::ArithmeticalDSLKernel< TCoordinate, 4 >", "structDGtal_1_1ArithmeticalDSLKernel_3_01TCoordinate_00_014_01_4.html", null ],
-    [ "DGtal::ArithmeticalDSS< TCoordinate, TInteger, adjacency >", "classDGtal_1_1ArithmeticalDSS.html", null ],
-    [ "DGtal::ArithmeticalDSS< Coordinate, Integer, 4 >", "classDGtal_1_1ArithmeticalDSS.html", null ],
-    [ "DGtal::ArithmeticalDSS< Coordinate, Integer, 8 >", "classDGtal_1_1ArithmeticalDSS.html", null ],
-    [ "DGtal::ArithmeticalDSS< TCoordinate, TCoordinate, 4 >", "classDGtal_1_1ArithmeticalDSS.html", [
+    [ "DGtal::ArithmeticalDSS< TCoordinate, TInteger, adjacency >", "classDGtal_1_1ArithmeticalDSS.html", [
+      [ "DGtal::NaiveDSS8< TCoordinate, TInteger >", "classDGtal_1_1NaiveDSS8.html", null ],
       [ "DGtal::StandardDSS4< TCoordinate, TInteger >", "classDGtal_1_1StandardDSS4.html", null ]
     ] ],
-    [ "DGtal::ArithmeticalDSS< TCoordinate, TCoordinate, 8 >", "classDGtal_1_1ArithmeticalDSS.html", [
-      [ "DGtal::NaiveDSS8< TCoordinate, TInteger >", "classDGtal_1_1NaiveDSS8.html", null ]
-    ] ],
+    [ "DGtal::ArithmeticalDSS< Coordinate, Integer, 4 >", "classDGtal_1_1ArithmeticalDSS.html", null ],
+    [ "DGtal::ArithmeticalDSS< Coordinate, Integer, 8 >", "classDGtal_1_1ArithmeticalDSS.html", null ],
+    [ "DGtal::ArithmeticalDSS< Coordinate, Integer, adjacency >", "classDGtal_1_1ArithmeticalDSS.html", null ],
+    [ "DGtal::ArithmeticalDSS< TCoordinate, TCoordinate, 4 >", "classDGtal_1_1ArithmeticalDSS.html", null ],
+    [ "DGtal::ArithmeticalDSS< TCoordinate, TCoordinate, 8 >", "classDGtal_1_1ArithmeticalDSS.html", null ],
     [ "DGtal::ArithmeticalDSSComputer< TIterator, TInteger, adjacency >", "classDGtal_1_1ArithmeticalDSSComputer.html", null ],
     [ "DGtal::ArithmeticalDSSComputer< IteratorAdapter, TInteger, 8 >", "classDGtal_1_1ArithmeticalDSSComputer.html", null ],
     [ "DGtal::ArithmeticalDSSComputer< IteratorAdapter, TInteger, connectivity >", "classDGtal_1_1ArithmeticalDSSComputer.html", null ],
@@ -51,22 +62,26 @@ var hierarchy =
     [ "DGtal::ArithmeticalDSSComputerOnSurfels< TKSpace, TIterator, TInteger >", "classDGtal_1_1ArithmeticalDSSComputerOnSurfels.html", null ],
     [ "DGtal::ArithmeticalDSSFactory< TCoordinate, TInteger, adjacency >", "classDGtal_1_1ArithmeticalDSSFactory.html", null ],
     [ "DGtal::ArithmeticConversionTraits< T, U, Enable >", "structDGtal_1_1ArithmeticConversionTraits.html", null ],
-    [ "DGtal::ArithmeticConversionTraits< __gmp_expr< GMP1, GMP2 >, U, typename std::enable_if< std::is_integral< U >::value >::type >", "structDGtal_1_1ArithmeticConversionTraits_3_01____gmp__expr_3_01GMP1_00_01GMP2_01_4_00_01U_00_01b7e75f2d4577aabc7b63b093e79af931.html", null ],
-    [ "DGtal::ArithmeticConversionTraits< __gmp_expr< GMPL1, GMPL2 >, __gmp_expr< GMPR1, GMPR2 > >", "structDGtal_1_1ArithmeticConversionTraits_3_01____gmp__expr_3_01GMPL1_00_01GMPL2_01_4_00_01____g3f293f408150e028b5eeaf2ad0f0698b.html", null ],
+    [ "DGtal::ArithmeticConversionTraits< BigInteger, BigInteger >", "structDGtal_1_1ArithmeticConversionTraits_3_01BigInteger_00_01BigInteger_01_4.html", null ],
+    [ "DGtal::ArithmeticConversionTraits< BigInteger, U, typename std::enable_if< std::is_integral< U >::value >::type >", "structDGtal_1_1ArithmeticConversionTraits_3_01BigInteger_00_01U_00_01typename_01std_1_1enable__i25e5d8e2fd379d2a005296da6095e99d.html", null ],
     [ "DGtal::ArithmeticConversionTraits< LeftEuclideanRing, PointVector< dim, RightEuclideanRing, RightContainer >, typename std::enable_if< IsArithmeticConversionValid< LeftEuclideanRing, RightEuclideanRing >::value &&! IsAPointVector< LeftEuclideanRing >::value >::type >", "structDGtal_1_1ArithmeticConversionTraits_3_01LeftEuclideanRing_00_01PointVector_3_01dim_00_01Ribf6ad7e141184df67feec87dc4b91b9f.html", null ],
     [ "DGtal::ArithmeticConversionTraits< PointVector< dim, LeftEuclideanRing, LeftContainer >, PointVector< dim, RightEuclideanRing, RightContainer >, typename std::enable_if< IsArithmeticConversionValid< LeftEuclideanRing, RightEuclideanRing >::value >::type >", "structDGtal_1_1ArithmeticConversionTraits_3_01PointVector_3_01dim_00_01LeftEuclideanRing_00_01Lea2d6c81d8c48156a1bdb04d6a31b2c2e.html", null ],
     [ "DGtal::ArithmeticConversionTraits< PointVector< dim, LeftEuclideanRing, LeftContainer >, RightEuclideanRing, typename std::enable_if< IsArithmeticConversionValid< LeftEuclideanRing, RightEuclideanRing >::value &&! IsAPointVector< RightEuclideanRing >::value >::type >", "structDGtal_1_1ArithmeticConversionTraits_3_01PointVector_3_01dim_00_01LeftEuclideanRing_00_01Lefee31e8ea496a9030cd45ee96b9b299b.html", null ],
     [ "DGtal::ArithmeticConversionTraits< std::remove_cv< std::remove_reference< T >::type >::type, std::remove_cv< std::remove_reference< U >::type >::type >", "structDGtal_1_1ArithmeticConversionTraits.html", [
       [ "DGtal::ArithmeticConversionTraits< T, U, typename std::enable_if< ! std::is_same< T, typename std::remove_cv< typename std::remove_reference< T >::type >::type >::value||! std::is_same< U, typename std::remove_cv< typename std::remove_reference< U >::type >::type >::value >::type >", "structDGtal_1_1ArithmeticConversionTraits_3_01T_00_01U_00_01typename_01std_1_1enable__if_3_01_9_25eb7aff75c55bf534e325120cc74d30.html", null ]
     ] ],
-    [ "DGtal::ArithmeticConversionTraits< T, __gmp_expr< GMP1, GMP2 >, typename std::enable_if< std::is_integral< T >::value >::type >", "structDGtal_1_1ArithmeticConversionTraits_3_01T_00_01____gmp__expr_3_01GMP1_00_01GMP2_01_4_00_0133a16a4dabbd5969379c467370a1b33e.html", null ],
+    [ "DGtal::ArithmeticConversionTraits< T, BigInteger, typename std::enable_if< std::is_integral< T >::value >::type >", "structDGtal_1_1ArithmeticConversionTraits_3_01T_00_01BigInteger_00_01typename_01std_1_1enable__i0e8a5b12cbb3f4227d167e403c556b4f.html", null ],
     [ "DGtal::ArithmeticConversionTraits< T, U, typename std::enable_if< std::is_arithmetic< T >::value &&std::is_arithmetic< U >::value >::type >", "structDGtal_1_1ArithmeticConversionTraits_3_01T_00_01U_00_01typename_01std_1_1enable__if_3_01std2787cbba3903f94501b19c9830eb81d4.html", null ],
+    [ "ArrayLXY< Value, L, X, Y >", "classArrayLXY.html", null ],
+    [ "ArrayXYOfLabelledMap< Value, L, X, Y, TWord, N, M >", "classArrayXYOfLabelledMap.html", null ],
+    [ "ArrayXYOfList< Value, L, X, Y >", "classArrayXYOfList.html", null ],
+    [ "ArrayXYOfMap< Value, L, X, Y >", "classArrayXYOfMap.html", null ],
     [ "boost::Assignable< T >", "structboost_1_1Assignable.html", [
+      [ "DGtal::concepts::CUnaryFunctor< T, T::Cell, T::RealPoint >", "structDGtal_1_1concepts_1_1CUnaryFunctor.html", [
+        [ "DGtal::concepts::CCellEmbedder< T >", "structDGtal_1_1concepts_1_1CCellEmbedder.html", null ]
+      ] ],
       [ "DGtal::concepts::CUnaryFunctor< T, T::Point, T::RealPoint >", "structDGtal_1_1concepts_1_1CUnaryFunctor.html", [
         [ "DGtal::concepts::CPointEmbedder< T >", "structDGtal_1_1concepts_1_1CPointEmbedder.html", null ]
-      ] ],
-      [ "DGtal::concepts::CUnaryFunctor< T, TElement, bool >", "structDGtal_1_1concepts_1_1CUnaryFunctor.html", [
-        [ "DGtal::concepts::CPredicate< T, TElement >", "structDGtal_1_1concepts_1_1CPredicate.html", null ]
       ] ],
       [ "DGtal::concepts::CUnaryFunctor< T, T::Point, T::Value >", "structDGtal_1_1concepts_1_1CUnaryFunctor.html", [
         [ "DGtal::concepts::CPointFunctor< T >", "structDGtal_1_1concepts_1_1CPointFunctor.html", [
@@ -75,14 +90,18 @@ var hierarchy =
           ] ]
         ] ]
       ] ],
+      [ "DGtal::concepts::CUnaryFunctor< T, T::Point, bool >", "structDGtal_1_1concepts_1_1CUnaryFunctor.html", null ],
+      [ "DGtal::concepts::CUnaryFunctor< T, TElement, bool >", "structDGtal_1_1concepts_1_1CUnaryFunctor.html", [
+        [ "DGtal::concepts::CPredicate< T, TElement >", "structDGtal_1_1concepts_1_1CPredicate.html", null ]
+      ] ],
       [ "DGtal::concepts::CUnaryFunctor< T, T::SCell, T::RealPoint >", "structDGtal_1_1concepts_1_1CUnaryFunctor.html", [
         [ "DGtal::concepts::CSCellEmbedder< T >", "structDGtal_1_1concepts_1_1CSCellEmbedder.html", [
           [ "DGtal::concepts::CDigitalSurfaceEmbedder< T >", "structDGtal_1_1concepts_1_1CDigitalSurfaceEmbedder.html", null ]
         ] ]
       ] ],
-      [ "DGtal::concepts::CUnaryFunctor< T, T::Cell, T::RealPoint >", "structDGtal_1_1concepts_1_1CUnaryFunctor.html", [
-        [ "DGtal::concepts::CCellEmbedder< T >", "structDGtal_1_1concepts_1_1CCellEmbedder.html", null ]
-      ] ],
+      [ "DGtal::concepts::CUnaryFunctor< T, T::Surfel, bool >", "structDGtal_1_1concepts_1_1CUnaryFunctor.html", null ],
+      [ "DGtal::concepts::CUnaryFunctor< I, T::Point, T::Value >", "structDGtal_1_1concepts_1_1CUnaryFunctor.html", null ],
+      [ "DGtal::concepts::CUnaryFunctor< T, T::Vertex, bool >", "structDGtal_1_1concepts_1_1CUnaryFunctor.html", null ],
       [ "DGtal::C2x2DetComputer< T >", "structDGtal_1_1C2x2DetComputer.html", null ],
       [ "DGtal::concepts::CLMSTDSSFilter< T >", "structDGtal_1_1concepts_1_1CLMSTDSSFilter.html", null ],
       [ "DGtal::concepts::CLMSTTangentFromDSS< T >", "structDGtal_1_1concepts_1_1CLMSTTangentFromDSS.html", null ],
@@ -149,9 +168,9 @@ var hierarchy =
           [ "DGtal::concepts::CStaticVector< T >", "structDGtal_1_1concepts_1_1CStaticVector.html", null ]
         ] ]
       ] ],
-      [ "DGtal::concepts::CVertexMap< T >", "structDGtal_1_1concepts_1_1CVertexMap.html", null ],
-      [ "DGtal::deprecated::concepts::CConvolutionWeights< T >", "structDGtal_1_1deprecated_1_1concepts_1_1CConvolutionWeights.html", null ]
+      [ "DGtal::concepts::CVertexMap< T >", "structDGtal_1_1concepts_1_1CVertexMap.html", null ]
     ] ],
+    [ "boost::Assignable< I >", "structboost_1_1Assignable.html", null ],
     [ "boost::Assignable< X >", "structboost_1_1Assignable.html", [
       [ "DGtal::concepts::CUnaryFunctor< X, A, R >", "structDGtal_1_1concepts_1_1CUnaryFunctor.html", [
         [ "DGtal::concepts::CPointFunctor< I >", "structDGtal_1_1concepts_1_1CPointFunctor.html", [
@@ -164,13 +183,13 @@ var hierarchy =
             ] ]
           ] ]
         ] ],
-        [ "DGtal::concepts::CPredicate< T, T::Surfel >", "structDGtal_1_1concepts_1_1CPredicate.html", [
-          [ "DGtal::concepts::CSurfelPredicate< T >", "structDGtal_1_1concepts_1_1CSurfelPredicate.html", null ]
-        ] ],
         [ "DGtal::concepts::CPredicate< T, T::Point >", "structDGtal_1_1concepts_1_1CPredicate.html", [
           [ "DGtal::concepts::CPointPredicate< T >", "structDGtal_1_1concepts_1_1CPointPredicate.html", [
             [ "DGtal::concepts::CDigitalSet< T >", "structDGtal_1_1concepts_1_1CDigitalSet.html", null ]
           ] ]
+        ] ],
+        [ "DGtal::concepts::CPredicate< T, T::Surfel >", "structDGtal_1_1concepts_1_1CPredicate.html", [
+          [ "DGtal::concepts::CSurfelPredicate< T >", "structDGtal_1_1concepts_1_1CSurfelPredicate.html", null ]
         ] ],
         [ "DGtal::concepts::CPredicate< T, T::Vertex >", "structDGtal_1_1concepts_1_1CPredicate.html", [
           [ "DGtal::concepts::CVertexPredicate< T >", "structDGtal_1_1concepts_1_1CVertexPredicate.html", null ]
@@ -196,6 +215,8 @@ var hierarchy =
     [ "DGtal::functors::BackwardRigidTransformation3D< Space >", "classDGtal_1_1functors_1_1BackwardRigidTransformation3D.html", null ],
     [ "DGtal::functors::BallConstantFunction< TScalar >", "structDGtal_1_1functors_1_1BallConstantFunction.html", null ],
     [ "DGtal::functors::BallConstantPointFunction< TPoint, TScalar >", "structDGtal_1_1functors_1_1BallConstantPointFunction.html", null ],
+    [ "BallFunctor< TPoint >", "classBallFunctor.html", null ],
+    [ "BallPredicate< TPoint >", "classBallPredicate.html", null ],
     [ "DGtal::functors::BasicDomainSubSampler< TDomain, TInteger, TValue >", "classDGtal_1_1functors_1_1BasicDomainSubSampler.html", null ],
     [ "boost::bidirectional_iterator_archetype", null, [
       [ "DGtal::CConstBidirectionalIteratorArchetype< T >", "structDGtal_1_1CConstBidirectionalIteratorArchetype.html", null ]
@@ -203,7 +224,9 @@ var hierarchy =
     [ "boost::BidirectionalIterator< T >", "structboost_1_1BidirectionalIterator.html", null ],
     [ "DGtal::BidirectionalSegmentComputer", "structDGtal_1_1BidirectionalSegmentComputer.html", null ],
     [ "boost_concepts::BidirectionalTraversalConcept< Iterator >", "structboost__concepts_1_1BidirectionalTraversalConcept.html", null ],
+    [ "Binarizer< T >", "structBinarizer.html", null ],
     [ "boost::BinaryFunction< Func, Return, First, Second >", "structboost_1_1BinaryFunction.html", null ],
+    [ "BinaryFunctor", "structBinaryFunctor.html", null ],
     [ "DGtal::functors::BinaryPointPredicate< TPointPredicate1, TPointPredicate2, TBinaryFunctor >", "structDGtal_1_1functors_1_1BinaryPointPredicate.html", null ],
     [ "DGtal::functors::BinaryPointPredicate< TPointPredicate1, TPointPredicate2, AndBoolFct2 >", "structDGtal_1_1functors_1_1BinaryPointPredicate_3_01TPointPredicate1_00_01TPointPredicate2_00_01AndBoolFct2_01_4.html", null ],
     [ "DGtal::functors::BinaryPointPredicate< TPointPredicate1, TPointPredicate2, OrBoolFct2 >", "structDGtal_1_1functors_1_1BinaryPointPredicate_3_01TPointPredicate1_00_01TPointPredicate2_00_01OrBoolFct2_01_4.html", null ],
@@ -216,7 +239,6 @@ var hierarchy =
     [ "DGtal::IndexedListWithBlocks< TValue, N, M >::BlockPointer", "unionDGtal_1_1IndexedListWithBlocks_1_1BlockPointer.html", null ],
     [ "DGtal::LabelledMap< TData, L, TWord, N, M >::BlockPointer", "unionDGtal_1_1LabelledMap_1_1BlockPointer.html", null ],
     [ "DGtal::functors::BlueChannel", "structDGtal_1_1functors_1_1BlueChannel.html", null ],
-    [ "DGtal::concepts::Board3DTo2D< S, KS >", "classDGtal_1_1concepts_1_1Board3DTo2D.html", null ],
     [ "DGtal::details::BoolToTag< Value >", "structDGtal_1_1details_1_1BoolToTag.html", null ],
     [ "DGtal::details::BoolToTag< false >", "structDGtal_1_1details_1_1BoolToTag_3_01false_01_4.html", null ],
     [ "DGtal::functors::BoundaryPredicate< TKSpace, TImage >", "classDGtal_1_1functors_1_1BoundaryPredicate.html", null ],
@@ -231,13 +253,28 @@ var hierarchy =
     [ "DGtal::concepts::C3DParametricCurve< T >", "structDGtal_1_1concepts_1_1C3DParametricCurve.html", [
       [ "DGtal::concepts::C3DParametricCurveDecorator< T >", "structDGtal_1_1concepts_1_1C3DParametricCurveDecorator.html", null ]
     ] ],
+    [ "Callback", null, [
+      [ "MyCallback", "structMyCallback.html", null ]
+    ] ],
+    [ "DGtal::Display3D< Space, KSpace >::Callback", "structDGtal_1_1Display3D_1_1Callback.html", null ],
+    [ "PolyscopeViewer::Callback", null, [
+      [ "RandomPointExtension", "structRandomPointExtension.html", null ]
+    ] ],
     [ "DGtal::CanonicCellEmbedder< TKSpace >", "structDGtal_1_1CanonicCellEmbedder.html", null ],
+    [ "DGtal::CanonicCellEmbedder< DGtal::KhalimskySpaceND >", "structDGtal_1_1CanonicCellEmbedder.html", null ],
+    [ "DGtal::CanonicCellEmbedder< KSp >", "structDGtal_1_1CanonicCellEmbedder.html", null ],
+    [ "DGtal::CanonicCellEmbedder< Z3i::KSpace >", "structDGtal_1_1CanonicCellEmbedder.html", null ],
     [ "DGtal::CanonicDigitalSurfaceEmbedder< TDigitalSurface >", "structDGtal_1_1CanonicDigitalSurfaceEmbedder.html", null ],
     [ "DGtal::CanonicEmbedder< TSpace >", "structDGtal_1_1CanonicEmbedder.html", null ],
+    [ "DGtal::CanonicEmbedder< DGtal::SpaceND >", "structDGtal_1_1CanonicEmbedder.html", null ],
+    [ "DGtal::CanonicEmbedder< Sp >", "structDGtal_1_1CanonicEmbedder.html", null ],
+    [ "DGtal::CanonicEmbedder< Z3i::Space >", "structDGtal_1_1CanonicEmbedder.html", null ],
     [ "DGtal::CanonicSCellEmbedder< TKSpace >", "structDGtal_1_1CanonicSCellEmbedder.html", null ],
+    [ "DGtal::CanonicSCellEmbedder< DGtal::KhalimskySpaceND >", "structDGtal_1_1CanonicSCellEmbedder.html", null ],
+    [ "DGtal::CanonicSCellEmbedder< KSp >", "structDGtal_1_1CanonicSCellEmbedder.html", null ],
     [ "DGtal::CanonicSCellEmbedder< KSpace >", "structDGtal_1_1CanonicSCellEmbedder.html", null ],
+    [ "DGtal::CanonicSCellEmbedder< Z3i::KSpace >", "structDGtal_1_1CanonicSCellEmbedder.html", null ],
     [ "DGtal::functors::Cast< TOutput >", "structDGtal_1_1functors_1_1Cast.html", null ],
-    [ "DGtal::functors::Cast< unsigned int >", "structDGtal_1_1functors_1_1Cast.html", null ],
     [ "DGtal::concepts::CBackInsertable< T >", "structDGtal_1_1concepts_1_1CBackInsertable.html", [
       [ "DGtal::concepts::CPositiveIrreducibleFraction< T >", "structDGtal_1_1concepts_1_1CPositiveIrreducibleFraction.html", null ]
     ] ],
@@ -280,10 +317,6 @@ var hierarchy =
     [ "DGtal::concepts::CDomainArchetype< TSpace >", "classDGtal_1_1concepts_1_1CDomainArchetype.html", null ],
     [ "DGtal::concepts::CDrawableWithBoard2D< T >", "structDGtal_1_1concepts_1_1CDrawableWithBoard2D.html", null ],
     [ "DGtal::concepts::CDrawableWithDisplay3D< T, Sp, KSp >", "structDGtal_1_1concepts_1_1CDrawableWithDisplay3D.html", null ],
-    [ "DGtal::concepts::CDrawableWithDisplay3D< T, S, KS >", "structDGtal_1_1concepts_1_1CDrawableWithDisplay3D.html", [
-      [ "DGtal::concepts::CDrawableWithBoard3DTo2D< T, S, KS >", "structDGtal_1_1concepts_1_1CDrawableWithBoard3DTo2D.html", null ],
-      [ "DGtal::concepts::CDrawableWithViewer3D< T, S, KS >", "structDGtal_1_1concepts_1_1CDrawableWithViewer3D.html", null ]
-    ] ],
     [ "DGtal::functors::Ceil< T >", "structDGtal_1_1functors_1_1Ceil.html", null ],
     [ "DGtal::functors::Ceil< void >", "structDGtal_1_1functors_1_1Ceil_3_01void_01_4.html", null ],
     [ "DGtal::CellGeometry< TKSpace >", "classDGtal_1_1CellGeometry.html", null ],
@@ -326,12 +359,16 @@ var hierarchy =
     [ "DGtal::Circulator< TIterator >", "classDGtal_1_1Circulator.html", null ],
     [ "DGtal::CirculatorType", "structDGtal_1_1CirculatorType.html", null ],
     [ "DGtal::concepts::CLinearAlgebra< V, M >", "structDGtal_1_1concepts_1_1CLinearAlgebra.html", null ],
+    [ "DGtal::ClippingPlane", "structDGtal_1_1ClippingPlane.html", null ],
     [ "DGtal::concepts::CLocalEstimatorFromSurfelFunctor< T >", "structDGtal_1_1concepts_1_1CLocalEstimatorFromSurfelFunctor.html", null ],
     [ "DGtal::Clock", "classDGtal_1_1Clock.html", null ],
     [ "DGtal::Clone< T >", "classDGtal_1_1Clone.html", null ],
+    [ "CloneToCountedMember", "structCloneToCountedMember.html", null ],
+    [ "CloneToCowMember", "structCloneToCowMember.html", null ],
+    [ "CloneToPtrMember", "structCloneToPtrMember.html", null ],
+    [ "CloneToValueMember", "structCloneToValueMember.html", null ],
     [ "DGtal::ClosedIntegerHalfPlane< TSpace >", "structDGtal_1_1ClosedIntegerHalfPlane.html", null ],
     [ "DGtal::PlaneProbingLNeighborhood< TPredicate >::ClosestGridPoint", "structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html", null ],
-    [ "DGtal::concepts::CNormalVectorEstimator< T >", "structDGtal_1_1concepts_1_1CNormalVectorEstimator.html", null ],
     [ "DGtal::COBAGenericNaivePlaneComputer< TSpace, TInternalInteger >", "classDGtal_1_1COBAGenericNaivePlaneComputer.html", null ],
     [ "DGtal::COBAGenericStandardPlaneComputer< TSpace, TInternalInteger >", "classDGtal_1_1COBAGenericStandardPlaneComputer.html", null ],
     [ "DGtal::COBANaivePlaneComputer< TSpace, TInternalInteger >", "classDGtal_1_1COBANaivePlaneComputer.html", null ],
@@ -347,15 +384,6 @@ var hierarchy =
     [ "DGtal::Color", "classDGtal_1_1Color.html", null ],
     [ "DGtal::ColorBrightnessColorMap< PValue, PDefaultColor >", "classDGtal_1_1ColorBrightnessColorMap.html", null ],
     [ "DGtal::functors::ColorRGBEncoder< TValue >", "structDGtal_1_1functors_1_1ColorRGBEncoder.html", null ],
-    [ "DGtal::Display3D< Space, KSpace >::CommonD3D", "structDGtal_1_1Display3D_1_1CommonD3D.html", [
-      [ "DGtal::Display3D< Space, KSpace >::BallD3D", "structDGtal_1_1Display3D_1_1BallD3D.html", null ],
-      [ "DGtal::Display3D< Space, KSpace >::ClippingPlaneD3D", "structDGtal_1_1Display3D_1_1ClippingPlaneD3D.html", null ],
-      [ "DGtal::Display3D< Space, KSpace >::CubeD3D", "structDGtal_1_1Display3D_1_1CubeD3D.html", null ],
-      [ "DGtal::Display3D< Space, KSpace >::LineD3D", "structDGtal_1_1Display3D_1_1LineD3D.html", null ],
-      [ "DGtal::Display3D< Space, KSpace >::PolygonD3D", "structDGtal_1_1Display3D_1_1PolygonD3D.html", null ],
-      [ "DGtal::Display3D< Space, KSpace >::QuadD3D", "structDGtal_1_1Display3D_1_1QuadD3D.html", null ],
-      [ "DGtal::Display3D< Space, KSpace >::TriangleD3D", "structDGtal_1_1Display3D_1_1TriangleD3D.html", null ]
-    ] ],
     [ "DGtal::TangencyComputer< TKSpace >::ShortestPaths::Comparator", "structDGtal_1_1TangencyComputer_1_1ShortestPaths_1_1Comparator.html", null ],
     [ "DGtal::detail::ComparatorAdapter< Container, associative, ordered, pair >", "structDGtal_1_1detail_1_1ComparatorAdapter.html", null ],
     [ "DGtal::detail::ComparatorAdapter< Container, true, false, false >", "structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01false_00_01false_01_4.html", null ],
@@ -363,16 +391,15 @@ var hierarchy =
     [ "DGtal::detail::ComparatorAdapter< Container, true, true, false >", "structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01true_00_01false_01_4.html", null ],
     [ "DGtal::detail::ComparatorAdapter< Container, true, true, true >", "structDGtal_1_1detail_1_1ComparatorAdapter_3_01Container_00_01true_00_01true_00_01true_01_4.html", null ],
     [ "DGtal::CompareLocalEstimators< TFirstEsimator, TSecondEstimator >", "structDGtal_1_1CompareLocalEstimators.html", null ],
-    [ "DGtal::Viewer3D< TSpace, TKSpace >::CompFarthestPolygonFromCamera", "structDGtal_1_1Viewer3D_1_1CompFarthestPolygonFromCamera.html", null ],
-    [ "DGtal::Viewer3D< TSpace, TKSpace >::CompFarthestSurfelFromCamera", "structDGtal_1_1Viewer3D_1_1CompFarthestSurfelFromCamera.html", null ],
-    [ "DGtal::Viewer3D< TSpace, TKSpace >::CompFarthestTriangleFromCamera", "structDGtal_1_1Viewer3D_1_1CompFarthestTriangleFromCamera.html", null ],
-    [ "DGtal::Viewer3D< TSpace, TKSpace >::CompFarthestVoxelFromCamera", "structDGtal_1_1Viewer3D_1_1CompFarthestVoxelFromCamera.html", null ],
     [ "DGtal::functors::Composer< TFunctor1, TFunctor2, ReturnType >", "classDGtal_1_1functors_1_1Composer.html", null ],
     [ "DGtal::Mesh< TPoint >::CompPoints", "structDGtal_1_1Mesh_1_1CompPoints.html", null ],
     [ "DGtal::FrechetShortcut< TIterator, TInteger >::Cone", "classDGtal_1_1FrechetShortcut_1_1Cone.html", null ],
+    [ "ConfigPointPredicate< Vector >", "structConfigPointPredicate.html", null ],
     [ "boost::Const_BinaryPredicate< Func, First, Second >", "structboost_1_1Const__BinaryPredicate.html", null ],
     [ "DGtal::ConstAlias< T >", "classDGtal_1_1ConstAlias.html", null ],
-    [ "DGtal::deprecated::ConstantConvolutionWeights< TDistance >", "classDGtal_1_1deprecated_1_1ConstantConvolutionWeights.html", null ],
+    [ "ConstAliasToConstPtrMember", "structConstAliasToConstPtrMember.html", null ],
+    [ "ConstAliasToConstRefMember", "structConstAliasToConstRefMember.html", null ],
+    [ "ConstAliasToCountedConstPtrOrConstPtrMember", "structConstAliasToCountedConstPtrOrConstPtrMember.html", null ],
     [ "DGtal::functors::ConstantPointPredicate< TPoint, boolCst >", "structDGtal_1_1functors_1_1ConstantPointPredicate.html", null ],
     [ "DGtal::functors::ConstantPointPredicate< TPoint, false >", "structDGtal_1_1functors_1_1ConstantPointPredicate.html", [
       [ "DGtal::functors::FalsePointPredicate< TPoint >", "structDGtal_1_1functors_1_1FalsePointPredicate.html", null ]
@@ -458,15 +485,14 @@ var hierarchy =
     [ "DGtal::ContourHelper", "classDGtal_1_1ContourHelper.html", null ],
     [ "boost::Convertible< T >", "structboost_1_1Convertible.html", null ],
     [ "DGtal::ConvexCellComplex< TPoint >", "structDGtal_1_1ConvexCellComplex.html", null ],
-    [ "DGtal::ConvexHullCommonKernel< dim, TCoordinateInteger, TInternalInteger >", "structDGtal_1_1ConvexHullCommonKernel.html", null ],
-    [ "DGtal::ConvexHullCommonKernel< dim+1, DGtal::int64_t, DGtal::int64_t >", "structDGtal_1_1ConvexHullCommonKernel.html", [
+    [ "DGtal::ConvexHullCommonKernel< dim, TCoordinateInteger, TInternalInteger >", "structDGtal_1_1ConvexHullCommonKernel.html", [
+      [ "DGtal::ConvexHullIntegralKernel< dim, TCoordinateInteger, TInternalInteger >", "structDGtal_1_1ConvexHullIntegralKernel.html", null ],
+      [ "DGtal::ConvexHullRationalKernel< dim, TCoordinateInteger, TInternalInteger >", "structDGtal_1_1ConvexHullRationalKernel.html", null ],
       [ "DGtal::DelaunayIntegralKernel< dim, TCoordinateInteger, TInternalInteger >", "structDGtal_1_1DelaunayIntegralKernel.html", null ],
       [ "DGtal::DelaunayRationalKernel< dim, TCoordinateInteger, TInternalInteger >", "structDGtal_1_1DelaunayRationalKernel.html", null ]
     ] ],
-    [ "DGtal::ConvexHullCommonKernel< dim, DGtal::int64_t, DGtal::int64_t >", "structDGtal_1_1ConvexHullCommonKernel.html", [
-      [ "DGtal::ConvexHullIntegralKernel< dim, TCoordinateInteger, TInternalInteger >", "structDGtal_1_1ConvexHullIntegralKernel.html", null ],
-      [ "DGtal::ConvexHullRationalKernel< dim, TCoordinateInteger, TInternalInteger >", "structDGtal_1_1ConvexHullRationalKernel.html", null ]
-    ] ],
+    [ "DGtal::ConvexHullCommonKernel< dim+1, DGtal::int64_t, DGtal::int64_t >", "structDGtal_1_1ConvexHullCommonKernel.html", null ],
+    [ "DGtal::ConvexHullCommonKernel< dim, DGtal::int64_t, DGtal::int64_t >", "structDGtal_1_1ConvexHullCommonKernel.html", null ],
     [ "DGtal::ConvexityHelper< dim, TInteger, TInternalInteger >", "structDGtal_1_1ConvexityHelper.html", null ],
     [ "DGtal::detail::ConvexityHelperInternalInteger< TIntegerCoordinate, safe >", "structDGtal_1_1detail_1_1ConvexityHelperInternalInteger.html", null ],
     [ "DGtal::detail::ConvexityHelperInternalInteger< DGtal::BigInteger, safe >", "structDGtal_1_1detail_1_1ConvexityHelperInternalInteger_3_01DGtal_1_1BigInteger_00_01safe_01_4.html", null ],
@@ -494,8 +520,7 @@ var hierarchy =
       [ "DGtal::concepts::CSegment< T >", "structDGtal_1_1concepts_1_1CSegment.html", null ],
       [ "DGtal::concepts::CSegmentComputerEstimator< T >", "structDGtal_1_1concepts_1_1CSegmentComputerEstimator.html", null ],
       [ "DGtal::concepts::CStack< T >", "structDGtal_1_1concepts_1_1CStack.html", null ],
-      [ "DGtal::concepts::CSurfelLocalEstimator< T >", "structDGtal_1_1concepts_1_1CSurfelLocalEstimator.html", null ],
-      [ "DGtal::deprecated::concepts::CConvolutionWeights< T >", "structDGtal_1_1deprecated_1_1concepts_1_1CConvolutionWeights.html", null ]
+      [ "DGtal::concepts::CSurfelLocalEstimator< T >", "structDGtal_1_1concepts_1_1CSurfelLocalEstimator.html", null ]
     ] ],
     [ "DGtal::CorrectedNormalCurrentComputer< TRealPoint, TRealVector >", "structDGtal_1_1CorrectedNormalCurrentComputer.html", null ],
     [ "DGtal::CorrectedNormalCurrentFormula< TRealPoint, TRealVector >", "structDGtal_1_1CorrectedNormalCurrentFormula.html", null ],
@@ -516,26 +541,35 @@ var hierarchy =
     [ "DGtal::CountedConstPtrOrConstPtr< Surface >", "classDGtal_1_1CountedConstPtrOrConstPtr.html", null ],
     [ "DGtal::CountedConstPtrOrConstPtr< VCMOnDigitalSurface >", "classDGtal_1_1CountedConstPtrOrConstPtr.html", null ],
     [ "DGtal::CountedPtr< T >", "classDGtal_1_1CountedPtr.html", null ],
+    [ "DGtal::CountedPtr< A1 >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< AdjacentVertexContainer >", "classDGtal_1_1CountedPtr.html", null ],
+    [ "DGtal::CountedPtr< const Domain >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< DGtal::DigitalSurfaceConvolver >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< DGtal::DrawableWithBoard2D >", "classDGtal_1_1CountedPtr.html", null ],
-    [ "DGtal::CountedPtr< DGtal::DrawableWithDisplay3D >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< DGtal::FunctorOnCells >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< DGtal::functors::PointFunctorFromPointPredicateAndDomain >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< DGtal::GaussDigitizer >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< DGtal::ImplicitBall >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< DGtal::IndexedDigitalSurface >", "classDGtal_1_1CountedPtr.html", null ],
+    [ "DGtal::CountedPtr< DGtal::SignalData< TValue > >", "classDGtal_1_1CountedPtr.html", null ],
+    [ "DGtal::CountedPtr< DGtal::SignalData< Value > >", "classDGtal_1_1CountedPtr.html", null ],
+    [ "DGtal::CountedPtr< DigitalSet >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< DigitalSurfaceContainer >", "classDGtal_1_1CountedPtr.html", null ],
+    [ "DGtal::CountedPtr< DigitalTopology >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< DigSurface >", "classDGtal_1_1CountedPtr.html", null ],
+    [ "DGtal::CountedPtr< Domain >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< DrawableWithBoard2D >", "classDGtal_1_1CountedPtr.html", null ],
-    [ "DGtal::CountedPtr< DrawableWithDisplay3D >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< DummyTbl >", "classDGtal_1_1CountedPtr.html", null ],
+    [ "DGtal::CountedPtr< GeometricFunctor >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< GraphVisitor >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< HyperRectDomain< Space > >", "classDGtal_1_1CountedPtr.html", null ],
+    [ "DGtal::CountedPtr< MyPointD >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< OutEdgeContainer >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< OutputImage >", "classDGtal_1_1CountedPtr.html", null ],
+    [ "DGtal::CountedPtr< Preimage >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtr< Sequence >", "classDGtal_1_1CountedPtr.html", null ],
-    [ "DGtal::CountedPtr< ShapePointFunctor >", "classDGtal_1_1CountedPtr.html", null ],
+    [ "DGtal::CountedPtr< StabbingLineComputer< ConstIterator > >", "classDGtal_1_1CountedPtr.html", null ],
+    [ "DGtal::CountedPtr< TImageContainer >", "classDGtal_1_1CountedPtr.html", null ],
     [ "DGtal::CountedPtrOrPtr< T >", "classDGtal_1_1CountedPtrOrPtr.html", null ],
     [ "DGtal::CountedPtrOrPtr< boost::dynamic_bitset<> >", "classDGtal_1_1CountedPtrOrPtr.html", null ],
     [ "DGtal::CountedPtrOrPtr< ConfigMap >", "classDGtal_1_1CountedPtrOrPtr.html", null ],
@@ -543,29 +577,30 @@ var hierarchy =
     [ "DGtal::CountedPtrOrPtr< PointToMaskMap >", "classDGtal_1_1CountedPtrOrPtr.html", null ],
     [ "DGtal::CountedPtrOrPtr< std::unordered_map< Point, unsigned int > >", "classDGtal_1_1CountedPtrOrPtr.html", null ],
     [ "DGtal::CountedPtr< T >::Counter", "structDGtal_1_1CountedPtr_1_1Counter.html", null ],
-    [ "DGtal::deprecated::IntegralInvariantNormalVectorEstimator< TKSpace, TPointPredicate >::CovarianceMatrix2NormalDirectionFunctor", "structDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator_1_1CovarianceMatrix2NormalDirectionFunctor.html", null ],
     [ "DGtal::CowPtr< T >", "classDGtal_1_1CowPtr.html", null ],
     [ "DGtal::CowPtr< A1 >", "classDGtal_1_1CowPtr.html", null ],
     [ "DGtal::CowPtr< const Domain >", "classDGtal_1_1CowPtr.html", null ],
     [ "DGtal::CowPtr< DGtal::SignalData< TValue > >", "classDGtal_1_1CowPtr.html", null ],
+    [ "DGtal::CowPtr< DGtal::SignalData< Value > >", "classDGtal_1_1CowPtr.html", null ],
     [ "DGtal::CowPtr< DigitalSet >", "classDGtal_1_1CowPtr.html", null ],
     [ "DGtal::CowPtr< DigitalTopology >", "classDGtal_1_1CowPtr.html", null ],
     [ "DGtal::CowPtr< Domain >", "classDGtal_1_1CowPtr.html", null ],
     [ "DGtal::CowPtr< DummyTbl >", "classDGtal_1_1CowPtr.html", null ],
     [ "DGtal::CowPtr< GeometricFunctor >", "classDGtal_1_1CowPtr.html", null ],
-    [ "DGtal::CowPtr< Point >", "classDGtal_1_1CowPtr.html", null ],
+    [ "DGtal::CowPtr< MyPointD >", "classDGtal_1_1CowPtr.html", null ],
     [ "DGtal::CowPtr< Preimage >", "classDGtal_1_1CowPtr.html", null ],
     [ "DGtal::CowPtr< StabbingLineComputer< ConstIterator > >", "classDGtal_1_1CowPtr.html", null ],
     [ "DGtal::CowPtr< TImageContainer >", "classDGtal_1_1CowPtr.html", null ],
     [ "DGtal::concepts::CSpace< T >", "structDGtal_1_1concepts_1_1CSpace.html", null ],
     [ "DGtal::CubicalCellData", "structDGtal_1_1CubicalCellData.html", null ],
     [ "DGtal::CubicalComplex< TKSpace, TCellContainer >", "classDGtal_1_1CubicalComplex.html", [
+      [ "DGtal::VoxelComplex< KSpace >", "classDGtal_1_1VoxelComplex.html", null ],
       [ "DGtal::VoxelComplex< KSpace, FixtureMap >", "classDGtal_1_1VoxelComplex.html", null ],
-      [ "DGtal::VoxelComplex< KSpace >", "classDGtal_1_1VoxelComplex.html", null ]
-    ] ],
-    [ "DGtal::CubicalComplex< TKSpace, typename TKSpace::template CellMap< CubicalCellData >::Type >", "classDGtal_1_1CubicalComplex.html", [
       [ "DGtal::VoxelComplex< TKSpace, TCellContainer >", "classDGtal_1_1VoxelComplex.html", null ]
     ] ],
+    [ "DGtal::CubicalComplex< KSpace, FixtureMap >", "classDGtal_1_1CubicalComplex.html", null ],
+    [ "DGtal::CubicalComplex< KSpace, typename TKSpace::template CellMap< CubicalCellData >::Type >", "classDGtal_1_1CubicalComplex.html", null ],
+    [ "DGtal::CubicalComplex< TKSpace, typename TKSpace::template CellMap< CubicalCellData >::Type >", "classDGtal_1_1CubicalComplex.html", null ],
     [ "DGtal::concepts::CUndirectedSimpleLocalGraph< T >", "structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph.html", [
       [ "DGtal::concepts::CAdjacency< T >", "structDGtal_1_1concepts_1_1CAdjacency.html", [
         [ "DGtal::concepts::CDomainAdjacency< T >", "structDGtal_1_1concepts_1_1CDomainAdjacency.html", null ]
@@ -590,7 +625,10 @@ var hierarchy =
     [ "DGtal::concepts::CVertexPredicateArchetype< TVertex >", "structDGtal_1_1concepts_1_1CVertexPredicateArchetype.html", null ],
     [ "DGtal::concepts::CVertexPredicateArchetype< Vertex >", "structDGtal_1_1concepts_1_1CVertexPredicateArchetype.html", null ],
     [ "DGtal::concepts::CWithGradientMap< T >", "structDGtal_1_1concepts_1_1CWithGradientMap.html", null ],
+    [ "D34", "structD34.html", null ],
     [ "DGtal::LabelledMap< TData, L, TWord, N, M >::DataOrBlockPointer", "unionDGtal_1_1LabelledMap_1_1DataOrBlockPointer.html", null ],
+    [ "DByClone", "structDByClone.html", null ],
+    [ "DByValue", "structDByValue.html", null ],
     [ "DGtal::DecoratorParametricCurveTransformation< TCurve, TTransfromation >", "classDGtal_1_1DecoratorParametricCurveTransformation.html", null ],
     [ "DGtal::CubicalComplex< TKSpace, TCellContainer >::DefaultCellMapIteratorPriority", "structDGtal_1_1CubicalComplex_1_1DefaultCellMapIteratorPriority.html", null ],
     [ "DGtal::DefaultConstImageRange< TImage >", "classDGtal_1_1DefaultConstImageRange.html", null ],
@@ -619,6 +657,7 @@ var hierarchy =
     ] ],
     [ "DerivativeTester< Calculus, order >", "structDerivativeTester.html", null ],
     [ "DerivativeTester< Calculus, -1 >", "structDerivativeTester_3_01Calculus_00_01-1_01_4.html", null ],
+    [ "DiagonalPriority< CubicalComplex >", "structDiagonalPriority.html", null ],
     [ "DGtal::DicomReader< TImageContainer, TFunctor >", "structDGtal_1_1DicomReader.html", null ],
     [ "DGtal::DigitalConvexity< TKSpace >", "classDGtal_1_1DigitalConvexity.html", null ],
     [ "DGtal::DigitalConvexity< KSpace >", "classDGtal_1_1DigitalConvexity.html", null ],
@@ -636,9 +675,6 @@ var hierarchy =
     [ "DGtal::DigitalSetInserter< TDigitalSet >", "classDGtal_1_1DigitalSetInserter.html", null ],
     [ "DGtal::DigitalSetSelector< Domain, Preferences >", "structDGtal_1_1DigitalSetSelector.html", null ],
     [ "DGtal::DigitalShapesCSG< ShapeA, ShapeB >", "classDGtal_1_1DigitalShapesCSG.html", null ],
-    [ "DGtal::deprecated::DigitalShapesIntersection< ShapeA, ShapeB >", "classDGtal_1_1deprecated_1_1DigitalShapesIntersection.html", null ],
-    [ "DGtal::deprecated::DigitalShapesMinus< ShapeA, ShapeB >", "classDGtal_1_1deprecated_1_1DigitalShapesMinus.html", null ],
-    [ "DGtal::deprecated::DigitalShapesUnion< ShapeA, ShapeB >", "classDGtal_1_1deprecated_1_1DigitalShapesUnion.html", null ],
     [ "DGtal::DigitalSurface< TDigitalSurfaceContainer >", "classDGtal_1_1DigitalSurface.html", null ],
     [ "DGtal::DigitalSurface2DSlice< TDigitalSurfaceTracker >", "classDGtal_1_1DigitalSurface2DSlice.html", null ],
     [ "DGtal::DigitalSurfaceConvolver< TFunctor, TKernelFunctor, TKSpace, TDigitalKernel, dimension >", "classDGtal_1_1DigitalSurfaceConvolver.html", null ],
@@ -662,45 +698,27 @@ var hierarchy =
     ] ],
     [ "DGtal::DirichletConditions< TLinearAlgebraBackend >", "classDGtal_1_1DirichletConditions.html", null ],
     [ "DGtal::DiscreteExteriorCalculus< dimEmbedded, dimAmbient, TLinearAlgebraBackend, TInteger >", "classDGtal_1_1DiscreteExteriorCalculus.html", null ],
-    [ "DGtal::DiscreteExteriorCalculus< 2, 2, LinearAlgebra >", "classDGtal_1_1DiscreteExteriorCalculus.html", null ],
     [ "DGtal::DiscreteExteriorCalculusFactory< TLinearAlgebraBackend, TInteger >", "classDGtal_1_1DiscreteExteriorCalculusFactory.html", null ],
     [ "DGtal::DiscreteExteriorCalculusSolver< TCalculus, TLinearAlgebraSolver, order_in, duality_in, order_out, duality_out >", "classDGtal_1_1DiscreteExteriorCalculusSolver.html", null ],
-    [ "DGtal::DiscreteExteriorCalculusSolver< Calculus, LinearAlgebraSolver, 0, PRIMAL, 0, PRIMAL >", "classDGtal_1_1DiscreteExteriorCalculusSolver.html", null ],
-    [ "DGtal::DiscreteExteriorCalculusSolver< Calculus, LinearAlgebraSolver, 1, PRIMAL, 1, PRIMAL >", "classDGtal_1_1DiscreteExteriorCalculusSolver.html", null ],
-    [ "DGtal::DiscreteExteriorCalculusSolver< Calculus, LinearAlgebraSolver, 2, PRIMAL, 2, PRIMAL >", "classDGtal_1_1DiscreteExteriorCalculusSolver.html", null ],
     [ "DGtal::Display2DFactory", "structDGtal_1_1Display2DFactory.html", null ],
     [ "DGtal::concepts::Display3D< S, KS >", "classDGtal_1_1concepts_1_1Display3D.html", null ],
     [ "DGtal::Display3D< Space, KSpace >", "classDGtal_1_1Display3D.html", [
-      [ "DGtal::Board3DTo2D< S, KS >", "classDGtal_1_1Board3DTo2D.html", null ]
+      [ "DGtal::PolyscopeViewer< Space, KSpace >", "classDGtal_1_1PolyscopeViewer.html", null ]
     ] ],
-    [ "DGtal::Display3D< DGtal::SpaceND, DGtal::KhalimskySpaceND >", "classDGtal_1_1Display3D.html", [
-      [ "DGtal::Viewer3D< DGtal::SpaceND, DGtal::KhalimskySpaceND >", "classDGtal_1_1Viewer3D.html", null ]
-    ] ],
+    [ "DGtal::Display3D< DGtal::SpaceND, DGtal::KhalimskySpaceND >", "classDGtal_1_1Display3D.html", null ],
     [ "DGtal::Display3D< Sp, KSp >", "classDGtal_1_1Display3D.html", null ],
-    [ "DGtal::Display3D< Space, KSpace >", "classDGtal_1_1Display3D.html", [
-      [ "DGtal::Viewer3D< Space, KSpace >", "classDGtal_1_1Viewer3D.html", null ]
-    ] ],
-    [ "DGtal::Display3D< SpaceND< 3 >, KhalimskySpaceND< 3 > >", "classDGtal_1_1Display3D.html", [
-      [ "DGtal::Viewer3D< TSpace, TKSpace >", "classDGtal_1_1Viewer3D.html", null ]
-    ] ],
-    [ "DGtal::Display3D< Z3i::Space, Z3i::KSpace >", "classDGtal_1_1Display3D.html", [
-      [ "DGtal::Board3D< Space, KSpace >", "classDGtal_1_1Board3D.html", null ],
-      [ "DGtal::Board3DTo2D< Space, KSpace >", "classDGtal_1_1Board3DTo2D.html", null ]
-    ] ],
-    [ "DGtal::Display3DFactory< TSpace, TKSpace >", "structDGtal_1_1Display3DFactory.html", null ],
-    [ "DGtal::Display3DFactory< TSpace, TKSpace >", "structDGtal_1_1Display3DFactory.html", [
-      [ "DGtal::Board3DTo2DFactory< TSpace, TKSpace >", "structDGtal_1_1Board3DTo2DFactory.html", null ]
-    ] ],
-    [ "DGtal::Display3DFactory< Z3i::Space, Z3i::KSpace >", "structDGtal_1_1Display3DFactory.html", [
-      [ "DGtal::Viewer3DFactory< TSpace, TKSpace >", "structDGtal_1_1Viewer3DFactory.html", null ]
-    ] ],
+    [ "DGtal::Display3D< Z3i::Space, Z3i::KSpace >", "classDGtal_1_1Display3D.html", null ],
+    [ "DGtal::DisplayData< RealPoint >", "structDGtal_1_1DisplayData.html", null ],
+    [ "DGtal::DisplayStyle", "structDGtal_1_1DisplayStyle.html", null ],
     [ "DGtal::DistanceBreadthFirstVisitor< TGraph, TVertexFunctor, TMarkSet >", "classDGtal_1_1DistanceBreadthFirstVisitor.html", null ],
     [ "DGtal::detail::DistanceFromDCA", "structDGtal_1_1detail_1_1DistanceFromDCA.html", null ],
     [ "DGtal::IteratorCompletionTraits< ArrayImageAdapter< TArrayIterator, TDomain > >::DistanceFunctor", "classDGtal_1_1IteratorCompletionTraits_3_01ArrayImageAdapter_3_01TArrayIterator_00_01TDomain_01_4_01_4_1_1DistanceFunctor.html", null ],
+    [ "DGtal::IteratorCompletionTraits< MyImage< T, N > >::DistanceFunctor", "classDGtal_1_1IteratorCompletionTraits_3_01MyImage_3_01T_00_01N_01_4_01_4_1_1DistanceFunctor.html", null ],
     [ "DGtal::DistanceFunctorFromPoint< TImage >", "classDGtal_1_1DistanceFunctorFromPoint.html", null ],
+    [ "DistanceTraits< TImage, TSet, norm >", "structDistanceTraits.html", null ],
+    [ "DistanceTraits< TImage, TSet, 1 >", "structDistanceTraits_3_01TImage_00_01TSet_00_011_01_4.html", null ],
     [ "DGtal::DomainAdjacency< TDomain, TAdjacency >", "classDGtal_1_1DomainAdjacency.html", null ],
     [ "DGtal::DomainAdjacency< ObjectDomain, ForegroundAdjacency >", "classDGtal_1_1DomainAdjacency.html", null ],
-    [ "DGtal::deprecated::DomainMetricAdjacency< Domain, maxNorm1, dimension >", "classDGtal_1_1deprecated_1_1DomainMetricAdjacency.html", null ],
     [ "DGtal::functors::DomainPredicate< TDomain >", "structDGtal_1_1functors_1_1DomainPredicate.html", null ],
     [ "DGtal::functors::DomainPredicate< Domain >", "structDGtal_1_1functors_1_1DomainPredicate.html", null ],
     [ "DGtal::functors::DomainRigidTransformation2D< TDomain, TRigidTransformFunctor >", "classDGtal_1_1functors_1_1DomainRigidTransformation2D.html", null ],
@@ -711,43 +729,23 @@ var hierarchy =
       [ "DGtal::CustomColors", "structDGtal_1_1CustomColors.html", null ],
       [ "DGtal::CustomFillColor", "structDGtal_1_1CustomFillColor.html", null ],
       [ "DGtal::CustomPen", "structDGtal_1_1CustomPen.html", null ],
-      [ "DGtal::CustomPenColor", "structDGtal_1_1CustomPenColor.html", null ]
-    ] ],
-    [ "DGtal::DrawableWithBoard3DTo2D", "structDGtal_1_1DrawableWithBoard3DTo2D.html", null ],
-    [ "DGtal::DrawableWithDisplay3D", "structDGtal_1_1DrawableWithDisplay3D.html", [
-      [ "DGtal::DrawWithBoard3DTo2DModifier", "structDGtal_1_1DrawWithBoard3DTo2DModifier.html", [
-        [ "DGtal::CameraDirection", "structDGtal_1_1CameraDirection.html", null ],
-        [ "DGtal::CameraPosition", "structDGtal_1_1CameraPosition.html", null ],
-        [ "DGtal::CameraUpVector", "structDGtal_1_1CameraUpVector.html", null ],
-        [ "DGtal::CameraZNearFar", "structDGtal_1_1CameraZNearFar.html", null ]
-      ] ]
+      [ "DGtal::CustomPenColor", "structDGtal_1_1CustomPenColor.html", null ],
+      [ "MyDomainStyleCustomRed", "structMyDomainStyleCustomRed.html", null ],
+      [ "MyDrawStyleCustomBlue", "structMyDrawStyleCustomBlue.html", null ],
+      [ "MyDrawStyleCustomColor", "structMyDrawStyleCustomColor.html", null ],
+      [ "MyDrawStyleCustomFillColor", "structMyDrawStyleCustomFillColor.html", null ],
+      [ "MyDrawStyleCustomGreen", "structMyDrawStyleCustomGreen.html", null ],
+      [ "MyDrawStyleCustomGreen", "structMyDrawStyleCustomGreen.html", null ],
+      [ "MyDrawStyleCustomRed", "structMyDrawStyleCustomRed.html", null ],
+      [ "MyDrawStyleCustomRed", "structMyDrawStyleCustomRed.html", null ],
+      [ "MyObjectStyleCustom", "structMyObjectStyleCustom.html", null ],
+      [ "MyObjectStyleCustomRed", "structMyObjectStyleCustomRed.html", null ],
+      [ "MyStyleCustom", "structMyStyleCustom.html", null ],
+      [ "MyStyleCustomRed", "structMyStyleCustomRed.html", null ]
     ] ],
     [ "DGtal::DrawWithBoardModifier", "structDGtal_1_1DrawWithBoardModifier.html", [
       [ "DGtal::CustomStyle", "structDGtal_1_1CustomStyle.html", null ],
       [ "DGtal::SetMode", "structDGtal_1_1SetMode.html", null ]
-    ] ],
-    [ "DGtal::DrawWithDisplay3DModifier", "structDGtal_1_1DrawWithDisplay3DModifier.html", [
-      [ "DGtal::ClippingPlane", "structDGtal_1_1ClippingPlane.html", null ],
-      [ "DGtal::CustomColors3D", "structDGtal_1_1CustomColors3D.html", null ],
-      [ "DGtal::CustomStyle3D", "structDGtal_1_1CustomStyle3D.html", null ],
-      [ "DGtal::DrawWithViewer3DModifier", "structDGtal_1_1DrawWithViewer3DModifier.html", [
-        [ "DGtal::AddTextureImage2DWithFunctor< TImageType, TFunctor, Space, KSpace >", "structDGtal_1_1AddTextureImage2DWithFunctor.html", null ],
-        [ "DGtal::AddTextureImage3DWithFunctor< TImageType, TFunctor, Space, KSpace >", "structDGtal_1_1AddTextureImage3DWithFunctor.html", null ],
-        [ "DGtal::CameraDirection", "structDGtal_1_1CameraDirection.html", null ],
-        [ "DGtal::CameraPosition", "structDGtal_1_1CameraPosition.html", null ],
-        [ "DGtal::CameraUpVector", "structDGtal_1_1CameraUpVector.html", null ],
-        [ "DGtal::CameraZNearFar", "structDGtal_1_1CameraZNearFar.html", null ],
-        [ "DGtal::Translate2DDomain", "structDGtal_1_1Translate2DDomain.html", null ],
-        [ "DGtal::Update2DDomainPosition< Space, KSpace >", "structDGtal_1_1Update2DDomainPosition.html", null ],
-        [ "DGtal::UpdateImage3DEmbedding< Space, KSpace >", "structDGtal_1_1UpdateImage3DEmbedding.html", null ],
-        [ "DGtal::UpdateImageData< TImageType, TFunctor >", "structDGtal_1_1UpdateImageData.html", null ],
-        [ "DGtal::UpdateImagePosition< Space, KSpace >", "structDGtal_1_1UpdateImagePosition.html", null ],
-        [ "DGtal::UpdateLastImagePosition< Space, KSpace >", "structDGtal_1_1UpdateLastImagePosition.html", null ]
-      ] ],
-      [ "DGtal::SetMode3D", "structDGtal_1_1SetMode3D.html", null ],
-      [ "DGtal::SetName3D", "structDGtal_1_1SetName3D.html", null ],
-      [ "DGtal::SetSelectCallback3D", "structDGtal_1_1SetSelectCallback3D.html", null ],
-      [ "DGtal::TransformedPrism", "structDGtal_1_1TransformedPrism.html", null ]
     ] ],
     [ "DGtal::DSLSubsegment< TInteger, TNumber >", "classDGtal_1_1DSLSubsegment.html", null ],
     [ "DGtal::detail::DSSDecorator< TDSS >", "classDGtal_1_1detail_1_1DSSDecorator.html", [
@@ -757,9 +755,19 @@ var hierarchy =
     [ "DGtal::DSSLengthEstimator< TConstIterator >", "classDGtal_1_1DSSLengthEstimator.html", null ],
     [ "DGtal::DSSLengthLessEqualFilter< DSS >", "classDGtal_1_1DSSLengthLessEqualFilter.html", null ],
     [ "DGtal::DSSMuteFilter< DSS >", "classDGtal_1_1DSSMuteFilter.html", null ],
+    [ "DGtal::DSSMuteFilter< typename DSSSegmentationComputer::SegmentComputer >", "classDGtal_1_1DSSMuteFilter.html", null ],
+    [ "Dummy1< T >", "classDummy1.html", null ],
+    [ "Dummy2< T >", "classDummy2.html", null ],
+    [ "DummyBigObject", "classDummyBigObject.html", null ],
     [ "DGtal::functors::DummyEstimatorFromSurfels< TSurfel, TSCellEmbedder >", "structDGtal_1_1functors_1_1DummyEstimatorFromSurfels.html", null ],
+    [ "DummyTbl", "structDummyTbl.html", null ],
     [ "DGtal::DynamicBidirectionalSegmentComputer", "structDGtal_1_1DynamicBidirectionalSegmentComputer.html", null ],
     [ "DGtal::DynamicSegmentComputer", "structDGtal_1_1DynamicSegmentComputer.html", null ],
+    [ "DynArrayLXY< Value >", "classDynArrayLXY.html", null ],
+    [ "DynArrayXYOfLabelledMap< Value, L, TWord, N, M >", "classDynArrayXYOfLabelledMap.html", null ],
+    [ "DynArrayXYOfMap< Value >", "classDynArrayXYOfMap.html", null ],
+    [ "EByAlias", "structEByAlias.html", null ],
+    [ "EByConstAlias", "structEByConstAlias.html", null ],
     [ "DGtal::DigitalSurface< TDigitalSurfaceContainer >::Edge", "structDGtal_1_1DigitalSurface_1_1Edge.html", null ],
     [ "DGtal::HalfEdgeDataStructure::Edge", "structDGtal_1_1HalfEdgeDataStructure_1_1Edge.html", null ],
     [ "DGtal::IntersectionTargetTrait< TSpace, TSeparation, TDimension >::Edge", "structDGtal_1_1IntersectionTargetTrait_1_1Edge.html", null ],
@@ -788,9 +796,6 @@ var hierarchy =
     [ "DGtal::detail::EuclideanDivisionHelper< float >", "structDGtal_1_1detail_1_1EuclideanDivisionHelper_3_01float_01_4.html", null ],
     [ "DGtal::detail::EuclideanDivisionHelper< long double >", "structDGtal_1_1detail_1_1EuclideanDivisionHelper_3_01long_01double_01_4.html", null ],
     [ "DGtal::EuclideanShapesCSG< ShapeA, ShapeB >", "classDGtal_1_1EuclideanShapesCSG.html", null ],
-    [ "DGtal::deprecated::EuclideanShapesIntersection< ShapeA, ShapeB >", "classDGtal_1_1deprecated_1_1EuclideanShapesIntersection.html", null ],
-    [ "DGtal::deprecated::EuclideanShapesMinus< ShapeA, ShapeB >", "classDGtal_1_1deprecated_1_1EuclideanShapesMinus.html", null ],
-    [ "DGtal::deprecated::EuclideanShapesUnion< ShapeA, ShapeB >", "classDGtal_1_1deprecated_1_1EuclideanShapesUnion.html", null ],
     [ "DGtal::MPolynomialEvaluatorImpl< n, TRing, TOwner, TAlloc, TX >::EvalFun< XX, Fun >", "classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun.html", null ],
     [ "DGtal::MPolynomialEvaluatorImpl< 1, TRing, TOwner, TAlloc, TX >::EvalFun", "classDGtal_1_1MPolynomialEvaluatorImpl_3_011_00_01TRing_00_01TOwner_00_01TAlloc_00_01TX_01_4_1_1EvalFun.html", null ],
     [ "DGtal::MPolynomialEvaluatorImpl< n, TRing, TOwner, TAlloc, TX >::EvalFun2", "classDGtal_1_1MPolynomialEvaluatorImpl_1_1EvalFun2.html", null ],
@@ -807,14 +812,17 @@ var hierarchy =
     ] ],
     [ "DGtal::Expander< TObject >", "classDGtal_1_1Expander.html", null ],
     [ "DGtal::ExplicitDigitalSurface< TKSpace, TSurfelPredicate >", "classDGtal_1_1ExplicitDigitalSurface.html", null ],
-    [ "DGtal::Viewer3D< TSpace, TKSpace >::Extension", "structDGtal_1_1Viewer3D_1_1Extension.html", null ],
     [ "DGtal::DigitalSurface< TDigitalSurfaceContainer >::Face", "structDGtal_1_1DigitalSurface_1_1Face.html", null ],
     [ "DGtal::QuickHull< TKernel >::Facet", "structDGtal_1_1QuickHull_1_1Facet.html", null ],
     [ "std::false_type", null, [
       [ "DGtal::IsAPointVector< T >", "structDGtal_1_1IsAPointVector.html", null ],
-      [ "DGtal::IsArithmeticConversionValid< T, U, Enable >", "structDGtal_1_1IsArithmeticConversionValid.html", null ]
+      [ "DGtal::IsArithmeticConversionValid< T, U, Enable >", "structDGtal_1_1IsArithmeticConversionValid.html", null ],
+      [ "DGtal::Shortcuts< TKSpace >::is_double_nested_container< T >", "structDGtal_1_1Shortcuts_1_1is__double__nested__container.html", null ]
     ] ],
     [ "DGtal::functors::FalseBoolFct0", "structDGtal_1_1functors_1_1FalseBoolFct0.html", null ],
+    [ "FalseOutsideDomain< Predicate, Domain >", "structFalseOutsideDomain.html", null ],
+    [ "FByCloneCowPtr", "structFByCloneCowPtr.html", null ],
+    [ "FByCloneHeap", "structFByCloneHeap.html", null ],
     [ "DGtal::detail::FFTWComplexCast< TFFTW >", "structDGtal_1_1detail_1_1FFTWComplexCast.html", null ],
     [ "DGtal::detail::FFTWWrapper< Real >", "structDGtal_1_1detail_1_1FFTWWrapper.html", null ],
     [ "DGtal::detail::FFTWWrapper< double >", "structDGtal_1_1detail_1_1FFTWWrapper_3_01double_01_4.html", null ],
@@ -822,6 +830,14 @@ var hierarchy =
     [ "DGtal::detail::FFTWWrapper< long double >", "structDGtal_1_1detail_1_1FFTWWrapper_3_01long_01double_01_4.html", null ],
     [ "DGtal::Filtered2x2DetComputer< TDetComputer >", "classDGtal_1_1Filtered2x2DetComputer.html", null ],
     [ "DGtal::IndexedListWithBlocks< TValue, N, M >::FirstBlock", "structDGtal_1_1IndexedListWithBlocks_1_1FirstBlock.html", null ],
+    [ "benchmark::Fixture", null, [
+      [ "BenchDomain", "structBenchDomain.html", null ]
+    ] ],
+    [ "Fixture_complex_diamond", "structFixture__complex__diamond.html", null ],
+    [ "Fixture_complex_fig4", "structFixture__complex__fig4.html", null ],
+    [ "Fixture_isthmus", "structFixture__isthmus.html", null ],
+    [ "Fixture_object_diamond_with_hole", "structFixture__object__diamond__with__hole.html", null ],
+    [ "Fixture_X", "structFixture__X.html", null ],
     [ "DGtal::functors::FlipDomainAxis< TDomain >", "classDGtal_1_1functors_1_1FlipDomainAxis.html", null ],
     [ "DGtal::functors::Floor< T >", "structDGtal_1_1functors_1_1Floor.html", null ],
     [ "DGtal::functors::Floor< void >", "structDGtal_1_1functors_1_1Floor_3_01void_01_4.html", null ],
@@ -857,11 +873,11 @@ var hierarchy =
     [ "DGtal::functors::FrontierPredicate< TKSpace, TImage >", "classDGtal_1_1functors_1_1FrontierPredicate.html", null ],
     [ "boost::FrontInsertionSequence< C >", "structboost_1_1FrontInsertionSequence.html", null ],
     [ "DGtal::FrontInsertionSequenceToStackAdapter< TSequence >", "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html", null ],
+    [ "Functor< T, Point >", "structFunctor.html", null ],
     [ "DGtal::functors::FunctorHolder< FunctorStorage, NeedDereference >", "classDGtal_1_1functors_1_1FunctorHolder.html", null ],
     [ "DGtal::FunctorOnCells< TFunctorOnPoints, TKSpace >", "classDGtal_1_1FunctorOnCells.html", null ],
     [ "DGtal::GaussDigitizer< TSpace, TEuclideanShape >", "classDGtal_1_1GaussDigitizer.html", null ],
     [ "DGtal::GaussDigitizer< Space, MyEuclideanShape >", "classDGtal_1_1GaussDigitizer.html", null ],
-    [ "DGtal::deprecated::GaussianConvolutionWeights< TDistance >", "classDGtal_1_1deprecated_1_1GaussianConvolutionWeights.html", null ],
     [ "DGtal::functors::GaussianKernel", "structDGtal_1_1functors_1_1GaussianKernel.html", null ],
     [ "boost::Generator< Func, Return >", "structboost_1_1Generator.html", null ],
     [ "DGtal::GraphVisitorRange< TGraphVisitor >::GenericConstIterator< TAccessor >", "structDGtal_1_1GraphVisitorRange_1_1GenericConstIterator.html", null ],
@@ -879,10 +895,7 @@ var hierarchy =
     [ "DGtal::GenericWriter< TContainer, 3, TValue, TFunctor >", "structDGtal_1_1GenericWriter_3_01TContainer_00_013_00_01TValue_00_01TFunctor_01_4.html", null ],
     [ "DGtal::GenericWriter< TContainer, 3, unsigned char, TFunctor >", "structDGtal_1_1GenericWriter_3_01TContainer_00_013_00_01unsigned_01char_00_01TFunctor_01_4.html", null ],
     [ "DGtal::GeodesicsInHeat< TPolygonalCalculus >", "classDGtal_1_1GeodesicsInHeat.html", null ],
-    [ "DGtal::Viewer3D< TSpace, TKSpace >::GLTextureImage", "structDGtal_1_1Viewer3D_1_1GLTextureImage.html", null ],
     [ "DGtal::GradientColorMap< PValue, PDefaultPreset, PDefaultFirstColor, PDefaultLastColor >", "classDGtal_1_1GradientColorMap.html", null ],
-    [ "DGtal::GradientColorMap< unsigned char, DGtal::CMAP_COOL >", "classDGtal_1_1GradientColorMap.html", null ],
-    [ "DGtal::GradientColorMap< unsigned char, DGtal::CMAP_HOT >", "classDGtal_1_1GradientColorMap.html", null ],
     [ "DGtal::GradientColorMap< unsigned int >", "classDGtal_1_1GradientColorMap.html", null ],
     [ "boost::spirit::qi::grammar", null, [
       [ "DGtal::MPolynomialGrammar< Iterator >", "structDGtal_1_1MPolynomialGrammar.html", null ]
@@ -927,7 +940,6 @@ var hierarchy =
     [ "HodgeTester< Calculus, order >", "structHodgeTester.html", null ],
     [ "HodgeTester< Calculus, -1 >", "structHodgeTester_3_01Calculus_00_01-1_01_4.html", null ],
     [ "DGtal::HueShadeColorMap< PValue, DefaultCycles >", "classDGtal_1_1HueShadeColorMap.html", null ],
-    [ "DGtal::HueShadeColorMap< unsigned char >", "classDGtal_1_1HueShadeColorMap.html", null ],
     [ "DGtal::HyperRectDomain< TSpace >", "classDGtal_1_1HyperRectDomain.html", null ],
     [ "DGtal::HyperRectDomain< Space >", "classDGtal_1_1HyperRectDomain.html", null ],
     [ "DGtal::functors::Identity", "structDGtal_1_1functors_1_1Identity.html", null ],
@@ -945,7 +957,6 @@ var hierarchy =
     [ "DGtal::functors::IISecondPrincipalDirectionFunctor< TSpace, TMatrix >", "classDGtal_1_1functors_1_1IISecondPrincipalDirectionFunctor.html", null ],
     [ "DGtal::functors::IITangentDirectionFunctor< TSpace, TMatrix >", "classDGtal_1_1functors_1_1IITangentDirectionFunctor.html", null ],
     [ "DGtal::Image< TImageContainer >", "classDGtal_1_1Image.html", null ],
-    [ "DGtal::Viewer3D< TSpace, TKSpace >::Image2DDomainD3D", "structDGtal_1_1Viewer3D_1_1Image2DDomainD3D.html", null ],
     [ "DGtal::ImageAdapter< TImageContainer, TNewDomain, TFunctorD, TNewValue, TFunctorV, TFunctorVm1 >", "classDGtal_1_1ImageAdapter.html", null ],
     [ "DGtal::ImageCache< TImageContainer, TImageFactory, TReadPolicy, TWritePolicy >", "classDGtal_1_1ImageCache.html", null ],
     [ "DGtal::ImageCacheReadPolicyFIFO< TImageContainer, TImageFactory >", "classDGtal_1_1ImageCacheReadPolicyFIFO.html", null ],
@@ -959,9 +970,12 @@ var hierarchy =
     [ "DGtal::ImageFromSet< TImage >", "structDGtal_1_1ImageFromSet.html", null ],
     [ "DGtal::ImageLinearCellEmbedder< TKSpace, TImage, TEmbedder >", "classDGtal_1_1ImageLinearCellEmbedder.html", null ],
     [ "DGtal::ImageSelector< Domain, Value, Preferences >", "structDGtal_1_1ImageSelector.html", null ],
-    [ "DGtal::ImageSelector< Domain, unsigned char >", "structDGtal_1_1ImageSelector.html", null ],
+    [ "DGtal::ImageSelector< Domain, unsignedchar >", "structDGtal_1_1ImageSelector.html", null ],
     [ "DGtal::ImageToConstantFunctor< Image, PointPredicate, TValue >", "classDGtal_1_1ImageToConstantFunctor.html", null ],
     [ "DGtal::ImplicitBall< TSpace >", "classDGtal_1_1ImplicitBall.html", null ],
+    [ "ImplicitDigitalBall3< TPoint3 >", "structImplicitDigitalBall3.html", null ],
+    [ "DGtal::ImplicitDigitalEllipse3< TPoint3 >", "structDGtal_1_1ImplicitDigitalEllipse3.html", null ],
+    [ "ImplicitDigitalEllipse3< TPoint3 >", "structImplicitDigitalEllipse3.html", null ],
     [ "DGtal::ImplicitDigitalSurface< TKSpace, TPointPredicate >", "classDGtal_1_1ImplicitDigitalSurface.html", null ],
     [ "DGtal::ImplicitFunctionDiff1LinearCellEmbedder< TKSpace, TImplicitFunctionDiff1, TEmbedder >", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedder.html", [
       [ "DGtal::ImplicitFunctionDiff1LinearCellEmbedderGradientMap< TKSpace, TImplicitFunctionDiff1, TEmbedder >", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedderGradientMap.html", null ]
@@ -1000,9 +1014,11 @@ var hierarchy =
     [ "DGtal::IntegerConverter< dim, DGtal::BigInteger >", "structDGtal_1_1IntegerConverter_3_01dim_00_01DGtal_1_1BigInteger_01_4.html", null ],
     [ "DGtal::IntegerConverter< dim, DGtal::int32_t >", "structDGtal_1_1IntegerConverter_3_01dim_00_01DGtal_1_1int32__t_01_4.html", null ],
     [ "DGtal::IntegerConverter< dim, DGtal::int64_t >", "structDGtal_1_1IntegerConverter_3_01dim_00_01DGtal_1_1int64__t_01_4.html", null ],
+    [ "IntegralCstToTag< T >", "structIntegralCstToTag.html", null ],
+    [ "IntegralCstToTag< std::false_type >", "structIntegralCstToTag_3_01std_1_1false__type_01_4.html", null ],
+    [ "IntegralCstToTag< std::true_type >", "structIntegralCstToTag_3_01std_1_1true__type_01_4.html", null ],
     [ "DGtal::IntegralIntervals< TInteger >", "classDGtal_1_1IntegralIntervals.html", null ],
     [ "DGtal::IntegralInvariantCovarianceEstimator< TKSpace, TPointPredicate, TCovarianceMatrixFunctor >", "classDGtal_1_1IntegralInvariantCovarianceEstimator.html", null ],
-    [ "DGtal::deprecated::IntegralInvariantNormalVectorEstimator< TKSpace, TPointPredicate >", "classDGtal_1_1deprecated_1_1IntegralInvariantNormalVectorEstimator.html", null ],
     [ "DGtal::IntegralInvariantVolumeEstimator< TKSpace, TPointPredicate, TVolumeFunctor >", "classDGtal_1_1IntegralInvariantVolumeEstimator.html", null ],
     [ "boost_concepts::InteroperableIteratorConcept< Iterator, ConstIterator >", "structboost__concepts_1_1InteroperableIteratorConcept.html", null ],
     [ "DGtal::IntersectionTargetTrait< TSpace, TSeparation, TDimension >::IntersectionTarget< Space, Separation, Dimension >", "structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget.html", null ],
@@ -1077,9 +1093,12 @@ var hierarchy =
     [ "DGtal::IteratorCompletion< ArrayImageAdapter< TArrayIterator, HyperRectDomain< TSpace > > >", "classDGtal_1_1IteratorCompletion.html", [
       [ "DGtal::ArrayImageAdapter< TArrayIterator, HyperRectDomain< TSpace > >", "classDGtal_1_1ArrayImageAdapter_3_01TArrayIterator_00_01HyperRectDomain_3_01TSpace_01_4_01_4.html", null ]
     ] ],
-    [ "DGtal::IteratorCompletion< MyImage< T, N > >", "classDGtal_1_1IteratorCompletion.html", null ],
+    [ "DGtal::IteratorCompletion< MyImage< T, N > >", "classDGtal_1_1IteratorCompletion.html", [
+      [ "MyImage< T, N >", "classMyImage.html", null ]
+    ] ],
     [ "DGtal::IteratorCompletionTraits< TDerived >", "classDGtal_1_1IteratorCompletionTraits.html", null ],
     [ "DGtal::IteratorCompletionTraits< ArrayImageAdapter< TArrayIterator, TDomain > >", "classDGtal_1_1IteratorCompletionTraits_3_01ArrayImageAdapter_3_01TArrayIterator_00_01TDomain_01_4_01_4.html", null ],
+    [ "DGtal::IteratorCompletionTraits< MyImage< T, N > >", "classDGtal_1_1IteratorCompletionTraits_3_01MyImage_3_01T_00_01N_01_4_01_4.html", null ],
     [ "DGtal::IteratorType", "structDGtal_1_1IteratorType.html", null ],
     [ "DGtal::ITKDicomReader< TImage >", "structDGtal_1_1ITKDicomReader.html", null ],
     [ "DGtal::ITKIOTrait< Value >", "structDGtal_1_1ITKIOTrait.html", null ],
@@ -1099,10 +1118,10 @@ var hierarchy =
     [ "DGtal::KhalimskyPreCell< dim, TInteger >", "structDGtal_1_1KhalimskyPreCell.html", null ],
     [ "DGtal::KhalimskyPreCell< dim, Integer >", "structDGtal_1_1KhalimskyPreCell.html", null ],
     [ "DGtal::KhalimskyPreSpaceND< dim, TInteger >", "classDGtal_1_1KhalimskyPreSpaceND.html", null ],
-    [ "DGtal::KhalimskySpaceNDHelper< TKhalimskySpace >", "classDGtal_1_1KhalimskySpaceNDHelper.html", null ],
-    [ "DGtal::KhalimskySpaceNDHelper< KhalimskySpaceND< dim, DGtal::int32_t > >", "classDGtal_1_1KhalimskySpaceNDHelper.html", [
+    [ "DGtal::KhalimskySpaceNDHelper< TKhalimskySpace >", "classDGtal_1_1KhalimskySpaceNDHelper.html", [
       [ "DGtal::KhalimskySpaceND< dimAmbient, DGtal::int32_t >", "classDGtal_1_1KhalimskySpaceND.html", null ]
     ] ],
+    [ "DGtal::KhalimskySpaceNDHelper< KhalimskySpaceND< dim, DGtal::int32_t > >", "classDGtal_1_1KhalimskySpaceNDHelper.html", null ],
     [ "DGtal::KhalimskySpaceNDHelper< KhalimskySpaceND< dim, TInteger > >", "classDGtal_1_1KhalimskySpaceNDHelper.html", [
       [ "DGtal::KhalimskySpaceND< dim, TInteger >", "classDGtal_1_1KhalimskySpaceND.html", null ]
     ] ],
@@ -1128,18 +1147,18 @@ var hierarchy =
     [ "DGtal::LagrangeInterpolation< TEuclideanRing >", "classDGtal_1_1LagrangeInterpolation.html", null ],
     [ "DGtal::functors::Lambda64Function", "structDGtal_1_1functors_1_1Lambda64Function.html", null ],
     [ "DGtal::functors::LambdaExponentialFunction", "structDGtal_1_1functors_1_1LambdaExponentialFunction.html", null ],
-    [ "DGtal::LambdaMST2DEstimator< TSpace, TSegmentation, Functor >", "classDGtal_1_1LambdaMST2DEstimator.html", null ],
-    [ "DGtal::LambdaMST2DEstimator< Z2i::Space, DSSSegmentationComputer, TangentFromDSS2DFunctor< DSSSegmentationComputer::SegmentComputer, functors::Lambda64Function > >", "classDGtal_1_1LambdaMST2DEstimator.html", [
+    [ "DGtal::LambdaMST2DEstimator< TSpace, TSegmentation, Functor >", "classDGtal_1_1LambdaMST2DEstimator.html", [
       [ "DGtal::LambdaMST2D< DSSSegmentationComputer, LambdaFunction >", "classDGtal_1_1LambdaMST2D.html", null ]
     ] ],
-    [ "DGtal::LambdaMST3DBy2DEstimator< Iterator3D, Functor, LambdaFunctor, CONNECTIVITY >", "classDGtal_1_1LambdaMST3DBy2DEstimator.html", null ],
-    [ "DGtal::LambdaMST3DBy2DEstimator< Iterator3D, TangentFromDSS3DBy2DFunctor, functors::Lambda64Function, 8 >", "classDGtal_1_1LambdaMST3DBy2DEstimator.html", [
+    [ "DGtal::LambdaMST2DEstimator< Z2i::Space, DSSSegmentationComputer, TangentFromDSS2DFunctor< DSSSegmentationComputer::SegmentComputer, functors::Lambda64Function > >", "classDGtal_1_1LambdaMST2DEstimator.html", null ],
+    [ "DGtal::LambdaMST3DBy2DEstimator< Iterator3D, Functor, LambdaFunctor, CONNECTIVITY >", "classDGtal_1_1LambdaMST3DBy2DEstimator.html", [
       [ "DGtal::LambdaMST3DBy2D< Iterator3D, LambdaFunctor, CONNECTIVITY >", "classDGtal_1_1LambdaMST3DBy2D.html", null ]
     ] ],
-    [ "DGtal::LambdaMST3DEstimator< TSpace, TSegmentation, Functor, DSSFilter >", "classDGtal_1_1LambdaMST3DEstimator.html", null ],
-    [ "DGtal::LambdaMST3DEstimator< Z3i::Space, DSSSegmentationComputer, TangentFromDSS3DFunctor< DSSSegmentationComputer::SegmentComputer, functors::Lambda64Function >, DSSMuteFilter< typename DSSSegmentationComputer::SegmentComputer > >", "classDGtal_1_1LambdaMST3DEstimator.html", [
+    [ "DGtal::LambdaMST3DBy2DEstimator< Iterator3D, TangentFromDSS3DBy2DFunctor, functors::Lambda64Function, 8 >", "classDGtal_1_1LambdaMST3DBy2DEstimator.html", null ],
+    [ "DGtal::LambdaMST3DEstimator< TSpace, TSegmentation, Functor, DSSFilter >", "classDGtal_1_1LambdaMST3DEstimator.html", [
       [ "DGtal::LambdaMST3D< DSSSegmentationComputer, LambdaFunction, DSSFilter >", "classDGtal_1_1LambdaMST3D.html", null ]
     ] ],
+    [ "DGtal::LambdaMST3DEstimator< Z3i::Space, DSSSegmentationComputer, TangentFromDSS3DFunctor< DSSSegmentationComputer::SegmentComputer, functors::Lambda64Function >, DSSMuteFilter< typename DSSSegmentationComputer::SegmentComputer > >", "classDGtal_1_1LambdaMST3DEstimator.html", null ],
     [ "DGtal::functors::LambdaSinFromPiFunction", "structDGtal_1_1functors_1_1LambdaSinFromPiFunction.html", null ],
     [ "DGtal::functors::LargeTruncationFunctor< Integer >", "structDGtal_1_1functors_1_1LargeTruncationFunctor.html", null ],
     [ "DGtal::LatticePolytope2D< TSpace, TSequence >", "classDGtal_1_1LatticePolytope2D.html", null ],
@@ -1153,6 +1172,7 @@ var hierarchy =
     [ "boost::LessThanComparable< T >", "structboost_1_1LessThanComparable.html", [
       [ "DGtal::concepts::CQuantity< T >", "structDGtal_1_1concepts_1_1CQuantity.html", null ]
     ] ],
+    [ "LessThanOnFace< Vector >", "structLessThanOnFace.html", null ],
     [ "DGtal::LighterSternBrocot< TInteger, TQuotient, TMap >", "classDGtal_1_1LighterSternBrocot.html", null ],
     [ "DGtal::LightExplicitDigitalSurface< TKSpace, TSurfelPredicate >", "classDGtal_1_1LightExplicitDigitalSurface.html", null ],
     [ "DGtal::LightImplicitDigitalSurface< TKSpace, TPointPredicate >", "classDGtal_1_1LightImplicitDigitalSurface.html", null ],
@@ -1163,11 +1183,12 @@ var hierarchy =
     [ "DGtal::functors::LinearLeastSquareFittingNormalVectorEstimator< TSurfel, TEmbedder >", "classDGtal_1_1functors_1_1LinearLeastSquareFittingNormalVectorEstimator.html", null ],
     [ "DGtal::LinearOperator< TCalculus, order_in, duality_in, order_out, duality_out >", "classDGtal_1_1LinearOperator.html", null ],
     [ "DGtal::LInfLocalDistance< TImage, TSet >", "classDGtal_1_1LInfLocalDistance.html", null ],
-    [ "DGtal::deprecated::LocalConvolutionNormalVectorEstimator< TDigitalSurface, TKernelFunctor >", "classDGtal_1_1deprecated_1_1LocalConvolutionNormalVectorEstimator.html", null ],
     [ "DGtal::LocalEstimatorFromSurfelFunctorAdapter< TDigitalSurfaceContainer, TMetric, TFunctorOnSurfel, TConvolutionFunctor >", "classDGtal_1_1LocalEstimatorFromSurfelFunctorAdapter.html", null ],
     [ "DGtal::LOG2< X >", "classDGtal_1_1LOG2.html", null ],
     [ "DGtal::LOG2< 1 >", "classDGtal_1_1LOG2_3_011_01_4.html", null ],
     [ "DGtal::LOG2< 2 >", "classDGtal_1_1LOG2_3_012_01_4.html", null ],
+    [ "LogFct", "structLogFct.html", null ],
+    [ "LogScaleFunctor< Scalar >", "structLogScaleFunctor.html", null ],
     [ "DGtal::LongvolReader< TImageContainer, TFunctor >", "structDGtal_1_1LongvolReader.html", null ],
     [ "DGtal::LongvolWriter< TImage, TFunctor >", "structDGtal_1_1LongvolWriter.html", null ],
     [ "DGtal::LpMetric< TSpace >", "classDGtal_1_1LpMetric.html", null ],
@@ -1182,6 +1203,7 @@ var hierarchy =
     [ "DGtal::MeaningfulScaleAnalysis< TProfile >", "classDGtal_1_1MeaningfulScaleAnalysis.html", null ],
     [ "DGtal::Measure< TSet >", "classDGtal_1_1Measure.html", null ],
     [ "DGtal::MeasureOfStraightLines", "classDGtal_1_1MeasureOfStraightLines.html", null ],
+    [ "MedianPlane< Naive, Symmetric >", "structMedianPlane.html", null ],
     [ "DGtal::MelkmanConvexHull< TPoint, TOrientationFunctor >", "classDGtal_1_1MelkmanConvexHull.html", null ],
     [ "DGtal::MelkmanConvexHull< InputPoint, DGtal::InHalfPlaneBySimple3x3Matrix >", "classDGtal_1_1MelkmanConvexHull.html", null ],
     [ "DGtal::Mesh< TPoint >", "classDGtal_1_1Mesh.html", null ],
@@ -1221,6 +1243,8 @@ var hierarchy =
     [ "boost::MultiPassInputIterator< G >", "structboost_1_1MultiPassInputIterator.html", null ],
     [ "boost::MultipleAssociativeContainer< C >", "structboost_1_1MultipleAssociativeContainer.html", null ],
     [ "DGtal::functors::MultiplicationByScalar< T >", "structDGtal_1_1functors_1_1MultiplicationByScalar.html", null ],
+    [ "MultiScaleAnalyzer< KSpace, N >", "structMultiScaleAnalyzer.html", null ],
+    [ "MultiScaleAnalyzer< KSpace, 0 >", "structMultiScaleAnalyzer_3_01KSpace_00_010_01_4.html", null ],
     [ "DGtal::MultiStatistics", "classDGtal_1_1MultiStatistics.html", null ],
     [ "boost::mutable_bidirectional_iterator_archetype", null, [
       [ "DGtal::CBidirectionalIteratorArchetype< T >", "structDGtal_1_1CBidirectionalIteratorArchetype.html", null ]
@@ -1232,8 +1256,15 @@ var hierarchy =
     [ "boost::Mutable_RandomAccessContainer< C >", "structboost_1_1Mutable__RandomAccessContainer.html", null ],
     [ "boost::Mutable_RandomAccessIterator< T >", "structboost_1_1Mutable__RandomAccessIterator.html", null ],
     [ "boost::Mutable_ReversibleContainer< C >", "structboost_1_1Mutable__ReversibleContainer.html", null ],
+    [ "my_edge_copier< Graph1, Graph2 >", "structmy__edge__copier.html", null ],
+    [ "my_vertex_copier< Graph1, Graph2, VertexIndexMap >", "structmy__vertex__copier.html", null ],
+    [ "MyBallPredicate< TP, TI >", "structMyBallPredicate.html", null ],
+    [ "MyPoint", "classMyPoint.html", null ],
+    [ "MyPointD", "classMyPointD.html", null ],
+    [ "MyTransValueFunctor< TValue >", "classMyTransValueFunctor.html", null ],
     [ "DGtal::Naive3DDSSComputer< TIterator, TInteger, connectivity >", "classDGtal_1_1Naive3DDSSComputer.html", null ],
     [ "DGtal::NaiveParametricCurveDigitizer3D< TParametricCurve >", "classDGtal_1_1NaiveParametricCurveDigitizer3D.html", null ],
+    [ "DGtal::NClone< T >", "classDGtal_1_1NClone.html", null ],
     [ "DGtal::Negate< T >", "structDGtal_1_1Negate.html", null ],
     [ "DGtal::Negate< TagFalse >", "structDGtal_1_1Negate_3_01TagFalse_01_4.html", null ],
     [ "DGtal::Negate< TagTrue >", "structDGtal_1_1Negate_3_01TagTrue_01_4.html", null ],
@@ -1244,6 +1275,7 @@ var hierarchy =
     [ "DGtal::SternBrocot< TInteger, TQuotient >::Node", "structDGtal_1_1SternBrocot_1_1Node.html", null ],
     [ "DGtal::GraphVisitorRange< TGraphVisitor >::NodeAccessor", "structDGtal_1_1GraphVisitorRange_1_1NodeAccessor.html", null ],
     [ "DGtal::SymmetricConvexExpander< TKSpace, TPointPredicate >::NodeComparator", "structDGtal_1_1SymmetricConvexExpander_1_1NodeComparator.html", null ],
+    [ "Norm1< P >", "structNorm1.html", null ],
     [ "DGtal::NormalCycleComputer< TRealPoint, TRealVector >", "structDGtal_1_1NormalCycleComputer.html", null ],
     [ "DGtal::NormalCycleFormula< TRealPoint, TRealVector >", "structDGtal_1_1NormalCycleFormula.html", null ],
     [ "DGtal::detail::NormalizedTangentVectorFromDSS", "structDGtal_1_1detail_1_1NormalizedTangentVectorFromDSS.html", null ],
@@ -1256,18 +1288,22 @@ var hierarchy =
     [ "DGtal::functors::NotPointPredicate< TPointPredicate >", "structDGtal_1_1functors_1_1NotPointPredicate.html", null ],
     [ "DGtal::functors::NotPointPredicate< InCoreDomainPredicate >", "structDGtal_1_1functors_1_1NotPointPredicate.html", null ],
     [ "DGtal::NumberTraitsImpl< T, Enable >", "structDGtal_1_1NumberTraitsImpl.html", [
+      [ "DGtal::NumberTraits< Integer >", "structDGtal_1_1NumberTraits.html", null ],
       [ "DGtal::NumberTraits< TInteger >", "structDGtal_1_1NumberTraits.html", null ]
     ] ],
     [ "DGtal::NumberTraitsImpl< DGtal::BigInteger, Enable >", "structDGtal_1_1NumberTraitsImpl_3_01DGtal_1_1BigInteger_00_01Enable_01_4.html", null ],
+    [ "DGtal::NumberTraitsImpl< std::decay< Integer >::type >", "structDGtal_1_1NumberTraitsImpl.html", null ],
     [ "DGtal::NumberTraitsImpl< std::decay< T >::type >", "structDGtal_1_1NumberTraitsImpl.html", [
       [ "DGtal::NumberTraits< T >", "structDGtal_1_1NumberTraits.html", null ]
     ] ],
+    [ "DGtal::NumberTraitsImpl< std::decay< TInteger >::type >", "structDGtal_1_1NumberTraitsImpl.html", null ],
     [ "DGtal::details::NumberTraitsImplFundamental< T >", "structDGtal_1_1details_1_1NumberTraitsImplFundamental.html", [
       [ "DGtal::NumberTraitsImpl< T, typename std::enable_if< std::is_floating_point< T >::value >::type >", "structDGtal_1_1NumberTraitsImpl_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__floating_29bbe2652e6d58e33f41f614fd754864.html", null ],
       [ "DGtal::NumberTraitsImpl< T, typename std::enable_if< std::is_integral< T >::value >::type >", "structDGtal_1_1NumberTraitsImpl_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__integral_1ce5c08ef142b54c10962f6a14786276.html", null ]
     ] ],
     [ "DGtal::Object< TDigitalTopology, TDigitalSet >", "classDGtal_1_1Object.html", null ],
     [ "DGtal::Object< FixtureDigitalTopology, FixtureDigitalSet >", "classDGtal_1_1Object.html", null ],
+    [ "Objects2D", "structObjects2D.html", null ],
     [ "DGtal::FrechetShortcut< TIterator, TInteger >::Backpath::occulter_attributes", "structDGtal_1_1FrechetShortcut_1_1Backpath_1_1occulter__attributes.html", null ],
     [ "DGtal::OneBalancedWordComputer< TConstIterator, TInteger >", "classDGtal_1_1OneBalancedWordComputer.html", null ],
     [ "DGtal::OneItemOutputIterator< T >", "classDGtal_1_1OneItemOutputIterator.html", null ],
@@ -1276,6 +1312,7 @@ var hierarchy =
     [ "DGtal::OppositeDuality< duality_orig >", "structDGtal_1_1OppositeDuality.html", null ],
     [ "DGtal::OppositeDuality< DUAL >", "structDGtal_1_1OppositeDuality_3_01DUAL_01_4.html", null ],
     [ "DGtal::OppositeDuality< PRIMAL >", "structDGtal_1_1OppositeDuality_3_01PRIMAL_01_4.html", null ],
+    [ "Options", "structOptions.html", null ],
     [ "DGtal::functors::OrBoolFct2", "structDGtal_1_1functors_1_1OrBoolFct2.html", null ],
     [ "DGtal::OrderedAlphabet", "classDGtal_1_1OrderedAlphabet.html", null ],
     [ "DGtal::OrderedLinearRegression", "classDGtal_1_1OrderedLinearRegression.html", null ],
@@ -1292,6 +1329,7 @@ var hierarchy =
     [ "DGtal::functors::Pair2nd< ReturnType >", "classDGtal_1_1functors_1_1Pair2nd.html", null ],
     [ "DGtal::functors::Pair2ndMutator< ReturnType >", "classDGtal_1_1functors_1_1Pair2ndMutator.html", null ],
     [ "boost::PairAssociativeContainer< C >", "structboost_1_1PairAssociativeContainer.html", null ],
+    [ "PairSorted2nd< T1, T2 >", "structPairSorted2nd.html", null ],
     [ "DGtal::ParallelStrip< TSpace, muIncluded, muPlusNuIncluded >", "classDGtal_1_1ParallelStrip.html", null ],
     [ "DGtal::Parameters", "structDGtal_1_1Parameters.html", null ],
     [ "DGtal::ParameterValue", "structDGtal_1_1ParameterValue.html", null ],
@@ -1299,7 +1337,6 @@ var hierarchy =
     [ "DGtal::ParametricShapeCurvatureFunctor< TParametricShape >", "classDGtal_1_1ParametricShapeCurvatureFunctor.html", null ],
     [ "DGtal::ParametricShapeTangentFunctor< TParametricShape >", "classDGtal_1_1ParametricShapeTangentFunctor.html", null ],
     [ "DGtal::ParDirCollapse< CC >", "classDGtal_1_1ParDirCollapse.html", null ],
-    [ "DGtal::functors::SphereFittingEstimator< TSurfel, TEmbedder, TNormalVectorEstimatorCache >::PatatePoint", "classDGtal_1_1functors_1_1SphereFittingEstimator_1_1PatatePoint.html", null ],
     [ "LibBoard::Path", "structLibBoard_1_1Path.html", null ],
     [ "DGtal::Pattern< TFraction >", "classDGtal_1_1Pattern.html", null ],
     [ "DGtal::Pattern< Fraction >", "classDGtal_1_1Pattern.html", null ],
@@ -1325,6 +1362,10 @@ var hierarchy =
     [ "DGtal::functors::Point2ShapePredicateComparator< T, false, true >", "structDGtal_1_1functors_1_1Point2ShapePredicateComparator_3_01T_00_01false_00_01true_01_4.html", null ],
     [ "DGtal::functors::Point2ShapePredicateComparator< T, true, false >", "structDGtal_1_1functors_1_1Point2ShapePredicateComparator_3_01T_00_01true_00_01false_01_4.html", null ],
     [ "DGtal::functors::Point2ShapePredicateComparator< T, true, true >", "structDGtal_1_1functors_1_1Point2ShapePredicateComparator_3_01T_00_01true_00_01true_01_4.html", null ],
+    [ "Point3D", "structPoint3D.html", null ],
+    [ "PointConverter< StorageOrder >", "structPointConverter.html", null ],
+    [ "PointConverter< ColMajorStorage >", "structPointConverter_3_01ColMajorStorage_01_4.html", null ],
+    [ "PointConverter< RowMajorStorage >", "structPointConverter_3_01RowMajorStorage_01_4.html", null ],
     [ "DGtal::functors::PointFunctorFromPointPredicateAndDomain< TPointPredicate, TDomain, TValue >", "structDGtal_1_1functors_1_1PointFunctorFromPointPredicateAndDomain.html", null ],
     [ "DGtal::functors::PointFunctorHolder< TPoint, TValue, TFunctor >", "classDGtal_1_1functors_1_1PointFunctorHolder.html", null ],
     [ "DGtal::functors::PointFunctorPredicate< TPointFunctor, TPredicate >", "structDGtal_1_1functors_1_1PointFunctorPredicate.html", null ],
@@ -1343,6 +1384,7 @@ var hierarchy =
     [ "DGtal::functors::PolarPointComparatorBy2x2DetComputer< TPoint, TDetComputer >", "classDGtal_1_1functors_1_1PolarPointComparatorBy2x2DetComputer.html", null ],
     [ "DGtal::PolygonalCalculus< TRealPoint, TRealVector >", "classDGtal_1_1PolygonalCalculus.html", null ],
     [ "DGtal::PolygonalSurface< TPoint >", "classDGtal_1_1PolygonalSurface.html", null ],
+    [ "DGtal::functors::SphereFittingEstimator< TSurfel, TEmbedder, TNormalVectorEstimatorCache >::PoncaPoint", "classDGtal_1_1functors_1_1SphereFittingEstimator_1_1PoncaPoint.html", null ],
     [ "DGtal::detail::PosDepScaleDepSCEstimator< TSegmentComputer, Functor, ReturnType >", "classDGtal_1_1detail_1_1PosDepScaleDepSCEstimator.html", null ],
     [ "DGtal::detail::PosDepScaleDepSCEstimator< DCAComputer, detail::DistanceFromDCA >", "classDGtal_1_1detail_1_1PosDepScaleDepSCEstimator.html", [
       [ "DGtal::DistanceFromDCAEstimator< DCAComputer >", "classDGtal_1_1DistanceFromDCAEstimator.html", null ]
@@ -1354,10 +1396,10 @@ var hierarchy =
     [ "DGtal::detail::PosDepScaleIndepSCEstimator< DCAComputer, detail::TangentVectorFromDCA >", "classDGtal_1_1detail_1_1PosDepScaleIndepSCEstimator.html", [
       [ "DGtal::TangentFromDCAEstimator< DCAComputer >", "classDGtal_1_1TangentFromDCAEstimator.html", null ]
     ] ],
-    [ "DGtal::detail::PosIndepScaleDepSCEstimator< TSegmentComputer, Functor, ReturnType >", "classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html", null ],
-    [ "DGtal::detail::PosIndepScaleDepSCEstimator< DCAComputer, detail::CurvatureFromDCA< true > >", "classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html", [
+    [ "DGtal::detail::PosIndepScaleDepSCEstimator< TSegmentComputer, Functor, ReturnType >", "classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html", [
       [ "DGtal::CurvatureFromDCAEstimator< DCAComputer, isCCW >", "classDGtal_1_1CurvatureFromDCAEstimator.html", null ]
     ] ],
+    [ "DGtal::detail::PosIndepScaleDepSCEstimator< DCAComputer, detail::CurvatureFromDCA< true > >", "classDGtal_1_1detail_1_1PosIndepScaleDepSCEstimator.html", null ],
     [ "DGtal::detail::PosIndepScaleIndepSCEstimator< TSegmentComputer, Functor, ReturnType >", "classDGtal_1_1detail_1_1PosIndepScaleIndepSCEstimator.html", null ],
     [ "DGtal::detail::PosIndepScaleIndepSCEstimator< DSSComputer, detail::NormalizedTangentVectorFromDSS >", "classDGtal_1_1detail_1_1PosIndepScaleIndepSCEstimator.html", [
       [ "DGtal::TangentFromDSSEstimator< DSSComputer >", "classDGtal_1_1TangentFromDSSEstimator.html", null ]
@@ -1373,10 +1415,10 @@ var hierarchy =
     [ "DGtal::POW< X, 0 >", "classDGtal_1_1POW_3_01X_00_010_01_4.html", null ],
     [ "DGtal::POW< X, 1 >", "classDGtal_1_1POW_3_01X_00_011_01_4.html", null ],
     [ "DGtal::detail::power_node", "structDGtal_1_1detail_1_1power__node.html", null ],
-    [ "DGtal::PowerMap< TWeightImage, TPowerSeparableMetric, TImageContainer >", "classDGtal_1_1PowerMap.html", null ],
-    [ "DGtal::PowerMap< TWeightImage, TPSeparableMetric, ImageContainerBySTLVector< HyperRectDomain< typename TWeightImage::Domain::Space >, typename TWeightImage::Domain::Space::Vector > >", "classDGtal_1_1PowerMap.html", [
+    [ "DGtal::PowerMap< TWeightImage, TPowerSeparableMetric, TImageContainer >", "classDGtal_1_1PowerMap.html", [
       [ "DGtal::ReverseDistanceTransformation< TWeightImage, TPSeparableMetric, TImageContainer >", "classDGtal_1_1ReverseDistanceTransformation.html", null ]
     ] ],
+    [ "DGtal::PowerMap< TWeightImage, TPSeparableMetric, ImageContainerBySTLVector< HyperRectDomain< typename TWeightImage::Domain::Space >, typename TWeightImage::Domain::Space::Vector > >", "classDGtal_1_1PowerMap.html", null ],
     [ "DGtal::PPMReader< TImageContainer, TFunctor >", "structDGtal_1_1PPMReader.html", null ],
     [ "DGtal::PPMWriter< TImage, TFunctor >", "structDGtal_1_1PPMWriter.html", null ],
     [ "DGtal::PreCellDirectionIterator< dim, TInteger >", "classDGtal_1_1PreCellDirectionIterator.html", null ],
@@ -1395,19 +1437,22 @@ var hierarchy =
     [ "DGtal::promote_trait< A, B >", "structDGtal_1_1promote__trait.html", null ],
     [ "DGtal::promote_trait< int32_t, int64_t >", "structDGtal_1_1promote__trait_3_01int32__t_00_01int64__t_01_4.html", null ],
     [ "DGtal::DiscreteExteriorCalculus< dimEmbedded, dimAmbient, TLinearAlgebraBackend, TInteger >::Property", "structDGtal_1_1DiscreteExteriorCalculus_1_1Property.html", null ],
-    [ "QGLViewer", null, [
-      [ "DGtal::Viewer3D< DGtal::SpaceND, DGtal::KhalimskySpaceND >", "classDGtal_1_1Viewer3D.html", null ],
-      [ "DGtal::Viewer3D< Space, KSpace >", "classDGtal_1_1Viewer3D.html", null ],
-      [ "DGtal::Viewer3D< TSpace, TKSpace >", "classDGtal_1_1Viewer3D.html", null ]
-    ] ],
     [ "DGtal::QuantifiedColorMap< TColorMap >", "structDGtal_1_1QuantifiedColorMap.html", null ],
     [ "DGtal::functors::SphereFittingEstimator< TSurfel, TEmbedder, TNormalVectorEstimatorCache >::Quantity", "structDGtal_1_1functors_1_1SphereFittingEstimator_1_1Quantity.html", null ],
+    [ "DGtal::Quantity< T >", "structDGtal_1_1Quantity.html", null ],
+    [ "DGtal::Quantity< DGtal::Color >", "structDGtal_1_1Quantity.html", null ],
+    [ "DGtal::Quantity< DGtal::PointVector >", "structDGtal_1_1Quantity.html", null ],
+    [ "DGtal::Quantity< double >", "structDGtal_1_1Quantity.html", null ],
     [ "DGtal::QuickHull< TKernel >", "structDGtal_1_1QuickHull.html", null ],
     [ "boost::RandomAccessContainer< C >", "structboost_1_1RandomAccessContainer.html", null ],
     [ "boost::RandomAccessIterator< T >", "structboost_1_1RandomAccessIterator.html", null ],
     [ "boost_concepts::RandomAccessTraversalConcept< Iterator >", "structboost__concepts_1_1RandomAccessTraversalConcept.html", null ],
     [ "DGtal::RandomColorMap", "classDGtal_1_1RandomColorMap.html", null ],
     [ "DGtal::BoundedRationalPolytope< TSpace >::Rational", "structDGtal_1_1BoundedRationalPolytope_1_1Rational.html", null ],
+    [ "RawIO< Image >", "structRawIO.html", null ],
+    [ "RawIO16< Image >", "structRawIO16.html", null ],
+    [ "RawIO32< Image >", "structRawIO32.html", null ],
+    [ "RawIO8< Image >", "structRawIO8.html", null ],
     [ "DGtal::RawReader< TImageContainer, TFunctor >", "structDGtal_1_1RawReader.html", null ],
     [ "DGtal::RawWriter< TImage, TFunctor >", "structDGtal_1_1RawWriter.html", null ],
     [ "DGtal::DSLSubsegment< TInteger, TNumber >::RayC", "classDGtal_1_1DSLSubsegment_1_1RayC.html", null ],
@@ -1441,14 +1486,13 @@ var hierarchy =
     [ "DGtal::functors::SCellToCode< KSpace >", "classDGtal_1_1functors_1_1SCellToCode.html", null ],
     [ "DGtal::functors::SCellToIncidentPoints< KSpace >", "classDGtal_1_1functors_1_1SCellToIncidentPoints.html", null ],
     [ "DGtal::functors::SCellToInnerPoint< KSpace >", "classDGtal_1_1functors_1_1SCellToInnerPoint.html", null ],
-    [ "DGtal::functors::deprecated::SCellToMidPoint< KSpace >", "classDGtal_1_1functors_1_1deprecated_1_1SCellToMidPoint.html", null ],
     [ "DGtal::functors::SCellToOuterPoint< KSpace >", "classDGtal_1_1functors_1_1SCellToOuterPoint.html", null ],
     [ "DGtal::functors::SCellToPoint< KSpace >", "classDGtal_1_1functors_1_1SCellToPoint.html", null ],
     [ "DGtal::Shortcuts< TKSpace >::SCellWriter", "structDGtal_1_1Shortcuts_1_1SCellWriter.html", null ],
     [ "DGtal::GreedySegmentation< TSegmentComputer >::SegmentComputerIterator", "classDGtal_1_1GreedySegmentation_1_1SegmentComputerIterator.html", null ],
     [ "DGtal::SaturatedSegmentation< TSegmentComputer >::SegmentComputerIterator", "classDGtal_1_1SaturatedSegmentation_1_1SegmentComputerIterator.html", null ],
     [ "DGtal::SegmentComputerTraits< SC >", "structDGtal_1_1SegmentComputerTraits.html", null ],
-    [ "DGtal::Display3D< Space, KSpace >::SelectCallbackFctStore", "structDGtal_1_1Display3D_1_1SelectCallbackFctStore.html", null ],
+    [ "SegmentedPlane", "structSegmentedPlane.html", null ],
     [ "DGtal::SeparableMetricAdapter< TMetric >", "classDGtal_1_1SeparableMetricAdapter.html", null ],
     [ "boost::Sequence< C >", "structboost_1_1Sequence.html", null ],
     [ "DGtal::SetFromImage< TSet >", "structDGtal_1_1SetFromImage.html", null ],
@@ -1457,7 +1501,6 @@ var hierarchy =
     [ "DGtal::detail::SetFunctionsImpl< Container, true, false >", "structDGtal_1_1detail_1_1SetFunctionsImpl_3_01Container_00_01true_00_01false_01_4.html", null ],
     [ "DGtal::detail::SetFunctionsImpl< Container, true, true >", "structDGtal_1_1detail_1_1SetFunctionsImpl_3_01Container_00_01true_00_01true_01_4.html", null ],
     [ "DGtal::SetOfSurfels< TKSpace, TSurfelSet >", "classDGtal_1_1SetOfSurfels.html", null ],
-    [ "DGtal::deprecated::SetPredicate< TDigitalSet >", "structDGtal_1_1deprecated_1_1SetPredicate.html", null ],
     [ "DGtal::SetValueIterator< TImage, TIteratorOnPts >", "classDGtal_1_1SetValueIterator.html", null ],
     [ "boost::SGIAssignable< T >", "structboost_1_1SGIAssignable.html", null ],
     [ "LibBoard::Shape", "structLibBoard_1_1Shape.html", [
@@ -1505,6 +1548,7 @@ var hierarchy =
     [ "DGtal::Signal< TValue >", "classDGtal_1_1Signal.html", null ],
     [ "DGtal::Signal< Value >", "classDGtal_1_1Signal.html", null ],
     [ "DGtal::SignalData< TValue >", "structDGtal_1_1SignalData.html", null ],
+    [ "SignedDistToCircle< Point >", "structSignedDistToCircle.html", null ],
     [ "boost::SignedInteger< T >", "structboost_1_1SignedInteger.html", null ],
     [ "DGtal::SignedKhalimskyCell< dim, TInteger >", "structDGtal_1_1SignedKhalimskyCell.html", null ],
     [ "DGtal::SignedKhalimskyPreCell< dim, TInteger >", "structDGtal_1_1SignedKhalimskyPreCell.html", null ],
@@ -1529,6 +1573,7 @@ var hierarchy =
     [ "DGtal::SimpleRandomAccessRangeFromPoint< TConstIterator, TIterator, DistanceFunctor >", "classDGtal_1_1SimpleRandomAccessRangeFromPoint.html", null ],
     [ "DGtal::functors::SimpleThresholdForegroundPredicate< Image >", "classDGtal_1_1functors_1_1SimpleThresholdForegroundPredicate.html", null ],
     [ "boost_concepts::SinglePassIteratorConcept< Iterator >", "structboost__concepts_1_1SinglePassIteratorConcept.html", null ],
+    [ "Slice", "structSlice.html", null ],
     [ "DGtal::functors::SliceRotator2D< TDomain3D, TInteger >", "classDGtal_1_1functors_1_1SliceRotator2D.html", null ],
     [ "boost::SortedAssociativeContainer< C >", "structboost_1_1SortedAssociativeContainer.html", null ],
     [ "DGtal::SpaceND< dim, TInteger >", "classDGtal_1_1SpaceND.html", null ],
@@ -1559,6 +1604,7 @@ var hierarchy =
       [ "DGtal::Lemniscate2D< TSpace >", "classDGtal_1_1Lemniscate2D.html", null ],
       [ "DGtal::NGon2D< TSpace >", "classDGtal_1_1NGon2D.html", null ]
     ] ],
+    [ "DGtal::StarShaped2D< Space >", "classDGtal_1_1StarShaped2D.html", null ],
     [ "DGtal::StarShaped3D< TSpace >", "classDGtal_1_1StarShaped3D.html", [
       [ "DGtal::Ball3D< TSpace >", "classDGtal_1_1Ball3D.html", null ]
     ] ],
@@ -1590,6 +1636,8 @@ var hierarchy =
     [ "DGtal::SurfaceMeshReader< TRealPoint, TRealVector >", "structDGtal_1_1SurfaceMeshReader.html", null ],
     [ "DGtal::SurfaceMeshWriter< TRealPoint, TRealVector >", "structDGtal_1_1SurfaceMeshWriter.html", null ],
     [ "DGtal::Surfaces< TKSpace >", "classDGtal_1_1Surfaces.html", null ],
+    [ "surfel_position", "structsurfel__position.html", null ],
+    [ "surfel_position_t", "structsurfel__position__t.html", null ],
     [ "DGtal::SurfelAdjacency< dim >", "classDGtal_1_1SurfelAdjacency.html", null ],
     [ "DGtal::SurfelAdjacency< KSpace::dimension >", "classDGtal_1_1SurfelAdjacency.html", null ],
     [ "DGtal::DigitalSurface< TDigitalSurfaceContainer >::SurfelMap< Value >", "structDGtal_1_1DigitalSurface_1_1SurfelMap.html", null ],
@@ -1615,7 +1663,14 @@ var hierarchy =
     [ "DGtal::detail::TangentVectorFromDSS< DSS >", "structDGtal_1_1detail_1_1TangentVectorFromDSS.html", null ],
     [ "DGtal::Clone< T >::TempPtr", "structDGtal_1_1Clone_1_1TempPtr.html", null ],
     [ "DGtal::functors::TensorVotingFeatureExtraction< TSurfel, TEmbedder >", "classDGtal_1_1functors_1_1TensorVotingFeatureExtraction.html", null ],
-    [ "DGtal::Viewer3D< TSpace, TKSpace >::TextureImage", "structDGtal_1_1Viewer3D_1_1TextureImage.html", null ],
+    [ "testDigitalSetToCellularGridConverter", "classtestDigitalSetToCellularGridConverter.html", null ],
+    [ "TestImage< N >", "structTestImage.html", null ],
+    [ "testLambdaMST2D", "classtestLambdaMST2D.html", null ],
+    [ "testLambdaMST3D", "classtestLambdaMST3D.html", null ],
+    [ "TestPlaneProbingParallelepipedEstimator< Integer, mode >", "structTestPlaneProbingParallelepipedEstimator.html", null ],
+    [ "TestPlaneProbingTetrahedronEstimator< Integer, mode >", "structTestPlaneProbingTetrahedronEstimator.html", null ],
+    [ "testRigidTransformation2D", "classtestRigidTransformation2D.html", null ],
+    [ "testRigidTransformation3D", "classtestRigidTransformation3D.html", null ],
     [ "DGtal::functors::Thresholder< T, isLower, isEqual >", "classDGtal_1_1functors_1_1Thresholder.html", null ],
     [ "DGtal::functors::Thresholder< ResultInteger, false, false >", "classDGtal_1_1functors_1_1Thresholder.html", null ],
     [ "DGtal::functors::Thresholder< T, false, false >", "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01false_01_4.html", null ],
@@ -1645,6 +1700,8 @@ var hierarchy =
     [ "DGtal::ToDGtalCategory< std::bidirectional_iterator_tag >", "structDGtal_1_1ToDGtalCategory_3_01std_1_1bidirectional__iterator__tag_01_4.html", null ],
     [ "DGtal::ToDGtalCategory< std::forward_iterator_tag >", "structDGtal_1_1ToDGtalCategory_3_01std_1_1forward__iterator__tag_01_4.html", null ],
     [ "DGtal::ToDGtalCategory< std::random_access_iterator_tag >", "structDGtal_1_1ToDGtalCategory_3_01std_1_1random__access__iterator__tag_01_4.html", null ],
+    [ "Tool< Container, T >", "structTool.html", null ],
+    [ "Tool< std::forward_list< int >, T >", "structTool_3_01std_1_1forward__list_3_01int_01_4_00_01T_01_4.html", null ],
     [ "DGtal::FrechetShortcut< TIterator, TInteger >::Tools", "structDGtal_1_1FrechetShortcut_1_1Tools.html", null ],
     [ "DGtal::detail::top_node", "structDGtal_1_1detail_1_1top__node.html", null ],
     [ "DGtal::Trace", "classDGtal_1_1Trace.html", null ],
@@ -1672,10 +1729,17 @@ var hierarchy =
       [ "DGtal::IteratorAdapter< TIterator, TFunctor, TReturnType >", "classDGtal_1_1IteratorAdapter.html", null ]
     ] ],
     [ "DGtal::HalfEdgeDataStructure::Triangle", "structDGtal_1_1HalfEdgeDataStructure_1_1Triangle.html", null ],
+    [ "TriangleByClone", "structTriangleByClone.html", null ],
+    [ "TriangleByCloneAndCow", "structTriangleByCloneAndCow.html", null ],
+    [ "TriangleByConstReference", "structTriangleByConstReference.html", null ],
+    [ "TriangleByValue", "structTriangleByValue.html", null ],
+    [ "TriangleContext", "structTriangleContext.html", null ],
     [ "DGtal::TriangulatedSurface< TPoint >", "classDGtal_1_1TriangulatedSurface.html", null ],
+    [ "Triple< T1, T2, T3 >", "structTriple.html", null ],
     [ "std::true_type", null, [
       [ "DGtal::IsAPointVector< PointVector< dim, TEuclideanRing, TContainer > >", "structDGtal_1_1IsAPointVector_3_01PointVector_3_01dim_00_01TEuclideanRing_00_01TContainer_01_4_01_4.html", null ],
-      [ "DGtal::IsArithmeticConversionValid< T, U, typename std::conditional< false, ArithmeticConversionType< T, U >, void >::type >", "structDGtal_1_1IsArithmeticConversionValid_3_01T_00_01U_00_01typename_01std_1_1conditional_3_01f3d12afaad57391e67b8a4fff74de6483.html", null ]
+      [ "DGtal::IsArithmeticConversionValid< T, U, typename std::conditional< false, ArithmeticConversionType< T, U >, void >::type >", "structDGtal_1_1IsArithmeticConversionValid_3_01T_00_01U_00_01typename_01std_1_1conditional_3_01f3d12afaad57391e67b8a4fff74de6483.html", null ],
+      [ "DGtal::Shortcuts< TKSpace >::is_double_nested_container< C< D< T > > >", "structDGtal_1_1Shortcuts_1_1is__double__nested__container_3_01C_3_01D_3_01T_01_4_01_4_01_4.html", null ]
     ] ],
     [ "DGtal::functors::TrueBoolFct0", "structDGtal_1_1functors_1_1TrueBoolFct0.html", null ],
     [ "DGtal::TrueDigitalSurfaceLocalEstimator< TKSpace, TShape, TGeometricFunctor >", "classDGtal_1_1TrueDigitalSurfaceLocalEstimator.html", null ],
@@ -1690,6 +1754,7 @@ var hierarchy =
     [ "DGtal::UmbrellaComputer< TDigitalSurfaceTracker >", "classDGtal_1_1UmbrellaComputer.html", null ],
     [ "DGtal::UmbrellaComputer< DigitalSurfaceTracker >", "classDGtal_1_1UmbrellaComputer.html", null ],
     [ "boost::UnaryFunction< Func, Return, Arg >", "structboost_1_1UnaryFunction.html", null ],
+    [ "UnaryFunctor", "structUnaryFunctor.html", null ],
     [ "DGtal::functors::UnaryMinus< T >", "structDGtal_1_1functors_1_1UnaryMinus.html", null ],
     [ "boost::UnaryPredicate< Func, Arg >", "structboost_1_1UnaryPredicate.html", null ],
     [ "boost::UniqueAssociativeContainer< C >", "structboost_1_1UniqueAssociativeContainer.html", null ],
@@ -1697,6 +1762,7 @@ var hierarchy =
     [ "DGtal::BoundedRationalPolytope< TSpace >::UnitCell", "structDGtal_1_1BoundedRationalPolytope_1_1UnitCell.html", null ],
     [ "DGtal::BoundedLatticePolytope< TSpace >::UnitSegment", "structDGtal_1_1BoundedLatticePolytope_1_1UnitSegment.html", null ],
     [ "DGtal::BoundedRationalPolytope< TSpace >::UnitSegment", "structDGtal_1_1BoundedRationalPolytope_1_1UnitSegment.html", null ],
+    [ "UnorderedPointSetPredicate", "structUnorderedPointSetPredicate.html", null ],
     [ "DGtal::UnorderedSetByBlock< Key, TSplitter, Hash, KeyEqual, UnorderedMapAllocator >", "structDGtal_1_1UnorderedSetByBlock.html", null ],
     [ "DGtal::UnorderedSetByBlock< DGtal::PointVector, DGtal::Splitter< DGtal::PointVector, uint64_t > >", "structDGtal_1_1UnorderedSetByBlock.html", null ],
     [ "DGtal::UnorderedSetByBlock< Point >", "structDGtal_1_1UnorderedSetByBlock.html", null ],
@@ -1713,6 +1779,9 @@ var hierarchy =
     [ "DGtal::AngleLinearMinimizer::ValueInfo", "structDGtal_1_1AngleLinearMinimizer_1_1ValueInfo.html", null ],
     [ "DGtal::IndexedListWithBlocks< TValue, N, M >::ValueOrBlockPointer", "unionDGtal_1_1IndexedListWithBlocks_1_1ValueOrBlockPointer.html", null ],
     [ "DGtal::Shortcuts< TKSpace >::ValueReader< Value >", "structDGtal_1_1Shortcuts_1_1ValueReader.html", null ],
+    [ "ValueToTag< V >", "structValueToTag.html", null ],
+    [ "ValueToTag< false >", "structValueToTag_3_01false_01_4.html", null ],
+    [ "ValueToTag< true >", "structValueToTag_3_01true_01_4.html", null ],
     [ "DGtal::Shortcuts< TKSpace >::ValueWriter< Value >", "structDGtal_1_1Shortcuts_1_1ValueWriter.html", null ],
     [ "DGtal::functors::VCMAbsoluteCurvatureFunctor< TVCMOnDigitalSurface >", "structDGtal_1_1functors_1_1VCMAbsoluteCurvatureFunctor.html", null ],
     [ "DGtal::VCMDigitalSurfaceLocalEstimator< TDigitalSurfaceContainer, TSeparableMetric, TKernelFunction, TVCMGeometricFunctor >", "classDGtal_1_1VCMDigitalSurfaceLocalEstimator.html", null ],
@@ -1721,8 +1790,8 @@ var hierarchy =
     [ "DGtal::functors::VCMNormalVectorFunctor< TVCMOnDigitalSurface >", "structDGtal_1_1functors_1_1VCMNormalVectorFunctor.html", null ],
     [ "DGtal::functors::VCMSecondPrincipalAbsoluteCurvatureFunctor< TVCMOnDigitalSurface >", "structDGtal_1_1functors_1_1VCMSecondPrincipalAbsoluteCurvatureFunctor.html", null ],
     [ "std::vector< T >", null, [
-      [ "DGtal::ImageContainerBySTLVector< Domain, Storage * >", "classDGtal_1_1ImageContainerBySTLVector.html", null ],
       [ "DGtal::ImageContainerBySTLVector< Domain, Value >", "classDGtal_1_1ImageContainerBySTLVector.html", null ],
+      [ "DGtal::ImageContainerBySTLVector< Domain, Storage * >", "classDGtal_1_1ImageContainerBySTLVector.html", null ],
       [ "DGtal::ImageContainerBySTLVector< TDomain, TValue >", "classDGtal_1_1ImageContainerBySTLVector.html", null ]
     ] ],
     [ "DGtal::VectorField< TCalculus, duality >", "classDGtal_1_1VectorField.html", null ],
@@ -1733,6 +1802,8 @@ var hierarchy =
       [ "boost::DigitalSurface_graph_traversal_category", "structboost_1_1DigitalSurface__graph__traversal__category.html", null ],
       [ "boost::Object_graph_traversal_category", "structboost_1_1Object__graph__traversal__category.html", null ]
     ] ],
+    [ "vertex_position", "structvertex__position.html", null ],
+    [ "vertex_position_t", "structvertex__position__t.html", null ],
     [ "DGtal::GraphVisitorRange< TGraphVisitor >::VertexAccessor", "structDGtal_1_1GraphVisitorRange_1_1VertexAccessor.html", null ],
     [ "boost::VertexListGraphConcept< G >", "structboost_1_1VertexListGraphConcept.html", null ],
     [ "DGtal::concepts::CUndirectedSimpleLocalGraph< T >::VertexMap< Value >", "structDGtal_1_1concepts_1_1CUndirectedSimpleLocalGraph_1_1VertexMap.html", null ],
@@ -1746,18 +1817,20 @@ var hierarchy =
     [ "DGtal::PolygonalSurface< TPoint >::VertexMap< Value >", "structDGtal_1_1PolygonalSurface_1_1VertexMap.html", null ],
     [ "DGtal::SurfaceMesh< TRealPoint, TRealVector >::VertexMap< Value >", "structDGtal_1_1SurfaceMesh_1_1VertexMap.html", null ],
     [ "DGtal::TriangulatedSurface< TPoint >::VertexMap< Value >", "structDGtal_1_1TriangulatedSurface_1_1VertexMap.html", null ],
+    [ "VertexSize", "structVertexSize.html", null ],
     [ "DGtal::VolReader< TImageContainer, TFunctor >", "structDGtal_1_1VolReader.html", null ],
     [ "DGtal::VolWriter< TImage, TFunctor >", "structDGtal_1_1VolWriter.html", null ],
     [ "DGtal::VoronoiCovarianceMeasure< TSpace, TSeparableMetric >", "classDGtal_1_1VoronoiCovarianceMeasure.html", null ],
     [ "DGtal::VoronoiCovarianceMeasure< Space, Metric >", "classDGtal_1_1VoronoiCovarianceMeasure.html", null ],
     [ "DGtal::VoronoiCovarianceMeasureOnDigitalSurface< TDigitalSurfaceContainer, TSeparableMetric, TKernelFunction >", "classDGtal_1_1VoronoiCovarianceMeasureOnDigitalSurface.html", null ],
-    [ "DGtal::VoronoiMap< TSpace, TPointPredicate, TSeparableMetric, TImageContainer >", "classDGtal_1_1VoronoiMap.html", null ],
-    [ "DGtal::VoronoiMap< TSpace, TPointPredicate, TSeparableMetric, ImageContainerBySTLVector< HyperRectDomain< TSpace >, typename TSpace::Vector > >", "classDGtal_1_1VoronoiMap.html", [
+    [ "DGtal::VoronoiMap< TSpace, TPointPredicate, TSeparableMetric, TImageContainer >", "classDGtal_1_1VoronoiMap.html", [
       [ "DGtal::DistanceTransformation< TSpace, TPointPredicate, TSeparableMetric, TImageContainer >", "classDGtal_1_1DistanceTransformation.html", null ]
     ] ],
+    [ "DGtal::VoronoiMap< TSpace, TPointPredicate, TSeparableMetric, ImageContainerBySTLVector< HyperRectDomain< TSpace >, typename TSpace::Vector > >", "classDGtal_1_1VoronoiMap.html", null ],
     [ "DGtal::VoronoiMapComplete< TSpace, TPointPredicate, TSeparableMetric, TImageContainer >", "classDGtal_1_1VoronoiMapComplete.html", null ],
     [ "DGtal::Warning_promote_trait_not_specialized_for_this_case", "classDGtal_1_1Warning__promote__trait__not__specialized__for__this__case.html", null ],
     [ "DGtal::WindingNumbersShape< TSpace >", "structDGtal_1_1WindingNumbersShape.html", null ],
+    [ "DGtal::WithQuantity< T, Type >", "structDGtal_1_1WithQuantity.html", null ],
     [ "boost_concepts::WritableIteratorConcept< Iterator, ValueType >", "structboost__concepts_1_1WritableIteratorConcept.html", null ],
     [ "DGtal::Xe_kComputer< n, Ring, Alloc >", "classDGtal_1_1Xe__kComputer.html", null ],
     [ "DGtal::Xe_kComputer< 0, Ring, Alloc >", "classDGtal_1_1Xe__kComputer_3_010_00_01Ring_00_01Alloc_01_4.html", null ],

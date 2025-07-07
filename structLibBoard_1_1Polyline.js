@@ -13,7 +13,7 @@ var structLibBoard_1_1Polyline =
     [ "flushTikZ", "structLibBoard_1_1Polyline.html#aa908d560f1d092dc8e8ff35d2c32eb20", null ],
     [ "name", "structLibBoard_1_1Polyline.html#a1f6e6c67f2bd0dd6f29dcd2aa6f8e35c", null ],
     [ "operator<<", "structLibBoard_1_1Polyline.html#a42ba9cf840ac762c5e110e0f9130e653", null ],
-    [ "operator[]", "structLibBoard_1_1Polyline.html#a542b306d20ff7d6a26dd8aac6113ba2b", null ],
+    [ "operator[]", "structLibBoard_1_1Polyline.html#a2924fc495461e84202241f7d42ed4ede", null ],
     [ "rotate", "structLibBoard_1_1Polyline.html#a1ec1ce0afb0aff63c3eabd08ac95be47", null ],
     [ "rotate", "structLibBoard_1_1Polyline.html#a4e3ba6a56334b38282bc78d57c7bf537", null ],
     [ "rotated", "structLibBoard_1_1Polyline.html#a163d053a438714286f2e4035b325424a", null ],

@@ -6,6 +6,6 @@ var structDGtal_1_1VoronoiCovarianceMeasure_1_1CharacteristicSetPredicate =
     [ "CharacteristicSetPredicate", "structDGtal_1_1VoronoiCovarianceMeasure_1_1CharacteristicSetPredicate.html#ac8f04c3520324e0dd4085caddb6ecb6a", null ],
     [ "CharacteristicSetPredicate", "structDGtal_1_1VoronoiCovarianceMeasure_1_1CharacteristicSetPredicate.html#a741b28236b4bf039d0e43a4f2ff77ce2", null ],
     [ "operator()", "structDGtal_1_1VoronoiCovarianceMeasure_1_1CharacteristicSetPredicate.html#ad917b23762c6990ab172470fd83074d6", null ],
-    [ "operator=", "structDGtal_1_1VoronoiCovarianceMeasure_1_1CharacteristicSetPredicate.html#a59513c05c1599d44e6557d07a4c851fd", null ],
+    [ "operator=", "structDGtal_1_1VoronoiCovarianceMeasure_1_1CharacteristicSetPredicate.html#a4257fd16611dccd4133adbea009bd047", null ],
     [ "ptrSet", "structDGtal_1_1VoronoiCovarianceMeasure_1_1CharacteristicSetPredicate.html#a2cc4b18b3828ae66afb519e835561bee", null ]
 ];

@@ -21,7 +21,7 @@ var classDGtal_1_1ParDirCollapse =
     [ "isIsthmus", "classDGtal_1_1ParDirCollapse.html#a77f9c5cb67e6135db9ad00de17f4e1b8", null ],
     [ "isNotIncludedInUpperDim", "classDGtal_1_1ParDirCollapse.html#a59f2d4b83e3ef79266d1e606c8b62a70", null ],
     [ "isValid", "classDGtal_1_1ParDirCollapse.html#a912b8deddfdf9e6f10825b8f20b36a98", null ],
-    [ "operator=", "classDGtal_1_1ParDirCollapse.html#ae8da8fecfd7dddc8701fd4afc2dcb77d", null ],
+    [ "operator=", "classDGtal_1_1ParDirCollapse.html#aa75e4bb6cec2369914b389395f85f5eb", null ],
     [ "complex", "classDGtal_1_1ParDirCollapse.html#a37db469752150ecc56a10b4bd2180d64", null ],
     [ "K", "classDGtal_1_1ParDirCollapse.html#a8ebc6de097bf55d0a4dea876452262d2", null ],
     [ "verbose", "classDGtal_1_1ParDirCollapse.html#a2b512c39f81fb3c1ead82f224c63f14b", null ]

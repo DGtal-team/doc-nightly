@@ -4,7 +4,7 @@ var classDGtal_1_1detail_1_1GridPoint =
     [ "GridPoint", "classDGtal_1_1detail_1_1GridPoint.html#a2ff85d318fd5e6e53b806cd50dfd8f68", null ],
     [ "GridPoint", "classDGtal_1_1detail_1_1GridPoint.html#a3de9ea6514bf028e8bbee58b1ae3574d", null ],
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1detail_1_1GridPoint.html#affe15e6fce2b486e8c86f85df2453f4e", null ],
-    [ "direction", "classDGtal_1_1detail_1_1GridPoint.html#a598541b79b8b9036b0a94618e953693e", null ],
+    [ "direction", "classDGtal_1_1detail_1_1GridPoint.html#a769bf3e4a9ebd1dc8351f6d0685e0a22", null ],
     [ "directionVector", "classDGtal_1_1detail_1_1GridPoint.html#a038e37aebfa6a265aa273291f6782f00", null ],
     [ "getOnSameGrid", "classDGtal_1_1detail_1_1GridPoint.html#af30a207e349ea5087f4acdd1d9902c41", null ],
     [ "isValid", "classDGtal_1_1detail_1_1GridPoint.html#abe22ee3030dad25d0e9556c2037d7f68", null ],

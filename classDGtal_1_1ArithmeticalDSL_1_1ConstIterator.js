@@ -10,7 +10,7 @@ var classDGtal_1_1ArithmeticalDSL_1_1ConstIterator =
     [ "distance_to", "classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html#a362ef147a5fce92356be3c47e02c2420", null ],
     [ "equal", "classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html#a886e285b69d98d9c37aa07f18fe6026a", null ],
     [ "increment", "classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html#ade0811784ecc88a06bc2ccb735e98455", null ],
-    [ "operator=", "classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html#a13af4230f823a33150c9a99c0a0a66f4", null ],
+    [ "operator=", "classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html#ad252a60084d03ed791576ce151245081", null ],
     [ "remainder", "classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html#a0f31f6f5fb6bb7441f0a15ebf2272b7a", null ],
     [ "boost::iterator_core_access", "classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html#ac09f73e325921cc50ebcd96bed0f8096", null ],
     [ "myCurrentPoint", "classDGtal_1_1ArithmeticalDSL_1_1ConstIterator.html#a23cdebd851eb63075cf21f093f7af045", null ],

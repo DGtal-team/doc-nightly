@@ -14,7 +14,7 @@ var classDGtal_1_1ImplicitHyperCube =
     [ "isValid", "classDGtal_1_1ImplicitHyperCube.html#a3c4a6a8df5239df17c4c27673d099c5f", null ],
     [ "moveTo", "classDGtal_1_1ImplicitHyperCube.html#a390673dd079b7d89153bc1e745076732", null ],
     [ "operator()", "classDGtal_1_1ImplicitHyperCube.html#a44cc62cdb443f0b03cb7f257182f98bf", null ],
-    [ "operator=", "classDGtal_1_1ImplicitHyperCube.html#a5a04d0c3115e05f3c016584d0b9d87ec", null ],
+    [ "operator=", "classDGtal_1_1ImplicitHyperCube.html#a14ec08eefebcd79d567be50aa88cfbe3", null ],
     [ "orientation", "classDGtal_1_1ImplicitHyperCube.html#a0b13a6013e1706d1e54f6611fe0f0b0e", null ],
     [ "selfDisplay", "classDGtal_1_1ImplicitHyperCube.html#a04b36be66df2dee19273d5887082475a", null ],
     [ "myCenter", "classDGtal_1_1ImplicitHyperCube.html#ad2c72c70c69c83f22ae7be4278ab2cae", null ],

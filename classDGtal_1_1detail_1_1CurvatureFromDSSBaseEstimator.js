@@ -12,7 +12,7 @@ var classDGtal_1_1detail_1_1CurvatureFromDSSBaseEstimator =
     [ "eval", "classDGtal_1_1detail_1_1CurvatureFromDSSBaseEstimator.html#ab6b916c426d8ad13d3e1e2d1c09e954b", null ],
     [ "init", "classDGtal_1_1detail_1_1CurvatureFromDSSBaseEstimator.html#a5adf995e948ef9253739ce271a39be06", null ],
     [ "isValid", "classDGtal_1_1detail_1_1CurvatureFromDSSBaseEstimator.html#aa4c28015e20b8d912c73524d3f312153", null ],
-    [ "operator=", "classDGtal_1_1detail_1_1CurvatureFromDSSBaseEstimator.html#ad1980700c89cc34d1022156aaf27e964", null ],
+    [ "operator=", "classDGtal_1_1detail_1_1CurvatureFromDSSBaseEstimator.html#aa830c6385242df3a9d62c8c963609048", null ],
     [ "myBegin", "classDGtal_1_1detail_1_1CurvatureFromDSSBaseEstimator.html#a2961b014c6e35bbacbfb3527423b002a", null ],
     [ "myEnd", "classDGtal_1_1detail_1_1CurvatureFromDSSBaseEstimator.html#a198a5c5bea5fcb052d5010d7e4d85a06", null ],
     [ "myFunctor", "classDGtal_1_1detail_1_1CurvatureFromDSSBaseEstimator.html#a317ce147dcf78ccec15ee94a1773b64c", null ],

@@ -24,7 +24,7 @@ var classDGtal_1_1SphericalAccumulator =
     [ "isValid", "classDGtal_1_1SphericalAccumulator.html#a002e3cb4edaca3c339b5e17fe2a254a7", null ],
     [ "isValidBin", "classDGtal_1_1SphericalAccumulator.html#aecfca5119f5d2fb34a9df36571f19c65", null ],
     [ "maxCountBin", "classDGtal_1_1SphericalAccumulator.html#a626ecf8669303b22ccf2041ee685d5a5", null ],
-    [ "operator=", "classDGtal_1_1SphericalAccumulator.html#aa8e5872bffb45a7f294b2dea9ba946fd", null ],
+    [ "operator=", "classDGtal_1_1SphericalAccumulator.html#a178074bdb01a72c1d72ef18f4a7420e9", null ],
     [ "representativeDirection", "classDGtal_1_1SphericalAccumulator.html#ac4871c6497859821205042be3fe49855", null ],
     [ "representativeDirection", "classDGtal_1_1SphericalAccumulator.html#a406e9d93c5c21646200dfa34d2477ab1", null ],
     [ "samples", "classDGtal_1_1SphericalAccumulator.html#afbcba934d6497702adcbd4938eef05e4", null ],

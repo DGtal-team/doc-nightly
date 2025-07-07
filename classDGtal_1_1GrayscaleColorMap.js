@@ -7,10 +7,10 @@ var classDGtal_1_1GrayscaleColorMap =
     [ "GrayscaleColorMap", "classDGtal_1_1GrayscaleColorMap.html#aabeb3e98a8bb722198f76963f5515930", null ],
     [ "getColor", "classDGtal_1_1GrayscaleColorMap.html#a4f7f018a8993c35483f35e224b9cdd55", null ],
     [ "isValid", "classDGtal_1_1GrayscaleColorMap.html#a128df296cab7daf3d898b65cb60ace27", null ],
-    [ "max", "classDGtal_1_1GrayscaleColorMap.html#adb9924811f5005d9330c1c454d349db7", null ],
-    [ "min", "classDGtal_1_1GrayscaleColorMap.html#aafb3a1a72820b8859f949d52846fb053", null ],
+    [ "max", "classDGtal_1_1GrayscaleColorMap.html#a708f59170846489f3910b90068ef3f45", null ],
+    [ "min", "classDGtal_1_1GrayscaleColorMap.html#a42ca2332e4c35ef12edf656c00575e43", null ],
     [ "operator()", "classDGtal_1_1GrayscaleColorMap.html#a577629cc098cb5cc284e72d41093cfff", null ],
-    [ "operator=", "classDGtal_1_1GrayscaleColorMap.html#a16f445adb1c6a270a4a4b8986abbcbf6", null ],
+    [ "operator=", "classDGtal_1_1GrayscaleColorMap.html#a6b6ba2e53cc3c34beb49e202923afc3e", null ],
     [ "selfDisplay", "classDGtal_1_1GrayscaleColorMap.html#a1f7b16d42217cd1fdf30a34cac463553", null ],
     [ "myMax", "classDGtal_1_1GrayscaleColorMap.html#a52ddd389d5f236ca244fc76af13548d7", null ],
     [ "myMin", "classDGtal_1_1GrayscaleColorMap.html#af144e9e4e023448aa17f256f89c9d6dc", null ]

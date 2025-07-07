@@ -1,7 +1,7 @@
 var classDGtal_1_1LambdaMST3DEstimator =
 [
     [ "ConstIterator", "classDGtal_1_1LambdaMST3DEstimator.html#ade9ec68bf90a2b7243febf3e7f82e486", null ],
-    [ "OrphanDSSIterator", "classDGtal_1_1LambdaMST3DEstimator.html#a2d05f8ffc6bf508cf4e53bfe2e0daa55", null ],
+    [ "OrphanDSSIterator", "classDGtal_1_1LambdaMST3DEstimator.html#a2711e57698b23344b99ba6ab67d5f754", null ],
     [ "Point", "classDGtal_1_1LambdaMST3DEstimator.html#a19fb4ef39f86de76cc96fdfdc81d99c6", null ],
     [ "RealVector", "classDGtal_1_1LambdaMST3DEstimator.html#a3dcb2c7a80ee6538b7de777732c0b84b", null ],
     [ "Segmentation", "classDGtal_1_1LambdaMST3DEstimator.html#a644aa30564cbeae51eec1f27031112bb", null ],
@@ -17,7 +17,7 @@ var classDGtal_1_1LambdaMST3DEstimator =
     [ "BOOST_STATIC_ASSERT", "classDGtal_1_1LambdaMST3DEstimator.html#a08bcc3cb4338f93b72dbba8dbbab6b83", null ],
     [ "eval", "classDGtal_1_1LambdaMST3DEstimator.html#a4ac502daaa6df363e1c4a533051d41e0", null ],
     [ "eval", "classDGtal_1_1LambdaMST3DEstimator.html#a475dbb8675a7752297539f7fb3c3773b", null ],
-    [ "getDSSFilter", "classDGtal_1_1LambdaMST3DEstimator.html#a5ae585d39ced287525d6982c989db4c1", null ],
+    [ "getDSSFilter", "classDGtal_1_1LambdaMST3DEstimator.html#ac72a8cdf4bdb9113d20fc6aba2b40d91", null ],
     [ "init", "classDGtal_1_1LambdaMST3DEstimator.html#ac384f14e42d594272595fd1f73409ebd", null ],
     [ "isValid", "classDGtal_1_1LambdaMST3DEstimator.html#ab735a444213ddaf0808e34dd732f2c4c", null ],
     [ "treatOrphan", "classDGtal_1_1LambdaMST3DEstimator.html#a9479697b311c0c426f9f5b856c7f46e6", null ],

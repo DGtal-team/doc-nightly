@@ -7,7 +7,7 @@ var structDGtal_1_1ParameterValue =
     [ "ParameterValue", "structDGtal_1_1ParameterValue.html#ab14c470454c94faa0a3a77378a28d8d2", null ],
     [ "ParameterValue", "structDGtal_1_1ParameterValue.html#aea2db99a31139bbf2cd487f62de6c710", null ],
     [ "as", "structDGtal_1_1ParameterValue.html#a28dde852b2f85b4dfa64e82d4239a1b5", null ],
-    [ "operator=", "structDGtal_1_1ParameterValue.html#aab9097125c6cd5d1a8b4ffe7f55442f8", null ],
+    [ "operator=", "structDGtal_1_1ParameterValue.html#a0e1573e65134e37a25abf7ef9b9d3405", null ],
     [ "selfDisplay", "structDGtal_1_1ParameterValue.html#a919b60ec2bdd4dfd9a1a8f8798de29db", null ],
     [ "myValue", "structDGtal_1_1ParameterValue.html#a541e2f8c0b93deecfac5b860c9c48cfd", null ]
 ];

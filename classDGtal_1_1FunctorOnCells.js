@@ -14,9 +14,9 @@ var classDGtal_1_1FunctorOnCells =
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1FunctorOnCells.html#a2512ccbae672d1cfcca3f8d1ae5efc9b", null ],
     [ "isValid", "classDGtal_1_1FunctorOnCells.html#ae800f69b3e5401da20a11348ebeb7cd0", null ],
     [ "operator()", "classDGtal_1_1FunctorOnCells.html#a66e4d6dfda3cb9d97d8d85d8137e2a8f", null ],
-    [ "operator=", "classDGtal_1_1FunctorOnCells.html#ad211cf255b96314ce51a34ce4829a6aa", null ],
+    [ "operator=", "classDGtal_1_1FunctorOnCells.html#a2ba109994300d537747b75165a709ae6", null ],
     [ "selfDisplay", "classDGtal_1_1FunctorOnCells.html#a3e4559ca23ba05121e45061d21be9e0f", null ],
-    [ "space", "classDGtal_1_1FunctorOnCells.html#a4a200cfe592ee38c25ac555ebf65e264", null ],
+    [ "space", "classDGtal_1_1FunctorOnCells.html#a4d55352d4787b2e8292b4cd990427414", null ],
     [ "f", "classDGtal_1_1FunctorOnCells.html#a71bca65e4acde0b95400c9d00104e669", null ],
     [ "myKSpace", "classDGtal_1_1FunctorOnCells.html#ab7ebecf93382b91760cb2f80b18b19b0", null ]
 ];

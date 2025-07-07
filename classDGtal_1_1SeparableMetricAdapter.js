@@ -16,7 +16,7 @@ var classDGtal_1_1SeparableMetricAdapter =
     [ "hiddenBy", "classDGtal_1_1SeparableMetricAdapter.html#ab217e59cfac3dec729f121b481b3792d", null ],
     [ "isValid", "classDGtal_1_1SeparableMetricAdapter.html#a6510c52a5b3e73684c256fd6969f72be", null ],
     [ "operator()", "classDGtal_1_1SeparableMetricAdapter.html#ac64853f9de348996ef9dc03f8f1786c4", null ],
-    [ "operator=", "classDGtal_1_1SeparableMetricAdapter.html#a24e88564a85e5251b96c8c7b02cb0994", null ],
+    [ "operator=", "classDGtal_1_1SeparableMetricAdapter.html#a7c6031d9d4c949481f2e8e187a4f53df", null ],
     [ "rawDistance", "classDGtal_1_1SeparableMetricAdapter.html#a080e58a57f3fd1ee014cadf4c2f7555e", null ],
     [ "selfDisplay", "classDGtal_1_1SeparableMetricAdapter.html#a84e9c9f23fb906bf1e1d26d3be321b14", null ],
     [ "myMetric", "classDGtal_1_1SeparableMetricAdapter.html#a35e2d63f4ee151ad59bf2f01c6f000f9", null ]

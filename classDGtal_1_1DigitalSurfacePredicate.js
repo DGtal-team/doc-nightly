@@ -11,9 +11,9 @@ var classDGtal_1_1DigitalSurfacePredicate =
     [ "buildPointSet", "classDGtal_1_1DigitalSurfacePredicate.html#ad718821f9370bf6af1bc765cb9cc9adf", null ],
     [ "isValid", "classDGtal_1_1DigitalSurfacePredicate.html#a34936e52f58479034ac2189a5c8eb1d5", null ],
     [ "operator()", "classDGtal_1_1DigitalSurfacePredicate.html#a13724122caaf0da8f6cf757b6a59a3f1", null ],
-    [ "operator=", "classDGtal_1_1DigitalSurfacePredicate.html#a8d49af8813e9d63fa2b007b6506efaec", null ],
+    [ "operator=", "classDGtal_1_1DigitalSurfacePredicate.html#ade6f94961a56770e7e3bc5a7f2726f7c", null ],
     [ "selfDisplay", "classDGtal_1_1DigitalSurfacePredicate.html#adfae4f896ff966babf51e2aae75c24f3", null ],
-    [ "space", "classDGtal_1_1DigitalSurfacePredicate.html#a7f45456086aeaf136896e539251017ff", null ],
+    [ "space", "classDGtal_1_1DigitalSurfacePredicate.html#ab8183a36b60d4db841f0282c66424784", null ],
     [ "myPointSet", "classDGtal_1_1DigitalSurfacePredicate.html#a39b33145606b2b345f6bd20441698b44", null ],
     [ "mySurface", "classDGtal_1_1DigitalSurfacePredicate.html#a4c07e402c70bc4b54d54b196ce82e459", null ]
 ];

@@ -13,7 +13,7 @@ var classDGtal_1_1OwningOrAliasingPtr =
     [ "isValid", "classDGtal_1_1OwningOrAliasingPtr.html#a1a0936fb6177084edbf4621069a051e7", null ],
     [ "operator*", "classDGtal_1_1OwningOrAliasingPtr.html#ab48d420b636cf26f839507e5a964dfb9", null ],
     [ "operator->", "classDGtal_1_1OwningOrAliasingPtr.html#a147c26a5e1e2c8fcf91f03672db9c220", null ],
-    [ "operator=", "classDGtal_1_1OwningOrAliasingPtr.html#a75b22778313902824192d5e51211cf36", null ],
+    [ "operator=", "classDGtal_1_1OwningOrAliasingPtr.html#a76019edbae10aa450c083bc624b60eab", null ],
     [ "selfDisplay", "classDGtal_1_1OwningOrAliasingPtr.html#ac22a95a8150e3115c1838027479865f8", null ],
     [ "myFlagIsOwning", "classDGtal_1_1OwningOrAliasingPtr.html#acb8817e729ea80248396dccd6dcb6953", null ],
     [ "myPtr", "classDGtal_1_1OwningOrAliasingPtr.html#ab0129fbf6ff50f1fe2e18bd97d2ae53b", null ]

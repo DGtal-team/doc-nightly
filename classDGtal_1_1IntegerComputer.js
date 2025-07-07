@@ -45,7 +45,7 @@ var classDGtal_1_1IntegerComputer =
     [ "max", "classDGtal_1_1IntegerComputer.html#a191cadc0723e7766f5947a3d42df9192", null ],
     [ "min", "classDGtal_1_1IntegerComputer.html#a95ad011f9464e84082f6118b78d62b8b", null ],
     [ "min", "classDGtal_1_1IntegerComputer.html#a45a04441f3b27498efbf1af9c521ab5d", null ],
-    [ "operator=", "classDGtal_1_1IntegerComputer.html#a6741b7274cfec7ac733baeefd936f093", null ],
+    [ "operator=", "classDGtal_1_1IntegerComputer.html#afeafecbcb116911d5c25094a46662a19", null ],
     [ "reduce", "classDGtal_1_1IntegerComputer.html#a6206f64800b3e27c8ac541389fde7f96", null ],
     [ "reduce", "classDGtal_1_1IntegerComputer.html#a0b1baefefe6f0b12d942c287da8a04b2", null ],
     [ "selfDisplay", "classDGtal_1_1IntegerComputer.html#aaad7fe8696b7cf32c1bdaa2e6630544b", null ],

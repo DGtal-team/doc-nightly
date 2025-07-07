@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['base_20concepts_17347',['Base Concepts',['../packageBaseConcepts.html',1,'packageBase']]],
-  ['base_20package_17348',['Base package',['../packageBase.html',1,'index']]],
-  ['basic_20graph_20definitions_20and_20concepts_17349',['Basic graph definitions and concepts',['../moduleGraphDefinitions.html',1,'packageGraph']]],
-  ['bibliography_17350',['Bibliography',['../citelist.html',1,'']]],
-  ['board2d_3a_20a_20stream_20mechanism_20for_20displaying_202d_20digital_20objects_17351',['Board2D: a stream mechanism for displaying 2D digital objects',['../moduleBoard2D.html',1,'packageIO']]],
-  ['building_20dgtal_17352',['Building DGtal',['../moduleBuildDGtal.html',1,'packageIntroduction']]]
+  ['3d_0',['Integral invariant curvature estimator 2D/3D',['../moduleIntegralInvariant.html',1,'packageGeometry']]],
+  ['3d_20dgtal_20objects_1',['Display3D: a stream mechanism for displaying 3D DGtal objects',['../moduleDisplay3D.html',1,'packageIO']]],
+  ['3d_20parametric_20curves_2',['Digitization of 3D parametric curves',['../moduleParametricCurves.html',1,'packageGeometry']]],
+  ['3d_20volume_20by_20the_20fast_20marching_20method_3',['Tutorial: Local morphological opening of a 3d volume by the Fast Marching Method',['../tutoFMMErosion.html',1,'packageTutorials']]],
+  ['3d_20volume_20viewer_20in_20less_20than_2050_20lines_4',['Tutorial &quot;Image -&gt; Region -&gt; Volume -&gt;  3dVolViewer : a simple 3D volume viewer in less than 50 lines&quot;',['../tutoImageGridVolume3dVolViewer.html',1,'packageTutorials']]],
+  ['3dvolviewer_20_3a_20a_20simple_203d_20volume_20viewer_20in_20less_20than_2050_20lines_5',['Tutorial &quot;Image -&gt; Region -&gt; Volume -&gt;  3dVolViewer : a simple 3D volume viewer in less than 50 lines&quot;',['../tutoImageGridVolume3dVolViewer.html',1,'packageTutorials']]]
 ];

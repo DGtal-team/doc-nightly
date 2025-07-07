@@ -6,6 +6,6 @@ var classDGtal_1_1functors_1_1SCellToPoint =
     [ "SCellToPoint", "classDGtal_1_1functors_1_1SCellToPoint.html#afcedef51ef5f9416b7faf72d44ebf653", null ],
     [ "SCellToPoint", "classDGtal_1_1functors_1_1SCellToPoint.html#ac198d2daf72df6a1cde9eaafd3437110", null ],
     [ "operator()", "classDGtal_1_1functors_1_1SCellToPoint.html#aec12da9a5e79a3f16e89c86ed160b306", null ],
-    [ "operator=", "classDGtal_1_1functors_1_1SCellToPoint.html#a722d75b5a251d000dec3d73e90d9d1b3", null ],
+    [ "operator=", "classDGtal_1_1functors_1_1SCellToPoint.html#adf8fd605d46bde9002366d94e42e64be", null ],
     [ "myK", "classDGtal_1_1functors_1_1SCellToPoint.html#a788837ee071e886952c00157fcc1ea9c", null ]
 ];

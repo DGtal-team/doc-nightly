@@ -10,7 +10,7 @@ var structLibBoard_1_1Point =
     [ "operator-", "structLibBoard_1_1Point.html#a1a46a023d9a0efb45326d77e999ad037", null ],
     [ "operator-=", "structLibBoard_1_1Point.html#a08544e1691a21dd31ebaee4ea9adaad2", null ],
     [ "operator/=", "structLibBoard_1_1Point.html#a3f7d9c5987ad8e8981b3df8c0081ad85", null ],
-    [ "operator=", "structLibBoard_1_1Point.html#ac565a8422ad11d12e2a4102c7c314251", null ],
+    [ "operator=", "structLibBoard_1_1Point.html#ad0dd05b5db108352b8c94f0625dfa311", null ],
     [ "rotate", "structLibBoard_1_1Point.html#aa5544eab734bbadf99eae715011c4afd", null ],
     [ "rotate", "structLibBoard_1_1Point.html#aaf22508fea142493915e9b2c2a567422", null ],
     [ "rotated", "structLibBoard_1_1Point.html#a91c24307373125f4921157186a3dd7ed", null ],

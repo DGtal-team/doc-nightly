@@ -5,5 +5,5 @@ var structDGtal_1_1ITKIOTrait =
     [ "ValueOut", "structDGtal_1_1ITKIOTrait.html#af09cba1f959a3f2dea874ea883821bfe", null ],
     [ "ITKIOTrait", "structDGtal_1_1ITKIOTrait.html#a3b204675363fed184cdb27cf5390dcbe", null ],
     [ "ITKIOTrait", "structDGtal_1_1ITKIOTrait.html#ad16cb1c6e3c406992a4906e1dc1a323f", null ],
-    [ "operator=", "structDGtal_1_1ITKIOTrait.html#a3b24bbc660347de6f26baf7d1fd70381", null ]
+    [ "operator=", "structDGtal_1_1ITKIOTrait.html#a8f99880daf3f3c28e72f80dae1601e5b", null ]
 ];

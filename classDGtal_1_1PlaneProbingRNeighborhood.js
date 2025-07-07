@@ -16,7 +16,7 @@ var classDGtal_1_1PlaneProbingRNeighborhood =
     [ "closestPointOnRayLogWithPredicate", "classDGtal_1_1PlaneProbingRNeighborhood.html#aac56c0469c6dadd1d543d5a05480fa4e", null ],
     [ "hexagonState", "classDGtal_1_1PlaneProbingRNeighborhood.html#afb25c0852649162fe1a435ae059b4ad7", null ],
     [ "isValid", "classDGtal_1_1PlaneProbingRNeighborhood.html#a6af7eca02dcd1edc42e96fd104821ad5", null ],
-    [ "operator=", "classDGtal_1_1PlaneProbingRNeighborhood.html#a7c7167eef39c5262ab0006fcee1d78da", null ],
-    [ "operator=", "classDGtal_1_1PlaneProbingRNeighborhood.html#a4d1021076675e382452c2e40d95bc914", null ],
+    [ "operator=", "classDGtal_1_1PlaneProbingRNeighborhood.html#af092982d1f3edfd0b48ecf936ed96240", null ],
+    [ "operator=", "classDGtal_1_1PlaneProbingRNeighborhood.html#a167aad90992e78ab5c304ce9b10a801f", null ],
     [ "selfDisplay", "classDGtal_1_1PlaneProbingRNeighborhood.html#a6b9fd89b89cbb3dcb1d5c305012652a6", null ]
 ];

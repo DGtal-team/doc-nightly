@@ -11,5 +11,5 @@ var structDGtal_1_1CompareLocalEstimators =
     [ "compare", "structDGtal_1_1CompareLocalEstimators.html#a0c3e8dc7715f5c6e1c5ad6fb43828ab9", null ],
     [ "compareVectors", "structDGtal_1_1CompareLocalEstimators.html#a442a0f25ef3f8dd43ccc17e6404359dd", null ],
     [ "compareVectors", "structDGtal_1_1CompareLocalEstimators.html#a186f35e14cbd96b4bda52c59cb01c22f", null ],
-    [ "operator=", "structDGtal_1_1CompareLocalEstimators.html#aa5dfd565e7b086a08ae61b9714943571", null ]
+    [ "operator=", "structDGtal_1_1CompareLocalEstimators.html#a702ad59f1c2f18c33c04caa1a5ef4147", null ]
 ];

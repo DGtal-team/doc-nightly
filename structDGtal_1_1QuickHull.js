@@ -34,7 +34,6 @@ var structDGtal_1_1QuickHull =
     [ "checkFacets", "structDGtal_1_1QuickHull.html#a72347b22bf182c918511f6e37daa8f2e", null ],
     [ "checkHull", "structDGtal_1_1QuickHull.html#abc08912d158c1350d6291ae10cfececb", null ],
     [ "cleanFacets", "structDGtal_1_1QuickHull.html#aff3839ba4fef237f77974be1545bb320", null ],
-    [ "cleanInfiniteFacets", "structDGtal_1_1QuickHull.html#a5f9f5e1dc5ff175e6520457c2fe435c5", null ],
     [ "clear", "structDGtal_1_1QuickHull.html#a9034d0c07272d549d147b4f311d60a75", null ],
     [ "computeConvexHull", "structDGtal_1_1QuickHull.html#ae2f105ab38ab215d790773737f45cf0d", null ],
     [ "computeFacets", "structDGtal_1_1QuickHull.html#a039cd5f9040c5d8b3bdccbe3bde9f703", null ],

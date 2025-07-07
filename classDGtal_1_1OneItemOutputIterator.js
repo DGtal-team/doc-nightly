@@ -12,9 +12,9 @@ var classDGtal_1_1OneItemOutputIterator =
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1OneItemOutputIterator.html#ac1443d503eb924674c3120e5f08e29bf", null ],
     [ "get", "classDGtal_1_1OneItemOutputIterator.html#ac437859e31ba97f299cb067ef3fa1ce9", null ],
     [ "isValid", "classDGtal_1_1OneItemOutputIterator.html#aaa689f0b618a89c85dc34375118f5388", null ],
-    [ "operator*", "classDGtal_1_1OneItemOutputIterator.html#a5dc7a04d328385062d8c3d920f02936c", null ],
-    [ "operator++", "classDGtal_1_1OneItemOutputIterator.html#af9ac6693a08938a89fa3dff4b36766c0", null ],
+    [ "operator*", "classDGtal_1_1OneItemOutputIterator.html#a9f6831232557989273f696f7d3ac47c4", null ],
+    [ "operator++", "classDGtal_1_1OneItemOutputIterator.html#ac461e6429a7d1b345d18a6dd19f18c3c", null ],
     [ "operator++", "classDGtal_1_1OneItemOutputIterator.html#a18547932bdf7e2da7b10700c99cdb0c6", null ],
-    [ "operator=", "classDGtal_1_1OneItemOutputIterator.html#a4529cba73ff425b4af63d9fce691fc0e", null ],
+    [ "operator=", "classDGtal_1_1OneItemOutputIterator.html#a51162fdfc160c6bd20ccef8c9ce30c7c", null ],
     [ "myItemPtr", "classDGtal_1_1OneItemOutputIterator.html#ac2a63ced1c3e516c515c601567a6290d", null ]
 ];

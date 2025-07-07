@@ -14,7 +14,7 @@ var classDGtal_1_1functors_1_1BoundaryPredicate =
     [ "BOOST_STATIC_ASSERT", "classDGtal_1_1functors_1_1BoundaryPredicate.html#a2aab373123edd34f77156f8d9ef977e0", null ],
     [ "isValid", "classDGtal_1_1functors_1_1BoundaryPredicate.html#aff08ba86219b3be5635b835c6d372aa0", null ],
     [ "operator()", "classDGtal_1_1functors_1_1BoundaryPredicate.html#ae4a2bb594cd77e85eab7a4f3dcca0b97", null ],
-    [ "operator=", "classDGtal_1_1functors_1_1BoundaryPredicate.html#a1c7269c386acdbe47c4f521ad8a8f62a", null ],
+    [ "operator=", "classDGtal_1_1functors_1_1BoundaryPredicate.html#a8c33122d1366b916518e57763abc027a", null ],
     [ "selfDisplay", "classDGtal_1_1functors_1_1BoundaryPredicate.html#a073d0f2a1adae17a3918343c6f98932a", null ],
     [ "myLabel1", "classDGtal_1_1functors_1_1BoundaryPredicate.html#ac8d7fc518a1229aa491faf0be72fda1e", null ],
     [ "myPtrImage", "classDGtal_1_1functors_1_1BoundaryPredicate.html#a0c444c95b50baef444813d7a6a3e2a46", null ],

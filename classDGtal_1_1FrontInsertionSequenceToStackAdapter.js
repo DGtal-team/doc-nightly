@@ -13,7 +13,7 @@ var classDGtal_1_1FrontInsertionSequenceToStackAdapter =
     [ "push", "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#acc47fe3726e89c5441a8e89cecbab626", null ],
     [ "selfDisplay", "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#ae8f9b497ac6666fa4b4e32d25b890c14", null ],
     [ "size", "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#a6c5e6f7e5b92caccc5f477f8a73eb2e4", null ],
-    [ "top", "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#a287706111ca02693f85f40dd49bf8a3f", null ],
-    [ "top", "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#af7f4a29e1834105772898668ed1ae118", null ],
+    [ "top", "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#ae256d0cda0f7dc38e835d11262c4a72d", null ],
+    [ "top", "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#ae6fd692a04c2abe366d96969c3660c8d", null ],
     [ "myContainerPtr", "classDGtal_1_1FrontInsertionSequenceToStackAdapter.html#ae568857c1a41d7e6933a03d482c3f1e9", null ]
 ];

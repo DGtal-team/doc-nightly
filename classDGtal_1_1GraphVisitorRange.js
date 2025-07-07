@@ -22,7 +22,7 @@ var classDGtal_1_1GraphVisitorRange =
     [ "end", "classDGtal_1_1GraphVisitorRange.html#adaf1bc56707c94011b7bc030abffbb1d", null ],
     [ "endNode", "classDGtal_1_1GraphVisitorRange.html#a4b97dd27229ae3af58245b24313b4323", null ],
     [ "isValid", "classDGtal_1_1GraphVisitorRange.html#a780edf8d801ced2c878cfe1b8de63c74", null ],
-    [ "operator=", "classDGtal_1_1GraphVisitorRange.html#a065229f53d354f02ebdb094103d7828a", null ],
+    [ "operator=", "classDGtal_1_1GraphVisitorRange.html#a1a4ec55e99bc7f4b983f6d5be74e3f4b", null ],
     [ "selfDisplay", "classDGtal_1_1GraphVisitorRange.html#a7818476ebd35538fee5d9b80384fc9f9", null ],
     [ "myVisitor", "classDGtal_1_1GraphVisitorRange.html#a2ee7f9fc31c5fb0ea0ae13aeeff0dd86", null ]
 ];

@@ -6,6 +6,6 @@ var classDGtal_1_1functors_1_1SCellToOuterPoint =
     [ "SCellToOuterPoint", "classDGtal_1_1functors_1_1SCellToOuterPoint.html#afeb5956e863012fd910fcf918897bff6", null ],
     [ "SCellToOuterPoint", "classDGtal_1_1functors_1_1SCellToOuterPoint.html#a0d9704528685489374faac13ec7dae4a", null ],
     [ "operator()", "classDGtal_1_1functors_1_1SCellToOuterPoint.html#a7490cbc47f49dd9299dbceb04da0c112", null ],
-    [ "operator=", "classDGtal_1_1functors_1_1SCellToOuterPoint.html#a95e709e4bd619ba23e0f159ec5b60fdd", null ],
+    [ "operator=", "classDGtal_1_1functors_1_1SCellToOuterPoint.html#ad503cc8a984353f444c222dc58be99e1", null ],
     [ "myK", "classDGtal_1_1functors_1_1SCellToOuterPoint.html#aee201a7db8380efc3c24d84b740d6904", null ]
 ];

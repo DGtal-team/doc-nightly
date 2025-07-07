@@ -31,7 +31,7 @@ var classDGtal_1_1Histogram =
     [ "init", "classDGtal_1_1Histogram.html#a673dce1534377aebac487b016c84017f", null ],
     [ "isValid", "classDGtal_1_1Histogram.html#a590b9a2d30120fcd50b89a7c5c5292bb", null ],
     [ "nb", "classDGtal_1_1Histogram.html#a6b6d1366b0ce60d4ccd146c1bcbe1950", null ],
-    [ "operator=", "classDGtal_1_1Histogram.html#ab75051a4edcd5b8af5b4428e2b3a8c10", null ],
+    [ "operator=", "classDGtal_1_1Histogram.html#a4aa5103b155ab48b962a83835649b6ee", null ],
     [ "pdf", "classDGtal_1_1Histogram.html#a3b7d04e20b7f5169353a5c14eff196de", null ],
     [ "prepare", "classDGtal_1_1Histogram.html#a5471028122773a3a2a2ee3b3d62f72c2", null ],
     [ "selfDisplay", "classDGtal_1_1Histogram.html#a4477a764b7d7a284e575528047c7bdd7", null ],

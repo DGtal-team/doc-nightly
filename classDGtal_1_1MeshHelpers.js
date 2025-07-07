@@ -7,6 +7,7 @@ var classDGtal_1_1MeshHelpers =
     [ "exportMTLNewMaterial", "classDGtal_1_1MeshHelpers.html#a4b8c658989518e6812faff96da63b642", null ],
     [ "exportOBJ", "classDGtal_1_1MeshHelpers.html#a9f80b8bc3ed2b3fcb02b5a222b8614fb", null ],
     [ "exportOBJ", "classDGtal_1_1MeshHelpers.html#a039386aa1c2b460e0a33ff6d15a6f53e", null ],
+    [ "exportOBJwithFaceNormalAndColor", "classDGtal_1_1MeshHelpers.html#a62734d73e38903c3e5db7f9e22026842", null ],
     [ "exportOBJwithFaceNormalAndColor", "classDGtal_1_1MeshHelpers.html#aa687e35fc678eeed1d39c816c8d43880", null ],
     [ "mesh2PolygonalSurface", "classDGtal_1_1MeshHelpers.html#ae75be28e0deaa72b405cc7ccbb6618a7", null ],
     [ "mesh2TriangulatedSurface", "classDGtal_1_1MeshHelpers.html#a134812dbf9957a26ad4021da2511f2b3", null ],

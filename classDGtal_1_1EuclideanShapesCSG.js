@@ -17,7 +17,7 @@ var classDGtal_1_1EuclideanShapesCSG =
     [ "intersection", "classDGtal_1_1EuclideanShapesCSG.html#a318c10a31dc871c8de105ffaca8d083d", null ],
     [ "isValid", "classDGtal_1_1EuclideanShapesCSG.html#ac1c1f0827668a56b4a61a149055a20ab", null ],
     [ "minus", "classDGtal_1_1EuclideanShapesCSG.html#af53de9304901eb74314f76b161f27264", null ],
-    [ "operator=", "classDGtal_1_1EuclideanShapesCSG.html#ae4bbc287f0a3294ded67f40c0dfd9efa", null ],
+    [ "operator=", "classDGtal_1_1EuclideanShapesCSG.html#a7d8512bd898bc43103809705a2d88f7d", null ],
     [ "orientation", "classDGtal_1_1EuclideanShapesCSG.html#a218d1c880edfa0362ae576de3987ac75", null ],
     [ "plus", "classDGtal_1_1EuclideanShapesCSG.html#a75049e8b0e1b7669e5b3ec63b956da13", null ],
     [ "selfDisplay", "classDGtal_1_1EuclideanShapesCSG.html#a1936e33764adcc04f1b304583f5dc830", null ],

@@ -12,14 +12,14 @@ var classDGtal_1_1KForm =
     [ "BOOST_STATIC_ASSERT", "classDGtal_1_1KForm.html#af564dc8058964859fc58b302be2908ff", null ],
     [ "className", "classDGtal_1_1KForm.html#a909336a4d4496d03590906557391d7f8", null ],
     [ "clear", "classDGtal_1_1KForm.html#a06ab45d87638db52a30af92b35b56e50", null ],
-    [ "dirac", "classDGtal_1_1KForm.html#a32674137b0e6ae92513b977c19933eee", null ],
+    [ "dirac", "classDGtal_1_1KForm.html#aca56039bd6e61b578809e78831c60c8e", null ],
     [ "getSCell", "classDGtal_1_1KForm.html#acbbda0e8b98473c552b3dd12aa6a8853", null ],
     [ "isValid", "classDGtal_1_1KForm.html#a337e50e15f5cf10c9b1923de4f8e31c1", null ],
     [ "length", "classDGtal_1_1KForm.html#a1cc70af046b3d7be85f8f49121a56d39", null ],
-    [ "ones", "classDGtal_1_1KForm.html#a0f34f82e9a9dbc012dfb727b552806a6", null ],
-    [ "operator=", "classDGtal_1_1KForm.html#a0ead8d179cfcfb7d47e38c078e905112", null ],
+    [ "ones", "classDGtal_1_1KForm.html#ae9a6443b8f66a8d6c31a9fa661dcbc64", null ],
+    [ "operator=", "classDGtal_1_1KForm.html#a455a01fefb50cb3d12285eb3e8d9de0a", null ],
     [ "selfDisplay", "classDGtal_1_1KForm.html#a6c902f187e8f165528574568113d3142", null ],
-    [ "zeros", "classDGtal_1_1KForm.html#afbd7ecc8d2c3eb5ec5d0f7c187c33ba0", null ],
+    [ "zeros", "classDGtal_1_1KForm.html#a2a6e56d7576e64b0acbb193d33d98b05", null ],
     [ "myCalculus", "classDGtal_1_1KForm.html#a096d2d690c68fdb87dffb3ca9314e7d6", null ],
     [ "myContainer", "classDGtal_1_1KForm.html#a19e859f462f1d851550465b7fcc2c68d", null ]
 ];

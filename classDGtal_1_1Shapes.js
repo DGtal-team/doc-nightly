@@ -19,7 +19,7 @@ var classDGtal_1_1Shapes =
     [ "euclideanShaper", "classDGtal_1_1Shapes.html#a4f55514e13176de559ba0f7b85df6949", null ],
     [ "isValid", "classDGtal_1_1Shapes.html#afe9ed4c6e99562772cc794b89074ec95", null ],
     [ "makeSetFromPointPredicate", "classDGtal_1_1Shapes.html#a35ca19a113c3581b536f39d182e60dc7", null ],
-    [ "operator=", "classDGtal_1_1Shapes.html#a02c4fc8614c2e256b6c25fa96ae63504", null ],
+    [ "operator=", "classDGtal_1_1Shapes.html#ad633710754ee975b5622a9ebf5d8fdd6", null ],
     [ "removeNorm1Ball", "classDGtal_1_1Shapes.html#a3b2b993c754eb54f216661f7e5cfe808", null ],
     [ "removeNorm2Ball", "classDGtal_1_1Shapes.html#aeb859f6edab357ceca4917118711dd52", null ],
     [ "selfDisplay", "classDGtal_1_1Shapes.html#a92b16e7cda17dbf159190a2c9a185f1e", null ]

@@ -14,7 +14,7 @@ var classDGtal_1_1functors_1_1IINormalDirectionFunctor =
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1functors_1_1IINormalDirectionFunctor.html#a8b8faf8c0638a52e7877f7a1ceba57b5", null ],
     [ "init", "classDGtal_1_1functors_1_1IINormalDirectionFunctor.html#acba020019624f3a98737de13fb894323", null ],
     [ "operator()", "classDGtal_1_1functors_1_1IINormalDirectionFunctor.html#a55743334df31d59e684cd130055cbebf", null ],
-    [ "operator=", "classDGtal_1_1functors_1_1IINormalDirectionFunctor.html#a1683e20ddecf95508b96b746f51e30aa", null ],
+    [ "operator=", "classDGtal_1_1functors_1_1IINormalDirectionFunctor.html#a2b9ad41140222cccfad97f90217fd242", null ],
     [ "eigenValues", "classDGtal_1_1functors_1_1IINormalDirectionFunctor.html#a56e4116808898d38f271cb38e45bc2fd", null ],
     [ "eigenVectors", "classDGtal_1_1functors_1_1IINormalDirectionFunctor.html#aae4d2db75909f62fbc340afc606a56b2", null ]
 ];

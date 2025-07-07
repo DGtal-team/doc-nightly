@@ -18,9 +18,9 @@ var structDGtal_1_1CanonicDigitalSurfaceEmbedder =
     [ "embed", "structDGtal_1_1CanonicDigitalSurfaceEmbedder.html#ade4f542d7e5ae688206e795cd6894ffb", null ],
     [ "isValid", "structDGtal_1_1CanonicDigitalSurfaceEmbedder.html#ada4d1f839222191fb32e2555a5b08bde", null ],
     [ "operator()", "structDGtal_1_1CanonicDigitalSurfaceEmbedder.html#a64a588ad2eead2f20ab24a62f5385ada", null ],
-    [ "operator=", "structDGtal_1_1CanonicDigitalSurfaceEmbedder.html#a4a15e32e9e15c4eb6e3412ad9f9b9749", null ],
+    [ "operator=", "structDGtal_1_1CanonicDigitalSurfaceEmbedder.html#a2f436b527e15a8eab598d24b831fd83f", null ],
     [ "selfDisplay", "structDGtal_1_1CanonicDigitalSurfaceEmbedder.html#a60250b57f9b286e9e4dd7a24b887b5f3", null ],
-    [ "space", "structDGtal_1_1CanonicDigitalSurfaceEmbedder.html#ac3b8472452b58248b3d3e83a6e94afd1", null ],
-    [ "surface", "structDGtal_1_1CanonicDigitalSurfaceEmbedder.html#a440f3c63bc8f4a0cdd068a3706b33e55", null ],
+    [ "space", "structDGtal_1_1CanonicDigitalSurfaceEmbedder.html#a9e0490e5b5a83ca4d15a9824f81f9ed0", null ],
+    [ "surface", "structDGtal_1_1CanonicDigitalSurfaceEmbedder.html#ae5bedb50f9b56b3cc582251fa1dccfd2", null ],
     [ "mySurface", "structDGtal_1_1CanonicDigitalSurfaceEmbedder.html#a67a06ea975f7d98ed227fd666afe6a90", null ]
 ];

@@ -10,7 +10,7 @@ var classDGtal_1_1PreCellDirectionIterator =
     [ "operator!=", "classDGtal_1_1PreCellDirectionIterator.html#a8a00661fe73c0d7444f976fde447cf82", null ],
     [ "operator!=", "classDGtal_1_1PreCellDirectionIterator.html#aaf3aab1d0cc0eb0e2e0d3bc231c3e601", null ],
     [ "operator*", "classDGtal_1_1PreCellDirectionIterator.html#af87aefedc9c630f0c84c8d56a78128c8", null ],
-    [ "operator++", "classDGtal_1_1PreCellDirectionIterator.html#afad816a1650f43c802867c1aabe57e88", null ],
+    [ "operator++", "classDGtal_1_1PreCellDirectionIterator.html#af48270fc64e9e10ea67ed7a53c4d51b7", null ],
     [ "operator==", "classDGtal_1_1PreCellDirectionIterator.html#afd6c027c74b09f53e5a58c3069b6d4d4", null ],
     [ "myCell", "classDGtal_1_1PreCellDirectionIterator.html#a5e3889bf939eea76d2af12327b12bcca", null ],
     [ "myDir", "classDGtal_1_1PreCellDirectionIterator.html#a01f6d545f0681a71f245665233109da0", null ],

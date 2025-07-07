@@ -15,10 +15,10 @@ var structDGtal_1_1SignedKhalimskyPreCell =
     [ "className", "structDGtal_1_1SignedKhalimskyPreCell.html#a199d024354d216705d69a9369fe62ee0", null ],
     [ "operator!=", "structDGtal_1_1SignedKhalimskyPreCell.html#a032f7d203ec6abaed13a6e98943ea3ce", null ],
     [ "operator<", "structDGtal_1_1SignedKhalimskyPreCell.html#a57f28cd8b5c9e3d468ce038c806794db", null ],
-    [ "operator=", "structDGtal_1_1SignedKhalimskyPreCell.html#ab076afc6a4d1bde2a9c391c52e6dbfe2", null ],
-    [ "operator=", "structDGtal_1_1SignedKhalimskyPreCell.html#aea64183d89d022ae1574abc4d100bf8f", null ],
+    [ "operator=", "structDGtal_1_1SignedKhalimskyPreCell.html#a97aa18e2395cd17b48a94dfa80f6698a", null ],
+    [ "operator=", "structDGtal_1_1SignedKhalimskyPreCell.html#a5c7b21a101c5c30ce00b582a0f5137e7", null ],
     [ "operator==", "structDGtal_1_1SignedKhalimskyPreCell.html#adc54fb903b51c27243492f81381664f3", null ],
-    [ "preCell", "structDGtal_1_1SignedKhalimskyPreCell.html#ad7cfcafcbe611a37c79ec0d85892c4ad", null ],
+    [ "preCell", "structDGtal_1_1SignedKhalimskyPreCell.html#a8a4c04d2816c933258f36f3164b3a199", null ],
     [ "coordinates", "structDGtal_1_1SignedKhalimskyPreCell.html#a44b496e8836dd4f30cca5ea18537d984", null ],
     [ "positive", "structDGtal_1_1SignedKhalimskyPreCell.html#a3e6e40bc04f6355781e55ddb328a6f17", null ]
 ];

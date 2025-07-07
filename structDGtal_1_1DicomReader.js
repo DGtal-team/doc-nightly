@@ -11,6 +11,6 @@ var structDGtal_1_1DicomReader =
     [ "BOOST_STATIC_ASSERT", "structDGtal_1_1DicomReader.html#a52a91e5c14e550e8e790834082d3b098", null ],
     [ "importDicom", "structDGtal_1_1DicomReader.html#ac2e1b9c3bc5356e13b0b7114793ffce8", null ],
     [ "importDicomFiles", "structDGtal_1_1DicomReader.html#a8c77ab42821f474b74e3377b0e60619f", null ],
-    [ "importDicomFiles_", "structDGtal_1_1DicomReader.html#a0db1c133d1282235167985ccc3af11f7", null ],
+    [ "importDicomFiles_", "structDGtal_1_1DicomReader.html#a84ed7de18487fc053630d62f35a27242", null ],
     [ "importDicomSeries", "structDGtal_1_1DicomReader.html#a7e1e6f9d9aa4be2fbbc8feb47789ef05", null ]
 ];

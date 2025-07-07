@@ -18,10 +18,10 @@ var structDGtal_1_1KhalimskyCell =
     [ "operator PreCell const &", "structDGtal_1_1KhalimskyCell.html#a3ffd7428549486148e452b8ea5b11c7a", null ],
     [ "operator!=", "structDGtal_1_1KhalimskyCell.html#a0766c87fefc2e747144704f6477a7f06", null ],
     [ "operator<", "structDGtal_1_1KhalimskyCell.html#a505e54b21020e06fad6267450cbe067b", null ],
-    [ "operator=", "structDGtal_1_1KhalimskyCell.html#a6d591264e604d0d45fa6448ce396a13b", null ],
-    [ "operator=", "structDGtal_1_1KhalimskyCell.html#a1b249d566e5f96978e129738231a3b5a", null ],
+    [ "operator=", "structDGtal_1_1KhalimskyCell.html#a22ae92485b515cb0ee877caac4408145", null ],
+    [ "operator=", "structDGtal_1_1KhalimskyCell.html#a54715a7ade8d9a225964ce61ada5395a", null ],
     [ "operator==", "structDGtal_1_1KhalimskyCell.html#ab965ae545b24e8ba3623205caeda37bf", null ],
-    [ "preCell", "structDGtal_1_1KhalimskyCell.html#a952594a747cd132ddca90495b5b54380", null ],
+    [ "preCell", "structDGtal_1_1KhalimskyCell.html#ae774e18e1704cbd85e7604058d1f9ae2", null ],
     [ "KhalimskySpaceND< dim, TInteger >", "structDGtal_1_1KhalimskyCell.html#aed9aca39a9dd6193aca3355a3e3ded43", null ],
     [ "KhalimskySpaceNDHelper< CellularGridSpace >", "structDGtal_1_1KhalimskyCell.html#ab672477d9fe2bf82b05f149d75eafd32", null ],
     [ "myPreCell", "structDGtal_1_1KhalimskyCell.html#a4d454644143bbbb8f86f965f20d96b76", null ]

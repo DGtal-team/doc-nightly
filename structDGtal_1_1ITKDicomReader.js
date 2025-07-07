@@ -7,6 +7,6 @@ var structDGtal_1_1ITKDicomReader =
     [ "ValueOut", "structDGtal_1_1ITKDicomReader.html#ad30d3caf4a2a84ea47cb7d652f952fa4", null ],
     [ "BOOST_CONCEPT_ASSERT", "structDGtal_1_1ITKDicomReader.html#a6f412aec2e688f989f0da191e586a33d", null ],
     [ "importDICOM", "structDGtal_1_1ITKDicomReader.html#a6fb001cd248364d1f6115aa4ae8debb3", null ],
-    [ "importDicomFiles", "structDGtal_1_1ITKDicomReader.html#a2ebdef370827a84f40d83132d0551d44", null ],
+    [ "importDicomFiles", "structDGtal_1_1ITKDicomReader.html#a3071b5b089fbceb0805bd88a8779ce10", null ],
     [ "readDGtalImageFromITKtypes", "structDGtal_1_1ITKDicomReader.html#a20aa0c10686af91992961fa5de5b7c7a", null ]
 ];

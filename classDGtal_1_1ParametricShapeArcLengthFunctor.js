@@ -8,6 +8,6 @@ var classDGtal_1_1ParametricShapeArcLengthFunctor =
     [ "~ParametricShapeArcLengthFunctor", "classDGtal_1_1ParametricShapeArcLengthFunctor.html#ae60aaa17748ca4e167968adbab5470eb", null ],
     [ "operator()", "classDGtal_1_1ParametricShapeArcLengthFunctor.html#a291e45ac6caa5deff020d8e46ce662a4", null ],
     [ "operator()", "classDGtal_1_1ParametricShapeArcLengthFunctor.html#ad2b09325694f8f2e90d23c6a5236d81c", null ],
-    [ "operator=", "classDGtal_1_1ParametricShapeArcLengthFunctor.html#a6bb43f1359040ff088d5dac3065153eb", null ],
+    [ "operator=", "classDGtal_1_1ParametricShapeArcLengthFunctor.html#a65099666577f7004df0b586125c31848", null ],
     [ "myShape", "classDGtal_1_1ParametricShapeArcLengthFunctor.html#a96354ffe6fe506106aed88202ec9542a", null ]
 ];

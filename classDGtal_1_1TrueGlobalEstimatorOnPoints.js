@@ -12,6 +12,6 @@ var classDGtal_1_1TrueGlobalEstimatorOnPoints =
     [ "eval", "classDGtal_1_1TrueGlobalEstimatorOnPoints.html#a2283cf0fac1041aec73acc6e2274f4bc", null ],
     [ "eval", "classDGtal_1_1TrueGlobalEstimatorOnPoints.html#ab7a05fb686459c1d2876bc694a1bd5dc", null ],
     [ "isValid", "classDGtal_1_1TrueGlobalEstimatorOnPoints.html#ab3462168622976e125f3541e61c2b74c", null ],
-    [ "operator=", "classDGtal_1_1TrueGlobalEstimatorOnPoints.html#ae626f5a373b365d2bbdb6604575ee785", null ],
+    [ "operator=", "classDGtal_1_1TrueGlobalEstimatorOnPoints.html#a70fad54600a23ac0f480e1983de2a5ab", null ],
     [ "myFunctorPtr", "classDGtal_1_1TrueGlobalEstimatorOnPoints.html#a4f742b257a6d84e399b1af9e9f8580f9", null ]
 ];

@@ -13,7 +13,7 @@ var classDGtal_1_1SaturatedSegmentation =
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1SaturatedSegmentation.html#aa3182d826eaf7fbd6dfb91f8f4f534a2", null ],
     [ "end", "classDGtal_1_1SaturatedSegmentation.html#a37e739e7ea181adcd554f19bd9050809", null ],
     [ "isValid", "classDGtal_1_1SaturatedSegmentation.html#ad45e63c835170f7ad3c285783019b77e", null ],
-    [ "operator=", "classDGtal_1_1SaturatedSegmentation.html#a239b9dfea50a7e23afc68c43e771dab7", null ],
+    [ "operator=", "classDGtal_1_1SaturatedSegmentation.html#a196e6394c40617cd6f143afb82cf9f32", null ],
     [ "selfDisplay", "classDGtal_1_1SaturatedSegmentation.html#a72f2085e01e4de596dd40ec81b1b9349", null ],
     [ "setMode", "classDGtal_1_1SaturatedSegmentation.html#a785c207d84e1e4f1639700c4ed1e7396", null ],
     [ "setSubRange", "classDGtal_1_1SaturatedSegmentation.html#a8924e1791a02d79edf09ab23ede70c54", null ],

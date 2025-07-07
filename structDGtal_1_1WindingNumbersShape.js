@@ -8,7 +8,7 @@ var structDGtal_1_1WindingNumbersShape =
     [ "WindingNumbersShape", "structDGtal_1_1WindingNumbersShape.html#adad6ee7dcb56399cda72a4ee702fb310", null ],
     [ "WindingNumbersShape", "structDGtal_1_1WindingNumbersShape.html#abec5ee9571e98717d29cb79a90a0c95b", null ],
     [ "orientation", "structDGtal_1_1WindingNumbersShape.html#a415b8381ea0cfdf550c6e9bfadf731fd", null ],
-    [ "orientationBatch", "structDGtal_1_1WindingNumbersShape.html#a571cb82f93ccb9f7aea33df9316a7d57", null ],
+    [ "orientationBatch", "structDGtal_1_1WindingNumbersShape.html#abceef6db75d5266f4c762684a4ac82d0", null ],
     [ "rawWindingNumberBatch", "structDGtal_1_1WindingNumbersShape.html#adedc011d0780cf7c74364322607cf679", null ],
     [ "setPointAreas", "structDGtal_1_1WindingNumbersShape.html#a69e1cc2063c2c973b41c867f2849e355", null ],
     [ "myNormals", "structDGtal_1_1WindingNumbersShape.html#ae638fff01fc0ec328fe68364072f19b2", null ],

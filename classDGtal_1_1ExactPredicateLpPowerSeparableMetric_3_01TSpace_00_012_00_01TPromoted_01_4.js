@@ -15,7 +15,7 @@ var classDGtal_1_1ExactPredicateLpPowerSeparableMetric_3_01TSpace_00_012_00_01TP
     [ "exactDistanceRepresentation", "classDGtal_1_1ExactPredicateLpPowerSeparableMetric_3_01TSpace_00_012_00_01TPromoted_01_4.html#aa2fdf93c7b63b9d83f5d27dd6acc500e", null ],
     [ "hiddenByPower", "classDGtal_1_1ExactPredicateLpPowerSeparableMetric_3_01TSpace_00_012_00_01TPromoted_01_4.html#a675f7a25bb953c5e31d18fd1b118bb95", null ],
     [ "isValid", "classDGtal_1_1ExactPredicateLpPowerSeparableMetric_3_01TSpace_00_012_00_01TPromoted_01_4.html#aa78cf271dc6294f6f58a3bf39937876f", null ],
-    [ "operator=", "classDGtal_1_1ExactPredicateLpPowerSeparableMetric_3_01TSpace_00_012_00_01TPromoted_01_4.html#ae404fc3ec3d3cc0b50d4a286158e3751", null ],
+    [ "operator=", "classDGtal_1_1ExactPredicateLpPowerSeparableMetric_3_01TSpace_00_012_00_01TPromoted_01_4.html#ad4a3453835e4685212a3786a6631be8d", null ],
     [ "powerDistance", "classDGtal_1_1ExactPredicateLpPowerSeparableMetric_3_01TSpace_00_012_00_01TPromoted_01_4.html#a57845a3f7fa1ba9491f693704a0a0da1", null ],
     [ "selfDisplay", "classDGtal_1_1ExactPredicateLpPowerSeparableMetric_3_01TSpace_00_012_00_01TPromoted_01_4.html#a1bba9649e94bf53e8e45de51c17e180a", null ]
 ];

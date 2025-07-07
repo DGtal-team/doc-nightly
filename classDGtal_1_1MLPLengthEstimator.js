@@ -10,6 +10,6 @@ var classDGtal_1_1MLPLengthEstimator =
     [ "MLPLengthEstimator", "classDGtal_1_1MLPLengthEstimator.html#ab64b5891c5cb3b3c8bbbcba55cf45129", null ],
     [ "eval", "classDGtal_1_1MLPLengthEstimator.html#a36629b5bde71645faebf4fb3943a4088", null ],
     [ "isValid", "classDGtal_1_1MLPLengthEstimator.html#a878aef052dca950151df413ba989fecb", null ],
-    [ "operator=", "classDGtal_1_1MLPLengthEstimator.html#a016d33c06c87c33dd14696584ad06b0e", null ],
+    [ "operator=", "classDGtal_1_1MLPLengthEstimator.html#a3da74416bf651379f936ebca6f9231bc", null ],
     [ "selfDisplay", "classDGtal_1_1MLPLengthEstimator.html#a5db76e1f8c27bc9e4542a8feffc5d858", null ]
 ];

@@ -24,8 +24,8 @@ var classDGtal_1_1Clone =
     [ "operator CountedPtr< T >", "classDGtal_1_1Clone.html#a5ef22dcde860b090c986bfdd966c85b6", null ],
     [ "operator CowPtr< T >", "classDGtal_1_1Clone.html#ab73b0979f7a54636cd6fda56037021a8", null ],
     [ "operator T", "classDGtal_1_1Clone.html#a2585541767cb4f0dc2b1e18ff259ea12", null ],
-    [ "operator&", "classDGtal_1_1Clone.html#a77e9444048a7fb8bd55b7daa92a69900", null ],
-    [ "operator=", "classDGtal_1_1Clone.html#adcc91c7f2ad0490eac343cd3f38f6c44", null ],
+    [ "operator&", "classDGtal_1_1Clone.html#a2efdbbba319121ac195376a7b7b11856", null ],
+    [ "operator=", "classDGtal_1_1Clone.html#a0c9a9c40337b905f9175d0f09358416c", null ],
     [ "myParam", "classDGtal_1_1Clone.html#a3b14ca8ce8cd1717f5154315ee1a8bf8", null ],
     [ "myPtr", "classDGtal_1_1Clone.html#a7e59dd888aa9094c3cbc2d0c36a234c8", null ]
 ];

@@ -20,7 +20,7 @@ var classDGtal_1_1Profile =
     [ "init", "classDGtal_1_1Profile.html#a97686ae595090aa7b1f443de0aea27c1", null ],
     [ "init", "classDGtal_1_1Profile.html#ae9225cb118a08f372f5c329d014cf523", null ],
     [ "isValid", "classDGtal_1_1Profile.html#a70adc6cbaa29ba61a0eef60c24787056", null ],
-    [ "operator=", "classDGtal_1_1Profile.html#a5fc6f6769e820b9ab005046d04a13e2f", null ],
+    [ "operator=", "classDGtal_1_1Profile.html#ab6a233829f643051fd0e18435b3bd4e3", null ],
     [ "selfDisplay", "classDGtal_1_1Profile.html#abaa3c4cbcdac3be0d35df4f1b8f4a5c5", null ],
     [ "setType", "classDGtal_1_1Profile.html#afdde2a12eb820dc183878da89f42cdd2", null ],
     [ "stopStatsSaving", "classDGtal_1_1Profile.html#a4871aca139e415f302e7be049c19dba1", null ],

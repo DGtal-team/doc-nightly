@@ -53,7 +53,7 @@ var classDGtal_1_1ChordGenericStandardPlaneComputer =
     [ "maxSize", "classDGtal_1_1ChordGenericStandardPlaneComputer.html#a1ecae5ee015c0cc533be1d3916202338", null ],
     [ "minimalPoint", "classDGtal_1_1ChordGenericStandardPlaneComputer.html#a3b2d29e03665cfc67d88dcec530494ba", null ],
     [ "operator()", "classDGtal_1_1ChordGenericStandardPlaneComputer.html#a4cf1350bbc7d6b9c53a9515edbb3e8ee", null ],
-    [ "operator=", "classDGtal_1_1ChordGenericStandardPlaneComputer.html#ad4848b9a055358bedc7482557f347979", null ],
+    [ "operator=", "classDGtal_1_1ChordGenericStandardPlaneComputer.html#a5e3c2d00364b8175e6c528b826e64fea", null ],
     [ "primitive", "classDGtal_1_1ChordGenericStandardPlaneComputer.html#a150d32f439af845e10241c6a0c75f0d8", null ],
     [ "selfDisplay", "classDGtal_1_1ChordGenericStandardPlaneComputer.html#a004978f1297532efc577d61d546d1184", null ],
     [ "size", "classDGtal_1_1ChordGenericStandardPlaneComputer.html#a9ce93d0faa69ffb8aa0eba2e6ecc27fa", null ],

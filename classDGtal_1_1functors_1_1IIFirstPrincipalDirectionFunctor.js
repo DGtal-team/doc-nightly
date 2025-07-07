@@ -15,7 +15,7 @@ var classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor =
     [ "BOOST_STATIC_ASSERT", "classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#a28554c3a36be6fe27241a36bf11adf9c", null ],
     [ "init", "classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#aeb973ea4e31b139a9c74d0e13a13aff6", null ],
     [ "operator()", "classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#a1ae3183e0683753608cea7ccb01cb192", null ],
-    [ "operator=", "classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#a9ed50c96ec46971461d5355f25759d98", null ],
+    [ "operator=", "classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#abf83c186dd9aaea444be39dd8026d2a8", null ],
     [ "eigenValues", "classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#a94f99b7e15a035c89f73ab15ee4d8e69", null ],
     [ "eigenVectors", "classDGtal_1_1functors_1_1IIFirstPrincipalDirectionFunctor.html#ab2d2f426a9e9b840b3b653b3f1af328c", null ]
 ];

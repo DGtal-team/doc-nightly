@@ -31,7 +31,7 @@ var classDGtal_1_1experimental_1_1ChamferNorm2D =
     [ "hiddenBy", "classDGtal_1_1experimental_1_1ChamferNorm2D.html#a6c286d05688f6875b4a97ba89d5e1a7d", null ],
     [ "isValid", "classDGtal_1_1experimental_1_1ChamferNorm2D.html#ad404de3e8ff97014ea97d8fe5efa2886", null ],
     [ "operator()", "classDGtal_1_1experimental_1_1ChamferNorm2D.html#a96f6c4d99a78ea3a2d7c0d319b22eabb", null ],
-    [ "operator=", "classDGtal_1_1experimental_1_1ChamferNorm2D.html#a88ad6ca2e74ab1819d80dc9328cfd77f", null ],
+    [ "operator=", "classDGtal_1_1experimental_1_1ChamferNorm2D.html#a5340837a5aa1437929a6833392cad134", null ],
     [ "rawDistance", "classDGtal_1_1experimental_1_1ChamferNorm2D.html#aa26411bbeb049d38b9a99558a481648e", null ],
     [ "selfDisplay", "classDGtal_1_1experimental_1_1ChamferNorm2D.html#a9824ec7745c3d05c80fa5c226237f54f", null ],
     [ "shrinkP", "classDGtal_1_1experimental_1_1ChamferNorm2D.html#afce380156b9399255fd11d4d30d3dff8", null ],

@@ -17,7 +17,7 @@ var classDGtal_1_1StarShaped2D =
     [ "isValid", "classDGtal_1_1StarShaped2D.html#a6620f1b44acbf9a5491a58e86be0c522", null ],
     [ "moveTo", "classDGtal_1_1StarShaped2D.html#a666594ee4c376b08be0fd38c7c995e3c", null ],
     [ "normal", "classDGtal_1_1StarShaped2D.html#a81cdb0a5897fdd5e391e1ddf8bff4adb", null ],
-    [ "operator=", "classDGtal_1_1StarShaped2D.html#ab9ad242f309ffab558e1114e6e6f37ce", null ],
+    [ "operator=", "classDGtal_1_1StarShaped2D.html#adeb713cc43cf4d8cc5b729ab4d797c89", null ],
     [ "orientation", "classDGtal_1_1StarShaped2D.html#a745446c84c529204987522d3b1b94400", null ],
     [ "parameter", "classDGtal_1_1StarShaped2D.html#a9d87076e30318b190b3f3cc5aeb3d4cc", null ],
     [ "selfDisplay", "classDGtal_1_1StarShaped2D.html#aa3822391a46a84c859fc3e3b8f267c8d", null ],

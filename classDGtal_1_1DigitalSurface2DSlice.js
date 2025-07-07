@@ -24,7 +24,7 @@ var classDGtal_1_1DigitalSurface2DSlice =
     [ "init", "classDGtal_1_1DigitalSurface2DSlice.html#aa92f2b2baf212b9dbe3d62f3bfed4296", null ],
     [ "isClosed", "classDGtal_1_1DigitalSurface2DSlice.html#a3990479fada5df3c4393aa42395d6bf6", null ],
     [ "isValid", "classDGtal_1_1DigitalSurface2DSlice.html#a3ee6ff15d0ded8a473381be962d7f60f", null ],
-    [ "operator=", "classDGtal_1_1DigitalSurface2DSlice.html#aa735f89c60a5c93a70f3750cc94e718a", null ],
+    [ "operator=", "classDGtal_1_1DigitalSurface2DSlice.html#a80d03283a160db3bc7efc4c2f88a2463", null ],
     [ "rbegin", "classDGtal_1_1DigitalSurface2DSlice.html#a36f06667954855612a95240ff4c3ad35", null ],
     [ "rc", "classDGtal_1_1DigitalSurface2DSlice.html#a6d4a2514d7ab0cd6558df27784e33cb1", null ],
     [ "rcstart", "classDGtal_1_1DigitalSurface2DSlice.html#a84f39bd051e56277e7b5b67a9e0d6aa2", null ],

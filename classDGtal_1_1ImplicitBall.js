@@ -14,7 +14,7 @@ var classDGtal_1_1ImplicitBall =
     [ "isValid", "classDGtal_1_1ImplicitBall.html#aebf82e84ec487960178f1ac52f0d6bc2", null ],
     [ "moveTo", "classDGtal_1_1ImplicitBall.html#aae6b3b80ce65d98676f64c3b1ce54b4f", null ],
     [ "operator()", "classDGtal_1_1ImplicitBall.html#a1dba1fd0813c7f5e3f236b408c5f9b54", null ],
-    [ "operator=", "classDGtal_1_1ImplicitBall.html#a60347e8d391335cbbf2dc8c7daf78e47", null ],
+    [ "operator=", "classDGtal_1_1ImplicitBall.html#a800e1531ee48dc5820f612653be71627", null ],
     [ "orientation", "classDGtal_1_1ImplicitBall.html#a14d4358b67e0df39fe2a1ffdb7996e7d", null ],
     [ "selfDisplay", "classDGtal_1_1ImplicitBall.html#a901b7b95127a2fe505ac860f23abae91", null ],
     [ "myCenter", "classDGtal_1_1ImplicitBall.html#abc64d23df2635988b308fff61a5fba4e", null ],

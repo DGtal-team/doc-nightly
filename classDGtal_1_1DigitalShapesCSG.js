@@ -17,7 +17,7 @@ var classDGtal_1_1DigitalShapesCSG =
     [ "intersection", "classDGtal_1_1DigitalShapesCSG.html#ac405addef755f2ba563f5028bc0bef1f", null ],
     [ "isValid", "classDGtal_1_1DigitalShapesCSG.html#afb99b898a4b32e80747a41e92855ca79", null ],
     [ "minus", "classDGtal_1_1DigitalShapesCSG.html#a904ccc4d7c36dff4d5d933da91420f07", null ],
-    [ "operator=", "classDGtal_1_1DigitalShapesCSG.html#a40b2bae8917e831354943e951fe3ec66", null ],
+    [ "operator=", "classDGtal_1_1DigitalShapesCSG.html#a0afcaaba3e03d9ec2abba2971e1033b2", null ],
     [ "orientation", "classDGtal_1_1DigitalShapesCSG.html#a741c048c30bfc468d2e1226035386eff", null ],
     [ "plus", "classDGtal_1_1DigitalShapesCSG.html#a08fece146c33763e5701512cace6a01a", null ],
     [ "selfDisplay", "classDGtal_1_1DigitalShapesCSG.html#a5584a7d1e3ccdab9b3d2180b8803aea1", null ],

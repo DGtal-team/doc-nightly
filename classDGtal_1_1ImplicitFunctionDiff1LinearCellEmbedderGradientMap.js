@@ -9,6 +9,6 @@ var classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedderGradientMap =
     [ "Value", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedderGradientMap.html#adc1d055fa070a09ba1215470649f4765", null ],
     [ "ImplicitFunctionDiff1LinearCellEmbedderGradientMap", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedderGradientMap.html#a2d76574f5f7dd261c7d22bf3eec95c3b", null ],
     [ "operator()", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedderGradientMap.html#a9f33f5cf51567d38962bf676287109ce", null ],
-    [ "operator=", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedderGradientMap.html#ae101f00d789272feec0c92283d91e6f7", null ],
+    [ "operator=", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedderGradientMap.html#ae1fe1a518eca35f78f9f3d7427f766dc", null ],
     [ "myPtrFct", "classDGtal_1_1ImplicitFunctionDiff1LinearCellEmbedderGradientMap.html#a4b912fc92a968e13f5ba5f7071a0857f", null ]
 ];

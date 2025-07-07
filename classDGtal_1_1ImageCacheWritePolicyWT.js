@@ -11,7 +11,7 @@ var classDGtal_1_1ImageCacheWritePolicyWT =
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1ImageCacheWritePolicyWT.html#a2f4e85247487b18128c76fb58f12b3a6", null ],
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1ImageCacheWritePolicyWT.html#ac2e1ee6494cba3c7e7e8b085f88accba", null ],
     [ "flushPage", "classDGtal_1_1ImageCacheWritePolicyWT.html#a3c8171d095e40345305bc03e9b8d278e", null ],
-    [ "operator=", "classDGtal_1_1ImageCacheWritePolicyWT.html#a95cc1bb1a0cb4b3a4d8eda57c7bec2bb", null ],
+    [ "operator=", "classDGtal_1_1ImageCacheWritePolicyWT.html#a752392a2e948672de0a1ccefd07b3979", null ],
     [ "writeInPage", "classDGtal_1_1ImageCacheWritePolicyWT.html#a490af817ba3057cd0341b63f9134d7f7", null ],
     [ "myImageFactory", "classDGtal_1_1ImageCacheWritePolicyWT.html#a845994e9d4c1fa442e38c271d8cdccfb", null ]
 ];

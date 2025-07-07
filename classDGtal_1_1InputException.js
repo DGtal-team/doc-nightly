@@ -1,4 +1,4 @@
 var classDGtal_1_1InputException =
 [
-    [ "what", "classDGtal_1_1InputException.html#a4dffed329725e216dfa45f8cd9a494bf", null ]
+    [ "what", "classDGtal_1_1InputException.html#a17dfdc02c0a30b73429007a997f2a54c", null ]
 ];

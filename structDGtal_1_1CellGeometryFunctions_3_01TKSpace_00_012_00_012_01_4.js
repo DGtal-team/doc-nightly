@@ -5,7 +5,7 @@ var structDGtal_1_1CellGeometryFunctions_3_01TKSpace_00_012_00_012_01_4 =
     [ "Space", "structDGtal_1_1CellGeometryFunctions_3_01TKSpace_00_012_00_012_01_4.html#a6e97103675c70768e8535c525092a5b1", null ],
     [ "BOOST_CONCEPT_ASSERT", "structDGtal_1_1CellGeometryFunctions_3_01TKSpace_00_012_00_012_01_4.html#a5ca73c5c52f93e581fcf8f6d04fe9ebb", null ],
     [ "BOOST_STATIC_ASSERT", "structDGtal_1_1CellGeometryFunctions_3_01TKSpace_00_012_00_012_01_4.html#a9585e5fc1912653b6d5ab556f9016f64", null ],
-    [ "getIncidentCellsToPointels", "structDGtal_1_1CellGeometryFunctions_3_01TKSpace_00_012_00_012_01_4.html#a9ddd1e9d6dc9eb2982f7cfcdfccf5db1", null ],
-    [ "getIncidentCellsToPoints", "structDGtal_1_1CellGeometryFunctions_3_01TKSpace_00_012_00_012_01_4.html#a03baf02e9980fc7bf6f7075034fd67bc", null ],
-    [ "getIncidentKPointsToPoints", "structDGtal_1_1CellGeometryFunctions_3_01TKSpace_00_012_00_012_01_4.html#a18cec6262fa06817060919c085cb8fc6", null ]
+    [ "getIncidentCellsToPointels", "structDGtal_1_1CellGeometryFunctions_3_01TKSpace_00_012_00_012_01_4.html#aeb2cb7dea6f34fb81cb08633240881a2", null ],
+    [ "getIncidentCellsToPoints", "structDGtal_1_1CellGeometryFunctions_3_01TKSpace_00_012_00_012_01_4.html#a8c34de604d9c9deca0df639f07220ce9", null ],
+    [ "getIncidentKPointsToPoints", "structDGtal_1_1CellGeometryFunctions_3_01TKSpace_00_012_00_012_01_4.html#a04811f3ce0cd244326a6073c93086609", null ]
 ];

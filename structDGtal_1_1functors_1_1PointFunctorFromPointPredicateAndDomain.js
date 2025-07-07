@@ -10,7 +10,7 @@ var structDGtal_1_1functors_1_1PointFunctorFromPointPredicateAndDomain =
     [ "BOOST_CONCEPT_ASSERT", "structDGtal_1_1functors_1_1PointFunctorFromPointPredicateAndDomain.html#abf6056122f33c8500d6ca34a31dd3950", null ],
     [ "BOOST_CONCEPT_ASSERT", "structDGtal_1_1functors_1_1PointFunctorFromPointPredicateAndDomain.html#a4acd7e8428b04fa05f53c5196e4a2931", null ],
     [ "operator()", "structDGtal_1_1functors_1_1PointFunctorFromPointPredicateAndDomain.html#a3687a068fed6f3bce0be303db7ab8009", null ],
-    [ "operator=", "structDGtal_1_1functors_1_1PointFunctorFromPointPredicateAndDomain.html#aff2019afbde759101d2f2bb201b6adc2", null ],
+    [ "operator=", "structDGtal_1_1functors_1_1PointFunctorFromPointPredicateAndDomain.html#afcf10dcaf1ee0f1a919db92547c4b771", null ],
     [ "myDomain", "structDGtal_1_1functors_1_1PointFunctorFromPointPredicateAndDomain.html#a3024f3665f60e5d2dd817f633f12dcc0", null ],
     [ "myFalseValue", "structDGtal_1_1functors_1_1PointFunctorFromPointPredicateAndDomain.html#ab2598d4b0aab7965ffc11bd6eb608594", null ],
     [ "myPtrPredicate", "structDGtal_1_1functors_1_1PointFunctorFromPointPredicateAndDomain.html#af46f9b45c86b22964626d7194061b8fc", null ],

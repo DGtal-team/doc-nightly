@@ -11,7 +11,7 @@ var classDGtal_1_1GreedySegmentation =
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1GreedySegmentation.html#a589b1892871f2c13e5693b5c48131a82", null ],
     [ "end", "classDGtal_1_1GreedySegmentation.html#a0381ff1910d277d7dc8c97b4adc97832", null ],
     [ "isValid", "classDGtal_1_1GreedySegmentation.html#a4291df81ea2cb804a3a10d3fb6ccba3f", null ],
-    [ "operator=", "classDGtal_1_1GreedySegmentation.html#a2209f9ad8044678aa0c8bef3361e4880", null ],
+    [ "operator=", "classDGtal_1_1GreedySegmentation.html#a05b58ae85176b8e0943a5d293b7016d6", null ],
     [ "selfDisplay", "classDGtal_1_1GreedySegmentation.html#a6f5e9e794bd106e5f0dc4cb43a7827f9", null ],
     [ "setMode", "classDGtal_1_1GreedySegmentation.html#a20f6079b224f5805458b2f965e8187fe", null ],
     [ "setSubRange", "classDGtal_1_1GreedySegmentation.html#ade5c7ccc33f7c00ffbae8a82d5742dfa", null ],

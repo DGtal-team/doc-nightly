@@ -15,7 +15,7 @@ var classDGtal_1_1SpaceND =
     [ "SpaceND", "classDGtal_1_1SpaceND.html#a40e7466cf6bd10991ca8cc6d56562349", null ],
     [ "~SpaceND", "classDGtal_1_1SpaceND.html#a5e5b2541054b561478274b08defbabc9", null ],
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1SpaceND.html#af4516fb2df1cf59c64e13d2071fb14f6", null ],
-    [ "operator=", "classDGtal_1_1SpaceND.html#afb1dc29e145abdf35cafef279e91e268", null ],
+    [ "operator=", "classDGtal_1_1SpaceND.html#a983cfe104b6fe8c2175c3cb3cd7b9e9e", null ],
     [ "selfDisplay", "classDGtal_1_1SpaceND.html#aee934069601e5b07d5dc5c859307739a", null ],
     [ "dimension", "classDGtal_1_1SpaceND.html#aae87d3efb1051dbdeac28e159781ba92", null ]
 ];

@@ -1,10 +1,8 @@
 var structDGtal_1_1ClippingPlane =
 [
-    [ "ClippingPlane", "structDGtal_1_1ClippingPlane.html#a9c1ac70c90fbc3a46e84896bccfbff73", null ],
-    [ "getEquation", "structDGtal_1_1ClippingPlane.html#ad1deb59d16a9ff046629cf1f92807739", null ],
-    [ "myA", "structDGtal_1_1ClippingPlane.html#acca3979061d0b03e298987fed5f9db6c", null ],
-    [ "myB", "structDGtal_1_1ClippingPlane.html#a4c7eaa3ae14f18b36e8effcbd82d827b", null ],
-    [ "myC", "structDGtal_1_1ClippingPlane.html#af37d652886f3bfdcce059a06b116d346", null ],
-    [ "myD", "structDGtal_1_1ClippingPlane.html#ac23ea93c74ba839c4a7f3cf1c0579875", null ],
-    [ "myDrawPlane", "structDGtal_1_1ClippingPlane.html#acf3da2a5174b2467afe65fa820c7371a", null ]
+    [ "a", "structDGtal_1_1ClippingPlane.html#aa165035c7c5a8132107988f8d687d05e", null ],
+    [ "b", "structDGtal_1_1ClippingPlane.html#a4792d8997353e29365fc32c594ee3988", null ],
+    [ "c", "structDGtal_1_1ClippingPlane.html#ad6599b2cc9e76aecd5419641a1995785", null ],
+    [ "d", "structDGtal_1_1ClippingPlane.html#aeabccfa77963c76bf8910986e62eaa91", null ],
+    [ "style", "structDGtal_1_1ClippingPlane.html#a69e92e68bb32ab68f334367842d699a6", null ]
 ];

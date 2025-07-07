@@ -13,7 +13,7 @@ var classDGtal_1_1MeasureOfStraightLines =
     [ "computeMeasure", "classDGtal_1_1MeasureOfStraightLines.html#a0962b869e397d0c15814dfaaf3a2199c", null ],
     [ "computeMeasureEdge", "classDGtal_1_1MeasureOfStraightLines.html#a8de6f1a4f89c18af3afa86b3fad1292f", null ],
     [ "isValid", "classDGtal_1_1MeasureOfStraightLines.html#abfc09cb47d9ab87917dfeb44a0321113", null ],
-    [ "operator=", "classDGtal_1_1MeasureOfStraightLines.html#ae99f5f12996a926b88bfc88c396fa218", null ],
+    [ "operator=", "classDGtal_1_1MeasureOfStraightLines.html#a76adeda36e069957467a687fd9829aec", null ],
     [ "selfDisplay", "classDGtal_1_1MeasureOfStraightLines.html#a4d72c943a7adca61d9ce91c644f6d368", null ],
     [ "setEpsilon", "classDGtal_1_1MeasureOfStraightLines.html#a4b6a4b2a683a4f63f3778db043a20380", null ],
     [ "sign", "classDGtal_1_1MeasureOfStraightLines.html#a7f294f8081495f7629a48d3ee12d67d4", null ],

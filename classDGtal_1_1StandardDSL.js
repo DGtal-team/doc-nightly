@@ -5,5 +5,5 @@ var classDGtal_1_1StandardDSL =
     [ "Super", "classDGtal_1_1StandardDSL.html#afb7b633bc1d19dee2ae71b7341fbb066", null ],
     [ "StandardDSL", "classDGtal_1_1StandardDSL.html#a496eb66ecd90cc61d0f8094cd5d32798", null ],
     [ "StandardDSL", "classDGtal_1_1StandardDSL.html#a42686b7df7cfc92bf499cc7cef520f49", null ],
-    [ "operator=", "classDGtal_1_1StandardDSL.html#a6c5834ab89ae7ac913914d45a096d96a", null ]
+    [ "operator=", "classDGtal_1_1StandardDSL.html#a78a32e13797c912d2e410ceda5e966b4", null ]
 ];

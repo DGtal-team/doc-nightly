@@ -5,7 +5,7 @@ var structDGtal_1_1CellGeometryFunctions =
     [ "Point", "structDGtal_1_1CellGeometryFunctions.html#ab8eeb75693c93860aaf586b967a6c033", null ],
     [ "Space", "structDGtal_1_1CellGeometryFunctions.html#ae6c3031bbb8542ab32c9a7d4ed16287a", null ],
     [ "BOOST_CONCEPT_ASSERT", "structDGtal_1_1CellGeometryFunctions.html#aaa9489508e97bf588dae70d47ba8bbb7", null ],
-    [ "getIncidentCellsToPointels", "structDGtal_1_1CellGeometryFunctions.html#a86f8963a07d7506d2f0316cae0dfc9fc", null ],
-    [ "getIncidentCellsToPoints", "structDGtal_1_1CellGeometryFunctions.html#a2aed9f4dc9fac60097fcc3b09082af53", null ],
+    [ "getIncidentCellsToPointels", "structDGtal_1_1CellGeometryFunctions.html#a3cff5e0718d0ecec3a9718f1a11b9f66", null ],
+    [ "getIncidentCellsToPoints", "structDGtal_1_1CellGeometryFunctions.html#aade6e00612b8e007c7230e1d7d54a0bf", null ],
     [ "getIncidentKPointsToPoints", "structDGtal_1_1CellGeometryFunctions.html#af30dd459aa1f3b3c7ff8fc1c46c42a4e", null ]
 ];

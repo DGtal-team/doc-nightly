@@ -16,7 +16,7 @@ var classDGtal_1_1InGeneralizedDiskOfGivenRadius =
     [ "isValid", "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a824c98ff97a97c2ae85bc7e67a3443cb", null ],
     [ "lengthIsValid", "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a53e40bdc681e78311071a15a074eca8b", null ],
     [ "operator()", "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#aa0e4e4523ca5b4347ef98c99dd7e4df0", null ],
-    [ "operator=", "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a406880fbaa8d8d7fc59390b9a27a51b1", null ],
+    [ "operator=", "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a5044eff134cd64fa576b40dc58a00350", null ],
     [ "selfDisplay", "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a8145ec1bc4540028af625754971f27e6", null ],
     [ "myArea", "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a0d554d84defcf82dd51fb0ee414cdba8", null ],
     [ "myAreaFunctor", "classDGtal_1_1InGeneralizedDiskOfGivenRadius.html#a6ffc8627c61ac61557b18299e45f391a", null ],

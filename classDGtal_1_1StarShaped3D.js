@@ -17,7 +17,7 @@ var classDGtal_1_1StarShaped3D =
     [ "meanCurvature", "classDGtal_1_1StarShaped3D.html#a486a1a8c87eff071f478b03f3a306aab", null ],
     [ "moveTo", "classDGtal_1_1StarShaped3D.html#a63b698a35d891febfe4e4760efa49ba3", null ],
     [ "normal", "classDGtal_1_1StarShaped3D.html#ace1ae6353c4c59ec4b006535f67ec7d2", null ],
-    [ "operator=", "classDGtal_1_1StarShaped3D.html#aac3d13f87babd9f33ead9d948da55d86", null ],
+    [ "operator=", "classDGtal_1_1StarShaped3D.html#ae13ef0b048cf5fb8c272313a66e17a8c", null ],
     [ "orientation", "classDGtal_1_1StarShaped3D.html#a7a89ad4f6405620d4d8ea1cb52675eab", null ],
     [ "parameter", "classDGtal_1_1StarShaped3D.html#a9a3e9054236a3e5cdd993d8a459a9255", null ],
     [ "rp", "classDGtal_1_1StarShaped3D.html#a5624b04428214d0a0d5e57ef3a64ae56", null ],

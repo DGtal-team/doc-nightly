@@ -12,6 +12,6 @@ var classDGtal_1_1DSSLengthEstimator =
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1DSSLengthEstimator.html#a80fa9c8f6732befca967af2f637a8044", null ],
     [ "eval", "classDGtal_1_1DSSLengthEstimator.html#af4c0629903e08abec3ccb007003fcd27", null ],
     [ "isValid", "classDGtal_1_1DSSLengthEstimator.html#a5a4e1019a87ad41a171107ef97aff50a", null ],
-    [ "operator=", "classDGtal_1_1DSSLengthEstimator.html#a5449ca609300b78da01e438f2e106219", null ],
+    [ "operator=", "classDGtal_1_1DSSLengthEstimator.html#ac0d58c62051a597dc385319a73dc9733", null ],
     [ "selfDisplay", "classDGtal_1_1DSSLengthEstimator.html#a2cdadd16c4393189d72eed81ea99ce6f", null ]
 ];

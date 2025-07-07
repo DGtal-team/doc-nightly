@@ -17,7 +17,7 @@ var structDGtal_1_1CanonicSCellEmbedder =
     [ "embed", "structDGtal_1_1CanonicSCellEmbedder.html#acac863c114d21d5efd37927874cfccf1", null ],
     [ "isValid", "structDGtal_1_1CanonicSCellEmbedder.html#a21d6b5ced0d0c1b6a99a83ba2e9568fc", null ],
     [ "operator()", "structDGtal_1_1CanonicSCellEmbedder.html#a92097f6107a7c841df72302f9c017ee2", null ],
-    [ "operator=", "structDGtal_1_1CanonicSCellEmbedder.html#a526f7d7a7b24f9fc1f356e369daf739d", null ],
-    [ "space", "structDGtal_1_1CanonicSCellEmbedder.html#a0d3464cad44ba7d2d769cff51dd9fae4", null ],
+    [ "operator=", "structDGtal_1_1CanonicSCellEmbedder.html#a3218b4869502a446ff66325ff0cfebaf", null ],
+    [ "space", "structDGtal_1_1CanonicSCellEmbedder.html#a0ca1b9fb0bbc5f5330e9b6d5332a184b", null ],
     [ "myKSpace", "structDGtal_1_1CanonicSCellEmbedder.html#a7ac4b36938d46659bd913ca2cbb3c253", null ]
 ];

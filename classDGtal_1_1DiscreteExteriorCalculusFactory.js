@@ -13,9 +13,9 @@ var classDGtal_1_1DiscreteExteriorCalculusFactory =
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1DiscreteExteriorCalculusFactory.html#aef642f42869c250ff39fe62be3a69b73", null ],
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1DiscreteExteriorCalculusFactory.html#a3462ddd7b0f9668a1a29d209ef689ebd", null ],
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1DiscreteExteriorCalculusFactory.html#a17160ee7e318f444abad1d0cf8f3f797", null ],
-    [ "createFromDigitalSet", "classDGtal_1_1DiscreteExteriorCalculusFactory.html#a0f0410c21d66a8c7ef951321e52bf587", null ],
-    [ "createFromNSCells", "classDGtal_1_1DiscreteExteriorCalculusFactory.html#ac290b55c774d9fa9e6ac9c1baa150b50", null ],
-    [ "createFromNSCells", "classDGtal_1_1DiscreteExteriorCalculusFactory.html#a11e8d9f9b95553d8ef9b0090821cb1fb", null ],
+    [ "createFromDigitalSet", "classDGtal_1_1DiscreteExteriorCalculusFactory.html#a4cb5eba59e11980f3f5d2fb3686e9ecb", null ],
+    [ "createFromNSCells", "classDGtal_1_1DiscreteExteriorCalculusFactory.html#aa2a830c6f45b668788ec000ff8d1cf4c", null ],
+    [ "createFromNSCells", "classDGtal_1_1DiscreteExteriorCalculusFactory.html#ade89a03ff5db410cc8667c3d8ee5eb40", null ],
     [ "insertAllLowerIncidentCells", "classDGtal_1_1DiscreteExteriorCalculusFactory.html#a183545a99d002bb7ce849833d4e89e71", null ],
-    [ "operator=", "classDGtal_1_1DiscreteExteriorCalculusFactory.html#a67d15441b804263144f1dd9979a2bf62", null ]
+    [ "operator=", "classDGtal_1_1DiscreteExteriorCalculusFactory.html#a39d2101037f2293d765c049c91ba8fa1", null ]
 ];

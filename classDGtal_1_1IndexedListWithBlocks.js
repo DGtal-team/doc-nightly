@@ -38,9 +38,9 @@ var classDGtal_1_1IndexedListWithBlocks =
     [ "insert", "classDGtal_1_1IndexedListWithBlocks.html#a01211ca6f5065a905f1708d5b30f37c2", null ],
     [ "isValid", "classDGtal_1_1IndexedListWithBlocks.html#af6ad2bf3b260744f08cf3bc64f97bebf", null ],
     [ "max_size", "classDGtal_1_1IndexedListWithBlocks.html#a3d62642cc2fb7c298bf3ae73a4460f5f", null ],
-    [ "operator=", "classDGtal_1_1IndexedListWithBlocks.html#a3e8803a1ac016db2e8e1ca94cc5ce579", null ],
-    [ "operator[]", "classDGtal_1_1IndexedListWithBlocks.html#a106fb32b18881ddff7ec635f72530bf1", null ],
-    [ "operator[]", "classDGtal_1_1IndexedListWithBlocks.html#a6880ca389e51bd0b70a1ccaa95d8d263", null ],
+    [ "operator=", "classDGtal_1_1IndexedListWithBlocks.html#a0b81aa9dd343a0a05af4eb624629fdc5", null ],
+    [ "operator[]", "classDGtal_1_1IndexedListWithBlocks.html#ad0d11ad0ebf0c8c43838d40b7348cb9e", null ],
+    [ "operator[]", "classDGtal_1_1IndexedListWithBlocks.html#a898b0f7f2956f969c66ee8c417ea582d", null ],
     [ "selfDisplay", "classDGtal_1_1IndexedListWithBlocks.html#af568b0834d6ad29d73f5ab5960484be2", null ],
     [ "size", "classDGtal_1_1IndexedListWithBlocks.html#a6a34e76f7b750ff6c3d4e1f281b57476", null ],
     [ "myFirstBlock", "classDGtal_1_1IndexedListWithBlocks.html#ae0a1905bec5830c373ea21fcc61b0c02", null ]

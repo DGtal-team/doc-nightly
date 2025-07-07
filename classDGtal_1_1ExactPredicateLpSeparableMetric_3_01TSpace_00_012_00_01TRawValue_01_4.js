@@ -16,7 +16,7 @@ var classDGtal_1_1ExactPredicateLpSeparableMetric_3_01TSpace_00_012_00_01TRawVal
     [ "isValid", "classDGtal_1_1ExactPredicateLpSeparableMetric_3_01TSpace_00_012_00_01TRawValue_01_4.html#ae3461573a7e324cfd25307df75241a78", null ],
     [ "local", "classDGtal_1_1ExactPredicateLpSeparableMetric_3_01TSpace_00_012_00_01TRawValue_01_4.html#a7936c9bad7fcd5355b87b6db21f744d3", null ],
     [ "operator()", "classDGtal_1_1ExactPredicateLpSeparableMetric_3_01TSpace_00_012_00_01TRawValue_01_4.html#aef13df724807c310828f278af9f1e17d", null ],
-    [ "operator=", "classDGtal_1_1ExactPredicateLpSeparableMetric_3_01TSpace_00_012_00_01TRawValue_01_4.html#a9edb97213a480bf53ab5c0760dda2e65", null ],
+    [ "operator=", "classDGtal_1_1ExactPredicateLpSeparableMetric_3_01TSpace_00_012_00_01TRawValue_01_4.html#a78017d3fbf34b0f0408beb6fa27e6672", null ],
     [ "rawDistance", "classDGtal_1_1ExactPredicateLpSeparableMetric_3_01TSpace_00_012_00_01TRawValue_01_4.html#af3af5ebbdf4d756b1ea015c5d03011bf", null ],
     [ "selfDisplay", "classDGtal_1_1ExactPredicateLpSeparableMetric_3_01TSpace_00_012_00_01TRawValue_01_4.html#ae2efe5453754a88909b3a2c73f3844f2", null ]
 ];

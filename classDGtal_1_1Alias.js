@@ -23,8 +23,8 @@ var classDGtal_1_1Alias =
     [ "Alias", "classDGtal_1_1Alias.html#a6fa99c59d38be64c4a134a3448942d6e", null ],
     [ "operator CountedPtrOrPtr< T >", "classDGtal_1_1Alias.html#abcd29d6b74955a54b01c8af68cb2cd79", null ],
     [ "operator T&", "classDGtal_1_1Alias.html#a682a107ae2a1b8cc8d95190485262dcb", null ],
-    [ "operator&", "classDGtal_1_1Alias.html#a42eeabe2ecdeeafddeda9c5b704357cb", null ],
-    [ "operator=", "classDGtal_1_1Alias.html#ae90d93d1351adbef66b2d89c0f51466d", null ],
+    [ "operator&", "classDGtal_1_1Alias.html#a43c203eda4a222d4c8cbe339d95ce78c", null ],
+    [ "operator=", "classDGtal_1_1Alias.html#a9134423d3481cc79aa3d77ea73e8453a", null ],
     [ "myParam", "classDGtal_1_1Alias.html#a143f8a02862f5d26b0258db54487b587", null ],
     [ "myPtr", "classDGtal_1_1Alias.html#ab41d7caa179e969b563f4569e346622e", null ]
 ];

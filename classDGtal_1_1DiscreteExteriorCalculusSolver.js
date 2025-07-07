@@ -10,7 +10,7 @@ var classDGtal_1_1DiscreteExteriorCalculusSolver =
     [ "BOOST_STATIC_ASSERT", "classDGtal_1_1DiscreteExteriorCalculusSolver.html#a705a6726a39981a0b124249bc9a90f35", null ],
     [ "BOOST_STATIC_ASSERT", "classDGtal_1_1DiscreteExteriorCalculusSolver.html#ac6bded97af38ccd646cd109dac500374", null ],
     [ "BOOST_STATIC_ASSERT", "classDGtal_1_1DiscreteExteriorCalculusSolver.html#a2ee2fd464cf029a0e4318af789fa2873", null ],
-    [ "compute", "classDGtal_1_1DiscreteExteriorCalculusSolver.html#a90f2a9e43a13293e6368b63298363b60", null ],
+    [ "compute", "classDGtal_1_1DiscreteExteriorCalculusSolver.html#ad9aa317bbb1217b94d9991fa933c5df4", null ],
     [ "isValid", "classDGtal_1_1DiscreteExteriorCalculusSolver.html#a073f1c0cdb349421b1a6d499fefc6052", null ],
     [ "selfDisplay", "classDGtal_1_1DiscreteExteriorCalculusSolver.html#aa469e551d4356ede930e9e56e70b5eac", null ],
     [ "solve", "classDGtal_1_1DiscreteExteriorCalculusSolver.html#a7673281a29a04ef2978bad9b373c2382", null ],

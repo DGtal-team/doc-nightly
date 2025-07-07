@@ -15,7 +15,7 @@ var classDGtal_1_1functors_1_1IITangentDirectionFunctor =
     [ "BOOST_STATIC_ASSERT", "classDGtal_1_1functors_1_1IITangentDirectionFunctor.html#af537310ba9cb12977cf7cc57c11a9370", null ],
     [ "init", "classDGtal_1_1functors_1_1IITangentDirectionFunctor.html#a3ffa2db1f5b12bf8f27340fcef2f66b6", null ],
     [ "operator()", "classDGtal_1_1functors_1_1IITangentDirectionFunctor.html#a0e3f00c287e48dab2db68a55dd7fcaba", null ],
-    [ "operator=", "classDGtal_1_1functors_1_1IITangentDirectionFunctor.html#a196468f4780507374725c3d667b8dfa4", null ],
+    [ "operator=", "classDGtal_1_1functors_1_1IITangentDirectionFunctor.html#aa8d4475ded6b9c33e351ee146e9bd599", null ],
     [ "eigenValues", "classDGtal_1_1functors_1_1IITangentDirectionFunctor.html#a39d4ec372ad4ec6eae5f2ad2b8e964f5", null ],
     [ "eigenVectors", "classDGtal_1_1functors_1_1IITangentDirectionFunctor.html#a2b8fad119a32709918684c0a7dbc0cfc", null ]
 ];

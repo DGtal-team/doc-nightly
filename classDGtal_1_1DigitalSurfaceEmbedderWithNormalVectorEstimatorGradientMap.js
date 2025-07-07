@@ -12,6 +12,6 @@ var classDGtal_1_1DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap =
     [ "DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap", "classDGtal_1_1DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap.html#acbcc45f1932272b721571dbc090fa7b5", null ],
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap.html#ad317aa3c1d512c8b7486158fcfb36d94", null ],
     [ "operator()", "classDGtal_1_1DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap.html#a55117e3cf096fb5c8ea3daccefacff32", null ],
-    [ "operator=", "classDGtal_1_1DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap.html#a0a35ae45d7f5a2794c88c7b4771f9e31", null ],
+    [ "operator=", "classDGtal_1_1DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap.html#a0c62c162a3e0ffd43df7f614d0e12f68", null ],
     [ "myEmbedder", "classDGtal_1_1DigitalSurfaceEmbedderWithNormalVectorEstimatorGradientMap.html#aa9245882afdcdb3e8ad6f65d7473b108", null ]
 ];

@@ -9,10 +9,10 @@ var classDGtal_1_1detail_1_1PointOnProbingRay =
     [ "operator!=", "classDGtal_1_1detail_1_1PointOnProbingRay.html#ab59a139112e49361c77e24c4c9b08980", null ],
     [ "operator<=", "classDGtal_1_1detail_1_1PointOnProbingRay.html#ad135bdd9ee3676bb5bb73c66bf57a7ad", null ],
     [ "operator==", "classDGtal_1_1detail_1_1PointOnProbingRay.html#ad1318c3d23a387587ecddc0729f56da2", null ],
-    [ "position", "classDGtal_1_1detail_1_1PointOnProbingRay.html#a1ade75792bd4774a3edc6d6b79afff64", null ],
+    [ "position", "classDGtal_1_1detail_1_1PointOnProbingRay.html#ae8c31fcb3f2e2284b0b6a252d0311052", null ],
     [ "previous", "classDGtal_1_1detail_1_1PointOnProbingRay.html#a9609539cca0ea58542095b1b470b9234", null ],
     [ "relativePoint", "classDGtal_1_1detail_1_1PointOnProbingRay.html#a6a0bb8aaf98b33ea71ca1de5e49165bf", null ],
-    [ "sigma", "classDGtal_1_1detail_1_1PointOnProbingRay.html#a659415343a5c0c128f6d450d981ee7eb", null ],
+    [ "sigma", "classDGtal_1_1detail_1_1PointOnProbingRay.html#a3541e85069667a65b252921294e1cd9b", null ],
     [ "sigma", "classDGtal_1_1detail_1_1PointOnProbingRay.html#a8ccb666e65d0c225710adea244b7bc5b", null ],
     [ "myPosition", "classDGtal_1_1detail_1_1PointOnProbingRay.html#a8d73478ad024750efcc45c4aa054906b", null ],
     [ "mySigma", "classDGtal_1_1detail_1_1PointOnProbingRay.html#a457625851682255d0534a3210c2c1e67", null ]

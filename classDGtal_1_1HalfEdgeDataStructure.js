@@ -36,7 +36,7 @@ var classDGtal_1_1HalfEdgeDataStructure =
     [ "getNeighboringVertices", "classDGtal_1_1HalfEdgeDataStructure.html#afff723dc6df1163ce729b1de9faee848", null ],
     [ "getUnorderedEdgesFromPolygonalFaces", "classDGtal_1_1HalfEdgeDataStructure.html#a2f582ae4462c6cf727ea774dede39dd8", null ],
     [ "getUnorderedEdgesFromTriangles", "classDGtal_1_1HalfEdgeDataStructure.html#a4689ca93e93bcc8675abfbe5d8251a67", null ],
-    [ "halfEdge", "classDGtal_1_1HalfEdgeDataStructure.html#a18e745d09f934904f0d90f911b481ad3", null ],
+    [ "halfEdge", "classDGtal_1_1HalfEdgeDataStructure.html#a07577a30ed33cea13ff8fdd15cd4909f", null ],
     [ "halfEdgeIndexFromArc", "classDGtal_1_1HalfEdgeDataStructure.html#acaae10dacf396f06c312f11002bbac2e", null ],
     [ "halfEdgeIndexFromArc", "classDGtal_1_1HalfEdgeDataStructure.html#ae8d63fc15e56a3e2475eeaf94a6bd1e9", null ],
     [ "halfEdgeIndexFromEdgeIndex", "classDGtal_1_1HalfEdgeDataStructure.html#a135ad4f55f3442ed03402aac9124db67", null ],

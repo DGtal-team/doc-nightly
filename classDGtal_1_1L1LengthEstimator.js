@@ -7,6 +7,6 @@ var classDGtal_1_1L1LengthEstimator =
     [ "L1LengthEstimator", "classDGtal_1_1L1LengthEstimator.html#acd4d1b043b6cf3f531cd3e9def4ceee8", null ],
     [ "eval", "classDGtal_1_1L1LengthEstimator.html#ada25c1c601faa187bf8d7df04ad6b02f", null ],
     [ "isValid", "classDGtal_1_1L1LengthEstimator.html#a29fbb9ba3023e087eae77e2bb8e36fdc", null ],
-    [ "operator=", "classDGtal_1_1L1LengthEstimator.html#a85691216763fde4b512e4a38a1ace454", null ],
+    [ "operator=", "classDGtal_1_1L1LengthEstimator.html#aa313174276c3fea43b9f0f33293d39b0", null ],
     [ "selfDisplay", "classDGtal_1_1L1LengthEstimator.html#a15df44752f407c9c1ad74aa8361d9dd3", null ]
 ];

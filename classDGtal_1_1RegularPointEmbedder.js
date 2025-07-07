@@ -18,7 +18,7 @@ var classDGtal_1_1RegularPointEmbedder =
     [ "init", "classDGtal_1_1RegularPointEmbedder.html#ab934665b5e13ad119e0ab1c1db6fdedf", null ],
     [ "isValid", "classDGtal_1_1RegularPointEmbedder.html#a5cb6438f7fb508c6cbe4d239b2e42b4e", null ],
     [ "operator()", "classDGtal_1_1RegularPointEmbedder.html#a97fc348bf7c2d0b436abf1a513848683", null ],
-    [ "operator=", "classDGtal_1_1RegularPointEmbedder.html#adac8390bba6166ae4d8c82b9162bba51", null ],
+    [ "operator=", "classDGtal_1_1RegularPointEmbedder.html#a076eb79dc534c4529a81b6448fc2d99d", null ],
     [ "round", "classDGtal_1_1RegularPointEmbedder.html#a8b93abce1ad8ae6c29c6bfa9178ec594", null ],
     [ "selfDisplay", "classDGtal_1_1RegularPointEmbedder.html#a8edbb61f29cf4bd7d3755ee97182a50d", null ],
     [ "myGridSteps", "classDGtal_1_1RegularPointEmbedder.html#a67fbaae216b17847bee609ea472b54b9", null ]

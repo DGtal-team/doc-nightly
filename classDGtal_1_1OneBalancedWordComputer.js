@@ -56,7 +56,7 @@ var classDGtal_1_1OneBalancedWordComputer =
     [ "mainPatternVector", "classDGtal_1_1OneBalancedWordComputer.html#a107ea2b8dab54a5b878d8ddbf5c353bc", null ],
     [ "nextIsLL", "classDGtal_1_1OneBalancedWordComputer.html#add0ec46b136ea926f52fd7e6196edc0d", null ],
     [ "operator!=", "classDGtal_1_1OneBalancedWordComputer.html#aa3f38e140beff3dec93f2d7e272cf21a", null ],
-    [ "operator=", "classDGtal_1_1OneBalancedWordComputer.html#a09ed07b200af9330bcf761f30269b0e0", null ],
+    [ "operator=", "classDGtal_1_1OneBalancedWordComputer.html#afee327037d70ed1dcf77d7f6aed56c11", null ],
     [ "operator==", "classDGtal_1_1OneBalancedWordComputer.html#a804e4fdbbfa6559657272578dd33097e", null ],
     [ "pointBegin", "classDGtal_1_1OneBalancedWordComputer.html#a57195cb906c309d1b618334ef423a6f2", null ],
     [ "pointEnd", "classDGtal_1_1OneBalancedWordComputer.html#a25a60bf2adb5f5da4209813aa2482fbf", null ],

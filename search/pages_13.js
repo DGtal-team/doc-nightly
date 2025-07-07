@@ -1,15 +1,12 @@
 var searchData=
 [
-  ['sdp2vol_17460',['sdp2vol',['http://dgtal.org/doc/tools/nightly/sdp2vol.html',1,'']]],
-  ['set_20operations_20on_20arbitrary_20containers_17461',['Set operations on arbitrary containers',['../moduleSetFunctions.html',1,'packageBase']]],
-  ['sets_20of_20points_20in_20digital_20spaces_17462',['Sets of points in digital spaces',['../moduleDigitalSets.html',1,'packageKernel']]],
-  ['shapegenerator_17463',['shapeGenerator',['http://dgtal.org/doc/tools/nightly/shapeGenerator.html',1,'']]],
-  ['shapes_20concepts_17464',['Shapes Concepts',['../packageShapesConcepts.html',1,'packageShapes']]],
-  ['shapes_20package_17465',['Shapes package',['../packageShapes.html',1,'index']]],
-  ['shapes_2c_20shapers_20and_20digitizers_17466',['Shapes, Shapers and Digitizers',['../moduleShape.html',1,'packageShapes']]],
-  ['shortcuts_20_28for_20the_20impatient_20developper_29_17467',['Shortcuts (for the impatient developper)',['../moduleShortcuts.html',1,'index']]],
-  ['slice2vol_17468',['slice2vol',['http://dgtal.org/doc/tools/nightly/slice2vol.html',1,'']]],
-  ['sliceviewer_17469',['sliceViewer',['http://dgtal.org/doc/tools/nightly/sliceViewer.html',1,'']]],
-  ['statisticsestimators_17470',['statisticsEstimators',['http://dgtal.org/doc/tools/nightly/statisticsEstimators.html',1,'']]],
-  ['surface_20mesh_20data_20structure_20for_20representing_20manifold_20or_20non_2dmanifold_20polygonal_20surfaces_20in_20r3_17471',['Surface mesh data structure for representing manifold or non-manifold polygonal surfaces in R3',['../moduleSurfaceMesh.html',1,'packageShapes']]]
+  ['n_20dimensional_20dec_20structures_20into_20m_20dimensional_20space_0',['Embedding n-dimensional DEC structures into m-dimensional space',['../moduleDECEmbedding.html',1,'packageDEC']]],
+  ['nd_20fast_20marching_20methods_1',['nD Fast Marching Methods',['../moduleFMM.html',1,'packageGeometry']]],
+  ['nd_20volumetric_20analysis_20using_20separable_20processes_2',['nD Volumetric Analysis using Separable Processes',['../moduleVolumetric.html',1,'packageGeometry']]],
+  ['ndash_20beltrami_20operator_3',['Heat Kernel Laplace&amp;ndash;Beltrami Operator',['../moduleHeatLaplaceOperator.html',1,'packageDEC']]],
+  ['non_20manifold_20polygonal_20surfaces_20in_20r3_4',['Surface mesh data structure for representing manifold or non-manifold polygonal surfaces in R3',['../moduleSurfaceMesh.html',1,'packageShapes']]],
+  ['normal_20estimator_5',['Maximal segments and slices of digital surface based normal estimator',['../moduleMaximalSegmentSliceEstimation.html',1,'packageGeometry']]],
+  ['normal_20estimators_6',['Plane-probing based normal estimators',['../modulePlaneProbing.html',1,'packageGeometry']]],
+  ['normal_20vector_20alignment_7',['Digital surface regularization by normal vector alignment',['../moduleRegularization.html',1,'packageGeometry']]],
+  ['number_20and_20integer_20concepts_8',['Number and Integer Concepts',['../moduleNumber.html',1,'packageKernel']]]
 ];

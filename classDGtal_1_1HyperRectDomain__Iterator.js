@@ -7,7 +7,7 @@ var classDGtal_1_1HyperRectDomain__Iterator =
     [ "HyperRectDomain_Iterator", "classDGtal_1_1HyperRectDomain__Iterator.html#a05f6fb1ffdb55d2d149cefd74b71f645", null ],
     [ "advance", "classDGtal_1_1HyperRectDomain__Iterator.html#adf0b6ed7d90715f488abe7015e47bac0", null ],
     [ "decrement", "classDGtal_1_1HyperRectDomain__Iterator.html#a61385523521e2332a7d768621889ffdc", null ],
-    [ "dereference", "classDGtal_1_1HyperRectDomain__Iterator.html#a6e452c732eb52e4a6bd577f315bd6f3a", null ],
+    [ "dereference", "classDGtal_1_1HyperRectDomain__Iterator.html#a96b4ec37cfed840f42dad256d28492bd", null ],
     [ "distance_to", "classDGtal_1_1HyperRectDomain__Iterator.html#aa35f05a1f42c6308dc786b57f0c17e04", null ],
     [ "equal", "classDGtal_1_1HyperRectDomain__Iterator.html#a3f39fec4436e16ac4d847467512d44b0", null ],
     [ "increment", "classDGtal_1_1HyperRectDomain__Iterator.html#ad362aa4e578030b2cf9bed8d46211651", null ],

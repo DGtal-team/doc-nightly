@@ -11,7 +11,7 @@ var classDGtal_1_1LpMetric =
     [ "closest", "classDGtal_1_1LpMetric.html#a020c6f61983a936dcdeff8604239336d", null ],
     [ "isValid", "classDGtal_1_1LpMetric.html#a8e0b55a679a0f4bbb66607626f691c03", null ],
     [ "operator()", "classDGtal_1_1LpMetric.html#ad3040185550ace963596ac60711392af", null ],
-    [ "operator=", "classDGtal_1_1LpMetric.html#a3ee36c8fe2e3572a3ac897001b3b2994", null ],
+    [ "operator=", "classDGtal_1_1LpMetric.html#a2366b4a5c946e25261dd9d98c74896dd", null ],
     [ "rawDistance", "classDGtal_1_1LpMetric.html#a93a33fe408f45cc0c4f536c2ff42c16d", null ],
     [ "selfDisplay", "classDGtal_1_1LpMetric.html#a4af41dfad938cd0af3e4f67ef718fc17", null ],
     [ "myExponent", "classDGtal_1_1LpMetric.html#adb4f1decd115aa3cb32956983bf42171", null ]

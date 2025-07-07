@@ -8,6 +8,6 @@ var classDGtal_1_1IteratorAdapter =
     [ "IteratorAdapter", "classDGtal_1_1IteratorAdapter.html#ac667b40dbd7947a058f3b7a82010d86d", null ],
     [ "~IteratorAdapter", "classDGtal_1_1IteratorAdapter.html#a00e1a3cf7510ea8fb1b1ffadfec025d7", null ],
     [ "BOOST_CONCEPT_ASSERT", "classDGtal_1_1IteratorAdapter.html#aadd00fb0e16cc326dec27d675d9f001a", null ],
-    [ "operator=", "classDGtal_1_1IteratorAdapter.html#a1a46a69cbea4c22ddda68ab883ba4f05", null ],
-    [ "operator=", "classDGtal_1_1IteratorAdapter.html#aee8f99971ac9d1231b54ce1835e3413e", null ]
+    [ "operator=", "classDGtal_1_1IteratorAdapter.html#a74e61556c0e94e5ed46e78bd61562d66", null ],
+    [ "operator=", "classDGtal_1_1IteratorAdapter.html#ace39cdd36e67128b45fffec8dd82780e", null ]
 ];

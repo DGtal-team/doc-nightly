@@ -5,7 +5,7 @@ var classDGtal_1_1experimental_1_1ImageContainerByHashTree_1_1Iterator =
     [ "isAtEnd", "classDGtal_1_1experimental_1_1ImageContainerByHashTree_1_1Iterator.html#a781ea058ea9d4303091b5fd90398fbe4", null ],
     [ "next", "classDGtal_1_1experimental_1_1ImageContainerByHashTree_1_1Iterator.html#aa2cf8fa4f66be21cd4714622fa30882d", null ],
     [ "operator!=", "classDGtal_1_1experimental_1_1ImageContainerByHashTree_1_1Iterator.html#a874c06f09bf898ed3a504b49f8d7852c", null ],
-    [ "operator*", "classDGtal_1_1experimental_1_1ImageContainerByHashTree_1_1Iterator.html#a9a173461469b97f84278086554d6b48e", null ],
+    [ "operator*", "classDGtal_1_1experimental_1_1ImageContainerByHashTree_1_1Iterator.html#a6ccb7e6113b96e83f1d98f0d0a49a71a", null ],
     [ "operator++", "classDGtal_1_1experimental_1_1ImageContainerByHashTree_1_1Iterator.html#a80892a9597d8c9be91922a2f7656c460", null ],
     [ "operator==", "classDGtal_1_1experimental_1_1ImageContainerByHashTree_1_1Iterator.html#a7370f9fc5f102729a6db583eacaede28", null ],
     [ "myArraySize", "classDGtal_1_1experimental_1_1ImageContainerByHashTree_1_1Iterator.html#ad8ab199eacf2772df1a511a09a803a90", null ],

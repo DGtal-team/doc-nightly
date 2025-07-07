@@ -30,7 +30,7 @@ var classDGtal_1_1StabbingCircleComputer =
     [ "isStraight", "classDGtal_1_1StabbingCircleComputer.html#a6560bf0fd7f038de395d02691415d413", null ],
     [ "isValid", "classDGtal_1_1StabbingCircleComputer.html#a70bf25a4f9481dbf66972990ecdd7ccb", null ],
     [ "operator!=", "classDGtal_1_1StabbingCircleComputer.html#a85a08a9adc339df66ebb6f1ec0d8da5a", null ],
-    [ "operator=", "classDGtal_1_1StabbingCircleComputer.html#a23af36c2b9a89ee6d7d73b33e2d825d4", null ],
+    [ "operator=", "classDGtal_1_1StabbingCircleComputer.html#aaac1eab5f4dfb611a37d96cfafe1bad7", null ],
     [ "operator==", "classDGtal_1_1StabbingCircleComputer.html#a125da4fd345c481b1bbd7cf339ea18f9", null ],
     [ "selfDisplay", "classDGtal_1_1StabbingCircleComputer.html#a1d9301cfd7a24dfc2e91894e7b5c5798", null ],
     [ "myBegin", "classDGtal_1_1StabbingCircleComputer.html#ad46261c4c792bef17663b8118c666db1", null ],
