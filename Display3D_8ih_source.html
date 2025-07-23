@@ -729,7 +729,7 @@ $(document).ready(function(){initNavTree('Display3D_8ih_source.html',''); initRe
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>            typename TFunctorV,</div>
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>            typename TFunctorVm1&gt;</div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>  std::string Display3D&lt;Space, KSpace&gt;::draw(const ImageAdapter&lt;TImageContainer, TNewDomain, TFunctorD, TNewValue, TFunctorV, TFunctorVm1&gt;&amp; adapter, const std::string&amp; name) {</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    return drawImage(name, adapter);</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    return drawImageAdaptDom(name, adapter);</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>  }</div>
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>        </div>
 <div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>  template &lt;typename Space, typename KSpace&gt;</div>
@@ -739,7 +739,7 @@ $(document).ready(function(){initNavTree('Display3D_8ih_source.html',''); initRe
 <div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>            typename TNewValue,</div>
 <div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>            typename TFunctorV&gt;</div>
 <div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>  std::string Display3D&lt;Space, KSpace&gt;::draw(const ConstImageAdapter&lt;TImageContainer, TNewDomain, TFunctorD, TNewValue, TFunctorV&gt;&amp; adapter, const std::string&amp; name) {</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    return drawImage(name, adapter);</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    return drawImageAdaptDom(name, adapter);</div>
 <div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>  }</div>
 <div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span> </div>
 <div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>  template &lt;typename Space, typename KSpace&gt;</div>
@@ -996,98 +996,126 @@ $(document).ready(function(){initNavTree('Display3D_8ih_source.html',''); initRe
 <div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>        rp = myEmbedder.embed(*it);</div>
 <div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>      } else {</div>
 <div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>        // We accept to draw theses 2D image, do ask to parametrize to also the myEmbedder...</div>
-<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>        rp = myEmbedder.embed(Point((*it)[0], (*it)[1], 0)); </div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>        rp = myEmbedder.embed(Z3i::Point((*it)[0], (*it)[1], 0)); </div>
 <div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>      }</div>
 <div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>      myCurrentData-&gt;scalarQuantities[QuantityScale::CELL][&quot;value&quot;].push_back(image(*it));</div>
 <div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>      drawutils::insertCubeVertices(myCurrentData-&gt;vertices, rp, myCurrentData-&gt;style.width);</div>
 <div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>    }</div>
 <div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>    return name;</div>
 <div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>  }</div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span> </div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>  </div>
 <div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>  template &lt;typename Space, typename KSpace&gt;</div>
-<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>  std::string Display3D&lt;Space, KSpace&gt;::drawKCell(std::string uname, const RealPoint&amp; rp, bool xodd, bool yodd, bool zodd, bool hasSign, bool sign) {</div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>    std::string name = myCurrentName;</div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>    static const std::string TOKEN = &quot;{d}&quot;;</div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>    static const double scale = 0.9;</div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>    static const double shift = 0.05;</div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>    static const double smallScale = 0.3;</div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>    static const double smallShift = 0.15;</div>
-<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>    // For 2D cell, this indicates if the big quad is </div>
-<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>    // inside the cell or outside</div>
-<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>    static const int orientationPermut[3][2] = {</div>
-<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>      {1, 0}, {0, 1}, {1, 0}</div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>    };</div>
-<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span> </div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>    const unsigned int dim = xodd + yodd + zodd;</div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span> </div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>    auto tokenPos = uname.find(TOKEN);</div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>    if (tokenPos != std::string::npos) </div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>      uname.replace(uname.find(TOKEN), TOKEN.size(), std::to_string(dim));</div>
-<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span> </div>
-<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>    switch(dim) {</div>
-<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>      case 0: {</div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>        name = createOrReuseBallList(uname);</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>        if (myCurrentData-&gt;vertices.size() == 0)</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>            myCurrentData-&gt;style.width *= scale;</div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span> </div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>        myCurrentData-&gt;vertices.push_back(rp);</div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>      }</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>      break;</div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>      case 1: {</div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>        name = createOrReuseLineList(uname);</div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span> </div>
-<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>        const RealPoint shift(xodd, yodd, zodd);</div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>        myCurrentData-&gt;vertices.push_back(rp - 0.5 * shift);</div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>        myCurrentData-&gt;vertices.push_back(rp + 0.5 * shift);</div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>      }</div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>      break;</div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>      case 2: {</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>        const unsigned int orientation = (!xodd ? 0 : (!yodd ? 1 : 2));</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>        if (currentStyle.mode &amp; DisplayStyle::SIMPLIFIED || !hasSign) {</div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>          name = createOrReuseQuadList(uname);</div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>  template &lt;typename T&gt;</div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>  std::string Display3D&lt;Space, KSpace&gt;::drawImageAdaptDom(const std::string&amp; uname, const T&amp; image) {</div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>    std::string name = newCubeList(uname);</div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span> </div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>    size_t total = image.domain().size();</div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span> </div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>    auto it = image.domain().begin();</div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>    auto itend = image.domain().end();</div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>    constexpr size_t dim = T::Domain::Space::dimension;</div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>    </div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>    myCurrentData-&gt;vertices.reserve(8 * total);</div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>    myCurrentData-&gt;scalarQuantities[QuantityScale::CELL][&quot;value&quot;].reserve(total);</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>    for(; it != itend; ++it) {</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>      RealPoint rp;</div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>      if constexpr (dim == 3) {</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>        rp = myEmbedder.embed(*it);</div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>      } else {</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>        // We accept to draw theses 2D image, do ask to parametrize to also the myEmbedder...</div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>        rp = myEmbedder.embed(image.sourceDomainPoint(Z2i::Point((*it)[0], (*it)[1]))); </div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>      }</div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>      myCurrentData-&gt;scalarQuantities[QuantityScale::CELL][&quot;value&quot;].push_back(image(*it));</div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>      drawutils::insertCubeVertices(myCurrentData-&gt;vertices, rp, myCurrentData-&gt;style.width);</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>    }</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>    return name;</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>  }</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span> </div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>  </div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>  template &lt;typename Space, typename KSpace&gt;</div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>  std::string Display3D&lt;Space, KSpace&gt;::drawKCell(std::string uname, const RealPoint&amp; rp, bool xodd, bool yodd, bool zodd, bool hasSign, bool sign) {</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>    std::string name = myCurrentName;</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>    static const std::string TOKEN = &quot;{d}&quot;;</div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>    static const double scale = 0.9;</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>    static const double shift = 0.05;</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>    static const double smallScale = 0.3;</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>    static const double smallShift = 0.15;</div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>    // For 2D cell, this indicates if the big quad is </div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    // inside the cell or outside</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>    static const int orientationPermut[3][2] = {</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>      {1, 0}, {0, 1}, {1, 0}</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    };</div>
 <div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span> </div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>          const double scale1 = myCurrentData-&gt;style.width * scale;</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>    const unsigned int dim = xodd + yodd + zodd;</div>
 <div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span> </div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>          drawutils::insertAASquare(myCurrentData-&gt;vertices, rp, orientation, scale1);</div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>        } else {</div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>          name = createOrReuseVolumetricList(uname);</div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>          </div>
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>          const double scales[2] = {</div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>            scale      * myCurrentData-&gt;style.width, </div>
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>            smallScale * myCurrentData-&gt;style.width</div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>          };</div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>          </div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>          // Decide where the big quad goes, in the interior or the exterior</div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>          // of the cell depending on sign and the orientation</div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>          int permut = orientationPermut[orientation][sign];</div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>          double scale1 = scales[    permut];</div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>          double scale2 = scales[1 - permut];</div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>          double shift1 = shift;</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>          double shift2 = smallShift;</div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span> </div>
-<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>          drawutils::insertPrism(myCurrentData-&gt;vertices, rp, orientation, scale1, scale2, shift1, shift2);</div>
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>        }</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    auto tokenPos = uname.find(TOKEN);</div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>    if (tokenPos != std::string::npos) </div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>      uname.replace(uname.find(TOKEN), TOKEN.size(), std::to_string(dim));</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span> </div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>    switch(dim) {</div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>      case 0: {</div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>        name = createOrReuseBallList(uname);</div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>        if (myCurrentData-&gt;vertices.size() == 0)</div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>            myCurrentData-&gt;style.width *= scale;</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span> </div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>        myCurrentData-&gt;vertices.push_back(rp);</div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>      }</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>      break;</div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>      case 1: {</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>        name = createOrReuseLineList(uname);</div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span> </div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>        const RealPoint shift(xodd, yodd, zodd);</div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>        myCurrentData-&gt;vertices.push_back(rp - 0.5 * shift);</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>        myCurrentData-&gt;vertices.push_back(rp + 0.5 * shift);</div>
 <div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>      }</div>
 <div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>      break;</div>
-<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>      case 3: {</div>
-<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>        name = createOrReuseCubeList(uname);</div>
-<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>        drawutils::insertCubeVertices(myCurrentData-&gt;vertices, rp, myCurrentData-&gt;style.width);</div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>      };</div>
-<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>      break;</div>
-<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>    };</div>
+<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>      case 2: {</div>
+<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>        const unsigned int orientation = (!xodd ? 0 : (!yodd ? 1 : 2));</div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>        if (currentStyle.mode &amp; DisplayStyle::SIMPLIFIED || !hasSign) {</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>          name = createOrReuseQuadList(uname);</div>
+<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span> </div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>          const double scale1 = myCurrentData-&gt;style.width * scale;</div>
 <div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span> </div>
-<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>    return name;</div>
-<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>  }</div>
-<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span> </div>
-<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span> </div>
-<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>} // DGtal</div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>          drawutils::insertAASquare(myCurrentData-&gt;vertices, rp, orientation, scale1);</div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>        } else {</div>
+<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>          name = createOrReuseVolumetricList(uname);</div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>          </div>
+<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>          const double scales[2] = {</div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>            scale      * myCurrentData-&gt;style.width, </div>
+<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>            smallScale * myCurrentData-&gt;style.width</div>
+<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>          };</div>
+<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>          </div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>          // Decide where the big quad goes, in the interior or the exterior</div>
+<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>          // of the cell depending on sign and the orientation</div>
+<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>          int permut = orientationPermut[orientation][sign];</div>
+<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>          double scale1 = scales[    permut];</div>
+<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>          double scale2 = scales[1 - permut];</div>
+<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>          double shift1 = shift;</div>
+<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>          double shift2 = smallShift;</div>
+<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span> </div>
+<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>          drawutils::insertPrism(myCurrentData-&gt;vertices, rp, orientation, scale1, scale2, shift1, shift2);</div>
+<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>        }</div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>      }</div>
+<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>      break;</div>
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>      case 3: {</div>
+<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>        name = createOrReuseCubeList(uname);</div>
+<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>        drawutils::insertCubeVertices(myCurrentData-&gt;vertices, rp, myCurrentData-&gt;style.width);</div>
+<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>      };</div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>      break;</div>
+<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>    };</div>
+<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span> </div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>    return name;</div>
+<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>  }</div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span> </div>
+<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span> </div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>} // DGtal</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f2cd1aeea1cfa982bb13a5f95fa4218c.html">DGtal</a></li><li class="navelem"><a class="el" href="dir_5520f6078718884549800e0f3c69770f.html">io</a></li><li class="navelem"><b>Display3D.ih</b></li>
-    <li class="footer">Generated on Mon Jul 14 2025 10:18:07 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Jul 23 2025 14:19:24 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

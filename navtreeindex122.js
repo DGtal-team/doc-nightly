@@ -1,5 +1,13 @@
 var NAVTREEINDEX122 =
 {
+"structDGtal_1_1DigitalSurface_1_1Face.html":[4,0,2,153,2],
+"structDGtal_1_1DigitalSurface_1_1Face.html#a2021376b880a1abfce1f869d3c649dbf":[4,0,2,153,2,4],
+"structDGtal_1_1DigitalSurface_1_1Face.html#a2021376b880a1abfce1f869d3c649dbf":[3,0,2,159,2,4],
+"structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e":[3,0,2,159,2,6],
+"structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e":[4,0,2,153,2,6],
+"structDGtal_1_1DigitalSurface_1_1Face.html#a6d7271d58884c7ba92cefa0426ca6a0a":[3,0,2,159,2,5],
+"structDGtal_1_1DigitalSurface_1_1Face.html#a6d7271d58884c7ba92cefa0426ca6a0a":[4,0,2,153,2,5],
+"structDGtal_1_1DigitalSurface_1_1Face.html#a7491f5a67f84501debcdbccd5a642d15":[4,0,2,153,2,2],
 "structDGtal_1_1DigitalSurface_1_1Face.html#a7491f5a67f84501debcdbccd5a642d15":[3,0,2,159,2,2],
 "structDGtal_1_1DigitalSurface_1_1Face.html#a879f0cc2eeac8db370dcad50fa5dda0a":[3,0,2,159,2,0],
 "structDGtal_1_1DigitalSurface_1_1Face.html#a879f0cc2eeac8db370dcad50fa5dda0a":[4,0,2,153,2,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX122 =
 "structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html":[4,0,2,178,0],
 "structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#a178adf398d6f45803d3e051862b5428c":[4,0,2,178,0,0],
 "structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#a178adf398d6f45803d3e051862b5428c":[3,0,2,184,0,0],
-"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#a30c865bdc5d8eeeb9f11e2582c71664f":[4,0,2,178,0,5],
-"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#a30c865bdc5d8eeeb9f11e2582c71664f":[3,0,2,184,0,5],
-"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#a8a0f4ee2abb584cb19452b09c8af8222":[3,0,2,184,0,6],
-"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#a8a0f4ee2abb584cb19452b09c8af8222":[4,0,2,178,0,6],
-"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#aa11d6b13229a7dc940fd117c0b9a9271":[4,0,2,178,0,3],
-"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#aa11d6b13229a7dc940fd117c0b9a9271":[3,0,2,184,0,3],
-"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#acc1c154e8358af715e4685d7a2731a80":[3,0,2,184,0,2],
-"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#acc1c154e8358af715e4685d7a2731a80":[4,0,2,178,0,2],
-"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#acd9a907cf2e04c0b67f043da5fc3e57f":[3,0,2,184,0,1]
+"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#a30c865bdc5d8eeeb9f11e2582c71664f":[4,0,2,178,0,5]
 };

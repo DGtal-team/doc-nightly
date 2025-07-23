@@ -1,5 +1,13 @@
 var NAVTREEINDEX121 =
 {
+"structDGtal_1_1CurvatureFromBinomialConvolverFunctor.html#ac21e5e2e6c8d6ccb07781691c02d8a07":[3,0,2,130,0],
+"structDGtal_1_1CurvatureFromBinomialConvolverFunctor.html#ad12de0a2cb9f2e825413739f02368d2f":[4,0,2,124,3],
+"structDGtal_1_1CurvatureFromBinomialConvolverFunctor.html#ad12de0a2cb9f2e825413739f02368d2f":[3,0,2,130,3],
+"structDGtal_1_1CurvatureFromBinomialConvolverFunctor.html#aeac83e198544064bcaa0e7109c327088":[3,0,2,130,1],
+"structDGtal_1_1CurvatureFromBinomialConvolverFunctor.html#aeac83e198544064bcaa0e7109c327088":[4,0,2,124,1],
+"structDGtal_1_1CustomColors.html":[4,0,2,128],
+"structDGtal_1_1CustomColors.html":[3,0,2,134],
+"structDGtal_1_1CustomColors.html#a57cdbe91d86da3fc429786bec0d758f6":[4,0,2,128,2],
 "structDGtal_1_1CustomColors.html#a57cdbe91d86da3fc429786bec0d758f6":[3,0,2,134,2],
 "structDGtal_1_1CustomColors.html#a97f688a8b1d7647ae293720a14210b87":[4,0,2,128,1],
 "structDGtal_1_1CustomColors.html#a97f688a8b1d7647ae293720a14210b87":[3,0,2,134,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX121 =
 "structDGtal_1_1DigitalSurface_1_1Edge.html#a5d2a60f72948ffe5fab659b5fe78d8bb":[4,0,2,153,1,0],
 "structDGtal_1_1DigitalSurface_1_1Edge.html#a82ecc57356435bd158071c31a304e56c":[3,0,2,159,1,2],
 "structDGtal_1_1DigitalSurface_1_1Edge.html#a82ecc57356435bd158071c31a304e56c":[4,0,2,153,1,2],
-"structDGtal_1_1DigitalSurface_1_1Face.html":[3,0,2,159,2],
-"structDGtal_1_1DigitalSurface_1_1Face.html":[4,0,2,153,2],
-"structDGtal_1_1DigitalSurface_1_1Face.html#a2021376b880a1abfce1f869d3c649dbf":[4,0,2,153,2,4],
-"structDGtal_1_1DigitalSurface_1_1Face.html#a2021376b880a1abfce1f869d3c649dbf":[3,0,2,159,2,4],
-"structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e":[3,0,2,159,2,6],
-"structDGtal_1_1DigitalSurface_1_1Face.html#a2b562e6ab0cc7c0a9543d5fb37831f6e":[4,0,2,153,2,6],
-"structDGtal_1_1DigitalSurface_1_1Face.html#a6d7271d58884c7ba92cefa0426ca6a0a":[3,0,2,159,2,5],
-"structDGtal_1_1DigitalSurface_1_1Face.html#a6d7271d58884c7ba92cefa0426ca6a0a":[4,0,2,153,2,5],
-"structDGtal_1_1DigitalSurface_1_1Face.html#a7491f5a67f84501debcdbccd5a642d15":[4,0,2,153,2,2]
+"structDGtal_1_1DigitalSurface_1_1Face.html":[3,0,2,159,2]
 };

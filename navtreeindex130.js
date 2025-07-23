@@ -1,5 +1,13 @@
 var NAVTREEINDEX130 =
 {
+"structDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator_1_1ProbingFrame.html#ae01c4c20c060d6e3a2d607019c7febb0":[4,0,2,454,0,2],
+"structDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator_1_1ProbingFrame.html#ae931a0b27d9e6887e6ac2d28c996a36c":[4,0,2,454,0,5],
+"structDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator_1_1ProbingFrame.html#ae931a0b27d9e6887e6ac2d28c996a36c":[3,0,2,460,0,5],
+"structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html":[3,0,2,462,0],
+"structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html":[4,0,2,456,0],
+"structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html#a7bbee197e5f3ed88cd5495b0d7f571a2":[3,0,2,462,0,3],
+"structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html#a7bbee197e5f3ed88cd5495b0d7f571a2":[4,0,2,456,0,3],
+"structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html#a8a1d5c310f7917383a8c441475d66b44":[4,0,2,456,0,1],
 "structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html#a8a1d5c310f7917383a8c441475d66b44":[3,0,2,462,0,1],
 "structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html#a8e367313b90e3c73c78ec5cc5de1a850":[3,0,2,462,0,2],
 "structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html#a8e367313b90e3c73c78ec5cc5de1a850":[4,0,2,456,0,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX130 =
 "structDGtal_1_1QuickHull.html#ad245839860fe8583e087e75563efd1d4":[3,0,2,487,56],
 "structDGtal_1_1QuickHull.html#ad26502511f19ddea6db688471d103d4b":[4,0,2,481,15],
 "structDGtal_1_1QuickHull.html#ad26502511f19ddea6db688471d103d4b":[3,0,2,487,15],
-"structDGtal_1_1QuickHull.html#ad3380efed13370da111d6a7ee501dc00":[4,0,2,481,73],
-"structDGtal_1_1QuickHull.html#ad3380efed13370da111d6a7ee501dc00":[3,0,2,487,73],
-"structDGtal_1_1QuickHull.html#ad66b5ff7b9fd55382f078d0ba1a5e8ef":[3,0,2,487,41],
-"structDGtal_1_1QuickHull.html#ad66b5ff7b9fd55382f078d0ba1a5e8ef":[4,0,2,481,41],
-"structDGtal_1_1QuickHull.html#ad8c1690a1ef004f8b9a72559e5b3dd24":[3,0,2,487,43],
-"structDGtal_1_1QuickHull.html#ad8c1690a1ef004f8b9a72559e5b3dd24":[4,0,2,481,43],
-"structDGtal_1_1QuickHull.html#adb9b873052d072f891fc7f0b3e013106":[3,0,2,487,34],
-"structDGtal_1_1QuickHull.html#adb9b873052d072f891fc7f0b3e013106":[4,0,2,481,34],
-"structDGtal_1_1QuickHull.html#adbb0326f6e2f5bfab913019018602370":[4,0,2,481,55]
+"structDGtal_1_1QuickHull.html#ad3380efed13370da111d6a7ee501dc00":[4,0,2,481,73]
 };

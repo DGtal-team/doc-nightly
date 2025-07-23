@@ -1,5 +1,13 @@
 var NAVTREEINDEX146 =
 {
+"structDGtal_1_1functors_1_1IsWithinPointPredicate.html#aa501510a9044356e0e5542084ad5d659":[3,0,2,8,61,2],
+"structDGtal_1_1functors_1_1IsWithinPointPredicate.html#aa501510a9044356e0e5542084ad5d659":[4,0,2,4,61,2],
+"structDGtal_1_1functors_1_1IsWithinPointPredicate.html#af3c45eb6cc55242357859a8530fb6f72":[4,0,2,4,61,0],
+"structDGtal_1_1functors_1_1IsWithinPointPredicate.html#af3c45eb6cc55242357859a8530fb6f72":[3,0,2,8,61,0],
+"structDGtal_1_1functors_1_1Lambda64Function.html":[3,0,2,8,62],
+"structDGtal_1_1functors_1_1Lambda64Function.html":[4,0,2,4,62],
+"structDGtal_1_1functors_1_1Lambda64Function.html#a4d744cf99132f0c9fbc64c3e67d4397e":[4,0,2,4,62,0],
+"structDGtal_1_1functors_1_1Lambda64Function.html#a4d744cf99132f0c9fbc64c3e67d4397e":[3,0,2,8,62,0],
 "structDGtal_1_1functors_1_1LambdaExponentialFunction.html":[3,0,2,8,63],
 "structDGtal_1_1functors_1_1LambdaExponentialFunction.html":[4,0,2,4,63],
 "structDGtal_1_1functors_1_1LambdaExponentialFunction.html#a508ad91e1d3442c88a550d5b24a8e7af":[4,0,2,4,63,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX146 =
 "structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#afc5de9abbb751bf229f5fa86b7e87ce8":[3,0,2,8,0,0,8],
 "structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#afc5de9abbb751bf229f5fa86b7e87ce8":[4,0,2,4,0,0,8],
 "structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#afdc9446d04a6b727e4b0291cd1b07f2d":[3,0,2,8,0,0,3],
-"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#afdc9446d04a6b727e4b0291cd1b07f2d":[4,0,2,4,0,0,3],
-"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html":[3,0,2,8,0,1],
-"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html":[4,0,2,4,0,1],
-"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a3875e61be9f9130e9df476e6174d090c":[3,0,2,8,0,1,7],
-"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a3875e61be9f9130e9df476e6174d090c":[4,0,2,4,0,1,7],
-"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a622a64004fb775634a4c2f0451f67003":[3,0,2,8,0,1,6],
-"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a622a64004fb775634a4c2f0451f67003":[4,0,2,4,0,1,6],
-"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a864f7edb93ebe840377cf66b670c8378":[3,0,2,8,0,1,4],
-"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a864f7edb93ebe840377cf66b670c8378":[4,0,2,4,0,1,4]
+"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalCurvatureFunctor.html#afdc9446d04a6b727e4b0291cd1b07f2d":[4,0,2,4,0,0,3]
 };

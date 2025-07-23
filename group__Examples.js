@@ -133,6 +133,7 @@ var group__Examples =
     [ "viewer3D-7-planes.cpp", "viewer3D-7-planes_8cpp.html", null ],
     [ "viewer3D-7-stdplane.cpp", "viewer3D-7-stdplane_8cpp.html", null ],
     [ "viewer3D-8-2DSliceImages.cpp", "viewer3D-8-2DSliceImages_8cpp.html", null ],
+    [ "viewer3D-8bis-2Dimages.cpp", "viewer3D-8bis-2Dimages_8cpp.html", null ],
     [ "viewer3D-9-3Dimages.cpp", "viewer3D-9-3Dimages_8cpp.html", null ],
     [ "exampleHyperRectDomainParallelScan.cpp", "exampleHyperRectDomainParallelScan_8cpp.html", null ],
     [ "examplePointFunctorHolder.cpp", "examplePointFunctorHolder_8cpp.html", null ],

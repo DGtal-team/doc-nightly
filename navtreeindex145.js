@@ -1,5 +1,13 @@
 var NAVTREEINDEX145 =
 {
+"structDGtal_1_1functors_1_1IICurvatureFunctor.html#a245de82ff875e91d2843eaf792ccb63a":[4,0,2,4,44,4],
+"structDGtal_1_1functors_1_1IICurvatureFunctor.html#a245de82ff875e91d2843eaf792ccb63a":[3,0,2,8,44,4],
+"structDGtal_1_1functors_1_1IICurvatureFunctor.html#a2b268e02afbe23ed5eca83247c9cb011":[3,0,2,8,44,0],
+"structDGtal_1_1functors_1_1IICurvatureFunctor.html#a2b268e02afbe23ed5eca83247c9cb011":[4,0,2,4,44,0],
+"structDGtal_1_1functors_1_1IICurvatureFunctor.html#a38c8e5f123241edbe8a8e7f9069c93bc":[4,0,2,4,44,8],
+"structDGtal_1_1functors_1_1IICurvatureFunctor.html#a38c8e5f123241edbe8a8e7f9069c93bc":[3,0,2,8,44,8],
+"structDGtal_1_1functors_1_1IICurvatureFunctor.html#a654a9b1cc09cfbe3857c7d9fc1d59984":[4,0,2,4,44,9],
+"structDGtal_1_1functors_1_1IICurvatureFunctor.html#a654a9b1cc09cfbe3857c7d9fc1d59984":[3,0,2,8,44,9],
 "structDGtal_1_1functors_1_1IICurvatureFunctor.html#a7cddb09ac324ded77e6aa4dd4bd7695b":[4,0,2,4,44,10],
 "structDGtal_1_1functors_1_1IICurvatureFunctor.html#a7cddb09ac324ded77e6aa4dd4bd7695b":[3,0,2,8,44,10],
 "structDGtal_1_1functors_1_1IICurvatureFunctor.html#a7d1fa3e1554a9d04ec79da4eeb1936a3":[4,0,2,4,44,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX145 =
 "structDGtal_1_1functors_1_1IsWithinPointPredicate.html#a5d6aed922a67ce08752dca2c8e03627e":[3,0,2,8,61,3],
 "structDGtal_1_1functors_1_1IsWithinPointPredicate.html#a5d6aed922a67ce08752dca2c8e03627e":[4,0,2,4,61,3],
 "structDGtal_1_1functors_1_1IsWithinPointPredicate.html#a950190998589d64b2f765e90cae5e8d7":[3,0,2,8,61,4],
-"structDGtal_1_1functors_1_1IsWithinPointPredicate.html#a950190998589d64b2f765e90cae5e8d7":[4,0,2,4,61,4],
-"structDGtal_1_1functors_1_1IsWithinPointPredicate.html#aa501510a9044356e0e5542084ad5d659":[3,0,2,8,61,2],
-"structDGtal_1_1functors_1_1IsWithinPointPredicate.html#aa501510a9044356e0e5542084ad5d659":[4,0,2,4,61,2],
-"structDGtal_1_1functors_1_1IsWithinPointPredicate.html#af3c45eb6cc55242357859a8530fb6f72":[4,0,2,4,61,0],
-"structDGtal_1_1functors_1_1IsWithinPointPredicate.html#af3c45eb6cc55242357859a8530fb6f72":[3,0,2,8,61,0],
-"structDGtal_1_1functors_1_1Lambda64Function.html":[3,0,2,8,62],
-"structDGtal_1_1functors_1_1Lambda64Function.html":[4,0,2,4,62],
-"structDGtal_1_1functors_1_1Lambda64Function.html#a4d744cf99132f0c9fbc64c3e67d4397e":[4,0,2,4,62,0],
-"structDGtal_1_1functors_1_1Lambda64Function.html#a4d744cf99132f0c9fbc64c3e67d4397e":[3,0,2,8,62,0]
+"structDGtal_1_1functors_1_1IsWithinPointPredicate.html#a950190998589d64b2f765e90cae5e8d7":[4,0,2,4,61,4]
 };

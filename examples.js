@@ -126,6 +126,7 @@ var examples =
     [ "io/viewers/viewer3D-7-planes.cpp", "io_2viewers_2viewer3D-7-planes_8cpp-example.html", null ],
     [ "io/viewers/viewer3D-7-stdplane.cpp", "io_2viewers_2viewer3D-7-stdplane_8cpp-example.html", null ],
     [ "io/viewers/viewer3D-8-2DSliceImages.cpp", "io_2viewers_2viewer3D-8-2DSliceImages_8cpp-example.html", null ],
+    [ "io/viewers/viewer3D-8bis-2Dimages.cpp", "io_2viewers_2viewer3D-8bis-2Dimages_8cpp-example.html", null ],
     [ "io/viewers/viewer3D-9-3Dimages.cpp", "io_2viewers_2viewer3D-9-3Dimages_8cpp-example.html", null ],
     [ "math/polynomial-derivative.cpp", "math_2polynomial-derivative_8cpp-example.html", null ],
     [ "math/polynomial-read.cpp", "math_2polynomial-read_8cpp-example.html", null ],

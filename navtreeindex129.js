@@ -1,5 +1,13 @@
 var NAVTREEINDEX129 =
 {
+"structDGtal_1_1Object_1_1Edge.html#aab0c58d4500de7956ea317cb4172f785":[4,0,2,429,0,6],
+"structDGtal_1_1Object_1_1Edge.html#abef5984d640ad546ca0533394fd188ed":[4,0,2,429,0,2],
+"structDGtal_1_1Object_1_1Edge.html#abef5984d640ad546ca0533394fd188ed":[3,0,2,435,0,2],
+"structDGtal_1_1Object_1_1Edge.html#aed7cd52cfc5f60c20e5c40f9b2c3dd22":[4,0,2,429,0,4],
+"structDGtal_1_1Object_1_1Edge.html#aed7cd52cfc5f60c20e5c40f9b2c3dd22":[3,0,2,435,0,4],
+"structDGtal_1_1Object_1_1VertexMap.html":[4,0,2,429,1],
+"structDGtal_1_1Object_1_1VertexMap.html":[3,0,2,435,1],
+"structDGtal_1_1Object_1_1VertexMap.html#a7896e90fa94b75659940d0883ba11757":[3,0,2,435,1,0],
 "structDGtal_1_1Object_1_1VertexMap.html#a7896e90fa94b75659940d0883ba11757":[4,0,2,429,1,0],
 "structDGtal_1_1OneBalancedWordComputer_1_1ConstPointIterator.html":[3,0,2,436,3],
 "structDGtal_1_1OneBalancedWordComputer_1_1ConstPointIterator.html":[4,0,2,430,3],
@@ -161,8 +169,8 @@ var NAVTREEINDEX129 =
 "structDGtal_1_1PPMReader.html#af85094db756709d08f538a6a43cc64ba":[4,0,2,471,3],
 "structDGtal_1_1PPMWriter.html":[4,0,2,472],
 "structDGtal_1_1PPMWriter.html":[3,0,2,478],
-"structDGtal_1_1PPMWriter.html#a5b958fd70a890165201252e3483bbcaf":[3,0,2,478,1],
 "structDGtal_1_1PPMWriter.html#a5b958fd70a890165201252e3483bbcaf":[4,0,2,472,1],
+"structDGtal_1_1PPMWriter.html#a5b958fd70a890165201252e3483bbcaf":[3,0,2,478,1],
 "structDGtal_1_1PPMWriter.html#a5f0e4d4e4182097dccc21a53bff89003":[4,0,2,472,2],
 "structDGtal_1_1PPMWriter.html#a5f0e4d4e4182097dccc21a53bff89003":[3,0,2,478,2],
 "structDGtal_1_1PPMWriter.html#a5f8a5e488dbd1ce45ca2b0b22844e15e":[4,0,2,472,4],
@@ -217,8 +225,8 @@ var NAVTREEINDEX129 =
 "structDGtal_1_1Parameters.html#a49de22df860528a1cae7ccd8fb6d5785":[3,0,2,450,7],
 "structDGtal_1_1Parameters.html#a4ebbbfa667c7731dc7a908fb1f716d8d":[4,0,2,444,4],
 "structDGtal_1_1Parameters.html#a4ebbbfa667c7731dc7a908fb1f716d8d":[3,0,2,450,4],
-"structDGtal_1_1Parameters.html#a5b328cd6c564f11cdc8bb46fda22aaf8":[4,0,2,444,9],
 "structDGtal_1_1Parameters.html#a5b328cd6c564f11cdc8bb46fda22aaf8":[3,0,2,450,9],
+"structDGtal_1_1Parameters.html#a5b328cd6c564f11cdc8bb46fda22aaf8":[4,0,2,444,9],
 "structDGtal_1_1Parameters.html#a68f363d89493f24b4a28cde7c53ec721":[3,0,2,450,13],
 "structDGtal_1_1Parameters.html#a68f363d89493f24b4a28cde7c53ec721":[4,0,2,444,13],
 "structDGtal_1_1Parameters.html#a69952a8b13f5622514771e56001f7edf":[4,0,2,444,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX129 =
 "structDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator_1_1ProbingFrame.html#aa7e979afd894d9e032e52be793fb04be":[3,0,2,460,0,0],
 "structDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator_1_1ProbingFrame.html#abeac8c8bce3a356a9b06eb34f9e17e73":[4,0,2,454,0,1],
 "structDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator_1_1ProbingFrame.html#abeac8c8bce3a356a9b06eb34f9e17e73":[3,0,2,460,0,1],
-"structDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator_1_1ProbingFrame.html#ae01c4c20c060d6e3a2d607019c7febb0":[3,0,2,460,0,2],
-"structDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator_1_1ProbingFrame.html#ae01c4c20c060d6e3a2d607019c7febb0":[4,0,2,454,0,2],
-"structDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator_1_1ProbingFrame.html#ae931a0b27d9e6887e6ac2d28c996a36c":[4,0,2,454,0,5],
-"structDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator_1_1ProbingFrame.html#ae931a0b27d9e6887e6ac2d28c996a36c":[3,0,2,460,0,5],
-"structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html":[3,0,2,462,0],
-"structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html":[4,0,2,456,0],
-"structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html#a7bbee197e5f3ed88cd5495b0d7f571a2":[3,0,2,462,0,3],
-"structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html#a7bbee197e5f3ed88cd5495b0d7f571a2":[4,0,2,456,0,3],
-"structDGtal_1_1PlaneProbingLNeighborhood_1_1ClosestGridPoint.html#a8a1d5c310f7917383a8c441475d66b44":[4,0,2,456,0,1]
+"structDGtal_1_1PlaneProbingDigitalSurfaceLocalEstimator_1_1ProbingFrame.html#ae01c4c20c060d6e3a2d607019c7febb0":[3,0,2,460,0,2]
 };

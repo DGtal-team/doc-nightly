@@ -1,5 +1,13 @@
 var NAVTREEINDEX120 =
 {
+"structDGtal_1_1ConvexityHelper.html#aff80f51adcc33e67115b84ccec7a1a9d":[4,0,2,114,14],
+"structDGtal_1_1CorrectedNormalCurrentComputer.html":[4,0,2,115],
+"structDGtal_1_1CorrectedNormalCurrentComputer.html":[3,0,2,121],
+"structDGtal_1_1CorrectedNormalCurrentComputer.html#a000cdfabdd1fe5d20d510c02b9afe3d3":[3,0,2,121,34],
+"structDGtal_1_1CorrectedNormalCurrentComputer.html#a000cdfabdd1fe5d20d510c02b9afe3d3":[4,0,2,115,34],
+"structDGtal_1_1CorrectedNormalCurrentComputer.html#a062df5a1dc3445f643f5c151e01d7e6e":[4,0,2,115,18],
+"structDGtal_1_1CorrectedNormalCurrentComputer.html#a062df5a1dc3445f643f5c151e01d7e6e":[3,0,2,121,18],
+"structDGtal_1_1CorrectedNormalCurrentComputer.html#a0ab063525ef4a71a21cfb7f9e9c99afd":[3,0,2,121,10],
 "structDGtal_1_1CorrectedNormalCurrentComputer.html#a0ab063525ef4a71a21cfb7f9e9c99afd":[4,0,2,115,10],
 "structDGtal_1_1CorrectedNormalCurrentComputer.html#a0b2ce6940f2558eb70b8a3f6b43f8cfd":[3,0,2,121,21],
 "structDGtal_1_1CorrectedNormalCurrentComputer.html#a0b2ce6940f2558eb70b8a3f6b43f8cfd":[4,0,2,115,21],
@@ -241,13 +249,5 @@ var NAVTREEINDEX120 =
 "structDGtal_1_1CurvatureFromBinomialConvolverFunctor.html#a413cc0146e78b725656e5cd1594388d0":[4,0,2,124,2],
 "structDGtal_1_1CurvatureFromBinomialConvolverFunctor.html#a63789b5a1a77ae0b3668394ab044d647":[3,0,2,130,4],
 "structDGtal_1_1CurvatureFromBinomialConvolverFunctor.html#a63789b5a1a77ae0b3668394ab044d647":[4,0,2,124,4],
-"structDGtal_1_1CurvatureFromBinomialConvolverFunctor.html#ac21e5e2e6c8d6ccb07781691c02d8a07":[4,0,2,124,0],
-"structDGtal_1_1CurvatureFromBinomialConvolverFunctor.html#ac21e5e2e6c8d6ccb07781691c02d8a07":[3,0,2,130,0],
-"structDGtal_1_1CurvatureFromBinomialConvolverFunctor.html#ad12de0a2cb9f2e825413739f02368d2f":[4,0,2,124,3],
-"structDGtal_1_1CurvatureFromBinomialConvolverFunctor.html#ad12de0a2cb9f2e825413739f02368d2f":[3,0,2,130,3],
-"structDGtal_1_1CurvatureFromBinomialConvolverFunctor.html#aeac83e198544064bcaa0e7109c327088":[3,0,2,130,1],
-"structDGtal_1_1CurvatureFromBinomialConvolverFunctor.html#aeac83e198544064bcaa0e7109c327088":[4,0,2,124,1],
-"structDGtal_1_1CustomColors.html":[4,0,2,128],
-"structDGtal_1_1CustomColors.html":[3,0,2,134],
-"structDGtal_1_1CustomColors.html#a57cdbe91d86da3fc429786bec0d758f6":[4,0,2,128,2]
+"structDGtal_1_1CurvatureFromBinomialConvolverFunctor.html#ac21e5e2e6c8d6ccb07781691c02d8a07":[4,0,2,124,0]
 };

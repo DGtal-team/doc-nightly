@@ -1,5 +1,13 @@
 var NAVTREEINDEX147 =
 {
+"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html":[3,0,2,8,0,1],
+"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html":[4,0,2,4,0,1],
+"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a3875e61be9f9130e9df476e6174d090c":[3,0,2,8,0,1,7],
+"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a3875e61be9f9130e9df476e6174d090c":[4,0,2,4,0,1,7],
+"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a622a64004fb775634a4c2f0451f67003":[3,0,2,8,0,1,6],
+"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a622a64004fb775634a4c2f0451f67003":[4,0,2,4,0,1,6],
+"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a864f7edb93ebe840377cf66b670c8378":[3,0,2,8,0,1,4],
+"structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a864f7edb93ebe840377cf66b670c8378":[4,0,2,4,0,1,4],
 "structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a86e6964e741e97dd9d55ea6fa31e102f":[3,0,2,8,0,1,2],
 "structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a86e6964e741e97dd9d55ea6fa31e102f":[4,0,2,4,0,1,2],
 "structDGtal_1_1functors_1_1ShapeGeometricFunctors_1_1ShapeFirstPrincipalDirectionFunctor.html#a8e8cc37b64dcb64428ec0c104fcfeaa0":[4,0,2,4,0,1,10],
@@ -224,8 +232,8 @@ var NAVTREEINDEX147 =
 "structDGtal_1_1functors_1_1SurfelSetPredicate.html#aa8d9f2bac614b11053d22f8d095ccb0d":[3,0,2,8,112,6],
 "structDGtal_1_1functors_1_1SurfelSetPredicate.html#adc46263fccaa28693f3069cf9936208e":[3,0,2,8,112,1],
 "structDGtal_1_1functors_1_1SurfelSetPredicate.html#adc46263fccaa28693f3069cf9936208e":[4,0,2,4,112,1],
-"structDGtal_1_1functors_1_1SurfelSetPredicate.html#af394a582e916e01f29718bd7a7caa7af":[4,0,2,4,112,3],
 "structDGtal_1_1functors_1_1SurfelSetPredicate.html#af394a582e916e01f29718bd7a7caa7af":[3,0,2,8,112,3],
+"structDGtal_1_1functors_1_1SurfelSetPredicate.html#af394a582e916e01f29718bd7a7caa7af":[4,0,2,4,112,3],
 "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01false_01_4.html":[3,0,2,8,115],
 "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01false_01_4.html":[4,0,2,4,115],
 "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01false_01_4.html#a0277717d74c7ac53a63a87419b432ddb":[3,0,2,8,115,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX147 =
 "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01false_01_4.html#aac65d61925c9bf70014a6d1df8beea00":[4,0,2,4,115,5],
 "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01false_01_4.html#aac65d61925c9bf70014a6d1df8beea00":[3,0,2,8,115,5],
 "structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01true_01_4.html":[4,0,2,4,116],
-"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01true_01_4.html":[3,0,2,8,116],
-"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01true_01_4.html#a050a26a1e44d455a00b5bc7f31ae063a":[4,0,2,4,116,1],
-"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01true_01_4.html#a050a26a1e44d455a00b5bc7f31ae063a":[3,0,2,8,116,1],
-"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01true_01_4.html#a13cfd351588e8abc8324b367f3217031":[3,0,2,8,116,0],
-"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01true_01_4.html#a13cfd351588e8abc8324b367f3217031":[4,0,2,4,116,0],
-"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01true_01_4.html#a412045de09b6c082215573d6e45346a2":[4,0,2,4,116,5],
-"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01true_01_4.html#a412045de09b6c082215573d6e45346a2":[3,0,2,8,116,5],
-"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01true_01_4.html#a664cc08abf4ffab9a2085c3099901c57":[4,0,2,4,116,4],
-"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01true_01_4.html#a664cc08abf4ffab9a2085c3099901c57":[3,0,2,8,116,4]
+"structDGtal_1_1functors_1_1Thresholder_3_01T_00_01false_00_01true_01_4.html":[3,0,2,8,116]
 };

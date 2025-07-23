@@ -1,5 +1,13 @@
 var NAVTREEINDEX118 =
 {
+"structDGtal_1_1ClosedIntegerHalfPlane.html#a400b671ba4bd6e607f56e5bec1d5426f":[3,0,2,81,11],
+"structDGtal_1_1ClosedIntegerHalfPlane.html#a528f48954a749984a3b9527414018559":[4,0,2,75,5],
+"structDGtal_1_1ClosedIntegerHalfPlane.html#a528f48954a749984a3b9527414018559":[3,0,2,81,5],
+"structDGtal_1_1ClosedIntegerHalfPlane.html#a5908293e1c006d106e7272d47b023b53":[4,0,2,75,3],
+"structDGtal_1_1ClosedIntegerHalfPlane.html#a5908293e1c006d106e7272d47b023b53":[3,0,2,81,3],
+"structDGtal_1_1ClosedIntegerHalfPlane.html#a5f7b22fbeffc01af18f81fedf8d4d590":[3,0,2,81,7],
+"structDGtal_1_1ClosedIntegerHalfPlane.html#a5f7b22fbeffc01af18f81fedf8d4d590":[4,0,2,75,7],
+"structDGtal_1_1ClosedIntegerHalfPlane.html#a97435719215c0a8df4737accbeb96a35":[4,0,2,75,4],
 "structDGtal_1_1ClosedIntegerHalfPlane.html#a97435719215c0a8df4737accbeb96a35":[3,0,2,81,4],
 "structDGtal_1_1ClosedIntegerHalfPlane.html#aaae1f4a01efdce96896175a642738d13":[3,0,2,81,8],
 "structDGtal_1_1ClosedIntegerHalfPlane.html#aaae1f4a01efdce96896175a642738d13":[4,0,2,75,8],
@@ -241,13 +249,5 @@ var NAVTREEINDEX118 =
 "structDGtal_1_1ConvexHullCommonKernel.html#a12ac0ebd242cca40a3c8150c77e97697":[4,0,2,111,11],
 "structDGtal_1_1ConvexHullCommonKernel.html#a1327312e98348d10bc0fb8dcb34cc45f":[3,0,2,117,1],
 "structDGtal_1_1ConvexHullCommonKernel.html#a1327312e98348d10bc0fb8dcb34cc45f":[4,0,2,111,1],
-"structDGtal_1_1ConvexHullCommonKernel.html#a134b48da88fc63cce556e29c4a635f70":[3,0,2,117,16],
-"structDGtal_1_1ConvexHullCommonKernel.html#a134b48da88fc63cce556e29c4a635f70":[4,0,2,111,16],
-"structDGtal_1_1ConvexHullCommonKernel.html#a1568e31a875510791c684585ef436ce8":[3,0,2,117,24],
-"structDGtal_1_1ConvexHullCommonKernel.html#a1568e31a875510791c684585ef436ce8":[4,0,2,111,24],
-"structDGtal_1_1ConvexHullCommonKernel.html#a1b1f0dca9221296ba2fe2988d54e20b7":[4,0,2,111,4],
-"structDGtal_1_1ConvexHullCommonKernel.html#a1b1f0dca9221296ba2fe2988d54e20b7":[3,0,2,117,4],
-"structDGtal_1_1ConvexHullCommonKernel.html#a1cee0ddbbe2b551487c9a97311c25275":[3,0,2,117,20],
-"structDGtal_1_1ConvexHullCommonKernel.html#a1cee0ddbbe2b551487c9a97311c25275":[4,0,2,111,20],
-"structDGtal_1_1ConvexHullCommonKernel.html#a1d074e8772a220b629c2db8125246489":[4,0,2,111,2]
+"structDGtal_1_1ConvexHullCommonKernel.html#a134b48da88fc63cce556e29c4a635f70":[3,0,2,117,16]
 };

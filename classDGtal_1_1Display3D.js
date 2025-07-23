@@ -60,6 +60,7 @@ var classDGtal_1_1Display3D =
     [ "drawColor", "classDGtal_1_1Display3D.html#a2702739c2f16eed817b35060d2bf3f29", null ],
     [ "drawGenericRange", "classDGtal_1_1Display3D.html#a356252220766e98f552b8fa86567fa73", null ],
     [ "drawImage", "classDGtal_1_1Display3D.html#adfd475cbdc97ff74bc7ee72b532e81ed", null ],
+    [ "drawImageAdaptDom", "classDGtal_1_1Display3D.html#a6d0952adbdc221fc120785965040ecdb", null ],
     [ "drawKCell", "classDGtal_1_1Display3D.html#a750b58e07871fc07e36c1a8e4fb78823", null ],
     [ "drawLine", "classDGtal_1_1Display3D.html#abb46cf30b0eec53492a7471d911e51f6", null ],
     [ "drawPolygon", "classDGtal_1_1Display3D.html#a1f0045024df52514af97427a08d9018a", null ],

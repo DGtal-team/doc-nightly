@@ -1,5 +1,13 @@
 var NAVTREEINDEX115 =
 {
+"structBinaryFunctor.html":[4,0,22],
+"structBinaryFunctor.html#a35ee512acca7feb31ed6c465a15e3b77":[4,0,22,2],
+"structBinaryFunctor.html#ad2e49775540e5a747df4259eb97d32ac":[4,0,22,0],
+"structBinaryFunctor.html#ad7ed51349284ba72b872ca11a6d9a2fe":[4,0,22,1],
+"structCloneToCountedMember.html":[4,0,23],
+"structCloneToCountedMember.html#a2c5fa0ec21093c0f020c0c14fedd4151":[4,0,23,1],
+"structCloneToCountedMember.html#a67ed1419ca688768a498f122f98ea5b1":[4,0,23,0],
+"structCloneToCountedMember.html#afe3c1dd4c3074d707d9ebdfd75fa30d2":[4,0,23,2],
 "structCloneToCowMember.html":[4,0,24],
 "structCloneToCowMember.html#a059e763fd297fee9abfc1fab7dd5a637":[4,0,24,1],
 "structCloneToCowMember.html#a6cbb03c59a23cc1b2940e6bf0832b658":[4,0,24,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX115 =
 "structDGtal_1_1Bits.html#afca5e900af3f7a6335cf6d487e26b0b8":[4,0,2,43,23],
 "structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitCell.html":[4,0,2,46,0],
 "structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitCell.html":[3,0,2,52,0],
-"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitCell.html#a407aacbe8af35650147b7e82c1f9a2e8":[4,0,2,46,0,2],
-"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitCell.html#a407aacbe8af35650147b7e82c1f9a2e8":[3,0,2,52,0,2],
-"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitCell.html#a78faa4fd4f257d73b4b77cae3e6b88ae":[4,0,2,46,0,1],
-"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitCell.html#a78faa4fd4f257d73b4b77cae3e6b88ae":[3,0,2,52,0,1],
-"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitCell.html#ad8e05a2f47e5b816206dc2cf902a20b2":[3,0,2,52,0,0],
-"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitCell.html#ad8e05a2f47e5b816206dc2cf902a20b2":[4,0,2,46,0,0],
-"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitSegment.html":[3,0,2,52,1],
-"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitSegment.html":[4,0,2,46,1],
-"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitSegment.html#a275216f3b46cf5212c195d930529e322":[4,0,2,46,1,0]
+"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitCell.html#a407aacbe8af35650147b7e82c1f9a2e8":[4,0,2,46,0,2]
 };

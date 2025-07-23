@@ -164,7 +164,6 @@ Functions</h2></td></tr>
 <p>[ExampleViewer3D2DImagesExtractImages]</p>
 <p>[ExampleViewer3D2DImagesDisplayImages]</p>
 <p>[ExampleViewer3D2DImagesDisplayImages]</p>
-<p>[ExampleViewer3D2DModifImages]</p>
 
 <p class="definition">Definition at line <a class="el" href="viewer3D-8-2DSliceImages_8cpp_source.html#l00051">51</a> of file <a class="el" href="viewer3D-8-2DSliceImages_8cpp_source.html">viewer3D-8-2DSliceImages.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   52</span>{</div>
@@ -207,17 +206,12 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   92</span>  std::string imageY = viewer.<a class="code hl_function" href="classDGtal_1_1Display3D.html#a384a636c40492342f8e224e4785f92fb">draw</a>(aSliceImageY);</div>
 <div class="line"><span class="lineno">   94</span>  <span class="comment">//</span></div>
 <div class="line"><span class="lineno">   95</span> </div>
-<div class="line"><span class="lineno">   97</span>  <span class="comment">// Update image position by accessing the transform</span></div>
-<div class="line"><span class="lineno">   98</span>  viewer.<a class="code hl_variable" href="classDGtal_1_1Display3D.html#a6c7c42ac7f0ab2a990116324607b77a1">data</a>[imageY].transform.rotate(Eigen::AngleAxisd(M_PI / 2, Eigen::Vector3d::UnitX()));</div>
-<div class="line"><span class="lineno">   99</span>  viewer.<a class="code hl_variable" href="classDGtal_1_1Display3D.html#a6c7c42ac7f0ab2a990116324607b77a1">data</a>[imageY].transform.translate(Eigen::Vector3d(0, 50, -50));</div>
-<div class="line"><span class="lineno">  100</span>  <span class="comment">// //! [ExampleViewer3D2DModifImages]</span></div>
-<div class="line"><span class="lineno">  101</span> </div>
-<div class="line"><span class="lineno">  102</span>  viewer.<a class="code hl_function" href="classDGtal_1_1PolyscopeViewer.html#a8581233ea7c2efc437b4813ad51d4c33">show</a>();</div>
-<div class="line"><span class="lineno">  103</span>  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  104</span>}</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>  viewer.<a class="code hl_function" href="classDGtal_1_1PolyscopeViewer.html#a8581233ea7c2efc437b4813ad51d4c33">show</a>();</div>
+<div class="line"><span class="lineno">   98</span>  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   99</span>}</div>
 <div class="ttc" id="aclassDGtal_1_1ConstImageAdapter_html"><div class="ttname"><a href="classDGtal_1_1ConstImageAdapter.html">DGtal::ConstImageAdapter</a></div><div class="ttdoc">Aim: implements a const image adapter with a given domain (i.e. a subdomain) and 2 functors : g for d...</div><div class="ttdef"><b>Definition</b> <a href="ConstImageAdapter_8h_source.html#l00105">ConstImageAdapter.h:106</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Display3D_html_a384a636c40492342f8e224e4785f92fb"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a384a636c40492342f8e224e4785f92fb">DGtal::Display3D::draw</a></div><div class="ttdeci">std::string draw(const Point &amp;p, const std::string &amp;uname=&quot;Point_{i}&quot;)</div></div>
-<div class="ttc" id="aclassDGtal_1_1Display3D_html_a6c7c42ac7f0ab2a990116324607b77a1"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a6c7c42ac7f0ab2a990116324607b77a1">DGtal::Display3D::data</a></div><div class="ttdeci">std::map&lt; std::string, DisplayData&lt; RealPoint &gt; &gt; data</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00734">Display3D.h:734</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1HyperRectDomain_html"><div class="ttname"><a href="classDGtal_1_1HyperRectDomain.html">DGtal::HyperRectDomain&lt; Space &gt;</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1ImageContainerBySTLVector_html"><div class="ttname"><a href="classDGtal_1_1ImageContainerBySTLVector.html">DGtal::ImageContainerBySTLVector</a></div><div class="ttdef"><b>Definition</b> <a href="ImageContainerBySTLVector_8h_source.html#l00126">ImageContainerBySTLVector.h:127</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1PolyscopeViewer_html"><div class="ttname"><a href="classDGtal_1_1PolyscopeViewer.html">DGtal::PolyscopeViewer</a></div><div class="ttdef"><b>Definition</b> <a href="PolyscopeViewer_8h_source.html#l00052">PolyscopeViewer.h:52</a></div></div>
@@ -227,7 +221,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="astructDGtal_1_1functors_1_1Projector_html"><div class="ttname"><a href="structDGtal_1_1functors_1_1Projector.html">DGtal::functors::Projector</a></div><div class="ttdoc">Aim: Functor that maps a point P of dimension i to a point Q of dimension j. The member myDims is an ...</div><div class="ttdef"><b>Definition</b> <a href="BasicPointFunctors_8h_source.html#l00106">BasicPointFunctors.h:107</a></div></div>
 <div class="ttc" id="astructDGtal_1_1functors_1_1Projector_html_a3c89c19e382da62a4cd43e15d57ae8b8"><div class="ttname"><a href="structDGtal_1_1functors_1_1Projector.html#a3c89c19e382da62a4cd43e15d57ae8b8">DGtal::functors::Projector::initRemoveOneDim</a></div><div class="ttdeci">void initRemoveOneDim(const Dimension &amp;dimRemoved)</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Display3D_8h_source.html#l00734">DGtal::Display3D&lt; Space, KSpace &gt;::data</a>, <a class="el" href="classDGtal_1_1Display3D.html#a384a636c40492342f8e224e4785f92fb">DGtal::Display3D&lt; Space, KSpace &gt;::draw()</a>, <a class="el" href="structDGtal_1_1VolReader.html#aa4f1ebd956ed345e4c64e78c83da25d2">DGtal::VolReader&lt; TImageContainer, TFunctor &gt;::importVol()</a>, <a class="el" href="structDGtal_1_1functors_1_1Projector.html#a11fb0eb41ce88c01f9fb4487f1a98aad">DGtal::functors::Projector&lt; S &gt;::initAddOneDim()</a>, <a class="el" href="structDGtal_1_1functors_1_1Projector.html#a3c89c19e382da62a4cd43e15d57ae8b8">DGtal::functors::Projector&lt; S &gt;::initRemoveOneDim()</a>, and <a class="el" href="PolyscopeViewer_8h_source.html#l00068">DGtal::PolyscopeViewer&lt; Space, KSpace &gt;::show()</a>.</p>
+<p class="reference">References <a class="el" href="classDGtal_1_1Display3D.html#a384a636c40492342f8e224e4785f92fb">DGtal::Display3D&lt; Space, KSpace &gt;::draw()</a>, <a class="el" href="structDGtal_1_1VolReader.html#aa4f1ebd956ed345e4c64e78c83da25d2">DGtal::VolReader&lt; TImageContainer, TFunctor &gt;::importVol()</a>, <a class="el" href="structDGtal_1_1functors_1_1Projector.html#a11fb0eb41ce88c01f9fb4487f1a98aad">DGtal::functors::Projector&lt; S &gt;::initAddOneDim()</a>, <a class="el" href="structDGtal_1_1functors_1_1Projector.html#a3c89c19e382da62a4cd43e15d57ae8b8">DGtal::functors::Projector&lt; S &gt;::initRemoveOneDim()</a>, and <a class="el" href="PolyscopeViewer_8h_source.html#l00068">DGtal::PolyscopeViewer&lt; Space, KSpace &gt;::show()</a>.</p>
 
 </div>
 </div>
@@ -237,7 +231,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_be8641fa4d4d5ebb6e23d02c55dfd0c9.html">io</a></li><li class="navelem"><a class="el" href="dir_bf3749fcd806166c89833f08af70c2f1.html">viewers</a></li><li class="navelem"><a class="el" href="viewer3D-8-2DSliceImages_8cpp.html">viewer3D-8-2DSliceImages.cpp</a></li>
-    <li class="footer">Generated on Mon Jul 14 2025 10:18:37 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed Jul 23 2025 14:19:50 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

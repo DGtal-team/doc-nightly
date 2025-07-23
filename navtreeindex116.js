@@ -1,5 +1,13 @@
 var NAVTREEINDEX116 =
 {
+"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitCell.html#a407aacbe8af35650147b7e82c1f9a2e8":[3,0,2,52,0,2],
+"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitCell.html#a78faa4fd4f257d73b4b77cae3e6b88ae":[4,0,2,46,0,1],
+"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitCell.html#a78faa4fd4f257d73b4b77cae3e6b88ae":[3,0,2,52,0,1],
+"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitCell.html#ad8e05a2f47e5b816206dc2cf902a20b2":[3,0,2,52,0,0],
+"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitCell.html#ad8e05a2f47e5b816206dc2cf902a20b2":[4,0,2,46,0,0],
+"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitSegment.html":[3,0,2,52,1],
+"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitSegment.html":[4,0,2,46,1],
+"structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitSegment.html#a275216f3b46cf5212c195d930529e322":[4,0,2,46,1,0],
 "structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitSegment.html#a275216f3b46cf5212c195d930529e322":[3,0,2,52,1,0],
 "structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitSegment.html#a57956e50285599558d573cf10e1cd48f":[3,0,2,52,1,1],
 "structDGtal_1_1BoundedLatticePolytope_1_1LeftStrictUnitSegment.html#a57956e50285599558d573cf10e1cd48f":[4,0,2,46,1,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX116 =
 "structDGtal_1_1CanonicEmbedder.html#a5b1b7f7217f5f023b97fd761a1cebb69":[4,0,2,53,14],
 "structDGtal_1_1CanonicEmbedder.html#a6f0e2e63f95c80afc7c4e7f53b472148":[4,0,2,53,10],
 "structDGtal_1_1CanonicEmbedder.html#a6f0e2e63f95c80afc7c4e7f53b472148":[3,0,2,59,10],
-"structDGtal_1_1CanonicEmbedder.html#a72f93f68709a08de2daf5e5499087ffc":[4,0,2,53,9],
-"structDGtal_1_1CanonicEmbedder.html#a72f93f68709a08de2daf5e5499087ffc":[3,0,2,59,9],
-"structDGtal_1_1CanonicEmbedder.html#ab4efc7a65355d7f4620c6a2f9f7bb742":[4,0,2,53,3],
-"structDGtal_1_1CanonicEmbedder.html#ab4efc7a65355d7f4620c6a2f9f7bb742":[3,0,2,59,3],
-"structDGtal_1_1CanonicEmbedder.html#acaf7ce123b57f032ab05a6b0d094632a":[3,0,2,59,2],
-"structDGtal_1_1CanonicEmbedder.html#acaf7ce123b57f032ab05a6b0d094632a":[4,0,2,53,2],
-"structDGtal_1_1CanonicEmbedder.html#aecd448164f1022d35abc38f7babafea4":[4,0,2,53,7],
-"structDGtal_1_1CanonicEmbedder.html#aecd448164f1022d35abc38f7babafea4":[3,0,2,59,7],
-"structDGtal_1_1CanonicEmbedder.html#af316f48602f59f9b347efd622ca48985":[3,0,2,59,4]
+"structDGtal_1_1CanonicEmbedder.html#a72f93f68709a08de2daf5e5499087ffc":[4,0,2,53,9]
 };

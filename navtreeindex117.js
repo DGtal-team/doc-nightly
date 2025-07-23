@@ -1,5 +1,13 @@
 var NAVTREEINDEX117 =
 {
+"structDGtal_1_1CanonicEmbedder.html#a72f93f68709a08de2daf5e5499087ffc":[3,0,2,59,9],
+"structDGtal_1_1CanonicEmbedder.html#ab4efc7a65355d7f4620c6a2f9f7bb742":[4,0,2,53,3],
+"structDGtal_1_1CanonicEmbedder.html#ab4efc7a65355d7f4620c6a2f9f7bb742":[3,0,2,59,3],
+"structDGtal_1_1CanonicEmbedder.html#acaf7ce123b57f032ab05a6b0d094632a":[3,0,2,59,2],
+"structDGtal_1_1CanonicEmbedder.html#acaf7ce123b57f032ab05a6b0d094632a":[4,0,2,53,2],
+"structDGtal_1_1CanonicEmbedder.html#aecd448164f1022d35abc38f7babafea4":[4,0,2,53,7],
+"structDGtal_1_1CanonicEmbedder.html#aecd448164f1022d35abc38f7babafea4":[3,0,2,59,7],
+"structDGtal_1_1CanonicEmbedder.html#af316f48602f59f9b347efd622ca48985":[3,0,2,59,4],
 "structDGtal_1_1CanonicEmbedder.html#af316f48602f59f9b347efd622ca48985":[4,0,2,53,4],
 "structDGtal_1_1CanonicEmbedder.html#afbfe3fc5e581cbe5f83389515c3872d6":[3,0,2,59,12],
 "structDGtal_1_1CanonicEmbedder.html#afbfe3fc5e581cbe5f83389515c3872d6":[4,0,2,53,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX117 =
 "structDGtal_1_1ClosedIntegerHalfPlane.html#a2fbe21a6a4b68af66042ce5eb0611381":[3,0,2,81,0],
 "structDGtal_1_1ClosedIntegerHalfPlane.html#a3dab33d9ffc51bf5fa3d9a7610a72d77":[3,0,2,81,13],
 "structDGtal_1_1ClosedIntegerHalfPlane.html#a3dab33d9ffc51bf5fa3d9a7610a72d77":[4,0,2,75,13],
-"structDGtal_1_1ClosedIntegerHalfPlane.html#a400b671ba4bd6e607f56e5bec1d5426f":[4,0,2,75,11],
-"structDGtal_1_1ClosedIntegerHalfPlane.html#a400b671ba4bd6e607f56e5bec1d5426f":[3,0,2,81,11],
-"structDGtal_1_1ClosedIntegerHalfPlane.html#a528f48954a749984a3b9527414018559":[4,0,2,75,5],
-"structDGtal_1_1ClosedIntegerHalfPlane.html#a528f48954a749984a3b9527414018559":[3,0,2,81,5],
-"structDGtal_1_1ClosedIntegerHalfPlane.html#a5908293e1c006d106e7272d47b023b53":[4,0,2,75,3],
-"structDGtal_1_1ClosedIntegerHalfPlane.html#a5908293e1c006d106e7272d47b023b53":[3,0,2,81,3],
-"structDGtal_1_1ClosedIntegerHalfPlane.html#a5f7b22fbeffc01af18f81fedf8d4d590":[3,0,2,81,7],
-"structDGtal_1_1ClosedIntegerHalfPlane.html#a5f7b22fbeffc01af18f81fedf8d4d590":[4,0,2,75,7],
-"structDGtal_1_1ClosedIntegerHalfPlane.html#a97435719215c0a8df4737accbeb96a35":[4,0,2,75,4]
+"structDGtal_1_1ClosedIntegerHalfPlane.html#a400b671ba4bd6e607f56e5bec1d5426f":[4,0,2,75,11]
 };

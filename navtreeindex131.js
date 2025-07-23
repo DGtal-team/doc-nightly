@@ -1,5 +1,13 @@
 var NAVTREEINDEX131 =
 {
+"structDGtal_1_1QuickHull.html#ad3380efed13370da111d6a7ee501dc00":[3,0,2,487,73],
+"structDGtal_1_1QuickHull.html#ad66b5ff7b9fd55382f078d0ba1a5e8ef":[3,0,2,487,41],
+"structDGtal_1_1QuickHull.html#ad66b5ff7b9fd55382f078d0ba1a5e8ef":[4,0,2,481,41],
+"structDGtal_1_1QuickHull.html#ad8c1690a1ef004f8b9a72559e5b3dd24":[3,0,2,487,43],
+"structDGtal_1_1QuickHull.html#ad8c1690a1ef004f8b9a72559e5b3dd24":[4,0,2,481,43],
+"structDGtal_1_1QuickHull.html#adb9b873052d072f891fc7f0b3e013106":[3,0,2,487,34],
+"structDGtal_1_1QuickHull.html#adb9b873052d072f891fc7f0b3e013106":[4,0,2,481,34],
+"structDGtal_1_1QuickHull.html#adbb0326f6e2f5bfab913019018602370":[4,0,2,481,55],
 "structDGtal_1_1QuickHull.html#adbb0326f6e2f5bfab913019018602370":[3,0,2,487,55],
 "structDGtal_1_1QuickHull.html#ae2f105ab38ab215d790773737f45cf0d":[3,0,2,487,25],
 "structDGtal_1_1QuickHull.html#ae2f105ab38ab215d790773737f45cf0d":[4,0,2,481,25],
@@ -241,13 +249,5 @@ var NAVTREEINDEX131 =
 "structDGtal_1_1SignedKhalimskyCell.html#a0a5053d29217c6fd5065f5fd960413ff":[4,0,2,510,17],
 "structDGtal_1_1SignedKhalimskyCell.html#a1a684103cf175abe191c08b263aa9da7":[3,0,2,516,19],
 "structDGtal_1_1SignedKhalimskyCell.html#a1a684103cf175abe191c08b263aa9da7":[4,0,2,510,19],
-"structDGtal_1_1SignedKhalimskyCell.html#a1ca549b9e7795f2e226a8e21f2b5053d":[4,0,2,510,13],
-"structDGtal_1_1SignedKhalimskyCell.html#a1ca549b9e7795f2e226a8e21f2b5053d":[3,0,2,516,13],
-"structDGtal_1_1SignedKhalimskyCell.html#a27e1d10655f2407d0de85335594b8224":[4,0,2,510,15],
-"structDGtal_1_1SignedKhalimskyCell.html#a27e1d10655f2407d0de85335594b8224":[3,0,2,516,15],
-"structDGtal_1_1SignedKhalimskyCell.html#a46bd040db0eeef1eb2ba4851505f2e5d":[3,0,2,516,7],
-"structDGtal_1_1SignedKhalimskyCell.html#a46bd040db0eeef1eb2ba4851505f2e5d":[4,0,2,510,7],
-"structDGtal_1_1SignedKhalimskyCell.html#a567700c81b68077b8b74ef946be17d57":[3,0,2,516,6],
-"structDGtal_1_1SignedKhalimskyCell.html#a567700c81b68077b8b74ef946be17d57":[4,0,2,510,6],
-"structDGtal_1_1SignedKhalimskyCell.html#a577cf0f3699c68fdc4267bd0f1d87972":[3,0,2,516,11]
+"structDGtal_1_1SignedKhalimskyCell.html#a1ca549b9e7795f2e226a8e21f2b5053d":[4,0,2,510,13]
 };

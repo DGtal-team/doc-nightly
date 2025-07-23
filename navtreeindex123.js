@@ -1,5 +1,13 @@
 var NAVTREEINDEX123 =
 {
+"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#a30c865bdc5d8eeeb9f11e2582c71664f":[3,0,2,184,0,5],
+"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#a8a0f4ee2abb584cb19452b09c8af8222":[3,0,2,184,0,6],
+"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#a8a0f4ee2abb584cb19452b09c8af8222":[4,0,2,178,0,6],
+"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#aa11d6b13229a7dc940fd117c0b9a9271":[4,0,2,178,0,3],
+"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#aa11d6b13229a7dc940fd117c0b9a9271":[3,0,2,184,0,3],
+"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#acc1c154e8358af715e4685d7a2731a80":[3,0,2,184,0,2],
+"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#acc1c154e8358af715e4685d7a2731a80":[4,0,2,178,0,2],
+"structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#acd9a907cf2e04c0b67f043da5fc3e57f":[3,0,2,184,0,1],
 "structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#acd9a907cf2e04c0b67f043da5fc3e57f":[4,0,2,178,0,1],
 "structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#ad66ace39c246162afbb508e09753a7a8":[3,0,2,184,0,4],
 "structDGtal_1_1DistanceBreadthFirstVisitor_1_1Node.html#ad66ace39c246162afbb508e09753a7a8":[4,0,2,178,0,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX123 =
 "structDGtal_1_1H5DSpecializations.html":[3,0,2,242],
 "structDGtal_1_1H5DSpecializations.html#a152cdd8b53212b3b26d938e5749856b4":[3,0,2,242,1],
 "structDGtal_1_1H5DSpecializations.html#a152cdd8b53212b3b26d938e5749856b4":[4,0,2,236,1],
-"structDGtal_1_1H5DSpecializations.html#a9dc3c3bf7cc63c2f0ae0e7ae10f1a8cb":[3,0,2,242,3],
-"structDGtal_1_1H5DSpecializations.html#a9dc3c3bf7cc63c2f0ae0e7ae10f1a8cb":[4,0,2,236,3],
-"structDGtal_1_1H5DSpecializations.html#ab8b64227e48eb14646fdcbb893781f94":[3,0,2,242,2],
-"structDGtal_1_1H5DSpecializations.html#ab8b64227e48eb14646fdcbb893781f94":[4,0,2,236,2],
-"structDGtal_1_1H5DSpecializations.html#af6d1c2a0d9140daae816ed902da0361d":[4,0,2,236,0],
-"structDGtal_1_1H5DSpecializations.html#af6d1c2a0d9140daae816ed902da0361d":[3,0,2,242,0],
-"structDGtal_1_1H5DSpecializations_3_01TImageFactory_00_01DGtal_1_1int32__t_01_4.html":[4,0,2,237],
-"structDGtal_1_1H5DSpecializations_3_01TImageFactory_00_01DGtal_1_1int32__t_01_4.html":[3,0,2,243],
-"structDGtal_1_1H5DSpecializations_3_01TImageFactory_00_01DGtal_1_1int32__t_01_4.html#a34c3acf8fd7943d1a7e4cfeb25cb5193":[4,0,2,237,0]
+"structDGtal_1_1H5DSpecializations.html#a9dc3c3bf7cc63c2f0ae0e7ae10f1a8cb":[3,0,2,242,3]
 };

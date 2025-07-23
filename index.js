@@ -1104,7 +1104,8 @@ var index =
         [ "Adding 3D image visualization", "moduleDisplay3D.html#DGtalGLV_Images3D", null ],
         [ "Object names and groups", "moduleDisplay3D.html#DGtalGLV_Groups", null ],
         [ "Adding quantities to objects", "moduleDisplay3D.html#DGtalGLV_Properties", null ],
-        [ "Extending the viewer", "moduleDisplay3D.html#DGtalGLV_Ext", null ]
+        [ "Extending the viewer", "moduleDisplay3D.html#DGtalGLV_Ext", null ],
+        [ "Adding other standard primitive", "moduleDisplay3D.html#DGtalGLV_OtherPrim", null ]
       ] ],
       [ "Migrating viewer from 1.4 to 2.0", "migratingViewer3D.html", [
         [ "Introduction and features changes", "migratingViewer3D.html#DGtalMigration_Intro", null ],

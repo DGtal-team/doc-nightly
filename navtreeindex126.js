@@ -1,5 +1,13 @@
 var NAVTREEINDEX126 =
 {
+"structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget_3_01Space_00_0126_00_011_01_4.html#afac9040f522cc2a1dd333391330f5599":[3,0,2,300,2,0],
+"structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget_3_01Space_00_016_00_011_01_4.html":[4,0,2,294,3],
+"structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget_3_01Space_00_016_00_011_01_4.html":[3,0,2,300,3],
+"structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget_3_01Space_00_016_00_011_01_4.html#a1d3c85ed16d6d32437afcf99e63ac67b":[3,0,2,300,3,1],
+"structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget_3_01Space_00_016_00_011_01_4.html#a1d3c85ed16d6d32437afcf99e63ac67b":[4,0,2,294,3,1],
+"structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget_3_01Space_00_016_00_011_01_4.html#a513b8802fcf0c06c6260a0f7ec7ad71f":[4,0,2,294,3,0],
+"structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget_3_01Space_00_016_00_011_01_4.html#a513b8802fcf0c06c6260a0f7ec7ad71f":[3,0,2,300,3,0],
+"structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget_3_01Space_00_016_00_011_01_4.html#ac5fff001172cb3b05c252e5061bec996":[3,0,2,300,3,2],
 "structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget_3_01Space_00_016_00_011_01_4.html#ac5fff001172cb3b05c252e5061bec996":[4,0,2,294,3,2],
 "structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget_3_01Space_00_016_00_011_01_4.html#ae49ca36534e7e230e5b37b8e19c5b654":[3,0,2,300,3,3],
 "structDGtal_1_1IntersectionTargetTrait_1_1IntersectionTarget_3_01Space_00_016_00_011_01_4.html#ae49ca36534e7e230e5b37b8e19c5b654":[4,0,2,294,3,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX126 =
 "structDGtal_1_1LabelledMap_1_1____AnyBlock.html#aa4ed390ca97f53b3d490a7f8a5335511":[4,0,2,348,0,4],
 "structDGtal_1_1LabelledMap_1_1____AnyBlock.html#af7683d0554d0b7f0becdb224aac967ae":[3,0,2,354,0,0],
 "structDGtal_1_1LabelledMap_1_1____AnyBlock.html#af7683d0554d0b7f0becdb224aac967ae":[4,0,2,348,0,0],
-"structDGtal_1_1LabelledMap_1_1____FirstBlock.html":[3,0,2,354,1],
-"structDGtal_1_1LabelledMap_1_1____FirstBlock.html":[4,0,2,348,1],
-"structDGtal_1_1LabelledMap_1_1____FirstBlock.html#a181c9d1c2d614ff6c2ce3884f3525b43":[3,0,2,354,1,2],
-"structDGtal_1_1LabelledMap_1_1____FirstBlock.html#a181c9d1c2d614ff6c2ce3884f3525b43":[4,0,2,348,1,2],
-"structDGtal_1_1LabelledMap_1_1____FirstBlock.html#a4ade0424442d1ddada703cf8e08335a1":[3,0,2,354,1,1],
-"structDGtal_1_1LabelledMap_1_1____FirstBlock.html#a4ade0424442d1ddada703cf8e08335a1":[4,0,2,348,1,1],
-"structDGtal_1_1LabelledMap_1_1____FirstBlock.html#a5510e7038da0c24ff80c87f58b2271ad":[3,0,2,354,1,3],
-"structDGtal_1_1LabelledMap_1_1____FirstBlock.html#a5510e7038da0c24ff80c87f58b2271ad":[4,0,2,348,1,3],
-"structDGtal_1_1LabelledMap_1_1____FirstBlock.html#a77b85a577cc2d90b0a5ab59530586814":[4,0,2,348,1,4]
+"structDGtal_1_1LabelledMap_1_1____FirstBlock.html":[3,0,2,354,1]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX119 =
 {
+"structDGtal_1_1ConvexHullCommonKernel.html#a134b48da88fc63cce556e29c4a635f70":[4,0,2,111,16],
+"structDGtal_1_1ConvexHullCommonKernel.html#a1568e31a875510791c684585ef436ce8":[3,0,2,117,24],
+"structDGtal_1_1ConvexHullCommonKernel.html#a1568e31a875510791c684585ef436ce8":[4,0,2,111,24],
+"structDGtal_1_1ConvexHullCommonKernel.html#a1b1f0dca9221296ba2fe2988d54e20b7":[4,0,2,111,4],
+"structDGtal_1_1ConvexHullCommonKernel.html#a1b1f0dca9221296ba2fe2988d54e20b7":[3,0,2,117,4],
+"structDGtal_1_1ConvexHullCommonKernel.html#a1cee0ddbbe2b551487c9a97311c25275":[3,0,2,117,20],
+"structDGtal_1_1ConvexHullCommonKernel.html#a1cee0ddbbe2b551487c9a97311c25275":[4,0,2,111,20],
+"structDGtal_1_1ConvexHullCommonKernel.html#a1d074e8772a220b629c2db8125246489":[4,0,2,111,2],
 "structDGtal_1_1ConvexHullCommonKernel.html#a1d074e8772a220b629c2db8125246489":[3,0,2,117,2],
 "structDGtal_1_1ConvexHullCommonKernel.html#a216a1104f226062c8bf3e02b3ba73d84":[4,0,2,111,26],
 "structDGtal_1_1ConvexHullCommonKernel.html#a216a1104f226062c8bf3e02b3ba73d84":[3,0,2,117,26],
@@ -241,13 +249,5 @@ var NAVTREEINDEX119 =
 "structDGtal_1_1ConvexityHelper.html#afce39494f87458a7eff21a4d9c3c253f":[3,0,2,120,27],
 "structDGtal_1_1ConvexityHelper.html#afe8cac6f8d5afa382692903c464632c9":[3,0,2,120,15],
 "structDGtal_1_1ConvexityHelper.html#afe8cac6f8d5afa382692903c464632c9":[4,0,2,114,15],
-"structDGtal_1_1ConvexityHelper.html#aff80f51adcc33e67115b84ccec7a1a9d":[3,0,2,120,14],
-"structDGtal_1_1ConvexityHelper.html#aff80f51adcc33e67115b84ccec7a1a9d":[4,0,2,114,14],
-"structDGtal_1_1CorrectedNormalCurrentComputer.html":[4,0,2,115],
-"structDGtal_1_1CorrectedNormalCurrentComputer.html":[3,0,2,121],
-"structDGtal_1_1CorrectedNormalCurrentComputer.html#a000cdfabdd1fe5d20d510c02b9afe3d3":[3,0,2,121,34],
-"structDGtal_1_1CorrectedNormalCurrentComputer.html#a000cdfabdd1fe5d20d510c02b9afe3d3":[4,0,2,115,34],
-"structDGtal_1_1CorrectedNormalCurrentComputer.html#a062df5a1dc3445f643f5c151e01d7e6e":[4,0,2,115,18],
-"structDGtal_1_1CorrectedNormalCurrentComputer.html#a062df5a1dc3445f643f5c151e01d7e6e":[3,0,2,121,18],
-"structDGtal_1_1CorrectedNormalCurrentComputer.html#a0ab063525ef4a71a21cfb7f9e9c99afd":[3,0,2,121,10]
+"structDGtal_1_1ConvexityHelper.html#aff80f51adcc33e67115b84ccec7a1a9d":[3,0,2,120,14]
 };

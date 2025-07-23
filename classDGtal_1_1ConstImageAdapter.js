@@ -24,6 +24,7 @@ var classDGtal_1_1ConstImageAdapter =
     [ "operator=", "classDGtal_1_1ConstImageAdapter.html#adc37e95a4d0515e094121e3c60f8cb4e", null ],
     [ "selfDisplay", "classDGtal_1_1ConstImageAdapter.html#a9a3c946e55db1b8fdfa92860fb299be8", null ],
     [ "setDefaultValue", "classDGtal_1_1ConstImageAdapter.html#a4e87603dd40691dcd779a03473e93a74", null ],
+    [ "sourceDomainPoint", "classDGtal_1_1ConstImageAdapter.html#a7d54387e3464e61e8f92375284375e04", null ],
     [ "defaultValue", "classDGtal_1_1ConstImageAdapter.html#acec2013930a09725b65324ea1ae661e1", null ],
     [ "myFD", "classDGtal_1_1ConstImageAdapter.html#a9343feeef09d34cebb8b2cf95eca89cd", null ],
     [ "myFV", "classDGtal_1_1ConstImageAdapter.html#a711c9e07b4d41bd63b0d073022c65bd1", null ],
