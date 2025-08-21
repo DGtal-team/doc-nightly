@@ -205,9 +205,9 @@ $(document).ready(function(){initNavTree('VolReader_8ih_source.html',''); initRe
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    char buf[128];</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    int linecount = 1;</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    int fieldcount = 0;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    char *line;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    // Read the file line by line until &quot;.\n&quot; is found</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    for (  char *line = fgets( buf, 128, fin );</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    for (  line = fgets( buf, 128, fin );</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>         line &amp;&amp; strcmp( line, &quot;.\n&quot; ) != 0 ;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>         line = fgets( line, 128, fin ), ++linecount</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>         )</div>
@@ -430,7 +430,7 @@ $(document).ready(function(){initNavTree('VolReader_8ih_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f2cd1aeea1cfa982bb13a5f95fa4218c.html">DGtal</a></li><li class="navelem"><a class="el" href="dir_5520f6078718884549800e0f3c69770f.html">io</a></li><li class="navelem"><a class="el" href="dir_08eb2414170ee26d20336b7bc14760d5.html">readers</a></li><li class="navelem"><b>VolReader.ih</b></li>
-    <li class="footer">Generated on Thu Aug 21 2025 13:27:53 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:40:18 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
