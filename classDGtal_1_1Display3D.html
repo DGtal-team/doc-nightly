@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -147,6 +147,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acba956ce302988aaa3d9e1268ff5b720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaf31ce6aabb4959b61927cb4b92d7cc" id="r_aaaf31ce6aabb4959b61927cb4b92d7cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Display3D.html#aaaf31ce6aabb4959b61927cb4b92d7cc">Display3D</a> ()</td></tr>
 <tr class="separator:aaaf31ce6aabb4959b61927cb4b92d7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1b3a74b332d5bbd0aff2dfeeffdb4d" id="r_abd1b3a74b332d5bbd0aff2dfeeffdb4d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Display3D.html#abd1b3a74b332d5bbd0aff2dfeeffdb4d">~Display3D</a> ()</td></tr>
+<tr class="separator:abd1b3a74b332d5bbd0aff2dfeeffdb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa17b6bae360b300af746becdfdcd53d3" id="r_aa17b6bae360b300af746becdfdcd53d3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDGtal_1_1Display3D.html#aa17b6bae360b300af746becdfdcd53d3">show</a> ()=0</td></tr>
 <tr class="memdesc:aa17b6bae360b300af746becdfdcd53d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the event loop and display of elements.  <br /></td></tr>
 <tr class="separator:aa17b6bae360b300af746becdfdcd53d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -374,7 +376,7 @@ class DGtal::Display3D&lt; Space, KSpace &gt;</div><p>Base class for viewing <a 
 <p>Lists: Lists are a key part of this class. <a class="el" href="structA.html">A</a> list is a collection of object that are linked together. As such, they should be managed, updated with the same options.</p>
 <p>Each <a class="el" href="structDGtal_1_1DisplayData.html" title="Data required to display an object.">DisplayData</a> elements corresponds to a list of elements. However the intent behind subsequent drawcalls can be to groups elements together. For example, looping through a Digital surface doing a computation and then display the current element. For this reason, the field "allowReuseList" can be set to true. This will try, if possible to use reuse the current element if possible. This may not success (common cases are if elements of different size were inserted, or after drawing an object which always create its own list). If this does not fit the need, use setCurrentList. </p>
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00377">377</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00381">381</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a8a9484179168d78d3cc431676e7f8a4d" name="a8a9484179168d78d3cc431676e7f8a4d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a9484179168d78d3cc431676e7f8a4d">&#9670;&#160;</a></span>CellEmbedder</h2>
@@ -390,7 +392,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00394">394</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00400">400</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 </div>
 </div>
@@ -408,7 +410,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00393">393</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00399">399</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 </div>
 </div>
@@ -426,7 +428,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00389">389</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00395">395</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 </div>
 </div>
@@ -444,7 +446,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00388">388</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00394">394</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 </div>
 </div>
@@ -462,7 +464,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00391">391</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00397">397</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 </div>
 </div>
@@ -480,7 +482,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00390">390</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00396">396</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 </div>
 </div>
@@ -498,7 +500,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00395">395</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00401">401</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 </div>
 </div>
@@ -529,15 +531,15 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00379">379</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  379</span>                                     :</div>
-<div class="line"><span class="lineno">  380</span>        <a class="code hl_variable" href="classDGtal_1_1Display3D.html#a49b012e55ef4242aff4829fc89b32aa9">myKSpace</a>(space), </div>
-<div class="line"><span class="lineno">  381</span>        <a class="code hl_variable" href="classDGtal_1_1Display3D.html#ab558060893ebfa3875e7433fd44d259b">myCellEmbedder</a>(<a class="code hl_variable" href="classDGtal_1_1Display3D.html#a49b012e55ef4242aff4829fc89b32aa9">myKSpace</a>),</div>
-<div class="line"><span class="lineno">  382</span>        <a class="code hl_variable" href="classDGtal_1_1Display3D.html#a8cf0aa0c93885d40cf29a51aedb67b8b">mySCellEmbedder</a>(<a class="code hl_variable" href="classDGtal_1_1Display3D.html#a49b012e55ef4242aff4829fc89b32aa9">myKSpace</a>)</div>
-<div class="line"><span class="lineno">  383</span>      { }</div>
-<div class="ttc" id="aclassDGtal_1_1Display3D_html_a49b012e55ef4242aff4829fc89b32aa9"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a49b012e55ef4242aff4829fc89b32aa9">DGtal::Display3D::myKSpace</a></div><div class="ttdeci">KSpace myKSpace</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00741">Display3D.h:741</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1Display3D_html_a8cf0aa0c93885d40cf29a51aedb67b8b"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a8cf0aa0c93885d40cf29a51aedb67b8b">DGtal::Display3D::mySCellEmbedder</a></div><div class="ttdeci">SCellEmbedder mySCellEmbedder</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00744">Display3D.h:744</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1Display3D_html_ab558060893ebfa3875e7433fd44d259b"><div class="ttname"><a href="classDGtal_1_1Display3D.html#ab558060893ebfa3875e7433fd44d259b">DGtal::Display3D::myCellEmbedder</a></div><div class="ttdeci">CellEmbedder myCellEmbedder</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00743">Display3D.h:743</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00383">383</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  383</span>                                     :</div>
+<div class="line"><span class="lineno">  384</span>        <a class="code hl_variable" href="classDGtal_1_1Display3D.html#a49b012e55ef4242aff4829fc89b32aa9">myKSpace</a>(space), </div>
+<div class="line"><span class="lineno">  385</span>        <a class="code hl_variable" href="classDGtal_1_1Display3D.html#ab558060893ebfa3875e7433fd44d259b">myCellEmbedder</a>(<a class="code hl_variable" href="classDGtal_1_1Display3D.html#a49b012e55ef4242aff4829fc89b32aa9">myKSpace</a>),</div>
+<div class="line"><span class="lineno">  386</span>        <a class="code hl_variable" href="classDGtal_1_1Display3D.html#a8cf0aa0c93885d40cf29a51aedb67b8b">mySCellEmbedder</a>(<a class="code hl_variable" href="classDGtal_1_1Display3D.html#a49b012e55ef4242aff4829fc89b32aa9">myKSpace</a>)</div>
+<div class="line"><span class="lineno">  387</span>      { }</div>
+<div class="ttc" id="aclassDGtal_1_1Display3D_html_a49b012e55ef4242aff4829fc89b32aa9"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a49b012e55ef4242aff4829fc89b32aa9">DGtal::Display3D::myKSpace</a></div><div class="ttdeci">KSpace myKSpace</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00747">Display3D.h:747</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1Display3D_html_a8cf0aa0c93885d40cf29a51aedb67b8b"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a8cf0aa0c93885d40cf29a51aedb67b8b">DGtal::Display3D::mySCellEmbedder</a></div><div class="ttdeci">SCellEmbedder mySCellEmbedder</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00750">Display3D.h:750</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1Display3D_html_ab558060893ebfa3875e7433fd44d259b"><div class="ttname"><a href="classDGtal_1_1Display3D.html#ab558060893ebfa3875e7433fd44d259b">DGtal::Display3D::myCellEmbedder</a></div><div class="ttdeci">CellEmbedder myCellEmbedder</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00749">Display3D.h:749</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -566,10 +568,40 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00385">385</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  385</span>: <a class="code hl_function" href="classDGtal_1_1Display3D.html#aaaf31ce6aabb4959b61927cb4b92d7cc">Display3D</a>(<a class="code hl_typedef" href="testArithmeticalDSSComputerOnSurfels_8cpp.html#aebe586e91159919ccf2f565d4407fff7">KSpace</a>()) {}</div>
-<div class="ttc" id="aclassDGtal_1_1Display3D_html_aaaf31ce6aabb4959b61927cb4b92d7cc"><div class="ttname"><a href="classDGtal_1_1Display3D.html#aaaf31ce6aabb4959b61927cb4b92d7cc">DGtal::Display3D::Display3D</a></div><div class="ttdeci">Display3D()</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00385">Display3D.h:385</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00389">389</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  389</span>: <a class="code hl_function" href="classDGtal_1_1Display3D.html#aaaf31ce6aabb4959b61927cb4b92d7cc">Display3D</a>(<a class="code hl_typedef" href="testArithmeticalDSSComputerOnSurfels_8cpp.html#aebe586e91159919ccf2f565d4407fff7">KSpace</a>()) {}</div>
+<div class="ttc" id="aclassDGtal_1_1Display3D_html_aaaf31ce6aabb4959b61927cb4b92d7cc"><div class="ttname"><a href="classDGtal_1_1Display3D.html#aaaf31ce6aabb4959b61927cb4b92d7cc">DGtal::Display3D::Display3D</a></div><div class="ttdeci">Display3D()</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00389">Display3D.h:389</a></div></div>
 <div class="ttc" id="atestArithmeticalDSSComputerOnSurfels_8cpp_html_aebe586e91159919ccf2f565d4407fff7"><div class="ttname"><a href="testArithmeticalDSSComputerOnSurfels_8cpp.html#aebe586e91159919ccf2f565d4407fff7">KSpace</a></div><div class="ttdeci">Z3i::KSpace KSpace</div><div class="ttdef"><b>Definition</b> <a href="testArithmeticalDSSComputerOnSurfels_8cpp_source.html#l00048">testArithmeticalDSSComputerOnSurfels.cpp:48</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abd1b3a74b332d5bbd0aff2dfeeffdb4d" name="abd1b3a74b332d5bbd0aff2dfeeffdb4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd1b3a74b332d5bbd0aff2dfeeffdb4d">&#9670;&#160;</a></span>~Display3D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a38dfaf1641eab4d3fb805df4b52ab10d">Space</a>  = Z3i::Space, typename <a class="el" href="testArithmeticalDSSComputerOnSurfels_8cpp.html#aebe586e91159919ccf2f565d4407fff7">KSpace</a>  = Z3i::KSpace&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classDGtal_1_1Display3D.html">DGtal::Display3D</a>&lt; <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a38dfaf1641eab4d3fb805df4b52ab10d">Space</a>, <a class="el" href="testArithmeticalDSSComputerOnSurfels_8cpp.html#aebe586e91159919ccf2f565d4407fff7">KSpace</a> &gt;::~<a class="el" href="classDGtal_1_1Display3D.html">Display3D</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00391">391</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  391</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -780,8 +812,8 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00538">538</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  538</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">createOrReuseList</a>(name, 1); }</div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00544">544</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  544</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">createOrReuseList</a>(name, 1); }</div>
 <div class="ttc" id="aclassDGtal_1_1Display3D_html_a3ee54cc7cb7ec23082c55502693b1854"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">DGtal::Display3D::createOrReuseList</a></div><div class="ttdeci">std::string createOrReuseList(const std::string &amp;name, size_t elementSize)</div><div class="ttdoc">Reuse a list if possible, otherwise create a new one.</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseList()</a>.</p>
@@ -814,8 +846,8 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00537">537</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  537</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">createOrReuseList</a>(name, 8); }</div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00543">543</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  543</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">createOrReuseList</a>(name, 8); }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseList()</a>.</p>
 
@@ -847,8 +879,8 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00539">539</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  539</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">createOrReuseList</a>(name, 2); }</div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00545">545</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  545</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">createOrReuseList</a>(name, 2); }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseList()</a>.</p>
 
@@ -892,7 +924,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The name of the list to use </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="Display3D_8h_source.html#l00538">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseBallList()</a>, <a class="el" href="Display3D_8h_source.html#l00537">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseCubeList()</a>, <a class="el" href="Display3D_8h_source.html#l00539">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseLineList()</a>, <a class="el" href="Display3D_8h_source.html#l00541">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReusePolygonList()</a>, <a class="el" href="Display3D_8h_source.html#l00540">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseQuadList()</a>, <a class="el" href="Display3D_8h_source.html#l00542">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseTriangleList()</a>, and <a class="el" href="Display3D_8h_source.html#l00543">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseVolumetricList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Display3D_8h_source.html#l00544">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseBallList()</a>, <a class="el" href="Display3D_8h_source.html#l00543">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseCubeList()</a>, <a class="el" href="Display3D_8h_source.html#l00545">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseLineList()</a>, <a class="el" href="Display3D_8h_source.html#l00547">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReusePolygonList()</a>, <a class="el" href="Display3D_8h_source.html#l00546">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseQuadList()</a>, <a class="el" href="Display3D_8h_source.html#l00548">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseTriangleList()</a>, and <a class="el" href="Display3D_8h_source.html#l00549">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseVolumetricList()</a>.</p>
 
 </div>
 </div>
@@ -922,8 +954,8 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00541">541</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  541</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">createOrReuseList</a>(name, 0); }</div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00547">547</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  547</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">createOrReuseList</a>(name, 0); }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseList()</a>.</p>
 
@@ -955,8 +987,8 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00540">540</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  540</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">createOrReuseList</a>(name, 4); }</div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00546">546</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  546</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">createOrReuseList</a>(name, 4); }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseList()</a>.</p>
 
@@ -988,8 +1020,8 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00542">542</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  542</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">createOrReuseList</a>(name, 3); }</div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00548">548</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  548</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">createOrReuseList</a>(name, 3); }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseList()</a>.</p>
 
@@ -1021,8 +1053,8 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00543">543</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  543</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">createOrReuseList</a>(name, 8); }</div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00549">549</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  549</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">createOrReuseList</a>(name, 8); }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1Display3D.html#a3ee54cc7cb7ec23082c55502693b1854">DGtal::Display3D&lt; Space, KSpace &gt;::createOrReuseList()</a>.</p>
 
@@ -2067,7 +2099,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="geometry_2surfaces_2dvcm-3d_8cpp-example.html#a34">geometry/surfaces/dvcm-3d.cpp</a>, <a class="el" href="shapes_2mesh3DConstructionAndVisualisation_8cpp-example.html#a9">shapes/mesh3DConstructionAndVisualisation.cpp</a>, <a class="el" href="shapes_2viewMarchingCubes_8cpp-example.html#a23">shapes/viewMarchingCubes.cpp</a>, <a class="el" href="shapes_2viewPolygonalMarchingCubes_8cpp-example.html#a22">shapes/viewPolygonalMarchingCubes.cpp</a>, and <a class="el" href="topology_2digitalSurfaceSlice_8cpp-example.html#a22">topology/digitalSurfaceSlice.cpp</a>.</dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="exampleParamCurve3dDigitizationTransformationDecorator_8cpp_source.html#l00072">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="exampleParamCurve3dDigitizationTransformationDecorator_8cpp_source.html#l00072">main()</a>, and <a class="el" href="viewMarchingCubes_8cpp_source.html#l00055">main()</a>.</p>
 
 </div>
 </div>
@@ -2336,7 +2368,7 @@ template&lt;typename Vec &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a15">io/viewDualSurface.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a14">io/viewDualSurface.cpp</a>.</dd>
 </dl>
 
 <p class="reference">Referenced by <a class="el" href="testPolygon3D_8cpp_source.html#l00044">main()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00148">viewPolygons()</a>.</p>
@@ -2441,8 +2473,8 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00530">530</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  530</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">newList</a>(name, 1); }</div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00536">536</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  536</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">newList</a>(name, 1); }</div>
 <div class="ttc" id="aclassDGtal_1_1Display3D_html_a5414577de14c4c297b8e356d164ba673"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">DGtal::Display3D::newList</a></div><div class="ttdeci">std::string newList(const std::string &amp;name, size_t eSize=0)</div><div class="ttdoc">Create a new group.</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">DGtal::Display3D&lt; Space, KSpace &gt;::newList()</a>.</p>
@@ -2475,8 +2507,8 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00529">529</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  529</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">newList</a>(name, 8); }</div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00535">535</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  535</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">newList</a>(name, 8); }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">DGtal::Display3D&lt; Space, KSpace &gt;::newList()</a>.</p>
 
@@ -2510,8 +2542,8 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00531">531</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  531</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">newList</a>(name, 2); }</div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00537">537</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  537</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">newList</a>(name, 2); }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">DGtal::Display3D&lt; Space, KSpace &gt;::newList()</a>.</p>
 
@@ -2560,7 +2592,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The computed name </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="Display3D_8h_source.html#l00530">DGtal::Display3D&lt; Space, KSpace &gt;::newBallList()</a>, <a class="el" href="Display3D_8h_source.html#l00529">DGtal::Display3D&lt; Space, KSpace &gt;::newCubeList()</a>, <a class="el" href="Display3D_8h_source.html#l00531">DGtal::Display3D&lt; Space, KSpace &gt;::newLineList()</a>, <a class="el" href="Display3D_8h_source.html#l00533">DGtal::Display3D&lt; Space, KSpace &gt;::newPolygonList()</a>, <a class="el" href="Display3D_8h_source.html#l00532">DGtal::Display3D&lt; Space, KSpace &gt;::newQuadList()</a>, <a class="el" href="Display3D_8h_source.html#l00534">DGtal::Display3D&lt; Space, KSpace &gt;::newTriangleList()</a>, and <a class="el" href="Display3D_8h_source.html#l00535">DGtal::Display3D&lt; Space, KSpace &gt;::newVolumetricList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Display3D_8h_source.html#l00536">DGtal::Display3D&lt; Space, KSpace &gt;::newBallList()</a>, <a class="el" href="Display3D_8h_source.html#l00535">DGtal::Display3D&lt; Space, KSpace &gt;::newCubeList()</a>, <a class="el" href="Display3D_8h_source.html#l00537">DGtal::Display3D&lt; Space, KSpace &gt;::newLineList()</a>, <a class="el" href="Display3D_8h_source.html#l00539">DGtal::Display3D&lt; Space, KSpace &gt;::newPolygonList()</a>, <a class="el" href="Display3D_8h_source.html#l00538">DGtal::Display3D&lt; Space, KSpace &gt;::newQuadList()</a>, <a class="el" href="Display3D_8h_source.html#l00540">DGtal::Display3D&lt; Space, KSpace &gt;::newTriangleList()</a>, and <a class="el" href="Display3D_8h_source.html#l00541">DGtal::Display3D&lt; Space, KSpace &gt;::newVolumetricList()</a>.</p>
 
 </div>
 </div>
@@ -2592,12 +2624,12 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a39">io/viewDualSurface.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00533">533</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  533</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">newList</a>(name, 0); }</div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00539">539</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  539</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">newList</a>(name, 0); }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">DGtal::Display3D&lt; Space, KSpace &gt;::newList()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00392">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00391">main()</a>.</p>
 
 </div>
 </div>
@@ -2629,12 +2661,12 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a38">io/viewDualSurface.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00532">532</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  532</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">newList</a>(name, 4); }</div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00538">538</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  538</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">newList</a>(name, 4); }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">DGtal::Display3D&lt; Space, KSpace &gt;::newList()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00392">main()</a>, and <a class="el" href="testLocalConvolutionNormalVectorEstimator_8cpp_source.html#l00071">testLocalConvolutionNormalVectorEstimator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00391">main()</a>, and <a class="el" href="testLocalConvolutionNormalVectorEstimator_8cpp_source.html#l00071">testLocalConvolutionNormalVectorEstimator()</a>.</p>
 
 </div>
 </div>
@@ -2664,8 +2696,8 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00534">534</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  534</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">newList</a>(name, 3); }</div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00540">540</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  540</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">newList</a>(name, 3); }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">DGtal::Display3D&lt; Space, KSpace &gt;::newList()</a>.</p>
 
@@ -2697,8 +2729,8 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00535">535</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  535</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">newList</a>(name, 8); }</div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00541">541</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  541</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">newList</a>(name, 8); }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1Display3D.html#a5414577de14c4c297b8e356d164ba673">DGtal::Display3D&lt; Space, KSpace &gt;::newList()</a>.</p>
 
@@ -2764,21 +2796,21 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 <p>(Re)Render all data </p>
 <p>If any modification were made within the viewer they can be lost </p>
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00453">453</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  453</span>                               {</div>
-<div class="line"><span class="lineno">  454</span>        <a class="code hl_variable" href="classDGtal_1_1Display3D.html#a77981382b3a6115cee21c5f528bf44d7">myToRender</a>.clear();</div>
-<div class="line"><span class="lineno">  455</span>        <a class="code hl_variable" href="classDGtal_1_1Display3D.html#a77981382b3a6115cee21c5f528bf44d7">myToRender</a>.reserve(<a class="code hl_variable" href="classDGtal_1_1Display3D.html#a6c7c42ac7f0ab2a990116324607b77a1">data</a>.size());</div>
-<div class="line"><span class="lineno">  456</span> </div>
-<div class="line"><span class="lineno">  457</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; m : <a class="code hl_variable" href="classDGtal_1_1Display3D.html#a6c7c42ac7f0ab2a990116324607b77a1">data</a>) </div>
-<div class="line"><span class="lineno">  458</span>          <a class="code hl_variable" href="classDGtal_1_1Display3D.html#a77981382b3a6115cee21c5f528bf44d7">myToRender</a>.push_back(m.first);</div>
-<div class="line"><span class="lineno">  459</span> </div>
-<div class="line"><span class="lineno">  460</span>        <a class="code hl_function" href="classDGtal_1_1Display3D.html#ac526a1d0fb08463166477486eaf5d3f7">renderNewData</a>();</div>
-<div class="line"><span class="lineno">  461</span>      }</div>
-<div class="ttc" id="aclassDGtal_1_1Display3D_html_a6c7c42ac7f0ab2a990116324607b77a1"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a6c7c42ac7f0ab2a990116324607b77a1">DGtal::Display3D::data</a></div><div class="ttdeci">std::map&lt; std::string, DisplayData&lt; RealPoint &gt; &gt; data</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00738">Display3D.h:738</a></div></div>
-<div class="ttc" id="aclassDGtal_1_1Display3D_html_a77981382b3a6115cee21c5f528bf44d7"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a77981382b3a6115cee21c5f528bf44d7">DGtal::Display3D::myToRender</a></div><div class="ttdeci">std::vector&lt; std::string &gt; myToRender</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00747">Display3D.h:747</a></div></div>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00459">459</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  459</span>                               {</div>
+<div class="line"><span class="lineno">  460</span>        <a class="code hl_variable" href="classDGtal_1_1Display3D.html#a77981382b3a6115cee21c5f528bf44d7">myToRender</a>.clear();</div>
+<div class="line"><span class="lineno">  461</span>        <a class="code hl_variable" href="classDGtal_1_1Display3D.html#a77981382b3a6115cee21c5f528bf44d7">myToRender</a>.reserve(<a class="code hl_variable" href="classDGtal_1_1Display3D.html#a6c7c42ac7f0ab2a990116324607b77a1">data</a>.size());</div>
+<div class="line"><span class="lineno">  462</span> </div>
+<div class="line"><span class="lineno">  463</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; m : <a class="code hl_variable" href="classDGtal_1_1Display3D.html#a6c7c42ac7f0ab2a990116324607b77a1">data</a>) </div>
+<div class="line"><span class="lineno">  464</span>          <a class="code hl_variable" href="classDGtal_1_1Display3D.html#a77981382b3a6115cee21c5f528bf44d7">myToRender</a>.push_back(m.first);</div>
+<div class="line"><span class="lineno">  465</span> </div>
+<div class="line"><span class="lineno">  466</span>        <a class="code hl_function" href="classDGtal_1_1Display3D.html#ac526a1d0fb08463166477486eaf5d3f7">renderNewData</a>();</div>
+<div class="line"><span class="lineno">  467</span>      }</div>
+<div class="ttc" id="aclassDGtal_1_1Display3D_html_a6c7c42ac7f0ab2a990116324607b77a1"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a6c7c42ac7f0ab2a990116324607b77a1">DGtal::Display3D::data</a></div><div class="ttdeci">std::map&lt; std::string, DisplayData&lt; RealPoint &gt; &gt; data</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00744">Display3D.h:744</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1Display3D_html_a77981382b3a6115cee21c5f528bf44d7"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a77981382b3a6115cee21c5f528bf44d7">DGtal::Display3D::myToRender</a></div><div class="ttdeci">std::vector&lt; std::string &gt; myToRender</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00753">Display3D.h:753</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Display3D_html_ac526a1d0fb08463166477486eaf5d3f7"><div class="ttname"><a href="classDGtal_1_1Display3D.html#ac526a1d0fb08463166477486eaf5d3f7">DGtal::Display3D::renderNewData</a></div><div class="ttdeci">virtual void renderNewData()=0</div><div class="ttdoc">Renders newly added data.</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Display3D_8h_source.html#l00738">DGtal::Display3D&lt; Space, KSpace &gt;::data</a>, <a class="el" href="Display3D_8h_source.html#l00747">DGtal::Display3D&lt; Space, KSpace &gt;::myToRender</a>, and <a class="el" href="classDGtal_1_1Display3D.html#ac526a1d0fb08463166477486eaf5d3f7">DGtal::Display3D&lt; Space, KSpace &gt;::renderNewData()</a>.</p>
+<p class="reference">References <a class="el" href="Display3D_8h_source.html#l00744">DGtal::Display3D&lt; Space, KSpace &gt;::data</a>, <a class="el" href="Display3D_8h_source.html#l00753">DGtal::Display3D&lt; Space, KSpace &gt;::myToRender</a>, and <a class="el" href="classDGtal_1_1Display3D.html#ac526a1d0fb08463166477486eaf5d3f7">DGtal::Display3D&lt; Space, KSpace &gt;::renderNewData()</a>.</p>
 
 </div>
 </div>
@@ -2811,7 +2843,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 
 <p>Implemented in <a class="el" href="classDGtal_1_1PolyscopeViewer.html#af76dcd4a1a525e8822737a94e56cb3d9">DGtal::PolyscopeViewer&lt; Space, KSpace &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Display3D_8h_source.html#l00453">DGtal::Display3D&lt; Space, KSpace &gt;::renderAll()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Display3D_8h_source.html#l00459">DGtal::Display3D&lt; Space, KSpace &gt;::renderAll()</a>.</p>
 
 </div>
 </div>
@@ -2873,7 +2905,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a42">io/viewDualSurface.cpp</a>.</dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00392">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00391">main()</a>.</p>
 
 </div>
 </div>
@@ -2946,12 +2978,12 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="dec_2exampleDECSurface_8cpp-example.html#a30">dec/exampleDECSurface.cpp</a>, <a class="el" href="geometry_2curves_2exampleArithDSS3d_8cpp-example.html#a9">geometry/curves/exampleArithDSS3d.cpp</a>, <a class="el" href="geometry_2curves_2exampleGridCurve3d-2_8cpp-example.html#a20">geometry/curves/exampleGridCurve3d-2.cpp</a>, <a class="el" href="geometry_2volumes_2distance_2exampleFMM3D_8cpp-example.html#a23">geometry/volumes/distance/exampleFMM3D.cpp</a>, <a class="el" href="io_2viewDualSurface_8cpp-example.html#a37">io/viewDualSurface.cpp</a>, and <a class="el" href="io_2viewers_2viewer3D-9-3Dimages_8cpp-example.html#a6">io/viewers/viewer3D-9-3Dimages.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="dec_2exampleDECSurface_8cpp-example.html#a30">dec/exampleDECSurface.cpp</a>, <a class="el" href="geometry_2curves_2exampleArithDSS3d_8cpp-example.html#a9">geometry/curves/exampleArithDSS3d.cpp</a>, <a class="el" href="geometry_2curves_2exampleGridCurve3d-2_8cpp-example.html#a20">geometry/curves/exampleGridCurve3d-2.cpp</a>, <a class="el" href="geometry_2volumes_2distance_2exampleFMM3D_8cpp-example.html#a23">geometry/volumes/distance/exampleFMM3D.cpp</a>, <a class="el" href="io_2viewDualSurface_8cpp-example.html#a36">io/viewDualSurface.cpp</a>, and <a class="el" href="io_2viewers_2viewer3D-9-3Dimages_8cpp-example.html#a6">io/viewers/viewer3D-9-3Dimages.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00734">734</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00740">740</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="exampleArithDSS3d_8cpp_source.html#l00069">main()</a>, <a class="el" href="shortcuts-geometry_8cpp_source.html#l00048">main()</a>, <a class="el" href="testBallQuadViewer_8cpp_source.html#l00068">testBallQuad()</a>, and <a class="el" href="testLocalConvolutionNormalVectorEstimator_8cpp_source.html#l00071">testLocalConvolutionNormalVectorEstimator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="exampleArithDSS3d_8cpp_source.html#l00069">main()</a>, <a class="el" href="exampleGridCurve3d-2_8cpp_source.html#l00084">main()</a>, <a class="el" href="shortcuts-geometry_8cpp_source.html#l00048">main()</a>, <a class="el" href="testBallQuadViewer_8cpp_source.html#l00068">testBallQuad()</a>, and <a class="el" href="testLocalConvolutionNormalVectorEstimator_8cpp_source.html#l00071">testLocalConvolutionNormalVectorEstimator()</a>.</p>
 
 </div>
 </div>
@@ -2969,7 +3001,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00733">733</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00739">739</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="volScanBoundary_8cpp_source.html#l00065">main()</a>.</p>
 
@@ -2989,9 +3021,9 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00738">738</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00744">744</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="test3DImage3DView_8cpp_source.html#l00053">main()</a>, and <a class="el" href="Display3D_8h_source.html#l00453">DGtal::Display3D&lt; Space, KSpace &gt;::renderAll()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="test3DImage3DView_8cpp_source.html#l00053">main()</a>, <a class="el" href="Display3D_8h_source.html#l00437">DGtal::Display3D&lt; Space, KSpace &gt;::Callback::OnClick()</a>, and <a class="el" href="Display3D_8h_source.html#l00459">DGtal::Display3D&lt; Space, KSpace &gt;::renderAll()</a>.</p>
 
 </div>
 </div>
@@ -3017,7 +3049,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00746">746</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00752">752</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 </div>
 </div>
@@ -3043,7 +3075,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00743">743</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00749">749</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 </div>
 </div>
@@ -3069,7 +3101,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00750">750</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00756">756</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 </div>
 </div>
@@ -3095,7 +3127,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00749">749</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00755">755</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 </div>
 </div>
@@ -3121,7 +3153,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00742">742</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00748">748</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 </div>
 </div>
@@ -3147,7 +3179,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00741">741</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00747">747</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 </div>
 </div>
@@ -3173,7 +3205,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00744">744</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00750">750</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 </div>
 </div>
@@ -3199,9 +3231,9 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00747">747</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00753">753</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Display3D_8h_source.html#l00453">DGtal::Display3D&lt; Space, KSpace &gt;::renderAll()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Display3D_8h_source.html#l00459">DGtal::Display3D&lt; Space, KSpace &gt;::renderAll()</a>.</p>
 
 </div>
 </div>
@@ -3219,7 +3251,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00736">736</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Display3D_8h_source.html#l00742">742</a> of file <a class="el" href="Display3D_8h_source.html">Display3D.h</a>.</p>
 
 </div>
 </div>
@@ -3233,7 +3265,7 @@ template&lt;typename <a class="el" href="testSimpleRandomAccessRangeFromPoint_8c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="classDGtal_1_1Display3D.html">Display3D</a></li>
-    <li class="footer">Generated on Wed Aug 20 2025 11:17:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:28:29 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

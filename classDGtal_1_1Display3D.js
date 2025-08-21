@@ -10,6 +10,7 @@ var classDGtal_1_1Display3D =
     [ "SCellEmbedder", "classDGtal_1_1Display3D.html#a79eec0cb351c88b3710dbc7e6f2c9c22", null ],
     [ "Display3D", "classDGtal_1_1Display3D.html#acba956ce302988aaa3d9e1268ff5b720", null ],
     [ "Display3D", "classDGtal_1_1Display3D.html#aaaf31ce6aabb4959b61927cb4b92d7cc", null ],
+    [ "~Display3D", "classDGtal_1_1Display3D.html#abd1b3a74b332d5bbd0aff2dfeeffdb4d", null ],
     [ "addQuantity", "classDGtal_1_1Display3D.html#ab4cdc9f12e2078159db16be6269fed1c", null ],
     [ "addQuantity", "classDGtal_1_1Display3D.html#a7a2f93c1536ce99af0d0273fb1f2ee26", null ],
     [ "canCreateNewList", "classDGtal_1_1Display3D.html#a0aca8f5849934d2ce89236f8a0c5bbfa", null ],

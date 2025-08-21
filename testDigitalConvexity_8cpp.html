@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -920,7 +920,7 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno"> 1029</span>{</div>
 <div class="line"><span class="lineno"> 1030</span>  <span class="keyword">typedef</span> <a class="code hl_class" href="classDGtal_1_1KhalimskySpaceND.html">KhalimskySpaceND&lt;3,int&gt;</a>          <a class="code hl_typedef" href="testArithmeticalDSSComputerOnSurfels_8cpp.html#aebe586e91159919ccf2f565d4407fff7">KSpace</a>;</div>
 <div class="line"><span class="lineno"> 1031</span>  <span class="keyword">typedef</span> <a class="code hl_class" href="classDGtal_1_1PointVector.html">KSpace::Point</a>                    <a class="code hl_typedef" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>;</div>
-<div class="line"><span class="lineno"> 1032</span>  <span class="keyword">typedef</span> <a class="code hl_class" href="classDGtal_1_1PointVector.html">KSpace::Vector</a>                   <a class="code hl_typedef" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a>;</div>
+<div class="line"><span class="lineno"> 1032</span>  <span class="comment">// typedef KSpace::Vector                   Vector;</span></div>
 <div class="line"><span class="lineno"> 1033</span>  <span class="keyword">typedef</span> <a class="code hl_class" href="classDGtal_1_1SpaceND.html">KSpace::Space</a>                    <a class="code hl_typedef" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a38dfaf1641eab4d3fb805df4b52ab10d">Space</a>;</div>
 <div class="line"><span class="lineno"> 1034</span>  <span class="keyword">typedef</span> <a class="code hl_class" href="classDGtal_1_1HyperRectDomain.html">HyperRectDomain&lt; Space &gt;</a>         <a class="code hl_typedef" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a>;</div>
 <div class="line"><span class="lineno"> 1035</span>  <span class="keyword">typedef</span> <a class="code hl_class" href="classDGtal_1_1DigitalConvexity.html">DigitalConvexity&lt; KSpace &gt;</a>       DConvexity;</div>
@@ -954,7 +954,6 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1063</span>}</div>
 <div class="ttc" id="aclassDGtal_1_1DigitalConvexity_html_ab7677f3e5eabebf589500dadb3043149"><div class="ttname"><a href="classDGtal_1_1DigitalConvexity.html#ab7677f3e5eabebf589500dadb3043149">DGtal::DigitalConvexity::CoverCvxH</a></div><div class="ttdeci">LatticeSet CoverCvxH(const Point &amp;a, const Point &amp;b, Dimension axis=dimension) const</div></div>
 <div class="ttc" id="aclassDGtal_1_1LatticeSetByIntervals_html_a1f5c24d862b113168ddc2eefa53ca123"><div class="ttname"><a href="classDGtal_1_1LatticeSetByIntervals.html#a1f5c24d862b113168ddc2eefa53ca123">DGtal::LatticeSetByIntervals::toPointRange</a></div><div class="ttdeci">PointRange toPointRange() const</div><div class="ttdef"><b>Definition</b> <a href="LatticeSetByIntervals_8h_source.html#l00168">LatticeSetByIntervals.h:168</a></div></div>
-<div class="ttc" id="aexamplePlaneProbingParallelepipedEstimator_8cpp_html_a23c0623485ed9af765bab12ac424843c"><div class="ttname"><a href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a></div><div class="ttdeci">DigitalPlane::Point Vector</div><div class="ttdef"><b>Definition</b> <a href="examplePlaneProbingParallelepipedEstimator_8cpp_source.html#l00045">examplePlaneProbingParallelepipedEstimator.cpp:45</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="testConvexHull2DReverse_8cpp.html#a9bfb339d7f43fbbcb68ca21b3536bea8">CAPTURE()</a>, <a class="el" href="classDGtal_1_1DigitalConvexity.html#ab7677f3e5eabebf589500dadb3043149">DGtal::DigitalConvexity&lt; TKSpace &gt;::CoverCvxH()</a>, <a class="el" href="testProjection_8cpp_source.html#l00088">domain</a>, <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE()</a>, and <a class="el" href="LatticeSetByIntervals_8h_source.html#l00168">DGtal::LatticeSetByIntervals&lt; TSpace &gt;::toPointRange()</a>.</p>
 
@@ -990,7 +989,7 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno"> 1066</span>{</div>
 <div class="line"><span class="lineno"> 1067</span>  <span class="keyword">typedef</span> <a class="code hl_class" href="classDGtal_1_1KhalimskySpaceND.html">KhalimskySpaceND&lt;3,int&gt;</a>          <a class="code hl_typedef" href="testArithmeticalDSSComputerOnSurfels_8cpp.html#aebe586e91159919ccf2f565d4407fff7">KSpace</a>;</div>
 <div class="line"><span class="lineno"> 1068</span>  <span class="keyword">typedef</span> <a class="code hl_class" href="classDGtal_1_1PointVector.html">KSpace::Point</a>                    <a class="code hl_typedef" href="testClone2_8cpp.html#a15e9592ccc512dc691b46185e6814758">Point</a>;</div>
-<div class="line"><span class="lineno"> 1069</span>  <span class="keyword">typedef</span> <a class="code hl_class" href="classDGtal_1_1PointVector.html">KSpace::Vector</a>                   <a class="code hl_typedef" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a>;</div>
+<div class="line"><span class="lineno"> 1069</span><span class="comment">// typedef KSpace::Vector                   Vector;</span></div>
 <div class="line"><span class="lineno"> 1070</span>  <span class="keyword">typedef</span> <a class="code hl_class" href="classDGtal_1_1SpaceND.html">KSpace::Space</a>                    <a class="code hl_typedef" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#a38dfaf1641eab4d3fb805df4b52ab10d">Space</a>;</div>
 <div class="line"><span class="lineno"> 1071</span>  <span class="keyword">typedef</span> <a class="code hl_class" href="classDGtal_1_1HyperRectDomain.html">HyperRectDomain&lt; Space &gt;</a>         <a class="code hl_typedef" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#acd532b318489cd93df57e0b3d136d050">Domain</a>;</div>
 <div class="line"><span class="lineno"> 1072</span>  <span class="keyword">typedef</span> <a class="code hl_class" href="classDGtal_1_1DigitalConvexity.html">DigitalConvexity&lt; KSpace &gt;</a>       DConvexity;</div>
@@ -1141,6 +1140,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno"> 1189</span>  </div>
 <div class="line"><span class="lineno"> 1190</span>}</div>
 <div class="ttc" id="aclassDGtal_1_1DigitalConvexity_html_a0e3e22c3d6898ec1453cec5c98023587"><div class="ttname"><a href="classDGtal_1_1DigitalConvexity.html#a0e3e22c3d6898ec1453cec5c98023587">DGtal::DigitalConvexity::isFullyCovered</a></div><div class="ttdeci">bool isFullyCovered(const Point &amp;a, const Point &amp;b, const Point &amp;c, const LatticeSet &amp;cells) const</div></div>
+<div class="ttc" id="aexamplePlaneProbingParallelepipedEstimator_8cpp_html_a23c0623485ed9af765bab12ac424843c"><div class="ttname"><a href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a></div><div class="ttdeci">DigitalPlane::Point Vector</div><div class="ttdef"><b>Definition</b> <a href="examplePlaneProbingParallelepipedEstimator_8cpp_source.html#l00045">examplePlaneProbingParallelepipedEstimator.cpp:45</a></div></div>
 <div class="ttc" id="anamespaceDGtal_html_a18ceabc071a958546b2e65cedb4ff342"><div class="ttname"><a href="namespaceDGtal.html#a18ceabc071a958546b2e65cedb4ff342">DGtal::crossProduct</a></div><div class="ttdeci">auto crossProduct(PointVector&lt; 3, LeftEuclideanRing, LeftContainer &gt; const &amp;lhs, PointVector&lt; 3, RightEuclideanRing, RightContainer &gt; const &amp;rhs) -&gt; decltype(DGtal::constructFromArithmeticConversion(lhs, rhs))</div><div class="ttdoc">Cross product of two 3D Points/Vectors.</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceDGtal.html#a18ceabc071a958546b2e65cedb4ff342">DGtal::crossProduct()</a>, <a class="el" href="testProjection_8cpp_source.html#l00088">domain</a>, <a class="el" href="classDGtal_1_1DigitalConvexity.html#a0e3e22c3d6898ec1453cec5c98023587">DGtal::DigitalConvexity&lt; TKSpace &gt;::isFullyCovered()</a>, <a class="el" href="classDGtal_1_1DigitalConvexity.html#abb35a70653904c9ca2b308221ff70565">DGtal::DigitalConvexity&lt; TKSpace &gt;::isFullySubconvex()</a>, <a class="el" href="classDGtal_1_1DigitalConvexity.html#a1d6b24ed0bb76b2290b5fcf899a01ce0">DGtal::DigitalConvexity&lt; TKSpace &gt;::isSimplexFullDimensional()</a>, <a class="el" href="classDGtal_1_1DigitalConvexity.html#af588213a1371bc38f45973ef3fc331f4">DGtal::DigitalConvexity&lt; TKSpace &gt;::makeCellCover()</a>, <a class="el" href="classDGtal_1_1DigitalConvexity.html#a1f7509afa782b4513656ac5600cba55d">DGtal::DigitalConvexity&lt; TKSpace &gt;::makeSimplex()</a>, <a class="el" href="testSimpleRandomAccessRangeFromPoint_8cpp.html#ad8a25b2bbbbdb64c30a5442284db5bfb">REQUIRE()</a>, and <a class="el" href="classDGtal_1_1DigitalConvexity.html#abd689cce05efc14754c8aceb90159be9">DGtal::DigitalConvexity&lt; TKSpace &gt;::StarCvxH()</a>.</p>
@@ -1928,7 +1928,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_2751d6f01b35f5fec7131f6adf42b522.html">geometry</a></li><li class="navelem"><a class="el" href="dir_617e36e15bcfca8ade183f7b877528e1.html">volumes</a></li><li class="navelem"><a class="el" href="testDigitalConvexity_8cpp.html">testDigitalConvexity.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 20 2025 11:17:13 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:28:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

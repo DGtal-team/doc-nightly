@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -186,7 +186,7 @@ Shortest path between two points</div></div>
 <div class="line">  trace.<a class="code hl_function" href="classDGtal_1_1Trace.html#a9b36f5ab76b1945c8156cb4dba780bfb">info</a>() &lt;&lt; <span class="stringliteral">&quot;  [Done]&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">  </div>
 <div class="line">  <span class="comment">// Compute surface</span></div>
-<div class="line">  <span class="keyword">auto</span> <a id="a18" name="a18"></a><a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> = SH3::makeDigitalSurface( bimage, <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> <a id="a18" name="a18"></a><a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> = SH3::makeDigitalSurface( bimage, <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Compute interior boundary points</span></div>
 <div class="line">  <span class="comment">// They are less immediate interior points than surfels.</span></div>
@@ -265,7 +265,7 @@ Shortest path between two points</div></div>
 <div class="line">    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colSurfel( 200, 200, 255, 128 );</div>
 <div class="line">    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colStart( 255, 0, 0, 128 );</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; points.size(); ++i )</div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; points.size(); ++i )</div>
 <div class="line">      {</div>
 <div class="line">        <span class="keyword">const</span> <span class="keywordtype">double</span> d_s = SP.distance( i );</div>
 <div class="line">        <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> c_s        = cmap( fmod( d_s, period ) );</div>
@@ -277,7 +277,6 @@ Shortest path between two points</div></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// JOL: Left if you wish to display it as a surface, and to display paths.</span></div>
 <div class="line">    </div>
-<div class="line">    <span class="keyword">auto</span> surfels = SH3::getSurfelRange ( <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> );</div>
 <div class="line">    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> &amp;&amp; s : surfels )</div>
 <div class="line">      {</div>
 <div class="line">        <span class="keyword">const</span> <span class="keywordtype">double</span> d_s = SP.distance( surfel2idx[ s ] );</div>
@@ -288,9 +287,9 @@ Shortest path between two points</div></div>
 <div class="line">    viewerCore.drawColor( colStart );</div>
 <div class="line">    viewerCore.drawColor( Color::Green );</div>
 <div class="line">    <span class="keywordflow">for</span> ( <a class="code hl_typedef" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a> i = 0; i &lt; SP.size(); i++ ) {</div>
-<div class="line">      <a class="code hl_class" href="classMyPointD.html">Point</a> p1 = SP.point( i );</div>
-<div class="line">      <a class="code hl_class" href="classMyPointD.html">Point</a> p2 = SP.point( SP.ancestor( i ) );</div>
-<div class="line">      viewerCore.drawLine( p1, p2 );</div>
+<div class="line">      <a class="code hl_class" href="classMyPointD.html">Point</a> p1_ = SP.point( i );</div>
+<div class="line">      <a class="code hl_class" href="classMyPointD.html">Point</a> p2_ = SP.point( SP.ancestor( i ) );</div>
+<div class="line">      viewerCore.drawLine( p1_, p2_ );</div>
 <div class="line">    }</div>
 <div class="line">    viewerCore.show();</div>
 <div class="line">  }</div>
@@ -330,7 +329,7 @@ Shortest path between two points</div></div>
 <div class="line">    MViewer3D viewerCore;</div>
 <div class="line">    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colSurfel( 200, 200, 255, 128 );</div>
 <div class="line">    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colStart( 255, 0, 0, 128 );</div>
-<div class="line">    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; points.size(); ++i )</div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; points.size(); ++i )</div>
 <div class="line">      {</div>
 <div class="line">        <span class="keyword">const</span> <span class="keywordtype">double</span> d_s0 = SP0.isVisited( i ) ? SP0.distance( i ) : SP0.infinity();</div>
 <div class="line">        <span class="keyword">const</span> <span class="keywordtype">double</span> d_s1 = SP1.isVisited( i ) ? SP1.distance( i ) : SP1.infinity();</div>
@@ -345,7 +344,7 @@ Shortest path between two points</div></div>
 <div class="line">      }</div>
 <div class="line"> </div>
 <div class="line">    viewerCore.drawColor( Color::Green );</div>
-<div class="line">    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 1; i &lt; Q.size(); i++ )</div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 1; i &lt; Q.size(); i++ )</div>
 <div class="line">      {</div>
 <div class="line">        <a class="code hl_class" href="classMyPointD.html">Point</a> p1_ = TC.point( Q[ i-1 ] );</div>
 <div class="line">        <a class="code hl_class" href="classMyPointD.html">Point</a> p2_ = TC.point( Q[ i   ] );</div>
@@ -369,7 +368,7 @@ Shortest path between two points</div></div>
 <div class="line">    MViewer3D viewerCore;</div>
 <div class="line">    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colSurfel( 200, 200, 255, 128 );</div>
 <div class="line">    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colStart( 255, 0, 0, 128 );</div>
-<div class="line">    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; points.size(); ++i )</div>
+<div class="line">    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; points.size(); ++i )</div>
 <div class="line">      {</div>
 <div class="line">        viewerCore.drawColor( <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a>( 150, 150, 150, 255 ) );</div>
 <div class="line">        viewerCore.drawBall( <a class="code hl_typedef" href="testTriangulatedSurface_8cpp.html#abb3595c097987c9d2c4f0cc1902df316">RealPoint</a>( points[ i ][ 0 ],</div>
@@ -379,7 +378,7 @@ Shortest path between two points</div></div>
 <div class="line">    viewerCore.drawColor( Color::Green );</div>
 <div class="line">    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> path : paths )</div>
 <div class="line">      {</div>
-<div class="line">        <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 1; i &lt; path.size(); i++ )</div>
+<div class="line">        <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 1; i &lt; path.size(); i++ )</div>
 <div class="line">          {</div>
 <div class="line">            <a class="code hl_class" href="classMyPointD.html">Point</a> p1_ = TC.point( path[ i-1 ] );</div>
 <div class="line">            <a class="code hl_class" href="classMyPointD.html">Point</a> p2_ = TC.point( path[ i   ] );</div>
@@ -429,7 +428,7 @@ Shortest path between two points</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Aug 20 2025 11:16:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:27:28 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

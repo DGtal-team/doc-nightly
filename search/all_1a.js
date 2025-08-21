@@ -24,7 +24,7 @@ var searchData=
   ['quasinulltest_21',['quasiNullTest',['../testInHalfPlane-benchmark_8cpp.html#aabe8fbe6213d61ac950100aa13c20963',1,'testInHalfPlane-benchmark.cpp']]],
   ['queries_20and_20modified_20area_20measures_22',['Advanced usages: batched queries and modified area measures',['../moduleWinding.html#sectmoduleWinding2',1,'']]],
   ['quick_20development_20with_20dgtal_23',['Helpers, quick development with DGtal',['../packageTutorials.html#secttuto3',1,'']]],
-  ['quickhull_24',['quickhull',['../moduleQuickHull.html#dgtal_quickhull_sec2',1,'Computing convex hulls and Delaunay cell complex using QuickHull'],['../structDGtal_1_1QuickHull.html#a102d2e0a8d3bfa3d231a0a925a04ec82',1,'DGtal::QuickHull::QuickHull()'],['../structDGtal_1_1QuickHull.html',1,'DGtal::QuickHull&lt; TKernel &gt;']]],
+  ['quickhull_24',['quickhull',['../moduleQuickHull.html#dgtal_quickhull_sec2',1,'Computing convex hulls and Delaunay cell complex using QuickHull'],['../structDGtal_1_1QuickHull.html#a4308d2f48d27b76ff479d5e81a9c8959',1,'DGtal::QuickHull::QuickHull()'],['../structDGtal_1_1QuickHull.html',1,'DGtal::QuickHull&lt; TKernel &gt;']]],
   ['quickhull_20algorithm_20in_20arbitrary_20dimension_20for_20convex_20hull_20and_20delaunay_20cell_20complex_20computation_25',['QuickHull algorithm in arbitrary dimension for convex hull and Delaunay cell complex computation',['../moduleQuickHull.html',1,'packageGeometry']]],
   ['quickhull_20convex_20hull_20algorithm_26',['The QuickHull convex hull algorithm',['../moduleQuickHull.html#dgtal_quickhull_sec1',1,'']]],
   ['quickhull_20object_27',['Further information stored in QuickHull object',['../moduleQuickHull.html#dgtal_quickhull_sec25',1,'']]],

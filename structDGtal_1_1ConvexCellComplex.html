@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -1108,10 +1108,10 @@ template&lt;typename TPoint &gt; </div>
 <div class="line"><span class="lineno">  483</span>      Matrix <a class="code hl_class" href="structA.html">A</a>;</div>
 <div class="line"><span class="lineno">  484</span>      <a class="code hl_typedef" href="examplePlaneProbingParallelepipedEstimator_8cpp.html#a23c0623485ed9af765bab12ac424843c">Vector</a> N;</div>
 <div class="line"><span class="lineno">  485</span>      Scalar c;</div>
-<div class="line"><span class="lineno">  486</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 1; i &lt; <a class="code hl_variable" href="structDGtal_1_1ConvexCellComplex.html#a9fbef2e5b69fa32d63267653bd1a2972">dimension</a>; i++ )</div>
-<div class="line"><span class="lineno">  487</span>        <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="structDGtal_1_1ConvexCellComplex.html#a9fbef2e5b69fa32d63267653bd1a2972">dimension</a>; j++ )</div>
+<div class="line"><span class="lineno">  486</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 1; i &lt; <a class="code hl_variable" href="structDGtal_1_1ConvexCellComplex.html#a9fbef2e5b69fa32d63267653bd1a2972">dimension</a>; i++ )</div>
+<div class="line"><span class="lineno">  487</span>        <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code hl_variable" href="structDGtal_1_1ConvexCellComplex.html#a9fbef2e5b69fa32d63267653bd1a2972">dimension</a>; j++ )</div>
 <div class="line"><span class="lineno">  488</span>          <a class="code hl_class" href="structA.html">A</a>.setComponent( i-1, j, <a class="code hl_function" href="structDGtal_1_1ConvexCellComplex.html#a955d3afc25fc87bf64592d4f3402fee5">position</a>( v[ i ] )[ j ] - <a class="code hl_function" href="structDGtal_1_1ConvexCellComplex.html#a955d3afc25fc87bf64592d4f3402fee5">position</a>( v[ 0 ] )[ j ] );</div>
-<div class="line"><span class="lineno">  489</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> j = 0; j &lt; <a class="code hl_variable" href="structDGtal_1_1ConvexCellComplex.html#a9fbef2e5b69fa32d63267653bd1a2972">dimension</a>; j++ )</div>
+<div class="line"><span class="lineno">  489</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> j = 0; j &lt; <a class="code hl_variable" href="structDGtal_1_1ConvexCellComplex.html#a9fbef2e5b69fa32d63267653bd1a2972">dimension</a>; j++ )</div>
 <div class="line"><span class="lineno">  490</span>        N[ j ] = <a class="code hl_class" href="structA.html">A</a>.cofactor( <a class="code hl_variable" href="structDGtal_1_1ConvexCellComplex.html#a9fbef2e5b69fa32d63267653bd1a2972">dimension</a>-1, j );</div>
 <div class="line"><span class="lineno">  491</span>      c = N.dot( <a class="code hl_function" href="structDGtal_1_1ConvexCellComplex.html#a955d3afc25fc87bf64592d4f3402fee5">position</a>( v[ 0 ] ) );</div>
 <div class="line"><span class="lineno">  492</span>      <span class="keywordflow">return</span> std::make_pair( N, c );</div>
@@ -2318,7 +2318,7 @@ template&lt;typename TPoint &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceDGtal.html">DGtal</a></li><li class="navelem"><a class="el" href="structDGtal_1_1ConvexCellComplex.html">ConvexCellComplex</a></li>
-    <li class="footer">Generated on Wed Aug 20 2025 11:17:19 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:28:27 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

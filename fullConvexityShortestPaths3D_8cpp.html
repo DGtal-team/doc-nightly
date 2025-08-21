@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -347,7 +347,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  124</span>  <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a9b36f5ab76b1945c8156cb4dba780bfb">info</a>() &lt;&lt; <span class="stringliteral">&quot;  [Done]&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">  125</span>  </div>
 <div class="line"><span class="lineno">  126</span>  <span class="comment">// Compute surface</span></div>
-<div class="line"><span class="lineno">  127</span>  <span class="keyword">auto</span> <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> = SH3::makeDigitalSurface( bimage, <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
+<div class="line"><span class="lineno">  127</span>  <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> = SH3::makeDigitalSurface( bimage, <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, params );</div>
 <div class="line"><span class="lineno">  128</span> </div>
 <div class="line"><span class="lineno">  129</span>  <span class="comment">// Compute interior boundary points</span></div>
 <div class="line"><span class="lineno">  130</span>  <span class="comment">// They are less immediate interior points than surfels.</span></div>
@@ -426,7 +426,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  205</span>    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colSurfel( 200, 200, 255, 128 );</div>
 <div class="line"><span class="lineno">  206</span>    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colStart( 255, 0, 0, 128 );</div>
 <div class="line"><span class="lineno">  207</span> </div>
-<div class="line"><span class="lineno">  208</span>    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; points.size(); ++i )</div>
+<div class="line"><span class="lineno">  208</span>    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; points.size(); ++i )</div>
 <div class="line"><span class="lineno">  209</span>      {</div>
 <div class="line"><span class="lineno">  210</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> d_s = SP.distance( i );</div>
 <div class="line"><span class="lineno">  211</span>        <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> c_s        = cmap( fmod( d_s, period ) );</div>
@@ -438,121 +438,120 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  217</span> </div>
 <div class="line"><span class="lineno">  218</span>    <span class="comment">// JOL: Left if you wish to display it as a surface, and to display paths.</span></div>
 <div class="line"><span class="lineno">  219</span>    </div>
-<div class="line"><span class="lineno">  220</span>    <span class="keyword">auto</span> surfels = SH3::getSurfelRange ( <a class="code hl_variable" href="dgtalCalculus-geodesic_8cpp.html#a74206273d94e57c9b5aa280170896031">surface</a> );</div>
-<div class="line"><span class="lineno">  221</span>    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> &amp;&amp; s : surfels )</div>
-<div class="line"><span class="lineno">  222</span>      {</div>
-<div class="line"><span class="lineno">  223</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> d_s = SP.distance( surfel2idx[ s ] );</div>
-<div class="line"><span class="lineno">  224</span>        <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> c_s        = cmap( fmod( d_s, period ) );</div>
-<div class="line"><span class="lineno">  225</span>        viewerCore.drawColor( c_s );</div>
-<div class="line"><span class="lineno">  226</span>        viewerCore &lt;&lt; s;</div>
-<div class="line"><span class="lineno">  227</span>      }</div>
-<div class="line"><span class="lineno">  228</span>    viewerCore.drawColor( colStart );</div>
-<div class="line"><span class="lineno">  229</span>    viewerCore.drawColor( <a class="code hl_variable" href="classDGtal_1_1Color.html#ae52413c37b58ca78ac99f05f67c1be99">Color::Green</a> );</div>
-<div class="line"><span class="lineno">  230</span>    <span class="keywordflow">for</span> ( <a class="code hl_typedef" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a> i = 0; i &lt; SP.size(); i++ ) {</div>
-<div class="line"><span class="lineno">  231</span>      <a class="code hl_class" href="classMyPointD.html">Point</a> p1 = SP.point( i );</div>
-<div class="line"><span class="lineno">  232</span>      <a class="code hl_class" href="classMyPointD.html">Point</a> p2 = SP.point( SP.ancestor( i ) );</div>
-<div class="line"><span class="lineno">  233</span>      viewerCore.drawLine( p1, p2 );</div>
-<div class="line"><span class="lineno">  234</span>    }</div>
-<div class="line"><span class="lineno">  235</span>    viewerCore.show();</div>
-<div class="line"><span class="lineno">  236</span>  }</div>
-<div class="line"><span class="lineno">  237</span> </div>
-<div class="line"><span class="lineno">  238</span>  <span class="comment">// (II) Extracts a shortest path between two points.</span></div>
-<div class="line"><span class="lineno">  239</span> </div>
-<div class="line"><span class="lineno">  241</span>  <span class="keyword">auto</span> SP0 = TC.makeShortestPaths( opt );</div>
-<div class="line"><span class="lineno">  242</span>  <span class="keyword">auto</span> SP1 = TC.makeShortestPaths( opt );</div>
-<div class="line"><span class="lineno">  243</span>  SP0.init( start0 );     <span class="comment">//&lt; source point</span></div>
-<div class="line"><span class="lineno">  244</span>  SP1.init( start1 );     <span class="comment">//&lt; target point</span></div>
-<div class="line"><span class="lineno">  245</span>  std::vector&lt; Index &gt; Q; <span class="comment">//&lt; the output shortest path</span></div>
-<div class="line"><span class="lineno">  246</span>  <span class="keywordflow">while</span> ( ! SP0.finished() &amp;&amp; ! SP1.finished() )</div>
-<div class="line"><span class="lineno">  247</span>    {</div>
-<div class="line"><span class="lineno">  248</span>      <span class="keyword">auto</span> n0_ = SP0.current(); ((void) n0_);</div>
-<div class="line"><span class="lineno">  249</span>      <span class="keyword">auto</span> n1_ = SP1.current();</div>
-<div class="line"><span class="lineno">  250</span>      <span class="comment">// auto p0_ = std::get&lt;0&gt;( n0_ );</span></div>
-<div class="line"><span class="lineno">  251</span>      <span class="keyword">auto</span> p1_ = std::get&lt;0&gt;( n1_ );</div>
-<div class="line"><span class="lineno">  252</span>      SP0.expand();</div>
-<div class="line"><span class="lineno">  253</span>      SP1.expand();</div>
-<div class="line"><span class="lineno">  254</span>      <span class="keywordflow">if</span> ( SP0.isVisited( p1_ ) )</div>
-<div class="line"><span class="lineno">  255</span>        {</div>
-<div class="line"><span class="lineno">  256</span>          <span class="keyword">auto</span> c0 = SP0.pathToSource( p1_ );</div>
-<div class="line"><span class="lineno">  257</span>          <span class="keyword">auto</span> c1 = SP1.pathToSource( p1_ );</div>
-<div class="line"><span class="lineno">  258</span>          std::copy(c0.rbegin(), c0.rend(), std::back_inserter(Q));</div>
-<div class="line"><span class="lineno">  259</span>          Q.pop_back();</div>
-<div class="line"><span class="lineno">  260</span>          std::copy(c1.begin(), c1.end(), std::back_inserter(Q)); </div>
-<div class="line"><span class="lineno">  261</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  262</span>        }</div>
-<div class="line"><span class="lineno">  263</span>    }</div>
-<div class="line"><span class="lineno">  264</span>  <span class="comment">// Q is empty if there is no path.</span></div>
-<div class="line"><span class="lineno">  266</span> </div>
-<div class="line"><span class="lineno">  267</span>  <span class="comment">// Display computed distances and shortest path</span></div>
-<div class="line"><span class="lineno">  268</span>  {</div>
-<div class="line"><span class="lineno">  269</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> nb_repetitions = 10;</div>
-<div class="line"><span class="lineno">  270</span>    <span class="keyword">const</span> <span class="keywordtype">double</span>      period = last_distance / nb_repetitions;</div>
-<div class="line"><span class="lineno">  271</span>    <a class="code hl_class" href="classDGtal_1_1SimpleDistanceColorMap.html">SimpleDistanceColorMap&lt; double &gt;</a> cmap( 0.0, period, <span class="keyword">false</span> );</div>
-<div class="line"><span class="lineno">  272</span>    MViewer3D viewerCore;</div>
-<div class="line"><span class="lineno">  273</span>    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colSurfel( 200, 200, 255, 128 );</div>
-<div class="line"><span class="lineno">  274</span>    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colStart( 255, 0, 0, 128 );</div>
-<div class="line"><span class="lineno">  275</span>    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; points.size(); ++i )</div>
-<div class="line"><span class="lineno">  276</span>      {</div>
-<div class="line"><span class="lineno">  277</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> d_s0 = SP0.isVisited( i ) ? SP0.distance( i ) : SP0.infinity();</div>
-<div class="line"><span class="lineno">  278</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> d_s1 = SP1.isVisited( i ) ? SP1.distance( i ) : SP1.infinity();</div>
-<div class="line"><span class="lineno">  279</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> d_s  = std::min( d_s0, d_s1 );</div>
-<div class="line"><span class="lineno">  280</span>        <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> c_s        = ( d_s != SP0.infinity() )</div>
-<div class="line"><span class="lineno">  281</span>          ? cmap( fmod( d_s, period ) )</div>
-<div class="line"><span class="lineno">  282</span>          : <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a>::Black;</div>
-<div class="line"><span class="lineno">  283</span>        viewerCore.drawColor( c_s );</div>
-<div class="line"><span class="lineno">  284</span>        viewerCore.drawBall( <a class="code hl_typedef" href="fullConvexityShortestPaths3D_8cpp.html#ab7fd14a1191ee37e29631c62766e2a6b">RealPoint</a>( points[ i ][ 0 ],</div>
-<div class="line"><span class="lineno">  285</span>                                       points[ i ][ 1 ],</div>
-<div class="line"><span class="lineno">  286</span>                                       points[ i ][ 2 ] ) );</div>
-<div class="line"><span class="lineno">  287</span>      }</div>
-<div class="line"><span class="lineno">  288</span> </div>
-<div class="line"><span class="lineno">  289</span>    viewerCore.drawColor( <a class="code hl_variable" href="classDGtal_1_1Color.html#ae52413c37b58ca78ac99f05f67c1be99">Color::Green</a> );</div>
-<div class="line"><span class="lineno">  290</span>    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 1; i &lt; Q.size(); i++ )</div>
-<div class="line"><span class="lineno">  291</span>      {</div>
-<div class="line"><span class="lineno">  292</span>        <a class="code hl_class" href="classMyPointD.html">Point</a> p1_ = TC.point( Q[ i-1 ] );</div>
-<div class="line"><span class="lineno">  293</span>        <a class="code hl_class" href="classMyPointD.html">Point</a> p2_ = TC.point( Q[ i   ] );</div>
-<div class="line"><span class="lineno">  294</span>        viewerCore.drawLine( p1_, p2_ );</div>
-<div class="line"><span class="lineno">  295</span>      }</div>
-<div class="line"><span class="lineno">  296</span>    viewerCore.show();</div>
-<div class="line"><span class="lineno">  297</span>  }</div>
-<div class="line"><span class="lineno">  298</span> </div>
-<div class="line"><span class="lineno">  299</span>  <span class="comment">// (III) Extracts multiple shortest paths between many sources and two targets.</span></div>
-<div class="line"><span class="lineno">  300</span> </div>
-<div class="line"><span class="lineno">  301</span>  std::vector&lt; Index &gt; sources;</div>
-<div class="line"><span class="lineno">  302</span>  std::vector&lt; Index &gt; dests;</div>
-<div class="line"><span class="lineno">  303</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; 20; i++ )</div>
-<div class="line"><span class="lineno">  304</span>    sources.push_back( rand() % TC.size() );</div>
-<div class="line"><span class="lineno">  305</span>  dests.push_back( start0 );</div>
-<div class="line"><span class="lineno">  306</span>  dests.push_back( start1 );</div>
-<div class="line"><span class="lineno">  307</span>  <span class="keyword">auto</span> paths = TC.shortestPaths( sources, dests, opt );</div>
-<div class="line"><span class="lineno">  308</span> </div>
-<div class="line"><span class="lineno">  309</span>  <span class="comment">// Display them.</span></div>
-<div class="line"><span class="lineno">  310</span>  {</div>
-<div class="line"><span class="lineno">  311</span>    MViewer3D viewerCore;</div>
-<div class="line"><span class="lineno">  312</span>    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colSurfel( 200, 200, 255, 128 );</div>
-<div class="line"><span class="lineno">  313</span>    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colStart( 255, 0, 0, 128 );</div>
-<div class="line"><span class="lineno">  314</span>    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; points.size(); ++i )</div>
-<div class="line"><span class="lineno">  315</span>      {</div>
-<div class="line"><span class="lineno">  316</span>        viewerCore.drawColor( <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a>( 150, 150, 150, 255 ) );</div>
-<div class="line"><span class="lineno">  317</span>        viewerCore.drawBall( <a class="code hl_typedef" href="fullConvexityShortestPaths3D_8cpp.html#ab7fd14a1191ee37e29631c62766e2a6b">RealPoint</a>( points[ i ][ 0 ],</div>
-<div class="line"><span class="lineno">  318</span>                                       points[ i ][ 1 ],</div>
-<div class="line"><span class="lineno">  319</span>                                       points[ i ][ 2 ] ) );</div>
-<div class="line"><span class="lineno">  320</span>      }</div>
-<div class="line"><span class="lineno">  321</span>    viewerCore.drawColor( <a class="code hl_variable" href="classDGtal_1_1Color.html#ae52413c37b58ca78ac99f05f67c1be99">Color::Green</a> );</div>
-<div class="line"><span class="lineno">  322</span>    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> path : paths )</div>
-<div class="line"><span class="lineno">  323</span>      {</div>
-<div class="line"><span class="lineno">  324</span>        <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 1; i &lt; path.size(); i++ )</div>
-<div class="line"><span class="lineno">  325</span>          {</div>
-<div class="line"><span class="lineno">  326</span>            <a class="code hl_class" href="classMyPointD.html">Point</a> p1_ = TC.point( path[ i-1 ] );</div>
-<div class="line"><span class="lineno">  327</span>            <a class="code hl_class" href="classMyPointD.html">Point</a> p2_ = TC.point( path[ i   ] );</div>
-<div class="line"><span class="lineno">  328</span>            viewerCore.drawLine( p1_, p2_ );</div>
-<div class="line"><span class="lineno">  329</span>          }</div>
-<div class="line"><span class="lineno">  330</span>        <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a9b36f5ab76b1945c8156cb4dba780bfb">info</a>() &lt;&lt; <span class="stringliteral">&quot;length=&quot;</span> &lt;&lt; TC.length( path ) &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  331</span>      }</div>
-<div class="line"><span class="lineno">  332</span>    viewerCore.show();</div>
-<div class="line"><span class="lineno">  333</span>  }</div>
-<div class="line"><span class="lineno">  334</span>  </div>
-<div class="line"><span class="lineno">  335</span>  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  336</span>}</div>
+<div class="line"><span class="lineno">  220</span>    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> &amp;&amp; s : surfels )</div>
+<div class="line"><span class="lineno">  221</span>      {</div>
+<div class="line"><span class="lineno">  222</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> d_s = SP.distance( surfel2idx[ s ] );</div>
+<div class="line"><span class="lineno">  223</span>        <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> c_s        = cmap( fmod( d_s, period ) );</div>
+<div class="line"><span class="lineno">  224</span>        viewerCore.drawColor( c_s );</div>
+<div class="line"><span class="lineno">  225</span>        viewerCore &lt;&lt; s;</div>
+<div class="line"><span class="lineno">  226</span>      }</div>
+<div class="line"><span class="lineno">  227</span>    viewerCore.drawColor( colStart );</div>
+<div class="line"><span class="lineno">  228</span>    viewerCore.drawColor( <a class="code hl_variable" href="classDGtal_1_1Color.html#ae52413c37b58ca78ac99f05f67c1be99">Color::Green</a> );</div>
+<div class="line"><span class="lineno">  229</span>    <span class="keywordflow">for</span> ( <a class="code hl_typedef" href="fullConvexitySphereGeodesics_8cpp.html#ab053a8ae7537e4f87fa9a46962f7617a">Index</a> i = 0; i &lt; SP.size(); i++ ) {</div>
+<div class="line"><span class="lineno">  230</span>      <a class="code hl_class" href="classMyPointD.html">Point</a> p1_ = SP.point( i );</div>
+<div class="line"><span class="lineno">  231</span>      <a class="code hl_class" href="classMyPointD.html">Point</a> p2_ = SP.point( SP.ancestor( i ) );</div>
+<div class="line"><span class="lineno">  232</span>      viewerCore.drawLine( p1_, p2_ );</div>
+<div class="line"><span class="lineno">  233</span>    }</div>
+<div class="line"><span class="lineno">  234</span>    viewerCore.show();</div>
+<div class="line"><span class="lineno">  235</span>  }</div>
+<div class="line"><span class="lineno">  236</span> </div>
+<div class="line"><span class="lineno">  237</span>  <span class="comment">// (II) Extracts a shortest path between two points.</span></div>
+<div class="line"><span class="lineno">  238</span> </div>
+<div class="line"><span class="lineno">  240</span>  <span class="keyword">auto</span> SP0 = TC.makeShortestPaths( opt );</div>
+<div class="line"><span class="lineno">  241</span>  <span class="keyword">auto</span> SP1 = TC.makeShortestPaths( opt );</div>
+<div class="line"><span class="lineno">  242</span>  SP0.init( start0 );     <span class="comment">//&lt; source point</span></div>
+<div class="line"><span class="lineno">  243</span>  SP1.init( start1 );     <span class="comment">//&lt; target point</span></div>
+<div class="line"><span class="lineno">  244</span>  std::vector&lt; Index &gt; Q; <span class="comment">//&lt; the output shortest path</span></div>
+<div class="line"><span class="lineno">  245</span>  <span class="keywordflow">while</span> ( ! SP0.finished() &amp;&amp; ! SP1.finished() )</div>
+<div class="line"><span class="lineno">  246</span>    {</div>
+<div class="line"><span class="lineno">  247</span>      <span class="keyword">auto</span> n0_ = SP0.current(); ((void) n0_);</div>
+<div class="line"><span class="lineno">  248</span>      <span class="keyword">auto</span> n1_ = SP1.current();</div>
+<div class="line"><span class="lineno">  249</span>      <span class="comment">// auto p0_ = std::get&lt;0&gt;( n0_ );</span></div>
+<div class="line"><span class="lineno">  250</span>      <span class="keyword">auto</span> p1_ = std::get&lt;0&gt;( n1_ );</div>
+<div class="line"><span class="lineno">  251</span>      SP0.expand();</div>
+<div class="line"><span class="lineno">  252</span>      SP1.expand();</div>
+<div class="line"><span class="lineno">  253</span>      <span class="keywordflow">if</span> ( SP0.isVisited( p1_ ) )</div>
+<div class="line"><span class="lineno">  254</span>        {</div>
+<div class="line"><span class="lineno">  255</span>          <span class="keyword">auto</span> c0 = SP0.pathToSource( p1_ );</div>
+<div class="line"><span class="lineno">  256</span>          <span class="keyword">auto</span> c1 = SP1.pathToSource( p1_ );</div>
+<div class="line"><span class="lineno">  257</span>          std::copy(c0.rbegin(), c0.rend(), std::back_inserter(Q));</div>
+<div class="line"><span class="lineno">  258</span>          Q.pop_back();</div>
+<div class="line"><span class="lineno">  259</span>          std::copy(c1.begin(), c1.end(), std::back_inserter(Q)); </div>
+<div class="line"><span class="lineno">  260</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  261</span>        }</div>
+<div class="line"><span class="lineno">  262</span>    }</div>
+<div class="line"><span class="lineno">  263</span>  <span class="comment">// Q is empty if there is no path.</span></div>
+<div class="line"><span class="lineno">  265</span> </div>
+<div class="line"><span class="lineno">  266</span>  <span class="comment">// Display computed distances and shortest path</span></div>
+<div class="line"><span class="lineno">  267</span>  {</div>
+<div class="line"><span class="lineno">  268</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> nb_repetitions = 10;</div>
+<div class="line"><span class="lineno">  269</span>    <span class="keyword">const</span> <span class="keywordtype">double</span>      period = last_distance / nb_repetitions;</div>
+<div class="line"><span class="lineno">  270</span>    <a class="code hl_class" href="classDGtal_1_1SimpleDistanceColorMap.html">SimpleDistanceColorMap&lt; double &gt;</a> cmap( 0.0, period, <span class="keyword">false</span> );</div>
+<div class="line"><span class="lineno">  271</span>    MViewer3D viewerCore;</div>
+<div class="line"><span class="lineno">  272</span>    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colSurfel( 200, 200, 255, 128 );</div>
+<div class="line"><span class="lineno">  273</span>    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colStart( 255, 0, 0, 128 );</div>
+<div class="line"><span class="lineno">  274</span>    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; points.size(); ++i )</div>
+<div class="line"><span class="lineno">  275</span>      {</div>
+<div class="line"><span class="lineno">  276</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> d_s0 = SP0.isVisited( i ) ? SP0.distance( i ) : SP0.infinity();</div>
+<div class="line"><span class="lineno">  277</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> d_s1 = SP1.isVisited( i ) ? SP1.distance( i ) : SP1.infinity();</div>
+<div class="line"><span class="lineno">  278</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> d_s  = std::min( d_s0, d_s1 );</div>
+<div class="line"><span class="lineno">  279</span>        <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> c_s        = ( d_s != SP0.infinity() )</div>
+<div class="line"><span class="lineno">  280</span>          ? cmap( fmod( d_s, period ) )</div>
+<div class="line"><span class="lineno">  281</span>          : <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a>::Black;</div>
+<div class="line"><span class="lineno">  282</span>        viewerCore.drawColor( c_s );</div>
+<div class="line"><span class="lineno">  283</span>        viewerCore.drawBall( <a class="code hl_typedef" href="fullConvexityShortestPaths3D_8cpp.html#ab7fd14a1191ee37e29631c62766e2a6b">RealPoint</a>( points[ i ][ 0 ],</div>
+<div class="line"><span class="lineno">  284</span>                                       points[ i ][ 1 ],</div>
+<div class="line"><span class="lineno">  285</span>                                       points[ i ][ 2 ] ) );</div>
+<div class="line"><span class="lineno">  286</span>      }</div>
+<div class="line"><span class="lineno">  287</span> </div>
+<div class="line"><span class="lineno">  288</span>    viewerCore.drawColor( <a class="code hl_variable" href="classDGtal_1_1Color.html#ae52413c37b58ca78ac99f05f67c1be99">Color::Green</a> );</div>
+<div class="line"><span class="lineno">  289</span>    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 1; i &lt; Q.size(); i++ )</div>
+<div class="line"><span class="lineno">  290</span>      {</div>
+<div class="line"><span class="lineno">  291</span>        <a class="code hl_class" href="classMyPointD.html">Point</a> p1_ = TC.point( Q[ i-1 ] );</div>
+<div class="line"><span class="lineno">  292</span>        <a class="code hl_class" href="classMyPointD.html">Point</a> p2_ = TC.point( Q[ i   ] );</div>
+<div class="line"><span class="lineno">  293</span>        viewerCore.drawLine( p1_, p2_ );</div>
+<div class="line"><span class="lineno">  294</span>      }</div>
+<div class="line"><span class="lineno">  295</span>    viewerCore.show();</div>
+<div class="line"><span class="lineno">  296</span>  }</div>
+<div class="line"><span class="lineno">  297</span> </div>
+<div class="line"><span class="lineno">  298</span>  <span class="comment">// (III) Extracts multiple shortest paths between many sources and two targets.</span></div>
+<div class="line"><span class="lineno">  299</span> </div>
+<div class="line"><span class="lineno">  300</span>  std::vector&lt; Index &gt; sources;</div>
+<div class="line"><span class="lineno">  301</span>  std::vector&lt; Index &gt; dests;</div>
+<div class="line"><span class="lineno">  302</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; 20; i++ )</div>
+<div class="line"><span class="lineno">  303</span>    sources.push_back( rand() % TC.size() );</div>
+<div class="line"><span class="lineno">  304</span>  dests.push_back( start0 );</div>
+<div class="line"><span class="lineno">  305</span>  dests.push_back( start1 );</div>
+<div class="line"><span class="lineno">  306</span>  <span class="keyword">auto</span> paths = TC.shortestPaths( sources, dests, opt );</div>
+<div class="line"><span class="lineno">  307</span> </div>
+<div class="line"><span class="lineno">  308</span>  <span class="comment">// Display them.</span></div>
+<div class="line"><span class="lineno">  309</span>  {</div>
+<div class="line"><span class="lineno">  310</span>    MViewer3D viewerCore;</div>
+<div class="line"><span class="lineno">  311</span>    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colSurfel( 200, 200, 255, 128 );</div>
+<div class="line"><span class="lineno">  312</span>    <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a> colStart( 255, 0, 0, 128 );</div>
+<div class="line"><span class="lineno">  313</span>    <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; points.size(); ++i )</div>
+<div class="line"><span class="lineno">  314</span>      {</div>
+<div class="line"><span class="lineno">  315</span>        viewerCore.drawColor( <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a>( 150, 150, 150, 255 ) );</div>
+<div class="line"><span class="lineno">  316</span>        viewerCore.drawBall( <a class="code hl_typedef" href="fullConvexityShortestPaths3D_8cpp.html#ab7fd14a1191ee37e29631c62766e2a6b">RealPoint</a>( points[ i ][ 0 ],</div>
+<div class="line"><span class="lineno">  317</span>                                       points[ i ][ 1 ],</div>
+<div class="line"><span class="lineno">  318</span>                                       points[ i ][ 2 ] ) );</div>
+<div class="line"><span class="lineno">  319</span>      }</div>
+<div class="line"><span class="lineno">  320</span>    viewerCore.drawColor( <a class="code hl_variable" href="classDGtal_1_1Color.html#ae52413c37b58ca78ac99f05f67c1be99">Color::Green</a> );</div>
+<div class="line"><span class="lineno">  321</span>    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> path : paths )</div>
+<div class="line"><span class="lineno">  322</span>      {</div>
+<div class="line"><span class="lineno">  323</span>        <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 1; i &lt; path.size(); i++ )</div>
+<div class="line"><span class="lineno">  324</span>          {</div>
+<div class="line"><span class="lineno">  325</span>            <a class="code hl_class" href="classMyPointD.html">Point</a> p1_ = TC.point( path[ i-1 ] );</div>
+<div class="line"><span class="lineno">  326</span>            <a class="code hl_class" href="classMyPointD.html">Point</a> p2_ = TC.point( path[ i   ] );</div>
+<div class="line"><span class="lineno">  327</span>            viewerCore.drawLine( p1_, p2_ );</div>
+<div class="line"><span class="lineno">  328</span>          }</div>
+<div class="line"><span class="lineno">  329</span>        <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a9b36f5ab76b1945c8156cb4dba780bfb">info</a>() &lt;&lt; <span class="stringliteral">&quot;length=&quot;</span> &lt;&lt; TC.length( path ) &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  330</span>      }</div>
+<div class="line"><span class="lineno">  331</span>    viewerCore.show();</div>
+<div class="line"><span class="lineno">  332</span>  }</div>
+<div class="line"><span class="lineno">  333</span>  </div>
+<div class="line"><span class="lineno">  334</span>  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  335</span>}</div>
 <div class="ttc" id="aclassDGtal_1_1Color_html"><div class="ttname"><a href="classDGtal_1_1Color.html">DGtal::Color</a></div><div class="ttdoc">Structure representing an RGB triple with alpha component.</div><div class="ttdef"><b>Definition</b> <a href="Color_8h_source.html#l00076">Color.h:77</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Color_html_ae52413c37b58ca78ac99f05f67c1be99"><div class="ttname"><a href="classDGtal_1_1Color.html#ae52413c37b58ca78ac99f05f67c1be99">DGtal::Color::Green</a></div><div class="ttdeci">static const Color Green</div><div class="ttdef"><b>Definition</b> <a href="Color_8h_source.html#l00426">Color.h:426</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1KhalimskySpaceND_html"><div class="ttname"><a href="classDGtal_1_1KhalimskySpaceND.html">DGtal::KhalimskySpaceND</a></div><div class="ttdoc">Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex,...</div><div class="ttdef"><b>Definition</b> <a href="KhalimskySpaceND_8h_source.html#l00392">KhalimskySpaceND.h:394</a></div></div>
@@ -630,7 +629,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_bbc6006c4fa8019b84b7adc573485eac.html">geometry</a></li><li class="navelem"><a class="el" href="dir_4e2b6255776ee794b28cc39d3a586de0.html">volumes</a></li><li class="navelem"><a class="el" href="fullConvexityShortestPaths3D_8cpp.html">fullConvexityShortestPaths3D.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 20 2025 11:17:11 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:28:18 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -189,7 +189,7 @@ Digital polyhedral model of 'spot.obj' at gridstep 0.005 (vertices and edges onl
 <div class="line">  <span class="keyword">auto</span> edgeVertices = <a class="code hl_variable" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.allEdgeVertices();</div>
 <div class="line"> </div>
 <div class="line">  <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a id="a23" name="a23"></a><a class="code hl_function" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>( <span class="stringliteral">&quot;Computing polyhedron&quot;</span> );</div>
-<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> f = 0; f &lt; <a class="code hl_variable" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.nbFaces(); ++f )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; <a class="code hl_variable" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.nbFaces(); ++f )</div>
 <div class="line">    {</div>
 <div class="line">      <a class="code hl_typedef" href="digitalPolyhedronBuilder3D_8cpp.html#a7e851e605c414ed13c6604af4bba8107">PointRange</a> X;</div>
 <div class="line">      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> v : faceVertices[ f ] )</div>
@@ -197,7 +197,7 @@ Digital polyhedral model of 'spot.obj' at gridstep 0.005 (vertices and edges onl
 <div class="line">      <span class="keyword">auto</span> F = dconv.<a id="a24" name="a24"></a><a class="code hl_function" href="classDGtal_1_1DigitalConvexity.html#a8c1f8c406bf52d7654ebdcd91542e107">envelope</a>( X, Algorithm::DIRECT );</div>
 <div class="line">      faces_set.insert( F.cbegin(), F.cend() );</div>
 <div class="line">    }</div>
-<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> e = 0; e &lt; <a class="code hl_variable" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.nbEdges(); ++e )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> e = 0; e &lt; <a class="code hl_variable" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.nbEdges(); ++e )</div>
 <div class="line">    {</div>
 <div class="line">      <a class="code hl_typedef" href="digitalPolyhedronBuilder3D_8cpp.html#a7e851e605c414ed13c6604af4bba8107">PointRange</a> X =</div>
 <div class="line">        { <a class="code hl_function" href="namespaceboost.html#a9b4917fc7850f916bcbfec9ab2572fe9">vertices</a>[ edgeVertices[ e ].first  ],</div>
@@ -284,7 +284,7 @@ Digital polyhedral model of 'spot.obj' at gridstep 0.005 (vertices and edges onl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Aug 20 2025 11:16:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:27:27 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

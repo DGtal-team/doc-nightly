@@ -1,7 +1,7 @@
 var structDGtal_1_1WithQuantity =
 [
-    [ "WithQuantity", "structDGtal_1_1WithQuantity.html#aab8da2c155a5aea80dadf77f023e9700", null ],
-    [ "WithQuantity", "structDGtal_1_1WithQuantity.html#aecd34bd580b5a3e482b13d93dbf70ea3", null ],
+    [ "WithQuantity", "structDGtal_1_1WithQuantity.html#a30c2c02337dc4e51e795d8921f73c227", null ],
+    [ "WithQuantity", "structDGtal_1_1WithQuantity.html#af749d0fe00afb3fcefc18072372d51ed", null ],
     [ "name", "structDGtal_1_1WithQuantity.html#a3fff8087519ee99e7f477603cf7579be", null ],
     [ "object", "structDGtal_1_1WithQuantity.html#a3fee71888512a756c426c6e58c3fe457", null ],
     [ "scale", "structDGtal_1_1WithQuantity.html#ad38be9c209308b2389a8b5b026393048", null ],

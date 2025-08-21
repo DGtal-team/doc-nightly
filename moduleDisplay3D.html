@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -383,7 +383,7 @@ Object names and groups</h1>
 <div class="line">std::string name2 = viewer.<a class="code hl_function" href="classDGtal_1_1Display3D.html#a384a636c40492342f8e224e4785f92fb">draw</a>(p1, <span class="stringliteral">&quot;Point_{i}_name&quot;</span>); <span class="comment">// name2 = &quot;Point_2_name&quot;</span></div>
 </div><!-- fragment --><p>A common pattern when using the <a class="el" href="namespaceDGtal.html" title="DGtal is the top-level namespace which contains all DGtal functions and types.">DGtal</a> library is to iterate over a set of object, and then perform a computation and draw them (see <a class="el" href="testLocalConvolutionNormalVectorEstimator_8cpp.html">tests/geometry/surfaces/testLocalConvolutionNormalVectorEstimator.cpp</a>). However, this would imply having one object for each draw command, which can bloat the user interface and would make the viewer slow. It also limits the ability to have colormaps, since each value would be scattered across multiple objects. For this reason, a special variable can be set:</p>
 <div class="fragment"><div class="line">viewer.<a class="code hl_variable" href="classDGtal_1_1Display3D.html#a028b3d586e835825720786b8bd660734">allowReuseList</a> = <span class="keyword">true</span>;</div>
-<div class="ttc" id="aclassDGtal_1_1Display3D_html_a028b3d586e835825720786b8bd660734"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a028b3d586e835825720786b8bd660734">DGtal::Display3D::allowReuseList</a></div><div class="ttdeci">bool allowReuseList</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00734">Display3D.h:734</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1Display3D_html_a028b3d586e835825720786b8bd660734"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a028b3d586e835825720786b8bd660734">DGtal::Display3D::allowReuseList</a></div><div class="ttdeci">bool allowReuseList</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00740">Display3D.h:740</a></div></div>
 </div><!-- fragment --><p>This will group new objects into the current list. However, this might fail if rendered objects change types (eg. alternating drawing lines and points). Therefore, the lists where the new objects should be pushed must be set manually with:</p>
 <div class="fragment"><div class="line">viewer.<a class="code hl_function" href="classDGtal_1_1Display3D.html#a3e199a0e32ecea9a055a6ab11ebac7f2">setCurrentList</a>(name);</div>
 <div class="ttc" id="aclassDGtal_1_1Display3D_html_a3e199a0e32ecea9a055a6ab11ebac7f2"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a3e199a0e32ecea9a055a6ab11ebac7f2">DGtal::Display3D::setCurrentList</a></div><div class="ttdeci">bool setCurrentList(const std::string &amp;name)</div><div class="ttdoc">Set the current group for further updates.</div></div>
@@ -458,7 +458,7 @@ Extending the viewer</h1>
 <div class="line">    <span class="comment">// Called when an element is clicked</span></div>
 <div class="line">  }</div>
 <div class="line">};</div>
-<div class="ttc" id="aclassDGtal_1_1Display3D_html"><div class="ttname"><a href="classDGtal_1_1Display3D.html">DGtal::Display3D</a></div><div class="ttdoc">Base class for viewing DGtal objects.</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00377">Display3D.h:377</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1Display3D_html"><div class="ttname"><a href="classDGtal_1_1Display3D.html">DGtal::Display3D</a></div><div class="ttdoc">Base class for viewing DGtal objects.</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00381">Display3D.h:381</a></div></div>
 <div class="ttc" id="astructDGtal_1_1DisplayData_html"><div class="ttname"><a href="structDGtal_1_1DisplayData.html">DGtal::DisplayData</a></div><div class="ttdoc">Data required to display an object.</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00247">Display3D.h:247</a></div></div>
 <div class="ttc" id="atestBits_8cpp_html_abf1224ffcf053d0b7990122fcef93bc9"><div class="ttname"><a href="testBits_8cpp.html#abf1224ffcf053d0b7990122fcef93bc9">index</a></div><div class="ttdeci">unsigned int index(DGtal::uint32_t n, unsigned int b)</div><div class="ttdef"><b>Definition</b> <a href="testBits_8cpp_source.html#l00044">testBits.cpp:44</a></div></div>
 <div class="ttc" id="aviewer3D-10-interaction_8cpp_html_a9ab37d6cbc3a283c9e8cfb94c41cfbcc"><div class="ttname"><a href="viewer3D-10-interaction_8cpp.html#a9ab37d6cbc3a283c9e8cfb94c41cfbcc">Callback</a></div><div class="ttdeci">MyViewer::Callback Callback</div><div class="ttdef"><b>Definition</b> <a href="viewer3D-10-interaction_8cpp_source.html#l00065">viewer3D-10-interaction.cpp:65</a></div></div>
@@ -482,7 +482,7 @@ Adding other standard primitive</h1>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageIO.html">IO package</a></li>
-    <li class="footer">Generated on Wed Aug 20 2025 11:17:15 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:28:23 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -23,7 +23,7 @@ var structDGtal_1_1QuickHull =
       [ "InvalidRidge", "structDGtal_1_1QuickHull.html#abeb4e0b07fd4ae7d1c488a810673479da0fb155fe29b11255a2817342de820206", null ],
       [ "InvalidConvexHull", "structDGtal_1_1QuickHull.html#abeb4e0b07fd4ae7d1c488a810673479da2abf328773ed47a827cc24551f0351e0", null ]
     ] ],
-    [ "QuickHull", "structDGtal_1_1QuickHull.html#a102d2e0a8d3bfa3d231a0a925a04ec82", null ],
+    [ "QuickHull", "structDGtal_1_1QuickHull.html#a4308d2f48d27b76ff479d5e81a9c8959", null ],
     [ "above", "structDGtal_1_1QuickHull.html#af2f94f3ff24ea59e6d5a486b3e29978b", null ],
     [ "aboveOrOn", "structDGtal_1_1QuickHull.html#ad26502511f19ddea6db688471d103d4b", null ],
     [ "areFacetsNeighbor", "structDGtal_1_1QuickHull.html#a09a272c95506996182e4fb0cfcccb889", null ],

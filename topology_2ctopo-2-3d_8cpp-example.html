@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('topology_2ctopo-2-3d_8cpp-example.html
 <div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacestd.html">std</a>;</div>
 <div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespaceDGtal.html">DGtal</a>;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> <a id="a0" name="a0"></a><a class="code hl_function" href="testBits_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>( <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv )</div>
+<div class="line"><span class="keywordtype">int</span> <a id="a0" name="a0"></a><a class="code hl_function" href="testBits_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line">{</div>
 <div class="line">  trace.<a id="a1" name="a1"></a><a class="code hl_function" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a> ( <span class="stringliteral">&quot;Example ctopo-2-3d&quot;</span> );</div>
 <div class="line">  <span class="comment">// for 3D display with PolyscopeViewer</span></div>
@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('topology_2ctopo-2-3d_8cpp-example.html
 <div class="line">  }</div>
 <div class="line">  trace.<a class="code hl_function" href="classDGtal_1_1Trace.html#a9b36f5ab76b1945c8156cb4dba780bfb">info</a>()&lt;&lt;<span class="stringliteral">&quot;done&quot;</span>&lt;&lt;std::endl;</div>
 <div class="line">  <span class="comment">// Displaying First surfels cut with gradient colors.;</span></div>
-<div class="line">  <a id="_a16" name="_a16"></a><a class="code hl_class" href="classDGtal_1_1GradientColorMap.html">GradientColorMap&lt;int&gt;</a> cmap_grad(0, (<span class="keyword">const</span> <span class="keywordtype">int</span>)vectBdrySCell2.size());</div>
+<div class="line">  <a id="_a16" name="_a16"></a><a class="code hl_class" href="classDGtal_1_1GradientColorMap.html">GradientColorMap&lt;int&gt;</a> cmap_grad(0, vectBdrySCell2.size());</div>
 <div class="line">  cmap_grad.<a id="a17" name="a17"></a><a class="code hl_function" href="classDGtal_1_1GradientColorMap.html#a0d40c7b3643e533b2357ce908ae1f08c">addColor</a>( <a id="_a18" name="_a18"></a><a class="code hl_class" href="classDGtal_1_1Color.html">Color</a>( 50, 50, 255 ) );</div>
 <div class="line">  cmap_grad.<a class="code hl_function" href="classDGtal_1_1GradientColorMap.html#a0d40c7b3643e533b2357ce908ae1f08c">addColor</a>( <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a>( 255, 0, 0 ) );</div>
 <div class="line">  cmap_grad.<a class="code hl_function" href="classDGtal_1_1GradientColorMap.html#a0d40c7b3643e533b2357ce908ae1f08c">addColor</a>( <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a>( 255, 255, 10 ) );</div>
@@ -198,7 +198,7 @@ $(document).ready(function(){initNavTree('topology_2ctopo-2-3d_8cpp-example.html
 <div class="line">    d++;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <a class="code hl_class" href="classDGtal_1_1GradientColorMap.html">GradientColorMap&lt;int&gt;</a> cmap_grad2(0, (<span class="keyword">const</span> <span class="keywordtype">int</span>)vectBdrySCell.size());</div>
+<div class="line">  <a class="code hl_class" href="classDGtal_1_1GradientColorMap.html">GradientColorMap&lt;int&gt;</a> cmap_grad2(0, vectBdrySCell.size());</div>
 <div class="line">  cmap_grad2.<a class="code hl_function" href="classDGtal_1_1GradientColorMap.html#a0d40c7b3643e533b2357ce908ae1f08c">addColor</a>( <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a>( 50, 50, 255 ) );</div>
 <div class="line">  cmap_grad2.<a class="code hl_function" href="classDGtal_1_1GradientColorMap.html#a0d40c7b3643e533b2357ce908ae1f08c">addColor</a>( <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a>( 255, 0, 0 ) );</div>
 <div class="line">  cmap_grad2.<a class="code hl_function" href="classDGtal_1_1GradientColorMap.html#a0d40c7b3643e533b2357ce908ae1f08c">addColor</a>( <a class="code hl_class" href="classDGtal_1_1Color.html">Color</a>( 255, 255, 10 ) );</div>
@@ -249,7 +249,7 @@ $(document).ready(function(){initNavTree('topology_2ctopo-2-3d_8cpp-example.html
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Aug 20 2025 11:16:22 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:27:28 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -218,13 +218,13 @@ $(document).ready(function(){initNavTree('standardDigitalPolyhedronBuilder3D_8cp
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  std::vector&lt; Plane &gt; face_planes;</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  face_planes.resize( <a class="code hl_variable" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.nbFaces() );</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <span class="keywordtype">bool</span> planarity = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> f = 0; f &lt; <a class="code hl_variable" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.nbFaces() &amp;&amp; planarity; ++f )</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; <a class="code hl_variable" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.nbFaces() &amp;&amp; planarity; ++f )</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    {</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>      <a class="code hl_typedef" href="digitalPolyhedronBuilder3D_8cpp.html#a7e851e605c414ed13c6604af4bba8107">PointRange</a> X;</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> v : faceVertices[ f ] )</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        X.push_back( vertices[ v ] );</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      face_planes[ f ] = <a class="code hl_typedef" href="standardDigitalPolyhedronBuilder3D_8cpp.html#ab251b64cd1b53a31224afb2f96039efd">Plane</a>( X[ 0 ], X[ 1 ], X[ 2 ] );</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> v = 3; v &lt; X.size(); v++ )</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> v = 3; v &lt; X.size(); v++ )</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="keywordflow">if</span> ( ! face_planes[ f ]( X[ v ] ) )</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>          {</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a7fc3d7aa5e75357287452e5689e03efa">error</a>() &lt;&lt; <span class="stringliteral">&quot;Face &quot;</span> &lt;&lt; f &lt;&lt; <span class="stringliteral">&quot; is not planar.&quot;</span> &lt;&lt; std::endl;</div>
@@ -234,14 +234,14 @@ $(document).ready(function(){initNavTree('standardDigitalPolyhedronBuilder3D_8cp
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  <span class="keywordflow">if</span> ( ! planarity ) <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>( <span class="stringliteral">&quot;Computing polyhedron&quot;</span> );</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> f = 0; f &lt; <a class="code hl_variable" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.nbFaces(); ++f )</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; <a class="code hl_variable" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.nbFaces(); ++f )</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    {</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>      <a class="code hl_typedef" href="digitalPolyhedronBuilder3D_8cpp.html#a7e851e605c414ed13c6604af4bba8107">PointRange</a> X;</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> v : faceVertices[ f ] )</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        X.push_back( vertices[ v ] );</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>      <span class="keyword">auto</span> F = dconv.<a class="code hl_function" href="classDGtal_1_1DigitalConvexity.html#a94893f395ee00f8bd8d8b5c964ab28ce">relativeEnvelope</a>( X, face_planes[ f ], Algorithm::DIRECT );</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>      faces_set.insert( F.cbegin(), F.cend() );</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; X.size(); i++ )</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; X.size(); i++ )</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        {</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>          <a class="code hl_typedef" href="digitalPolyhedronBuilder3D_8cpp.html#a7e851e605c414ed13c6604af4bba8107">PointRange</a> Y { X[ i ], X[ (i+1)%X.size() ] };</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>          <span class="keywordflow">if</span> ( Y[ 1 ] &lt; Y[ 0 ] ) std::swap( Y[ 0 ], Y[ 1 ] ); </div>
@@ -396,7 +396,7 @@ $(document).ready(function(){initNavTree('standardDigitalPolyhedronBuilder3D_8cp
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_bbc6006c4fa8019b84b7adc573485eac.html">geometry</a></li><li class="navelem"><a class="el" href="dir_4e2b6255776ee794b28cc39d3a586de0.html">volumes</a></li><li class="navelem"><a class="el" href="standardDigitalPolyhedronBuilder3D_8cpp.html">standardDigitalPolyhedronBuilder3D.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 20 2025 11:16:26 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:27:32 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

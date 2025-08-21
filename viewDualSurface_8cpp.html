@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -135,9 +135,9 @@ Functions</h2></td></tr>
 <tr class="separator:a1d493bcf04cd0f0b7ea1244755c47aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72fcf5b22c706b451046e7fd1550a7be" id="r_a72fcf5b22c706b451046e7fd1550a7be"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="viewDualSurface_8cpp.html#a72fcf5b22c706b451046e7fd1550a7be">rescale</a> (double x)</td></tr>
 <tr class="separator:a72fcf5b22c706b451046e7fd1550a7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e65b2c9115c83c63b5cc292e7e37c94" id="r_a3e65b2c9115c83c63b5cc292e7e37c94"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="classDGtal_1_1PolyscopeViewer.html">Viewer</a> , typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a> &gt; </td></tr>
-<tr class="memitem:a3e65b2c9115c83c63b5cc292e7e37c94"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="viewDualSurface_8cpp.html#a3e65b2c9115c83c63b5cc292e7e37c94">viewPolygons</a> (<a class="el" href="classDGtal_1_1PolyscopeViewer.html">Viewer</a> &amp;viewer, const <a class="el" href="classDGtal_1_1Color.html">DGtal::Color</a> &amp;color, const std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;indices, const std::vector&lt; <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a> &gt; &amp;points)</td></tr>
-<tr class="separator:a3e65b2c9115c83c63b5cc292e7e37c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24bdccee035ab28bf895dd80deb2c412" id="r_a24bdccee035ab28bf895dd80deb2c412"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="classDGtal_1_1PolyscopeViewer.html">Viewer</a> , typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a> &gt; </td></tr>
+<tr class="memitem:a24bdccee035ab28bf895dd80deb2c412"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="viewDualSurface_8cpp.html#a24bdccee035ab28bf895dd80deb2c412">viewPolygons</a> (<a class="el" href="classDGtal_1_1PolyscopeViewer.html">Viewer</a> &amp;viewer, const std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;indices, const std::vector&lt; <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a> &gt; &amp;points)</td></tr>
+<tr class="separator:a24bdccee035ab28bf895dd80deb2c412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a254aa17418553bc21790001a69262a" id="r_a1a254aa17418553bc21790001a69262a"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a> &gt; </td></tr>
 <tr class="memitem:a1a254aa17418553bc21790001a69262a"><td class="memTemplItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="viewDualSurface_8cpp.html#a1a254aa17418553bc21790001a69262a">dim</a> (const <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a> &amp;z)</td></tr>
 <tr class="separator:a1a254aa17418553bc21790001a69262a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,13 +205,13 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00174">174</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  175</span>{</div>
-<div class="line"><span class="lineno">  176</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = 0;</div>
-<div class="line"><span class="lineno">  177</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classDGtal_1_1PointVector.html#af59a5af9d91e2dce2b19d855c5ad1e35">Vector::dimension</a>; ++i )</div>
-<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">if</span> ( ( z[ i ] % 2 ) == 1 ) ++d;</div>
-<div class="line"><span class="lineno">  179</span>  <span class="keywordflow">return</span> d;</div>
-<div class="line"><span class="lineno">  180</span>}</div>
+<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00173">173</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  174</span>{</div>
+<div class="line"><span class="lineno">  175</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = 0;</div>
+<div class="line"><span class="lineno">  176</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classDGtal_1_1PointVector.html#af59a5af9d91e2dce2b19d855c5ad1e35">Vector::dimension</a>; ++i )</div>
+<div class="line"><span class="lineno">  177</span>    <span class="keywordflow">if</span> ( ( z[ i ] % 2 ) == 1 ) ++d;</div>
+<div class="line"><span class="lineno">  178</span>  <span class="keywordflow">return</span> d;</div>
+<div class="line"><span class="lineno">  179</span>}</div>
 <div class="ttc" id="aclassDGtal_1_1PointVector_html_af59a5af9d91e2dce2b19d855c5ad1e35"><div class="ttname"><a href="classDGtal_1_1PointVector.html#af59a5af9d91e2dce2b19d855c5ad1e35">DGtal::PointVector&lt; dim, Integer &gt;::dimension</a></div><div class="ttdeci">static const Dimension dimension</div><div class="ttdoc">Copy of the static dimension of the Point/Vector.</div><div class="ttdef"><b>Definition</b> <a href="PointVector_8h_source.html#l00626">PointVector.h:626</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="PointVector_8h_source.html#l00626">DGtal::PointVector&lt; dim, Integer &gt;::dimension</a>.</p>
@@ -251,43 +251,43 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a28">io/viewDualSurface.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a27">io/viewDualSurface.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00337">337</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  340</span>{</div>
-<div class="line"><span class="lineno">  341</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code hl_define" href="testImageContainerByHashTree_8cpp.html#a4bf6a1e750d841477978a43a04c4f062">dim</a>( z );</div>
-<div class="line"><span class="lineno">  342</span>  <span class="keywordflow">if</span> ( d == 0 )</div>
-<div class="line"><span class="lineno">  343</span>    {</div>
-<div class="line"><span class="lineno">  344</span>      f[ z ] = (cfg == 1);</div>
-<div class="line"><span class="lineno">  345</span>      <span class="comment">//std::cerr &lt;&lt; &quot;f[&quot; &lt;&lt; z &lt;&lt; &quot;] = &quot; &lt;&lt; f[ z ] &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">  346</span>    }</div>
-<div class="line"><span class="lineno">  347</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  348</span>    {</div>
-<div class="line"><span class="lineno">  349</span>      <span class="keywordtype">unsigned</span> n = 1 &lt;&lt; ( d - 1 );</div>
-<div class="line"><span class="lineno">  350</span>      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cfgLow = 0;</div>
-<div class="line"><span class="lineno">  351</span>      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cfgUp  = 0;</div>
-<div class="line"><span class="lineno">  352</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; n; ++j )</div>
-<div class="line"><span class="lineno">  353</span>        {</div>
-<div class="line"><span class="lineno">  354</span>          cfgLow += ( cfg &amp; 1 ) &lt;&lt; j;</div>
-<div class="line"><span class="lineno">  355</span>          cfg &gt;&gt;= 1;</div>
-<div class="line"><span class="lineno">  356</span>          cfgUp += ( cfg &amp; 1 ) &lt;&lt; j;</div>
-<div class="line"><span class="lineno">  357</span>          cfg &gt;&gt;= 1;</div>
-<div class="line"><span class="lineno">  358</span>        }</div>
-<div class="line"><span class="lineno">  359</span>      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = <a class="code hl_function" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( z );</div>
-<div class="line"><span class="lineno">  360</span>      <a class="code hl_function" href="viewDualSurface_8cpp.html#a712217d56535193a44402f7de57bf6e9">fillCfg</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, i ), cfgLow );</div>
-<div class="line"><span class="lineno">  361</span>      <a class="code hl_function" href="viewDualSurface_8cpp.html#a712217d56535193a44402f7de57bf6e9">fillCfg</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, i ), cfgUp );</div>
-<div class="line"><span class="lineno">  362</span>    }</div>
-<div class="line"><span class="lineno">  363</span>}</div>
+<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00336">336</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  339</span>{</div>
+<div class="line"><span class="lineno">  340</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code hl_define" href="testImageContainerByHashTree_8cpp.html#a4bf6a1e750d841477978a43a04c4f062">dim</a>( z );</div>
+<div class="line"><span class="lineno">  341</span>  <span class="keywordflow">if</span> ( d == 0 )</div>
+<div class="line"><span class="lineno">  342</span>    {</div>
+<div class="line"><span class="lineno">  343</span>      f[ z ] = (cfg == 1);</div>
+<div class="line"><span class="lineno">  344</span>      <span class="comment">//std::cerr &lt;&lt; &quot;f[&quot; &lt;&lt; z &lt;&lt; &quot;] = &quot; &lt;&lt; f[ z ] &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  345</span>    }</div>
+<div class="line"><span class="lineno">  346</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  347</span>    {</div>
+<div class="line"><span class="lineno">  348</span>      <span class="keywordtype">unsigned</span> n = 1 &lt;&lt; ( d - 1 );</div>
+<div class="line"><span class="lineno">  349</span>      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cfgLow = 0;</div>
+<div class="line"><span class="lineno">  350</span>      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cfgUp  = 0;</div>
+<div class="line"><span class="lineno">  351</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; n; ++j )</div>
+<div class="line"><span class="lineno">  352</span>        {</div>
+<div class="line"><span class="lineno">  353</span>          cfgLow += ( cfg &amp; 1 ) &lt;&lt; j;</div>
+<div class="line"><span class="lineno">  354</span>          cfg &gt;&gt;= 1;</div>
+<div class="line"><span class="lineno">  355</span>          cfgUp += ( cfg &amp; 1 ) &lt;&lt; j;</div>
+<div class="line"><span class="lineno">  356</span>          cfg &gt;&gt;= 1;</div>
+<div class="line"><span class="lineno">  357</span>        }</div>
+<div class="line"><span class="lineno">  358</span>      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = <a class="code hl_function" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( z );</div>
+<div class="line"><span class="lineno">  359</span>      <a class="code hl_function" href="viewDualSurface_8cpp.html#a712217d56535193a44402f7de57bf6e9">fillCfg</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, i ), cfgLow );</div>
+<div class="line"><span class="lineno">  360</span>      <a class="code hl_function" href="viewDualSurface_8cpp.html#a712217d56535193a44402f7de57bf6e9">fillCfg</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, i ), cfgUp );</div>
+<div class="line"><span class="lineno">  361</span>    }</div>
+<div class="line"><span class="lineno">  362</span>}</div>
 <div class="ttc" id="atestImageContainerByHashTree_8cpp_html_a4bf6a1e750d841477978a43a04c4f062"><div class="ttname"><a href="testImageContainerByHashTree_8cpp.html#a4bf6a1e750d841477978a43a04c4f062">dim</a></div><div class="ttdeci">#define dim</div><div class="ttdef"><b>Definition</b> <a href="testImageContainerByHashTree_8cpp_source.html#l00040">testImageContainerByHashTree.cpp:40</a></div></div>
-<div class="ttc" id="aviewDualSurface_8cpp_html_a4b98c5389a8b08039179fe01b21c9ce7"><div class="ttname"><a href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a></div><div class="ttdeci">Vector lower(const Vector &amp;z, unsigned int k)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00190">viewDualSurface.cpp:190</a></div></div>
-<div class="ttc" id="aviewDualSurface_8cpp_html_a65653d1a6841c63e254176ca4c71a555"><div class="ttname"><a href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a></div><div class="ttdeci">unsigned int openDim(const Vector &amp;z)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00183">viewDualSurface.cpp:183</a></div></div>
-<div class="ttc" id="aviewDualSurface_8cpp_html_a712217d56535193a44402f7de57bf6e9"><div class="ttname"><a href="viewDualSurface_8cpp.html#a712217d56535193a44402f7de57bf6e9">fillCfg</a></div><div class="ttdeci">void fillCfg(std::map&lt; Vector, bool &gt; &amp;f, const Vector &amp;z, unsigned int cfg)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00337">viewDualSurface.cpp:337</a></div></div>
-<div class="ttc" id="aviewDualSurface_8cpp_html_a91ad5a18fccee11320ecff413bb13b16"><div class="ttname"><a href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a></div><div class="ttdeci">Vector upper(const Vector &amp;z, unsigned int k)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00197">viewDualSurface.cpp:197</a></div></div>
+<div class="ttc" id="aviewDualSurface_8cpp_html_a4b98c5389a8b08039179fe01b21c9ce7"><div class="ttname"><a href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a></div><div class="ttdeci">Vector lower(const Vector &amp;z, unsigned int k)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00189">viewDualSurface.cpp:189</a></div></div>
+<div class="ttc" id="aviewDualSurface_8cpp_html_a65653d1a6841c63e254176ca4c71a555"><div class="ttname"><a href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a></div><div class="ttdeci">unsigned int openDim(const Vector &amp;z)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00182">viewDualSurface.cpp:182</a></div></div>
+<div class="ttc" id="aviewDualSurface_8cpp_html_a712217d56535193a44402f7de57bf6e9"><div class="ttname"><a href="viewDualSurface_8cpp.html#a712217d56535193a44402f7de57bf6e9">fillCfg</a></div><div class="ttdeci">void fillCfg(std::map&lt; Vector, bool &gt; &amp;f, const Vector &amp;z, unsigned int cfg)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00336">viewDualSurface.cpp:336</a></div></div>
+<div class="ttc" id="aviewDualSurface_8cpp_html_a91ad5a18fccee11320ecff413bb13b16"><div class="ttname"><a href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a></div><div class="ttdeci">Vector upper(const Vector &amp;z, unsigned int k)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00196">viewDualSurface.cpp:196</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="testImageContainerByHashTree_8cpp_source.html#l00040">dim</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00337">fillCfg()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00190">lower()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00183">openDim()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00197">upper()</a>.</p>
+<p class="reference">References <a class="el" href="testImageContainerByHashTree_8cpp_source.html#l00040">dim</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00336">fillCfg()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00189">lower()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00182">openDim()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00196">upper()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00337">fillCfg()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00392">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00336">fillCfg()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00391">main()</a>.</p>
 
 </div>
 </div>
@@ -318,51 +318,51 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a21">io/viewDualSurface.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a20">io/viewDualSurface.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00218">218</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  220</span>{</div>
-<div class="line"><span class="lineno">  221</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code hl_define" href="testImageContainerByHashTree_8cpp.html#a4bf6a1e750d841477978a43a04c4f062">dim</a>( z );</div>
-<div class="line"><span class="lineno">  222</span>  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ];</div>
-<div class="line"><span class="lineno">  223</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( d == 1 )</div>
-<div class="line"><span class="lineno">  224</span>    {</div>
-<div class="line"><span class="lineno">  225</span>      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = <a class="code hl_function" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( z );</div>
-<div class="line"><span class="lineno">  226</span>      <span class="keywordflow">return</span> f[ <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, i ) ] || f[ <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, i ) ];</div>
-<div class="line"><span class="lineno">  227</span>    }</div>
-<div class="line"><span class="lineno">  228</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  229</span>    {</div>
-<div class="line"><span class="lineno">  230</span>      <a class="code hl_class" href="classDGtal_1_1PointVector.html">Vector</a> v1, v2;</div>
-<div class="line"><span class="lineno">  231</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classDGtal_1_1PointVector.html#af59a5af9d91e2dce2b19d855c5ad1e35">Vector::dimension</a>; ++i )</div>
-<div class="line"><span class="lineno">  232</span>        {</div>
-<div class="line"><span class="lineno">  233</span>          v1[ i ] = ( ( z[ i ] % 2 ) == 1 ) ? z[ i ] - 1 : z[ i ];</div>
-<div class="line"><span class="lineno">  234</span>          v2[ i ] = ( ( z[ i ] % 2 ) == 1 ) ? z[ i ] + 1 : z[ i ];</div>
-<div class="line"><span class="lineno">  235</span>        }</div>
-<div class="line"><span class="lineno">  236</span>      <a class="code hl_class" href="classDGtal_1_1HyperRectDomain.html">Domain</a> <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>( v1, v2 );</div>
-<div class="line"><span class="lineno">  237</span>      <span class="keywordflow">for</span> ( <a class="code hl_class" href="classDGtal_1_1HyperRectDomain__Iterator.html">Domain::ConstIterator</a> it = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#a4477d569db1e699feb289e8a1ab78605">begin</a>(), itE = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#acadf08bed379bba1fa503df7f6f911a4">end</a>();</div>
-<div class="line"><span class="lineno">  238</span>            it != itE; ++it )</div>
-<div class="line"><span class="lineno">  239</span>        {</div>
-<div class="line"><span class="lineno">  240</span>          <span class="keywordflow">if</span> ( *it == z ) <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  241</span>          <a class="code hl_class" href="classDGtal_1_1PointVector.html">Point</a> zp = z*2 - *it;</div>
-<div class="line"><span class="lineno">  242</span>          <span class="comment">// std::cerr &lt;&lt; *it &lt;&lt; &quot; &lt;--&gt; &quot; &lt;&lt; zp &lt;&lt; std::endl;</span></div>
-<div class="line"><span class="lineno">  243</span>          <span class="keywordflow">if</span> ( <a class="code hl_function" href="viewDualSurface_8cpp.html#a55477fca21a3de4a13ceb25954524d42">lightBetween</a>( f, *it ) &amp;&amp; <a class="code hl_function" href="viewDualSurface_8cpp.html#a55477fca21a3de4a13ceb25954524d42">lightBetween</a>( f, zp ) )</div>
-<div class="line"><span class="lineno">  244</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  245</span>        }</div>
-<div class="line"><span class="lineno">  246</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  247</span>    }</div>
-<div class="line"><span class="lineno">  248</span> </div>
-<div class="line"><span class="lineno">  249</span>}</div>
+<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00217">217</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  219</span>{</div>
+<div class="line"><span class="lineno">  220</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code hl_define" href="testImageContainerByHashTree_8cpp.html#a4bf6a1e750d841477978a43a04c4f062">dim</a>( z );</div>
+<div class="line"><span class="lineno">  221</span>  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ];</div>
+<div class="line"><span class="lineno">  222</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( d == 1 )</div>
+<div class="line"><span class="lineno">  223</span>    {</div>
+<div class="line"><span class="lineno">  224</span>      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = <a class="code hl_function" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( z );</div>
+<div class="line"><span class="lineno">  225</span>      <span class="keywordflow">return</span> f[ <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, i ) ] || f[ <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, i ) ];</div>
+<div class="line"><span class="lineno">  226</span>    }</div>
+<div class="line"><span class="lineno">  227</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  228</span>    {</div>
+<div class="line"><span class="lineno">  229</span>      <a class="code hl_class" href="classDGtal_1_1PointVector.html">Vector</a> v1, v2;</div>
+<div class="line"><span class="lineno">  230</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classDGtal_1_1PointVector.html#af59a5af9d91e2dce2b19d855c5ad1e35">Vector::dimension</a>; ++i )</div>
+<div class="line"><span class="lineno">  231</span>        {</div>
+<div class="line"><span class="lineno">  232</span>          v1[ i ] = ( ( z[ i ] % 2 ) == 1 ) ? z[ i ] - 1 : z[ i ];</div>
+<div class="line"><span class="lineno">  233</span>          v2[ i ] = ( ( z[ i ] % 2 ) == 1 ) ? z[ i ] + 1 : z[ i ];</div>
+<div class="line"><span class="lineno">  234</span>        }</div>
+<div class="line"><span class="lineno">  235</span>      <a class="code hl_class" href="classDGtal_1_1HyperRectDomain.html">Domain</a> <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>( v1, v2 );</div>
+<div class="line"><span class="lineno">  236</span>      <span class="keywordflow">for</span> ( <a class="code hl_class" href="classDGtal_1_1HyperRectDomain__Iterator.html">Domain::ConstIterator</a> it = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#a4477d569db1e699feb289e8a1ab78605">begin</a>(), itE = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#acadf08bed379bba1fa503df7f6f911a4">end</a>();</div>
+<div class="line"><span class="lineno">  237</span>            it != itE; ++it )</div>
+<div class="line"><span class="lineno">  238</span>        {</div>
+<div class="line"><span class="lineno">  239</span>          <span class="keywordflow">if</span> ( *it == z ) <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  240</span>          <a class="code hl_class" href="classDGtal_1_1PointVector.html">Point</a> zp = z*2 - *it;</div>
+<div class="line"><span class="lineno">  241</span>          <span class="comment">// std::cerr &lt;&lt; *it &lt;&lt; &quot; &lt;--&gt; &quot; &lt;&lt; zp &lt;&lt; std::endl;</span></div>
+<div class="line"><span class="lineno">  242</span>          <span class="keywordflow">if</span> ( <a class="code hl_function" href="viewDualSurface_8cpp.html#a55477fca21a3de4a13ceb25954524d42">lightBetween</a>( f, *it ) &amp;&amp; <a class="code hl_function" href="viewDualSurface_8cpp.html#a55477fca21a3de4a13ceb25954524d42">lightBetween</a>( f, zp ) )</div>
+<div class="line"><span class="lineno">  243</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  244</span>        }</div>
+<div class="line"><span class="lineno">  245</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  246</span>    }</div>
+<div class="line"><span class="lineno">  247</span> </div>
+<div class="line"><span class="lineno">  248</span>}</div>
 <div class="ttc" id="aclassDGtal_1_1HyperRectDomain__Iterator_html"><div class="ttname"><a href="classDGtal_1_1HyperRectDomain__Iterator.html">DGtal::HyperRectDomain_Iterator</a></div><div class="ttdoc">Iterator for HyperRectDomain.</div><div class="ttdef"><b>Definition</b> <a href="HyperRectDomain__Iterator_8h_source.html#l00142">HyperRectDomain_Iterator.h:150</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1HyperRectDomain_html"><div class="ttname"><a href="classDGtal_1_1HyperRectDomain.html">DGtal::HyperRectDomain&lt; Space &gt;</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1HyperRectDomain_html_a4477d569db1e699feb289e8a1ab78605"><div class="ttname"><a href="classDGtal_1_1HyperRectDomain.html#a4477d569db1e699feb289e8a1ab78605">DGtal::HyperRectDomain::begin</a></div><div class="ttdeci">const ConstIterator &amp; begin() const</div><div class="ttdef"><b>Definition</b> <a href="HyperRectDomain_8h_source.html#l00176">HyperRectDomain.h:176</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1HyperRectDomain_html_acadf08bed379bba1fa503df7f6f911a4"><div class="ttname"><a href="classDGtal_1_1HyperRectDomain.html#acadf08bed379bba1fa503df7f6f911a4">DGtal::HyperRectDomain::end</a></div><div class="ttdeci">const ConstIterator &amp; end() const</div><div class="ttdef"><b>Definition</b> <a href="HyperRectDomain_8h_source.html#l00201">HyperRectDomain.h:201</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1PointVector_html"><div class="ttname"><a href="classDGtal_1_1PointVector.html">DGtal::PointVector&lt; dim, Integer &gt;</a></div></div>
 <div class="ttc" id="atestProjection_8cpp_html_a1f1a69f8d8b037b72c2160ed12b3ef51"><div class="ttname"><a href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a></div><div class="ttdeci">Domain domain</div><div class="ttdef"><b>Definition</b> <a href="testProjection_8cpp_source.html#l00088">testProjection.cpp:88</a></div></div>
-<div class="ttc" id="aviewDualSurface_8cpp_html_a55477fca21a3de4a13ceb25954524d42"><div class="ttname"><a href="viewDualSurface_8cpp.html#a55477fca21a3de4a13ceb25954524d42">lightBetween</a></div><div class="ttdeci">bool lightBetween(std::map&lt; Vector, bool &gt; &amp;f, const Vector &amp;z)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00218">viewDualSurface.cpp:218</a></div></div>
+<div class="ttc" id="aviewDualSurface_8cpp_html_a55477fca21a3de4a13ceb25954524d42"><div class="ttname"><a href="viewDualSurface_8cpp.html#a55477fca21a3de4a13ceb25954524d42">lightBetween</a></div><div class="ttdeci">bool lightBetween(std::map&lt; Vector, bool &gt; &amp;f, const Vector &amp;z)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00217">viewDualSurface.cpp:217</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="HyperRectDomain_8h_source.html#l00176">DGtal::HyperRectDomain&lt; TSpace &gt;::begin()</a>, <a class="el" href="testImageContainerByHashTree_8cpp_source.html#l00040">dim</a>, <a class="el" href="PointVector_8h_source.html#l00626">DGtal::PointVector&lt; dim, Integer &gt;::dimension</a>, <a class="el" href="testProjection_8cpp_source.html#l00088">domain</a>, <a class="el" href="HyperRectDomain_8h_source.html#l00201">DGtal::HyperRectDomain&lt; TSpace &gt;::end()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00218">lightBetween()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00190">lower()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00183">openDim()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00197">upper()</a>.</p>
+<p class="reference">References <a class="el" href="HyperRectDomain_8h_source.html#l00176">DGtal::HyperRectDomain&lt; TSpace &gt;::begin()</a>, <a class="el" href="testImageContainerByHashTree_8cpp_source.html#l00040">dim</a>, <a class="el" href="PointVector_8h_source.html#l00626">DGtal::PointVector&lt; dim, Integer &gt;::dimension</a>, <a class="el" href="testProjection_8cpp_source.html#l00088">domain</a>, <a class="el" href="HyperRectDomain_8h_source.html#l00201">DGtal::HyperRectDomain&lt; TSpace &gt;::end()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00217">lightBetween()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00189">lower()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00182">openDim()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00196">upper()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00218">lightBetween()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00392">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00217">lightBetween()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00391">main()</a>.</p>
 
 </div>
 </div>
@@ -399,37 +399,37 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a27">io/viewDualSurface.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a26">io/viewDualSurface.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00309">309</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  312</span>{</div>
-<div class="line"><span class="lineno">  313</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code hl_define" href="testImageContainerByHashTree_8cpp.html#a4bf6a1e750d841477978a43a04c4f062">dim</a>( z );</div>
-<div class="line"><span class="lineno">  314</span>  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ];</div>
-<div class="line"><span class="lineno">  315</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  316</span>    {</div>
-<div class="line"><span class="lineno">  317</span>      <a class="code hl_class" href="classDGtal_1_1PointVector.html">Vector</a> tmp( z );</div>
-<div class="line"><span class="lineno">  318</span>      <span class="keywordtype">bool</span> eps_d = ( ( epsilon &gt;&gt; (d-1)) &amp; 1 ) != 0;</div>
-<div class="line"><span class="lineno">  319</span>      <span class="keywordtype">bool</span> val = eps_d ? true : <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  320</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; d; ++i )</div>
-<div class="line"><span class="lineno">  321</span>        {</div>
-<div class="line"><span class="lineno">  322</span>          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k = <a class="code hl_function" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( tmp );</div>
-<div class="line"><span class="lineno">  323</span>          tmp = <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( tmp, k );</div>
-<div class="line"><span class="lineno">  324</span>          <span class="keywordflow">if</span> ( eps_d )</div>
-<div class="line"><span class="lineno">  325</span>            val = val &amp;&amp; ( <a class="code hl_function" href="viewDualSurface_8cpp.html#aef6370116574f06c18257853a2777d2e">lightEpsilon</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, k ), epsilon )</div>
-<div class="line"><span class="lineno">  326</span>                           || <a class="code hl_function" href="viewDualSurface_8cpp.html#aef6370116574f06c18257853a2777d2e">lightEpsilon</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, k ), epsilon ) );</div>
-<div class="line"><span class="lineno">  327</span>          <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  328</span>            val = val || ( <a class="code hl_function" href="viewDualSurface_8cpp.html#aef6370116574f06c18257853a2777d2e">lightEpsilon</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, k ), epsilon )</div>
-<div class="line"><span class="lineno">  329</span>                           &amp;&amp; <a class="code hl_function" href="viewDualSurface_8cpp.html#aef6370116574f06c18257853a2777d2e">lightEpsilon</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, k ), epsilon ) );</div>
-<div class="line"><span class="lineno">  330</span>        }</div>
-<div class="line"><span class="lineno">  331</span>      <span class="keywordflow">return</span> val;</div>
-<div class="line"><span class="lineno">  332</span>    }</div>
-<div class="line"><span class="lineno">  333</span>}</div>
-<div class="ttc" id="aviewDualSurface_8cpp_html_aef6370116574f06c18257853a2777d2e"><div class="ttname"><a href="viewDualSurface_8cpp.html#aef6370116574f06c18257853a2777d2e">lightEpsilon</a></div><div class="ttdeci">bool lightEpsilon(std::map&lt; Vector, bool &gt; &amp;f, const Vector &amp;z, unsigned int epsilon)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00309">viewDualSurface.cpp:309</a></div></div>
+<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00308">308</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  311</span>{</div>
+<div class="line"><span class="lineno">  312</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code hl_define" href="testImageContainerByHashTree_8cpp.html#a4bf6a1e750d841477978a43a04c4f062">dim</a>( z );</div>
+<div class="line"><span class="lineno">  313</span>  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ];</div>
+<div class="line"><span class="lineno">  314</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  315</span>    {</div>
+<div class="line"><span class="lineno">  316</span>      <a class="code hl_class" href="classDGtal_1_1PointVector.html">Vector</a> tmp( z );</div>
+<div class="line"><span class="lineno">  317</span>      <span class="keywordtype">bool</span> eps_d = ( ( epsilon &gt;&gt; (d-1)) &amp; 1 ) != 0;</div>
+<div class="line"><span class="lineno">  318</span>      <span class="keywordtype">bool</span> val = eps_d ? true : <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  319</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; d; ++i )</div>
+<div class="line"><span class="lineno">  320</span>        {</div>
+<div class="line"><span class="lineno">  321</span>          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k = <a class="code hl_function" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( tmp );</div>
+<div class="line"><span class="lineno">  322</span>          tmp = <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( tmp, k );</div>
+<div class="line"><span class="lineno">  323</span>          <span class="keywordflow">if</span> ( eps_d )</div>
+<div class="line"><span class="lineno">  324</span>            val = val &amp;&amp; ( <a class="code hl_function" href="viewDualSurface_8cpp.html#aef6370116574f06c18257853a2777d2e">lightEpsilon</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, k ), epsilon )</div>
+<div class="line"><span class="lineno">  325</span>                           || <a class="code hl_function" href="viewDualSurface_8cpp.html#aef6370116574f06c18257853a2777d2e">lightEpsilon</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, k ), epsilon ) );</div>
+<div class="line"><span class="lineno">  326</span>          <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  327</span>            val = val || ( <a class="code hl_function" href="viewDualSurface_8cpp.html#aef6370116574f06c18257853a2777d2e">lightEpsilon</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, k ), epsilon )</div>
+<div class="line"><span class="lineno">  328</span>                           &amp;&amp; <a class="code hl_function" href="viewDualSurface_8cpp.html#aef6370116574f06c18257853a2777d2e">lightEpsilon</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, k ), epsilon ) );</div>
+<div class="line"><span class="lineno">  329</span>        }</div>
+<div class="line"><span class="lineno">  330</span>      <span class="keywordflow">return</span> val;</div>
+<div class="line"><span class="lineno">  331</span>    }</div>
+<div class="line"><span class="lineno">  332</span>}</div>
+<div class="ttc" id="aviewDualSurface_8cpp_html_aef6370116574f06c18257853a2777d2e"><div class="ttname"><a href="viewDualSurface_8cpp.html#aef6370116574f06c18257853a2777d2e">lightEpsilon</a></div><div class="ttdeci">bool lightEpsilon(std::map&lt; Vector, bool &gt; &amp;f, const Vector &amp;z, unsigned int epsilon)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00308">viewDualSurface.cpp:308</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="testImageContainerByHashTree_8cpp_source.html#l00040">dim</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00309">lightEpsilon()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00190">lower()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00183">openDim()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00197">upper()</a>.</p>
+<p class="reference">References <a class="el" href="testImageContainerByHashTree_8cpp_source.html#l00040">dim</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00308">lightEpsilon()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00189">lower()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00182">openDim()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00196">upper()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00309">lightEpsilon()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00308">lightEpsilon()</a>.</p>
 
 </div>
 </div>
@@ -460,27 +460,27 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a24">io/viewDualSurface.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a23">io/viewDualSurface.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00253">253</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  255</span>{</div>
-<div class="line"><span class="lineno">  256</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code hl_define" href="testImageContainerByHashTree_8cpp.html#a4bf6a1e750d841477978a43a04c4f062">dim</a>( z );</div>
-<div class="line"><span class="lineno">  257</span>  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ];</div>
-<div class="line"><span class="lineno">  258</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( d == 1 )</div>
-<div class="line"><span class="lineno">  259</span>    {</div>
-<div class="line"><span class="lineno">  260</span>      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = <a class="code hl_function" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( z );</div>
-<div class="line"><span class="lineno">  261</span>      <span class="keywordflow">return</span> f[ <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, i ) ] || f[ <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, i ) ];</div>
-<div class="line"><span class="lineno">  262</span>    }</div>
-<div class="line"><span class="lineno">  263</span>  <span class="keywordflow">else</span> <span class="comment">// if ( d &gt; 1 )</span></div>
-<div class="line"><span class="lineno">  264</span>    {</div>
-<div class="line"><span class="lineno">  265</span>      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n = <a class="code hl_function" href="viewDualSurface_8cpp.html#a8e1cb1e92baa215c8be717817a1df568">nbLighted</a>( f, z );</div>
-<div class="line"><span class="lineno">  266</span>      <span class="keywordflow">return</span> n &gt;= 2;</div>
-<div class="line"><span class="lineno">  267</span>    }</div>
-<div class="line"><span class="lineno">  268</span>}</div>
-<div class="ttc" id="aviewDualSurface_8cpp_html_a8e1cb1e92baa215c8be717817a1df568"><div class="ttname"><a href="viewDualSurface_8cpp.html#a8e1cb1e92baa215c8be717817a1df568">nbLighted</a></div><div class="ttdeci">unsigned int nbLighted(std::map&lt; Vector, bool &gt; &amp;f, const Vector &amp;z)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00205">viewDualSurface.cpp:205</a></div></div>
+<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00252">252</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  254</span>{</div>
+<div class="line"><span class="lineno">  255</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code hl_define" href="testImageContainerByHashTree_8cpp.html#a4bf6a1e750d841477978a43a04c4f062">dim</a>( z );</div>
+<div class="line"><span class="lineno">  256</span>  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ];</div>
+<div class="line"><span class="lineno">  257</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( d == 1 )</div>
+<div class="line"><span class="lineno">  258</span>    {</div>
+<div class="line"><span class="lineno">  259</span>      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = <a class="code hl_function" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( z );</div>
+<div class="line"><span class="lineno">  260</span>      <span class="keywordflow">return</span> f[ <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, i ) ] || f[ <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, i ) ];</div>
+<div class="line"><span class="lineno">  261</span>    }</div>
+<div class="line"><span class="lineno">  262</span>  <span class="keywordflow">else</span> <span class="comment">// if ( d &gt; 1 )</span></div>
+<div class="line"><span class="lineno">  263</span>    {</div>
+<div class="line"><span class="lineno">  264</span>      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n = <a class="code hl_function" href="viewDualSurface_8cpp.html#a8e1cb1e92baa215c8be717817a1df568">nbLighted</a>( f, z );</div>
+<div class="line"><span class="lineno">  265</span>      <span class="keywordflow">return</span> n &gt;= 2;</div>
+<div class="line"><span class="lineno">  266</span>    }</div>
+<div class="line"><span class="lineno">  267</span>}</div>
+<div class="ttc" id="aviewDualSurface_8cpp_html_a8e1cb1e92baa215c8be717817a1df568"><div class="ttname"><a href="viewDualSurface_8cpp.html#a8e1cb1e92baa215c8be717817a1df568">nbLighted</a></div><div class="ttdeci">unsigned int nbLighted(std::map&lt; Vector, bool &gt; &amp;f, const Vector &amp;z)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00204">viewDualSurface.cpp:204</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="testImageContainerByHashTree_8cpp_source.html#l00040">dim</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00190">lower()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00205">nbLighted()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00183">openDim()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00197">upper()</a>.</p>
+<p class="reference">References <a class="el" href="testImageContainerByHashTree_8cpp_source.html#l00040">dim</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00189">lower()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00204">nbLighted()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00182">openDim()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00196">upper()</a>.</p>
 
 </div>
 </div>
@@ -511,31 +511,31 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a26">io/viewDualSurface.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a25">io/viewDualSurface.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00289">289</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  291</span>{</div>
-<div class="line"><span class="lineno">  292</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code hl_define" href="testImageContainerByHashTree_8cpp.html#a4bf6a1e750d841477978a43a04c4f062">dim</a>( z );</div>
-<div class="line"><span class="lineno">  293</span>  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ];</div>
-<div class="line"><span class="lineno">  294</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  295</span>    {</div>
-<div class="line"><span class="lineno">  296</span>      <a class="code hl_class" href="classDGtal_1_1PointVector.html">Vector</a> tmp( z );</div>
-<div class="line"><span class="lineno">  297</span>      <span class="keywordtype">bool</span> val = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  298</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; d; ++i )</div>
-<div class="line"><span class="lineno">  299</span>        {</div>
-<div class="line"><span class="lineno">  300</span>          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k = <a class="code hl_function" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( tmp );</div>
-<div class="line"><span class="lineno">  301</span>          tmp = <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( tmp, k );</div>
-<div class="line"><span class="lineno">  302</span>          val = val || ( <a class="code hl_function" href="viewDualSurface_8cpp.html#a42b06df1cf154659f846732d28d71bde">lightMaxMin</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, k ) ) &amp;&amp; <a class="code hl_function" href="viewDualSurface_8cpp.html#a42b06df1cf154659f846732d28d71bde">lightMaxMin</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, k ) ) );</div>
-<div class="line"><span class="lineno">  303</span>        }</div>
-<div class="line"><span class="lineno">  304</span>      <span class="keywordflow">return</span> val;</div>
-<div class="line"><span class="lineno">  305</span>    }</div>
-<div class="line"><span class="lineno">  306</span>}</div>
-<div class="ttc" id="aviewDualSurface_8cpp_html_a42b06df1cf154659f846732d28d71bde"><div class="ttname"><a href="viewDualSurface_8cpp.html#a42b06df1cf154659f846732d28d71bde">lightMaxMin</a></div><div class="ttdeci">bool lightMaxMin(std::map&lt; Vector, bool &gt; &amp;f, const Vector &amp;z)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00289">viewDualSurface.cpp:289</a></div></div>
+<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00288">288</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  290</span>{</div>
+<div class="line"><span class="lineno">  291</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code hl_define" href="testImageContainerByHashTree_8cpp.html#a4bf6a1e750d841477978a43a04c4f062">dim</a>( z );</div>
+<div class="line"><span class="lineno">  292</span>  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ];</div>
+<div class="line"><span class="lineno">  293</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  294</span>    {</div>
+<div class="line"><span class="lineno">  295</span>      <a class="code hl_class" href="classDGtal_1_1PointVector.html">Vector</a> tmp( z );</div>
+<div class="line"><span class="lineno">  296</span>      <span class="keywordtype">bool</span> val = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  297</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; d; ++i )</div>
+<div class="line"><span class="lineno">  298</span>        {</div>
+<div class="line"><span class="lineno">  299</span>          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k = <a class="code hl_function" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( tmp );</div>
+<div class="line"><span class="lineno">  300</span>          tmp = <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( tmp, k );</div>
+<div class="line"><span class="lineno">  301</span>          val = val || ( <a class="code hl_function" href="viewDualSurface_8cpp.html#a42b06df1cf154659f846732d28d71bde">lightMaxMin</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, k ) ) &amp;&amp; <a class="code hl_function" href="viewDualSurface_8cpp.html#a42b06df1cf154659f846732d28d71bde">lightMaxMin</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, k ) ) );</div>
+<div class="line"><span class="lineno">  302</span>        }</div>
+<div class="line"><span class="lineno">  303</span>      <span class="keywordflow">return</span> val;</div>
+<div class="line"><span class="lineno">  304</span>    }</div>
+<div class="line"><span class="lineno">  305</span>}</div>
+<div class="ttc" id="aviewDualSurface_8cpp_html_a42b06df1cf154659f846732d28d71bde"><div class="ttname"><a href="viewDualSurface_8cpp.html#a42b06df1cf154659f846732d28d71bde">lightMaxMin</a></div><div class="ttdeci">bool lightMaxMin(std::map&lt; Vector, bool &gt; &amp;f, const Vector &amp;z)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00288">viewDualSurface.cpp:288</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="testImageContainerByHashTree_8cpp_source.html#l00040">dim</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00289">lightMaxMin()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00190">lower()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00183">openDim()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00197">upper()</a>.</p>
+<p class="reference">References <a class="el" href="testImageContainerByHashTree_8cpp_source.html#l00040">dim</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00288">lightMaxMin()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00189">lower()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00182">openDim()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00196">upper()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00289">lightMaxMin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00288">lightMaxMin()</a>.</p>
 
 </div>
 </div>
@@ -566,31 +566,31 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a25">io/viewDualSurface.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a24">io/viewDualSurface.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00270">270</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  272</span>{</div>
-<div class="line"><span class="lineno">  273</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code hl_define" href="testImageContainerByHashTree_8cpp.html#a4bf6a1e750d841477978a43a04c4f062">dim</a>( z );</div>
-<div class="line"><span class="lineno">  274</span>  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ];</div>
-<div class="line"><span class="lineno">  275</span>  <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  276</span>    {</div>
-<div class="line"><span class="lineno">  277</span>      <a class="code hl_class" href="classDGtal_1_1PointVector.html">Vector</a> tmp( z );</div>
-<div class="line"><span class="lineno">  278</span>      <span class="keywordtype">bool</span> val = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  279</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; d; ++i )</div>
-<div class="line"><span class="lineno">  280</span>        {</div>
-<div class="line"><span class="lineno">  281</span>          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k = <a class="code hl_function" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( tmp );</div>
-<div class="line"><span class="lineno">  282</span>          tmp = <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( tmp, k );</div>
-<div class="line"><span class="lineno">  283</span>          val = val &amp;&amp; ( <a class="code hl_function" href="viewDualSurface_8cpp.html#af27d5efd968a63005c150c38da8fb282">lightMinMax</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, k ) ) || <a class="code hl_function" href="viewDualSurface_8cpp.html#af27d5efd968a63005c150c38da8fb282">lightMinMax</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, k ) ) );</div>
-<div class="line"><span class="lineno">  284</span>        }</div>
-<div class="line"><span class="lineno">  285</span>      <span class="keywordflow">return</span> val;</div>
-<div class="line"><span class="lineno">  286</span>    }</div>
-<div class="line"><span class="lineno">  287</span>}</div>
-<div class="ttc" id="aviewDualSurface_8cpp_html_af27d5efd968a63005c150c38da8fb282"><div class="ttname"><a href="viewDualSurface_8cpp.html#af27d5efd968a63005c150c38da8fb282">lightMinMax</a></div><div class="ttdeci">bool lightMinMax(std::map&lt; Vector, bool &gt; &amp;f, const Vector &amp;z)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00270">viewDualSurface.cpp:270</a></div></div>
+<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00269">269</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  271</span>{</div>
+<div class="line"><span class="lineno">  272</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code hl_define" href="testImageContainerByHashTree_8cpp.html#a4bf6a1e750d841477978a43a04c4f062">dim</a>( z );</div>
+<div class="line"><span class="lineno">  273</span>  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ];</div>
+<div class="line"><span class="lineno">  274</span>  <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  275</span>    {</div>
+<div class="line"><span class="lineno">  276</span>      <a class="code hl_class" href="classDGtal_1_1PointVector.html">Vector</a> tmp( z );</div>
+<div class="line"><span class="lineno">  277</span>      <span class="keywordtype">bool</span> val = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  278</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> i = 0; i &lt; d; ++i )</div>
+<div class="line"><span class="lineno">  279</span>        {</div>
+<div class="line"><span class="lineno">  280</span>          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k = <a class="code hl_function" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( tmp );</div>
+<div class="line"><span class="lineno">  281</span>          tmp = <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( tmp, k );</div>
+<div class="line"><span class="lineno">  282</span>          val = val &amp;&amp; ( <a class="code hl_function" href="viewDualSurface_8cpp.html#af27d5efd968a63005c150c38da8fb282">lightMinMax</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, k ) ) || <a class="code hl_function" href="viewDualSurface_8cpp.html#af27d5efd968a63005c150c38da8fb282">lightMinMax</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, k ) ) );</div>
+<div class="line"><span class="lineno">  283</span>        }</div>
+<div class="line"><span class="lineno">  284</span>      <span class="keywordflow">return</span> val;</div>
+<div class="line"><span class="lineno">  285</span>    }</div>
+<div class="line"><span class="lineno">  286</span>}</div>
+<div class="ttc" id="aviewDualSurface_8cpp_html_af27d5efd968a63005c150c38da8fb282"><div class="ttname"><a href="viewDualSurface_8cpp.html#af27d5efd968a63005c150c38da8fb282">lightMinMax</a></div><div class="ttdeci">bool lightMinMax(std::map&lt; Vector, bool &gt; &amp;f, const Vector &amp;z)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00269">viewDualSurface.cpp:269</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="testImageContainerByHashTree_8cpp_source.html#l00040">dim</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00270">lightMinMax()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00190">lower()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00183">openDim()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00197">upper()</a>.</p>
+<p class="reference">References <a class="el" href="testImageContainerByHashTree_8cpp_source.html#l00040">dim</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00269">lightMinMax()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00189">lower()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00182">openDim()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00196">upper()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00270">lightMinMax()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00269">lightMinMax()</a>.</p>
 
 </div>
 </div>
@@ -627,24 +627,24 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a29">io/viewDualSurface.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a28">io/viewDualSurface.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00366">366</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  369</span>{</div>
-<div class="line"><span class="lineno">  370</span>  points.clear();</div>
-<div class="line"><span class="lineno">  371</span>  <a class="code hl_class" href="classDGtal_1_1HyperRectDomain.html">Z3i::Domain</a> <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>( z, z + <a class="code hl_function" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">Vector::diagonal</a>(1) );</div>
-<div class="line"><span class="lineno">  372</span>  <span class="keywordflow">for</span> ( <a class="code hl_class" href="classDGtal_1_1HyperRectDomain__Iterator.html">Z3i::Domain::ConstIterator</a> it = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#a4477d569db1e699feb289e8a1ab78605">begin</a>(), itE = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#acadf08bed379bba1fa503df7f6f911a4">end</a>();</div>
-<div class="line"><span class="lineno">  373</span>        it != itE; ++it )</div>
-<div class="line"><span class="lineno">  374</span>    {</div>
-<div class="line"><span class="lineno">  375</span>      <span class="keywordflow">if</span> ( f[ *it ] ) points.push_back( *it );</div>
-<div class="line"><span class="lineno">  376</span>    }</div>
-<div class="line"><span class="lineno">  377</span>}</div>
+<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00365">365</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  368</span>{</div>
+<div class="line"><span class="lineno">  369</span>  points.clear();</div>
+<div class="line"><span class="lineno">  370</span>  <a class="code hl_class" href="classDGtal_1_1HyperRectDomain.html">Z3i::Domain</a> <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>( z, z + <a class="code hl_function" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">Vector::diagonal</a>(1) );</div>
+<div class="line"><span class="lineno">  371</span>  <span class="keywordflow">for</span> ( <a class="code hl_class" href="classDGtal_1_1HyperRectDomain__Iterator.html">Z3i::Domain::ConstIterator</a> it = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#a4477d569db1e699feb289e8a1ab78605">begin</a>(), itE = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#acadf08bed379bba1fa503df7f6f911a4">end</a>();</div>
+<div class="line"><span class="lineno">  372</span>        it != itE; ++it )</div>
+<div class="line"><span class="lineno">  373</span>    {</div>
+<div class="line"><span class="lineno">  374</span>      <span class="keywordflow">if</span> ( f[ *it ] ) points.push_back( *it );</div>
+<div class="line"><span class="lineno">  375</span>    }</div>
+<div class="line"><span class="lineno">  376</span>}</div>
 <div class="ttc" id="aclassDGtal_1_1PointVector_html_aba9def1d899ca259f6fa532a6eb9a8b5"><div class="ttname"><a href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">DGtal::PointVector&lt; dim, Integer &gt;::diagonal</a></div><div class="ttdeci">static Self diagonal(Component val=1)</div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="HyperRectDomain_8h_source.html#l00176">DGtal::HyperRectDomain&lt; TSpace &gt;::begin()</a>, <a class="el" href="classDGtal_1_1PointVector.html#aba9def1d899ca259f6fa532a6eb9a8b5">DGtal::PointVector&lt; dim, Integer &gt;::diagonal()</a>, <a class="el" href="testProjection_8cpp_source.html#l00088">domain</a>, and <a class="el" href="HyperRectDomain_8h_source.html#l00201">DGtal::HyperRectDomain&lt; TSpace &gt;::end()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00392">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00391">main()</a>.</p>
 
 </div>
 </div>
@@ -675,17 +675,17 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="geometry_2volumes_2distance_2voronoimap2D_8cpp-example.html#a4">geometry/volumes/distance/voronoimap2D.cpp</a>, and <a class="el" href="io_2viewDualSurface_8cpp-example.html#a18">io/viewDualSurface.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="geometry_2volumes_2distance_2voronoimap2D_8cpp-example.html#a4">geometry/volumes/distance/voronoimap2D.cpp</a>, and <a class="el" href="io_2viewDualSurface_8cpp-example.html#a17">io/viewDualSurface.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00190">190</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  191</span>{</div>
-<div class="line"><span class="lineno">  192</span>  <a class="code hl_class" href="classDGtal_1_1PointVector.html">Vector</a> z2( z );</div>
-<div class="line"><span class="lineno">  193</span>  --z2[ k ];</div>
-<div class="line"><span class="lineno">  194</span>  <span class="keywordflow">return</span> z2;</div>
-<div class="line"><span class="lineno">  195</span>}</div>
+<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00189">189</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  190</span>{</div>
+<div class="line"><span class="lineno">  191</span>  <a class="code hl_class" href="classDGtal_1_1PointVector.html">Vector</a> z2( z );</div>
+<div class="line"><span class="lineno">  192</span>  --z2[ k ];</div>
+<div class="line"><span class="lineno">  193</span>  <span class="keywordflow">return</span> z2;</div>
+<div class="line"><span class="lineno">  194</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00337">fillCfg()</a>, <a class="el" href="HyperRectDomain__Iterator_8h_source.html#l00167">DGtal::HyperRectDomain_Iterator&lt; TPoint &gt;::HyperRectDomain_Iterator()</a>, <a class="el" href="HyperRectDomain__Iterator_8h_source.html#l00327">DGtal::HyperRectDomain_subIterator&lt; TPoint &gt;::HyperRectDomain_subIterator()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00218">lightBetween()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00309">lightEpsilon()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00253">lightMax()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00289">lightMaxMin()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00270">lightMinMax()</a>, <a class="el" href="voronoimap2D_8cpp_source.html#l00063">main()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00205">nbLighted()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00336">fillCfg()</a>, <a class="el" href="HyperRectDomain__Iterator_8h_source.html#l00167">DGtal::HyperRectDomain_Iterator&lt; TPoint &gt;::HyperRectDomain_Iterator()</a>, <a class="el" href="HyperRectDomain__Iterator_8h_source.html#l00327">DGtal::HyperRectDomain_subIterator&lt; TPoint &gt;::HyperRectDomain_subIterator()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00217">lightBetween()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00308">lightEpsilon()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00252">lightMax()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00288">lightMaxMin()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00269">lightMinMax()</a>, <a class="el" href="voronoimap2D_8cpp_source.html#l00063">main()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00204">nbLighted()</a>.</p>
 
 </div>
 </div>
@@ -715,74 +715,74 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00392">392</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  393</span>{</div>
-<div class="line"><span class="lineno">  394</span>  <span class="keyword">typedef</span> <a class="code hl_typedef" href="classDGtal_1_1KhalimskySpaceND.html#aadff976a31587821f9a7e9f280c9700a">KSpace::CellSet</a> CellSet;</div>
-<div class="line"><span class="lineno">  395</span> </div>
-<div class="line"><span class="lineno">  396</span>  <a class="code hl_class" href="classDGtal_1_1KhalimskySpaceND.html">KSpace</a> KS;</div>
-<div class="line"><span class="lineno">  397</span> </div>
-<div class="line"><span class="lineno">  398</span>  <a class="code hl_class" href="classDGtal_1_1PolyscopeViewer.html">PolyscopeViewer&lt;Z3i::Space,Z3i::KSpace&gt;</a> viewer(KS);</div>
-<div class="line"><span class="lineno">  399</span>  viewer.allowReuseList = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  400</span> </div>
-<div class="line"><span class="lineno">  401</span>  <a class="code hl_class" href="classDGtal_1_1Color.html">DGtal::Color</a> fillColor( 200, 200, 220, 255 );</div>
-<div class="line"><span class="lineno">  402</span>  <a class="code hl_class" href="classDGtal_1_1Color.html">DGtal::Color</a> surfelColor( 255, 0, 0, 150 );</div>
-<div class="line"><span class="lineno">  403</span>  <a class="code hl_class" href="classDGtal_1_1Color.html">DGtal::Color</a> voxelColor( 150, 150, 0, 150 );</div>
-<div class="line"><span class="lineno">  404</span>  </div>
-<div class="line"><span class="lineno">  405</span>  <span class="comment">// Create lists for display:</span></div>
-<div class="line"><span class="lineno">  406</span>  <span class="comment">// List will inherit current parameters of viewer</span></div>
-<div class="line"><span class="lineno">  407</span>  viewer &lt;&lt; surfelColor;</div>
-<div class="line"><span class="lineno">  408</span>  std::string surfels = viewer.newQuadList(<span class="stringliteral">&quot;Surfels&quot;</span>);</div>
-<div class="line"><span class="lineno">  409</span>  viewer &lt;&lt; voxelColor;</div>
-<div class="line"><span class="lineno">  410</span>  std::string polys = viewer.newPolygonList(<span class="stringliteral">&quot;Polygons&quot;</span>);</div>
-<div class="line"><span class="lineno">  411</span> </div>
-<div class="line"><span class="lineno">  412</span>  std::vector&lt;Vector&gt; pts;</div>
-<div class="line"><span class="lineno">  413</span> </div>
-<div class="line"><span class="lineno">  414</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cfg = argc &gt; 1 ? atoi( argv[1] ) : 0;</div>
-<div class="line"><span class="lineno">  415</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cfg2 = argc &gt; 2 ? atoi( argv[2] ) : 255;</div>
-<div class="line"><span class="lineno">  416</span>  std::map&lt; Vector, bool &gt; f;</div>
-<div class="line"><span class="lineno">  417</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y = 0; (y &lt; 16) &amp;&amp; (cfg &lt;= cfg2); ++y )</div>
-<div class="line"><span class="lineno">  418</span>    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x = 0; (x &lt; 16) &amp;&amp; (cfg &lt;= cfg2); ++x, ++cfg )</div>
-<div class="line"><span class="lineno">  419</span>      {</div>
-<div class="line"><span class="lineno">  420</span>        <a class="code hl_class" href="classDGtal_1_1PointVector.html">Vector</a> offset( x*6, y*6, 0 );</div>
-<div class="line"><span class="lineno">  421</span>        <a class="code hl_function" href="viewDualSurface_8cpp.html#a712217d56535193a44402f7de57bf6e9">fillCfg</a>( f, offset + <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 1, 1, 1 ), cfg );</div>
-<div class="line"><span class="lineno">  422</span>        <a class="code hl_class" href="classDGtal_1_1HyperRectDomain.html">Domain</a> <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>( offset + <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 0, 0, 0), offset + <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 2, 2, 2 ) );</div>
-<div class="line"><span class="lineno">  423</span>        <a class="code hl_class" href="classDGtal_1_1KhalimskySpaceND.html">KSpace</a> <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>;</div>
-<div class="line"><span class="lineno">  424</span>        <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.<a class="code hl_function" href="classDGtal_1_1KhalimskySpaceND.html#a15dcbcaae831dd1c36090e6336c177d4">init</a>( <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 0, 0, 0), <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 2, 2, 2 ), <span class="keyword">true</span> );</div>
-<div class="line"><span class="lineno">  425</span>        <a class="code hl_struct" href="structConfigPointPredicate.html">ConfigPointPredicate&lt;Vector&gt;</a> cpp( f, offset );</div>
-<div class="line"><span class="lineno">  426</span>        CellSet aBoundary;</div>
-<div class="line"><span class="lineno">  427</span>        <a class="code hl_function" href="classDGtal_1_1Surfaces.html#a7c4c49a163650eaaff8759504d7891f7">Surfaces&lt;KSpace&gt;::uMakeBoundary</a>( aBoundary, <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, cpp, <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 0, 0, 0), <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 1, 1, 1 ) );</div>
-<div class="line"><span class="lineno">  428</span> </div>
-<div class="line"><span class="lineno">  429</span>        viewer.setCurrentList(surfels);</div>
-<div class="line"><span class="lineno">  430</span>        <span class="keywordflow">for</span> ( CellSet::const_iterator it = aBoundary.begin(), itE = aBoundary.end();</div>
-<div class="line"><span class="lineno">  431</span>              it != itE; ++it )</div>
-<div class="line"><span class="lineno">  432</span>          {</div>
-<div class="line"><span class="lineno">  433</span>            viewer &lt;&lt; surfelColor;</div>
-<div class="line"><span class="lineno">  434</span>            viewer &lt;&lt; KS.<a class="code hl_function" href="classDGtal_1_1KhalimskySpaceND.html#a1823ad364c79bce5aa7d28c2996c4939">uTranslation</a>( *it, offset/2 );</div>
-<div class="line"><span class="lineno">  435</span>          }</div>
-<div class="line"><span class="lineno">  436</span>        <span class="keywordflow">for</span> ( <a class="code hl_class" href="classDGtal_1_1HyperRectDomain__Iterator.html">Domain::ConstIterator</a> it = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#a4477d569db1e699feb289e8a1ab78605">begin</a>(), itE = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#acadf08bed379bba1fa503df7f6f911a4">end</a>();</div>
-<div class="line"><span class="lineno">  437</span>              it != itE; ++it )</div>
-<div class="line"><span class="lineno">  438</span>          {</div>
-<div class="line"><span class="lineno">  439</span>            <span class="comment">// lightEpsilon( f, *it, 5 ); // {1,-1,1}=5 // interesting</span></div>
-<div class="line"><span class="lineno">  440</span>            f[ *it ] = <a class="code hl_function" href="viewDualSurface_8cpp.html#a55477fca21a3de4a13ceb25954524d42">lightBetween</a>( f, *it );</div>
-<div class="line"><span class="lineno">  441</span>          }</div>
-<div class="line"><span class="lineno">  442</span> </div>
-<div class="line"><span class="lineno">  443</span>        viewer &lt;&lt; fillColor;</div>
-<div class="line"><span class="lineno">  444</span>        std::vector&lt; std::vector&lt; unsigned int &gt; &gt; indices;</div>
-<div class="line"><span class="lineno">  445</span>        <a class="code hl_class" href="classDGtal_1_1HyperRectDomain.html">Domain</a> domain2( offset + <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 0, 0, 0), offset + <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 1, 1, 1 ) );</div>
-<div class="line"><span class="lineno">  446</span> </div>
-<div class="line"><span class="lineno">  447</span>        viewer.setCurrentList(polys);</div>
-<div class="line"><span class="lineno">  448</span>        <span class="keywordflow">for</span> ( <a class="code hl_class" href="classDGtal_1_1HyperRectDomain__Iterator.html">Domain::ConstIterator</a> it = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#a4477d569db1e699feb289e8a1ab78605">begin</a>(), itE = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#acadf08bed379bba1fa503df7f6f911a4">end</a>();</div>
-<div class="line"><span class="lineno">  449</span>              it != itE; ++it )</div>
-<div class="line"><span class="lineno">  450</span>          {</div>
-<div class="line"><span class="lineno">  451</span>            <a class="code hl_function" href="viewDualSurface_8cpp.html#aefb87f0ce777f18519d83f636eb47802">localDualVolume</a>( pts, f, *it );</div>
-<div class="line"><span class="lineno">  452</span>            indices.clear();</div>
-<div class="line"><span class="lineno">  453</span>            <a class="code hl_function" href="viewDualSurface_8cpp.html#a1d493bcf04cd0f0b7ea1244755c47aa6">naiveConvexHull</a>( indices, pts, <span class="keyword">false</span> ); <span class="comment">// right_handed</span></div>
-<div class="line"><span class="lineno">  454</span>            <a class="code hl_function" href="viewDualSurface_8cpp.html#a3e65b2c9115c83c63b5cc292e7e37c94">viewPolygons</a>( viewer, fillColor, indices, pts );</div>
-<div class="line"><span class="lineno">  455</span>          }</div>
-<div class="line"><span class="lineno">  456</span>      }</div>
-<div class="line"><span class="lineno">  457</span>  viewer.show();</div>
-<div class="line"><span class="lineno">  458</span>  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  459</span>}</div>
+<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00391">391</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  392</span>{</div>
+<div class="line"><span class="lineno">  393</span>  <span class="keyword">typedef</span> <a class="code hl_typedef" href="classDGtal_1_1KhalimskySpaceND.html#aadff976a31587821f9a7e9f280c9700a">KSpace::CellSet</a> CellSet;</div>
+<div class="line"><span class="lineno">  394</span> </div>
+<div class="line"><span class="lineno">  395</span>  <a class="code hl_class" href="classDGtal_1_1KhalimskySpaceND.html">KSpace</a> KS;</div>
+<div class="line"><span class="lineno">  396</span> </div>
+<div class="line"><span class="lineno">  397</span>  <a class="code hl_class" href="classDGtal_1_1PolyscopeViewer.html">PolyscopeViewer&lt;Z3i::Space,Z3i::KSpace&gt;</a> viewer(KS);</div>
+<div class="line"><span class="lineno">  398</span>  viewer.allowReuseList = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  399</span> </div>
+<div class="line"><span class="lineno">  400</span>  <a class="code hl_class" href="classDGtal_1_1Color.html">DGtal::Color</a> fillColor( 200, 200, 220, 255 );</div>
+<div class="line"><span class="lineno">  401</span>  <a class="code hl_class" href="classDGtal_1_1Color.html">DGtal::Color</a> surfelColor( 255, 0, 0, 150 );</div>
+<div class="line"><span class="lineno">  402</span>  <a class="code hl_class" href="classDGtal_1_1Color.html">DGtal::Color</a> voxelColor( 150, 150, 0, 150 );</div>
+<div class="line"><span class="lineno">  403</span>  </div>
+<div class="line"><span class="lineno">  404</span>  <span class="comment">// Create lists for display:</span></div>
+<div class="line"><span class="lineno">  405</span>  <span class="comment">// List will inherit current parameters of viewer</span></div>
+<div class="line"><span class="lineno">  406</span>  viewer &lt;&lt; surfelColor;</div>
+<div class="line"><span class="lineno">  407</span>  std::string surfels = viewer.newQuadList(<span class="stringliteral">&quot;Surfels&quot;</span>);</div>
+<div class="line"><span class="lineno">  408</span>  viewer &lt;&lt; voxelColor;</div>
+<div class="line"><span class="lineno">  409</span>  std::string polys = viewer.newPolygonList(<span class="stringliteral">&quot;Polygons&quot;</span>);</div>
+<div class="line"><span class="lineno">  410</span> </div>
+<div class="line"><span class="lineno">  411</span>  std::vector&lt;Vector&gt; pts;</div>
+<div class="line"><span class="lineno">  412</span> </div>
+<div class="line"><span class="lineno">  413</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cfg = argc &gt; 1 ? atoi( argv[1] ) : 0;</div>
+<div class="line"><span class="lineno">  414</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cfg2 = argc &gt; 2 ? atoi( argv[2] ) : 255;</div>
+<div class="line"><span class="lineno">  415</span>  std::map&lt; Vector, bool &gt; f;</div>
+<div class="line"><span class="lineno">  416</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y = 0; (y &lt; 16) &amp;&amp; (cfg &lt;= cfg2); ++y )</div>
+<div class="line"><span class="lineno">  417</span>    <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x = 0; (x &lt; 16) &amp;&amp; (cfg &lt;= cfg2); ++x, ++cfg )</div>
+<div class="line"><span class="lineno">  418</span>      {</div>
+<div class="line"><span class="lineno">  419</span>        <a class="code hl_class" href="classDGtal_1_1PointVector.html">Vector</a> offset( x*6, y*6, 0 );</div>
+<div class="line"><span class="lineno">  420</span>        <a class="code hl_function" href="viewDualSurface_8cpp.html#a712217d56535193a44402f7de57bf6e9">fillCfg</a>( f, offset + <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 1, 1, 1 ), cfg );</div>
+<div class="line"><span class="lineno">  421</span>        <a class="code hl_class" href="classDGtal_1_1HyperRectDomain.html">Domain</a> <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>( offset + <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 0, 0, 0), offset + <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 2, 2, 2 ) );</div>
+<div class="line"><span class="lineno">  422</span>        <a class="code hl_class" href="classDGtal_1_1KhalimskySpaceND.html">KSpace</a> <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>;</div>
+<div class="line"><span class="lineno">  423</span>        <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>.<a class="code hl_function" href="classDGtal_1_1KhalimskySpaceND.html#a15dcbcaae831dd1c36090e6336c177d4">init</a>( <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 0, 0, 0), <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 2, 2, 2 ), <span class="keyword">true</span> );</div>
+<div class="line"><span class="lineno">  424</span>        <a class="code hl_struct" href="structConfigPointPredicate.html">ConfigPointPredicate&lt;Vector&gt;</a> cpp( f, offset );</div>
+<div class="line"><span class="lineno">  425</span>        CellSet aBoundary;</div>
+<div class="line"><span class="lineno">  426</span>        <a class="code hl_function" href="classDGtal_1_1Surfaces.html#a7c4c49a163650eaaff8759504d7891f7">Surfaces&lt;KSpace&gt;::uMakeBoundary</a>( aBoundary, <a class="code hl_variable" href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a>, cpp, <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 0, 0, 0), <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 1, 1, 1 ) );</div>
+<div class="line"><span class="lineno">  427</span> </div>
+<div class="line"><span class="lineno">  428</span>        viewer.setCurrentList(surfels);</div>
+<div class="line"><span class="lineno">  429</span>        <span class="keywordflow">for</span> ( CellSet::const_iterator it = aBoundary.begin(), itE = aBoundary.end();</div>
+<div class="line"><span class="lineno">  430</span>              it != itE; ++it )</div>
+<div class="line"><span class="lineno">  431</span>          {</div>
+<div class="line"><span class="lineno">  432</span>            viewer &lt;&lt; surfelColor;</div>
+<div class="line"><span class="lineno">  433</span>            viewer &lt;&lt; KS.<a class="code hl_function" href="classDGtal_1_1KhalimskySpaceND.html#a1823ad364c79bce5aa7d28c2996c4939">uTranslation</a>( *it, offset/2 );</div>
+<div class="line"><span class="lineno">  434</span>          }</div>
+<div class="line"><span class="lineno">  435</span>        <span class="keywordflow">for</span> ( <a class="code hl_class" href="classDGtal_1_1HyperRectDomain__Iterator.html">Domain::ConstIterator</a> it = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#a4477d569db1e699feb289e8a1ab78605">begin</a>(), itE = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#acadf08bed379bba1fa503df7f6f911a4">end</a>();</div>
+<div class="line"><span class="lineno">  436</span>              it != itE; ++it )</div>
+<div class="line"><span class="lineno">  437</span>          {</div>
+<div class="line"><span class="lineno">  438</span>            <span class="comment">// lightEpsilon( f, *it, 5 ); // {1,-1,1}=5 // interesting</span></div>
+<div class="line"><span class="lineno">  439</span>            f[ *it ] = <a class="code hl_function" href="viewDualSurface_8cpp.html#a55477fca21a3de4a13ceb25954524d42">lightBetween</a>( f, *it );</div>
+<div class="line"><span class="lineno">  440</span>          }</div>
+<div class="line"><span class="lineno">  441</span> </div>
+<div class="line"><span class="lineno">  442</span>        viewer &lt;&lt; fillColor;</div>
+<div class="line"><span class="lineno">  443</span>        std::vector&lt; std::vector&lt; unsigned int &gt; &gt; indices;</div>
+<div class="line"><span class="lineno">  444</span>        <a class="code hl_class" href="classDGtal_1_1HyperRectDomain.html">Domain</a> domain2( offset + <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 0, 0, 0), offset + <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">Vector</a>( 1, 1, 1 ) );</div>
+<div class="line"><span class="lineno">  445</span> </div>
+<div class="line"><span class="lineno">  446</span>        viewer.setCurrentList(polys);</div>
+<div class="line"><span class="lineno">  447</span>        <span class="keywordflow">for</span> ( <a class="code hl_class" href="classDGtal_1_1HyperRectDomain__Iterator.html">Domain::ConstIterator</a> it = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#a4477d569db1e699feb289e8a1ab78605">begin</a>(), itE = <a class="code hl_variable" href="testProjection_8cpp.html#a1f1a69f8d8b037b72c2160ed12b3ef51">domain</a>.<a class="code hl_function" href="classDGtal_1_1HyperRectDomain.html#acadf08bed379bba1fa503df7f6f911a4">end</a>();</div>
+<div class="line"><span class="lineno">  448</span>              it != itE; ++it )</div>
+<div class="line"><span class="lineno">  449</span>          {</div>
+<div class="line"><span class="lineno">  450</span>            <a class="code hl_function" href="viewDualSurface_8cpp.html#aefb87f0ce777f18519d83f636eb47802">localDualVolume</a>( pts, f, *it );</div>
+<div class="line"><span class="lineno">  451</span>            indices.clear();</div>
+<div class="line"><span class="lineno">  452</span>            <a class="code hl_function" href="viewDualSurface_8cpp.html#a1d493bcf04cd0f0b7ea1244755c47aa6">naiveConvexHull</a>( indices, pts, <span class="keyword">false</span> ); <span class="comment">// right_handed</span></div>
+<div class="line"><span class="lineno">  453</span>            <a class="code hl_function" href="viewDualSurface_8cpp.html#a24bdccee035ab28bf895dd80deb2c412">viewPolygons</a>( viewer, indices, pts );</div>
+<div class="line"><span class="lineno">  454</span>          }</div>
+<div class="line"><span class="lineno">  455</span>      }</div>
+<div class="line"><span class="lineno">  456</span>  viewer.show();</div>
+<div class="line"><span class="lineno">  457</span>  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  458</span>}</div>
 <div class="ttc" id="aclassDGtal_1_1Color_html"><div class="ttname"><a href="classDGtal_1_1Color.html">DGtal::Color</a></div><div class="ttdoc">Structure representing an RGB triple with alpha component.</div><div class="ttdef"><b>Definition</b> <a href="Color_8h_source.html#l00076">Color.h:77</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1KhalimskySpaceND_html"><div class="ttname"><a href="classDGtal_1_1KhalimskySpaceND.html">DGtal::KhalimskySpaceND</a></div><div class="ttdoc">Aim: This class is a model of CCellularGridSpaceND. It represents the cubical grid as a cell complex,...</div><div class="ttdef"><b>Definition</b> <a href="KhalimskySpaceND_8h_source.html#l00392">KhalimskySpaceND.h:394</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1KhalimskySpaceND_html_a15dcbcaae831dd1c36090e6336c177d4"><div class="ttname"><a href="classDGtal_1_1KhalimskySpaceND.html#a15dcbcaae831dd1c36090e6336c177d4">DGtal::KhalimskySpaceND::init</a></div><div class="ttdeci">bool init(const Point &amp;lower, const Point &amp;upper, bool isClosed)</div><div class="ttdoc">Specifies the upper and lower bounds for the maximal cells in this space.</div></div>
@@ -791,13 +791,13 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
 <div class="ttc" id="aclassDGtal_1_1PolyscopeViewer_html"><div class="ttname"><a href="classDGtal_1_1PolyscopeViewer.html">DGtal::PolyscopeViewer</a></div><div class="ttdef"><b>Definition</b> <a href="PolyscopeViewer_8h_source.html#l00052">PolyscopeViewer.h:52</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1Surfaces_html_a7c4c49a163650eaaff8759504d7891f7"><div class="ttname"><a href="classDGtal_1_1Surfaces.html#a7c4c49a163650eaaff8759504d7891f7">DGtal::Surfaces::uMakeBoundary</a></div><div class="ttdeci">static void uMakeBoundary(CellSet &amp;aBoundary, const KSpace &amp;aKSpace, const PointPredicate &amp;pp, const Point &amp;aLowerBound, const Point &amp;aUpperBound)</div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z3i_html_ae17e112888e54316e9523b52d2b78245"><div class="ttname"><a href="namespaceDGtal_1_1Z3i.html#ae17e112888e54316e9523b52d2b78245">DGtal::Z3i::Vector</a></div><div class="ttdeci">Space::Vector Vector</div><div class="ttdef"><b>Definition</b> <a href="StdDefs_8h_source.html#l00169">StdDefs.h:169</a></div></div>
-<div class="ttc" id="astructConfigPointPredicate_html"><div class="ttname"><a href="structConfigPointPredicate.html">ConfigPointPredicate</a></div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00380">viewDualSurface.cpp:381</a></div></div>
+<div class="ttc" id="astructConfigPointPredicate_html"><div class="ttname"><a href="structConfigPointPredicate.html">ConfigPointPredicate</a></div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00379">viewDualSurface.cpp:380</a></div></div>
 <div class="ttc" id="atestCubicalComplex_8cpp_html_a2b87ed989d2519d025bd5d4fbcbac062"><div class="ttname"><a href="testCubicalComplex_8cpp.html#a2b87ed989d2519d025bd5d4fbcbac062">K</a></div><div class="ttdeci">KSpace K</div><div class="ttdef"><b>Definition</b> <a href="testCubicalComplex_8cpp_source.html#l00062">testCubicalComplex.cpp:62</a></div></div>
 <div class="ttc" id="aviewDualSurface_8cpp_html_a1d493bcf04cd0f0b7ea1244755c47aa6"><div class="ttname"><a href="viewDualSurface_8cpp.html#a1d493bcf04cd0f0b7ea1244755c47aa6">naiveConvexHull</a></div><div class="ttdeci">void naiveConvexHull(std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;indices, const std::vector&lt; Vector &gt; &amp;points, bool left_handed)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00080">viewDualSurface.cpp:81</a></div></div>
-<div class="ttc" id="aviewDualSurface_8cpp_html_a3e65b2c9115c83c63b5cc292e7e37c94"><div class="ttname"><a href="viewDualSurface_8cpp.html#a3e65b2c9115c83c63b5cc292e7e37c94">viewPolygons</a></div><div class="ttdeci">void viewPolygons(Viewer &amp;viewer, const DGtal::Color &amp;color, const std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;indices, const std::vector&lt; Vector &gt; &amp;points)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00147">viewDualSurface.cpp:148</a></div></div>
-<div class="ttc" id="aviewDualSurface_8cpp_html_aefb87f0ce777f18519d83f636eb47802"><div class="ttname"><a href="viewDualSurface_8cpp.html#aefb87f0ce777f18519d83f636eb47802">localDualVolume</a></div><div class="ttdeci">void localDualVolume(std::vector&lt; Vector &gt; &amp;points, std::map&lt; Vector, bool &gt; &amp;f, const Vector &amp;z)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00366">viewDualSurface.cpp:366</a></div></div>
+<div class="ttc" id="aviewDualSurface_8cpp_html_a24bdccee035ab28bf895dd80deb2c412"><div class="ttname"><a href="viewDualSurface_8cpp.html#a24bdccee035ab28bf895dd80deb2c412">viewPolygons</a></div><div class="ttdeci">void viewPolygons(Viewer &amp;viewer, const std::vector&lt; std::vector&lt; unsigned int &gt; &gt; &amp;indices, const std::vector&lt; Vector &gt; &amp;points)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00147">viewDualSurface.cpp:148</a></div></div>
+<div class="ttc" id="aviewDualSurface_8cpp_html_aefb87f0ce777f18519d83f636eb47802"><div class="ttname"><a href="viewDualSurface_8cpp.html#aefb87f0ce777f18519d83f636eb47802">localDualVolume</a></div><div class="ttdeci">void localDualVolume(std::vector&lt; Vector &gt; &amp;points, std::map&lt; Vector, bool &gt; &amp;f, const Vector &amp;z)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00365">viewDualSurface.cpp:365</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Display3D_8h_source.html#l00734">DGtal::Display3D&lt; Space, KSpace &gt;::allowReuseList</a>, <a class="el" href="HyperRectDomain_8h_source.html#l00176">DGtal::HyperRectDomain&lt; TSpace &gt;::begin()</a>, <a class="el" href="testProjection_8cpp_source.html#l00088">domain</a>, <a class="el" href="HyperRectDomain_8h_source.html#l00201">DGtal::HyperRectDomain&lt; TSpace &gt;::end()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00337">fillCfg()</a>, <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a15dcbcaae831dd1c36090e6336c177d4">DGtal::KhalimskySpaceND&lt; dim, TInteger &gt;::init()</a>, <a class="el" href="testCubicalComplex_8cpp_source.html#l00062">K</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00218">lightBetween()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00366">localDualVolume()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00081">naiveConvexHull()</a>, <a class="el" href="Display3D_8h_source.html#l00533">DGtal::Display3D&lt; Space, KSpace &gt;::newPolygonList()</a>, <a class="el" href="Display3D_8h_source.html#l00532">DGtal::Display3D&lt; Space, KSpace &gt;::newQuadList()</a>, <a class="el" href="classDGtal_1_1Display3D.html#a3e199a0e32ecea9a055a6ab11ebac7f2">DGtal::Display3D&lt; Space, KSpace &gt;::setCurrentList()</a>, <a class="el" href="PolyscopeViewer_8h_source.html#l00068">DGtal::PolyscopeViewer&lt; Space, KSpace &gt;::show()</a>, <a class="el" href="classDGtal_1_1Surfaces.html#a7c4c49a163650eaaff8759504d7891f7">DGtal::Surfaces&lt; TKSpace &gt;::uMakeBoundary()</a>, <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a1823ad364c79bce5aa7d28c2996c4939">DGtal::KhalimskySpaceND&lt; dim, TInteger &gt;::uTranslation()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00148">viewPolygons()</a>.</p>
+<p class="reference">References <a class="el" href="Display3D_8h_source.html#l00740">DGtal::Display3D&lt; Space, KSpace &gt;::allowReuseList</a>, <a class="el" href="HyperRectDomain_8h_source.html#l00176">DGtal::HyperRectDomain&lt; TSpace &gt;::begin()</a>, <a class="el" href="testProjection_8cpp_source.html#l00088">domain</a>, <a class="el" href="HyperRectDomain_8h_source.html#l00201">DGtal::HyperRectDomain&lt; TSpace &gt;::end()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00336">fillCfg()</a>, <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a15dcbcaae831dd1c36090e6336c177d4">DGtal::KhalimskySpaceND&lt; dim, TInteger &gt;::init()</a>, <a class="el" href="testCubicalComplex_8cpp_source.html#l00062">K</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00217">lightBetween()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00365">localDualVolume()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00081">naiveConvexHull()</a>, <a class="el" href="Display3D_8h_source.html#l00539">DGtal::Display3D&lt; Space, KSpace &gt;::newPolygonList()</a>, <a class="el" href="Display3D_8h_source.html#l00538">DGtal::Display3D&lt; Space, KSpace &gt;::newQuadList()</a>, <a class="el" href="classDGtal_1_1Display3D.html#a3e199a0e32ecea9a055a6ab11ebac7f2">DGtal::Display3D&lt; Space, KSpace &gt;::setCurrentList()</a>, <a class="el" href="PolyscopeViewer_8h_source.html#l00068">DGtal::PolyscopeViewer&lt; Space, KSpace &gt;::show()</a>, <a class="el" href="classDGtal_1_1Surfaces.html#a7c4c49a163650eaaff8759504d7891f7">DGtal::Surfaces&lt; TKSpace &gt;::uMakeBoundary()</a>, <a class="el" href="classDGtal_1_1KhalimskySpaceND.html#a1823ad364c79bce5aa7d28c2996c4939">DGtal::KhalimskySpaceND&lt; dim, TInteger &gt;::uTranslation()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00148">viewPolygons()</a>.</p>
 
 </div>
 </div>
@@ -902,7 +902,7 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="classDGtal_1_1PointVector.html#a3f503e466ac845411ff5cf4379b63e01">DGtal::PointVector&lt; dim, TEuclideanRing, TContainer &gt;::dot()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00054">wedge()</a>, and <a class="el" href="PointVector_8h_source.html#l01595">DGtal::PointVector&lt; dim, Integer &gt;::zero</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00392">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00391">main()</a>.</p>
 
 </div>
 </div>
@@ -933,21 +933,21 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a20">io/viewDualSurface.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a19">io/viewDualSurface.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00205">205</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  207</span>{ <span class="comment">// z of dim &gt;=2</span></div>
-<div class="line"><span class="lineno">  208</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code hl_define" href="testImageContainerByHashTree_8cpp.html#a4bf6a1e750d841477978a43a04c4f062">dim</a>( z );</div>
-<div class="line"><span class="lineno">  209</span>  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ] ? 1 : 0;</div>
-<div class="line"><span class="lineno">  210</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = <a class="code hl_function" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( z );</div>
-<div class="line"><span class="lineno">  211</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="viewDualSurface_8cpp.html#a8e1cb1e92baa215c8be717817a1df568">nbLighted</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, i ) )</div>
-<div class="line"><span class="lineno">  212</span>    + <a class="code hl_function" href="viewDualSurface_8cpp.html#a8e1cb1e92baa215c8be717817a1df568">nbLighted</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, i ) );</div>
-<div class="line"><span class="lineno">  213</span>}</div>
+<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00204">204</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  206</span>{ <span class="comment">// z of dim &gt;=2</span></div>
+<div class="line"><span class="lineno">  207</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> d = <a class="code hl_define" href="testImageContainerByHashTree_8cpp.html#a4bf6a1e750d841477978a43a04c4f062">dim</a>( z );</div>
+<div class="line"><span class="lineno">  208</span>  <span class="keywordflow">if</span> ( d == 0 ) <span class="keywordflow">return</span> f[ z ] ? 1 : 0;</div>
+<div class="line"><span class="lineno">  209</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = <a class="code hl_function" href="viewDualSurface_8cpp.html#a65653d1a6841c63e254176ca4c71a555">openDim</a>( z );</div>
+<div class="line"><span class="lineno">  210</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="viewDualSurface_8cpp.html#a8e1cb1e92baa215c8be717817a1df568">nbLighted</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a4b98c5389a8b08039179fe01b21c9ce7">lower</a>( z, i ) )</div>
+<div class="line"><span class="lineno">  211</span>    + <a class="code hl_function" href="viewDualSurface_8cpp.html#a8e1cb1e92baa215c8be717817a1df568">nbLighted</a>( f, <a class="code hl_function" href="viewDualSurface_8cpp.html#a91ad5a18fccee11320ecff413bb13b16">upper</a>( z, i ) );</div>
+<div class="line"><span class="lineno">  212</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="testImageContainerByHashTree_8cpp_source.html#l00040">dim</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00190">lower()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00205">nbLighted()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00183">openDim()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00197">upper()</a>.</p>
+<p class="reference">References <a class="el" href="testImageContainerByHashTree_8cpp_source.html#l00040">dim</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00189">lower()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00204">nbLighted()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00182">openDim()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00196">upper()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00253">lightMax()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00205">nbLighted()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00252">lightMax()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00204">nbLighted()</a>.</p>
 
 </div>
 </div>
@@ -968,19 +968,19 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a17">io/viewDualSurface.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="io_2viewDualSurface_8cpp-example.html#a16">io/viewDualSurface.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00183">183</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  184</span>{</div>
-<div class="line"><span class="lineno">  185</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classDGtal_1_1PointVector.html#af59a5af9d91e2dce2b19d855c5ad1e35">Vector::dimension</a>; ++i )</div>
-<div class="line"><span class="lineno">  186</span>    <span class="keywordflow">if</span> ( ( z[ i ] % 2 ) == 1 ) <span class="keywordflow">return</span> i;</div>
-<div class="line"><span class="lineno">  187</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="classDGtal_1_1PointVector.html#af59a5af9d91e2dce2b19d855c5ad1e35">Vector::dimension</a>;</div>
-<div class="line"><span class="lineno">  188</span>}</div>
+<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00182">182</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  183</span>{</div>
+<div class="line"><span class="lineno">  184</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="classDGtal_1_1PointVector.html#af59a5af9d91e2dce2b19d855c5ad1e35">Vector::dimension</a>; ++i )</div>
+<div class="line"><span class="lineno">  185</span>    <span class="keywordflow">if</span> ( ( z[ i ] % 2 ) == 1 ) <span class="keywordflow">return</span> i;</div>
+<div class="line"><span class="lineno">  186</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="classDGtal_1_1PointVector.html#af59a5af9d91e2dce2b19d855c5ad1e35">Vector::dimension</a>;</div>
+<div class="line"><span class="lineno">  187</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="PointVector_8h_source.html#l00626">DGtal::PointVector&lt; dim, Integer &gt;::dimension</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00337">fillCfg()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00218">lightBetween()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00309">lightEpsilon()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00253">lightMax()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00289">lightMaxMin()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00270">lightMinMax()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00205">nbLighted()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00336">fillCfg()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00217">lightBetween()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00308">lightEpsilon()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00252">lightMax()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00288">lightMaxMin()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00269">lightMinMax()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00204">nbLighted()</a>.</p>
 
 </div>
 </div>
@@ -1038,22 +1038,22 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="geometry_2volumes_2distance_2voronoimap2D_8cpp-example.html#a5">geometry/volumes/distance/voronoimap2D.cpp</a>, and <a class="el" href="io_2viewDualSurface_8cpp-example.html#a19">io/viewDualSurface.cpp</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="geometry_2volumes_2distance_2voronoimap2D_8cpp-example.html#a5">geometry/volumes/distance/voronoimap2D.cpp</a>, and <a class="el" href="io_2viewDualSurface_8cpp-example.html#a18">io/viewDualSurface.cpp</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00197">197</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  198</span>{</div>
-<div class="line"><span class="lineno">  199</span>  <a class="code hl_class" href="classDGtal_1_1PointVector.html">Vector</a> z2( z );</div>
-<div class="line"><span class="lineno">  200</span>  ++z2[ k ];</div>
-<div class="line"><span class="lineno">  201</span>  <span class="keywordflow">return</span> z2;</div>
-<div class="line"><span class="lineno">  202</span>}</div>
+<p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00196">196</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  197</span>{</div>
+<div class="line"><span class="lineno">  198</span>  <a class="code hl_class" href="classDGtal_1_1PointVector.html">Vector</a> z2( z );</div>
+<div class="line"><span class="lineno">  199</span>  ++z2[ k ];</div>
+<div class="line"><span class="lineno">  200</span>  <span class="keywordflow">return</span> z2;</div>
+<div class="line"><span class="lineno">  201</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00337">fillCfg()</a>, <a class="el" href="HyperRectDomain__Iterator_8h_source.html#l00167">DGtal::HyperRectDomain_Iterator&lt; TPoint &gt;::HyperRectDomain_Iterator()</a>, <a class="el" href="HyperRectDomain__Iterator_8h_source.html#l00327">DGtal::HyperRectDomain_subIterator&lt; TPoint &gt;::HyperRectDomain_subIterator()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00218">lightBetween()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00309">lightEpsilon()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00253">lightMax()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00289">lightMaxMin()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00270">lightMinMax()</a>, <a class="el" href="voronoimap2D_8cpp_source.html#l00063">main()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00205">nbLighted()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00336">fillCfg()</a>, <a class="el" href="HyperRectDomain__Iterator_8h_source.html#l00167">DGtal::HyperRectDomain_Iterator&lt; TPoint &gt;::HyperRectDomain_Iterator()</a>, <a class="el" href="HyperRectDomain__Iterator_8h_source.html#l00327">DGtal::HyperRectDomain_subIterator&lt; TPoint &gt;::HyperRectDomain_subIterator()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00217">lightBetween()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00308">lightEpsilon()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00252">lightMax()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00288">lightMaxMin()</a>, <a class="el" href="viewDualSurface_8cpp_source.html#l00269">lightMinMax()</a>, <a class="el" href="voronoimap2D_8cpp_source.html#l00063">main()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00204">nbLighted()</a>.</p>
 
 </div>
 </div>
-<a id="a3e65b2c9115c83c63b5cc292e7e37c94" name="a3e65b2c9115c83c63b5cc292e7e37c94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e65b2c9115c83c63b5cc292e7e37c94">&#9670;&#160;</a></span>viewPolygons()</h2>
+<a id="a24bdccee035ab28bf895dd80deb2c412" name="a24bdccee035ab28bf895dd80deb2c412"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24bdccee035ab28bf895dd80deb2c412">&#9670;&#160;</a></span>viewPolygons()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1065,12 +1065,6 @@ template&lt;typename <a class="el" href="classDGtal_1_1PolyscopeViewer.html">Vie
           <td>(</td>
           <td class="paramtype"><a class="el" href="classDGtal_1_1PolyscopeViewer.html">Viewer</a> &amp;&#160;</td>
           <td class="paramname"><em>viewer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classDGtal_1_1Color.html">DGtal::Color</a> &amp;&#160;</td>
-          <td class="paramname"><em>color</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1095,35 +1089,35 @@ template&lt;typename <a class="el" href="classDGtal_1_1PolyscopeViewer.html">Vie
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="viewDualSurface_8cpp_source.html#l00147">147</a> of file <a class="el" href="viewDualSurface_8cpp_source.html">viewDualSurface.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  152</span>{</div>
-<div class="line"><span class="lineno">  153</span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code hl_typedef" href="classDGtal_1_1Display3D.html#ae3565395e07ccd31135e735c085643c9">Viewer::RealPoint</a> <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#a5f087066515ecd33cefd7bd080ef8114">RealPoint</a>;</div>
-<div class="line"><span class="lineno">  154</span>  std::vector&lt;RealPoint&gt; pts3d;</div>
-<div class="line"><span class="lineno">  155</span> </div>
-<div class="line"><span class="lineno">  156</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> f = 0; f &lt; indices.size(); ++f )</div>
-<div class="line"><span class="lineno">  157</span>    {</div>
-<div class="line"><span class="lineno">  158</span>      pts3d.<a class="code hl_function" href="classDGtal_1_1PointVector.html#a84ef8486b511b05ef0938d08601707a8">clear</a>();</div>
-<div class="line"><span class="lineno">  159</span>      <a class="code hl_class" href="classDGtal_1_1PointVector.html">RealPoint</a> P;</div>
-<div class="line"><span class="lineno">  160</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> v = 0; v &lt; indices[ f ].size(); ++v )</div>
-<div class="line"><span class="lineno">  161</span>        {</div>
-<div class="line"><span class="lineno">  162</span>          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = indices[ f ][ v ];</div>
-<div class="line"><span class="lineno">  163</span>          P[0] = <a class="code hl_function" href="viewDualSurface_8cpp.html#a72fcf5b22c706b451046e7fd1550a7be">rescale</a>( points[ i ][ 0 ] );</div>
-<div class="line"><span class="lineno">  164</span>          P[1] = <a class="code hl_function" href="viewDualSurface_8cpp.html#a72fcf5b22c706b451046e7fd1550a7be">rescale</a>( points[ i ][ 1 ] );</div>
-<div class="line"><span class="lineno">  165</span>          P[2] = <a class="code hl_function" href="viewDualSurface_8cpp.html#a72fcf5b22c706b451046e7fd1550a7be">rescale</a>( points[ i ][ 2 ] );</div>
-<div class="line"><span class="lineno">  166</span>          pts3d.push_back( P );</div>
-<div class="line"><span class="lineno">  167</span>        }</div>
-<div class="line"><span class="lineno">  168</span>      </div>
-<div class="line"><span class="lineno">  169</span>      viewer.<a class="code hl_function" href="classDGtal_1_1Display3D.html#a1f0045024df52514af97427a08d9018a">drawPolygon</a>( pts3d );</div>
-<div class="line"><span class="lineno">  170</span>    }</div>
-<div class="line"><span class="lineno">  171</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">  151</span>{</div>
+<div class="line"><span class="lineno">  152</span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code hl_typedef" href="classDGtal_1_1Display3D.html#ae3565395e07ccd31135e735c085643c9">Viewer::RealPoint</a> <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#a5f087066515ecd33cefd7bd080ef8114">RealPoint</a>;</div>
+<div class="line"><span class="lineno">  153</span>  std::vector&lt;RealPoint&gt; pts3d;</div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> f = 0; f &lt; indices.size(); ++f )</div>
+<div class="line"><span class="lineno">  156</span>    {</div>
+<div class="line"><span class="lineno">  157</span>      pts3d.<a class="code hl_function" href="classDGtal_1_1PointVector.html#a84ef8486b511b05ef0938d08601707a8">clear</a>();</div>
+<div class="line"><span class="lineno">  158</span>      <a class="code hl_class" href="classDGtal_1_1PointVector.html">RealPoint</a> P;</div>
+<div class="line"><span class="lineno">  159</span>      <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> v = 0; v &lt; indices[ f ].size(); ++v )</div>
+<div class="line"><span class="lineno">  160</span>        {</div>
+<div class="line"><span class="lineno">  161</span>          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = indices[ f ][ v ];</div>
+<div class="line"><span class="lineno">  162</span>          P[0] = <a class="code hl_function" href="viewDualSurface_8cpp.html#a72fcf5b22c706b451046e7fd1550a7be">rescale</a>( points[ i ][ 0 ] );</div>
+<div class="line"><span class="lineno">  163</span>          P[1] = <a class="code hl_function" href="viewDualSurface_8cpp.html#a72fcf5b22c706b451046e7fd1550a7be">rescale</a>( points[ i ][ 1 ] );</div>
+<div class="line"><span class="lineno">  164</span>          P[2] = <a class="code hl_function" href="viewDualSurface_8cpp.html#a72fcf5b22c706b451046e7fd1550a7be">rescale</a>( points[ i ][ 2 ] );</div>
+<div class="line"><span class="lineno">  165</span>          pts3d.push_back( P );</div>
+<div class="line"><span class="lineno">  166</span>        }</div>
+<div class="line"><span class="lineno">  167</span>      </div>
+<div class="line"><span class="lineno">  168</span>      viewer.<a class="code hl_function" href="classDGtal_1_1Display3D.html#a1f0045024df52514af97427a08d9018a">drawPolygon</a>( pts3d );</div>
+<div class="line"><span class="lineno">  169</span>    }</div>
+<div class="line"><span class="lineno">  170</span>}</div>
 <div class="ttc" id="aclassDGtal_1_1Display3D_html_a1f0045024df52514af97427a08d9018a"><div class="ttname"><a href="classDGtal_1_1Display3D.html#a1f0045024df52514af97427a08d9018a">DGtal::Display3D::drawPolygon</a></div><div class="ttdeci">std::string drawPolygon(const std::vector&lt; Vec &gt; &amp;vertices, const std::string &amp;uname=&quot;Polygon_{i}&quot;)</div><div class="ttdoc">Draws a polygon.</div></div>
-<div class="ttc" id="aclassDGtal_1_1Display3D_html_ae3565395e07ccd31135e735c085643c9"><div class="ttname"><a href="classDGtal_1_1Display3D.html#ae3565395e07ccd31135e735c085643c9">DGtal::Display3D::RealPoint</a></div><div class="ttdeci">typename Space::RealPoint RealPoint</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00391">Display3D.h:391</a></div></div>
+<div class="ttc" id="aclassDGtal_1_1Display3D_html_ae3565395e07ccd31135e735c085643c9"><div class="ttname"><a href="classDGtal_1_1Display3D.html#ae3565395e07ccd31135e735c085643c9">DGtal::Display3D::RealPoint</a></div><div class="ttdeci">typename Space::RealPoint RealPoint</div><div class="ttdef"><b>Definition</b> <a href="Display3D_8h_source.html#l00397">Display3D.h:397</a></div></div>
 <div class="ttc" id="aclassDGtal_1_1PointVector_html_a84ef8486b511b05ef0938d08601707a8"><div class="ttname"><a href="classDGtal_1_1PointVector.html#a84ef8486b511b05ef0938d08601707a8">DGtal::PointVector::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Resets all the values to zero.</div><div class="ttdef"><b>Definition</b> <a href="PointVector_8h_source.html#l01551">PointVector.h:1551</a></div></div>
 <div class="ttc" id="anamespaceDGtal_1_1Z3i_html_a5f087066515ecd33cefd7bd080ef8114"><div class="ttname"><a href="namespaceDGtal_1_1Z3i.html#a5f087066515ecd33cefd7bd080ef8114">DGtal::Z3i::RealPoint</a></div><div class="ttdeci">Space::RealPoint RealPoint</div><div class="ttdef"><b>Definition</b> <a href="StdDefs_8h_source.html#l00170">StdDefs.h:170</a></div></div>
 <div class="ttc" id="aviewDualSurface_8cpp_html_a72fcf5b22c706b451046e7fd1550a7be"><div class="ttname"><a href="viewDualSurface_8cpp.html#a72fcf5b22c706b451046e7fd1550a7be">rescale</a></div><div class="ttdeci">double rescale(double x)</div><div class="ttdef"><b>Definition</b> <a href="viewDualSurface_8cpp_source.html#l00140">viewDualSurface.cpp:140</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="PointVector_8h_source.html#l01551">DGtal::PointVector&lt; dim, TEuclideanRing, TContainer &gt;::clear()</a>, <a class="el" href="classDGtal_1_1Display3D.html#a1f0045024df52514af97427a08d9018a">DGtal::Display3D&lt; Space, KSpace &gt;::drawPolygon()</a>, and <a class="el" href="viewDualSurface_8cpp_source.html#l00140">rescale()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00392">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="viewDualSurface_8cpp_source.html#l00391">main()</a>.</p>
 
 </div>
 </div>
@@ -1174,7 +1168,7 @@ template&lt;typename <a class="el" href="namespaceDGtal_1_1Z3i.html#ae17e112888e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_be8641fa4d4d5ebb6e23d02c55dfd0c9.html">io</a></li><li class="navelem"><a class="el" href="viewDualSurface_8cpp.html">viewDualSurface.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 20 2025 11:17:11 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:28:18 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

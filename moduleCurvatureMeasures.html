@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -184,7 +184,7 @@ Normal Cycle curvature measures</h2>
 <div class="fragment"><div class="line">  <span class="comment">// estimates mean (H) and Gaussian (G) curvatures by measure normalization.</span></div>
 <div class="line">  std::vector&lt; double &gt; <a class="code hl_enumvalue" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ac1d9f50f86825a1a2302ec2449c17196">H</a>( smesh.nbFaces() );</div>
 <div class="line">  std::vector&lt; double &gt; G( smesh.nbFaces() );</div>
-<div class="line">  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
 <div class="line">    {</div>
 <div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> b    = smesh.faceCentroid( f );</div>
 <div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> area = mu0.measure( b, <a class="code hl_enumvalue" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ae1e1d3d40573127e9ee0480caf1283d6">R</a>, f );</div>
@@ -211,7 +211,7 @@ Computed Gaussian curvatures: min=-0.682996 max=0.547296
 <div class="line">  std::vector&lt; RealVector &gt; D2( smesh.nbFaces() );</div>
 <div class="line">  <span class="comment">// Principal directions computation requires a local face normal</span></div>
 <div class="line">  smesh.computeFaceNormalsFromPositions();</div>
-<div class="line">  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
 <div class="line">    {</div>
 <div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> b    = smesh.faceCentroid( f );</div>
 <div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> N    = smesh.faceNormals()[ f ];</div>
@@ -271,7 +271,7 @@ Interpolated Corrected Normal Current curvature measures</h2>
 <div class="fragment"><div class="line">  <span class="comment">// estimates mean (H) and Gaussian (G) curvatures by measure normalization.</span></div>
 <div class="line">  std::vector&lt; double &gt; <a class="code hl_enumvalue" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ac1d9f50f86825a1a2302ec2449c17196">H</a>( smesh.nbFaces() );</div>
 <div class="line">  std::vector&lt; double &gt; G( smesh.nbFaces() );</div>
-<div class="line">  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
 <div class="line">    {</div>
 <div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> b    = smesh.faceCentroid( f );</div>
 <div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> area = mu0.measure( b, <a class="code hl_enumvalue" href="namespaceDGtal.html#abb201440d2d4b97d7078c6716a8d6f49ae1e1d3d40573127e9ee0480caf1283d6">R</a>, f );</div>
@@ -300,7 +300,7 @@ Computed Gaussian curvatures: min=-0.470473 max=0.244636
 <div class="line">  std::vector&lt; RealVector &gt; D2( smesh.nbFaces() );</div>
 <div class="line">  <span class="comment">// Principal directions computation requires a local face normal</span></div>
 <div class="line">  smesh.computeFaceNormalsFromPositions();</div>
-<div class="line">  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
 <div class="line">    {</div>
 <div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> b    = smesh.faceCentroid( f );</div>
 <div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> N    = smesh.faceNormals()[ f ];</div>
@@ -726,7 +726,7 @@ Accuracy comparison between II and interpolated CNC Gaussian curvature estimates
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">DGtal - Digital Geometry Tools and Algorithms Library.</a></li><li class="navelem"><a class="el" href="packageGeometry.html">Geometry package</a></li>
-    <li class="footer">Generated on Wed Aug 20 2025 11:17:15 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:28:22 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

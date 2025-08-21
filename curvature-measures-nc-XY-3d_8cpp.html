@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -250,7 +250,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  198</span>  std::vector&lt; RealVector &gt; D2( smesh.nbFaces() );</div>
 <div class="line"><span class="lineno">  199</span>  <span class="comment">// Principal directions computation requires a local face normal</span></div>
 <div class="line"><span class="lineno">  200</span>  smesh.computeFaceNormalsFromPositions();</div>
-<div class="line"><span class="lineno">  201</span>  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
+<div class="line"><span class="lineno">  201</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
 <div class="line"><span class="lineno">  202</span>    {</div>
 <div class="line"><span class="lineno">  203</span>      <span class="keyword">const</span> <span class="keyword">auto</span> b    = smesh.faceCentroid( f );</div>
 <div class="line"><span class="lineno">  204</span>      <span class="keyword">const</span> <span class="keyword">auto</span> N    = smesh.faceNormals()[ f ];</div>
@@ -281,7 +281,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  233</span>  <span class="keyword">const</span> <span class="keyword">auto</span> colormapK2 = <a class="code hl_function" href="namespaceDGtal.html#a2f512f10158f1714e32151336072f150">makeQuantifiedColorMap</a>( <a class="code hl_function" href="curvature-measures-nc-XY-3d_8cpp.html#a6b119c76b13c64dc85622b1258bdb400">makeColorMap</a>( -0.625, 0.625 ) );</div>
 <div class="line"><span class="lineno">  234</span>  <span class="keyword">auto</span> colorsK1 = SMW::Colors( smesh.nbFaces() );</div>
 <div class="line"><span class="lineno">  235</span>  <span class="keyword">auto</span> colorsK2 = SMW::Colors( smesh.nbFaces() );</div>
-<div class="line"><span class="lineno">  236</span>  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; smesh.nbFaces(); i++ )</div>
+<div class="line"><span class="lineno">  236</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; smesh.nbFaces(); i++ )</div>
 <div class="line"><span class="lineno">  237</span>    {</div>
 <div class="line"><span class="lineno">  238</span>      colorsK1[ i ] = colormapK1( K1[ i ] );</div>
 <div class="line"><span class="lineno">  239</span>      colorsK2[ i ] = colormapK2( K2[ i ] );</div>
@@ -290,7 +290,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  242</span>  SMW::writeOBJ( <span class="stringliteral">&quot;example-nc-K2&quot;</span>, smesh, colorsK2 );</div>
 <div class="line"><span class="lineno">  243</span>  <span class="keyword">const</span> <span class="keyword">auto</span> avg_e = smesh.averageEdgeLength();</div>
 <div class="line"><span class="lineno">  244</span>  SH::RealPoints positions( smesh.nbFaces() );</div>
-<div class="line"><span class="lineno">  245</span>  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> f = 0; f &lt; positions.size(); ++f )</div>
+<div class="line"><span class="lineno">  245</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; positions.size(); ++f )</div>
 <div class="line"><span class="lineno">  246</span>    {</div>
 <div class="line"><span class="lineno">  247</span>      D1[ f ] *= smesh.localWindow( f );</div>
 <div class="line"><span class="lineno">  248</span>      positions[ f ] = smesh.faceCentroid( f ) - 0.5 * D1[ f ];</div>
@@ -298,7 +298,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">  250</span>  SH::saveVectorFieldOBJ( positions, D1, 0.05 * avg_e, SH::Colors(),</div>
 <div class="line"><span class="lineno">  251</span>                          <span class="stringliteral">&quot;example-nc-D1&quot;</span>,</div>
 <div class="line"><span class="lineno">  252</span>                          SH::Color::Black, SH::Color( 0, 128, 0 ) );</div>
-<div class="line"><span class="lineno">  253</span>  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> f = 0; f &lt; positions.size(); ++f )</div>
+<div class="line"><span class="lineno">  253</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; positions.size(); ++f )</div>
 <div class="line"><span class="lineno">  254</span>    {</div>
 <div class="line"><span class="lineno">  255</span>      D2[ f ] *= smesh.localWindow( f );</div>
 <div class="line"><span class="lineno">  256</span>      positions[ f ] = smesh.faceCentroid( f ) - 0.5 * D2[ f ];</div>
@@ -414,7 +414,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_bbc6006c4fa8019b84b7adc573485eac.html">geometry</a></li><li class="navelem"><a class="el" href="dir_689ab43df5a8bbd3cf22c0464a261c93.html">meshes</a></li><li class="navelem"><a class="el" href="curvature-measures-nc-XY-3d_8cpp.html">curvature-measures-nc-XY-3d.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 20 2025 11:17:10 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:28:18 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX107 =
 {
+"globals_func_e.html":[5,1,4],
+"globals_func_f.html":[5,1,5],
 "globals_func_g.html":[5,1,6],
 "globals_func_h.html":[5,1,7],
 "globals_func_i.html":[5,1,8],
@@ -74,8 +76,8 @@ var NAVTREEINDEX107 =
 "images_2extract2DSlicesImagesFrom3D_8cpp-example.html":[6,101],
 "images_2imageBasicSubsampling_8cpp-example.html":[6,102],
 "images_2raw2HDF5_8cpp-example.html":[6,103],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md153":[0,0],
 "index.html#autotoc_md154":[0,0,0],
 "index.html#autotoc_md155":[0,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX107 =
 "moduleCurvatureMeasures.html#dgtal_curvature_measures_sec25":[0,7,12,1,4],
 "moduleCurvatureMeasures.html#dgtal_curvature_measures_sec3":[0,7,12,2],
 "moduleCurvatureMeasures.html#dgtal_curvature_measures_sec31":[0,7,12,2,0],
-"moduleCurvatureMeasures.html#dgtal_curvature_measures_sec32":[0,7,12,2,1],
-"moduleCurvatureMeasures.html#dgtal_curvature_measures_sec33":[0,7,12,2,2],
-"moduleDECEmbedding.html":[0,10,1]
+"moduleCurvatureMeasures.html#dgtal_curvature_measures_sec32":[0,7,12,2,1]
 };

@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('checkFullConvexityTheorems_8cpp_source
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                   <span class="keyword">const</span> std::vector&lt; Point &gt; &amp; p, <a class="code hl_typedef" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> a )</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>{</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  pp.resize( p.size() );</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; p.size(); i++ )</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; p.size(); i++ )</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_function" href="checkFullConvexityTheorems_8cpp.html#ad19c7670aca76aabbe997e1bd1a103e6">project</a>( pp[ i ], p[ i ], a );</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  std::sort( pp.begin(), pp.end() );</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keyword">auto</span> last = std::unique( pp.begin(), pp.end() );</div>
@@ -558,7 +558,7 @@ $(document).ready(function(){initNavTree('checkFullConvexityTheorems_8cpp_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_bbc6006c4fa8019b84b7adc573485eac.html">geometry</a></li><li class="navelem"><a class="el" href="dir_4e2b6255776ee794b28cc39d3a586de0.html">volumes</a></li><li class="navelem"><a class="el" href="checkFullConvexityTheorems_8cpp.html">checkFullConvexityTheorems.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 20 2025 11:16:25 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:27:31 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -223,13 +223,13 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2standardDigitalPoly
 <div class="line">  std::vector&lt; Plane &gt; face_planes;</div>
 <div class="line">  face_planes.resize( <a class="code hl_variable" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.nbFaces() );</div>
 <div class="line">  <span class="keywordtype">bool</span> planarity = <span class="keyword">true</span>;</div>
-<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> f = 0; f &lt; <a class="code hl_variable" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.nbFaces() &amp;&amp; planarity; ++f )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; <a class="code hl_variable" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.nbFaces() &amp;&amp; planarity; ++f )</div>
 <div class="line">    {</div>
 <div class="line">      <a class="code hl_typedef" href="digitalPolyhedronBuilder3D_8cpp.html#a7e851e605c414ed13c6604af4bba8107">PointRange</a> X;</div>
 <div class="line">      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> v : faceVertices[ f ] )</div>
 <div class="line">        X.push_back( <a class="code hl_function" href="namespaceboost.html#a9b4917fc7850f916bcbfec9ab2572fe9">vertices</a>[ v ] );</div>
 <div class="line">      face_planes[ f ] = <a class="code hl_typedef" href="standardDigitalPolyhedronBuilder3D_8cpp.html#ab251b64cd1b53a31224afb2f96039efd">Plane</a>( X[ 0 ], X[ 1 ], X[ 2 ] );</div>
-<div class="line">      <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> v = 3; v &lt; X.size(); v++ )</div>
+<div class="line">      <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> v = 3; v &lt; X.size(); v++ )</div>
 <div class="line">        <span class="keywordflow">if</span> ( ! face_planes[ f ]( X[ v ] ) )</div>
 <div class="line">          {</div>
 <div class="line">            <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a7fc3d7aa5e75357287452e5689e03efa">error</a>() &lt;&lt; <span class="stringliteral">&quot;Face &quot;</span> &lt;&lt; f &lt;&lt; <span class="stringliteral">&quot; is not planar.&quot;</span> &lt;&lt; std::endl;</div>
@@ -239,14 +239,14 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2standardDigitalPoly
 <div class="line">  <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a id="a33" name="a33"></a><a class="code hl_function" href="classDGtal_1_1Trace.html#afa3a2874289734884107b1ce68ccb93d">endBlock</a>();</div>
 <div class="line">  <span class="keywordflow">if</span> ( ! planarity ) <span class="keywordflow">return</span> 1;</div>
 <div class="line">  <a class="code hl_variable" href="namespaceDGtal.html#a8fc7012708b0416880a5c8b12dfdf9dd">trace</a>.<a class="code hl_function" href="classDGtal_1_1Trace.html#a352b7160bf722e2f0bcbee5d0bad6ef3">beginBlock</a>( <span class="stringliteral">&quot;Computing polyhedron&quot;</span> );</div>
-<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> f = 0; f &lt; <a class="code hl_variable" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.nbFaces(); ++f )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; <a class="code hl_variable" href="dgtalCalculus-bunny_8cpp.html#ae3ccdba7d575baf979261b4c02a6b9bb">surfmesh</a>.nbFaces(); ++f )</div>
 <div class="line">    {</div>
 <div class="line">      <a class="code hl_typedef" href="digitalPolyhedronBuilder3D_8cpp.html#a7e851e605c414ed13c6604af4bba8107">PointRange</a> X;</div>
 <div class="line">      <span class="keywordflow">for</span> ( <span class="keyword">auto</span> v : faceVertices[ f ] )</div>
 <div class="line">        X.push_back( <a class="code hl_function" href="namespaceboost.html#a9b4917fc7850f916bcbfec9ab2572fe9">vertices</a>[ v ] );</div>
 <div class="line">      <span class="keyword">auto</span> F = dconv.<a id="a34" name="a34"></a><a class="code hl_function" href="classDGtal_1_1DigitalConvexity.html#a94893f395ee00f8bd8d8b5c964ab28ce">relativeEnvelope</a>( X, face_planes[ f ], Algorithm::DIRECT );</div>
 <div class="line">      faces_set.insert( F.cbegin(), F.cend() );</div>
-<div class="line">      <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> i = 0; i &lt; X.size(); i++ )</div>
+<div class="line">      <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; X.size(); i++ )</div>
 <div class="line">        {</div>
 <div class="line">          <a class="code hl_typedef" href="digitalPolyhedronBuilder3D_8cpp.html#a7e851e605c414ed13c6604af4bba8107">PointRange</a> Y { X[ i ], X[ (i+1)%X.size() ] };</div>
 <div class="line">          <span class="keywordflow">if</span> ( Y[ 1 ] &lt; Y[ 0 ] ) std::swap( Y[ 0 ], Y[ 1 ] ); </div>
@@ -384,7 +384,7 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2standardDigitalPoly
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Aug 20 2025 11:16:22 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:27:28 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

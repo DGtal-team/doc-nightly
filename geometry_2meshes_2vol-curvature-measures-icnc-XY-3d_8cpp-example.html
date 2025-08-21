@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -245,7 +245,7 @@ Interpolated corrected greatest principal curvature and direction, r=2</div></di
 <div class="line">  std::vector&lt; double &gt; <a class="code hl_typedef" href="namespaceDGtal_1_1Z2i.html#a6d087f788830a4de6e4cfe8539d9ba34">K2</a>( smesh.nbFaces() );</div>
 <div class="line">  std::vector&lt; RealVector &gt; D1( smesh.nbFaces() );</div>
 <div class="line">  std::vector&lt; RealVector &gt; D2( smesh.nbFaces() );</div>
-<div class="line">  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
 <div class="line">    {</div>
 <div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> b    = smesh.faceCentroid( f );</div>
 <div class="line">      <span class="keyword">const</span> <span class="keyword">auto</span> N    = smesh.faceNormals()[ f ];</div>
@@ -272,7 +272,7 @@ Interpolated corrected greatest principal curvature and direction, r=2</div></di
 <div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> colormapK2 = <a class="code hl_function" href="namespaceDGtal.html#a2f512f10158f1714e32151336072f150">makeQuantifiedColorMap</a>( <a class="code hl_function" href="curvature-comparator-ii-cnc-3d_8cpp.html#a6b119c76b13c64dc85622b1258bdb400">makeColorMap</a>( -Kmax, Kmax ) );</div>
 <div class="line">  <span class="keyword">auto</span> colorsK1 = SMW::Colors( smesh.nbFaces() );</div>
 <div class="line">  <span class="keyword">auto</span> colorsK2 = SMW::Colors( smesh.nbFaces() );</div>
-<div class="line">  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; smesh.nbFaces(); i++ )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; smesh.nbFaces(); i++ )</div>
 <div class="line">    {</div>
 <div class="line">      colorsK1[ i ] = colormapK1( K1[ i ] );</div>
 <div class="line">      colorsK2[ i ] = colormapK2( K2[ i ] );</div>
@@ -281,7 +281,7 @@ Interpolated corrected greatest principal curvature and direction, r=2</div></di
 <div class="line">  SMW::writeOBJ( <span class="stringliteral">&quot;example-cnc-K2&quot;</span>, smesh, colorsK2 );</div>
 <div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> avg_e = smesh.averageEdgeLength();</div>
 <div class="line">  SH::RealPoints positions( smesh.nbFaces() );</div>
-<div class="line">  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> f = 0; f &lt; positions.size(); ++f )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; positions.size(); ++f )</div>
 <div class="line">    {</div>
 <div class="line">      D1[ f ] *= smesh.localWindow( f );</div>
 <div class="line">      positions[ f ] = smesh.faceCentroid( f ) - 0.5 * D1[ f ];</div>
@@ -289,7 +289,7 @@ Interpolated corrected greatest principal curvature and direction, r=2</div></di
 <div class="line">  SH::saveVectorFieldOBJ( positions, D1, 0.05 * avg_e, SH::Colors(),</div>
 <div class="line">                          <span class="stringliteral">&quot;example-cnc-D1&quot;</span>,</div>
 <div class="line">                          SH::Color::Black, SH::Color( 0, 128, 0 ) );</div>
-<div class="line">  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> f = 0; f &lt; positions.size(); ++f )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; positions.size(); ++f )</div>
 <div class="line">    {</div>
 <div class="line">      D2[ f ] *= smesh.localWindow( f );</div>
 <div class="line">      positions[ f ] = smesh.faceCentroid( f ) - 0.5 * D2[ f ];</div>
@@ -325,7 +325,7 @@ Interpolated corrected greatest principal curvature and direction, r=2</div></di
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Aug 20 2025 11:16:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:27:27 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

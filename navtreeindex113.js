@@ -1,5 +1,7 @@
 var NAVTREEINDEX113 =
 {
+"namespaceDGtal_1_1Z3i.html#a2ca7f6146ab9ff6394f112e5046f9a6f":[3,0,2,10,42],
+"namespaceDGtal_1_1Z3i.html#a31f9c58df277948f942f5efa2d2f1c3a":[3,0,2,10,8],
 "namespaceDGtal_1_1Z3i.html#a39a69f8da09f1094df563ca067927c61":[3,0,2,10,10],
 "namespaceDGtal_1_1Z3i.html#a4175cb6f2e4d9a47d70139103c6c89eb":[3,0,2,10,51],
 "namespaceDGtal_1_1Z3i.html#a44acb785a4616854c8fe13be68ed6e08":[3,0,2,10,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX113 =
 "namespaceLibBoard.html#aed4a3f230db70277f9381c88f2e65b1f":[3,0,3,30],
 "namespaceLibBoard.html#af24ad61eb695963ae09d242c12906d79":[3,0,3,31],
 "namespaceLibBoard_1_1Fonts.html":[3,0,3,0],
-"namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3":[3,0,3,0,0],
-"namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3a14533f71758a695062ddcb9f0e1f2ca9":[3,0,3,0,0,29],
-"namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3a149a422620be1214441e8dd87298280f":[3,0,3,0,0,32]
+"namespaceLibBoard_1_1Fonts.html#aa625464f813a8ce483957dd5cbdce3a3":[3,0,3,0,0]
 };

@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2checkFullConvexityT
 <div class="line">                   <span class="keyword">const</span> std::vector&lt; Point &gt; &amp; p, <a class="code hl_typedef" href="namespaceDGtal.html#a8fbe8c8d47ca5c36ced14284ac62613d">Dimension</a> a )</div>
 <div class="line">{</div>
 <div class="line">  pp.resize( p.size() );</div>
-<div class="line">  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; p.size(); i++ )</div>
+<div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; p.size(); i++ )</div>
 <div class="line">    <a class="code hl_function" href="checkFullConvexityTheorems_8cpp.html#ad19c7670aca76aabbe997e1bd1a103e6">project</a>( pp[ i ], p[ i ], a );</div>
 <div class="line">  std::sort( pp.begin(), pp.end() );</div>
 <div class="line">  <span class="keyword">auto</span> last = std::unique( pp.begin(), pp.end() );</div>
@@ -532,7 +532,7 @@ $(document).ready(function(){initNavTree('geometry_2volumes_2checkFullConvexityT
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Aug 20 2025 11:16:21 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:27:27 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

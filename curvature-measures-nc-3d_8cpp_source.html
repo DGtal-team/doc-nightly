@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('curvature-measures-nc-3d_8cpp_source.h
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  <span class="comment">// estimates mean (H) and Gaussian (G) curvatures by measure normalization.</span></div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  std::vector&lt; double &gt; H( smesh.nbFaces() );</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  std::vector&lt; double &gt; G( smesh.nbFaces() );</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    {</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>      <span class="keyword">const</span> <span class="keyword">auto</span> b    = smesh.faceCentroid( f );</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>      <span class="keyword">const</span> <span class="keyword">auto</span> area = mu0.measure( b, R, f );</div>
@@ -242,7 +242,7 @@ $(document).ready(function(){initNavTree('curvature-measures-nc-3d_8cpp_source.h
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <span class="keyword">const</span> <span class="keyword">auto</span> colormapG = makeQuantifiedColorMap( <a class="code hl_function" href="curvature-measures-nc-3d_8cpp.html#a6b119c76b13c64dc85622b1258bdb400">makeColorMap</a>( -0.625, 0.625 ) );</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="keyword">auto</span> colorsH = SMW::Colors( smesh.nbFaces() );</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="keyword">auto</span> colorsG = SMW::Colors( smesh.nbFaces() );</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; smesh.nbFaces(); i++ )</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; smesh.nbFaces(); i++ )</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    {</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>      colorsH[ i ] = colormapH( H[ i ] );</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>      colorsG[ i ] = colormapG( G[ i ] );</div>
@@ -271,7 +271,7 @@ $(document).ready(function(){initNavTree('curvature-measures-nc-3d_8cpp_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_bbc6006c4fa8019b84b7adc573485eac.html">geometry</a></li><li class="navelem"><a class="el" href="dir_689ab43df5a8bbd3cf22c0464a261c93.html">meshes</a></li><li class="navelem"><a class="el" href="curvature-measures-nc-3d_8cpp.html">curvature-measures-nc-3d.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 20 2025 11:16:24 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:27:30 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

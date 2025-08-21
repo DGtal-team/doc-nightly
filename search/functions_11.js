@@ -8,6 +8,6 @@ var searchData=
   ['quantifiedcolormap_5',['QuantifiedColorMap',['../structDGtal_1_1QuantifiedColorMap.html#a6b4fdea0b352a0ede9a97b769965d0ac',1,'DGtal::QuantifiedColorMap']]],
   ['quantity_6',['quantity',['../structDGtal_1_1functors_1_1SphereFittingEstimator_1_1Quantity.html#a39f7c630e801f99349be0d8edaa3e87f',1,'DGtal::functors::SphereFittingEstimator::Quantity::Quantity()'],['../structDGtal_1_1functors_1_1SphereFittingEstimator_1_1Quantity.html#a97c971a8bf5e83cd875b526ccf4926f7',1,'DGtal::functors::SphereFittingEstimator::Quantity::Quantity(RealPoint p, double rad, double _tau, double _kappa, RealPoint _eta)']]],
   ['quasinulltest_7',['quasiNullTest',['../testInHalfPlane-benchmark_8cpp.html#aabe8fbe6213d61ac950100aa13c20963',1,'testInHalfPlane-benchmark.cpp']]],
-  ['quickhull_8',['QuickHull',['../structDGtal_1_1QuickHull.html#a102d2e0a8d3bfa3d231a0a925a04ec82',1,'DGtal::QuickHull']]],
+  ['quickhull_8',['QuickHull',['../structDGtal_1_1QuickHull.html#a4308d2f48d27b76ff479d5e81a9c8959',1,'DGtal::QuickHull']]],
   ['qvf_9',['Qvf',['../classDGtal_1_1PolygonalCalculus.html#aa108ea6006f041a40166933de95b64f4',1,'DGtal::PolygonalCalculus']]]
 ];

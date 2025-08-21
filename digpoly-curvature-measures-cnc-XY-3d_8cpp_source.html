@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -254,7 +254,7 @@ $(document).ready(function(){initNavTree('digpoly-curvature-measures-cnc-XY-3d_8
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  std::vector&lt; double &gt; K2( smesh.nbFaces() );</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  std::vector&lt; RealVector &gt; D1( smesh.nbFaces() );</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  std::vector&lt; RealVector &gt; D2( smesh.nbFaces() );</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; smesh.nbFaces(); ++f )</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    {</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>      <span class="keyword">const</span> <span class="keyword">auto</span> b    = smesh.faceCentroid( f );</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>      <span class="keyword">const</span> <span class="keyword">auto</span> N    = smesh.faceNormals()[ f ];</div>
@@ -301,7 +301,7 @@ $(document).ready(function(){initNavTree('digpoly-curvature-measures-cnc-XY-3d_8
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  <span class="keyword">const</span> <span class="keyword">auto</span> colormapK2 = makeQuantifiedColorMap( <a class="code hl_function" href="digpoly-curvature-measures-cnc-XY-3d_8cpp.html#a6b119c76b13c64dc85622b1258bdb400">makeColorMap</a>( -Kmax, Kmax ) );</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  <span class="keyword">auto</span> colorsK1 = SMW::Colors( smesh.nbFaces() );</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <span class="keyword">auto</span> colorsK2 = SMW::Colors( smesh.nbFaces() );</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0; i &lt; smesh.nbFaces(); i++ )</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> i = 0; i &lt; smesh.nbFaces(); i++ )</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    {</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>      colorsK1[ i ] = colormapK1( K1[ i ] );</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>      colorsK2[ i ] = colormapK2( K2[ i ] );</div>
@@ -310,7 +310,7 @@ $(document).ready(function(){initNavTree('digpoly-curvature-measures-cnc-XY-3d_8
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  SMW::writeOBJ( <span class="stringliteral">&quot;example-cnc-K2&quot;</span>, smesh, colorsK2 );</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  <span class="keyword">const</span> <span class="keyword">auto</span> avg_e = smesh.averageEdgeLength();</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  SH::RealPoints positions( smesh.nbFaces() );</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> f = 0; f &lt; positions.size(); ++f )</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; positions.size(); ++f )</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    {</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>      D1[ f ] *= smesh.localWindow( f );</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>      positions[ f ] = smesh.faceCentroid( f ) - 0.5 * D1[ f ];</div>
@@ -318,7 +318,7 @@ $(document).ready(function(){initNavTree('digpoly-curvature-measures-cnc-XY-3d_8
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  SH::saveVectorFieldOBJ( positions, D1, 0.05 * avg_e, SH::Colors(),</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>                          <span class="stringliteral">&quot;example-cnc-D1&quot;</span>,</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                          SH::Color::Black, SH::Color( 0, 128, 0 ) );</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  <span class="keywordflow">for</span> ( <span class="keyword">auto</span> f = 0; f &lt; positions.size(); ++f )</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  <span class="keywordflow">for</span> ( <span class="keywordtype">size_t</span> f = 0; f &lt; positions.size(); ++f )</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    {</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>      D2[ f ] *= smesh.localWindow( f );</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>      positions[ f ] = smesh.faceCentroid( f ) - 0.5 * D2[ f ];</div>
@@ -353,7 +353,7 @@ $(document).ready(function(){initNavTree('digpoly-curvature-measures-cnc-XY-3d_8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d28a4824dc47e487b107a5db32ef43c4.html">examples</a></li><li class="navelem"><a class="el" href="dir_bbc6006c4fa8019b84b7adc573485eac.html">geometry</a></li><li class="navelem"><a class="el" href="dir_689ab43df5a8bbd3cf22c0464a261c93.html">meshes</a></li><li class="navelem"><a class="el" href="digpoly-curvature-measures-cnc-XY-3d_8cpp.html">digpoly-curvature-measures-cnc-XY-3d.cpp</a></li>
-    <li class="footer">Generated on Wed Aug 20 2025 11:16:24 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:27:30 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

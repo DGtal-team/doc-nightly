@@ -33,7 +33,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">DGtal<span id="projectnumber">&#160;2.0.0</span>
+   <div id="projectname">DGtal<span id="projectnumber">&#160;2.1.0</span>
    </div>
   </td>
  </tr>
@@ -113,16 +113,16 @@ Inheritance diagram for RandomPointExtension:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa1496c2090268c015c55f5c78c5693c5" id="r_aa1496c2090268c015c55f5c78c5693c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRandomPointExtension.html#aa1496c2090268c015c55f5c78c5693c5">OnUI</a> ()</td></tr>
-<tr class="separator:aa1496c2090268c015c55f5c78c5693c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03d643663db1fff44411df7706b060c5" id="r_a03d643663db1fff44411df7706b060c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRandomPointExtension.html#a03d643663db1fff44411df7706b060c5">OnUI</a> (void *viewerData) override</td></tr>
+<tr class="separator:a03d643663db1fff44411df7706b060c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>[viewer3D-extension-derivation] </p>
 
 <p class="definition">Definition at line <a class="el" href="viewer3D-11-extension_8cpp_source.html#l00052">52</a> of file <a class="el" href="viewer3D-11-extension_8cpp_source.html">viewer3D-11-extension.cpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa1496c2090268c015c55f5c78c5693c5" name="aa1496c2090268c015c55f5c78c5693c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1496c2090268c015c55f5c78c5693c5">&#9670;&#160;</a></span>OnUI()</h2>
+<a id="a03d643663db1fff44411df7706b060c5" name="a03d643663db1fff44411df7706b060c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03d643663db1fff44411df7706b060c5">&#9670;&#160;</a></span>OnUI()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,32 +133,34 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void RandomPointExtension::OnUI </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>viewerData</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="viewer3D-11-extension_8cpp_source.html#l00053">53</a> of file <a class="el" href="viewer3D-11-extension_8cpp_source.html">viewer3D-11-extension.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   53</span>              {</div>
-<div class="line"><span class="lineno">   54</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> count = 16;</div>
-<div class="line"><span class="lineno">   55</span>    <span class="comment">// Depending on the viewer, this may change</span></div>
-<div class="line"><span class="lineno">   56</span>    ImGui::SliderInt(<span class="stringliteral">&quot;Number of points to draw&quot;</span>, &amp;count, 0, 32);</div>
-<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">if</span> (ImGui::Button(<span class="stringliteral">&quot;Create points&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   58</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; count; ++i) {</div>
-<div class="line"><span class="lineno">   59</span>        <span class="comment">// Rand values from -10 to 10</span></div>
-<div class="line"><span class="lineno">   60</span>        <span class="comment">// Viewer is pointer to the viewer this extension is attached to</span></div>
-<div class="line"><span class="lineno">   61</span>        *viewer &lt;&lt; <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#a8d69892de6b10119a8070bd5d0871bf5">Point</a>(rand() % 21 - 10, rand() % 21 - 10, rand() % 21 - 10);</div>
-<div class="line"><span class="lineno">   62</span>      }</div>
-<div class="line"><span class="lineno">   63</span>      <span class="comment">// Ask viewer to render all data that were added</span></div>
-<div class="line"><span class="lineno">   64</span>      viewer-&gt;renderNewData();</div>
-<div class="line"><span class="lineno">   65</span>    }</div>
-<div class="line"><span class="lineno">   66</span>  }</div>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>                                       {</div>
+<div class="line"><span class="lineno">   54</span>    ((void) viewerData);</div>
+<div class="line"><span class="lineno">   55</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> count = 16;</div>
+<div class="line"><span class="lineno">   56</span>    <span class="comment">// Depending on the viewer, this may change</span></div>
+<div class="line"><span class="lineno">   57</span>    ImGui::SliderInt(<span class="stringliteral">&quot;Number of points to draw&quot;</span>, &amp;count, 0, 32);</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">if</span> (ImGui::Button(<span class="stringliteral">&quot;Create points&quot;</span>)) {</div>
+<div class="line"><span class="lineno">   59</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; count; ++i) {</div>
+<div class="line"><span class="lineno">   60</span>        <span class="comment">// Rand values from -10 to 10</span></div>
+<div class="line"><span class="lineno">   61</span>        <span class="comment">// Viewer is pointer to the viewer this extension is attached to</span></div>
+<div class="line"><span class="lineno">   62</span>        *viewer &lt;&lt; <a class="code hl_typedef" href="namespaceDGtal_1_1Z3i.html#a8d69892de6b10119a8070bd5d0871bf5">Point</a>(rand() % 21 - 10, rand() % 21 - 10, rand() % 21 - 10);</div>
+<div class="line"><span class="lineno">   63</span>      }</div>
+<div class="line"><span class="lineno">   64</span>      <span class="comment">// Ask viewer to render all data that were added</span></div>
+<div class="line"><span class="lineno">   65</span>      viewer-&gt;renderNewData();</div>
+<div class="line"><span class="lineno">   66</span>    }</div>
+<div class="line"><span class="lineno">   67</span>  }</div>
 <div class="ttc" id="anamespaceDGtal_1_1Z3i_html_a8d69892de6b10119a8070bd5d0871bf5"><div class="ttname"><a href="namespaceDGtal_1_1Z3i.html#a8d69892de6b10119a8070bd5d0871bf5">DGtal::Z3i::Point</a></div><div class="ttdeci">Space::Point Point</div><div class="ttdef"><b>Definition</b> <a href="StdDefs_8h_source.html#l00168">StdDefs.h:168</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -172,7 +174,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structRandomPointExtension.html">RandomPointExtension</a></li>
-    <li class="footer">Generated on Wed Aug 20 2025 11:17:16 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 13:28:24 for DGtal by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>
